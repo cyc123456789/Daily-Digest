@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>態勢日誌 SITUATION LOG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0B1320;
+      --card: #141E30;
+      --text: #E8EDF4;
+      --geopolitics: #C9A14A;
+      --cyber: #5BC0BE;
+      --energy: #E07856;
+      --taiwan: #7C9EFF;
+      --spine-width: 260px;
+      --text-muted: #8A95A3;
+      --border: #1E2D42;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Sans TC', sans-serif;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ── Date Spine / Timeline ── */
+    .date-spine {
+      position: fixed;
+      top: 0; left: 0;
+      width: var(--spine-width);
+      height: 100vh;
+      background: #0D1828;
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      overflow: hidden;
+    }
+
+    .spine-header {
+      padding: 32px 24px 20px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .spine-logo {
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      color: var(--cyber);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .spine-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .spine-timeline {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 0 24px;
+    }
+
+    .spine-timeline::-webkit-scrollbar { width: 3px; }
+    .spine-timeline::-webkit-scrollbar-track { background: transparent; }
+    .spine-timeline::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    /* Accordion nodes */
+    .timeline-node {
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .timeline-node::before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .node-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px 10px 0;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+    }
+
+    .node-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      position: absolute;
+      left: -28px;
+      transition: all 0.2s;
+    }
+
+    .timeline-node.active .node-dot {
+      background: var(--cyber);
+      box-shadow: 0 0 8px var(--cyber);
+      width: 10px;
+      height: 10px;
+      left: -29px;
+    }
+
+    .node-date {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      transition: color 0.2s;
+    }
+
+    .timeline-node.active .node-date {
+      color: var(--text);
+    }
+
+    .node-toggle {
+      margin-left: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      color: var(--text-muted);
+      transition: transform 0.25s;
+    }
+
+    .timeline-node.open .node-toggle {
+      transform: rotate(90deg);
+    }
+
+    .node-content {
+      display: none;
+      padding: 4px 0 16px 0;
+    }
+
+    .timeline-node.open .node-content {
+      display: block;
+    }
+
+    .node-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px 6px 0;
+      text-decoration: none;
+      font-size: 11px;
+      color: var(--text-muted);
+      transition: color 0.2s;
+      border-radius: 3px;
+    }
+
+    .node-link:hover { color: var(--text); }
+
+    .node-link-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .node-link-dot.taiwan  { background: var(--taiwan); }
+    .node-link-dot.cyber   { background: var(--cyber); }
+    .node-link-dot.geo     { background: var(--geopolitics); }
+    .node-link-dot.energy  { background: var(--energy); }
+
+    .node-link-label {
+      font-size: 10px;
+      color: inherit;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .node-full-link {
+      display: block;
+      margin-top: 8px;
+      padding: 6px 10px;
+      background: rgba(91,192,190,0.08);
+      border: 1px solid rgba(91,192,190,0.2);
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: var(--cyber);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-align: center;
+      transition: all 0.2s;
+      margin-right: 12px;
+    }
+
+    .node-full-link:hover {
+      background: rgba(91,192,190,0.15);
+    }
+
+    /* ── Main Content ── */
+    .main {
+      margin-left: var(--spine-width);
+      flex: 1;
+      padding: 60px 56px 80px;
+    }
+
+    .hero {
+      margin-bottom: 64px;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      color: var(--cyber);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.15;
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+
+    .hero-sub {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 20px;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+    }
+
+    .hero-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 600px;
+      border-left: 3px solid var(--border);
+      padding-left: 16px;
+    }
+
+    .latest-section {
+      margin-bottom: 64px;
+    }
+
+    .section-label {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .latest-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 32px 36px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .latest-card-header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .latest-date {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: var(--cyber);
+      letter-spacing: 0.08em;
+    }
+
+    .latest-badge {
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      padding: 3px 10px;
+      border-radius: 2px;
+      background: rgba(91,192,190,0.1);
+      color: var(--cyber);
+      border: 1px solid rgba(91,192,190,0.25);
+    }
+
+    .cat-block {
+      padding: 20px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      transition: all 0.2s;
+      display: block;
+    }
+
+    .cat-block:hover {
+      border-color: rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .cat-block.taiwan { border-left: 3px solid var(--taiwan); }
+    .cat-block.cyber  { border-left: 3px solid var(--cyber); }
+    .cat-block.geo    { border-left: 3px solid var(--geopolitics); }
+    .cat-block.energy { border-left: 3px solid var(--energy); }
+
+    .cat-label {
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .cat-label.taiwan  { color: var(--taiwan); }
+    .cat-label.cyber   { color: var(--cyber); }
+    .cat-label.geo     { color: var(--geopolitics); }
+    .cat-label.energy  { color: var(--energy); }
+
+    .cat-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .cat-summary {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .view-all-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: rgba(91,192,190,0.08);
+      border: 1px solid rgba(91,192,190,0.25);
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      color: var(--cyber);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      transition: all 0.2s;
+      grid-column: 1 / -1;
+    }
+
+    .view-all-btn:hover {
+      background: rgba(91,192,190,0.15);
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 64px;
+    }
+
+    .stat-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 28px;
+      flex: 1;
+      min-width: 150px;
+    }
+
+    .stat-label {
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .stat-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* About section */
+    .about-section {
+      border-top: 1px solid var(--border);
+      padding-top: 40px;
+    }
+
+    .about-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 680px;
+    }
+
+    .about-text strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Left Date Spine / Timeline ── -->
+<aside class="date-spine">
+  <div class="spine-header">
+    <div class="spine-logo">Daily Digest · Situation Log</div>
+    <div class="spine-title">態勢日誌<br>時間軸</div>
+  </div>
+  <div class="spine-timeline" id="timeline">
+
+    <!-- 2026-06-19 Node (active, open by default) -->
+    <div class="timeline-node active open" id="node-2026-06-19">
+      <div class="node-header" onclick="toggleNode('node-2026-06-19')">
+        <span class="node-dot"></span>
+        <span class="node-date">2026-06-19</span>
+        <span class="node-toggle">▶</span>
+      </div>
+      <div class="node-content">
+        <a href="reports/2026-06-19.html#taiwan" class="node-link">
+          <span class="node-link-dot taiwan"></span>
+          <span class="node-link-label">台海觀察 · 中國海事執法東進</span>
+        </a>
+        <a href="reports/2026-06-19.html#cyber" class="node-link">
+          <span class="node-link-dot cyber"></span>
+          <span class="node-link-label">網路資安 · Patch Tuesday 206 CVE</span>
+        </a>
+        <a href="reports/2026-06-19.html#geo" class="node-link">
+          <span class="node-link-dot geo"></span>
+          <span class="node-link-label">地緣政治 · 習金峰會 · 2026 NDAA</span>
+        </a>
+        <a href="reports/2026-06-19.html#energy" class="node-link">
+          <span class="node-link-dot energy"></span>
+          <span class="node-link-label">能源經濟 · Fed 按兵不動 · 油價崩跌</span>
+        </a>
+        <a href="reports/2026-06-19.html" class="node-full-link">→ 查閱完整報告</a>
+      </div>
+    </div>
+
+  </div>
+</aside>
+
+<!-- ── Main Content ── -->
+<main class="main">
+
+  <div class="hero">
+    <div class="hero-eyebrow">GLOBAL SECURITY &amp; GEOPOLITICAL INTELLIGENCE DIGEST</div>
+    <h1 class="hero-title">態勢日誌</h1>
+    <div class="hero-sub">SITUATION LOG</div>
+    <p class="hero-desc">
+      中高階分析師每日態勢簡報。整合全球網路資安威脅情報、台海軍事動態、
+      地緣政治發展與能源經濟指標，每日生成可操作的分析摘要。
+      左側時間軸為歷史檔案索引，最新節點預設展開。
+    </p>
+  </div>
+
+  <!-- Stats Row -->
+  <div class="stats-row">
+    <div class="stat-item">
+      <div class="stat-label">報告期數</div>
+      <div class="stat-value" style="color: var(--cyber);">001</div>
+      <div class="stat-desc">自 2026-06-19 起刊</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">本期 CVE 修補</div>
+      <div class="stat-value" style="color: var(--cyber);">206</div>
+      <div class="stat-desc">含 6 個零時差漏洞</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">台海威脅等級</div>
+      <div class="stat-value" style="color: var(--taiwan);">HIGH</div>
+      <div class="stat-desc">海事執法東進台灣</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">WTI 原油</div>
+      <div class="stat-value" style="color: var(--energy);">$80</div>
+      <div class="stat-desc">美伊協議後下跌 5%</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Fed 基準利率</div>
+      <div class="stat-value" style="color: var(--geopolitics);">3.75%</div>
+      <div class="stat-desc">連續第四次維持不變</div>
+    </div>
+  </div>
+
+  <!-- Latest Report -->
+  <div class="latest-section">
+    <div class="section-label">最新報告 · 2026-06-19</div>
+
+    <div class="latest-card">
+      <div class="latest-card-header">
+        <span class="latest-date">2026-06-19T00:00:00Z</span>
+        <span class="latest-badge">LATEST BRIEF</span>
+      </div>
+
+      <a href="reports/2026-06-19.html#taiwan" class="cat-block taiwan">
+        <div class="cat-label taiwan">台海觀察</div>
+        <div class="cat-title">中國海事執法東進台灣，國防預算延宕加劇風險</div>
+        <div class="cat-summary">
+          PRC 交通部在台灣東部海域實施「特殊海事執法行動」，搭配習金平壤峰會戰略訊號，
+          台灣在野黨持續拖延 2026 總預算影響國防整備。
+        </div>
+      </a>
+
+      <a href="reports/2026-06-19.html#cyber" class="cat-block cyber">
+        <div class="cat-label cyber">網路資安</div>
+        <div class="cat-title">Microsoft 修補 206 CVE，CVE-2026-45657 CVSS 9.8 需緊急套用</div>
+        <div class="cat-summary">
+          六月 Patch Tuesday 含 6 個零時差漏洞，Windows Kernel RCE 漏洞允許未認證遠端執行。
+          Gentlemen、INC 勒索組織持續活躍，APT 攻擊鏈壓縮至 72 分鐘。
+        </div>
+      </a>
+
+      <a href="reports/2026-06-19.html#geo" class="cat-block geo">
+        <div class="cat-label geo">地緣政治</div>
+        <div class="cat-title">2026 NDAA 簽署、美中擬四次峰會，競合並行格局深化</div>
+        <div class="cat-summary">
+          BIOSECURE 法案、FIGHT China 法案入法，美中科技脫鉤法制化加速。
+          赫格塞斯香格里拉「夥伴非被保護國」框架重塑印太安全分工。
+        </div>
+      </a>
+
+      <a href="reports/2026-06-19.html#energy" class="cat-block energy">
+        <div class="cat-label energy">能源經濟</div>
+        <div class="cat-title">Fed 按兵不動暗示可能升息，美伊協議拉低油價 5%</div>
+        <div class="cat-summary">
+          新主席 Warsh 首次決策維持 3.75%，刪除年內降息預期；
+          ECB 升息 25bps 結束寬鬆週期；霍爾木茲重開 WTI 跌至 $80。
+        </div>
+      </a>
+
+      <a href="reports/2026-06-19.html" class="view-all-btn">
+        → 查閱 2026-06-19 完整態勢報告
+      </a>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <div class="section-label">關於本刊</div>
+    <p class="about-text">
+      <strong>態勢日誌 Situation Log</strong> 每日自動彙整全球開源情報（OSINT），
+      涵蓋網路資安威脅（CVE、APT、勒索軟體）、台海軍事動態、
+      亞太地緣政治、及全球能源與金融市場指標，
+      以中高階分析師作戰室簡報為定位，採嚴格深色主題視覺設計。
+      所有內容基於公開來源，不代表任何政府或機構立場。
+    </p>
+  </div>
+
+</main>
+
+<script>
+  function toggleNode(id) {
+    const node = document.getElementById(id);
+    if (!node) return;
+    const isOpen = node.classList.contains('open');
+    // Close all nodes
+    document.querySelectorAll('.timeline-node').forEach(function(n) {
+      n.classList.remove('open');
+    });
+    // Open clicked node if it was closed
+    if (!isOpen) {
+      node.classList.add('open');
+    }
+  }
+</script>
+
+</body>
+</html>

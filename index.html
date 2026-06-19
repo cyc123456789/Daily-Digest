@@ -451,8 +451,36 @@
   </div>
   <div class="spine-timeline" id="timeline">
 
-    <!-- 2026-06-19 Node (active, open by default) -->
-    <div class="timeline-node active open" id="node-2026-06-19">
+    <!-- 2026-06-20 Node (active, open by default) -->
+    <div class="timeline-node active open" id="node-2026-06-20">
+      <div class="node-header" onclick="toggleNode('node-2026-06-20')">
+        <span class="node-dot"></span>
+        <span class="node-date">2026-06-20</span>
+        <span class="node-toggle">▶</span>
+      </div>
+      <div class="node-content">
+        <a href="reports/2026-06-20.html#cyber" class="node-link">
+          <span class="node-link-dot cyber"></span>
+          <span class="node-link-label">網路資安 · Cisco SD-WAN CVE-2026-20245 / 非俄勒索超越俄系</span>
+        </a>
+        <a href="reports/2026-06-20.html#taiwan" class="node-link">
+          <span class="node-link-dot taiwan"></span>
+          <span class="node-link-label">台海觀察 · 中國東台灣執法 / 菲律賓部長遭制裁</span>
+        </a>
+        <a href="reports/2026-06-20.html#geo" class="node-link">
+          <span class="node-link-dot geo"></span>
+          <span class="node-link-label">地緣政治 · 川習科技管制分歧 / 盟友信心指數下降</span>
+        </a>
+        <a href="reports/2026-06-20.html#energy" class="node-link">
+          <span class="node-link-dot energy"></span>
+          <span class="node-link-label">能源經濟 · 央行超級週收官 · BoE · 布蘭特 $110</span>
+        </a>
+        <a href="reports/2026-06-20.html" class="node-full-link">→ 查閱完整報告</a>
+      </div>
+    </div>
+
+    <!-- 2026-06-19 Node -->
+    <div class="timeline-node" id="node-2026-06-19">
       <div class="node-header" onclick="toggleNode('node-2026-06-19')">
         <span class="node-dot"></span>
         <span class="node-date">2026-06-19</span>
@@ -500,80 +528,79 @@
   <div class="stats-row">
     <div class="stat-item">
       <div class="stat-label">報告期數</div>
-      <div class="stat-value" style="color: var(--cyber);">001</div>
+      <div class="stat-value" style="color: var(--cyber);">002</div>
       <div class="stat-desc">自 2026-06-19 起刊</div>
     </div>
     <div class="stat-item">
-      <div class="stat-label">本期 CVE 修補</div>
-      <div class="stat-value" style="color: var(--cyber);">209</div>
-      <div class="stat-desc">含 3 個零時差漏洞</div>
+      <div class="stat-label">活躍 KEV 漏洞</div>
+      <div class="stat-value" style="color: var(--cyber);">CVE</div>
+      <div class="stat-desc">Cisco SD-WAN root 提權在野利用</div>
     </div>
     <div class="stat-item">
       <div class="stat-label">台海威脅等級</div>
       <div class="stat-value" style="color: var(--taiwan);">HIGH</div>
-      <div class="stat-desc">中國東台灣海洋執法行動</div>
+      <div class="stat-desc">執法行動 + 統戰選前布局</div>
     </div>
     <div class="stat-item">
       <div class="stat-label">布蘭特原油</div>
       <div class="stat-value" style="color: var(--energy);">$110</div>
-      <div class="stat-desc">伊朗/荷莫茲封鎖疑慮推升</div>
+      <div class="stat-desc">伊朗風險 · LNG 亞洲現貨急漲 +15%</div>
     </div>
     <div class="stat-item">
-      <div class="stat-label">Fed 基準利率</div>
-      <div class="stat-value" style="color: var(--geopolitics);">3.75%</div>
-      <div class="stat-desc">連續第四次維持不變，點陣圖鷹派轉向</div>
+      <div class="stat-label">Fed 利率展望</div>
+      <div class="stat-value" style="color: var(--geopolitics);">↑ 鷹</div>
+      <div class="stat-desc">點陣圖翻轉，17/18 委員看升息</div>
     </div>
   </div>
 
   <!-- Latest Report -->
   <div class="latest-section">
-    <div class="section-label">最新報告 · 2026-06-19</div>
+    <div class="section-label">最新報告 · 2026-06-20</div>
 
     <div class="latest-card">
       <div class="latest-card-header">
-        <span class="latest-date">2026-06-19T00:00:00Z</span>
+        <span class="latest-date">2026-06-20T00:00:00+08:00</span>
         <span class="latest-badge">LATEST BRIEF</span>
       </div>
 
-      <a href="reports/2026-06-19.html#taiwan" class="cat-block taiwan">
-        <div class="cat-label taiwan">台海觀察</div>
-        <div class="cat-title">中國在台灣以東執行海洋特別執法，台灣在野杯葛國防預算</div>
-        <div class="cat-summary">
-          中國交通運輸部宣布台灣以東水域「特別海洋執法行動」，鎖定巴士海峽等關鍵咽喉點，為未來常態執法及封鎖場景奠定法律依據。
-          台灣立法院在野聯盟持續杯葛 2026 總預算，國防備戰能力面臨嚴峻考驗，引發美方高度關注。
-        </div>
-      </a>
-
-      <a href="reports/2026-06-19.html#cyber" class="cat-block cyber">
+      <a href="reports/2026-06-20.html#cyber" class="cat-block cyber">
         <div class="cat-label cyber">網路資安</div>
-        <div class="cat-title">六月 Patch Tuesday 209 CVE，HTTP.sys 與 Windows Kernel 雙雙 CVSS 9.8</div>
+        <div class="cat-title">Cisco SD-WAN Manager 零時差 Root 提權在野利用；非俄勒索集團首度超越俄系</div>
         <div class="cat-summary">
-          CVE-2026-47291（HTTP.sys）、CVE-2026-45657（Windows Kernel）、CVE-2026-42985（RDP Client）三枚 CVSS 9.8 零時差漏洞確認遭在野利用。
-          WFP 加薩受援家庭資料外洩；勒索軟體集團全面轉向純資料勒索並標準化 EDR Killer，5 月受害者含台灣高鐵、Foxconn、OpenAI。
+          CVE-2026-20245（Cisco SD-WAN Manager）列入 CISA KEV，聯邦機構 72 小時緊急修補令。
+          F5 NGINX HTTP/3 QUIC use-after-free PoC 流出；2026 H1 報告確認非俄羅斯勒索集團數量首度超越俄系，全球化結構性轉變確立。AI 輔助攻擊成攻擊主流，法國 Tchap 政府通訊平台疑遭監控。
         </div>
       </a>
 
-      <a href="reports/2026-06-19.html#geo" class="cat-block geo">
+      <a href="reports/2026-06-20.html#taiwan" class="cat-block taiwan">
+        <div class="cat-label taiwan">台海觀察</div>
+        <div class="cat-title">中國東台灣執法行動持續；菲律賓國防部長遭定向制裁，統戰選前布局升溫</div>
+        <div class="cat-summary">
+          AEI 6 月 18 日最新報告確認台灣以東特別海洋執法已進入常態化，法律框架刻意模糊軍民界線。
+          中國制裁菲律賓國防部長 Teodoro 的定點施壓手法，被分析師視為對台制裁劇本預演。台灣國防預算僵局引發美方可信度警告，7 月休會前通過壓力升至臨界點。
+        </div>
+      </a>
+
+      <a href="reports/2026-06-20.html#geo" class="cat-block geo">
         <div class="cat-label geo">地緣政治</div>
-        <div class="cat-title">川習峰會確立管理貿易框架，習近平訪問平壤重申中朝戰略軸心</div>
+        <div class="cat-title">川習「管理貿易」框架科技管制不鬆綁；亞太盟友對美承諾信心降至 2022 年低點</div>
         <div class="cat-summary">
-          美中峰會後雙方成立「貿易委員會」管理非敏感商品，戰略競爭本質不變。
-          習近平 6 月 8-9 日訪問平壤與金正恩會面，為中朝友好條約 65 週年峰會，北京重申半島影響力。
-          APEC 蘇州聲明重申亞太自貿區路線圖，反制美國單邊主義。
+          WEF 揭示管理貿易細節：半導體、AI、量子運算明確排除在正常化之外，戰略脫鉤主軸不變。
+          香格里拉對話後調查顯示逾 60% 區域官員對美國印太承諾信心不足，各盟國國防預算壓力驟增。美國國會中國懷疑論立法加速推進，三法案進入參議院投票佇列。
         </div>
       </a>
 
-      <a href="reports/2026-06-19.html#energy" class="cat-block energy">
+      <a href="reports/2026-06-20.html#energy" class="cat-block energy">
         <div class="cat-label energy">能源經濟</div>
-        <div class="cat-title">布蘭特原油突破 $110，央行超級週五大決策，Fed 點陣圖鷹派轉向</div>
+        <div class="cat-title">央行超級週完結，英格蘭央行決策落地；Fed 點陣圖 17/18 委員看升息，2026 降息預期歸零</div>
         <div class="cat-summary">
-          Fed 新主席 Warsh 連四次維持 3.50–3.75%，但點陣圖暗示年內升息，市場「Higher for Longer」定價再升。
-          ECB 升息 25bp 至 2.25%；布蘭特 $110.12、WTI $106.65，伊朗/荷莫茲封鎖疑慮主導油價；日經 225 站上 66,934。
+          五大央行（BoC、ECB、BoJ、Fed、BoE）六月決策全部落定，政策路徑分歧格局確立。
+          Fed 17/18 委員判斷通膨風險上行，任何降息推遲至 2027–2028。EIA 上修布蘭特年均至 $95；亞洲 LNG 現貨月漲 15%，台灣能源成本承壓。
         </div>
       </a>
 
-      <a href="reports/2026-06-19.html" class="view-all-btn">
-        → 查閱 2026-06-19 完整態勢報告
+      <a href="reports/2026-06-20.html" class="view-all-btn">
+        → 查閱 2026-06-20 完整態勢報告
       </a>
     </div>
   </div>

@@ -1,638 +1,405 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>態勢日誌 SITUATION LOG</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0B1320;
-      --card: #141E30;
-      --text: #E8EDF4;
-      --geopolitics: #C9A14A;
-      --cyber: #5BC0BE;
-      --energy: #E07856;
-      --taiwan: #7C9EFF;
-      --spine-width: 260px;
-      --text-muted: #8A95A3;
-      --border: #1E2D42;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SIGINT BOARD — 每日全球資安、台海與地緣政治態勢報告">
+<title>SIGINT BOARD ｜ 全球態勢日報</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --sidebar:#08111f;--sidebar-w:270px;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+html{scroll-behavior:smooth;height:100%}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:var(--sans);font-size:18px;line-height:1.9;
+  min-height:100vh;display:flex;flex-direction:column;
+}
+body::after{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,
+    rgba(0,212,255,0.01) 3px,rgba(0,212,255,0.01) 4px);
+}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+/* ── SITE HEADER ── */
+#site-header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(6,10,20,0.96);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  height:64px;display:flex;align-items:center;
+  padding:0 1.5rem;gap:1.25rem;
+}
+#site-header::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,
+    transparent 0%,var(--c-cyan) 20%,
+    rgba(0,212,255,0.4) 50%,
+    var(--c-cyan) 80%,transparent 100%
+  );
+  box-shadow:0 0 20px rgba(0,212,255,0.3);
+}
+.site-logo{
+  font-family:var(--mono);font-weight:700;font-size:22px;
+  color:var(--c-cyan);text-shadow:0 0 14px rgba(0,212,255,0.8);
+  letter-spacing:0.08em;text-decoration:none;white-space:nowrap;flex-shrink:0;
+}
+.site-logo em{color:var(--text2);font-style:normal;font-weight:400}
+.hdr-div{width:1px;height:24px;background:var(--border);flex-shrink:0}
+.hdr-tagline{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  letter-spacing:0.04em;display:none;
+}
+.hdr-right{margin-left:auto;display:flex;align-items:center;gap:0.875rem}
+.hdr-date{font-family:var(--mono);font-size:13px;color:var(--text2)}
+#mob-btn{
+  display:none;
+  background:transparent;border:1px solid var(--border);
+  color:var(--text2);font-family:var(--mono);font-size:13px;
+  padding:0 14px;height:40px;border-radius:4px;cursor:pointer;
+  transition:all 0.2s;align-items:center;gap:0.5rem;
+}
+#mob-btn:hover{border-color:var(--c-cyan);color:var(--c-cyan)}
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Noto Sans TC', sans-serif;
-      display: flex;
-      min-height: 100vh;
-    }
+/* ── LAYOUT ── */
+#layout{display:flex;margin-top:64px;flex:1;min-height:calc(100vh - 64px)}
 
-    /* ── Date Spine / Timeline ── */
-    .date-spine {
-      position: fixed;
-      top: 0; left: 0;
-      width: var(--spine-width);
-      height: 100vh;
-      background: #0D1828;
-      border-right: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      z-index: 100;
-      overflow: hidden;
-    }
+/* ── SIDEBAR ── */
+#sidebar{
+  position:fixed;top:64px;left:0;
+  width:var(--sidebar-w);height:calc(100vh - 64px);
+  background:var(--sidebar);border-right:1px solid var(--border);
+  overflow-y:auto;overflow-x:hidden;
+  display:flex;flex-direction:column;z-index:50;
+  transition:transform 0.3s ease;
+}
+#sidebar::-webkit-scrollbar{width:3px}
+#sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sb-sec{padding:1.125rem 1rem}
+.sb-sec+.sb-sec{border-top:1px solid var(--border)}
+.sb-label{
+  font-family:var(--mono);font-size:10px;font-weight:700;
+  letter-spacing:0.2em;color:var(--text3);
+  margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem;
+}
+.sb-label::after{content:'';flex:1;height:1px;background:var(--border)}
 
-    .spine-header {
-      padding: 32px 24px 20px;
-      border-bottom: 1px solid var(--border);
-      flex-shrink: 0;
-    }
+/* Status grid */
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.5rem}
+.stat-cell{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:4px;padding:0.5rem 0.75rem;
+}
+.stat-cell .sl{font-family:var(--mono);font-size:10px;color:var(--text3);display:block;margin-bottom:1px;letter-spacing:0.1em}
+.stat-cell .sv{font-family:var(--mono);font-size:13px;font-weight:700}
+.sv.ok{color:var(--c-green)}.sv.wr{color:var(--warn)}.sv.sm{color:var(--text2);font-size:11px}
 
-    .spine-logo {
-      font-family: 'Courier New', monospace;
-      font-size: 9px;
-      color: var(--cyber);
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
+/* Date list */
+.date-list{list-style:none;display:flex;flex-direction:column;gap:0.3rem}
+.date-btn{
+  display:flex;align-items:center;justify-content:space-between;
+  width:100%;padding:0 1rem;height:44px;
+  background:transparent;border:1px solid transparent;
+  border-radius:5px;cursor:pointer;
+  font-family:var(--mono);font-size:14px;color:var(--text2);
+  text-align:left;transition:all 0.18s;gap:0.5rem;
+}
+.date-btn:hover{background:var(--card);border-color:var(--border);color:var(--text)}
+.date-btn.active{
+  background:rgba(0,212,255,0.1);border-color:var(--c-cyan);
+  color:var(--c-cyan);text-shadow:0 0 8px rgba(0,212,255,0.5);
+}
+.d-new{
+  font-size:9px;font-weight:700;letter-spacing:0.1em;
+  background:var(--c-cyan);color:var(--bg);
+  padding:1px 5px;border-radius:2px;
+}
+.d-arr{font-size:10px;opacity:0.5}
+.date-btn.active .d-arr{opacity:1}
 
-    .spine-title {
-      font-family: 'Noto Serif TC', serif;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.4;
-    }
+/* Coverage */
+.cov-list{display:flex;flex-direction:column;gap:0.375rem}
+.cov-row{display:flex;align-items:center;gap:0.625rem;font-family:var(--mono);font-size:12px;color:var(--text3)}
+.cov-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 
-    .spine-timeline {
-      flex: 1;
-      overflow-y: auto;
-      padding: 16px 0 24px;
-    }
+/* ── MAIN ── */
+#main{margin-left:var(--sidebar-w);flex:1;min-width:0}
+#content-area{min-height:calc(100vh - 64px)}
 
-    .spine-timeline::-webkit-scrollbar { width: 3px; }
-    .spine-timeline::-webkit-scrollbar-track { background: transparent; }
-    .spine-timeline::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+/* Loading / Error */
+.ld-state{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:60vh;gap:1.5rem;
+}
+.ld-spin{
+  width:40px;height:40px;border:2px solid var(--border);
+  border-top-color:var(--c-cyan);border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ld-txt{font-family:var(--mono);font-size:14px;color:var(--text3);letter-spacing:0.1em}
+.err-state{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:40vh;gap:0.75rem;
+  font-family:var(--mono);font-size:14px;color:var(--danger);
+}
 
-    /* Accordion nodes */
-    .timeline-node {
-      position: relative;
-      padding-left: 24px;
-    }
+/* ════════════════════════════════════
+   REPORT CONTENT STYLES (mirrored)
+   ════════════════════════════════════ */
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{
+  content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px;
+}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;color:var(--text);line-height:1.5;margin-bottom:0.7rem}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
 
-    .timeline-node::before {
-      content: '';
-      position: absolute;
-      left: 12px;
-      top: 0;
-      bottom: 0;
-      width: 1px;
-      background: var(--border);
-    }
-
-    .node-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 20px 10px 0;
-      cursor: pointer;
-      user-select: none;
-      position: relative;
-    }
-
-    .node-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--text-muted);
-      border: 1px solid var(--border);
-      flex-shrink: 0;
-      position: absolute;
-      left: -28px;
-      transition: all 0.2s;
-    }
-
-    .timeline-node.active .node-dot {
-      background: var(--cyber);
-      box-shadow: 0 0 8px var(--cyber);
-      width: 10px;
-      height: 10px;
-      left: -29px;
-    }
-
-    .node-date {
-      font-family: 'Courier New', monospace;
-      font-size: 12px;
-      color: var(--text-muted);
-      letter-spacing: 0.06em;
-      transition: color 0.2s;
-    }
-
-    .timeline-node.active .node-date {
-      color: var(--text);
-    }
-
-    .node-toggle {
-      margin-left: auto;
-      font-family: 'Courier New', monospace;
-      font-size: 12px;
-      color: var(--text-muted);
-      transition: transform 0.25s;
-    }
-
-    .timeline-node.open .node-toggle {
-      transform: rotate(90deg);
-    }
-
-    .node-content {
-      display: none;
-      padding: 4px 0 16px 0;
-    }
-
-    .timeline-node.open .node-content {
-      display: block;
-    }
-
-    .node-link {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 12px 6px 0;
-      text-decoration: none;
-      font-size: 11px;
-      color: var(--text-muted);
-      transition: color 0.2s;
-      border-radius: 3px;
-    }
-
-    .node-link:hover { color: var(--text); }
-
-    .node-link-dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .node-link-dot.taiwan  { background: var(--taiwan); }
-    .node-link-dot.cyber   { background: var(--cyber); }
-    .node-link-dot.geo     { background: var(--geopolitics); }
-    .node-link-dot.energy  { background: var(--energy); }
-
-    .node-link-label {
-      font-size: 10px;
-      color: inherit;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .node-full-link {
-      display: block;
-      margin-top: 8px;
-      padding: 6px 10px;
-      background: rgba(91,192,190,0.08);
-      border: 1px solid rgba(91,192,190,0.2);
-      border-radius: 3px;
-      font-family: 'Courier New', monospace;
-      font-size: 10px;
-      color: var(--cyber);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-      text-align: center;
-      transition: all 0.2s;
-      margin-right: 12px;
-    }
-
-    .node-full-link:hover {
-      background: rgba(91,192,190,0.15);
-    }
-
-    /* ── Main Content ── */
-    .main {
-      margin-left: var(--spine-width);
-      flex: 1;
-      padding: 60px 56px 80px;
-    }
-
-    .hero {
-      margin-bottom: 64px;
-    }
-
-    .hero-eyebrow {
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      color: var(--cyber);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .hero-title {
-      font-family: 'Noto Serif TC', serif;
-      font-size: 48px;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.15;
-      letter-spacing: 0.02em;
-      margin-bottom: 12px;
-    }
-
-    .hero-sub {
-      font-family: 'Noto Serif TC', serif;
-      font-size: 20px;
-      color: var(--text-muted);
-      letter-spacing: 0.08em;
-      margin-bottom: 24px;
-    }
-
-    .hero-desc {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.8;
-      max-width: 600px;
-      border-left: 3px solid var(--border);
-      padding-left: 16px;
-    }
-
-    .latest-section {
-      margin-bottom: 64px;
-    }
-
-    .section-label {
-      font-family: 'Courier New', monospace;
-      font-size: 10px;
-      color: var(--text-muted);
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
-    .latest-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 32px 36px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-    }
-
-    .latest-card-header {
-      grid-column: 1 / -1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
-    }
-
-    .latest-date {
-      font-family: 'Courier New', monospace;
-      font-size: 13px;
-      color: var(--cyber);
-      letter-spacing: 0.08em;
-    }
-
-    .latest-badge {
-      font-family: 'Courier New', monospace;
-      font-size: 9px;
-      letter-spacing: 0.12em;
-      padding: 3px 10px;
-      border-radius: 2px;
-      background: rgba(91,192,190,0.1);
-      color: var(--cyber);
-      border: 1px solid rgba(91,192,190,0.25);
-    }
-
-    .cat-block {
-      padding: 20px;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      text-decoration: none;
-      transition: all 0.2s;
-      display: block;
-    }
-
-    .cat-block:hover {
-      border-color: rgba(255,255,255,0.15);
-      background: rgba(255,255,255,0.02);
-    }
-
-    .cat-block.taiwan { border-left: 3px solid var(--taiwan); }
-    .cat-block.cyber  { border-left: 3px solid var(--cyber); }
-    .cat-block.geo    { border-left: 3px solid var(--geopolitics); }
-    .cat-block.energy { border-left: 3px solid var(--energy); }
-
-    .cat-label {
-      font-family: 'Courier New', monospace;
-      font-size: 9px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .cat-label.taiwan  { color: var(--taiwan); }
-    .cat-label.cyber   { color: var(--cyber); }
-    .cat-label.geo     { color: var(--geopolitics); }
-    .cat-label.energy  { color: var(--energy); }
-
-    .cat-title {
-      font-family: 'Noto Serif TC', serif;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 8px;
-      line-height: 1.5;
-    }
-
-    .cat-summary {
-      font-size: 12px;
-      color: var(--text-muted);
-      line-height: 1.7;
-    }
-
-    .view-all-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: rgba(91,192,190,0.08);
-      border: 1px solid rgba(91,192,190,0.25);
-      border-radius: 4px;
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      color: var(--cyber);
-      text-decoration: none;
-      letter-spacing: 0.08em;
-      transition: all 0.2s;
-      grid-column: 1 / -1;
-    }
-
-    .view-all-btn:hover {
-      background: rgba(91,192,190,0.15);
-    }
-
-    /* Stats row */
-    .stats-row {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 64px;
-    }
-
-    .stat-item {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 20px 28px;
-      flex: 1;
-      min-width: 150px;
-    }
-
-    .stat-label {
-      font-family: 'Courier New', monospace;
-      font-size: 9px;
-      color: var(--text-muted);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .stat-value {
-      font-family: 'Noto Serif TC', serif;
-      font-size: 28px;
-      font-weight: 700;
-    }
-
-    .stat-desc {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
-
-    /* About section */
-    .about-section {
-      border-top: 1px solid var(--border);
-      padding-top: 40px;
-    }
-
-    .about-text {
-      font-size: 12px;
-      color: var(--text-muted);
-      line-height: 1.8;
-      max-width: 680px;
-    }
-
-    .about-text strong {
-      color: var(--text);
-    }
-  </style>
+/* ── MOBILE ≤900px ── */
+@media(max-width:900px){
+  :root{--sidebar-w:0px}
+  #sidebar{transform:translateX(-270px);width:270px;box-shadow:4px 0 32px rgba(0,0,0,0.6)}
+  #sidebar.open{transform:translateX(0)}
+  #mob-btn{display:flex}
+  .hdr-tagline{display:none !important}
+  #main{margin-left:0}
+  #sb-ov{
+    display:none;position:fixed;inset:0;z-index:40;
+    background:rgba(0,0,0,0.55);backdrop-filter:blur(2px);
+  }
+  #sb-ov.on{display:block}
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){
+  .nc-tag{display:none}
+  .site-logo{font-size:19px}
+  .hdr-date{display:none}
+}
+@media(min-width:901px){
+  #sb-ov{display:none !important}
+  .hdr-tagline{display:block}
+}
+</style>
 </head>
 <body>
 
-<!-- ── Left Date Spine / Timeline ── -->
-<aside class="date-spine">
-  <div class="spine-header">
-    <div class="spine-logo">Daily Digest · Situation Log</div>
-    <div class="spine-title">態勢日誌<br>時間軸</div>
+<header id="site-header">
+  <span class="site-logo">SIGINT<em> // BOARD</em></span>
+  <div class="hdr-div"></div>
+  <span class="hdr-tagline">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</span>
+  <div class="hdr-right">
+    <span class="hdr-date" id="hdr-dt"></span>
+    <button id="mob-btn" aria-label="開啟日期導覽" onclick="toggleSB()">
+      &#9776; 日期
+    </button>
   </div>
-  <div class="spine-timeline" id="timeline">
+</header>
 
-    <!-- 2026-06-20 Node (active, open by default) -->
-    <div class="timeline-node active open" id="node-2026-06-20">
-      <div class="node-header" onclick="toggleNode('node-2026-06-20')">
-        <span class="node-dot"></span>
-        <span class="node-date">2026-06-20</span>
-        <span class="node-toggle">▶</span>
-      </div>
-      <div class="node-content">
-        <a href="reports/2026-06-20.html#cyber" class="node-link">
-          <span class="node-link-dot cyber"></span>
-          <span class="node-link-label">網路資安 · Cisco SD-WAN CVE-2026-20245 / 非俄勒索超越俄系</span>
-        </a>
-        <a href="reports/2026-06-20.html#taiwan" class="node-link">
-          <span class="node-link-dot taiwan"></span>
-          <span class="node-link-label">台海觀察 · 中國東台灣執法 / 菲律賓部長遭制裁</span>
-        </a>
-        <a href="reports/2026-06-20.html#geo" class="node-link">
-          <span class="node-link-dot geo"></span>
-          <span class="node-link-label">地緣政治 · 川習科技管制分歧 / 盟友信心指數下降</span>
-        </a>
-        <a href="reports/2026-06-20.html#energy" class="node-link">
-          <span class="node-link-dot energy"></span>
-          <span class="node-link-label">能源經濟 · 央行超級週收官 · BoE · 布蘭特 $110</span>
-        </a>
-        <a href="reports/2026-06-20.html" class="node-full-link">→ 查閱完整報告</a>
+<div id="sb-ov" onclick="closeSB()"></div>
+
+<div id="layout">
+
+  <nav id="sidebar" aria-label="日期導覽">
+
+    <div class="sb-sec">
+      <div class="sb-label">系統狀態</div>
+      <div class="stat-grid">
+        <div class="stat-cell"><span class="sl">FEED</span><span class="sv ok">LIVE</span></div>
+        <div class="stat-cell"><span class="sl">SOURCE</span><span class="sv ok">OK</span></div>
+        <div class="stat-cell"><span class="sl">TZ</span><span class="sv sm">Asia/Taipei</span></div>
+        <div class="stat-cell"><span class="sl">AI</span><span class="sv wr">AUTO</span></div>
       </div>
     </div>
 
-    <!-- 2026-06-19 Node -->
-    <div class="timeline-node" id="node-2026-06-19">
-      <div class="node-header" onclick="toggleNode('node-2026-06-19')">
-        <span class="node-dot"></span>
-        <span class="node-date">2026-06-19</span>
-        <span class="node-toggle">▶</span>
-      </div>
-      <div class="node-content">
-        <a href="reports/2026-06-19.html#taiwan" class="node-link">
-          <span class="node-link-dot taiwan"></span>
-          <span class="node-link-label">台海觀察 · 中國東台灣海洋執法 / 預算危機</span>
-        </a>
-        <a href="reports/2026-06-19.html#cyber" class="node-link">
-          <span class="node-link-dot cyber"></span>
-          <span class="node-link-label">網路資安 · 209 CVE / HTTP.sys CVSS 9.8</span>
-        </a>
-        <a href="reports/2026-06-19.html#geo" class="node-link">
-          <span class="node-link-dot geo"></span>
-          <span class="node-link-label">地緣政治 · 川習峰會管理貿易 / 習訪平壤</span>
-        </a>
-        <a href="reports/2026-06-19.html#energy" class="node-link">
-          <span class="node-link-dot energy"></span>
-          <span class="node-link-label">能源經濟 · Fed 3.50–3.75% · 布蘭特 $110</span>
-        </a>
-        <a href="reports/2026-06-19.html" class="node-full-link">→ 查閱完整報告</a>
+    <div class="sb-sec" style="flex:1">
+      <div class="sb-label">歷史報告</div>
+      <ul class="date-list" id="date-list" role="list"></ul>
+    </div>
+
+    <div class="sb-sec">
+      <div class="sb-label">情報分類</div>
+      <div class="cov-list">
+        <div class="cov-row"><span class="cov-dot" style="background:var(--c-cyan)"></span>網路資安 &amp; CVE</div>
+        <div class="cov-row"><span class="cov-dot" style="background:var(--c-orange)"></span>台海觀察</div>
+        <div class="cov-row"><span class="cov-dot" style="background:var(--c-purple)"></span>地緣政治</div>
+        <div class="cov-row"><span class="cov-dot" style="background:var(--c-green)"></span>能源經濟</div>
       </div>
     </div>
 
-  </div>
-</aside>
-
-<!-- ── Main Content ── -->
-<main class="main">
-
-  <div class="hero">
-    <div class="hero-eyebrow">GLOBAL SECURITY &amp; GEOPOLITICAL INTELLIGENCE DIGEST</div>
-    <h1 class="hero-title">態勢日誌</h1>
-    <div class="hero-sub">SITUATION LOG</div>
-    <p class="hero-desc">
-      中高階分析師每日態勢簡報。整合全球網路資安威脅情報、台海軍事動態、
-      地緣政治發展與能源經濟指標，每日生成可操作的分析摘要。
-      左側時間軸為歷史檔案索引，最新節點預設展開。
-    </p>
-  </div>
-
-  <!-- Stats Row -->
-  <div class="stats-row">
-    <div class="stat-item">
-      <div class="stat-label">報告期數</div>
-      <div class="stat-value" style="color: var(--cyber);">002</div>
-      <div class="stat-desc">自 2026-06-19 起刊</div>
+    <div class="sb-sec" style="padding-top:0.75rem;padding-bottom:0.75rem">
+      <p style="font-family:var(--mono);font-size:11px;color:var(--text3);line-height:1.7">
+        AI 自動生成 · 僅供參考<br>非投資或資安建議
+      </p>
     </div>
-    <div class="stat-item">
-      <div class="stat-label">活躍 KEV 漏洞</div>
-      <div class="stat-value" style="color: var(--cyber);">CVE</div>
-      <div class="stat-desc">Cisco SD-WAN root 提權在野利用</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-label">台海威脅等級</div>
-      <div class="stat-value" style="color: var(--taiwan);">HIGH</div>
-      <div class="stat-desc">執法行動 + 統戰選前布局</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-label">布蘭特原油</div>
-      <div class="stat-value" style="color: var(--energy);">$110</div>
-      <div class="stat-desc">伊朗風險 · LNG 亞洲現貨急漲 +15%</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-label">Fed 利率展望</div>
-      <div class="stat-value" style="color: var(--geopolitics);">↑ 鷹</div>
-      <div class="stat-desc">點陣圖翻轉，17/18 委員看升息</div>
-    </div>
-  </div>
 
-  <!-- Latest Report -->
-  <div class="latest-section">
-    <div class="section-label">最新報告 · 2026-06-20</div>
+  </nav>
 
-    <div class="latest-card">
-      <div class="latest-card-header">
-        <span class="latest-date">2026-06-20T00:00:00+08:00</span>
-        <span class="latest-badge">LATEST BRIEF</span>
+  <main id="main" role="main" aria-live="polite" aria-label="每日態勢報告">
+    <div id="content-area">
+      <div class="ld-state">
+        <div class="ld-spin"></div>
+        <span class="ld-txt">LOADING INTEL FEED...</span>
       </div>
-
-      <a href="reports/2026-06-20.html#cyber" class="cat-block cyber">
-        <div class="cat-label cyber">網路資安</div>
-        <div class="cat-title">Cisco SD-WAN Manager 零時差 Root 提權在野利用；非俄勒索集團首度超越俄系</div>
-        <div class="cat-summary">
-          CVE-2026-20245（Cisco SD-WAN Manager）列入 CISA KEV，聯邦機構 72 小時緊急修補令。
-          F5 NGINX HTTP/3 QUIC use-after-free PoC 流出；2026 H1 報告確認非俄羅斯勒索集團數量首度超越俄系，全球化結構性轉變確立。AI 輔助攻擊成攻擊主流，法國 Tchap 政府通訊平台疑遭監控。
-        </div>
-      </a>
-
-      <a href="reports/2026-06-20.html#taiwan" class="cat-block taiwan">
-        <div class="cat-label taiwan">台海觀察</div>
-        <div class="cat-title">中國東台灣執法行動持續；菲律賓國防部長遭定向制裁，統戰選前布局升溫</div>
-        <div class="cat-summary">
-          AEI 6 月 18 日最新報告確認台灣以東特別海洋執法已進入常態化，法律框架刻意模糊軍民界線。
-          中國制裁菲律賓國防部長 Teodoro 的定點施壓手法，被分析師視為對台制裁劇本預演。台灣國防預算僵局引發美方可信度警告，7 月休會前通過壓力升至臨界點。
-        </div>
-      </a>
-
-      <a href="reports/2026-06-20.html#geo" class="cat-block geo">
-        <div class="cat-label geo">地緣政治</div>
-        <div class="cat-title">川習「管理貿易」框架科技管制不鬆綁；亞太盟友對美承諾信心降至 2022 年低點</div>
-        <div class="cat-summary">
-          WEF 揭示管理貿易細節：半導體、AI、量子運算明確排除在正常化之外，戰略脫鉤主軸不變。
-          香格里拉對話後調查顯示逾 60% 區域官員對美國印太承諾信心不足，各盟國國防預算壓力驟增。美國國會中國懷疑論立法加速推進，三法案進入參議院投票佇列。
-        </div>
-      </a>
-
-      <a href="reports/2026-06-20.html#energy" class="cat-block energy">
-        <div class="cat-label energy">能源經濟</div>
-        <div class="cat-title">央行超級週完結，英格蘭央行決策落地；Fed 點陣圖 17/18 委員看升息，2026 降息預期歸零</div>
-        <div class="cat-summary">
-          五大央行（BoC、ECB、BoJ、Fed、BoE）六月決策全部落定，政策路徑分歧格局確立。
-          Fed 17/18 委員判斷通膨風險上行，任何降息推遲至 2027–2028。EIA 上修布蘭特年均至 $95；亞洲 LNG 現貨月漲 15%，台灣能源成本承壓。
-        </div>
-      </a>
-
-      <a href="reports/2026-06-20.html" class="view-all-btn">
-        → 查閱 2026-06-20 完整態勢報告
-      </a>
     </div>
-  </div>
+  </main>
 
-  <div class="about-section">
-    <div class="section-label">關於本刊</div>
-    <p class="about-text">
-      <strong>態勢日誌 Situation Log</strong> 每日自動彙整全球開源情報（OSINT），
-      涵蓋網路資安威脅（CVE、APT、勒索軟體）、台海軍事動態、
-      亞太地緣政治、及全球能源與金融市場指標，
-      以中高階分析師作戰室簡報為定位，採嚴格深色主題視覺設計。
-      所有內容基於公開來源，不代表任何政府或機構立場。
-    </p>
-  </div>
-
-</main>
+</div>
 
 <script>
-  function toggleNode(id) {
-    const node = document.getElementById(id);
-    if (!node) return;
-    const isOpen = node.classList.contains('open');
-    // Close all nodes
-    document.querySelectorAll('.timeline-node').forEach(function(n) {
-      n.classList.remove('open');
+(function(){
+  var REPORTS = [
+    '2026-06-20',
+    '2026-06-19'
+  ];
+
+  var current = null;
+
+  /* Build date list */
+  var list = document.getElementById('date-list');
+  REPORTS.forEach(function(d, i){
+    var li = document.createElement('li');
+    var btn = document.createElement('button');
+    btn.className = 'date-btn';
+    btn.dataset.date = d;
+    btn.setAttribute('aria-label', '載入 ' + d + ' 報告');
+    btn.innerHTML = '<span>' + d + '</span>' +
+      (i === 0 ? '<span class="d-new">NEW</span>' : '<span class="d-arr">→</span>');
+    btn.addEventListener('click', function(){ loadReport(d); if(window.innerWidth <= 900) closeSB(); });
+    li.appendChild(btn);
+    list.appendChild(li);
+  });
+
+  function setActive(d){
+    document.querySelectorAll('.date-btn').forEach(function(b){
+      b.classList.toggle('active', b.dataset.date === d);
     });
-    // Open clicked node if it was closed
-    if (!isOpen) {
-      node.classList.add('open');
+    var hdt = document.getElementById('hdr-dt');
+    if(hdt) hdt.textContent = d;
+  }
+
+  async function loadReport(d){
+    if(current === d) return;
+    current = d;
+    setActive(d);
+    var area = document.getElementById('content-area');
+    area.innerHTML = '<div class="ld-state"><div class="ld-spin"></div><span class="ld-txt">LOADING ' + d + '...</span></div>';
+    try{
+      var res = await fetch('reports/' + d + '.html');
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      var html = await res.text();
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(html, 'text/html');
+      var art = doc.getElementById('report-content');
+      if(art){
+        area.innerHTML = art.innerHTML;
+      } else {
+        var hdr = doc.querySelector('.stn-header');
+        if(hdr) hdr.remove();
+        area.innerHTML = doc.body.innerHTML;
+      }
+      window.scrollTo({top:0,behavior:'smooth'});
+    } catch(e){
+      area.innerHTML = '<div class="err-state"><span>⚠ 載入失敗：' + e.message + '</span><span style="font-size:12px;color:var(--text3)">請重新整理或選擇其他日期</span></div>';
     }
   }
-</script>
 
+  window.toggleSB = function(){
+    var s = document.getElementById('sidebar');
+    var o = document.getElementById('sb-ov');
+    var open = s.classList.contains('open');
+    s.classList.toggle('open', !open);
+    o.classList.toggle('on', !open);
+  };
+  window.closeSB = function(){
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('sb-ov').classList.remove('on');
+  };
+
+  if(REPORTS.length) loadReport(REPORTS[0]);
+})();
+</script>
 </body>
 </html>

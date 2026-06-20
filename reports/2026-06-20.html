@@ -1,562 +1,386 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>態勢日誌 2026-06-20</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0B1320;
-      --panel: #141E30;
-      --text: #E8EDF4;
-      --cyber: #5BC0BE;
-      --geo: #C9A14A;
-      --energy: #E07856;
-      --taiwan: #7C9EFF;
-      --muted: #8899aa;
-      --border: #1e2d45;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-size: 16px;
-      font-family: 'Noto Sans TC', sans-serif;
-      min-height: 100vh;
-    }
-    .layout { display: flex; min-height: 100vh; }
-
-    /* ── Date Spine ── */
-    .date-spine {
-      width: 220px;
-      flex-shrink: 0;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow-y: auto;
-      background: var(--panel);
-      padding: 1.5rem 1rem;
-      border-right: 1px solid var(--border);
-    }
-    .spine-logo {
-      font-family: 'Courier New', monospace;
-      font-size: 0.7rem;
-      color: var(--cyber);
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      margin-bottom: 0.6rem;
-    }
-    .spine-date {
-      font-family: 'Courier New', monospace;
-      font-size: 0.9rem;
-      color: var(--text);
-      font-weight: bold;
-      margin-bottom: 1.4rem;
-    }
-    .spine-nav-label {
-      font-family: 'Noto Sans TC', sans-serif;
-      font-size: 0.72rem;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-    }
-    .spine-link {
-      display: flex;
-      align-items: center;
-      padding: 0.45rem 0.6rem;
-      border-radius: 4px;
-      font-size: 0.85rem;
-      text-decoration: none;
-      margin-bottom: 0.3rem;
-      transition: background 0.15s;
-      min-height: 36px;
-      line-height: 1.4;
-    }
-    .spine-link:hover { background: #1a2840; }
-    .spine-link.cyber  { color: var(--cyber);  border-left: 3px solid var(--cyber); }
-    .spine-link.taiwan { color: var(--taiwan); border-left: 3px solid var(--taiwan); }
-    .spine-link.geo    { color: var(--geo);    border-left: 3px solid var(--geo); }
-    .spine-link.energy { color: var(--energy); border-left: 3px solid var(--energy); }
-    .spine-home {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 1.4rem;
-      padding: 0.5rem 0.6rem;
-      background: #1a2840;
-      border-radius: 4px;
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.82rem;
-      min-height: 36px;
-    }
-    .spine-home:hover { background: #213050; color: var(--text); }
-
-    /* ── Main ── */
-    .main { flex: 1; padding: 2rem 2.5rem; max-width: 960px; }
-    .site-title {
-      font-family: 'Noto Serif TC', serif;
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 0.3rem;
-      color: var(--text);
-    }
-    .site-sub {
-      font-family: 'Courier New', monospace;
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-bottom: 2rem;
-      letter-spacing: 0.08em;
-    }
-
-    /* ── Cards ── */
-    .cards-grid { display: flex; flex-direction: column; gap: 1.5rem; }
-    .card {
-      background: var(--panel);
-      border-radius: 6px;
-      padding: 1.5rem 1.8rem;
-      border-left: 4px solid;
-    }
-    .card.cyber  { border-color: var(--cyber); }
-    .card.taiwan { border-color: var(--taiwan); }
-    .card.geo    { border-color: var(--geo); }
-    .card.energy { border-color: var(--energy); }
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 1.2rem;
-      padding-bottom: 0.7rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .card-icon {
-      width: 8px; height: 8px;
-      border-radius: 50%; flex-shrink: 0;
-    }
-    .card.cyber  .card-icon { background: var(--cyber); }
-    .card.taiwan .card-icon { background: var(--taiwan); }
-    .card.geo    .card-icon { background: var(--geo); }
-    .card.energy .card-icon { background: var(--energy); }
-    .card h2 {
-      font-family: 'Noto Serif TC', serif;
-      font-size: 1.3rem;
-      font-weight: 700;
-    }
-    .card.cyber  h2 { color: var(--cyber); }
-    .card.taiwan h2 { color: var(--taiwan); }
-    .card.geo    h2 { color: var(--geo); }
-    .card.energy h2 { color: var(--energy); }
-    .card-badge {
-      margin-left: auto;
-      font-family: 'Courier New', monospace;
-      font-size: 0.72rem;
-      color: var(--muted);
-      letter-spacing: 0.08em;
-    }
-    .item {
-      margin-bottom: 1.2rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .item-title {
-      font-family: 'Noto Sans TC', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 500;
-      margin-bottom: 0.4rem;
-      line-height: 1.5;
-    }
-    .item-body {
-      font-family: 'Noto Sans TC', sans-serif;
-      font-size: 0.95rem;
-      line-height: 1.8;
-      color: #c8d4e0;
-      margin-bottom: 0.4rem;
-    }
-    .item-source {
-      font-family: 'Noto Sans TC', sans-serif;
-      font-size: 0.82rem;
-      color: var(--muted);
-    }
-    .cve {
-      font-family: 'Courier New', monospace;
-      font-size: 0.9rem;
-      color: var(--cyber);
-      background: #0d1a2a;
-      padding: 1px 5px;
-      border-radius: 3px;
-      display: inline-block;
-    }
-    .severity {
-      display: inline-block;
-      font-family: 'Courier New', monospace;
-      font-size: 0.75rem;
-      padding: 1px 6px;
-      border-radius: 3px;
-      margin-left: 4px;
-      font-weight: bold;
-    }
-    .severity.critical { background: #3d1010; color: #ff6b6b; border: 1px solid #8b2020; }
-    .severity.high     { background: #3d2610; color: #ffa54f; border: 1px solid #8b5a20; }
-    .date-stamp { font-family: 'Courier New', monospace; font-size: 0.85rem; color: #667788; }
-    .tag {
-      display: inline-block;
-      font-size: 0.72rem;
-      padding: 1px 7px;
-      border-radius: 10px;
-      margin-right: 4px;
-      margin-bottom: 4px;
-    }
-    .tag.apt        { background: #1a2540; color: var(--taiwan); border: 1px solid #2a3a60; }
-    .tag.ransomware { background: #2a1510; color: #ff8c69;       border: 1px solid #5a2510; }
-    .tag.zeroday    { background: #1a0a2a; color: #d0a0ff;       border: 1px solid #4a2a6a; }
-    .tag.patch      { background: #0a2a1a; color: #6ad4a0;       border: 1px solid #1a5a3a; }
-    .tag.military   { background: #1a1020; color: #c0a0e0;       border: 1px solid #4a3060; }
-    .tag.diplomatic { background: #2a2010; color: #d4b46a;       border: 1px solid #5a4010; }
-    .tag.trade      { background: #102a1a; color: #6ac4a0;       border: 1px solid #205a3a; }
-    .tag.energy-t   { background: #2a1a10; color: #e0945a;       border: 1px solid #5a3010; }
-    .tag.market     { background: #101a2a; color: #6ab0d4;       border: 1px solid #204060; }
-    .tag.ai         { background: #1a1a30; color: #a0b0ff;       border: 1px solid #3a3a80; }
-    .alert-bar {
-      background: #1a0a0a;
-      border: 1px solid #5a1a1a;
-      border-radius: 4px;
-      padding: 0.5rem 0.8rem;
-      margin-bottom: 1.2rem;
-      font-size: 0.82rem;
-      color: #ff8080;
-      font-family: 'Courier New', monospace;
-      letter-spacing: 0.04em;
-    }
-    .info-bar {
-      background: #0a1a2a;
-      border: 1px solid #1a4a5a;
-      border-radius: 4px;
-      padding: 0.5rem 0.8rem;
-      margin-bottom: 1.2rem;
-      font-size: 0.82rem;
-      color: #6ab4c8;
-      font-family: 'Courier New', monospace;
-      letter-spacing: 0.04em;
-    }
-
-    /* ── RWD ── */
-    @media (max-width: 1023px) {
-      .layout { flex-direction: column; }
-      .date-spine {
-        width: 100%; height: auto; position: relative;
-        display: flex; flex-wrap: wrap; align-items: center;
-        gap: 0.5rem; padding: 0.6rem 1rem;
-        border-right: none; border-bottom: 1px solid var(--border);
-      }
-      .spine-logo { margin-bottom: 0; }
-      .spine-date { margin-bottom: 0; margin-right: 0.5rem; }
-      .spine-nav-label { display: none; }
-      .spine-link { padding: 0.3rem 0.6rem; font-size: 0.8rem; min-height: 32px; }
-      .spine-home { margin-top: 0; padding: 0.3rem 0.8rem; min-height: 32px; font-size: 0.8rem; }
-      .main { padding: 1.5rem; }
-      .site-title { font-size: 1.8rem; }
-    }
-    @media (max-width: 767px) {
-      .date-spine { justify-content: space-between; padding: 0.5rem 1rem; }
-      .spine-date { font-size: 0.8rem; }
-      .main { padding: 1rem; }
-      .site-title { font-size: 1.5rem; }
-      .card { padding: 1rem; }
-      .card h2 { font-size: 1.1rem; }
-      .item-title { font-size: 0.95rem; }
-      .item-body { font-size: 0.9rem; }
-      .item-source { font-size: 0.78rem; }
-      .cve { font-size: 0.82rem; }
-      a { min-height: 44px; display: inline-flex; align-items: center; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>態勢日報 2026-06-20 ｜ SIGINT BOARD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:var(--sans);font-size:18px;line-height:1.9;
+  min-height:100vh;
+}
+body::after{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,
+    rgba(0,212,255,0.012) 3px,rgba(0,212,255,0.012) 4px);
+}
+.stn-header{
+  background:var(--surface);border-bottom:1px solid var(--border);
+  padding:1.25rem 2rem;position:relative;overflow:hidden;
+}
+.stn-header::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent 0%,var(--c-cyan) 15%,var(--c-cyan) 85%,transparent 100%);
+  box-shadow:0 0 16px var(--c-cyan);
+}
+.stn-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:0.75rem;
+}
+.stn-logo{
+  font-family:var(--mono);font-weight:700;font-size:22px;
+  color:var(--c-cyan);text-shadow:0 0 12px var(--c-cyan);
+  letter-spacing:0.08em;text-decoration:none;
+}
+.stn-logo em{color:var(--text2);font-style:normal;font-weight:400}
+.stn-meta{font-family:var(--mono);font-size:14px;color:var(--text3);text-align:right;line-height:1.6}
+.stn-meta .dt{display:block;color:var(--text2);font-size:16px}
+.stn-meta .ai-badge{
+  display:inline-block;background:rgba(239,68,68,0.15);
+  color:#fca5a5;border:1px solid #ef4444;
+  font-size:11px;font-weight:700;letter-spacing:0.15em;
+  padding:2px 8px;border-radius:2px;margin-top:4px;
+}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{
+  content:'';position:absolute;bottom:-1px;left:0;
+  width:90px;height:2px;border-radius:1px;
+}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;color:var(--text);line-height:1.5;margin-bottom:0.7rem}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .stn-header{padding:1rem}
+  .stn-logo{font-size:20px}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){
+  .nc-meta{gap:0.5rem}
+  .nc-tag{display:none}
+}
+</style>
 </head>
 <body>
-<div class="layout">
 
-  <!-- ── 左側日期脊柱 ── -->
-  <nav class="date-spine">
-    <div class="spine-logo">SITUATION LOG</div>
-    <div class="spine-date">2026-06-20</div>
-    <div class="spine-nav-label">本日分類</div>
-    <a href="#cyber"  class="spine-link cyber">⬡ 網路資安</a>
-    <a href="#taiwan" class="spine-link taiwan">⬡ 台海觀察</a>
-    <a href="#geo"    class="spine-link geo">⬡ 地緣政治</a>
-    <a href="#energy" class="spine-link energy">⬡ 能源經濟</a>
-    <a href="../index.html" class="spine-home">← 返回首頁</a>
-  </nav>
+<header class="stn-header">
+  <div class="stn-inner">
+    <a href="../index.html" class="stn-logo">SIGINT<em> // BOARD</em></a>
+    <div class="stn-meta">
+      <span class="dt">2026-06-20 &nbsp;（台灣時間）</span>
+      <span class="ai-badge">AI GENERATED</span>
+    </div>
+  </div>
+</header>
 
-  <!-- ── 主內容 ── -->
-  <main class="main">
-    <h1 class="site-title">態勢日誌 <span style="font-size:1rem;font-family:'Courier New',monospace;font-weight:400;">SITUATION LOG</span></h1>
-    <div class="site-sub">2026-06-20 &nbsp;·&nbsp; DAILY DIGEST &nbsp;·&nbsp; 全球資安與政經態勢報告</div>
+<main>
+<article id="report-content">
+<div class="rpt-wrap">
 
-    <div class="cards-grid">
+<!-- ════ CYBER ════ -->
+<section class="rpt-sec cyber">
+  <div class="sec-head">
+    <span class="sec-code">NET-SEC</span>
+    <h2 class="sec-title">網路資安</h2>
+  </div>
+  <div class="news-grid">
 
-      <!-- ══ 1. 網路資安 ══ -->
-      <div class="card cyber" id="cyber">
-        <div class="card-header">
-          <div class="card-icon"></div>
-          <h2>網路資安</h2>
-          <span class="card-badge">CYBERSECURITY · 5 ITEMS</span>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge critical">CRITICAL</span>
+        <span class="nc-tag">FortiGate ｜ 憑證外洩 ｜ 活躍攻擊</span>
+      </div>
+      <h3 class="nc-title">75,000 台 Fortinet FortiGate 設備管理員憑證遭大規模兜售</h3>
+      <p class="nc-body">
+        資安研究人員發現，網路犯罪組織正在地下論壇兜售通往逾 75,000 台 Fortinet FortiGate 設備的管理員憑證，涵蓋 VPN 介面與 Web 管理面板，據悉憑證仍為有效的最新資料，顯示滲透行動仍在持續進行中。受影響組織應立即稽核 VPN 存取日誌、強制重置特權帳戶密碼，並啟用多因素驗證以防止攻擊者藉此進行橫向移動擴大損失範圍。
+      </p>
+      <a href="https://www.cybersecurity-review.com/news-june-2026/" target="_blank" rel="noopener" class="nc-src">Cybersecurity Review</a>
+    </div>
 
-        <div class="alert-bar">⚠ 緊急行動：Cisco SD-WAN Manager CVE-2026-20245 確認遭在野利用，CISA 已要求所有聯邦機構 72 小時內完成修補；非俄羅斯勒索軟體集團首度超越俄系，全球威脅格局正式結構性轉變</div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge critical">CRITICAL</span>
+        <span class="nc-tag">CVE-2026-11645 ｜ Chrome V8 ｜ 零日 ｜ 野外利用</span>
+      </div>
+      <h3 class="nc-title">Chrome V8 引擎零日漏洞 CVE-2026-11645 已遭野外積極利用</h3>
+      <p class="nc-body">
+        Google 確認 Chrome 瀏覽器 V8 JavaScript 引擎中存在越界記憶體讀取漏洞（CVE-2026-11645），攻擊者可透過惡意網頁或廣告腳本在受害者裝置上執行任意程式碼，且已有野外利用案例被觀察到。所有使用 Chrome 或 Chromium 核心瀏覽器（Edge、Brave、Opera 等）的組織應立即套用最新安全更新，並評估是否臨時限制部分高風險環境的 JavaScript 執行。
+      </p>
+      <a href="https://thehackernews.com/" target="_blank" rel="noopener" class="nc-src">The Hacker News</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag zeroday">ZERO-DAY / KEV</span>
-            <span class="tag apt">ACTIVELY EXPLOITED</span>
-            Cisco SD-WAN Manager 零時差漏洞遭在野利用，可繞過驗證取得 root 執行權
-          </div>
-          <div class="item-body">
-            <span class="cve">CVE-2026-20245</span> <span class="severity critical">CRITICAL</span>：Cisco Catalyst SD-WAN Manager 存在未驗證 API 端點，攻擊者可在不提供任何憑證的情況下發送特製請求，觸發本地提權漏洞並取得 root 執行權限（Privilege Escalation to Root）。攻擊者一旦 root 進入，可完全操控受影響設備的路由策略、流量過濾規則，乃至側移至後端企業網路。<br><br>
-            CISA 已將此漏洞列入已知被利用漏洞目錄（KEV），並對所有聯邦民事行政機構（FCEB）發布緊急修補指令，要求 72 小時內完成修補。受影響版本：SD-WAN Manager 20.x 及以下；廠商已釋出 20.15.1 版本修補程式。
-          </div>
-          <div class="item-source">來源：Boston Institute of Analytics Cybersecurity Weekly June 6–12 2026、CISA KEV Catalog &nbsp;·&nbsp; <span class="date-stamp">2026-06-12</span></div>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge critical">CRITICAL</span>
+        <span class="nc-tag">CVE-2026-45657 ｜ CVSS 9.8 ｜ Windows Kernel RCE ｜ Patch Tuesday</span>
+      </div>
+      <h3 class="nc-title">微軟六月 Patch Tuesday：206 項漏洞，三個 CVSS 9.8 嚴重 RCE 需立即修補</h3>
+      <p class="nc-body">
+        微軟本月安全更新共修補 206 項漏洞，含 37 項「嚴重」等級。CVE-2026-45657（Windows Kernel RCE，CVSS 9.8）可讓未認證遠端攻擊者完全接管系統；CVE-2026-47291（HTTP.sys 整數溢位，CVSS 9.8）及 CVE-2026-42985（RDP 客戶端堆溢位）同達嚴重等級。Oracle 同期亦發布修補 243 項 CVE 的更新，本月為高負載修補周期，各組織應優先處理網際網路可及的服務元件。
+      </p>
+      <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/" target="_blank" rel="noopener" class="nc-src">CrowdStrike — Patch Tuesday 分析</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag zeroday">F5 / NGINX</span>
-            F5 修補 NGINX HTTP/3 QUIC 模組 Use-After-Free 漏洞，PoC 概念驗證已流出
-          </div>
-          <div class="item-body">
-            F5 針對 NGINX Open Source 兩枚重大漏洞釋出安全更新：其一為 HTTP/3 QUIC 模組 Use-After-Free 漏洞，可觸發遠端任意程式碼執行；其二為 HTTP/2 CONTINUATION 幀處理邏輯瑕疵，可被利用觸發記憶體耗盡（「HTTP/2 炸彈」變種），使高流量 Web 伺服器在數秒內停止回應。地下論壇已出現針對 QUIC 漏洞的概念驗證（PoC）程式碼，預計 72 小時內可能見到自動化掃描與利用嘗試。<br><br>
-            受影響範圍廣泛：使用 NGINX 1.27.x 以下並啟用 HTTP/3 實驗性功能的部署均應立即升級至 1.27.4 或停用 QUIC 監聽模組。
-          </div>
-          <div class="item-source">來源：Innovate Cybersecurity Top 10 News June 8 2026、Cybernews &nbsp;·&nbsp; <span class="date-stamp">2026-06-08</span></div>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge critical">CRITICAL</span>
+        <span class="nc-tag">CVE-2026-50751 ｜ Check Point VPN ｜ 積極利用</span>
+      </div>
+      <h3 class="nc-title">Check Point VPN 認證繞過漏洞 CVE-2026-50751 遭積極利用，緊急熱修補發布</h3>
+      <p class="nc-body">
+        Check Point 緊急發布 CVE-2026-50751 熱修補程式，該漏洞位於廢棄的 IKEv1 VPN 協議認證流程，攻擊者毋需有效憑證即可完全繞過認證進入企業內網，已有確認野外利用案例。製造業、醫療及政府部門的邊界設備應優先排程修補，建議同步停用 IKEv1 協議並遷移至更安全的 IKEv2 或現代 SSL VPN 方案。
+      </p>
+      <a href="https://blog.checkpoint.com/security/check-point-releases-important-hotfix-for-vulnerabilities-in-deprecated-ikev1-vpn-protocol/" target="_blank" rel="noopener" class="nc-src">Check Point Blog</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag ransomware">RANSOMWARE SHIFT</span>
-            2026 H1 勒索軟體態勢報告：非俄羅斯集團首度超越俄系，全球化趨勢確立
-          </div>
-          <div class="item-body">
-            Recorded Future、BlackFog、Securelist 三份獨立 H1 報告同步確認結構性轉變：2026 年將是非俄羅斯勒索軟體行為者超越俄系數量的首個完整年度，反映生態系的「去中心化」與快速全球化。主要觀察：<br><br>
-            &nbsp;· <strong>純勒索模式擴張</strong>：加密步驟被大量捨棄，攻擊者以「資料曝光威脅」換取贖款，降低技術門檻並規避備份復原防禦。<br>
-            &nbsp;· <strong>EDR Killer 標準化</strong>：85% 以上的 H1 案例在部署勒索載荷前使用商業 EDR Killer 工具，關鍵廠商包括 Defender-killer、SpyBoy 的後繼衍生工具。<br>
-            &nbsp;· <strong>AI 社交工程</strong>：生成式 AI 用於製造高度個人化釣魚郵件，繞過傳統行為分析過濾器，成功率提升約 3 倍。<br>
-            &nbsp;· 台灣高鐵、Foxconn、OpenAI 均列 5 月受害名單。
-          </div>
-          <div class="item-source">來源：Recorded Future Ransomware Tactics 2026、BlackFog State of Ransomware 2026、VikingCloud Statistics &nbsp;·&nbsp; <span class="date-stamp">2026-06</span></div>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge high">HIGH</span>
+        <span class="nc-tag">APT ｜ Salt Typhoon ｜ 中國國家級 ｜ 電信滲透</span>
+      </div>
+      <h3 class="nc-title">鹽颱風（Salt Typhoon）已滲透全球逾 80 國電信與關鍵基礎設施</h3>
+      <p class="nc-body">
+        資安研究機構 CybelAngel 最新報告揭示，中國 APT 組織「鹽颱風」滲透範圍已遠超早期估計，涵蓋 80 餘國的電信、交通及政府網路。同期 APT41 活動在 2025 年第一季爆增 113%，與美中貿易緊張高度相關；AI 驅動的全自主攻擊管道預計在 2026 年快速成熟，國家級情報行動與網路犯罪的界線正持續模糊化。
+      </p>
+      <a href="https://cybelangel.com/blog/cyber-espionage-apts/" target="_blank" rel="noopener" class="nc-src">CybelAngel</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag apt">APT / SUPPLY CHAIN</span>
-            美國防承包商因謊稱「完美資安評分」遭重罰 $50 萬，供應鏈誠信危機升溫
-          </div>
-          <div class="item-body">
-            一家美國國防承包商在政府資安審查前主動申報「完美安全評分」，審查後被揭發存在多項嚴重漏洞，遭司法部以《虛假申報法》（False Claims Act）起訴，罰款 50 萬美元並喪失未來競標資格。此案為美國政府強化「網路安全成熟度模型認證（CMMC）」後首批重大執法行動之一，顯示 DoD 供應鏈誠信稽核正全面收緊。<br><br>
-            分析師警告：隨 CMMC 2.0 全面上線，相關法律風險已擴散至所有 DIB（國防工業基地）供應商，台灣廠商與美方有國防業務往來者應自查合規狀態。
-          </div>
-          <div class="item-source">來源：Cybersecurity-Review.com News June 2026、SecurityWeek &nbsp;·&nbsp; <span class="date-stamp">2026-06</span></div>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge medium">MEDIUM</span>
+        <span class="nc-tag">政府通訊 ｜ 帳號劫持 ｜ 法國 Tchap</span>
+      </div>
+      <h3 class="nc-title">法國政府加密通訊平台 Tchap 遭入侵，帳號劫持後攻擊者滲透官方聊天室</h3>
+      <p class="nc-body">
+        法國當局確認，官方加密即時通訊服務 Tchap 遭攻擊者劫持一個帳號，並藉此存取多個公開聊天室，事件於 6 月 7 日曝光，調查仍在進行中。此事件引發對政府通訊安全架構的廣泛質疑；供應鏈式帳號劫持攻擊正成為針對歐洲政府的主流入侵手法，業界建議強制推行硬體安全金鑰（FIDO2）驗證取代密碼。
+      </p>
+      <a href="https://cybernews.com/security/servicenow-confirms-security-incident-data-breach/" target="_blank" rel="noopener" class="nc-src">Cybernews</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag ai">AI-ASSISTED</span>
-            <span class="tag apt">NATION-STATE</span>
-            中國對齊 APT 以 AI 強化供應鏈滲透；法國政府通訊平台 Tchap 遭監控疑慮
-          </div>
-          <div class="item-body">
-            Trend Micro 2026 Q1 美國公部門威脅報告指出，中國對齊行為者（標記為 APT41/Earth Preta 衍生群）已系統性採用大型語言模型生成混淆程式碼，並大量濫用合法雲端服務（GitHub Actions、OneDrive、Slack Webhook）作為 C2 通訊渠道，使傳統基於 IOC 的偵測率大幅下降。<br><br>
-            同期，法國 ANSSI 偵測到政府加密通訊平台 Tchap 出現不明異常流量，正評估是否遭國家級行為者植入側信道竊聽。若確認遭滲透，影響範圍將涵蓋法國各部會跨部門通訊，對歐盟聯合情報共享機制亦構成連帶風險。
-          </div>
-          <div class="item-source">來源：Trend Micro US Public Sector Under Siege Q1 2026、Boston Institute of Analytics June 2026 Weekly &nbsp;·&nbsp; <span class="date-stamp">2026-06-07</span></div>
-        </div>
+  </div>
+</section>
 
-      </div><!-- /cyber -->
+<!-- ════ TAIWAN ════ -->
+<section class="rpt-sec taiwan">
+  <div class="sec-head">
+    <span class="sec-code">STRAIT-WATCH</span>
+    <h2 class="sec-title">台海觀察</h2>
+  </div>
+  <div class="news-grid">
 
-      <!-- ══ 2. 台海觀察 ══ -->
-      <div class="card taiwan" id="taiwan">
-        <div class="card-header">
-          <div class="card-icon"></div>
-          <h2>台海觀察</h2>
-          <span class="card-badge">TAIWAN STRAIT · 4 ITEMS</span>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge warning">WARNING</span>
+        <span class="nc-tag">解放軍 ｜ 飛彈演習 ｜ LNG 設施 ｜ 能源打擊</span>
+      </div>
+      <h3 class="nc-title">解放軍公布飛彈打擊模擬影像，台灣 LNG 儲存設施標注為明確目標</h3>
+      <p class="nc-body">
+        美國企業研究所（AEI）6 月 5 日報告揭示，解放軍在「海峽雷霆 2025A」及「正義使命 2025」演習中公開發布飛彈打擊台灣液化天然氣儲存設施的模擬影像及目標地圖，並明確將「切斷電力供應」列入演練目標。此舉顯示解放軍已將台灣能源基礎設施定為首輪打擊的優先目標，目的在製造戰略性癱瘓效果，相關防護評估工作刻不容緩。
+      </p>
+      <a href="https://www.aei.org/articles/china-taiwan-update-june-5-2026/" target="_blank" rel="noopener" class="nc-src">AEI — China &amp; Taiwan Update</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag military">MARITIME ENFORCEMENT</span>
-            中國交通運輸部「特別海洋執法行動」最新動態：爭議水域執法已常態化
-          </div>
-          <div class="item-body">
-            AEI 6 月 18 日更新報告指出，中國交通運輸部東台灣「特別海洋執法行動」持續推進，其法律框架設計刻意模糊軍事行動與民事執法之界線。此行動同步挑戰日本與菲律賓正在進行的海洋邊界談判，北京藉由在重疊主張區進行強制性「保育執法」，阻礙三方達成正式劃界協議。<br><br>
-            戰略含義：在衝突或封鎖情境下，台灣以東（太平洋側）水域的海上通道掌控能力將是解放軍的首要目標，此行動可視為法律與運作上的事前預置。
-          </div>
-          <div class="item-source">來源：AEI China & Taiwan Update June 18, 2026 &nbsp;·&nbsp; <span class="date-stamp">2026-06-18</span></div>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge warning">WARNING</span>
+        <span class="nc-tag">解放軍 ｜ 封鎖演練 ｜ 歷史新高</span>
+      </div>
+      <h3 class="nc-title">台海演習跨越新門檻：港口封鎖模擬精密程度與協同規模達歷史新高</h3>
+      <p class="nc-body">
+        《外交家》雜誌分析指出，解放軍最新台海演習在港口封鎖場景的精密程度、跨軍種聯合作戰協同及執行能力上均有顯著躍升，多位分析師形容為「超越此前任何先例」。演習展示了對台灣主要商業港口實施多層次封鎖的能力提升，各方正密切評估其對台灣海上補給生命線的戰略威懾意涵及區域安全衝擊。
+      </p>
+      <a href="https://thediplomat.com/2026/01/chinas-taiwan-drills-are-crossing-a-new-line/" target="_blank" rel="noopener" class="nc-src">The Diplomat</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag diplomatic">CROSS-STRAIT</span>
-            北京制裁菲律賓國防部長 Teodoro，南海壓力戰術複製至台灣周邊
-          </div>
-          <div class="item-body">
-            中國於 6 月 11 日宣布制裁菲律賓國防部長 Gilberto Teodoro，以「損害中菲關係」為由，凍結其在華資產並禁止其中國境內業務往來。AEI 評估此制裁意在孤立馬科斯政府內的強硬派，將南海緊張局勢歸咎於「少數反華官員」，而非系統性的北京侵略。<br><br>
-            此精確定點制裁手法已被北京用於香港、立陶宛、澳大利亞等案例，對台灣的啟示在於：未來若爆發危機，台灣官員可能面臨類似的個人定向制裁，以拆解決策核心的凝聚力。
-          </div>
-          <div class="item-source">來源：AEI China & Taiwan Update June 18, 2026 &nbsp;·&nbsp; <span class="date-stamp">2026-06-11</span></div>
-        </div>
+  </div>
+</section>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag diplomatic">UNITED FRONT</span>
-            習近平接見台灣在野代表 — 民進黨批「統戰操作」，選前布局進入倒數
-          </div>
-          <div class="item-body">
-            習近平與台灣在野政治人士的會面（2016 年後首次）引發執政黨強烈批評，民進黨官員公開指出此舉是北京針對 2028 年總統大選的統戰預熱。北京的論述策略是以「交流」取代「施壓」的外部形象，分化台灣社會對中共意圖的警覺。<br><br>
-            情報評估：結合 11 月縣市長選舉周期，北京可能在近期擴大邀請地方政治人物訪中，搭配放鬆部分農漁產品採購限制以爭取民心，形成「軟硬兼施」的複合式影響力操作。
-          </div>
-          <div class="item-source">來源：AEI China & Taiwan Update June 12, 2026 &nbsp;·&nbsp; <span class="date-stamp">2026-06-12</span></div>
-        </div>
+<!-- ════ GEO ════ -->
+<section class="rpt-sec geo">
+  <div class="sec-head">
+    <span class="sec-code">GEO-POL</span>
+    <h2 class="sec-title">地緣政治</h2>
+  </div>
+  <div class="news-grid">
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag military">DEFENSE READINESS</span>
-            台灣 2026 國防預算陷入立院僵局，美方表達嚴重關切並發出可信度警告
-          </div>
-          <div class="item-body">
-            台灣在野黨聯盟持續杯葛 2026 年度總預算審查，國防項目削減幅度超出美方預期底線。AEI 分析師直接警告：在未能維持國防預算整體規模的情況下通過預算，將嚴重削弱台灣向美國盟邦展現「自我防衛意志」的公信力，進而影響華府評估台灣的戰略可靠性與後續軍售優先序排列。<br><br>
-            此僵局亦在美台年度國防工業會議前夕發生，時機敏感。AEI 呼籲台灣政黨應在 7 月立法院休會前完成預算審查，否則影響恐超出財政層面延伸至同盟互信。
-          </div>
-          <div class="item-source">來源：AEI China & Taiwan Update June 2026 系列 &nbsp;·&nbsp; <span class="date-stamp">2026-06-18</span></div>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge info">INFO</span>
+        <span class="nc-tag">香格里拉對話 ｜ 美中峰會 ｜ 外交緩和</span>
+      </div>
+      <h3 class="nc-title">2026 香格里拉對話：美中北京峰會後亞太外交基調明顯轉趨積極</h3>
+      <p class="nc-body">
+        2026 年香格里拉對話在美中北京峰會落幕後兩週登場，與會分析人士注意到雙方外交基調出現積極轉變，兩國均強調穩定關係對亞太整體安全的不可或缺性。然而，研究者警告此種表面緩和掩蓋了持續的戰略競爭，美中雙方均以「降低零和思維」為由，實際上在地區影響力爭奪及科技供應鏈管制上分毫未讓，台灣問題仍是最敏感的潛在衝突引爆點。
+      </p>
+      <a href="https://moderndiplomacy.eu/2026/06/04/2026-shangri-la-dialogue-why-stable-us-china-relations-are-vital-for-asia-pacific-security/" target="_blank" rel="noopener" class="nc-src">Modern Diplomacy</a>
+    </div>
 
-      </div><!-- /taiwan -->
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge high">HIGH</span>
+        <span class="nc-tag">東南亞 ｜ 民調 ｜ 聯盟重組 ｜ 戰略轉向</span>
+      </div>
+      <h3 class="nc-title">2026 東南亞調查：多數國家首度將中國列為首選合作夥伴，超越美國</h3>
+      <p class="nc-body">
+        最新「東南亞現狀調查」結果顯示，東南亞多數國家已將中國列為首選戰略夥伴並首度超越美國；川普政府的防務分擔要求及不可預測外交政策被該地區受訪者列為最大地緣政治隱患。分析人士指出，美國傳統印太盟友體系正面臨結構性離心，此趨勢對台灣安全保障的長期影響需高度關注，美國在亞太的聯盟管理面臨深層挑戰。
+      </p>
+      <a href="https://eastasiaforum.org/2026/03/14/asia-pacific-steps-up-as-us-order-falters/" target="_blank" rel="noopener" class="nc-src">East Asia Forum</a>
+    </div>
 
-      <!-- ══ 3. 地緣政治 ══ -->
-      <div class="card geo" id="geo">
-        <div class="card-header">
-          <div class="card-icon"></div>
-          <h2>地緣政治</h2>
-          <span class="card-badge">GEOPOLITICS · 4 ITEMS</span>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge high">HIGH</span>
+        <span class="nc-tag">南海 ｜ 台海 ｜ 軍事化 ｜ 43% 最高熱點</span>
+      </div>
+      <h3 class="nc-title">CSIS 調查：43% 分析師視南海為最高衝突熱點，美中島礁軍事化競爭持續升溫</h3>
+      <p class="nc-body">
+        美中兩國在麻六甲、呂宋等關鍵海峽及南沙、西沙、尖閣諸島的戰略競爭持續升溫，雙方海軍在爭議海域的近距接觸頻率明顯上升。CSIS「中國實力」專案最新調查顯示，43% 的安全分析師認為南海是中國最可能採取軍事行動的熱點，33% 指向台灣海峽，美中關係在現任政府任期內預料仍將維持「競爭常態、穩定為底線」的格局。
+      </p>
+      <a href="https://chinapower.csis.org/survey-experts-us-china-relations-2026/" target="_blank" rel="noopener" class="nc-src">CSIS — ChinaPower</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag trade">US-CHINA</span>
-            香格里拉後續：川習「管理貿易」框架細節曝光，戰略科技管制不在議程
-          </div>
-          <div class="item-body">
-            繼北京峰會成果後，WEF 分析揭示「貿易委員會」機制細節：主要覆蓋農業、輕工業等非敏感商品，雙方均明確將半導體、AI、量子運算及航太領域排除在貿易正常化框架之外。美國商務部出口管制清單（Entity List）維持不變，顯示戰略脫鉤路線不因外交回暖而改變。<br><br>
-            對台影響：台灣半導體供應鏈在美中「管理競爭」框架下的關鍵性地位將進一步凸顯，TSMC 在亞利桑那的產能擴張作為美國技術自主的戰略緩衝，北京可能以此作為談判槓桿。
-          </div>
-          <div class="item-source">來源：WEF China Trade Policy US Relations June 2026、China Briefing US-China Relations 2026 &nbsp;·&nbsp; <span class="date-stamp">2026-06-04</span></div>
-        </div>
+  </div>
+</section>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag diplomatic">XI-KIM</span>
-            習近平平壤峰會後評估：中朝重燃戰略軸心，俄朝武器合作受牽制
-          </div>
-          <div class="item-body">
-            6 月 8–9 日習金峰會被普遍解讀為北京對中朝關係的主動再定錨，時機點耐人尋味：俄朝因軍火合作條件分歧（含軍事人員派遣及核技術轉讓議題）關係出現裂縫，習此行部分目的在於確認中國對平壤的首要影響力。北京重申「半島無核化」立場的同時，刻意維持對朝制裁的模糊執行，以換取平壤在非對稱議題上的配合。<br><br>
-            對區域態勢的影響：此峰會可能壓縮北韓進行第七次核試爆的時間視窗，短期內半島軍事行動風險略降；但中長期而言，中國鞏固對平壤影響力將使美韓聯合嚇阻面臨更複雜的北京因素。
-          </div>
-          <div class="item-source">來源：S&P Global APAC Geopolitical Briefing Q2 2026、The Diplomat Asia Geopolitics &nbsp;·&nbsp; <span class="date-stamp">2026-06-09</span></div>
-        </div>
+<!-- ════ ECO ════ -->
+<section class="rpt-sec eco">
+  <div class="sec-head">
+    <span class="sec-code">ECO-ENERGY</span>
+    <h2 class="sec-title">能源經濟</h2>
+  </div>
+  <div class="news-grid">
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag diplomatic">SHANGRI-LA</span>
-            亞太盟邦對美承諾信心指數降至 2022 以來低點，自主防禦預算壓力驟增
-          </div>
-          <div class="item-body">
-            2026 香格里拉對話（5 月 29–31 日，新加坡）場邊調查顯示，受訪區域防務官員中逾 60% 認為美國在管理歐洲與中東危機的同時，無法維持原有印太嚇阻強度。美方代表在對話中雖重申盟友承諾，但明確要求所有盟邦將國防支出提升至 GDP 的 2.5% 以上，使日本、澳洲、菲律賓等盟國面臨更急切的預算擴增壓力，對台灣的隱性施壓尤為顯著。
-          </div>
-          <div class="item-source">來源：Modern Diplomacy Shangri-La 2026、S&P Global Asia-Pacific Q2 Geopolitical Outlook &nbsp;·&nbsp; <span class="date-stamp">2026-06-04</span></div>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge high">HIGH</span>
+        <span class="nc-tag">石油 ｜ 布蘭特原油 ｜ 霍爾木茲 ｜ 市場重定價</span>
+      </div>
+      <h3 class="nc-title">布蘭特原油五月至六月暴跌逾 $40：美伊和談預期與亞洲需求萎縮雙重衝擊</h3>
+      <p class="nc-body">
+        IEA 六月市場報告顯示，北海布蘭特原油從 5 月每桶約 107 美元高峰驟跌至 82 美元，跌幅超過 40 美元，主因美伊和平協議談判出現重大進展帶動霍爾木茲封鎖風險溢價消退，疊加亞洲能源需求受供應中斷衝擊後大幅萎縮。本次修正幅度為近年最大單月跌幅之一，全球能源市場正從短缺恐慌迅速轉向供過於求預期重新定價，相關能源股及貨幣匯率波動劇烈。
+      </p>
+      <a href="https://www.iea.org/reports/oil-market-report-june-2026" target="_blank" rel="noopener" class="nc-src">IEA — Oil Market Report</a>
+    </div>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag trade">TECH WAR</span>
-            國會山莊中國懷疑論立法加速推進，三法案六月週期進入參議院投票佇列
-          </div>
-          <div class="item-body">
-            儘管行政部門與北京達成「戰略穩定」共識，美國國會仍持續推進多項對華強硬立法：包括擴大投資中國科技公司限制範圍、更新「ICTS 供應鏈安全」審查框架，以及要求 TikTok 母公司 ByteDance 徹底剝離美國業務的最後執行令。China Briefing 分析指出，國會中的對華強硬共識跨越黨派，將在未來 12 至 18 個月持續為行政部門談判設定上限，使任何雙邊緩和政策均面臨立法層面的制衡。
-          </div>
-          <div class="item-source">來源：China Briefing US-China Relations 2026、ChinaPower CSIS Survey &nbsp;·&nbsp; <span class="date-stamp">2026-06</span></div>
-        </div>
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge high">HIGH</span>
+        <span class="nc-tag">ECB ｜ 升息 25bp ｜ 通膨 3.2% ｜ 政策逆轉</span>
+      </div>
+      <h3 class="nc-title">歐洲央行六月升息 25 基點至 2.25%，逆轉連續八次降息循環</h3>
+      <p class="nc-body">
+        歐洲央行管理委員會於 6 月 11 日宣布調升三項關鍵利率各 25 個基點，存款便利利率升至 2.25%，此舉標誌自 2023 年 9 月後首次重啟緊縮，徹底逆轉 2024 至 2025 年間連續八次降息的寬鬆周期。歐元區 5 月通膨率攀升至 3.2%，顯著超過 2% 目標，央行認為通膨壓力主要源自能源成本傳遞效應及薪資加速成長，短期難以回落至政策目標水準。
+      </p>
+      <a href="https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.en.html" target="_blank" rel="noopener" class="nc-src">歐洲央行官方聲明</a>
+    </div>
 
-      </div><!-- /geo -->
+    <div class="nc">
+      <div class="nc-meta">
+        <span class="badge critical">CRITICAL</span>
+        <span class="nc-tag">亞洲能源 ｜ 中日進口驟降 40% ｜ 聯準會僵局</span>
+      </div>
+      <h3 class="nc-title">中日原油進口驟降 40%，霍爾木茲危機瓦解全球央行政策協調</h3>
+      <p class="nc-body">
+        IEA 最新數據顯示，受霍爾木茲海峽危機影響，中國與日本原油進口量各自下降約 40%，合計短缺近 600 萬桶/日，亞洲股市已多次大幅回落。美聯準會 6 月 17 日利率決策因委員會成員在通膨vs.衰退風險的判斷上出現嚴重分歧（8 票對 4 票），無法形成有效共識，能源衝擊正瓦解全球主要央行政策協調基礎，亞太各國政府正緊急盤點戰略能源儲備應急方案。
+      </p>
+      <a href="https://fortune.com/2026/05/12/iran-war-asia-oil-shortage-brent-price-market-reaction/" target="_blank" rel="noopener" class="nc-src">Fortune</a>
+    </div>
 
-      <!-- ══ 4. 能源經濟 ══ -->
-      <div class="card energy" id="energy">
-        <div class="card-header">
-          <div class="card-icon"></div>
-          <h2>能源經濟</h2>
-          <span class="card-badge">ENERGY & MARKETS · 4 ITEMS</span>
-        </div>
+  </div>
+</section>
 
-        <div class="info-bar">ℹ 央行超級週收官（6/10–6/18）：五大央行決策全數落定，全球利率路徑分歧格局確立，亞洲資產定價面臨重新錨定</div>
+<footer class="disclaimer">
+  本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。<br>
+  <span style="color:var(--text3);font-size:12px">Generated by AI &nbsp;｜&nbsp; Report Date: 2026-06-20 &nbsp;｜&nbsp; SIGINT BOARD</span>
+</footer>
 
-        <div class="item">
-          <div class="item-title">
-            <span class="tag market">FED / BOE</span>
-            英格蘭央行 6 月 18 日決策落地，央行超級週完結：政策分歧格局確立
-          </div>
-          <div class="item-body">
-            英格蘭央行（BoE）6 月 18 日完成超級週最後一棒，為「央行超級週」（6/10–6/18）畫下句點。本週五大央行決策匯總：<br><br>
-            &nbsp;· 加拿大央行（6/10）：維持不變<br>
-            &nbsp;· ECB（6/11）：升息 25bp → 主再融資利率 2.40%<br>
-            &nbsp;· 日本央行（6/16）：維持 0.25%，措辭略趨鴿派<br>
-            &nbsp;· 美聯準會（6/17）：維持 3.50–3.75%，點陣圖轉為年內升息<br>
-            &nbsp;· 英格蘭央行（6/18）：完成最終決策<br><br>
-            政策路徑分歧（Fed 偏鷹 vs BoJ 偏鴿 vs ECB 升息）將推升美元強勢，對亞洲新興市場貨幣與外債償還能力形成壓力。
-          </div>
-          <div class="item-source">來源：Statistics of the World Central Bank Super Week June 2026、Finance Calendar ECB June 2026 &nbsp;·&nbsp; <span class="date-stamp">2026-06-18</span></div>
-        </div>
-
-        <div class="item">
-          <div class="item-title">
-            <span class="tag market">FED HAWKISH</span>
-            Fed 點陣圖「翻鷹」：17/18 委員預期通膨風險上行，2026 年降息預期歸零
-          </div>
-          <div class="item-body">
-            6 月 17 日 FOMC 決議細節進一步揭示：18 位委員中 17 位判斷通膨風險偏向上行，點陣圖中位數由「年內一次降息」轉為「年內一次升息」，並將任何降息預期推遲至 2027–2028 年。市場定價迅速反應：聯邦基金期貨顯示 2026 年底 4.00% 以上的概率已升至 38%。<br><br>
-            關鍵背景：新任主席 Warsh 首次主持 FOMC 即呈現強烈信號管理意圖，市場解讀其為對通膨的結構性擔憂而非短期干預，「Higher for Longer」定價邏輯已成共識。
-          </div>
-          <div class="item-source">來源：CNBC Fed Rate Decision June 17 2026、Advisor Perspectives dshort June 18 2026、StockTitan &nbsp;·&nbsp; <span class="date-stamp">2026-06-17</span></div>
-        </div>
-
-        <div class="item">
-          <div class="item-title">
-            <span class="tag energy-t">OIL / LNG</span>
-            布蘭特原油維持 $110 高位，EIA 上修全年均價預測；亞洲 LNG 現貨急漲
-          </div>
-          <div class="item-body">
-            EIA 6 月能源展望（STEO）將 2026 年布蘭特年均價格上修至 $95/桶（原預測 $82），為 2022 年以來最高年均值。現貨市場布蘭特收 $110.12、WTI $106.65，驅動因素為：<br><br>
-            &nbsp;· 川普對伊朗「迅速行動」警告觸發荷莫茲封鎖疑慮，波斯灣主要產油國已提前鎖定替代出口路線<br>
-            &nbsp;· 亞洲 LNG 現貨價格同步飆升，Energy Connects 報告顯示 JKM（日韓標準）現貨月漲幅超 15%<br>
-            &nbsp;· 台灣中油（CPC）、日本 JERA 已啟動應急現貨採購，對台灣電力成本與民生通膨形成上行壓力
-          </div>
-          <div class="item-source">來源：EIA June 2026 STEO、Energy Connects Asia LNG Outlook June 2026、CNBC Asia Markets &nbsp;·&nbsp; <span class="date-stamp">2026-06</span></div>
-        </div>
-
-        <div class="item">
-          <div class="item-title">
-            <span class="tag market">ASIA EQUITIES</span>
-            日經 225 衝上 66,934 歷史高點，AI 半導體需求持續撐漲；台股科技股承壓
-          </div>
-          <div class="item-body">
-            日本日經 225 站上 66,934 點（周漲 0.91%），AI 相關半導體需求強勁為主要驅動力；南韓 KOSPI 在油價上漲背景下逆勢創歷史新高，三星電子 HBM 出貨強勁為核心利多。澳洲 ASX 200 持平 8,729。<br><br>
-            Invesco 2026 年中展望預測，亞洲股市下半年將以北亞為領漲核心，AI 與半導體為主軸；但高油價（台灣能源 98% 依賴進口）、美元升值（壓縮出口商利潤率）及 Fed 升息預期三重壓力，已開始在外資資金流向中引發對台股科技部門的觀望情緒。
-          </div>
-          <div class="item-source">來源：CNBC Stock Market June 1 2026、Invesco Asia Equities 2026 Midyear Outlook、S&P Global Ratings APAC &nbsp;·&nbsp; <span class="date-stamp">2026-06-01</span></div>
-        </div>
-
-      </div><!-- /energy -->
-
-    </div><!-- /cards-grid -->
-  </main>
-
-</div><!-- /layout -->
+</div>
+</article>
+</main>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>態勢日報 2026-06-20 ｜ SIGINT BOARD</title>
+<title>Today Digest 2026-06-20</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,56 +18,19 @@
   --mono:'IBM Plex Mono','Courier New',monospace;
   --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
 }
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--text);
-  font-family:var(--sans);font-size:18px;line-height:1.9;
-  min-height:100vh;
-}
-body::after{
-  content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
-  background:repeating-linear-gradient(0deg,transparent,transparent 3px,
-    rgba(0,212,255,0.012) 3px,rgba(0,212,255,0.012) 4px);
-}
-.stn-header{
-  background:var(--surface);border-bottom:1px solid var(--border);
-  padding:1.25rem 2rem;position:relative;overflow:hidden;
-}
-.stn-header::after{
-  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,transparent 0%,var(--c-cyan) 15%,var(--c-cyan) 85%,transparent 100%);
-  box-shadow:0 0 16px var(--c-cyan);
-}
-.stn-inner{
-  max-width:1100px;margin:0 auto;
-  display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:0.75rem;
-}
-.stn-logo{
-  font-family:var(--mono);font-weight:700;font-size:22px;
-  color:var(--c-cyan);text-shadow:0 0 12px var(--c-cyan);
-  letter-spacing:0.08em;text-decoration:none;
-}
-.stn-logo em{color:var(--text2);font-style:normal;font-weight:400}
-.stn-meta{font-family:var(--mono);font-size:14px;color:var(--text3);text-align:right;line-height:1.6}
-.stn-meta .dt{display:block;color:var(--text2);font-size:16px}
-.stn-meta .ai-badge{
-  display:inline-block;background:rgba(239,68,68,0.15);
-  color:#fca5a5;border:1px solid #ef4444;
-  font-size:11px;font-weight:700;letter-spacing:0.15em;
-  padding:2px 8px;border-radius:2px;margin-top:4px;
-}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
 .rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
 .rpt-sec{margin-bottom:3.5rem}
 .sec-head{
   display:flex;align-items:center;gap:1rem;
   margin-bottom:1.75rem;padding-bottom:0.875rem;
   border-bottom:1px solid var(--border);position:relative;
 }
-.sec-head::after{
-  content:'';position:absolute;bottom:-1px;left:0;
-  width:90px;height:2px;border-radius:1px;
-}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
 .rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
 .rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
 .rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
@@ -123,6 +86,14 @@ body::after{
 }
 .nc-src::before{content:'↗';font-size:14px}
 .nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.nc-src-plain{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;
+}
+.nc-src-plain::before{content:'◈';font-size:14px}
 .rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
 .rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
 .rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
@@ -134,253 +105,212 @@ body::after{
 }
 @media(max-width:768px){
   .rpt-wrap{padding:1rem 1rem 3rem}
-  .stn-header{padding:1rem}
-  .stn-logo{font-size:20px}
   .sec-title{font-size:22px}
   .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
   .nc-title{font-size:19px}
 }
-@media(max-width:480px){
-  .nc-meta{gap:0.5rem}
-  .nc-tag{display:none}
-}
+@media(max-width:480px){.nc-tag{display:none}}
 </style>
 </head>
 <body>
-
-<header class="stn-header">
-  <div class="stn-inner">
-    <a href="../index.html" class="stn-logo">SIGINT<em> // BOARD</em></a>
-    <div class="stn-meta">
-      <span class="dt">2026-06-20 &nbsp;（台灣時間）</span>
-      <span class="ai-badge">AI GENERATED</span>
-    </div>
-  </div>
-</header>
-
-<main>
-<article id="report-content">
+<div id="report-content">
 <div class="rpt-wrap">
 
-<!-- ════ CYBER ════ -->
-<section class="rpt-sec cyber">
-  <div class="sec-head">
-    <span class="sec-code">NET-SEC</span>
-    <h2 class="sec-title">網路資安</h2>
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-06-20</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
   </div>
-  <div class="news-grid">
 
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge critical">CRITICAL</span>
-        <span class="nc-tag">FortiGate ｜ 憑證外洩 ｜ 活躍攻擊</span>
-      </div>
-      <h3 class="nc-title">75,000 台 Fortinet FortiGate 設備管理員憑證遭大規模兜售</h3>
-      <p class="nc-body">
-        資安研究人員發現，網路犯罪組織正在地下論壇兜售通往逾 75,000 台 Fortinet FortiGate 設備的管理員憑證，涵蓋 VPN 介面與 Web 管理面板，據悉憑證仍為有效的最新資料，顯示滲透行動仍在持續進行中。受影響組織應立即稽核 VPN 存取日誌、強制重置特權帳戶密碼，並啟用多因素驗證以防止攻擊者藉此進行橫向移動擴大損失範圍。
-      </p>
-      <a href="https://www.cybersecurity-review.com/news-june-2026/" target="_blank" rel="noopener" class="nc-src">Cybersecurity Review</a>
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
     </div>
+    <div class="news-grid">
 
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge critical">CRITICAL</span>
-        <span class="nc-tag">CVE-2026-11645 ｜ Chrome V8 ｜ 零日 ｜ 野外利用</span>
-      </div>
-      <h3 class="nc-title">Chrome V8 引擎零日漏洞 CVE-2026-11645 已遭野外積極利用</h3>
-      <p class="nc-body">
-        Google 確認 Chrome 瀏覽器 V8 JavaScript 引擎中存在越界記憶體讀取漏洞（CVE-2026-11645），攻擊者可透過惡意網頁或廣告腳本在受害者裝置上執行任意程式碼，且已有野外利用案例被觀察到。所有使用 Chrome 或 Chromium 核心瀏覽器（Edge、Brave、Opera 等）的組織應立即套用最新安全更新，並評估是否臨時限制部分高風險環境的 JavaScript 執行。
-      </p>
-      <a href="https://thehackernews.com/" target="_blank" rel="noopener" class="nc-src">The Hacker News</a>
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">PATCH TUESDAY</span>
+        </div>
+        <h3 class="nc-title">微軟 6 月 Patch Tuesday 修補 209 項漏洞，HTTP.sys 零時差 CVSS 9.8 遭積極利用</h3>
+        <p class="nc-body">微軟 2026 年 6 月 9 日發布安全更新，共修補 209 項漏洞，橫跨 24 個產品系列，今年累計 CVE 數量已突破 500。最高危漏洞 CVE-2026-47291 為 HTTP.sys 整數溢位及堆積緩衝區溢位，CVSS 9.8，未認證攻擊者可遠端執行任意程式碼。CVE-2026-42985 影響遠端桌面用戶端，同樣允許遠端執行程式碼，本月另含 3 個已公開零時差與 37 個重大等級修補。</p>
+        <a class="nc-src" href="https://www.tenable.com/blog/microsofts-june-2026-patch-tuesday-addresses-198-cves-cve-2026-49160-cve-2026-50507" target="_blank" rel="noopener">Tenable</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">ZERO-DAY</span>
+        </div>
+        <h3 class="nc-title">Cisco Catalyst SD-WAN CVE-2026-20245 零時差在野利用，認證用戶可提權至 root</h3>
+        <p class="nc-body">Cisco Catalyst SD-WAN Manager 存在高危零時差漏洞 CVE-2026-20245，已認證攻擊者可藉此提升至 root 權限並執行任意指令，目前仍無官方補丁。同期 HTTP/2 Bomb 攻擊手法被用於讓 Web 伺服器數秒內崩潰，世界糧食計劃署（WFP）也遭資料外洩，加薩家庭個資外流。</p>
+        <a class="nc-src" href="https://innovatecybersecurity.com/security-threat-advisory/top-10-cybersecurity-news-june-8-2026-http-2-bomb-crashes-web-servers-in-seconds-world-food-programme-breach-exposes-gaza-households-and-more/" target="_blank" rel="noopener">Innovate Cybersecurity</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">RANSOMWARE</span>
+        </div>
+        <h3 class="nc-title">2026 年勒索軟體廣泛標準化 EDR Killer，轉型純資料勒索模式，Q1 受害者逾 2,000 名</h3>
+        <p class="nc-body">2026 年勒索軟體組織已將「EDR Killer」工具列入標準攻擊流程，在加密前先癱瘓端點防護。部分組織完全放棄加密，轉採竊取資料並威脅公開的純勒索模式，降低操作複雜度並維持壓力。Q1 全球逾 70 個資料洩漏站點共列出 2,122 名新受害者，為史上第二高紀錄，Recorded Future 預測 2026 年將首度出現俄羅斯以外的新興勒索組織數量超越俄境內的情況。</p>
+        <a class="nc-src" href="https://www.cm-alliance.com/cybersecurity-blog/biggest-cyber-attacks-data-breaches-ransomware-attacks-of-may-2026" target="_blank" rel="noopener">CM-Alliance</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">APT / ESPIONAGE</span>
+        </div>
+        <h3 class="nc-title">新中國國家級 APT 組織針對非洲、中東與亞洲政府及大使館發動長期間諜行動</h3>
+        <p class="nc-body">研究人員揭露一個先前未記錄的中國國家級攻擊者，長期滲透非洲、中東及亞洲的政府機關、大使館與軍事單位。2026 年 APT 組織整體策略轉向靜默、戰略性滲透，結合 AI 輔助偵察、受信任系統濫用及供應鏈入侵三大手法；北韓 Lazarus 集團亦於 2 月透過 Safe{Wallet} 供應鏈攻擊竊取 15 億美元加密貨幣。</p>
+        <a class="nc-src" href="https://www.darkreading.com/cyberattacks-data-breaches/new-china-apt-strikes-precision-persistence" target="_blank" rel="noopener">Dark Reading</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">BROWSER / GOV</span>
+        </div>
+        <h3 class="nc-title">Google 修補 2026 年第五個 Chrome 零時差；法國政府通訊平台 Tchap 遭疑似定向滲透</h3>
+        <p class="nc-body">Google 修補今年第五個遭積極利用的 Chrome 瀏覽器零時差漏洞，瀏覽器攻擊面持續擴大。法國國家資安局（ANSSI）於 6 月 7 日偵測到政府專用通訊平台 Tchap 出現異常可疑活動，疑為針對政府內部通訊的定向滲透行動，調查仍在進行中。</p>
+        <span class="nc-src-plain">Boston Institute of Analytics / Cybersecurity Review</span>
+      </article>
+
     </div>
+  </section>
 
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge critical">CRITICAL</span>
-        <span class="nc-tag">CVE-2026-45657 ｜ CVSS 9.8 ｜ Windows Kernel RCE ｜ Patch Tuesday</span>
-      </div>
-      <h3 class="nc-title">微軟六月 Patch Tuesday：206 項漏洞，三個 CVSS 9.8 嚴重 RCE 需立即修補</h3>
-      <p class="nc-body">
-        微軟本月安全更新共修補 206 項漏洞，含 37 項「嚴重」等級。CVE-2026-45657（Windows Kernel RCE，CVSS 9.8）可讓未認證遠端攻擊者完全接管系統；CVE-2026-47291（HTTP.sys 整數溢位，CVSS 9.8）及 CVE-2026-42985（RDP 客戶端堆溢位）同達嚴重等級。Oracle 同期亦發布修補 243 項 CVE 的更新，本月為高負載修補周期，各組織應優先處理網際網路可及的服務元件。
-      </p>
-      <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/" target="_blank" rel="noopener" class="nc-src">CrowdStrike — Patch Tuesday 分析</a>
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
     </div>
+    <div class="news-grid">
 
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge critical">CRITICAL</span>
-        <span class="nc-tag">CVE-2026-50751 ｜ Check Point VPN ｜ 積極利用</span>
-      </div>
-      <h3 class="nc-title">Check Point VPN 認證繞過漏洞 CVE-2026-50751 遭積極利用，緊急熱修補發布</h3>
-      <p class="nc-body">
-        Check Point 緊急發布 CVE-2026-50751 熱修補程式，該漏洞位於廢棄的 IKEv1 VPN 協議認證流程，攻擊者毋需有效憑證即可完全繞過認證進入企業內網，已有確認野外利用案例。製造業、醫療及政府部門的邊界設備應優先排程修補，建議同步停用 IKEv1 協議並遷移至更安全的 IKEv2 或現代 SSL VPN 方案。
-      </p>
-      <a href="https://blog.checkpoint.com/security/check-point-releases-important-hotfix-for-vulnerabilities-in-deprecated-ikev1-vpn-protocol/" target="_blank" rel="noopener" class="nc-src">Check Point Blog</a>
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">NOTABLE</span>
+          <span class="nc-tag">兩岸外交</span>
+        </div>
+        <h3 class="nc-title">習近平會見台灣政界人士為 2016 年來首次，北京主動操作兩岸接觸形象</h3>
+        <p class="nc-body">習近平 2026 年與一名台灣政界人士會面，為 2016 年以來首次此類高層接觸，中共刻意對台灣民眾正面呈現此次跨海峽交流。分析人士指出，北京採取外交接觸塑造和平形象、同時在軍事與法律層面持續施壓的雙軌策略，此次會面的實質政治意涵仍需持續觀察。</p>
+        <a class="nc-src" href="https://www.aei.org/articles/china-taiwan-update-june-18-2026/" target="_blank" rel="noopener">AEI（美國企業研究所）</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">NOTABLE</span>
+          <span class="nc-tag">海上行動</span>
+        </div>
+        <h3 class="nc-title">中國交通部在台灣東部海域實施「特別海上執法行動」，主張領土聲索並干擾日菲談判</h3>
+        <p class="nc-body">中國交通部在台灣東部海域推進「特別海上執法行動」，主張北京的領土聲索，並介入日本與菲律賓就重疊主張海域的劃界談判。台灣東部鄰近關鍵海上咽喉要道，為解放軍封鎖或入侵台灣時的優先掌控目標，中國此舉延續以執法名義擴張海上存在的慣用手法。</p>
+        <a class="nc-src" href="https://www.aei.org/articles/china-taiwan-update-june-18-2026/" target="_blank" rel="noopener">AEI（美國企業研究所）</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">國防預算</span>
+        </div>
+        <h3 class="nc-title">台灣在野黨大幅延遲 2026 年總預算審查，防務整備能力受到國際質疑</h3>
+        <p class="nc-body">台灣在野黨持續阻礙 2026 年度總預算審議，外界擔憂對防務整備能力產生負面影響。分析人士強調，在不大幅削減國防支出前提下通過預算，對展現台灣自我防衛意志至關重要，美方盟友亦將此視為評估台灣防衛決心的重要指標，預算僵局若持續恐衝擊台美安全合作互信基礎。</p>
+        <a class="nc-src" href="https://www.aei.org/articles/china-taiwan-update-june-12-2026/" target="_blank" rel="noopener">AEI（美國企業研究所）</a>
+      </article>
+
     </div>
+  </section>
 
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge high">HIGH</span>
-        <span class="nc-tag">APT ｜ Salt Typhoon ｜ 中國國家級 ｜ 電信滲透</span>
-      </div>
-      <h3 class="nc-title">鹽颱風（Salt Typhoon）已滲透全球逾 80 國電信與關鍵基礎設施</h3>
-      <p class="nc-body">
-        資安研究機構 CybelAngel 最新報告揭示，中國 APT 組織「鹽颱風」滲透範圍已遠超早期估計，涵蓋 80 餘國的電信、交通及政府網路。同期 APT41 活動在 2025 年第一季爆增 113%，與美中貿易緊張高度相關；AI 驅動的全自主攻擊管道預計在 2026 年快速成熟，國家級情報行動與網路犯罪的界線正持續模糊化。
-      </p>
-      <a href="https://cybelangel.com/blog/cyber-espionage-apts/" target="_blank" rel="noopener" class="nc-src">CybelAngel</a>
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
     </div>
+    <div class="news-grid">
 
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge medium">MEDIUM</span>
-        <span class="nc-tag">政府通訊 ｜ 帳號劫持 ｜ 法國 Tchap</span>
-      </div>
-      <h3 class="nc-title">法國政府加密通訊平台 Tchap 遭入侵，帳號劫持後攻擊者滲透官方聊天室</h3>
-      <p class="nc-body">
-        法國當局確認，官方加密即時通訊服務 Tchap 遭攻擊者劫持一個帳號，並藉此存取多個公開聊天室，事件於 6 月 7 日曝光，調查仍在進行中。此事件引發對政府通訊安全架構的廣泛質疑；供應鏈式帳號劫持攻擊正成為針對歐洲政府的主流入侵手法，業界建議強制推行硬體安全金鑰（FIDO2）驗證取代密碼。
-      </p>
-      <a href="https://cybernews.com/security/servicenow-confirms-security-incident-data-breach/" target="_blank" rel="noopener" class="nc-src">Cybernews</a>
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">DIPLOMACY</span>
+          <span class="nc-tag">美中關係</span>
+        </div>
+        <h3 class="nc-title">2026 香格里拉對話：美中峰會促進外交緩和，穩定關係被視為亞太安全關鍵</h3>
+        <p class="nc-body">2026 年香格里拉對話於新加坡召開，各方聚焦習近平與川普北京峰會後雙邊關係呈現的正向轉機。與會者普遍認為穩定的美中關係對防止亞太區域形成排他性陣營至關重要，大國跳脫零和思維有助於保護供應鏈及經濟相互依存關係，但南海及台海仍是最主要的衝突風險熱點。</p>
+        <a class="nc-src" href="https://moderndiplomacy.eu/2026/06/04/2026-shangri-la-dialogue-why-stable-us-china-relations-are-vital-for-asia-pacific-security/" target="_blank" rel="noopener">Modern Diplomacy</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">NOTABLE</span>
+          <span class="nc-tag">同盟結構</span>
+        </div>
+        <h3 class="nc-title">川普防務攤派壓力促使亞洲盟友向中國靠攏，美國在東南亞支持度降至新低</h3>
+        <p class="nc-body">美國對亞洲盟友提出更多防務分攤要求，部分盟友因此加強與中國接觸，動搖長期聯盟架構。2026 年東南亞狀態調查顯示，東南亞國家整體更傾向以中國作為優先合作夥伴，川普政府領導風格成為該地區最大地緣政治憂慮；中日韓強勁的經濟相互依存關係目前仍具穩定作用，但美國戰略信譽的侵蝕值得長期關注。</p>
+        <a class="nc-src" href="https://www.cfr.org/articles/trumps-defense-demands-are-pushing-asian-allies-toward-china" target="_blank" rel="noopener">Council on Foreign Relations</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">POLICY</span>
+          <span class="nc-tag">網路戰略</span>
+        </div>
+        <h3 class="nc-title">川普政府發布《美國網路戰略》，授權私部門更大進攻性網路行動空間</h3>
+        <p class="nc-body">川普政府於 2026 年 3 月發布《美國網路戰略》，在私部門進攻性網路行動上賦予更大彈性授權，並公開承認美國正處於積極網路衝突時代。戰略調整國家在與中、俄、伊朗網路對抗中的立場，同步宣示國家級 APT 威脅持續升溫，業界需強化主動防禦與威脅情資共享能力。</p>
+        <span class="nc-src-plain">SecurityWeek / Trend Micro Research</span>
+      </article>
+
     </div>
+  </section>
 
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ECO-MKT</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">MARKET</span>
+          <span class="nc-tag">亞太股市</span>
+        </div>
+        <h3 class="nc-title">南韓 KOSPI 大漲 3.68% 創歷史新高，日經 225 漲至 66,934；亞太股市整體走揚</h3>
+        <p class="nc-body">南韓 KOSPI 指數大幅走揚 3.68%，收創歷史新高並引領亞太漲勢。日本日經 225 指數上漲 0.91% 至 66,934.33 點，澳洲 S&amp;P/ASX 200 持平於 8,729.4 點。美中外交緩和訊號改善市場情緒，惟分析師提醒油價波動與聯準會利率路徑不確定性仍是潛在下行風險。</p>
+        <a class="nc-src" href="https://www.icmarkets.com.au/blog/ic-markets-asia-fundamental-forecast-10-june-2026/" target="_blank" rel="noopener">IC Markets</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">ELEVATED</span>
+          <span class="nc-tag">能源價格</span>
+        </div>
+        <h3 class="nc-title">布蘭特原油因美伊緊張局勢在每桶 90–108 美元間劇烈震盪，能源通膨壓力持續升溫</h3>
+        <p class="nc-body">布蘭特原油因美以伊朗緊張局勢升至每桶 108 美元高位，隨停火協議樂觀預期升溫後回落至約 90 美元。油價大幅波動推升能源通膨壓力，市場預期聯準會將延後降息，並對亞洲能源進口國的貿易逆差及匯率形成連帶衝擊。</p>
+        <span class="nc-src-plain">IC Markets / CNBC</span>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">RATES</span>
+          <span class="nc-tag">央行利率</span>
+        </div>
+        <h3 class="nc-title">聯準會維持利率於 3.50–3.75%，能源衝擊通膨促使降息時程推遲至 9 月後</h3>
+        <p class="nc-body">FOMC 在 4 月 28–29 日會議上維持聯邦基金利率目標區間於 3.50%–3.75%，符合市場廣泛預期。受能源價格攀升帶動通膨升溫影響，市場已將降息時間點預期延至 9 月以後。此一高利率環境對亞洲新興市場資本流動與匯率形成持續壓力，6 月 FOMC 決策方向為近期市場關注焦點。</p>
+        <a class="nc-src" href="https://www.icmarkets.com.au/blog/ic-markets-asia-fundamental-forecast-01-june-2026/" target="_blank" rel="noopener">IC Markets</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
   </div>
-</section>
-
-<!-- ════ TAIWAN ════ -->
-<section class="rpt-sec taiwan">
-  <div class="sec-head">
-    <span class="sec-code">STRAIT-WATCH</span>
-    <h2 class="sec-title">台海觀察</h2>
-  </div>
-  <div class="news-grid">
-
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge warning">WARNING</span>
-        <span class="nc-tag">解放軍 ｜ 飛彈演習 ｜ LNG 設施 ｜ 能源打擊</span>
-      </div>
-      <h3 class="nc-title">解放軍公布飛彈打擊模擬影像，台灣 LNG 儲存設施標注為明確目標</h3>
-      <p class="nc-body">
-        美國企業研究所（AEI）6 月 5 日報告揭示，解放軍在「海峽雷霆 2025A」及「正義使命 2025」演習中公開發布飛彈打擊台灣液化天然氣儲存設施的模擬影像及目標地圖，並明確將「切斷電力供應」列入演練目標。此舉顯示解放軍已將台灣能源基礎設施定為首輪打擊的優先目標，目的在製造戰略性癱瘓效果，相關防護評估工作刻不容緩。
-      </p>
-      <a href="https://www.aei.org/articles/china-taiwan-update-june-5-2026/" target="_blank" rel="noopener" class="nc-src">AEI — China &amp; Taiwan Update</a>
-    </div>
-
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge warning">WARNING</span>
-        <span class="nc-tag">解放軍 ｜ 封鎖演練 ｜ 歷史新高</span>
-      </div>
-      <h3 class="nc-title">台海演習跨越新門檻：港口封鎖模擬精密程度與協同規模達歷史新高</h3>
-      <p class="nc-body">
-        《外交家》雜誌分析指出，解放軍最新台海演習在港口封鎖場景的精密程度、跨軍種聯合作戰協同及執行能力上均有顯著躍升，多位分析師形容為「超越此前任何先例」。演習展示了對台灣主要商業港口實施多層次封鎖的能力提升，各方正密切評估其對台灣海上補給生命線的戰略威懾意涵及區域安全衝擊。
-      </p>
-      <a href="https://thediplomat.com/2026/01/chinas-taiwan-drills-are-crossing-a-new-line/" target="_blank" rel="noopener" class="nc-src">The Diplomat</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ════ GEO ════ -->
-<section class="rpt-sec geo">
-  <div class="sec-head">
-    <span class="sec-code">GEO-POL</span>
-    <h2 class="sec-title">地緣政治</h2>
-  </div>
-  <div class="news-grid">
-
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge info">INFO</span>
-        <span class="nc-tag">香格里拉對話 ｜ 美中峰會 ｜ 外交緩和</span>
-      </div>
-      <h3 class="nc-title">2026 香格里拉對話：美中北京峰會後亞太外交基調明顯轉趨積極</h3>
-      <p class="nc-body">
-        2026 年香格里拉對話在美中北京峰會落幕後兩週登場，與會分析人士注意到雙方外交基調出現積極轉變，兩國均強調穩定關係對亞太整體安全的不可或缺性。然而，研究者警告此種表面緩和掩蓋了持續的戰略競爭，美中雙方均以「降低零和思維」為由，實際上在地區影響力爭奪及科技供應鏈管制上分毫未讓，台灣問題仍是最敏感的潛在衝突引爆點。
-      </p>
-      <a href="https://moderndiplomacy.eu/2026/06/04/2026-shangri-la-dialogue-why-stable-us-china-relations-are-vital-for-asia-pacific-security/" target="_blank" rel="noopener" class="nc-src">Modern Diplomacy</a>
-    </div>
-
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge high">HIGH</span>
-        <span class="nc-tag">東南亞 ｜ 民調 ｜ 聯盟重組 ｜ 戰略轉向</span>
-      </div>
-      <h3 class="nc-title">2026 東南亞調查：多數國家首度將中國列為首選合作夥伴，超越美國</h3>
-      <p class="nc-body">
-        最新「東南亞現狀調查」結果顯示，東南亞多數國家已將中國列為首選戰略夥伴並首度超越美國；川普政府的防務分擔要求及不可預測外交政策被該地區受訪者列為最大地緣政治隱患。分析人士指出，美國傳統印太盟友體系正面臨結構性離心，此趨勢對台灣安全保障的長期影響需高度關注，美國在亞太的聯盟管理面臨深層挑戰。
-      </p>
-      <a href="https://eastasiaforum.org/2026/03/14/asia-pacific-steps-up-as-us-order-falters/" target="_blank" rel="noopener" class="nc-src">East Asia Forum</a>
-    </div>
-
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge high">HIGH</span>
-        <span class="nc-tag">南海 ｜ 台海 ｜ 軍事化 ｜ 43% 最高熱點</span>
-      </div>
-      <h3 class="nc-title">CSIS 調查：43% 分析師視南海為最高衝突熱點，美中島礁軍事化競爭持續升溫</h3>
-      <p class="nc-body">
-        美中兩國在麻六甲、呂宋等關鍵海峽及南沙、西沙、尖閣諸島的戰略競爭持續升溫，雙方海軍在爭議海域的近距接觸頻率明顯上升。CSIS「中國實力」專案最新調查顯示，43% 的安全分析師認為南海是中國最可能採取軍事行動的熱點，33% 指向台灣海峽，美中關係在現任政府任期內預料仍將維持「競爭常態、穩定為底線」的格局。
-      </p>
-      <a href="https://chinapower.csis.org/survey-experts-us-china-relations-2026/" target="_blank" rel="noopener" class="nc-src">CSIS — ChinaPower</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ════ ECO ════ -->
-<section class="rpt-sec eco">
-  <div class="sec-head">
-    <span class="sec-code">ECO-ENERGY</span>
-    <h2 class="sec-title">能源經濟</h2>
-  </div>
-  <div class="news-grid">
-
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge high">HIGH</span>
-        <span class="nc-tag">石油 ｜ 布蘭特原油 ｜ 霍爾木茲 ｜ 市場重定價</span>
-      </div>
-      <h3 class="nc-title">布蘭特原油五月至六月暴跌逾 $40：美伊和談預期與亞洲需求萎縮雙重衝擊</h3>
-      <p class="nc-body">
-        IEA 六月市場報告顯示，北海布蘭特原油從 5 月每桶約 107 美元高峰驟跌至 82 美元，跌幅超過 40 美元，主因美伊和平協議談判出現重大進展帶動霍爾木茲封鎖風險溢價消退，疊加亞洲能源需求受供應中斷衝擊後大幅萎縮。本次修正幅度為近年最大單月跌幅之一，全球能源市場正從短缺恐慌迅速轉向供過於求預期重新定價，相關能源股及貨幣匯率波動劇烈。
-      </p>
-      <a href="https://www.iea.org/reports/oil-market-report-june-2026" target="_blank" rel="noopener" class="nc-src">IEA — Oil Market Report</a>
-    </div>
-
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge high">HIGH</span>
-        <span class="nc-tag">ECB ｜ 升息 25bp ｜ 通膨 3.2% ｜ 政策逆轉</span>
-      </div>
-      <h3 class="nc-title">歐洲央行六月升息 25 基點至 2.25%，逆轉連續八次降息循環</h3>
-      <p class="nc-body">
-        歐洲央行管理委員會於 6 月 11 日宣布調升三項關鍵利率各 25 個基點，存款便利利率升至 2.25%，此舉標誌自 2023 年 9 月後首次重啟緊縮，徹底逆轉 2024 至 2025 年間連續八次降息的寬鬆周期。歐元區 5 月通膨率攀升至 3.2%，顯著超過 2% 目標，央行認為通膨壓力主要源自能源成本傳遞效應及薪資加速成長，短期難以回落至政策目標水準。
-      </p>
-      <a href="https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.en.html" target="_blank" rel="noopener" class="nc-src">歐洲央行官方聲明</a>
-    </div>
-
-    <div class="nc">
-      <div class="nc-meta">
-        <span class="badge critical">CRITICAL</span>
-        <span class="nc-tag">亞洲能源 ｜ 中日進口驟降 40% ｜ 聯準會僵局</span>
-      </div>
-      <h3 class="nc-title">中日原油進口驟降 40%，霍爾木茲危機瓦解全球央行政策協調</h3>
-      <p class="nc-body">
-        IEA 最新數據顯示，受霍爾木茲海峽危機影響，中國與日本原油進口量各自下降約 40%，合計短缺近 600 萬桶/日，亞洲股市已多次大幅回落。美聯準會 6 月 17 日利率決策因委員會成員在通膨vs.衰退風險的判斷上出現嚴重分歧（8 票對 4 票），無法形成有效共識，能源衝擊正瓦解全球主要央行政策協調基礎，亞太各國政府正緊急盤點戰略能源儲備應急方案。
-      </p>
-      <a href="https://fortune.com/2026/05/12/iran-war-asia-oil-shortage-brent-price-market-reaction/" target="_blank" rel="noopener" class="nc-src">Fortune</a>
-    </div>
-
-  </div>
-</section>
-
-<footer class="disclaimer">
-  本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。<br>
-  <span style="color:var(--text3);font-size:12px">Generated by AI &nbsp;｜&nbsp; Report Date: 2026-06-20 &nbsp;｜&nbsp; SIGINT BOARD</span>
-</footer>
 
 </div>
-</article>
-</main>
+</div>
 </body>
 </html>

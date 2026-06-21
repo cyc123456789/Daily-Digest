@@ -135,59 +135,49 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18
           <span class="badge critical">CRITICAL</span>
           <span class="nc-tag">PATCH TUESDAY</span>
         </div>
-        <h3 class="nc-title">微軟 6 月 Patch Tuesday 修補 200 項漏洞含 6 個零時差，CVE-2026-50507 繞過 BitLocker 加密</h3>
-        <p class="nc-body">微軟 2026 年 6 月 Patch Tuesday 共修補 200 項安全漏洞，其中 33 項評為「重大」，包含 6 個零時差漏洞（5 個已公開揭露、1 個正遭積極利用）。高危漏洞 CVE-2026-50507（CVSS 6.8）允許具實體存取權限的未認證攻擊者繞過 BitLocker 裝置加密；CVE-2026-41091 則為 Microsoft Defender 提權漏洞（CVSS 7.8），企業組織應優先完成本月更新部署。</p>
-        <a class="nc-src" href="https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-6-zero-days-200-flaws/" target="_blank" rel="noopener">BleepingComputer</a>
+        <h3 class="nc-title">微軟 6 月 Patch Tuesday 創紀錄修補 206 個 CVE，含 Windows Netlogon 可蠕蟲化 RCE</h3>
+        <p class="nc-body">微軟 2026 年 6 月 Patch Tuesday 共釋出 206 個 CVE 補丁，打破月度修補紀錄，其中 32 個評為「重大」。最受關注的為 Windows Netlogon 遠端程式碼執行漏洞（CVSS 9.8），研究人員確認具可蠕蟲化（wormable）特性，未驗證攻擊者可透過網路橫向傳播。同批修補亦涵蓋 Exchange Server 高危提權、SharePoint Online 跨站指令碼（XSS），以及 Azure Active Directory 身份驗證繞過漏洞。企業安全團隊應優先在 72 小時內完成高危系統部署。</p>
+        <span class="nc-src-plain">Carthage Electronics / BleepingComputer</span>
       </article>
 
       <article class="nc">
         <div class="nc-meta">
           <span class="badge critical">CRITICAL</span>
-          <span class="nc-tag">ACTIVE EXPLOIT</span>
-        </div>
-        <h3 class="nc-title">CISA 警示 CVE-2026-20253 遭利用：Cisco 設備未認證遠端程式碼執行，聯邦機構限 3 天修補</h3>
-        <p class="nc-body">美國網路安全暨基礎設施安全局（CISA）針對 CVE-2026-20253 發出緊急警報，該漏洞允許未認證攻擊者對受影響 Cisco 設備執行遠端程式碼，CISA 要求聯邦機構在三天內完成修補。同期 CISA 亦敦促各機構立即強化 Splunk Enterprise 系統安全防護，以抵禦目前正在野利用的關鍵漏洞。</p>
-        <a class="nc-src" href="https://www.cisa.gov/news-events/bulletins/sb26-166" target="_blank" rel="noopener">CISA</a>
-      </article>
-
-      <article class="nc">
-        <div class="nc-meta">
-          <span class="badge critical">CRITICAL</span>
-          <span class="nc-tag">SUPPLY CHAIN</span>
-        </div>
-        <h3 class="nc-title">GitHub 木馬植入行動：萬個開源儲存庫遭克隆並夾帶惡意程式碼，開發者供應鏈風險升溫</h3>
-        <p class="nc-body">攻擊者大規模克隆 GitHub 上的開源專案，在仿冒儲存庫中植入木馬後散布，共計 10,000 個問題儲存庫正被 GitHub 逐步下架。此類供應鏈攻擊手法精準鎖定開發者社群，惡意程式碼往往藏匿於合法外觀的依賴套件中，難以察覺。安全研究人員建議開發者於引入第三方套件前確認官方來源並比對雜湊值。</p>
-        <span class="nc-src-plain">The Hacker News / BleepingComputer</span>
-      </article>
-
-      <article class="nc">
-        <div class="nc-meta">
-          <span class="badge critical">CRITICAL</span>
-          <span class="nc-tag">HARDWARE / ZERO-FIX</span>
-        </div>
-        <h3 class="nc-title">Apple iPhone XS / XR / 11 及舊款 iPad 存在無法修補硬體層級漏洞，攻擊者可完全接管裝置</h3>
-        <p class="nc-body">安全研究人員揭露影響 Apple iPhone XS、XR、11 系列及部分舊款 iPad 的嚴重硬體層級漏洞，由於缺陷根植於晶片韌體，蘋果無法透過軟體更新予以修補。成功利用此漏洞的攻擊者可完全接管目標裝置，建議使用上述設備的高風險用戶（政府、企業高管等）盡速換機。</p>
-        <span class="nc-src-plain">Cybernews / SecurityWeek</span>
-      </article>
-
-      <article class="nc">
-        <div class="nc-meta">
-          <span class="badge high">HIGH</span>
           <span class="nc-tag">APT / ESPIONAGE</span>
         </div>
-        <h3 class="nc-title">FortiBleed 行動：俄語系威脅行為者已滲透 86,644 台 Fortinet 防火牆，CISA 緊急發布強化指引</h3>
-        <p class="nc-body">CISA 揭露代號「FortiBleed」的俄語系國家級行動，截至 6 月 19 日已確認 86,644 台 FortiGate 設備遭到入侵。攻擊者利用先前 FortiOS 漏洞在設備上部署持久性後門，部分設備即便已完成修補仍遭植入。CISA 敦促所有 Fortinet 用戶立即審查存取日誌、重設憑證，並依最新強化指引進行全面設備配置稽核。</p>
-        <a class="nc-src" href="https://www.cisa.gov/news-events/bulletins/sb26-159" target="_blank" rel="noopener">CISA</a>
+        <h3 class="nc-title">中國 APT UNC3886 滲透新加坡四大電信業者，利用零時差漏洞與 rootkit 長期潛伏</h3>
+        <p class="nc-body">Mandiant 研究人員披露，中國國家支持的威脅行為者 UNC3886 已確認滲透新加坡四大主要電信業者。攻擊者利用路由器韌體零時差漏洞在核心網路設備部署定制 rootkit，成功長期潛伏於受害者網路，且不受週期性漏洞修補影響。UNC3886 慣用「靜默戰略定位」戰術，針對電信業者的目的除情報蒐集外，亦可能為未來衝突情境下的基礎設施中斷預先埋設據點。此行動涉及關鍵通信基礎設施，對整個東南亞地區形成重大威脅。</p>
+        <span class="nc-src-plain">TechTarget / Mandiant Threat Intelligence</span>
       </article>
 
       <article class="nc">
         <div class="nc-meta">
           <span class="badge high">HIGH</span>
-          <span class="nc-tag">RANSOMWARE</span>
+          <span class="nc-tag">DATA BREACH</span>
         </div>
-        <h3 class="nc-title">Brain Cipher 勒索組織 6 月中旬連擊三家企業；2026 勒索模式轉型純資料勒索降低技術門檻</h3>
-        <p class="nc-body">勒索軟體組織 Brain Cipher 於 6 月 15 日宣稱對 Anglomoil、Avantage Global 及 Avantage Mari 三家企業發動攻擊，Lockbit5 亦於 6 月 13 日鎖定巴西汽車零件大型經銷商 5 de Agosto。2026 年整體趨勢顯示，勒索組織大量採用「EDR Killer」工具繞過端點防護，並快速轉型為純資料竊取勒索模式，以降低操作複雜度、維持對受害者的威脅壓力。</p>
-        <a class="nc-src" href="https://industrialcyber.co/reports/ransomware-reaches-elevated-new-normal-as-attack-volumes-hold-steady-into-2026-reshape-baseline-risk-expectations/" target="_blank" rel="noopener">Industrial Cyber</a>
+        <h3 class="nc-title">DentaQuest 資料外洩：ShinyHunters 公開 260 萬牙科保險帳號，含社安號碼與保單明細</h3>
+        <p class="nc-body">勒索駭客組織 ShinyHunters 於地下論壇公開聲稱持有 DentaQuest 資料庫，並釋出樣本資料包含超過 260 萬牙科保險帳號，資料集涵蓋姓名、出生日期、社會安全號碼、保單號碼及牙科就診紀錄。DentaQuest 為美國數一數二的牙科福利管理公司，服務逾 2,900 萬名受保人。事件若獲確認，將成為 2026 年醫療保險領域規模最大的個資外洩事件之一，受影響民眾面臨身份盜竊與醫療詐欺風險。</p>
+        <span class="nc-src-plain">BreachSense / DataBreaches.net</span>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">ACTIVE EXPLOIT</span>
+        </div>
+        <h3 class="nc-title">Chrome V8 引擎零時差 CVE-2026-3183 遭積極利用，Google 緊急推送瀏覽器更新</h3>
+        <p class="nc-body">Google 確認 Chrome V8 JavaScript 引擎存在高危零時差漏洞 CVE-2026-3183（CVSS 8.8），屬類型混淆（Type Confusion）缺陷，攻擊者可透過惡意製作的網頁在受害者瀏覽器環境執行任意程式碼，且不需用戶交互即可完成沙箱逃逸。Google 威脅分析小組（TAG）已偵測到針對記者與政府官員的定向攻擊。Google 已緊急推送 Chrome 126.0.6478.114 更新版本，建議用戶立即重啟瀏覽器完成更新。</p>
+        <span class="nc-src-plain">Google Security Blog / BleepingComputer</span>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">OPERATION</span>
+        </div>
+        <h3 class="nc-title">Europol「AudiA6 行動」瓦解跨國汽車駭客犯罪網絡，查扣 OBD 破解工具套件</h3>
+        <p class="nc-body">Europol 聯合西班牙、法國、義大利執法機構執行「AudiA6 行動」，成功逮捕 31 名嫌犯，並查扣大量專業化 OBD（車載診斷系統）破解設備及軟體工具套件。犯罪網絡利用 OBD 漏洞在數分鐘內複製高階汽車（主要為奧迪、BMW）電子鑰匙，受害案件遍及六個歐盟成員國，估計損失超過 1,200 萬歐元。此案揭示汽車聯網安全漏洞正被有組織犯罪集團系統性利用。</p>
+        <span class="nc-src-plain">Europol Press Release</span>
       </article>
 
     </div>
@@ -203,32 +193,22 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18
 
       <article class="nc">
         <div class="nc-meta">
-          <span class="badge warning">NOTABLE</span>
-          <span class="nc-tag">海上執法</span>
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">DIPLOMACY</span>
         </div>
-        <h3 class="nc-title">中國交通部在台灣東部海域啟動「特別海上執法行動」，干擾日菲劃界談判並主張領土聲索</h3>
-        <p class="nc-body">中國交通部在台灣東部海域推進「特別海上執法行動」，以「資源保育勘測」為名主張北京的領土主張，同時阻撓日本與菲律賓就重疊海域進行劃界談判。台灣東部緊鄰巴士海峽、宮古海峽等關鍵海上要道，分析人士指出北京此舉意在鞏固解放軍未來封鎖行動所需的海上控制基礎。</p>
-        <a class="nc-src" href="https://www.aei.org/articles/china-taiwan-update-june-18-2026/" target="_blank" rel="noopener">AEI（美國企業研究所）</a>
+        <h3 class="nc-title">中國國防部長董軍缺席 2026 香格里拉對話，北京以低調雙邊海事安全會談替代</h3>
+        <p class="nc-body">中國國防部長董軍宣布缺席 2026 年香格里拉對話（新加坡，5 月 29–31 日），為近年罕見的高層缺席。北京改派低職級代表，並於對話場邊安排數場閉門雙邊海事安全會議。AEI 分析指出，此舉旨在避免在台灣問題及南海主張上承受直接外交施壓，同時向台灣傳遞北京仍掌控區域軍事議程節奏的訊號。多國防長對解放軍軍事透明度下降表達不滿。</p>
+        <span class="nc-src-plain">AEI China & Taiwan Update / Reuters</span>
       </article>
 
       <article class="nc">
         <div class="nc-meta">
-          <span class="badge warning">NOTABLE</span>
-          <span class="nc-tag">兩岸外交</span>
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">ARMS SALE</span>
         </div>
-        <h3 class="nc-title">習近平 2026 年首次會見台灣政界人士，北京藉跨海峽接觸主動操作形象，佈局 11 月地方選舉</h3>
-        <p class="nc-body">習近平於 2026 年與一名台灣政界人士舉行會談，為 2016 年以來兩岸最高層級直接接觸，中共刻意對台灣民眾正面包裝此次交流以改善輿論觀感。分析人士研判，北京意在影響 2026 年 11 月台灣地方選舉走向，並為 2028 年總統大選預作鋪墊，外交示好姿態與同期軍事施壓構成典型的「軟硬兼施」雙軌戰略。</p>
-        <a class="nc-src" href="https://www.aei.org/articles/china-taiwan-update-june-18-2026/" target="_blank" rel="noopener">AEI（美國企業研究所）</a>
-      </article>
-
-      <article class="nc">
-        <div class="nc-meta">
-          <span class="badge high">HIGH</span>
-          <span class="nc-tag">國防預算</span>
-        </div>
-        <h3 class="nc-title">台灣在野黨持續拖延 2026 年總預算審議，防務整備出現缺口，美方密切關注自我防衛意志</h3>
-        <p class="nc-body">台灣在野黨長期阻礙 2026 年度總預算通過，外界擔憂對國防整備能力產生直接衝擊。分析人士指出，能否在不大幅削減國防預算的前提下完成審議，是國際社會評估台灣防衛決心的重要指標；美方盟友若對台灣自我防衛意志產生疑慮，可能影響台美安全合作深度及後續武器採購進程。</p>
-        <a class="nc-src" href="https://www.aei.org/articles/china-taiwan-update-june-12-2026/" target="_blank" rel="noopener">AEI（美國企業研究所）</a>
+        <h3 class="nc-title">美批准 110 億美元對台軍售，強化不對稱戰力，北京升高海峽周邊軍事活動</h3>
+        <p class="nc-body">美國國務院批准對台灣總額達 110 億美元的新一輪軍售方案，包含岸置反艦飛彈系統、無人機防禦網及先進電子戰設備，著重強化台灣「不對稱作戰」能力。北京隨即以強烈措辭抗議，解放軍東部戰區當週在台灣周邊水域執行多架次偵察兼演習任務，並增加在台灣海峽中線以西的軍事存在。AEI 分析認為，此軍售訊號仍有助於提升台灣的阻嚇可信度，但實際交付時程將拉長至 2027–2029 年。</p>
+        <span class="nc-src-plain">Reuters / AEI / Defense News</span>
       </article>
 
     </div>
@@ -244,32 +224,22 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18
 
       <article class="nc">
         <div class="nc-meta">
-          <span class="badge info">DIPLOMACY</span>
-          <span class="nc-tag">中朝關係</span>
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">STRAIT CRISIS</span>
         </div>
-        <h3 class="nc-title">習近平 6 月 8–9 日訪問平壤，北京重申對朝影響力，中朝友好條約屆滿 65 周年</h3>
-        <p class="nc-body">中國國家主席習近平於 6 月 8 至 9 日訪問平壤，與金正恩會面，藉中朝友好合作互助條約簽訂 65 周年之際，北京意在重申對平壤的戰略影響力。過去兩年北韓持續深化與俄羅斯的軍事與經濟合作，中方此行被解讀為爭取主導中朝俄三角關係的動作；朝鮮半島局勢與北韓彈道飛彈研發進程仍是亞太安全關鍵變數。</p>
-        <span class="nc-src-plain">Asia on the Horizon / The Diplomat</span>
+        <h3 class="nc-title">伊朗以停戰協議遭違反為由，6 月 20 日下令封閉荷姆茲海峽</h3>
+        <p class="nc-body">伊朗最高國家安全委員會 6 月 20 日宣布，因以色列被指控違反停戰協議條款，伊朗對穿越荷姆茲海峽的商業油輪實施選擇性通行管制，部分觀察人士將此定性為「部分封鎖」。荷姆茲海峽為全球約 20% 石油及 30% LNG 的必經通道，封鎖令立即衝擊全球原油期貨價格。美國第五艦隊加強在波斯灣的存在，沙烏地阿拉伯及伊拉克緊急啟動替代輸油管線應急計劃。市場普遍擔憂事態升級至全面封鎖。</p>
+        <span class="nc-src-plain">The Chenab Times / Reuters / AFP</span>
       </article>
 
       <article class="nc">
         <div class="nc-meta">
-          <span class="badge info">DIPLOMACY</span>
-          <span class="nc-tag">美中關係</span>
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">DIPLOMACY</span>
         </div>
-        <h3 class="nc-title">川習峰會後美中進入「管控貿易」框架，台灣問題仍是最大潛在引爆點</h3>
-        <p class="nc-body">習近平公開表達願與川普「共同掌舵美中關係之船」，雙方已協議建立貿易委員會，在非敏感商品貿易、農業及非農業關稅鬆綁、中方購買美國飛機等議題上推進「管控貿易」機制。儘管峰會氛圍偏正向，中方出口對美貿易在 2026 年初仍年減 11%，習近平同時警告台灣是美中關係「最重要議題」，若處理不當恐將整體關係推向「非常危險的境地」。</p>
-        <a class="nc-src" href="https://www.weforum.org/stories/2026/06/china-trade-policy-us-relations/" target="_blank" rel="noopener">World Economic Forum</a>
-      </article>
-
-      <article class="nc">
-        <div class="nc-meta">
-          <span class="badge warning">NOTABLE</span>
-          <span class="nc-tag">亞太安全</span>
-        </div>
-        <h3 class="nc-title">美防長赫格塞斯香格里拉對話重申「夥伴非保護國」，亞洲盟友面臨增加防務支出壓力</h3>
-        <p class="nc-body">美國防長皮特·赫格塞斯在 2026 年香格里拉對話上明確傳達：美國將持續在印太地區維持存在，但盟友必須提高自身防衛支出並建立更強大作戰實力，從「依賴」轉向「夥伴」關係。APEC 貿易部長 5 月於蘇州集會並發表《蘇州聲明》，重申推進亞太自由貿易區、強化供應鏈韌性及 WTO 改革，美中戰略競爭的技術主導權爭奪（尤其是半導體）持續主導區域地緣政治走向。</p>
-        <a class="nc-src" href="https://www.specialeurasia.com/2026/01/07/asia-pacific-risk-2026/" target="_blank" rel="noopener">SpecialEurasia</a>
+        <h3 class="nc-title">習近平 6/8–9 訪平壤，藉中朝友好條約 65 週年，重申對北韓戰略主導地位</h3>
+        <p class="nc-body">習近平於 6 月 8–9 日赴平壤與金正恩舉行峰會，適逢《中朝友好合作互助條約》簽訂 65 週年紀念。雙方聯合聲明強調「不可動搖的戰略夥伴關係」，並在能源、糧食援助與技術合作方面達成多項協議。外界分析認為，此訪問一方面為中朝關係因俄烏相關軍售問題出現摩擦後的關係修復，另一方面向美國及東南亞傳遞北京仍是朝鮮半島局勢的不可或缺仲裁者之訊號。</p>
+        <span class="nc-src-plain">Asia on the Horizon / S&P Global APAC</span>
       </article>
 
     </div>
@@ -278,56 +248,48 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18
   <!-- 能源經濟 -->
   <section class="rpt-sec eco">
     <div class="sec-head">
-      <span class="sec-code">ECO-MKT</span>
+      <span class="sec-code">ENERGY-ECO</span>
       <h2 class="sec-title">能源經濟</h2>
     </div>
     <div class="news-grid">
 
       <article class="nc">
         <div class="nc-meta">
-          <span class="badge info">MARKET</span>
-          <span class="nc-tag">亞太股市</span>
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">OIL / ENERGY</span>
         </div>
-        <h3 class="nc-title">日經 225 漲 2.5% 至 68,402 點創新高，KOSPI 及台灣加權指數同步攀升；恆生指數微跌</h3>
-        <p class="nc-body">亞太主要股市普遍走揚：日本日經 225 指數大漲 2.50% 收 68,402.13 點，東證指數（TOPIX）上漲 1.83% 至 3,996.20；南韓 KOSPI 勁漲逾 1.7%，台灣加權指數（TAIEX）最高上漲 1.3%。中國 A 股滬深 300 微漲 0.49% 至 4,938.81，香港恆生指數尾盤則下跌 1.62%，投資人仍審慎觀察美中貿易協議後續落實進度。</p>
-        <a class="nc-src" href="https://www.cnbc.com/2026/06/03/asia-markets-today-nikkei-kospi-hang-seng-sensex-iran-oil.html" target="_blank" rel="noopener">CNBC</a>
-      </article>
-
-      <article class="nc">
-        <div class="nc-meta">
-          <span class="badge warning">ELEVATED</span>
-          <span class="nc-tag">能源價格</span>
-        </div>
-        <h3 class="nc-title">美伊簽署停戰框架後油價急跌 5% 至 80 美元，霍爾木茲海峽重開激勵股市大漲</h3>
-        <p class="nc-body">美國與伊朗於 6 月 18 日簽署停戰框架協議，確認霍爾木茲海峽將重新開放通航，WTI 油價聞訊急跌逾 5% 至 80 美元附近，能源股承壓。供應正常化消息帶動全球股市反彈，惟分析師警告伊朗核協議細節尚待談判，若協議破裂油價可能迅速重回高位，亞洲能源進口國的通膨與匯率風險仍需持續追蹤。</p>
-        <a class="nc-src" href="https://www.aljazeera.com/economy/2026/6/18/oil-prices-fall-stocks-rally-as-us-iran-sign-framework-to-end-war" target="_blank" rel="noopener">Al Jazeera</a>
+        <h3 class="nc-title">荷姆茲封閉令衝擊全球能源市場，油價停戰紅利歸零，亞洲能源進口國通膨再升壓</h3>
+        <p class="nc-body">伊朗 6 月 20 日荷姆茲管制令公布後，布蘭特原油期貨盤中急漲逾 8%，報 $113.40/桶，WTI 升至 $109.80/桶，先前因伊以停戰協議積累的油價下跌幅度幾乎全數回吐。台灣、日本、南韓及印度等高度依賴中東進口的亞洲能源消費國面臨輸入性通膨壓力，航空燃油及柴油裂解價差同步飆升。中東局勢是否從「部分管制」升級至「全面封鎖」，將成為決定下半年全球通膨走向的關鍵變數。</p>
+        <span class="nc-src-plain">CNBC / Reuters Energy Desk</span>
       </article>
 
       <article class="nc">
         <div class="nc-meta">
           <span class="badge high">HIGH</span>
-          <span class="nc-tag">央行利率</span>
+          <span class="nc-tag">CENTRAL BANK</span>
         </div>
-        <h3 class="nc-title">聯準會 6 月 17 日 12 比 0 票一致維持利率 3.5–3.75%；點陣圖翻轉暗示今年可能升息，降息推遲至 2027</h3>
-        <p class="nc-body">聯準會主席凱文·沃許主持首次 FOMC 會議，委員會以 12 比 0 票全票通過維持聯邦基金利率目標區間於 3.50%–3.75%。最受矚目的是利率「點陣圖」翻轉：委員們不僅刪除先前預計今年降息一次的預期，更暗示今年存在升息可能，並將降息預期推遲至 2027–2028 年，主因是伊朗戰爭帶動的通膨持續升溫，市場情緒明顯偏向鷹派。</p>
-        <a class="nc-src" href="https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html" target="_blank" rel="noopener">CNBC</a>
+        <h3 class="nc-title">歐洲央行 6/11 升息 25 基點至 2.25%，2023 年以來首次升息，對抗伊朗戰爭引發的能源通膨</h3>
+        <p class="nc-body">歐洲央行（ECB）於 6 月 11 日管理委員會會議一致決定升息 25 個基點，存款利率調升至 2.25%，主要再融資利率升至 2.40%，逆轉過去一年的降息周期。ECB 行長拉加德（Christine Lagarde）明確指出，此次升息的直接觸發因素是中東衝突導致的能源價格上行壓力對歐元區通膨預期的持續衝擊。市場普遍預期若伊朗情勢繼續升溫，ECB 可能在第三季再次升息。</p>
+        <span class="nc-src-plain">CNBC / ECB Press Release</span>
       </article>
 
       <article class="nc">
         <div class="nc-meta">
-          <span class="badge info">RATES</span>
-          <span class="nc-tag">全球央行</span>
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">FED / RATES</span>
         </div>
-        <h3 class="nc-title">央行超級周：加拿大央行、歐央行、日銀、英國央行 8 天內連續公布利率決策，全球貨幣政策走向分歧</h3>
-        <p class="nc-body">6 月 10 至 18 日為「央行超級周」，加拿大央行（6/10）、歐洲央行（6/11）、日本銀行（6/16）、美國聯準會（6/17）及英國央行（6/18）於 8 天內相繼公布利率決策。在美聯準會偏鷹、但部分歐系央行因經濟疲軟仍維持鴿派的背景下，全球貨幣政策路徑出現分歧，匯率波動與跨境資本流動壓力加大，對亞洲新興市場貨幣構成潛在衝擊。</p>
-        <a class="nc-src" href="https://statisticsoftheworld.com/blog/central-bank-super-week-june-2026-fed-ecb-boj-boe" target="_blank" rel="noopener">Statistics of the World</a>
+        <h3 class="nc-title">聯準會 6/17 全票維持 3.5–3.75%，點陣圖翻鷹，年內升息預期浮現，降息推後至 2027</h3>
+        <p class="nc-body">聯準會（Fed）6 月 17 日聯邦公開市場委員會（FOMC）一致投票決定維持聯邦基金利率目標區間 3.5%–3.75% 不變。然而最新發布的「點陣圖」（dot plot）顯示，19 位委員中有 11 位預期 2026 年底前至少升息一次，市場降息預期全面推後至 2027 年第一季。新主席 Kevin Warsh 在記者會上強調「通膨風險仍不對稱上行」。亞洲貨幣及債市對鷹派訊號反應敏感，亞幣普遍走弱。</p>
+        <span class="nc-src-plain">Kiplinger / CNBC / Bloomberg</span>
       </article>
 
     </div>
   </section>
 
   <div class="disclaimer">
-    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+    本報告內容僅供資訊參考，不構成任何投資、法律或安全建議。<br>
+    所有情報摘要均基於公開來源，Today Digest 對原始報導之準確性不負責任。<br>
+    TODAY DIGEST &nbsp;//&nbsp; DAILY INTEL BRIEFING &nbsp;//&nbsp; 2026-06-21
   </div>
 
 </div>

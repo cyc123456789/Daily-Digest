@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today Digest 2026-06-25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:0.7rem}
+.nc-title a{
+  color:var(--text);text-decoration:none;
+  transition:color 0.2s;
+}
+.nc-title a:hover{color:var(--c-cyan);text-decoration:underline;text-decoration-color:rgba(0,212,255,0.4)}
+.rpt-sec.taiwan .nc-title a:hover{color:var(--c-orange)}
+.rpt-sec.geo    .nc-title a:hover{color:var(--c-purple)}
+.rpt-sec.eco    .nc-title a:hover{color:var(--c-green)}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){.nc-tag{display:none}}
+</style>
+</head>
+<body>
+<div id="report-content">
+<div class="rpt-wrap">
+
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-06-25</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
+  </div>
+
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">CVE-2026-35273 / PEOPLESOFT / RANSOMWARE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://carthageelectronics.com/cyber-threat-report-june-8-10-2026-cve-zero-days-ransomware/" target="_blank" rel="noopener">CVE-2026-35273 PeopleSoft 無需驗證即可完全接管漏洞（CVSS 9.8）遭 ShinyHunters 集團積極利用，勒索攻擊鏈已建立</a></h3>
+        <p class="nc-body">Oracle PeopleSoft 企業人力資源與財務系統出現嚴重認證繞過漏洞 CVE-2026-35273（CVSS 9.8），缺少身份驗證機制使遠端攻擊者得以在無需帳密的情況下完整接管系統。惡名昭彰的 ShinyHunters 威脅集團已率先建立利用工具鏈，並配合勒索軟體部署針對大型企業 HR 與薪資資料庫發動攻擊，多所大學、保險機構及政府人事部門已確認遭入侵。各組織應立即套用 Oracle 緊急修補程式，並在修補完成前封鎖外部對 PeopleSoft Portal 的存取。</p>
+        <a href="https://carthageelectronics.com/cyber-threat-report-june-8-10-2026-cve-zero-days-ransomware/" target="_blank" rel="noopener" class="nc-src">Carthage Electronics / Cyber Threat Report</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">CVE-2026-20230 / CISCO / UNIFIED CM</span>
+        </div>
+        <h3 class="nc-title"><a href="https://threat-modeling.com/vulnerability-intelligence-report-june-16-2026/" target="_blank" rel="noopener">Cisco Unified CM CVE-2026-20230（CVSS 8.6）遭積極利用：攻擊者無需認證即可遠端取得電信骨幹組態</a></h3>
+        <p class="nc-body">資安研究人員確認 Cisco Unified Communications Manager 及 Unified CM Session Management Edition 中的高危漏洞 CVE-2026-20230 已被威脅行為者積極利用。此漏洞允許未經身份驗證的遠端攻擊者讀取系統敏感組態，攻擊者可藉此取得 SIP 帳號、媒體閘道憑證及內部路由拓撲，進而作為後續供應鏈入侵或電話詐欺（Toll Fraud）的立足點。電信業者與政府機構的骨幹 IP 通訊系統面臨高風險，Cisco 已發布修補版本並強烈建議立即更新。</p>
+        <a href="https://threat-modeling.com/vulnerability-intelligence-report-june-16-2026/" target="_blank" rel="noopener" class="nc-src">Threat-Modeling.com</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">LAW ENFORCEMENT / AMADEY / STEALC</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thehackernews.com/" target="_blank" rel="noopener">跨國執法行動摧毀 Amadey 與 StealC 犯罪基礎設施：Bitdefender、ESET、微軟聯合凍結 4,700 萬美元加密資產</a></h3>
+        <p class="nc-body">歷時兩週的跨國執法行動由 Bitdefender、Bitsight、ESET 及微軟等私部門合作夥伴協助下，成功摧毀支撐 Amadey 惡意程式下載器與 StealC 資訊竊取木馬的犯罪基礎設施。此次行動識別並凍結了逾 4,700 萬美元的犯罪加密貨幣資產，有效切斷威脅行為者的核心財務基礎。Amadey 長期被用於在受感染主機上部署勒索軟體、竊密程式及後門，此次打擊行動預計將顯著降低相關攻擊活動的規模與頻率。</p>
+        <a href="https://thehackernews.com/" target="_blank" rel="noopener" class="nc-src">The Hacker News</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">CHINA APT / REDCAP / MEDICAL RESEARCH</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thehackernews.com/" target="_blank" rel="noopener">中國國家支持 APT 大規模入侵 REDCap 醫療研究伺服器：臨床試驗數據與 60 萬筆病患記錄遭竊</a></h3>
+        <p class="nc-body">安全研究人員揭露，與中國政府有關聯的 APT 組織正積極滲透全球醫療研究機構所使用的 REDCap（Research Electronic Data Capture）平台，竊取臨床試驗資料、新藥研發成果及大量病患個人健康資訊。攻擊者利用 REDCap 部署環境中常見的配置錯誤取得初始存取權限，隨後進行橫向移動以擴大數據蒐集範圍。受影響機構遍及美國、英國、澳洲及台灣等地的大學醫院與生技研究中心，相關情報竊取行為被分析師認定與中國生物醫藥產業政策密切相關。</p>
+        <a href="https://thehackernews.com/" target="_blank" rel="noopener" class="nc-src">The Hacker News</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WATCH</span>
+          <span class="nc-tag">DATA BREACH / MULTI-SECTOR / JUNE 23</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.breachsense.com/breaches/" target="_blank" rel="noopener">BreachSense 6 月 23 日多機構資料外洩通報：利比亞央行、加拿大媒體集團等多組織帳號資料遭公開流通</a></h3>
+        <p class="nc-body">資安監控平台 BreachSense 於 6 月 23 日發現多起資料外洩事件同步在暗網流通，受影響組織涵蓋利比亞中央銀行（Central Bank of Libya）、加拿大傳媒集團 Canada Wide Media、印度頂尖工程院校 BITS Pilani，以及美國航太材料商 Aerospace & Advanced Composites GmbH 與資產管理機構 Belpointe Asset Management。外洩資料內容包括員工與客戶帳號憑證、內部系統組態及財務相關資訊，多起事件可能涉及供應商或第三方系統遭滲透的供應鏈攻擊模式。</p>
+        <a href="https://www.breachsense.com/breaches/" target="_blank" rel="noopener" class="nc-src">BreachSense</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">PRC STRATEGY / KMT / SOFT POWER</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-june-5-2026/" target="_blank" rel="noopener">北京在 KMT 訪問後推出台灣新優惠：開放直航、鬆綁觀光，對台戰略向政治經濟施壓轉型</a></h3>
+        <p class="nc-body">AEI 台海更新分析指出，繼台灣在野黨國民黨（KMT）領導人訪問北京後，中國當局推出一系列對台新優惠措施，包括恢復兩岸直航航班、放寬台灣民眾赴大陸觀光限制，並改善台灣電視節目在大陸的播出管道。分析師認為，此舉標誌著北京對台策略的明顯轉變，從單純的軍事施壓轉向更具彈性的政治與經濟接觸，試圖透過拉近民間往來形塑有利的統一敘事，同時利用反對黨作為槓桿以分化台灣政治。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-june-5-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">ANALYSIS</span>
+          <span class="nc-tag">US POLICY / STRATEGIC RECALIBRATION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/" target="_blank" rel="noopener">布魯金斯學會：重新校準美國對台支持戰略——如何維持嚇阻同時降低美台直接衝突風險</a></h3>
+        <p class="nc-body">布魯金斯學會最新政策論文提出「重新校準美國對台支持」框架，主張在維持對台嚇阻承諾的同時，更精準地界定美國在台海危機中的介入邊界，以降低誤判風險。論文強調，美國應加強台灣的自主防衛能力（不對稱作戰、後備役動員、民防韌性），而非以增加美軍前沿部署作為主要嚇阻手段，此策略在荷姆茲危機持續消耗美軍戰略預備隊的當前背景下尤具現實意義。報告引發美台戰略學術界廣泛討論，反映出對美國同時應對多線危機能力的深切憂慮。</p>
+        <a href="https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/" target="_blank" rel="noopener" class="nc-src">Brookings Institution</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">PLA ACTIVITY / US-CHINA / MILITARY PRESSURE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.japantimes.co.jp/news/2026/01/02/asia-pacific/politics/us-china-military-exercises-taiwan/" target="_blank" rel="noopener">美國敦促北京停止對台軍事施壓：日本、澳洲、加拿大等盟友同步發聲，多邊嚇阻訊號持續強化</a></h3>
+        <p class="nc-body">美國政府再次公開呼籲北京停止對台灣的軍事壓力行動，並獲日本、澳洲、加拿大等主要盟友同步響應，形成多邊聯合嚇阻態勢。背景上，中國解放軍近期持續在台灣周邊海空域進行高頻率巡邏與演習，相關活動已觸及台灣防空識別區（ADIZ）邊界。分析師指出，儘管多邊聲明力度持續提升，但北京對外部施壓的容忍閾值正逐步抬高，軍事接觸事件的處置機制仍有待強化以避免意外升級。</p>
+        <a href="https://www.japantimes.co.jp/news/2026/01/02/asia-pacific/politics/us-china-military-exercises-taiwan/" target="_blank" rel="noopener" class="nc-src">The Japan Times</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">HORMUZ / BLOCKADE DIPLOMACY / SUPPLY CHAIN</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/" target="_blank" rel="noopener">WEF「封鎖外交」分析：荷姆茲海峽危機演變為全球供應鏈重組的結構性驅動力，新航運路線加速成形</a></h3>
+        <p class="nc-body">世界經濟論壇（WEF）最新地緣政治分析指出，伊朗宣布的荷姆茲海峽封鎖已由單一危機事件演變為重塑全球能源貿易與航運格局的長期結構性因素。受影響的原油與液化天然氣航線促使歐洲買家加速轉向美國 LNG 及西非產能，亞洲主要進口國則被迫開闢繞經好望角的替代路線，每船次成本大幅增加。分析師警告，即便荷姆茲危機短期化解，此次衝擊已永久加速全球能源供應鏈去中心化與地理分散化的進程。</p>
+        <a href="https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/" target="_blank" rel="noopener" class="nc-src">World Economic Forum</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">US-CHINA COMPETITION / DEUTSCHE BANK</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.dbresearch.com/PROD/IE-PROD/PROD0000000000629523/This_Month_in_Geopolitics:_June_2026.pdf" target="_blank" rel="noopener">德意志銀行 6 月地緣政治月報：美中亞太競爭白熱化，盟友「同步難題」削弱圍堵效果</a></h3>
+        <p class="nc-body">德意志銀行研究院 6 月地緣政治月報深度分析美中在亞太地區的戰略競爭態勢，指出各盟友在同時應對與美中雙方關係時面臨的「同步難題（synchronisation dilemma）」：既無法承受疏遠美國的安全風險，也難以割捨對中國的經濟依存，導致對北京的整體圍堵效果大打折扣。報告特別點出東盟、韓國、澳洲等國家在軍事安全上倚賴美國、經濟上倚賴中國的結構性矛盾，認為此一矛盾在短期內難以化解，並將持續限制美國主導的亞太多邊安全框架的實際凝聚力。</p>
+        <a href="https://www.dbresearch.com/PROD/IE-PROD/PROD0000000000629523/This_Month_in_Geopolitics:_June_2026.pdf" target="_blank" rel="noopener" class="nc-src">Deutsche Bank Research Institute</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">G7 / APEC / MULTILATERAL DIPLOMACY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues" target="_blank" rel="noopener">G7 伊維昂峰會地緣政治聲明：明確反對以武力改變台海、東海、南海現狀，呼籲和平解決兩岸分歧</a></h3>
+        <p class="nc-body">G7 伊維昂峰會發布地緣政治聲明，七大工業國領袖明確重申「反對任何以脅迫或武力單方面改變現狀的企圖」，範圍涵蓋東海、南海及台灣海峽，並強調兩岸分歧應透過和平對話方式解決。聲明同時對北韓核武與彈道導彈計劃表達深切關切，重申推動朝鮮半島完全去核化的共同立場。分析師指出，此次 G7 聲明措辭較往年更為具體明確，被視為對北京近期軍事施壓台灣及南海擴張行動的直接回應。</p>
+        <a href="https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues" target="_blank" rel="noopener" class="nc-src">G7 Évian 2026（法國總統府）</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ENERGY-ECO</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WATCH</span>
+          <span class="nc-tag">EQUITIES / S&P 500 / FED HAWKISH</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html" target="_blank" rel="noopener">T. Rowe Price 週市場更新：Fed 鷹派訊號帶動 S&P 500 跌 1.2%、Russell 2000 跌 0.8%，利率敏感族群承壓</a></h3>
+        <p class="nc-body">T. Rowe Price 全球市場週報顯示，美國聯準會的鷹派政策訊號在本週引發明顯的股市修正，大型股指標 S&P 500 下跌 1.2%，對利率更敏感的中小型股指標 Russell 2000 跌幅達 0.8%。分析師指出，市場正快速重新定價聯準會政策路徑，年底前再度升息的概率明顯上升，高估值成長股尤受壓力。能源類股因荷姆茲供應擔憂支撐下跌幅相對收斂，防禦型股票與現金等值資產需求同步升溫。</p>
+        <a href="https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html" target="_blank" rel="noopener" class="nc-src">T. Rowe Price</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">OIL PRICE / IRAN WAR / ENERGY INFLATION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://tradersagency.com/blog/ecb-rate-decision-june-2026-hike-iran-energy/" target="_blank" rel="noopener">伊朗戰爭推升能源通膨：WTI 從年初每桶 57 美元飆至 113 美元後回落至 76 美元，歐元區通膨率升至 3.2%</a></h3>
+        <p class="nc-body">Traders Agency 能源市場分析報告詳述伊朗戰爭對全球油價的衝擊路徑：WTI 原油前月期貨從 2026 年初接近每桶 57 美元，在荷姆茲封閉緊張最高峰時飆升至 4 月的 113 美元，隨後隨停戰消息和供應側調整逐步回落至目前約 76 美元。儘管如此，歐元區整體通膨率仍升至 3.2%，能源分項漲幅高達年增 10.9%，遠超歐洲央行 2% 目標，正是本次 ECB 升息的關鍵驅動因素。亞洲主要能源進口國通膨壓力持續累積，央行政策空間進一步收窄。</p>
+        <a href="https://tradersagency.com/blog/ecb-rate-decision-june-2026-hike-iran-energy/" target="_blank" rel="noopener" class="nc-src">Traders Agency</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">CENTRAL BANKS / BOJ / BOC / SUPER WEEK</span>
+        </div>
+        <h3 class="nc-title"><a href="https://statisticsoftheworld.com/blog/central-bank-super-week-june-2026-fed-ecb-boj-boe-boc" target="_blank" rel="noopener">央行超級週全覽：五大央行八天內接連決策，Fed 按兵、ECB 升息、日圓貶壓升溫、加拿大央行立場分歧</a></h3>
+        <p class="nc-body">6 月「央行超級週」期間，聯準會（Fed）、歐洲央行（ECB）、日本銀行（BoJ）、英格蘭銀行（BoE）、加拿大央行（BoC）相繼於八天內宣布利率決策，形成 2026 年迄今最密集的主要央行政策週期。除 ECB 升息 25 基點至 2.25% 外，其餘主要央行均選擇按兵不動，但各自的前瞻性指引出現明顯分歧：日本銀行面臨日圓走弱壓力，市場揣測不排除提前升息以捍衛匯率；加拿大央行則在能源出口收益支撐與製造業下行壓力之間權衡，政策委員意見罕見出現公開分歧。</p>
+        <a href="https://statisticsoftheworld.com/blog/central-bank-super-week-june-2026-fed-ecb-boj-boe-boc" target="_blank" rel="noopener" class="nc-src">Statistics of the World</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+  </div>
+
+</div>
+</div>
+</body>
+</html>

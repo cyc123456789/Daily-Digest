@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today Digest 2026-06-27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:0.7rem}
+.nc-title a{
+  color:var(--text);text-decoration:none;
+  transition:color 0.2s;
+}
+.nc-title a:hover{color:var(--c-cyan);text-decoration:underline;text-decoration-color:rgba(0,212,255,0.4)}
+.rpt-sec.taiwan .nc-title a:hover{color:var(--c-orange)}
+.rpt-sec.geo    .nc-title a:hover{color:var(--c-purple)}
+.rpt-sec.eco    .nc-title a:hover{color:var(--c-green)}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){.nc-tag{display:none}}
+</style>
+</head>
+<body>
+<div id="report-content">
+<div class="rpt-wrap">
+
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-06-27</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
+  </div>
+
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">APT / FINANCIAL SECTOR / OUTLOOK / CLOUD STORAGE / ESPIONAGE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents" target="_blank" rel="noopener">國家級 APT 滲透全球主要證券交易所：五個月無聲竊取高管 Outlook 信箱，利用合法雲端儲存掩護 C2 通訊</a></h3>
+        <p class="nc-body">CSIS 重大網路事件追蹤報告記錄了一起高度隱蔽的國家級間諜行動：攻擊者成功滲透一家全球主要股票交易所，針對高階主管的 Microsoft Outlook 信箱發動長達五個月的靜默竊密行動。攻擊者使用合法雲端儲存服務（如 OneDrive、Dropbox）作為命令與控制通道，並以偽裝成系統更新任務的排程工作維持持久存取，成功規避傳統基於流量分析的偵測機制。此案再次凸顯金融基礎設施面臨的高端持續性威脅（APT）態勢，以及 Microsoft 365 生態系統在缺乏完整日誌保留與行為異常偵測機制下的結構性安全盲點。</p>
+        <a href="https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents" target="_blank" rel="noopener" class="nc-src">CSIS</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">UBIQUITI / UNIFIOS / CISA KEV / NETWORK INFRASTRUCTURE / IOT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://cybersecuritynews.com/cisa-ubiquiti-unifi-os-vulnerability/" target="_blank" rel="noopener">CISA 警告 Ubiquiti UniFi OS 多個漏洞遭積極利用，聯邦機構限期 6 月 26 日前完成修補</a></h3>
+        <p class="nc-body">CISA 正式將 Ubiquiti UniFi OS 的多個安全漏洞加入「已知利用漏洞目錄（KEV）」，並確認至少一個漏洞已在野外被積極利用，其中包含可被遠端未授權攻擊者觸發的認證繞過及遠端代碼執行路徑。CISA 依據 BOD 22-01 聯邦強制令要求所有聯邦民政機構（FCEB）在截止日期前完成修補，私部門組織亦應比照優先處理。UniFi 系列設備廣泛部署於企業網路邊界、零售及中小型機構的網路管理層，相關漏洞一旦遭利用可能造成整個網路管理平面的完全淪陷，影響範圍遠超單一設備。</p>
+        <a href="https://cybersecuritynews.com/cisa-ubiquiti-unifi-os-vulnerability/" target="_blank" rel="noopener" class="nc-src">Cybersecurity News / CISA</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">SPLUNK / SIEM / ENTERPRISE SECURITY / ACTIVE EXPLOITATION / LOG MGMT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/" target="_blank" rel="noopener">Splunk Enterprise 嚴重漏洞揭露數日即遭積極利用：SIEM 平台本身淪為攻擊者立足點</a></h3>
+        <p class="nc-body">SecurityWeek 報導，Splunk Enterprise 的一個高嚴重性安全漏洞在公開揭露後僅數日即出現積極在野利用案例，攻擊者透過此漏洞可在 Splunk 伺服器上執行任意代碼，取得對企業核心日誌收集與安全監控平台的完全控制權。此事件尤其令人警惕，因為 Splunk 通常作為企業的安全事件與信息管理（SIEM）核心，掌握組織內幾乎所有系統的日誌流，攻擊者一旦控制 Splunk 平台，不僅可竊取高度敏感的安全遙測數據，更可藉此抹除自身活動軌跡並偵測防禦者的應急響應動作，造成「防禦者失盲」的危險局面。</p>
+        <a href="https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/" target="_blank" rel="noopener" class="nc-src">SecurityWeek</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">SOLARWINDS / SERV-U / FILE TRANSFER / CISA KEV / DOS</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html" target="_blank" rel="noopener">CISA 將 SolarWinds Serv-U 阻斷服務漏洞列入 KEV：檔案傳輸管理平台再成高價值攻擊目標</a></h3>
+        <p class="nc-body">CISA 將 SolarWinds Serv-U 受管理檔案傳輸（MFT）解決方案的阻斷服務（DoS）漏洞正式加入已知利用漏洞目錄，確認該漏洞已遭積極在野利用。繼 MOVEit、GoAnywhere、Fortra 等 MFT 解決方案在近兩年相繼淪為大規模勒索軟體與數據竊取攻擊目標後，Serv-U 的漏洞利用顯示攻擊者對企業檔案交換基礎設施的持續性高度關注。Serv-U 廣泛部署於金融、醫療及政府機構的敏感文件傳輸工作流程中，相關機構應立即評估暴露面並依 CISA 要求在規定時限內完成修補及替代控制部署。</p>
+        <a href="https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html" target="_blank" rel="noopener" class="nc-src">The Hacker News / CISA</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">NATION STATE / AI ATTACKS / CYBERWAR / 2026 THREAT LANDSCAPE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.securityweek.com/cyber-insights-2026-cyberwar-and-rising-nation-state-threats/" target="_blank" rel="noopener">SecurityWeek 2026 網路洞察：國家級攻擊全面升級，AI 武器化使攻擊週期從數週壓縮至數小時</a></h3>
+        <p class="nc-body">SecurityWeek 2026 年度網路安全洞察報告深度分析了國家級威脅行為者在本年度的顯著演化：AI 輔助漏洞發現與利用工具的普及使攻擊者能夠在漏洞揭露後數小時內完成武器化，攻擊週期較 2024 年壓縮超過 80%。報告特別指出，中國、俄羅斯、北韓、伊朗四大國家級行為者均已針對各自優先目標建立了不同程度的 AI 輔助攻擊能力，其中以情報竊取、關鍵基礎設施預置（pre-positioning）及選舉影響行動最為活躍。面對此一趨勢，傳統以人工研判為核心的安全運營中心（SOC）模型正面臨根本性挑戰，AI 對 AI 的自動化防禦競爭格局已於 2026 年正式形成。</p>
+        <a href="https://www.securityweek.com/cyber-insights-2026-cyberwar-and-rising-nation-state-threats/" target="_blank" rel="noopener" class="nc-src">SecurityWeek</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">US-CHINA / MARITIME SAFETY / BILATERAL / MULTILATERAL AVOIDANCE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-june-5-2026/" target="_blank" rel="noopener">AEI 分析：北京以選擇性雙邊接觸策略替代多邊透明機制，刻意規避香格里拉對話凸顯主導敘事意圖</a></h3>
+        <p class="nc-body">美國企業研究院（AEI）台海情勢更新指出，北京在 5 月 28–29 日安排與美方進行海上與空域安全雙邊磋商，刻意以此替代防長層級的香格里拉多邊對話出席。分析師認為，此策略反映北京正系統性地以交易性雙邊框架取代多邊透明機制——雙邊接觸讓中方得以主導議程設定、限制盟友可見度，並將每次對話轉化為各自表述的籌碼，有效瓦解美國聯合盟友形成統一戰略框架的努力。此外，北京持續以對台武器銷售案為由拖延 Hegseth 訪中，顯示北京正同步在多條外交軌道上進行戰略性施壓，以最大化其談判槓桿。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-june-5-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">PLA / TAIWAN / MILITARY DRILLS / US ALLIED RESPONSE / ADIZ</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aljazeera.com/news/2026/1/1/us-says-chinese-military-drills-around-taiwan-cause-unnecessary-tensions" target="_blank" rel="noopener">美國批評解放軍台灣周邊軍事演習「製造不必要緊張局勢」，盟友聯合聲明反對 ADIZ 頻繁侵擾但成效存疑</a></h3>
+        <p class="nc-body">美國政府發表聲明批評中國解放軍在台灣周邊進行的軍事演習及艦機頻繁進入台灣防空識別區（ADIZ）的行為「製造不必要的緊張局勢」，並聯合日本、澳洲、加拿大等盟友發出協調一致的外交訊號。然而分析人士指出，各方聲明均缺乏具體的後果威脅或行動承諾，北京對此類外部輿論壓力的容忍閾值已顯著提升，解放軍的戰術層面行為未見實質收斂。如何將外交意志與嚇阻意圖轉化為改變解放軍行為的實際手段，仍是美國及其盟友面臨的核心戰略難題。</p>
+        <a href="https://www.aljazeera.com/news/2026/1/1/us-says-chinese-military-drills-around-taiwan-cause-unnecessary-tensions" target="_blank" rel="noopener" class="nc-src">Al Jazeera</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">ANALYSIS</span>
+          <span class="nc-tag">GEOPOLITICAL RISK / TAIWAN / SOUTH CHINA SEA / TECH WAR / 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.specialeurasia.com/2026/01/07/asia-pacific-risk-2026/" target="_blank" rel="noopener">2026 亞太地緣政治風險年中評估：台灣海峽、南海主權爭端與技術制裁三重壓力節點同步升溫</a></h3>
+        <p class="nc-body">SpecialEurasia 對 2026 年亞太地緣政治風險的年度評估顯示，本年度主要風險節點集中在三個高度互聯的維度：一是台灣海峽的軍事施壓與可信嚇阻的持續博弈；二是南海黃岩島、南沙群島等敏感海域的主權灰色行動衝突，解放軍海警船艦已在多個爭議礁岩建立「常態性存在」；三是美中在先進半導體（尤其是 2nm 以下製程及 AI 訓練晶片）出口管制領域的技術制裁競爭。報告指出，2026 年下半年三個風險維度同步升溫的可能性正在提高，任何一個節點的突發事件均可能觸發跨域連鎖反應，亞太地區系統性風險正處於近年來的相對高點。</p>
+        <a href="https://www.specialeurasia.com/2026/01/07/asia-pacific-risk-2026/" target="_blank" rel="noopener" class="nc-src">SpecialEurasia</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">G7 / EVIAN 2026 / RUSSIA SANCTIONS / NORTH KOREA / INDO-PACIFIC</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues" target="_blank" rel="noopener">G7 伊維昂峰會地緣政治領導人聲明全文：俄羅斯制裁升級、北韓圍堵強化、印太穩定三大支柱正式確立</a></h3>
+        <p class="nc-body">G7 伊維昂峰會於 6 月 17 日發布地緣政治議題領導人聲明，確立三大核心支柱：一是升級對俄羅斯的能源與金融制裁，覆蓋油氣部門並強化制裁執行機制以防止繞道規避；二是強化對北韓核武與彈道導彈計劃的多邊圍堵，七大工業國承諾聯合執法打擊北韓加密貨幣竊盜及技術走私；三是重申對印太地區穩定與「基於規則的國際秩序」的集體承諾，間接回應中國在台海與南海的軍事施壓。峰會聲明被視為 G7 今年最具實質意義的多邊安全共識文件，但批評者指出執行機制的落實力度仍待觀察。</p>
+        <a href="https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues" target="_blank" rel="noopener" class="nc-src">G7 Évian 2026 / Élysée</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">BRIEFING</span>
+          <span class="nc-tag">HORMUZ / UKRAINE / GLOBAL SANCTIONS / DIPLOMACY / DAILY INTEL</span>
+        </div>
+        <h3 class="nc-title"><a href="https://geopol.substack.com/p/in-geopolitics-today-thursday-june-4bd" target="_blank" rel="noopener">今日地緣政治速報（6/25）：荷姆茲停火外交懸局、俄烏前線最新態勢、全球制裁體系韌性持續受壓測</a></h3>
+        <p class="nc-body">Jānis Vīksne 地緣政治每日速報（6 月 25 日）聚焦三條主線：荷姆茲海峽停火談判中美伊雙方圍繞執行機制的拉鋸仍未達成具體共識，「60 天停火時限」的模糊性使市場與外交界均處於高度不確定狀態；俄烏前線方面，夏季攻勢態勢正在形成，西方彈藥供應是否充足成為關鍵變數；在制裁領域，G7 伊維昂聲明後俄羅斯制裁繞道行為的偵測與反制成為多邊執法的首要挑戰，尤其是中間國（特別是中亞、土耳其、阿聯酋）扮演的制裁「漏洞」角色正引發更多關注。</p>
+        <a href="https://geopol.substack.com/p/in-geopolitics-today-thursday-june-4bd" target="_blank" rel="noopener" class="nc-src">Geopolitics Today / Substack</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">ANALYSIS</span>
+          <span class="nc-tag">CSIS / ASIA PACIFIC / STRATEGIC COMPETITION / TECH / MULTILATERAL</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.csis.org/regions/asia" target="_blank" rel="noopener">CSIS 亞太最新分析：美中戰略競爭延伸至技術標準、規則制定與多邊機構話語權的全面對抗格局</a></h3>
+        <p class="nc-body">美國戰略與國際研究中心（CSIS）亞太分析指出，2026 年的美中競爭已遠超軍事範疇，深度延伸至三個關鍵的非傳統競爭域：一是 AI 與半導體技術標準的制定話語權之爭，包括下一代通訊協議、AI 倫理框架及工業物聯網標準；二是多邊機構改革的議程控制，中國正積極在聯合國附屬機構、WTO 及東盟相關平台推動有利於己的規則修改；三是基礎設施外交的地緣競爭，「一帶一路」對 PGII（全球基礎設施與投資夥伴關係）的直接競爭正在印太多個關鍵節點同步展開，形成複雜的制度碎片化態勢。</p>
+        <a href="https://www.csis.org/regions/asia" target="_blank" rel="noopener" class="nc-src">CSIS</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ENERGY-ECO</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">FEDERAL RESERVE / WARSH / HIGHER FOR LONGER / US EQUITIES / RATES</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html" target="_blank" rel="noopener">聯準會 Warsh 鷹派路徑重塑 2026 下半年市場預期：「higher for longer」利率如何影響股債資產重新定價</a></h3>
+        <p class="nc-body">美國銀行（U.S. Bank）市場分析評估聯準會新主席 Kevin Warsh 首次記者會後的政策信號：Warsh 全票維持聯邦基金利率 3.50–3.75% 目標區間，但更新後的點陣圖顯示年底前升息概率顯著提升，相較 3 月預測呈現明顯鷹派轉向。此訊號已驅動市場重新定價 2026 下半年的利率路徑，成長股（尤其是高估值科技股）面臨貼現率上升壓力，而金融股與能源股相對受益；同時，「higher for longer」利率環境正驅動美元資產相對吸引力回升，資本從新興市場流向美元計價資產的結構性趨勢短期料將持續。</p>
+        <a href="https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html" target="_blank" rel="noopener" class="nc-src">U.S. Bank</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">ECB / EUROZONE / ENERGY INFLATION / IRAN / RATE HIKE CYCLE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html" target="_blank" rel="noopener">歐洲央行 6 月升息 25 基點背後：伊朗衝突驅動能源通膨頑固，歐元區近三年首度重啟升息週期始末</a></h3>
+        <p class="nc-body">CNBC 深度解析歐洲央行（ECB）決定升息 25 基點至 2.25% 的完整邏輯：伊朗戰爭引發的全球能源供應衝擊驅動歐元區能源分項通膨年增高達 10.9%，使 ECB 陷入「緊縮對抗能源通膨，但緊縮同時抑制因能源衝擊已受壓的實體經濟」的政策兩難。本次升息是 ECB 自 2023 年以來首度升息，標誌著此前多國爭議的「能源衝擊是暫時性的」論述宣告失效。市場對 ECB 後續路徑高度分歧：鷹派認為能源通膨的「二次傳遞效應」尚未充分顯現，鴿派則擔憂升息恐令歐元區核心國（尤其德國）的製造業衰退雪上加霜。</p>
+        <a href="https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html" target="_blank" rel="noopener" class="nc-src">CNBC</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">BANK OF AMERICA / FISCAL POLICY / EMERGING MARKETS / USD / H2 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.privatebank.bankofamerica.com/articles/washington-update.html" target="_blank" rel="noopener">美國銀行 2026 年中財政與貨幣政策展望：財政貨幣雙緊縮格局下新興市場承壓，資本回流已開發市場加速</a></h3>
+        <p class="nc-body">美國銀行（Bank of America）華盛頓展望報告評估 2026 年下半年的財政與貨幣政策雙緊縮格局：聯準會維持高利率搭配美國財政赤字擴張同步發生，形成「緊貨幣、寬財政」的結構性矛盾，預計推高長端美國公債殖利率。對於新興市場而言，美元走強疊加本國通膨壓力，使亞洲、拉美多個新興經濟體面臨貨幣貶值與資本外流的雙重衝擊；台灣、韓國等出口導向的亞洲科技供應鏈經濟體，則需在匯率競爭力與通膨控制之間謹慎拿捏。報告建議投資人在 2026 下半年適度降低新興市場配置比例，優先考量美元計價的優質固定收益資產。</p>
+        <a href="https://www.privatebank.bankofamerica.com/articles/washington-update.html" target="_blank" rel="noopener" class="nc-src">Bank of America</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+  </div>
+
+</div>
+</div>
+</body>
+</html>

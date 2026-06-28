@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today Digest 2026-06-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:0.7rem}
+.nc-title a{
+  color:var(--text);text-decoration:none;
+  transition:color 0.2s;
+}
+.nc-title a:hover{color:var(--c-cyan);text-decoration:underline;text-decoration-color:rgba(0,212,255,0.4)}
+.rpt-sec.taiwan .nc-title a:hover{color:var(--c-orange)}
+.rpt-sec.geo    .nc-title a:hover{color:var(--c-purple)}
+.rpt-sec.eco    .nc-title a:hover{color:var(--c-green)}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){.nc-tag{display:none}}
+</style>
+</head>
+<body>
+<div id="report-content">
+<div class="rpt-wrap">
+
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-06-29</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
+  </div>
+
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">PATCH TUESDAY / MICROSOFT / 206 CVEs / CHROME ZERO-DAY / CVSS 9+ / RECORD</span>
+        </div>
+        <h3 class="nc-title"><a href="https://carthageelectronics.com/cyber-threat-report-june-8-10-2026-cve-zero-days-ransomware/" target="_blank" rel="noopener">Microsoft 6 月 Patch Tuesday 創史上單月修補最高記錄：206 至 211 個 CVE 同日發布，涵蓋 Chrome 零時差與多個 CVSS 9 分以上重大漏洞</a></h3>
+        <p class="nc-body">Carthage Electronics 資安報告記錄，Microsoft 6 月 Patch Tuesday 創下自 2003 年 Patch Tuesday 制度建立以來的單月修補數量歷史紀錄，一次發布多達 206 至 211 個 CVE，範疇橫跨 Windows 核心、Office、Exchange、Azure、.NET 及瀏覽器元件。其中多個 CVSS 評分 9.0 以上的遠端代碼執行（RCE）漏洞已確認遭到積極利用，Chrome 零時差漏洞亦在同期修補清單之列，攻擊者在 CVE 公開後數小時內即武器化利用的速度創下新高。資安團隊面臨龐大修補優先順序壓力，建議以已知遭利用漏洞目錄（CISA KEV）為首要依據，優先修補面向網際網路的邊界系統。</p>
+        <a href="https://carthageelectronics.com/cyber-threat-report-june-8-10-2026-cve-zero-days-ransomware/" target="_blank" rel="noopener" class="nc-src">Carthage Electronics</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">CISA KEV / CVE-2026-12569 / PTC WINDCHILL / FLEXPLM / CVSS 9.3 / RCE / OT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA 將 CVE-2026-12569（PTC Windchill PDMlink / FlexPLM，CVSS 9.3）列入已知遭利用漏洞目錄，製造業及國防供應鏈面臨高風險</a></h3>
+        <p class="nc-body">CISA 已將影響 PTC Windchill PDMlink 及 FlexPLM 的嚴重遠端代碼執行漏洞 CVE-2026-12569（CVSS 9.3）加入已知遭利用漏洞（KEV）目錄，要求聯邦民政機構依 BOD 22-01 限期完成修補。Windchill 廣泛用於航太、汽車、國防等製造業的產品生命週期管理（PLM）系統，一旦遭攻擊者入侵，可存取設計圖面、供應鏈資訊及生產製程數據等高度敏感工業資產。CISA 建議無法立即修補的組織應採取網路分段、嚴格存取控制及提升 PLM 平台監控能力等補償措施，製造業及國防承包商應視此漏洞為頂級優先修補目標。</p>
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener" class="nc-src">CISA</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">AMADEY / STEALC / LAW ENFORCEMENT / BITDEFENDER / MICROSOFT / 27M CREDENTIALS</span>
+        </div>
+        <h3 class="nc-title"><a href="https://research.checkpoint.com/2026/8th-june-threat-intelligence-report/" target="_blank" rel="noopener">多國執法聯合行動摧毀 Amadey 與 StealC 惡意軟體基礎設施：Bitdefender、Bitsight、ESET、Microsoft 協作，回收 2,700 萬筆被盜憑證</a></h3>
+        <p class="nc-body">Check Point Research 6 月情報報告揭露，一次協調跨國執法行動成功打擊 Amadey 加載器與 StealC 資訊竊取軟體的幕後基礎設施，參與機構包括 Bitdefender、Bitsight、ESET 及 Microsoft，共回收約 2,700 萬筆被盜憑證。Amadey 長期作為多個威脅組織的初始感染工具，為勒索軟體、間諜軟體及各類資訊竊取軟體提供投遞管道；StealC 則因其高度模組化的竊取功能而被廣泛用於針對企業與個人的憑證竊取行動。儘管此次行動打擊了基礎設施，但威脅行為者迅速在備用基礎設施上重建運作的能力已成常態，後續持續監控受感染系統與憑證更換仍是必要步驟。</p>
+        <a href="https://research.checkpoint.com/2026/8th-june-threat-intelligence-report/" target="_blank" rel="noopener" class="nc-src">Check Point Research</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">UN WFP / DATA BREACH / GAZA / HUMANITARIAN / PII / 600K HOUSEHOLDS</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents" target="_blank" rel="noopener">聯合國世界糧食計畫署遭未授權存取：加薩自登記應用程式外洩約 60 萬巴勒斯坦家庭個資，含姓名、識別號碼、手機及位置數據</a></h3>
+        <p class="nc-body">CSIS 重大網路事件資料庫記錄，聯合國世界糧食計畫署（UN WFP）揭露其加薩人道援助自登記應用程式遭到未授權存取，波及約 60 萬個巴勒斯坦家庭的個人資訊，外洩數據包括姓名、識別號碼、手機號碼及位置數據。此事件凸顯人道援助組織數位系統的安全弱點，尤其是在衝突地區運作的系統往往在資安投入與數位化速度之間存在嚴重落差。外洩的位置與身份數據在衝突環境中具有高度敏感性，可能對受援助平民造成直接安全風險，聯合國各機構的網路安全責任受到廣泛質疑。</p>
+        <a href="https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents" target="_blank" rel="noopener" class="nc-src">CSIS</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">SHINYHUNTERS / DENTAQUEST / SUN LIFE / HEALTH DATA / 2.6M ACCOUNTS / DARK WEB</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.breachsense.com/breaches/" target="_blank" rel="noopener">ShinyHunters 外洩 DentaQuest 牙科給付數據：260 萬帳號含電子郵件、政府識別碼及健康保險資料遭公開於暗網論壇</a></h3>
+        <p class="nc-body">BreachSense 數據外洩監控平台記錄，知名駭客組織 ShinyHunters 公開外洩隸屬於 Sun Life 的美國牙科給付管理機構 DentaQuest 的用戶數據，受影響帳號達 260 萬筆，外洩欄位包括姓名、電子郵件地址、政府識別碼及健康保險詳細資訊。ShinyHunters 近年持續針對醫療健保產業發動大規模數據外洩攻擊，已建立成熟的黑市憑證販售體系。受影響用戶面臨身分盜竊及健康保險詐欺的複合風險，企業應主動通知受影響客戶、提供信用監控服務，並針對醫療保健供應商的第三方數據存取進行全面稽核。</p>
+        <a href="https://www.breachsense.com/breaches/" target="_blank" rel="noopener" class="nc-src">BreachSense</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">CCG / EAST OF TAIWAN / GRAY ZONE / PLAN NAVY / JURISDICTION EXPANSION / WEST PACIFIC</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-june-26-2026/" target="_blank" rel="noopener">AEI 台海更新（6/26）：北京擴大中國海警在台灣以東水域的法律存在，解放軍海軍艦艇得以騰出執勤空間投射至第一島鏈以遠</a></h3>
+        <p class="nc-body">美國企業研究院（AEI）台海最新情勢更新分析，中國正系統性擴大中國海警（CCG）在台灣以東太平洋水域的常態化法執與研究活動，此舉可能旨在改變西太平洋現狀。分析師指出，將 CCG 管轄主張延伸至台灣以東，有助於將解放軍海軍（PLAN）艦艇從台灣周邊「常規巡邏」中釋放出來，使其得以執行更遠程的任務，進一步增強第一島鏈以外的兵力投射能力。這一戰略部署與遼寧號航母甫於 6 月 23 日結束逾 40 天的南海及西太平洋部署返港相互呼應，顯示北京正透過軍警協同機制在台灣周邊建立多層次、多維度的灰色地帶施壓體系。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-june-26-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">ANALYSIS</span>
+          <span class="nc-tag">BROOKINGS / US TAIWAN STRATEGY / RECALIBRATION / DETERRENCE / COMMITMENT CREDIBILITY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/" target="_blank" rel="noopener">布魯金斯學會政策論文：重新校準美國對台支持策略——「保持距離」框架如何在降低戰爭風險的同時維持嚇阻可信度</a></h3>
+        <p class="nc-body">布魯金斯學會最新政策論文提出「保持距離（Staying Out）」框架，主張美國應在維持對台安全承諾的同時，更精確校準直接干預的條件與門檻，以避免因自動升級承諾而使嚇阻失去靈活性。論文指出，當前美國台灣政策面臨的核心矛盾在於：過於明確的防衛承諾可能鼓勵台灣冒進，而過於模糊的政策則削弱嚇阻可信度。布魯金斯方案強調應優先投資台灣自主防衛能力、強化不對稱戰力（如無人機、海岸防衛飛彈、後備力量動員），使台灣成為「難以快速吞下的豪豬」，這與美國軍事前沿部署的象徵性嚇阻形成互補而非競爭關係。</p>
+        <a href="https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/" target="_blank" rel="noopener" class="nc-src">Brookings Institution</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">ANALYSIS</span>
+          <span class="nc-tag">JACKSON SCHOOL / ESCALATION MODEL / US-CHINA / WAR GAME / CRISIS SCENARIOS / 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://jsis.washington.edu/wordpress/wp-content/uploads/2026/04/Averting-War_Taiwan-and-US-China-Relations-in-2026.pdf" target="_blank" rel="noopener">華盛頓大學傑克森國際研究院報告《避戰 2026》：美中台灣危機升級情境模型——誤判、意外衝突與紅線管理的關鍵挑戰</a></h3>
+        <p class="nc-body">華盛頓大學傑克森國際研究院最新報告《Averting War: Taiwan and US-China Relations in 2026》建構多個台灣海峽危機升級情境模型，聚焦於誤判、意外衝突觸發及雙方「紅線」模糊性等關鍵風險因素。報告指出，2026 年的台海局勢面臨多個特殊風險：解放軍軍事能力快速提升帶來的「機會窗口」認知、美中溝通管道的制度性斷裂、台灣內部政治整合對防衛意志的影響，以及全球多重衝突分散美國戰略注意力。研究團隊特別強調，危機升級的最大風險並非蓄意開戰，而是在灰色地帶行動中出現預期外的意外交火，導致雙方被迫升級至無法迅速降階的衝突層級。</p>
+        <a href="https://jsis.washington.edu/wordpress/wp-content/uploads/2026/04/Averting-War_Taiwan-and-US-China-Relations-in-2026.pdf" target="_blank" rel="noopener" class="nc-src">Jackson School / University of Washington</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">DEUTSCHE BANK / JUNE 2026 / XI-KIM SUMMIT / CHINA-DPRK / SANCTIONS / PYONGYANG</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.dbresearch.com/PROD/IE-PROD/PROD0000000000629523/This_Month_in_Geopolitics:_June_2026.pdf" target="_blank" rel="noopener">德意志銀行研究院 6 月地緣政治月報：習近平訪平壤重建中朝戰略軸心、習金會發出北京欲重奪對金正恩影響力的強烈信號</a></h3>
+        <p class="nc-body">德意志銀行研究院《This Month in Geopolitics: June 2026》月報指出，習近平 6 月 8 至 9 日訪問平壤並與金正恩會談，時間選在中朝友好合作互助條約締結 65 週年，被分析師解讀為北京在金正恩與莫斯科建立深度軍事及經濟關係後，試圖重新確立對平壤的戰略影響力的明確信號。報告評估此習金會成果包括：加深中朝在制裁因應、糧食安全及技術轉讓方面的雙邊協作，同時傳遞北京對朝核試驗的容忍上限仍存在彈性空間的訊息。中朝關係的強化在美國印太戰略中構成複雜的新變量，可能削弱多邊朝鮮半島無核化努力的可行性。</p>
+        <a href="https://www.dbresearch.com/PROD/IE-PROD/PROD0000000000629523/This_Month_in_Geopolitics:_June_2026.pdf" target="_blank" rel="noopener" class="nc-src">Deutsche Bank Research</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">HORMUZ / IRAN / 60-DAY CEASEFIRE / DIPLOMACY GAP / MOVABLE DEADLINE / ESCALATION RISK</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.malaymail.com/amp/news/what-you-think/2026/06/22/unclear-diplomacy-and-a-movable-60-day-timeline-a-dangerous-path-through-the-strait-of-hormuz-phar-kim-beng/224768" target="_blank" rel="noopener">荷姆茲 60 天停火時程模糊且不斷移動：外交真空與彈性期限製造危險升級誘因，國際社會陷入戰略等待困境</a></h3>
+        <p class="nc-body">馬來郵報分析員 Phar Kim Beng 在 6 月 22 日的分析中指出，荷姆茲停火協議面臨的最大威脅並非協議本身的條款，而是「60 天時間表」的法律模糊性與實際執行機制的缺失。當前停火架構缺乏明確的驗證機制、違約界定標準及升級觸發條件，使雙方均保有單方面宣告協議破裂的空間，形成危險的「相互誤判漏洞」。分析指出，在明確的後續外交框架建立之前，每一次單一海峽事件都可能成為停火的終點，而伊朗、美國及海灣國家各方對「停火成功」的定義分歧，進一步削弱了協議的穩定性與持久性。</p>
+        <a href="https://www.malaymail.com/amp/news/what-you-think/2026/06/22/unclear-diplomacy-and-a-movable-60-day-timeline-a-dangerous-path-through-the-strait-of-hormuz-phar-kim-beng/224768" target="_blank" rel="noopener" class="nc-src">Malay Mail</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">NORTH KOREA / BROOKINGS / KIM JONG-UN / RUSSIA / NUCLEAR / DENUCLEARIZATION / ASIA GEOPOLITICS</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.brookings.edu/collection/the-new-geopolitics-of-asia-and-the-prospects-of-north-korea-diplomacy/" target="_blank" rel="noopener">布魯金斯學會：北韓外交的新亞洲地緣政治格局——俄烏戰爭後金正恩的戰略重新定位與無核化前景評估</a></h3>
+        <p class="nc-body">布魯金斯學會北韓外交研究集刊評估，俄烏戰爭從根本上改變了金正恩的戰略選擇集合：深度軍事及經濟參與俄羅斯不僅提供了制裁替代路徑，更使平壤獲得了在中美俄三角關係中的「籌碼多元化」能力。報告指出，傳統的多邊無核化機制（六方會談框架）在當前地緣格局下已近乎失去可行性，主要原因在於中俄均不願在當前大國博弈態勢下對平壤施加真正有效的制裁壓力。布魯金斯分析師建議重新評估北韓核武凍結（而非無核化）作為過渡性目標的可行性，以避免在追求不現實目標的過程中錯失降低核衝突風險的務實窗口。</p>
+        <a href="https://www.brookings.edu/collection/the-new-geopolitics-of-asia-and-the-prospects-of-north-korea-diplomacy/" target="_blank" rel="noopener" class="nc-src">Brookings Institution</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ENERGY-ECO</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">ECB / IRAN / ENERGY INFLATION / RATE HIKE / 2.25% / EUROZONE / TRADERS AGENCY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://tradersagency.com/blog/ecb-rate-decision-june-2026-hike-iran-energy" target="_blank" rel="noopener">Traders Agency 深析 ECB 6 月升息決策：伊朗衝突能源通膨如何迫使歐洲央行打破「降息預期共識」反向緊縮，歐元區分歧加劇</a></h3>
+        <p class="nc-body">Traders Agency 對歐洲央行 6 月升息 25 基點至 2.25% 進行深度分析，指出此次升息決策的核心驅動力是伊朗衝突引發的能源通膨持續超預期：5 月歐元區能源價格年增率達 10.9%，推升整體通膨率至 3.2%，遠高於 2% 目標。報告強調，ECB 此舉為 2023 年以來首度升息，打破了市場年初普遍預期的降息路徑，顯示中東衝突對歐洲貨幣政策的外溢衝擊已超出多數分析師的預估範圍。ECB 內部鷹鴿之爭在此背景下再度浮現，南歐成員國擔憂升息加重債務壓力，北歐成員則堅持通膨目標優先，歐元區貨幣政策決策的政治複雜性顯著上升。</p>
+        <a href="https://tradersagency.com/blog/ecb-rate-decision-june-2026-hike-iran-energy" target="_blank" rel="noopener" class="nc-src">Traders Agency</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">OIL PRICE SHOCK / IRAN / RECESSION RISK / BOE / ECB / CENTRAL BANKS / WTI / BRENT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cnbc.com/2026/05/05/oil-price-shock-iran-interest-rates-recession-borrowing-war-central-banks-bank-england-ecb.html" target="_blank" rel="noopener">CNBC：油價衝擊驅動中央銀行陷入升息誘發衰退的政策兩難——WTI 年內從 57 美元飆至 113 美元高峰，全球借貸成本與衰退風險同步上升</a></h3>
+        <p class="nc-body">CNBC 深度報導，伊朗衝突觸發的油價衝擊正迫使全球主要央行面臨「升息抗通膨 vs. 避免衰退」的根本性政策兩難：WTI 原油年初不到 57 美元，4 月一度飆升至 113 美元歷史高峰，雖隨後回落至 76 美元附近，但能源通膨造成的物價壓力已全面滲透至服務業成本與消費端。英格蘭銀行、歐洲央行及其他歐洲央行若依循通膨目標升息，將面臨在脆弱的戰後經濟復甦期間主動觸發衰退的風險；若維持寬鬆，則通膨預期錨定將受威脅。分析師指出，這是 1970 年代石油危機後全球央行最為嚴峻的「成本推動型通膨」考驗，傳統貨幣政策工具的有效性受到根本質疑。</p>
+        <a href="https://www.cnbc.com/2026/05/05/oil-price-shock-iran-interest-rates-recession-borrowing-war-central-banks-bank-england-ecb.html" target="_blank" rel="noopener" class="nc-src">CNBC</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">FED / WARSH / RATE HOLD / 3.5-3.75% / CUT EXPECTATIONS / KIPLINGER / FOMC JUNE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.kiplinger.com/news/live/fed-meeting-updates-and-commentary-june-2026" target="_blank" rel="noopener">Kiplinger 6 月聯準會決策全程追蹤：Warsh 全票維持 3.50–3.75% 但點陣圖轉鷹，市場重新定價年底前降息預期</a></h3>
+        <p class="nc-body">Kiplinger 6 月聯準會（FOMC）決策現場更新報導，聯準會主席 Kevin Warsh 領導委員會全票通過維持聯邦基金利率目標區間於 3.50–3.75%，但最新點陣圖（dot plot）呈現明顯轉鷹信號：年內降息的委員人數較 3 月大幅減少，2026 年底利率預測中位數向上修正。Warsh 在記者會上強調「物價穩定是優先任務」，並指出在能源通膨及就業市場強勁的情況下，過早降息的風險遠高於維持限制性利率的代價。市場即時反應為重新定價年底前降息機率，美元指數小幅走強，10 年期公債殖利率上行，股市呈現科技股承壓、能源股拉升的結構性分化格局。</p>
+        <a href="https://www.kiplinger.com/news/live/fed-meeting-updates-and-commentary-june-2026" target="_blank" rel="noopener" class="nc-src">Kiplinger</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+  </div>
+
+</div>
+</div>
+</body>
+</html>

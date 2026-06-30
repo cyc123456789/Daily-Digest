@@ -91,3 +91,15 @@ date,category,title,source
 2026-06-30,geopolitics,"G7 埃維昂峰會地緣政治聲明 烏克蘭持續支持 伊朗制裁維持 荷姆茲停火監督 多重衝突疊加下的集體表態",Élysée Palace
 2026-06-30,economy,"Vanguard 宏觀分析：油價衝擊使全球央行陷入政策困境 停滯性通膨風險較三個月前顯著上升",Vanguard
 2026-06-30,economy,"JP Morgan 2026 市場展望：S&P 500 逼近 7420 點歷史新高 能源與材料類股年內雙冠領漲 非典型結構性牛市",JP Morgan
+2026-07-01,cybersecurity,"CISA 緊急示警 Lantronix EDS5000 序列伺服器 CVE-2025-67038 遭積極利用 CVSS 9.8 指令注入漏洞列入 KEV 聯邦機構限期 72 小時內修補",The Hacker News
+2026-07-01,cybersecurity,"libssh2 CVE-2026-55200 公開概念驗證攻擊碼 CVSS 9.2 預驗證堆積溢位漏洞波及 curl Git PHP 與海量嵌入式裝置",The Hacker News
+2026-07-01,cybersecurity,"DirtyClone Linux 核心漏洞公開可運作攻擊鏈 本地使用者透過複製封包即可取得 Root 權限 主流發行版預設配置全數受影響",SecurityWeek
+2026-07-01,taiwan,"中國海警在台灣以東海域升高行動 滋擾過境商船並遭台灣海巡署驅離闖入限制水域船艦 雙方廣播警告對峙持續升級",Nikkei Asia
+2026-07-01,taiwan,"解放軍最先進航艦福建艦再度穿越台灣海峽 緊接台灣五日即刻戰備動員操演之後 國防部全程密切監控動態",South China Morning Post
+2026-07-01,taiwan,"賴清德盼美方儘速核准 140 億美元軍售案 川普將其視為對北京談判籌碼遲未簽署 台灣對美軍購進程再添變數",Al Jazeera
+2026-07-01,geopolitics,"日中危機持續延燒 遼寧艦 J-15 戰機鎖定日本 F-15 火控雷達引爆爭端 日美防長通話協調降溫成效仍有限",South China Morning Post
+2026-07-01,geopolitics,"美國財政部 OFAC 制裁北韓-俄羅斯軍火交易掩護網絡 三實體遭凍結資產 平壤對俄輸送武器規避國際制裁持續曝光",U.S. Department of the Treasury
+2026-07-01,geopolitics,"馬科斯南海外交新戰略 菲律賓力推 7 月前完成南海行為準則談判文本 準備接任東協輪值主席化解主權僵局",South China Morning Post
+2026-07-01,economy,"原油第二季暴跌近 30% 創 2020 年以來最大單季跌幅 荷姆茲海峽通行恢復釋放滯留庫存 油價回落至每桶 70 美元附近",Fortune
+2026-07-01,economy,"華爾街寫下六年最佳單季表現 道瓊收復 52000 點關卡 標普 500 收 7440 點再創歷史新高",CNBC
+2026-07-01,economy,"黃金第二季重挫近 14% 創 2013 年以來最大季跌幅 美元指數衝上 13 個月高點 市場押注聯準會 9 月再度升息",Trading Economics

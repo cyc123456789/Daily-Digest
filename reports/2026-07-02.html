@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today Digest 2026-07-02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:0.7rem}
+.nc-title a{
+  color:var(--text);text-decoration:none;
+  transition:color 0.2s;
+}
+.nc-title a:hover{color:var(--c-cyan);text-decoration:underline;text-decoration-color:rgba(0,212,255,0.4)}
+.rpt-sec.taiwan .nc-title a:hover{color:var(--c-orange)}
+.rpt-sec.geo    .nc-title a:hover{color:var(--c-purple)}
+.rpt-sec.eco    .nc-title a:hover{color:var(--c-green)}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){.nc-tag{display:none}}
+</style>
+</head>
+<body>
+<div id="report-content">
+<div class="rpt-wrap">
+
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-07-02</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
+  </div>
+
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">CVE-2026-48558 / SIMPLEHELP / OIDC AUTH BYPASS / CVSS 10.0 / TASKWEAVER / DJINN STEALER / CISA KEV</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html" target="_blank" rel="noopener">攻擊者利用 SimpleHelp CVE-2026-48558（CVSS 10.0）OIDC 認證繞過漏洞部署全新竊密程式 TaskWeaver 與 Djinn Stealer，CISA 列入 KEV 要求 7 月 7 日前修補</a></h3>
+        <p class="nc-body">CVE-2026-48558 是 SimpleHelp 遠端存取平台 OIDC 登入流程中的嚴重認證繞過漏洞：系統接受身分令牌時未驗證密碼學簽章，使未授權攻擊者可偽造令牌並取得具完整權限的技術人員會話。攻擊者利用此漏洞於 6 月底對外連網伺服器發動攻擊，成功入侵後橫向傳遞 TaskWeaver（Node.js 惡意程式載入器，負責設備指紋識別與 C2 通訊）及 Djinn Stealer（鎖定 Windows、macOS、Linux 開發者機器的竊密程式），兩者均為首次出現的未知惡意家族。CISA 已將此漏洞列入已知遭利用漏洞（KEV）目錄，要求美國聯邦文職機構於 7 月 7 日前完成修補並對受影響系統執行鑑識分類。</p>
+        <a href="https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html" target="_blank" rel="noopener" class="nc-src">The Hacker News</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">KDDI / 14.2M ACCOUNTS / SIX ISPs / SUPPLY CHAIN / CREDENTIAL LEAK / JAPAN / TELECOM</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/" target="_blank" rel="noopener">KDDI 共用電子郵件系統遭駭：第三方軟體漏洞導致最多 1,420 萬帳號密碼外洩，波及六家日本 ISP 用戶</a></h3>
+        <p class="nc-body">日本電信巨頭 KDDI 於 6 月 17 日偵測到旗下共用電子郵件系統遭未授權存取，攻擊者利用未具名第三方軟體漏洞入侵，最多影響 1,420 萬筆電子郵件帳號及密碼，受波及 ISP 包括 STNet、JCOM、中部電力（Chubu Telecommunications）、Nifty、Biglobe 及 KDDI Web Communications。外洩資料僅憑電郵帳號與密碼即可直接存取收件匣，但 KDDI 未公開受影響第三方軟體名稱及加密方式，使獨立風險評估幾乎無從進行。日本通訊省已依據《電信事業法》要求 KDDI 於 7 月 6 日前提交書面報告，此事件與 SolarWinds 供應鏈攻擊型態高度吻合，一個未修補漏洞成為數百萬帳號的共同突破口。</p>
+        <a href="https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/" target="_blank" rel="noopener" class="nc-src">BleepingComputer</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">BLACKFIELD RANSOMWARE / NIDEC CORPORATION / $2M RANSOM / JAPAN MANUFACTURER / DATA EXFILTRATION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.bleepingcomputer.com/news/security/blackfield-ransomware-asks-nidec-corporation-for-2-million-ransom/" target="_blank" rel="noopener">Blackfield 勒索軟體組織對日本精密零件大廠日本電產（Nidec）索討 200 萬美元贖金，Chaun Choung Technology 伺服器於 6 月 22 日確認遭入侵</a></h3>
+        <p class="nc-body">勒索軟體組織 Blackfield 宣稱於 6 月 22 日成功攻擊日本電產旗下 Chaun Choung Technology 並竊取機密資料，開出 200 萬美元贖金要求，並以每日 5,000 美元加收延期費或 40 萬美元即時下載贓款作為談判籌碼。此事件是 Nidec 繼 2024 年 10 月越南分公司（Nidec Precision）遭勒索軟體攻擊導致逾 5 萬份機密文件外洩後再度中鏢，凸顯大型製造業跨境供應鏈的持續性資安暴露面。Blackfield 已設定截止期限，期間過後將公開或出售竊取資料，談判壓力持續升高。</p>
+        <a href="https://www.bleepingcomputer.com/news/security/blackfield-ransomware-asks-nidec-corporation-for-2-million-ransom/" target="_blank" rel="noopener" class="nc-src">BleepingComputer</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">CVE-2026-33825 / BLUEHAMMER / MICROSOFT DEFENDER / LPE / SAM DATABASE / RANSOMWARE / CISA KEV</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.prsol.cc/2026/07/01/cisa-windows-bluehammer-flaw-now-exploited-by-ransomware-gangs/" target="_blank" rel="noopener">CISA 確認勒索軟體組織積極利用 Microsoft Defender 本地提權漏洞 BlueHammer（CVE-2026-33825），攻擊者可透過 SAM 資料庫竊取密碼雜湊值升至 SYSTEM 權限</a></h3>
+        <p class="nc-body">CISA 於 7 月 1 日確認勒索軟體組織已將 Microsoft Defender 本地提權漏洞 BlueHammer（CVE-2026-33825）整合入攻擊鏈並積極利用。此漏洞由安全研究員「Nightmare Eclipse」於 4 月初連同概念驗證攻擊碼一同公開，攻擊者透過存取安全帳戶管理員（SAM）資料庫竊取本地帳戶密碼雜湊值，進而在受攻擊系統取得完整 SYSTEM 權限。由於此漏洞可與其他初始存取手段組合，已成為多個活躍勒索軟體組織提權階段的標準工具，微軟已發布修補更新，建議企業優先套用。</p>
+        <a href="https://www.prsol.cc/2026/07/01/cisa-windows-bluehammer-flaw-now-exploited-by-ransomware-gangs/" target="_blank" rel="noopener" class="nc-src">CISA / PRSOL</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">UNC5792 / UNC4221 / RUSSIA GRU SVR / STATE DEPT $10M REWARD / NATION-STATE / DEFENSE DIB</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.techtarget.com/searchsecurity/news/366639319/News-brief-Nation-state-hackers-active-on-the-global-stage" target="_blank" rel="noopener">美國國務院懸賞最高 1,000 萬美元緝拿俄羅斯情報機構 APT 組織 UNC5792 與 UNC4221 成員；中俄朝國家級駭客鎖定 24 家國防工業基地廠商</a></h3>
+        <p class="nc-body">美國國務院宣布對提供有助於識別或定位俄羅斯情報與軍事機構旗下 UNC5792、UNC4221 駭客組織成員資訊者懸賞最高 1,000 萬美元。與此同時，來自中國、俄羅斯及北韓的國家級網路間諜組織持續針對美國國防工業基地（DIB），今年已確認至少 24 個組織遭到入侵，攻擊者主要利用 VPN 設備及網路閘道零日漏洞作為初始突破口，目的為竊取軍事機密並干擾作戰部署。國防相關企業應立即檢視邊界設備修補狀態及特權帳號存取記錄。</p>
+        <a href="https://www.techtarget.com/searchsecurity/news/366639319/News-brief-Nation-state-hackers-active-on-the-global-stage" target="_blank" rel="noopener" class="nc-src">TechTarget</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">KMT / CHENG LI-WUN / XI JINPING / BEIJING VISIT / POLITICAL INCENTIVES / TOURISM / CROSS-STRAIT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.atlanticcouncil.org/dispatches/what-the-taiwanese-opposition-leaders-recent-china-visit-means-for-taipei-beijing-and-washington/" target="_blank" rel="noopener">國民黨主席鄭麗文 4 月訪問北京、會見習近平後，北京推出系列對台優惠措施：北京對台策略明顯從軍事壓制轉向政治經濟滲透</a></h3>
+        <p class="nc-body">台灣最大在野黨國民黨主席鄭麗文率代表團於 4 月 7 至 12 日訪問南京、上海及北京，並於 4 月 10 日在人民大會堂與中共總書記習近平會面。習近平表達歡迎台灣同胞赴大陸、鼓勵台灣青年尋求發展機會、並歡迎台灣農漁產品進入大陸市場等訊息，北京隨即於 4 月 12 日宣布恢復直航、擴大台灣農漁產品輸陸及文化旅遊交流等系列措施。大西洋理事會分析指出，此訪問對台北、北京、華盛頓三方均產生深遠影響，標誌北京對台策略從單純軍事壓制向政治經濟手段並用的多元化滲透路徑轉型。</p>
+        <a href="https://www.atlanticcouncil.org/dispatches/what-the-taiwanese-opposition-leaders-recent-china-visit-means-for-taipei-beijing-and-washington/" target="_blank" rel="noopener" class="nc-src">Atlantic Council</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">PLA / TAIWAN STRAIT / BLOCKADE DRILL / TRUMP POLICY / NDC 2026 / POLITICAL GRIDLOCK / US-TAIWAN</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.crisisgroup.org/cmt/asia-pacific/taiwan-strait-china-united-states/three-body-problem-taiwan-strait" target="_blank" rel="noopener">台海三體困局：解放軍軍演強度持續攀升、台灣國內政治陷入僵局、川普政府 2026 年國防戰略甚至未提及台灣海峽，多重變數同步惡化</a></h3>
+        <p class="nc-body">國際危機組織報告指出，台灣海峽現狀正因三重壓力持續惡化：解放軍去年 12 月 29 日執行迄今規模最大的模擬全面封鎖台灣軍演；台灣國內行政部門與在野立法院的政治僵局阻礙防務預算增長，削弱與華府的互信基礎；川普政府 2026 年《國防戰略》未見台灣海峽字樣，對台灣戰略重要性的表述明顯降溫。美國情報總監辦公室（ODNI）雖評估解放軍 2027 年前不具備武力犯台決心，但強調北京將持續在台灣周邊及印太地區執行高壓脅迫行動。</p>
+        <a href="https://www.crisisgroup.org/cmt/asia-pacific/taiwan-strait-china-united-states/three-body-problem-taiwan-strait" target="_blank" rel="noopener" class="nc-src">International Crisis Group</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">CHINA MILITARY / US-JAPAN / SENKAKU / QUAD / HEGSETH / PARTNERS NOT PROTECTORATES / BURDEN SHARING</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.japantimes.co.jp/news/2026/01/02/asia-pacific/politics/us-china-military-exercises-taiwan/" target="_blank" rel="noopener">美國要求中國停止對台軍事壓力、日本等盟友響應；美防長赫格塞斯提出「夥伴而非被保護國」新模式，要求盟友自主提升防禦能量</a></h3>
+        <p class="nc-body">美國聯合日本等盟友正式要求中國停止對台灣實施軍事施壓，但川普政府同步向盟友傳達更硬的戰略分工要求。國防部長赫格塞斯（Hegseth）提出「夥伴而非被保護國」框架，呼籲日本、韓國、澳洲等盟友大幅增加自主防禦投入，美軍維持存在但盟友須承擔更多作戰能量建構責任。此一框架在台灣議題上引發結構性隱憂：一方面美國繼續敦促中國克制，另一方面縮減對盟友的安全承諾力道，兩者之間的落差恐使嚇阻效果下降。</p>
+        <a href="https://www.japantimes.co.jp/news/2026/01/02/asia-pacific/politics/us-china-military-exercises-taiwan/" target="_blank" rel="noopener" class="nc-src">The Japan Times</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">G7 EVIAN / SANCTIONS / OIL GAS SECTOR / RUSSIA / JUNE 2026 SUMMIT / GEOPOLITICAL ALIGNMENT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues" target="_blank" rel="noopener">G7 埃維昂峰會聯合聲明：七大工業國同意強化石油天然氣部門制裁，對對抗性政權維持一致的地緣政治壓力框架</a></h3>
+        <p class="nc-body">G7 峰會於法國埃維昂舉行，七大工業國領袖聯合聲明涵蓋多項制裁升級承諾，包括進一步收緊石油天然氣出口管制，強化對特定對抗性政權的多邊施壓力道。峰會同時就印太地區穩定、俄烏局勢、伊朗核問題及供應鏈安全達成框架性共識，顯示民主陣營在主要地緣政治議題上的立場協調仍具韌性，但各國在制裁執行力度及緊迫性上仍存在明顯落差，尤其在能源依存度較高的歐洲成員國之間。</p>
+        <a href="https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues" target="_blank" rel="noopener" class="nc-src">Élysée / G7 Évian</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">US-CHINA RIVALRY / SOUTH CHINA SEA / SENKAKU / SPRATLY / MALACCA / ASIA-PACIFIC 2026 / MILITARIZATION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.specialeurasia.com/2026/01/07/asia-pacific-risk-2026/" target="_blank" rel="noopener">2026 年亞太地緣政治風險報告：美中競爭主導地區安全格局，南海、尖閣諸島、麻六甲海峽軍事化程度持續攀升</a></h3>
+        <p class="nc-body">SpecialEurasia 亞太風險評估報告指出，美中戰略競爭在 2026 年全面主導亞太政治與安全議程，雙方在南海（斯普拉特利群島、西沙群島）、尖閣諸島及麻六甲、呂宋海峽等關鍵航運通道的軍事部署持續擴張。中日韓之間強烈的經濟相互依存在一定程度上扮演衝突緩衝角色，但各方軍事操演規模與頻率同步提升，任何擦槍走火的系統性風險不容低估。美中兩國競相爭取中小型亞太國家站隊，印尼、越南、菲律賓等地的戰略槓桿價值顯著提升。</p>
+        <a href="https://www.specialeurasia.com/2026/01/07/asia-pacific-risk-2026/" target="_blank" rel="noopener" class="nc-src">SpecialEurasia</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">WEF / BLOCKADE DIPLOMACY / HORMUZ / SUPPLY CHAIN / MARITIME CHOKEPOINT / GEOPOLITICAL LEVERAGE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/" target="_blank" rel="noopener">世界經濟論壇：「封鎖外交」成為 2026 年地緣政治新工具，各國將海運咽喉點與供應鏈作為戰略談判籌碼</a></h3>
+        <p class="nc-body">世界經濟論壇分析報告指出，荷姆茲海峽衝突將「封鎖外交」推上全球地緣政治主舞台，各方行為者開始將海運咽喉點控制、供應鏈中斷威脅及關鍵礦產出口管制等工具系統性地納入外交談判工具箱。這一趨勢深刻改變全球能源、原材料及工業品貿易路線的風險定價，亞太多個依賴中東能源進口的國家正積極分散供應來源並強化戰略儲備，但短期內供應鏈重組成本高昂且時程漫長。</p>
+        <a href="https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/" target="_blank" rel="noopener" class="nc-src">World Economic Forum</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ECO-ENERGY</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">HORMUZ / US-IRAN / BRENT $80 / CEASEFIRE SIGNALS / OIL MARKET / IEA / LARGEST SUPPLY DISRUPTION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html" target="_blank" rel="noopener">美伊外交談判傳利好後日內瓦會談意外中止：布蘭特原油從 120 美元高位回落至 80.57 美元後再度反彈，荷姆茲局勢仍是全球最大能源市場風險變數</a></h3>
+        <p class="nc-body">隨著美伊日內瓦談判釋出進展訊號，荷姆茲海峽連續兩晚未發生攻船事件，市場對停火樂觀情緒推動布蘭特原油從戰時高峰每桶逾 120 美元大幅回落至 80.57 美元（+0.9%）、WTI 至 77.54 美元（+1.23%）；然而談判隨即意外中斷，油價再度走高。國際能源署（IEA）將此次荷姆茲封鎖定性為「全球石油市場史上最大供應中斷」，中國已將石油進口量下調至每日 780 萬桶，意外成為緩解亞洲供應壓力的關鍵緩衝，但全球能源市場走向在美伊談判取得實質進展前仍將高度震盪。</p>
+        <a href="https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html" target="_blank" rel="noopener" class="nc-src">CNBC</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">FED 3.50-3.75% / ECB +25BP / BOJ HIKE / RATE DIFFERENTIAL / STAGFLATION / 2027 CUT / CENTRAL BANKS</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html" target="_blank" rel="noopener">全球央行同步轉鷹：聯準會全票維持 3.50–3.75%、歐洲央行升息 25 基點、日銀跟進，能源通膨使降息時程大幅推後至 2027 年</a></h3>
+        <p class="nc-body">歐洲央行於 6 月 11 日執行 2023 年以來首次升息，三大基準利率均調升 25 個基點（自 6 月 17 日起生效），主因能源驅動通膨超過預期；同週聯準會全票維持聯邦基金利率於 3.50–3.75% 不變，點陣圖轉向鷹派，年內升息預期浮現，降息窗口已從原先的 2026 年預期推遲至 2027 年。日本銀行同步跟進升息，三大央行政策步調向鷹派靠攏，但面臨能源通膨推高物價而前景指標走弱的停滯性通膨兩難困境，油價後續走勢將直接左右各大央行下半年的政策路徑。</p>
+        <a href="https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html" target="_blank" rel="noopener" class="nc-src">CNBC</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">USD STRENGTH / FX RATE DIFFERENTIAL / S&amp;P 7420 / TECH SELLOFF / OIL LOWER / JULY OUTLOOK / CONVERA</span>
+        </div>
+        <h3 class="nc-title"><a href="https://convera.com/blog/market-insights/fx-research/monthly-global-fx-outlook/fx-outlook-july-2026/fx-outlook-july-2026/" target="_blank" rel="noopener">7 月外匯展望：利率差異重返匯市主驅動力，美元維持強勢；S&amp;P 500 逼近 7,420 高位但科技股賣壓與油價下滑帶來反向壓力</a></h3>
+        <p class="nc-body">Convera 7 月全球外匯展望報告指出，進入下半年最明顯的市場轉變是利率差異重新取代地緣政治與能源因素，成為主導貨幣走勢的核心力量：美元因聯準會維持較高利率立場而整體維持強勢，而歐元與日圓則承受相對貶壓。股市方面，S&P 500 指數靠近 7,420 點歷史高位，但上半年末油價急跌引發通膨壓力緩和的預期，科技股承壓賣出，獲利了結使指數漲幅受限。黃金因美元強勢有所回調，但避險需求在地緣政治不確定性背景下仍提供支撐。</p>
+        <a href="https://convera.com/blog/market-insights/fx-research/monthly-global-fx-outlook/fx-outlook-july-2026/" target="_blank" rel="noopener" class="nc-src">Convera</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+  </div>
+
+</div>
+</div>
+</body>
+</html>

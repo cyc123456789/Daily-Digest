@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today Digest 2026-07-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:0.7rem}
+.nc-title a{
+  color:var(--text);text-decoration:none;
+  transition:color 0.2s;
+}
+.nc-title a:hover{color:var(--c-cyan);text-decoration:underline;text-decoration-color:rgba(0,212,255,0.4)}
+.rpt-sec.taiwan .nc-title a:hover{color:var(--c-orange)}
+.rpt-sec.geo    .nc-title a:hover{color:var(--c-purple)}
+.rpt-sec.eco    .nc-title a:hover{color:var(--c-green)}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){.nc-tag{display:none}}
+</style>
+</head>
+<body>
+<div id="report-content">
+<div class="rpt-wrap">
+
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-07-04</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
+  </div>
+
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">JADEPUFFER / AI-RUN RANSOMWARE / SYSDIG / LLM ATTACK CHAIN / CREDENTIAL THEFT / DB WIPER / AUTONOMOUS AGENT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/" target="_blank" rel="noopener">史上首起 AI 全自主勒索軟體攻擊：JADEPUFFER 操作者以 LLM 代理完整執行滲透、憑證竊取、橫向移動至加密清除企業資料庫，全程無人工介入</a></h3>
+        <p class="nc-body">資安公司 Sysdig 發現有史以來首起從頭到尾完全由 AI 代理自主運行的勒索軟體攻擊事件，攻擊者代號「JADEPUFFER」，利用大型語言模型（LLM）自動化完成完整攻擊鏈——包含初始滲透、憑證竊取、橫向移動、加密與清除企業生產資料庫，全程無需人工介入。此案例標誌著勒索軟體威脅正式進入 AI 自動化時代，攻擊速度與規模大幅超越傳統人工操作模式，傳統基於時間異常的威脅偵測機制面臨根本性失效風險。網路保險公司已緊急啟動 AI 驅動攻擊的風險模型重估，AI 代理攻擊鏈可將整個入侵至加密的過程壓縮至分鐘級別。</p>
+        <a href="https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/" target="_blank" rel="noopener" class="nc-src">The Cyber Express</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">ANUBIS RANSOMWARE / CVE-2025-5777 / CITRIX BLEED 2 / RAAS / SPHINX REBRAND / NETSCALER ADC / INITIAL ACCESS</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">Anubis 勒索軟體積極利用 Citrix Bleed 2（CVE-2025-5777）取得初始存取，CISA 列入 KEV，Sphinx 重品牌後擴張速度超越前身</a></h3>
+        <p class="nc-body">與 Anubis 勒索軟體行動相關的威脅行為者已被確認積極利用 Citrix Bleed 2 漏洞（CVE-2025-5777）取得目標組織的初始存取權限。Anubis 是 2024 年底自 Sphinx 勒索軟體重品牌而來的勒索軟體即服務（RaaS）組織，其附屬成員透過 Citrix Gateway 及 NetScaler ADC 的認證繞過漏洞建立立足點，隨後部署加密負載並索取贖金。CISA 已將 CVE-2025-5777 列入已知遭利用漏洞（KEV）目錄，所有仍暴露於公開網際網路的未修補 Citrix 設備應視為高度優先攻擊目標，立即套用官方更新。</p>
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener" class="nc-src">CISA</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">TODDYCAT / UMBRIJ MALWARE / GOOGLE API / GMAIL ESPIONAGE / APT / CORPORATE EMAIL / COVERT ACCESS / TOKEN ABUSE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thehackernews.com/" target="_blank" rel="noopener">APT 組織 ToddyCat 部署新型惡意程式 Umbrij，透過 Google API 靜默竊取企業 Gmail 商業通訊，繞過傳統登入異常偵測</a></h3>
+        <p class="nc-body">研究人員將新型惡意程式 Umbrij 歸因於 APT 組織 ToddyCat，此惡意程式設計用途為透過 Google API 合法 token 靜默存取受害者以 Gmail 托管的企業電子郵件，在不觸發異常登入告警的情況下持續竊取商業機密與高層往來通訊。攻擊者優先鎖定已將企業電子郵件系統遷移至 Google Workspace 的跨國企業，利用被竊 OAuth token 進行無聲情報蒐集，此設計刻意規避傳統基於憑證異常與地理位置異常的偵測機制。企業 Google Workspace 管理員應即刻稽核第三方 OAuth 應用程式授權，並對異常 API 存取流量設置告警。</p>
+        <a href="https://thehackernews.com/" target="_blank" rel="noopener" class="nc-src">The Hacker News</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">NOVO NORDISK / UNIVERSITY OF NOTTINGHAM / DATA BREACH / PHARMA / HIGHER EDUCATION / JUNE 2026 RECAP / MULTI-SECTOR</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cm-alliance.com/cybersecurity-blog/june-2026-biggest-cyber-attacks-data-breaches-ransomware-attacks" target="_blank" rel="noopener">2026 年 6 月重大資安事件回顧：製藥巨頭 Novo Nordisk 與英國諾丁漢大學雙雙確認資料外洩，製藥與高等教育成攻擊集中新目標</a></h3>
+        <p class="nc-body">CM Alliance 2026 年 6 月最大資安事件月報指出，丹麥製藥巨頭 Novo Nordisk 與英國諾丁漢大學在本月確認遭受資料外洩，成為製藥研發及高等教育機構持續被針對性攻擊的最新案例。此外政府、遊戲及重要公用事業等多個產業亦同步爆發事件，顯示攻擊者正採取跨產業、多目標並行的廣泛撒網策略。製藥研發資料（含候選藥物化合物、臨床試驗數據）因具高度商業及戰略價值，已成為國家級 APT 與犯罪組織的共同覬覦目標。</p>
+        <a href="https://www.cm-alliance.com/cybersecurity-blog/june-2026-biggest-cyber-attacks-data-breaches-ransomware-attacks" target="_blank" rel="noopener" class="nc-src">CM Alliance</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">SCATTERED SPIDER / EXTRADITION / FINLAND / US CHARGES / CONSPIRACY / COMPUTER INTRUSION / TEEN HACKER / SOCIAL ENGINEERING</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.techtarget.com/searchsecurity/news/366639319/News-brief-Nation-state-hackers-active-on-the-global-stage" target="_blank" rel="noopener">Scattered Spider 成員從芬蘭引渡至美國，19 歲雙重國籍青年在芝加哥聯邦法院面對共謀、電腦入侵及詐欺多項重罪</a></h3>
+        <p class="nc-body">一名被指控隸屬 Scattered Spider 駭客組織的 19 歲美/愛沙尼亞雙重國籍青年於 7 月 1 日從芬蘭成功引渡至美國，於芝加哥聯邦法院出庭，面對共謀、電腦入侵及詐欺等重罪指控。Scattered Spider 以針對大型跨國企業實施社交工程攻擊聞名，過去成功滲透 MGM Resorts、Caesars Entertainment 等高知名度目標並造成數億美元損失。此次跨大西洋引渡的成功彰顯美國聯邦執法機構強化跨國追緝網路犯罪人員的持續決心，亦是對英語系駭客組織最具震懾意義的執法行動之一。</p>
+        <a href="https://www.techtarget.com/searchsecurity/news/366639319/News-brief-Nation-state-hackers-active-on-the-global-stage" target="_blank" rel="noopener" class="nc-src">TechTarget</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">ARMIS 2026 CYBERWARFARE REPORT / MACHINE SPEED / AI-CHARGED / NATION STATE / 89% ALARM / 66% BREACHED / TELECOM / CLOUD</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.armis.com/blog/nation-state-attacks-hit-machine-speed-key-takeaways-of-the-2026-armis-cyberwarfare-report-and-what-it-means-for-security-teams/" target="_blank" rel="noopener">Armis 2026 年網路戰報告：國家級攻擊進入 AI 驅動「機器速度」時代，89% 資安主管示警、66% 企業過去一年至少遭受兩次入侵</a></h3>
+        <p class="nc-body">Armis 2026 年網路戰年度報告警告，由 AI 加速的國家級網路攻擊已進入「機器速度」自動化時代，全球 89% 的資安領導者對即將到來的 AI 加持攻擊浪潮拉響警報，而調查中 66% 的企業在過去一年內至少遭受兩次重大資安事件，較去年顯著上升。儘管 79% 的 IT 主管聲稱已備妥防禦，實際防禦縱深普遍無法應對高速自動化攻擊鏈。電信網路、雲端平台與企業身份系統已取代傳統端點，成為 2026 年國家級行為者的首要攻擊標的。</p>
+        <a href="https://www.armis.com/blog/nation-state-attacks-hit-machine-speed-key-takeaways-of-the-2026-armis-cyberwarfare-report-and-what-it-means-for-security-teams/" target="_blank" rel="noopener" class="nc-src">Armis</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">AEI / PLA ADIZ BASELINE / CHINA STRATEGY SHIFT / ECONOMIC INCENTIVES / TAIWAN DELEGATION / HAN KUO-YU US VISIT / JULY 2 UPDATE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-july-2-2026/" target="_blank" rel="noopener">AEI 7 月 2 日台海情勢更新：解放軍 ADIZ 活動回落歷史基準、台灣立院代表團訪美，北京推優惠措施加速政治經濟滲透策略</a></h3>
+        <p class="nc-body">美國企業研究所（AEI）最新台海情勢更新指出，2026 年 6 月解放軍 ADIZ 入侵架次顯著下降，恢復至每月約 200 架次的歷史基準線，且出現長達 12 天無中線侵越的平靜期，被分析人士解讀為北京調整對台施壓節奏的信號。台灣立法院長韓國瑜率跨黨派代表團於 6 月 21 至 26 日訪美，就台灣國際參與、貿易及安全議題積極進行游說。中國則趁機推出涵蓋鬆綁觀光限制、恢復直航的系列對台優惠措施，多名分析師警告此舉更可能是北京以政治經濟滲透取代純軍事施壓的統戰策略調整，而非真正的戰略收縮。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-july-2-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">MUNICH SECURITY REPORT / INDO-PACIFIC / US RELIABILITY / HEGSETH / PARTNERS NOT PROTECTORATES / TAIWAN DEFENSE BUDGET / ALLIES DOUBT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://securityconference.org/en/publications/munich-security-report/2026/indo-pacific/" target="_blank" rel="noopener">慕尼黑安全報告 2026 印太篇：赫格塞斯「夥伴非被保護國」戰略轉向，印太盟友對美安全承諾可信度疑慮持續深化</a></h3>
+        <p class="nc-body">2026 年慕尼黑安全報告印太章節深度分析，美國國防部長赫格塞斯於香格里拉對話明確宣示「夥伴而非被保護國」（Partners, not protectorates）的戰略轉向，要求印太盟友大幅提升國防支出，同時川普政府對台軍售遲滯與對貿易盟友的強硬立場，使印太各國對美國安全承諾的可信度疑慮顯著加深。韓國、台灣、菲律賓已相繼宣布提高國防預算以因應戰略自主化需求，日本與澳洲則積極拓展 AUKUS 及多邊防衛合作框架，以降低對單一安全保證體系的依賴。台灣行政與立法機構持續的政治僵局更增添防衛預算落實的不確定性，恐使北京對台灣抵抗意志產生誤判。</p>
+        <a href="https://securityconference.org/en/publications/munich-security-report/2026/indo-pacific/" target="_blank" rel="noopener" class="nc-src">Munich Security Conference</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">BROOKINGS / US TAIWAN SUPPORT / RECALIBRATION / CROSS-STRAIT STRATEGY / DETERRENCE / CREDIBILITY / ARMS SALES</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/" target="_blank" rel="noopener">布魯金斯學會：美國應重新校準對台支持策略，在維持嚇阻可信度與避免被拖入台海衝突之間尋求平衡</a></h3>
+        <p class="nc-body">布魯金斯學會最新政策分析呼籲，美國需重新校準對台支持的戰略框架，在維持足夠嚇阻可信度以防止北京誤判的同時，明確避免因模糊承諾而被動捲入台海武裝衝突。報告指出，川普政府對台軍售的選擇性遲滯與作為對北京談判籌碼的使用方式，正在侵蝕美台關係的戰略互信基礎。美國外交政策應透過更清晰的紅線界定與持續的高層軍事交流，向北京傳遞明確的嚇阻信號，同時支持台灣提升非對稱防衛能力，而非在大型平台採購上陷入政治角力。</p>
+        <a href="https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/" target="_blank" rel="noopener" class="nc-src">Brookings Institution</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">THE DIPLOMAT / ARCTIC / ASIA ENERGY SECURITY / SANCTIONS EXPOSURE / NORTHERN SEA ROUTE / RUSSIA LNG / STRATEGIC POSITIONING / JULY 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thediplomat.com/2026/07/asia-is-racing-to-the-arctic-but-its-not-easy/" target="_blank" rel="noopener">《外交家》7 月：亞洲各大國加速競逐北極能源航道，中俄韓日四方利益角力，制裁規避與能源安全成核心驅動力</a></h3>
+        <p class="nc-body">《外交家》雜誌 7 月最新報導深度剖析，亞洲主要大國正加速布局北極地區，搶奪能源資源、北方海航道控制權與戰略定位，中國、俄羅斯、韓國、日本四方利益在此交匯並形成複雜競合局面。能源安全計算與制裁規避是亞洲北極布局的核心驅動力：儘管歐盟計劃於 2027 年 1 月起禁止進口俄羅斯 LNG，目前仍是俄羅斯 LNG 的主要買家，而東亞能源缺口使北方海航道成為全球供應鏈的潛在替代路線。北極地緣政治格局複雜化，預期將對 2026 年下半年的全球能源市場定價形成新的結構性影響因素。</p>
+        <a href="https://thediplomat.com/2026/07/asia-is-racing-to-the-arctic-but-its-not-easy/" target="_blank" rel="noopener" class="nc-src">The Diplomat</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">WEF / BLOCKADE DIPLOMACY / MARITIME COERCION / SUPPLY CHAIN RISK / TAIWAN STRAIT / HORMUZ / MALACCA / GEOPOLITICAL TOOL</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/" target="_blank" rel="noopener">WEF：「封鎖外交」成為 2026 年地緣政治新型強制工具，台海、霍爾木茲、麻六甲三大咽喉要道面臨最高風險</a></h3>
+        <p class="nc-body">世界經濟論壇（WEF）報告分析，「封鎖外交」（Blockade Diplomacy）正崛起為 2026 年地緣政治博弈的新型強制手段，各競爭性大國透過海上封鎖、通訊切斷與港口施壓等工具強化談判籌碼，並與傳統外交及制裁手段並行使用以達成最大威懾效果。此趨勢對台灣海峽、霍爾木茲海峽與麻六甲海峽三大全球貿易咽喉要道具有直接戰略含義，企業供應鏈韌性規劃需將海上通道突發封鎖列為高優先風險情境。分析師特別警告，封鎖行動一旦啟動往往難以在短期內解除，其持久性遠超傳統制裁，且可能引發對等報復的螺旋升級。</p>
+        <a href="https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/" target="_blank" rel="noopener" class="nc-src">World Economic Forum</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">BEHORIZON / INDO-PACIFIC WEEKLY / US-CHINA COMPETITION / ASEAN / SOUTH CHINA SEA / PHILIPPINES / AUKUS / MULTILATERAL SECURITY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://behorizon.org/asia-on-the-horizon/" target="_blank" rel="noopener">BeHorizon 印太週報：美中競爭重塑東南亞多邊格局，菲律賓強化三邊安全合作，ASEAN 戰略模糊面臨選邊壓力</a></h3>
+        <p class="nc-body">BeHorizon 本週印太態勢週報指出，美中戰略競爭持續主導東南亞多邊外交格局，菲律賓在南海主權爭端上強化與美、日的三邊安全合作框架，澳洲則積極拓展 AUKUS 核潛艦及先進能力移轉計畫在東南亞的培訓角色。東協各國在維持對美安全夥伴關係的同時，透過「雙軌外交」繼續保有與中國的深度經濟往來，但此種戰略模糊正面臨越來越大的結構性壓力，要求各方明確選邊站隊的外部訊號持續累積，東協傳統共識機制面臨空前挑戰。</p>
+        <a href="https://behorizon.org/asia-on-the-horizon/" target="_blank" rel="noopener" class="nc-src">BeHorizon</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ENERGY-ECO</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">IQI GLOBAL / JULY 2026 OUTLOOK / ENERGY RISK REPRICING / GEOPOLITICAL RISK / FX RATE DIFFERENTIAL / HORMUZ / MARKET NARRATIVE SHIFT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://iqiglobal.com/blog/global-economic-outlook-july-2026/" target="_blank" rel="noopener">IQI Global 2026 年 7 月全球經濟展望：金融市場從利率敘事轉向能源與地緣政治風險定價，霍爾木茲仍是最大黑天鵝</a></h3>
+        <p class="nc-body">IQI Global 7 月全球經濟展望報告指出，金融市場正從過去幾個月以「成長率與利率」為核心的定價邏輯，明顯轉向以「地緣政治與能源安全」為主導的新市場敘事。油價近期下滑暫時緩解通膨壓力，為各國央行提供短暫政策喘息空間，但霍爾木茲海峽仍是全球最重要的能源黑天鵝風險點——約 20% 的全球石油流量與近 20% 的全球 LNG 貿易流量通過此咽喉要道。匯率市場方面，利率差異重新成為主導外匯走勢的首要驅動力，取代了前幾個季度以地緣政治消息面主導的波動模式，美元指數維持強勢格局。</p>
+        <a href="https://iqiglobal.com/blog/global-economic-outlook-july-2026/" target="_blank" rel="noopener" class="nc-src">IQI Global</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">JP MORGAN / 2026 MARKET OUTLOOK / S&P 500 HISTORICAL HIGH / FED RATE CUT DELAY / POLICY INERTIA / EQUITY VALUATION / CREDIT SPREAD</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.jpmorgan.com/insights/global-research/outlook/market-outlook" target="_blank" rel="noopener">J.P. Morgan 2026 市場展望：美股 S&amp;P 500 逼近歷史高位，聯準會降息時程持續延後，地緣政治衝擊可能觸發明顯回調</a></h3>
+        <p class="nc-body">J.P. Morgan 全球研究 2026 年市場展望顯示，在聯準會維持 3.50–3.75% 政策利率的情況下，美股 S&P 500 仍持續逼近歷史高位，市場繼續押注最遲 2026 年底前的單次 25 基點降息，但持續的地緣政治衝突使降息時程風險明顯偏向延後。報告分析師特別指出，美股估值已處於歷史高位，債市與股市之間的信用利差壓縮幅度達歷史性水平，在此背景下任何地緣政治突發事件——無論是霍爾木茲封鎖威脅還是台海緊張升溫——均可能觸發幅度不容小覷的市場調整。機構投資人持續以科技股為核心抵禦利率高原期，但板塊輪動跡象增加。</p>
+        <a href="https://www.jpmorgan.com/insights/global-research/outlook/market-outlook" target="_blank" rel="noopener" class="nc-src">J.P. Morgan</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">MACROMICRO / GLOBAL CENTRAL BANKS / ECB RATE HIKE 25BP / BOE STAGFLATION DILEMMA / FED HOLD / RATE DIVERGENCE / EM CAPITAL FLOW</span>
+        </div>
+        <h3 class="nc-title"><a href="https://en.macromicro.me/collections/6005/global-central-bank/143492/world-central-banks-yearend-interest-rate-expectations-2026" target="_blank" rel="noopener">MacroMicro 全球央行利率預期：ECB 升息 25bp 至 2.25% 應對輸入型通膨，英國央行陷升息衰退兩難，政策分歧放大新興市場風險</a></h3>
+        <p class="nc-body">MacroMicro 全球央行年底利率預期追蹤資料顯示，歐洲央行（ECB）6 月 11 日決議將存款利率上調 25 個基點至 2.25%，以因應油價衝擊帶動的輸入型通膨壓力，為 2022 年緊縮周期以來的重要政策轉折點。英格蘭銀行（BOE）則深陷政策兩難：升息將加速衰退風險，放任通膨高燒則侵蝕薪資購買力與政府公信力，市場對英鎊走勢預期高度分歧。全球主要央行政策立場分歧持續擴大，正放大跨市場利率差異，並對新興市場資本流動帶來新的結構性不穩定風險，部分東南亞央行已被迫跟進升息以防資本外流。</p>
+        <a href="https://en.macromicro.me/collections/6005/global-central-bank/143492/world-central-banks-yearend-interest-rate-expectations-2026" target="_blank" rel="noopener" class="nc-src">MacroMicro</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">DELOITTE / STAGFLATION / GLOBAL GDP SLOWDOWN / OIL SHOCK / MULTIPLE SHOCKS / ECB FORECAST 0.8% / FISCAL BUFFER / SUPPLY CHAIN</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html" target="_blank" rel="noopener">德勤 2026 全球經濟展望：多重衝擊下停滯性通膨風險顯著上升，歐元區 GDP 預測僅 0.8%，政府財政緩衝空間持續消耗</a></h3>
+        <p class="nc-body">德勤 2026 全球經濟展望報告指出，在油價衝擊、央行緊縮政策與地緣政治不確定性的多重夾擊下，全球停滯性通膨（Stagflation）風險已顯著上升，歐洲央行預測歐元區 GDP 增速僅 0.8%，為近年低點。供應鏈韌性建設、能源轉型投資與數位資安支出形成「三重財政壓力」，各國政府財政政策空間持續收窄，應對下一波衝擊所需的財政緩衝資源已大幅消耗。報告建議企業優先投資備援供應鏈節點，以應對可能持續的地緣政治擾動；並預警若中東或台海情勢再度升溫，全球增長前景將面臨進一步下修壓力。</p>
+        <a href="https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html" target="_blank" rel="noopener" class="nc-src">Deloitte Insights</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+  </div>
+
+</div>
+</div>
+</body>
+</html>

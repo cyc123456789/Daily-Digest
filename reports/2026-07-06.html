@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today Digest 2026-07-06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:0.7rem}
+.nc-title a{color:var(--text);text-decoration:none;transition:color 0.2s}
+.nc-title a:hover{color:var(--c-cyan);text-decoration:underline;text-decoration-color:rgba(0,212,255,0.4)}
+.rpt-sec.taiwan .nc-title a:hover{color:var(--c-orange)}
+.rpt-sec.geo    .nc-title a:hover{color:var(--c-purple)}
+.rpt-sec.eco    .nc-title a:hover{color:var(--c-green)}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){.nc-tag{display:none}}
+</style>
+</head>
+<body>
+<div id="report-content">
+<div class="rpt-wrap">
+
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-07-06</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
+  </div>
+
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">AVALON / CROWNX / AI-ASSISTED MALWARE / MODULAR FRAMEWORK / EDR EVASION / PHISHING / ISO DROPPER / BACKUP DESTRUCTION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html" target="_blank" rel="noopener">Avalon 模組化惡意軟體框架內嵌 CrownX 勒索軟體：AI 輔助研發可規避全主流 EDR，透過偽造法律文件郵件發動完整多階段攻擊鏈</a></h3>
+        <p class="nc-body">資安研究人員揭露名為 Avalon 的全新模組化惡意軟體框架，其內建 CrownX 勒索軟體元件，並設有針對 Microsoft Defender、CrowdStrike、SentinelOne、FortiEDR、ESET、McAfee 等主流 EDR 工具的專屬規避子系統。攻擊鏈以偽造法律文件電子郵件為起點，利用 ISO 映像封裝惡意酬載以繞過電子郵件閘道層掃描，逐步執行憑證竊取、橫向移動、遠端存取及備份系統破壞等完整攻擊流程。Avalon 程式碼風格與架構顯示出 AI 輔助開發特徵，代表惡意軟體開發門檻持續降低；樣本自 3 月 11 日上傳至 VirusTotal 至今仍維持零偵測率，企業應立即更新 EDR 規則並強化電子郵件 ISO 附件過濾政策。</p>
+        <a href="https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html" target="_blank" rel="noopener" class="nc-src">The Hacker News</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">FORTIBLEED / INC RANSOMWARE / LYNX RANSOMWARE / 430K FIREWALLS / 110M CREDENTIALS / VPN SNIFFER / SUPPLY CHAIN / MASS EXPLOITATION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/" target="_blank" rel="noopener">FortiBleed 憑證竊取行動確認連結 INC 及 Lynx 勒索軟體：43 萬台 FortiGate 防火牆遭植入自訂封包嗅探工具，逾 1.1 億組 VPN 認證資料遭竊</a></h3>
+        <p class="nc-body">資安研究機構確認大規模 FortiBleed 攻擊行動已直接促成 INC 及 Lynx 兩大勒索軟體組織的後續部署，分析師在 FortiBleed 基礎設施上追蹤到與兩組織勒索協商面板共用同一操作者，首次建立起大規模憑證竊取與後續勒索軟體攻擊之間的完整犯罪供應鏈。攻擊者在遭入侵的設備上植入名為「FortiGate Sniffer」的自訂封包截取工具，從即時流量中竊取 VPN 認證資料；超過 43 萬台設備遭掃描，409 個目標確認完整入侵，354 個完成全攻擊鏈，已觸發至少 12 次勒索軟體部署。Fortinet 用戶應立即稽核登入記錄並強制輪換所有 VPN 憑證。</p>
+        <a href="https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/" target="_blank" rel="noopener" class="nc-src">BleepingComputer</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">FATFS / FIRMWARE / CVE-2026-6682 / CVE-2026-6687 / RTOS / IOT / DRONE / INDUSTRIAL / CRYPTO WALLET / RUNZERO / NO UPSTREAM PATCH</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html" target="_blank" rel="noopener">runZero 揭露 FatFs 韌體函式庫 7 個 CVE 至今無上游修補：數百萬台安全攝影機、無人機、工業控制器及硬體加密錢包面臨程式碼執行風險</a></h3>
+        <p class="nc-body">資安公司 runZero 揭露嵌入式設備韌體廣泛採用的 FatFs 小型檔案系統函式庫存在 7 個安全漏洞，涵蓋 Espressif ESP-IDF、STM32Cube、Zephyr RTOS、ArduPilot、MicroPython 等主流嵌入式平台，影響安全監控攝影機、工業控制器、消費物聯網、無人機及硬體加密錢包等數百萬台設備。攻擊者只需向目標設備提交蓄意構造的 USB 隨身碟、SD 記憶卡或韌體更新包，即可觸發整數溢位（CVE-2026-6682）或欄位溢位（CVE-2026-6687）等記憶體損毀缺陷並執行任意程式碼。由於 FatFs 由單一維護者管理，runZero 多次聯繫及透過 JPCERT/CC 協助均未獲回應，目前無官方修補程式，設備製造商須自行實作輸入驗證等緩解控制。</p>
+        <a href="https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html" target="_blank" rel="noopener" class="nc-src">The Hacker News / runZero</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">CISA KEV / JULY 2026 / KNOWN EXPLOITED VULNERABILITIES / ACTIVE EXPLOITATION / FEDERAL PATCH DEADLINE / MULTI-SECTOR / CRITICAL INFRA</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.hackerstorm.com/search-insights/cisa-kev-cve-data" target="_blank" rel="noopener">CISA KEV 七月持續擴增：多個跨產業高危漏洞確認遭積極利用，政府、醫療、金融及關鍵基礎設施面臨緊迫修補壓力</a></h3>
+        <p class="nc-body">CISA 已知遭利用漏洞（KEV）目錄在七月持續擴增，涵蓋政府、醫療、金融及關鍵基礎設施的多個高危漏洞；聯邦民事行政部門機構（FCEB）依指令須在規定時限內完成修補，逾期將面臨合規風險。最新追蹤數據顯示，七月新增 KEV 條目中，多個漏洞在 CISA 公告前已遭勒索軟體行為者與國家級 APT 組織積極武器化，漏洞公開至大規模利用的時間視窗持續壓縮至 24–72 小時以內。資安團隊應建立與 CISA KEV 更新同步的自動化修補優先排序流程，並對暴露在公網的高風險服務實施緊急隔離或臨時存取管控。</p>
+        <a href="https://www.hackerstorm.com/search-insights/cisa-kev-cve-data" target="_blank" rel="noopener" class="nc-src">CISA / Hackerstorm</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">LAI CHING-TE / MARITIME QUARANTINE DRILL / NSC / MND / CGA / DRONE RECON / BLOCKADE PREP / COMMERCIAL SHIP / STOCKPILE / AEI JULY 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-july-2-2026/" target="_blank" rel="noopener">賴清德下令強化台灣海事韌性：封鎖情境桌上兵推後指示擴大無人機偵察、完善商船通訊並更新能源關鍵物資儲備機制</a></h3>
+        <p class="nc-body">AEI 七月初台海情勢更新確認，台灣總統賴清德在完成模擬中國「準封鎖」情境的桌上演習後，正式指示國安會（NSC）、國防部（MND）、海巡署（CGA）及相關機構強化海事韌性，包括擴大無人機海域偵察覆蓋、改善與過境商業船隊的即時通訊協調，以及更新能源和關鍵物資戰略儲備計劃。演習模擬中國海警船隻攔截商船並強制要求透過北京海關系統申報的脅迫情境，顯示台灣政府將「非全面封鎖的灰色地帶海事脅迫」視為近中期最需因應的高機率威脅，「全社會防衛」的系統性部署正在加速落地。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-july-2-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">TAIWAN BLOCKADE / NIGHTMARE SCENARIO / MULTI-DOMAIN / EARTHQUAKE / SABOTAGE / PLA / WHOLE-OF-SOCIETY DEFENSE / JAPAN TIMES / JULY 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.japantimes.co.jp/news/2026/07/05/asia-pacific/taiwan-blockade-earthquake-sabotage-invasion/" target="_blank" rel="noopener">《日本時報》深析台灣複合威脅噩夢情境：解放軍封鎖、地震、破壞行動同步疊加，多域危機考驗台灣全社會韌性極限</a></h3>
+        <p class="nc-body">《日本時報》七月五日深度分析詳述台灣所面臨的最極端多域複合威脅情境——若解放軍同步實施海上封鎖、網路攻擊關鍵基礎設施及特種部隊破壞行動，並適逢台灣周期性發生的重大地震，應急指揮體系、資源調度能力與民心士氣將面臨前所未有的考驗。報告指出，台灣政府與軍方的桌上兵推及民防整備雖已大幅進步，但跨機構協調漏洞、地下基礎設施強化不足及民間戰略物資儲備短缺仍是核心弱點。分析師強調，提升台灣韌性的關鍵不僅在於軍事嚇阻，更需將「全社會防衛」理念從政策文件落地為可執行的地方應變計畫。</p>
+        <a href="https://www.japantimes.co.jp/news/2026/07/05/asia-pacific/taiwan-blockade-earthquake-sabotage-invasion/" target="_blank" rel="noopener" class="nc-src">The Japan Times</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">HAN KUO-YU / TAIWAN DELEGATION / US CONGRESS / BIPARTISAN / INTERNATIONAL PARTICIPATION / ARMS SALES / SECURITY COMMITMENT / AEI</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-july-2-2026/" target="_blank" rel="noopener">立法院長韓國瑜率跨黨派代表團赴美會見國會議員，就台灣國際參與、對美貿易及印太安全架構進行跨黨派磋商</a></h3>
+        <p class="nc-body">台灣立法院長韓國瑜近期率跨黨派國會代表團赴美，分別與共和黨及民主黨國會議員舉行雙邊會談，聚焦台灣國際組織參與受阻問題、台美貿易關係深化，以及美方在川普政府對中政策框架下對台安全承諾的清晰度。AEI 分析指出，此次代表團訪美時機恰逢川普政府以台灣軍售作為對北京談判籌碼而刻意延遲批准的敏感節點，跨黨派議會外交的強化有助於繞過行政部門政策不確定性、直接鞏固美國國會層面雙黨對台支持的共識基礎，並就台灣特別國防預算削減與封鎖因應演習等近期發展向美方官員進行了詳細簡報。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-july-2-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">CHINA-RUSSIA / NORTH KOREA TROOPS / CBRN TRAINING / UKRAINE / AUTHORITARIAN AXIS / TREATY UPGRADE / THE DIPLOMAT / JULY 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thediplomat.com/2026/07/reckoning-with-the-evolving-china-russia-threat/" target="_blank" rel="noopener">《外交家》：重新審視中俄演進中的複合威脅——北韓部隊赴俄作戰、中方提供 CBRN 軍事訓練，威脅烈度超越西方最壞情境預估</a></h3>
+        <p class="nc-body">《外交家》七月最新深度分析指出，北韓部隊已在歐洲戰場與俄軍並肩作戰並從中積累現代戰爭實戰經驗，而路透社報導更揭露中方軍事人員向俄羅斯部隊提供包括放射性、生物及化學戰（CBRN）在內的秘密訓練，中俄戰略協作烈度已超越西方戰略界的最壞情境預估。文章指出西方政策圈的兩大核心誤判：認為經濟相互依存可制約北京行為、制裁可摧毀莫斯科戰爭能力；而 2001 年《俄中睦鄰友好合作條約》的升級版本預計年內簽署，將進一步強化這一威權主義軸心的制度性基礎，需要西方對因應框架進行根本性的策略更新。</p>
+        <a href="https://thediplomat.com/2026/07/reckoning-with-the-evolving-china-russia-threat/" target="_blank" rel="noopener" class="nc-src">The Diplomat</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">ARCTIC / ASIA ENERGY / CHINA INDIA JAPAN KOREA / SANCTIONS EXPOSURE / ENERGY SECURITY / NORTHERN SEA ROUTE / STRATEGIC COMPETITION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thediplomat.com/2026/07/asia-is-racing-to-the-arctic-but-its-not-easy/" target="_blank" rel="noopener">《外交家》：亞洲諸強競逐北極能源航道但阻礙重重——制裁曝險、俄羅斯主權壁壘與氣候不確定性共同制約亞洲能源布局</a></h3>
+        <p class="nc-body">《外交家》七月分析揭示，中國、印度、日本及韓國正基於能源安全焦慮與制裁規避壓力加速爭奪北極能源資源與北方海航道通行權，但各方均面臨截然不同的戰略阻礙。中國透過北冰洋液化天然氣投資深化對俄依賴，卻需應對西方次級制裁風險；日韓則在俄羅斯資產參與方面承受盟友壓力。北極主權框架的模糊性與俄羅斯對北方海路的單邊主張，使非俄方參與者的長期利益保障充滿不確定性；制裁地景的複雜化正迫使亞洲能源買家在供應安全、地緣政治可信度與盟友關係之間做出愈發艱難的戰略取捨。</p>
+        <a href="https://thediplomat.com/2026/07/asia-is-racing-to-the-arctic-but-its-not-easy/" target="_blank" rel="noopener" class="nc-src">The Diplomat</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">BROOKINGS / US-CHINA DIPLOMACY / CROSS-STRAIT / CRISIS MANAGEMENT / RED LINE / MILITARY HOTLINE / STRATEGIC AMBIGUITY / TRUMP POLICY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.brookings.edu/articles/the-role-of-diplomacy-in-us-management-of-cross-strait-relations/" target="_blank" rel="noopener">布魯金斯學會：外交手段在美國管理台海關係中的核心作用——清晰紅線、軍事溝通熱線與制度化對話是防止誤判升級的三大支柱</a></h3>
+        <p class="nc-body">布魯金斯學會分析強調，在美中競爭加劇的背景下，外交機制而非單純軍事嚇阻才是防止台海危機從灰色地帶脅迫演變為武裝衝突的最後防線。報告指出，清晰界定美方紅線、維持美中高層軍事溝通熱線，以及建立危機中可靠的快速降溫管道，是台海衝突管理的三大核心工具；而川普政府以台灣軍售作為對中談判槓桿的策略性使用，正侵蝕此一外交架構的可信基礎。無論在戰略層面維持何種程度的模糊性，都必須確保危機出口的外交渠道暢通，以避免因雙方都缺乏可信溝通後門而被迫走向不可控升級。</p>
+        <a href="https://www.brookings.edu/articles/the-role-of-diplomacy-in-us-management-of-cross-strait-relations/" target="_blank" rel="noopener" class="nc-src">Brookings Institution</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ENERGY-ECO</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">S&amp;P 500 / JUNE NFP 57K / JOBS MISS / FED RATE HIKE PROBABILITY / 18% / HOLIDAY WEEK / MIXED MARKETS / 24/7 WALL ST</span>
+        </div>
+        <h3 class="nc-title"><a href="https://247wallst.com/investing/2026/07/02/stock-market-live-july-2-2026-sp-500-spy-flat-with-new-jobs-data/" target="_blank" rel="noopener">美股標普 500 收 7,483 點再創新高，但 6 月非農就業僅增 5.7 萬遠遜預期，聯準會 7 月升息機率驟降至 18%</a></h3>
+        <p class="nc-body">美國 6 月非農就業報告揭示新增就業僅 57,000，大幅低於市場預估的約 11 萬，且前幾個月數據同步向下修正，為 2026 年 2 月以來最疲軟讀數。就業數據疲軟使市場對聯準會 7 月加息的機率預期從約 29% 急降至 18%，支撐 S&P 500 收在 7,483.24 點的新高水位。然而 FOMC 委員意見高度分歧——約九名委員傾向年內再升息一至兩次，另九名委員偏向按兵不動甚至降息一次，聯準會政策路徑的不確定性持續壓抑中小型股相對表現，而羅素 2000 及 S&P 中型股 400 指數均錄得跌幅，資金持續集中於大型科技及金融龍頭。</p>
+        <a href="https://247wallst.com/investing/2026/07/02/stock-market-live-july-2-2026-sp-500-spy-flat-with-new-jobs-data/" target="_blank" rel="noopener" class="nc-src">24/7 Wall St.</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">GLOBAL CENTRAL BANKS / YEAR-END RATE / FED 3.75% / ECB / BOJ / DIVERGENCE / MACROMICRO / RATE EXPECTATIONS / 2026 MONETARY POLICY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://en.macromicro.me/collections/6005/global-central-bank/143492/world-central-banks-yearend-interest-rate-expectations-2026" target="_blank" rel="noopener">MacroMicro 全球央行年底利率預期追蹤：聯準會維持 3.75% 上限、ECB 升息路徑受能源通膨牽制、日銀鷹派壓力升溫，主要經濟體貨幣政策加速分歧</a></h3>
+        <p class="nc-body">MacroMicro 全球央行年底利率預期追蹤顯示，2026 年下半年主要央行的貨幣政策路徑正加速分歧：聯準會維持 3.50–3.75% 目標區間，市場對年底前升息的定價持續搖擺；歐洲央行在能源通膨壓力下被迫升息後，7 月 24 日會議是否再度出手高度不確定；日本銀行則因日圓持續貶值引發的輸入型通膨壓力而面臨鷹派行動的市場預期升溫。全球貨幣政策的碎片化格局正在重塑資本流動路徑，利率差異成為 2026 年下半年匯率市場的核心驅動力，新興市場面臨資本外流與本幣貶值的雙重壓力。</p>
+        <a href="https://en.macromicro.me/collections/6005/global-central-bank/143492/world-central-banks-yearend-interest-rate-expectations-2026" target="_blank" rel="noopener" class="nc-src">MacroMicro</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">OIL PRICE / HORMUZ DIPLOMACY / GEOPOLITICS-ENERGY NARRATIVE / IQI GLOBAL / MARKET REPRICE / ENERGY SECURITY / JULY 2026 OUTLOOK</span>
+        </div>
+        <h3 class="nc-title"><a href="https://iqiglobal.com/blog/global-economic-outlook-july-2026/" target="_blank" rel="noopener">IQI Global 七月全球經濟展望：原油跌至每桶 67 美元、市場敘事從利率轉向地緣政治能源風險，霍爾木茲仍是最大尾部風險</a></h3>
+        <p class="nc-body">IQI Global 七月全球經濟展望指出，隨著美伊外交進展與霍爾木茲海峽通行壓力緩解，布蘭特原油從 4 月高峰已回落至每桶約 67–68 美元區間，逆轉了今年上半年的能源通膨衝擊。金融市場的核心敘事正從「利率路徑」轉向「能源安全與地緣政治風險定價」，能源及原材料類股年初至今仍為表現最佳板塊，而科技股與 AI 相關標的則因聯準會維持高利率而持續承壓。報告警告，霍爾木茲海峽的停火協議執行機制仍模糊，任何外交逆轉均可能迅速推升油價並重燃通膨預期，為全球經濟軟著陸帶來新的擾動風險。</p>
+        <a href="https://iqiglobal.com/blog/global-economic-outlook-july-2026/" target="_blank" rel="noopener" class="nc-src">IQI Global</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+  </div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today Digest 2026-07-08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:0.7rem}
+.nc-title a{color:var(--text);text-decoration:none;transition:color 0.2s}
+.nc-title a:hover{color:var(--c-cyan);text-decoration:underline;text-decoration-color:rgba(0,212,255,0.4)}
+.rpt-sec.taiwan .nc-title a:hover{color:var(--c-orange)}
+.rpt-sec.geo    .nc-title a:hover{color:var(--c-purple)}
+.rpt-sec.eco    .nc-title a:hover{color:var(--c-green)}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){.nc-tag{display:none}}
+</style>
+</head>
+<body>
+<div id="report-content">
+<div class="rpt-wrap">
+
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-07-08</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
+  </div>
+
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">STORM-2603 / WARLOCK RANSOMWARE / CVE-2026-45659 / SHAREPOINT / DUAL ENTERPRISE COMPROMISE / LATERAL MOVEMENT / PERSISTENT BACKDOOR</span>
+        </div>
+        <h3 class="nc-title"><a href="https://gbhackers.com/warlock-ransomware-2/" target="_blank" rel="noopener">Storm-2603 單次行動同時入侵兩家企業：Warlock 勒索軟體利用 SharePoint CVE-2026-45659 橫向移動 故意製造調查障礙</a></h3>
+        <p class="nc-body">微軟事件調查揭露，威脅行為者 Storm-2603 在一次入侵行動中同時潛伏並感染兩個相互獨立的企業網路，手法為利用 SharePoint CVE-2026-45659 反序列化漏洞取得初始立足點後，刻意採用複數持久化後門並混淆事件記錄，使入侵者的橫向移動行為難以在事件調查期間被完整還原。Storm-2603 部署的 Warlock 勒索軟體具備主動偵測沙箱環境並延遲執行的規避能力，同時在加密前優先竊取敏感資料以作為雙重勒索籌碼。企業應立即隔離尚未修補的 SharePoint 伺服器，並對 SharePoint 服務帳號的橫向移動痕跡進行全面取證審查。</p>
+        <a href="https://gbhackers.com/warlock-ransomware-2/" target="_blank" rel="noopener" class="nc-src">GBHackers</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">SHINYHUNTERS / INSTRUCTURE / CANVAS LMS / 275M USERS / 3.65TB DATA BREACH / HIGHER EDUCATION / ACADEMIC DISRUPTION / RANSOM PAID / DARK WEB</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cnn.com/2026/05/07/us/canvas-hack-strands-college-students-finals-week" target="_blank" rel="noopener">ShinyHunters 攻陷全球最大學習平台 Canvas：2.75 億師生資料外洩 3.65 TB 全球 8800 所院校私訊學籍紀錄遭竊</a></h3>
+        <p class="nc-body">4 月 25 日，駭客組織 ShinyHunters 入侵學習管理平台 Instructure Canvas，竊取包含全球 8,800 所院校逾 2.75 億師生私訊、學業紀錄及個人資料的 3.65 TB 資料。事發恰逢北美高等院校期末考試期間，嚴重癱瘓線上課程運作數日，引發大規模社會輿論風波。Instructure 事後據報支付約一千萬美元贖金換取資料刪除承諾，但資料是否真正銷毀、是否已流入暗網市場仍存在高度不確定性。此事件再次暴露高等教育機構大量集中儲存敏感師生資料的第三方平台供應鏈風險，應急通報機制與備援架構的缺失使危機衝擊加倍放大。</p>
+        <a href="https://www.cnn.com/2026/05/07/us/canvas-hack-strands-college-students-finals-week" target="_blank" rel="noopener" class="nc-src">CNN</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">IRAN / ATG / AUTOMATIC TANK GAUGE / US GAS STATIONS / CRITICAL INFRASTRUCTURE / FUEL MONITORING / IRGC / PHYSICAL SAFETY / ICS SECURITY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cnn.com/2026/05/15/politics/iran-hackers-tank-readers-gas-stations" target="_blank" rel="noopener">疑似伊朗駭客滲透美國多州加油站 ATG 燃油監控系統：零密碼保護的 ICS 設備成關鍵基礎設施最脆弱入口</a></h3>
+        <p class="nc-body">美國官員披露，疑似伊朗背景的威脅行為者成功入侵美國多個州加油站的自動燃油量測（ATG）系統，攻擊者藉由直接暴露於公網且未設密碼保護的工業控制介面取得存取權限，理論上可竄改燃料量顯示數值、使真實洩漏事故被忽略。美國情報機關指出，伊斯蘭革命衛隊（IRGC）早在 2021 年內部文件中即將 ATG 列為破壞性網路攻擊的潛在目標，此次事件印證了長達數年的安全警告。雖無已知實體損害報告，但此事件顯示美國關鍵民生基礎設施中仍存在大量具公開網路暴露面的老舊工業控制系統，亟需納入聯邦 ICS 安全整備優先清單。</p>
+        <a href="https://www.cnn.com/2026/05/15/politics/iran-hackers-tank-readers-gas-stations" target="_blank" rel="noopener" class="nc-src">CNN Politics</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">BOTNET 2026 / MULTI-TIER PROXY / IOC EVASION / NATION-STATE / MACHINE-SPEED ATTACK / AGENTIC AI / JADEPUFFER / AUTONOMOUS RANSOMWARE / DETECTION BYPASS</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/" target="_blank" rel="noopener">2026 年網路戰新態勢：新世代 Botnet 使 IoC 偵測失效 AI 自主勒索軟體 JADEPUFFER 完成首起無人介入完整攻擊鏈</a></h3>
+        <p class="nc-body">2026 年的國家級網路威脅已出現兩大結構性轉變：其一，新一代多層代理 Botnet 架構已將攻擊流量徹底融入合法網路行為中，使傳統基於入侵指標（IoC）的偵測機制幾乎完全失效；其二，Sysdig 研究人員記錄到威脅行為者 JADEPUFFER 首次實現 LLM 代理完整自主執行漏洞利用、憑證竊取、橫向移動至資料庫加密清除的全攻擊鏈，全程無人工介入。上述趨勢意味著防禦者必須放棄依賴已知特徵的回應邏輯，轉向以行為異常偵測和自動化響應為核心的下一代安全架構，並將 AI 自主攻擊代理納入威脅建模的標準情境。</p>
+        <a href="https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/" target="_blank" rel="noopener" class="nc-src">The Cyber Express</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">CISA KEV / CVE-2026-11405 / TENDA / AUTHENTICATION BYPASS / CVE-2026-53359 / JANUSCAPE / LINUX KVM / USE-AFTER-FREE / HOST CODE EXECUTION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV 7 月持續更新：Tenda 路由器身份驗證繞過與 Linux KVM Hypervisor 使用後釋放漏洞新列入 已知遭利用目錄</a></h3>
+        <p class="nc-body">CISA 本週持續更新已知遭利用漏洞（KEV）目錄，新增兩個高風險條目：CVE-2026-11405 為中國製 Tenda 網路設備密碼驗證繞過漏洞，攻擊者無需認證即可取得完整管理控制權限；CVE-2026-53359（代號 Januscape）為 Linux 核心 KVM hypervisor 組件的使用後釋放（use-after-free）漏洞，公開概念驗證攻擊碼已可造成主機核心崩潰，研究人員另聲稱掌握可執行完整主機程式碼的分離版本利用鏈。兩個漏洞均已確認有野外利用證據，聯邦機構須按 CISA 指令時限完成修補，企業和雲端服務提供商應優先評估 KVM 虛擬化環境的受衝擊範圍。</p>
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener" class="nc-src">CISA</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">CSIS / PLA PURGE / XI JINPING / CMC PURGE / 52% LEADERSHIP TURNOVER / ZHANG YOUXIA / LIU ZHENLI / TAIWAN COMBAT READINESS / OPERATIONAL CAPABILITY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.csis.org/analysis/assessing-xis-unprecedented-purges-chinas-military-key-developments-and-potential" target="_blank" rel="noopener">CSIS 深析習近平史無前例軍事清洗：解放軍 52% 高層職位遭異動 對台灣軍事行動能力產生重大結構性影響</a></h3>
+        <p class="nc-body">戰略暨國際研究中心（CSIS）最新分析指出，自 2022 年至今逾百名解放軍高階將領遭清洗或調查，波及幾乎所有兵種，約 52% 高層指揮職位發生異動——此一規模在中共建軍史上前所未見。1 月中央軍委副主席張又俠及聯合參謀部部長劉振立因「嚴重違紀違法」遭調查，顯示清洗仍在持續推進。CSIS 分析師指出，高層空缺與新任指揮官在其職位上的經驗不足，恐顯著削弱解放軍在台海封鎖或兩棲作戰中的實際協調與指揮能力，可能使北京在作戰時間表決策上產生誤判風險。此一評估為當前嚇阻辯論提供了重要的不確定性變數。</p>
+        <a href="https://www.csis.org/analysis/assessing-xis-unprecedented-purges-chinas-military-key-developments-and-potential" target="_blank" rel="noopener" class="nc-src">CSIS</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">AEI / TAIWAN UPDATE / LAI CHING-TE / MARITIME RESILIENCE / BLOCKADE PREPAREDNESS / DRONE PATROL / SUPPLY STOCKPILE / PLA IDEOLOGICAL CAMP / XI PURGE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-july-2-2026/" target="_blank" rel="noopener">AEI 台海更新：賴清德指示全面強化海上封鎖韌性 擴大無人機偵察商船護衛 同步曝光解放軍思想整風訓練詳情</a></h3>
+        <p class="nc-body">台灣政府完成海上封鎖桌上推演後，賴清德總統指示國安會、國防部、海巡署等機構擴大無人機海上偵察與商船護衛任務、建立商船緊急通訊機制，並全面更新能源及關鍵物資應急儲備計畫。同步揭露的解放軍意識形態訓練營詳情（4 月 8 日至 6 月 12 日）顯示，習近平親自主持開訓並強調高階將領須帶頭落實「說真話、出諫言、反腐行」的整風精神，進一步加強黨對軍隊的絕對政治控制。分析人士認為，台灣此次大規模封鎖韌性演練與北京的軍事整風同步發生，標誌著兩岸在各自備戰邏輯上的加速趨同，是近期台海局勢中最值得關注的戰略信號之一。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-july-2-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">BROOKINGS / US-CHINA DIPLOMACY / TRUMP-XI SUMMIT / TAIWAN POLICY CONTINUITY / ARMS SALES LEVERAGE / STRATEGIC AMBIGUITY / DETERRENCE / CROSS-STRAIT</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.brookings.edu/articles/the-role-of-diplomacy-in-us-management-of-cross-strait-relations/" target="_blank" rel="noopener">布魯金斯學會：川普-習近平 2026 年多次峰會計畫使台灣政策一貫性面臨嚴峻考驗 美台關係恐成雙邊談判交換籌碼</a></h3>
+        <p class="nc-body">布魯金斯學會外交政策研究員分析指出，川普政府計畫 2026 年與習近平舉行多次雙邊峰會，引發台灣政策持續性的核心疑慮：峰會個人化外交邏輯可能使川普傾向將對台軍售、過境許可或安全承諾作為換取北京讓步的談判籌碼，形成美台關係受美中峰會節奏主導的結構性脆弱性。作者主張，美方應建立獨立於峰會外交之外的制度性對台支持框架——包括定期高層軍事交流、透明軍售時程，以及明確美台防衛合作的政策邊界，確保嚇阻信號的一致性不因峰會交換而受到侵蝕。</p>
+        <a href="https://www.brookings.edu/articles/the-role-of-diplomacy-in-us-management-of-cross-strait-relations/" target="_blank" rel="noopener" class="nc-src">Brookings Institution</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">NATO / ANKARA SUMMIT / RUSSIA / UKRAINE / KYIV BOMBING / ZELENSKY / PATRIOT AIR DEFENSE / TRUMP / DEFENSE SPENDING / DRONE DEALS / ESTONIA / NETHERLANDS / DENMARK</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cnbc.com/2026/07/07/trump-nato-turkey-russia-ukraine-spending.html" target="_blank" rel="noopener">NATO 安卡拉峰會實況：俄羅斯猛轟基輔逾 400 架無人機釀 11 死 澤倫斯基爭取愛國者防空 川普持續施壓盟國防費</a></h3>
+        <p class="nc-body">NATO 安卡拉峰會召開前夕，俄羅斯以數十枚彈道飛彈與逾四百架攻擊無人機猛烈轟炸烏克蘭首都基輔，造成至少 11 人罹難、多處民用基礎設施受損；烏克蘭隨即以四百餘架無人機反擊莫斯科地區。川普抵達土耳其後在峰會上再度向北約成員國施壓，要求大幅提高國防支出佔 GDP 比例，並暗示美國不應持續為防衛支出不足的盟友承擔過多義務。烏克蘭峰會期間宣布與愛沙尼亞、荷蘭、丹麥三國簽署新一批無人機供應協議，展示多邊軍援仍在持續擴大，但澤倫斯基爭取更多愛國者防空系統的請求能否在峰會期間獲得具體承諾仍是最大懸念。</p>
+        <a href="https://www.cnbc.com/2026/07/07/trump-nato-turkey-russia-ukraine-spending.html" target="_blank" rel="noopener" class="nc-src">CNBC</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">RUSSIA-UKRAINE WAR / ESCALATION / KYIV / DRONE ATTACK / MISSILE BOMBARDMENT / NATO SUMMIT TIMING / ESCALATION LADDER / BATTLEFIELD UPDATE / NPR</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.npr.org/2026/07/06/nx-s1-5883752/russia-ukraine-war-escalates-before-nato-summit" target="_blank" rel="noopener">峰會前夕俄烏戰局急遽升溫：俄羅斯選擇 NATO 峰會時間視窗發動最大規模空襲 烏克蘭以史上最大無人機群反擊</a></h3>
+        <p class="nc-body">俄羅斯刻意選擇 NATO 安卡拉峰會召開的時間視窗發動今年以來規模最大的空中攻勢，戰略意圖被分析人士解讀為向北約盟友傳遞警示訊號——俄羅斯不懼升級且具備持續消耗西方防空儲備的能力。烏克蘭以史上最大規模無人機群反擊莫斯科地區，展示其不對稱反制能力已大幅提升。此輪升溫恰逢峰會討論是否進一步加速對烏軍援的關鍵節點，俄方的行動時機選擇顯示其試圖對峰會決策製造心理壓力，影響北約成員國就前沿部署與深度打擊能力授權問題的政治意志。</p>
+        <a href="https://www.npr.org/2026/07/06/nx-s1-5883752/russia-ukraine-war-escalates-before-nato-summit" target="_blank" rel="noopener" class="nc-src">NPR</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">US-CHINA / CHIP SANCTIONS / AI SEMICONDUCTOR / AUTONOMOUS DESIGN / ADVANCED PACKAGING / TECH DECOUPLING / ASIA-PACIFIC / TECH BLOCS / SUPPLY CHAIN BIFURCATION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thediplomat.com/2025/12/outlook-geopolitical-trends-and-global-diplomacy-in-2026/" target="_blank" rel="noopener">美中 AI 晶片管制戰進入深水區：北京加速自主晶片設計與先進封裝路線 亞太供應鏈技術陣營化全面加速</a></h3>
+        <p class="nc-body">美國持續升級對中國 AI 晶片及高效能運算設備的出口管制，正迫使北京系統性轉向三條並行替代路徑：自主晶片架構設計（繞過對英偉達 GPU 的依賴）、先進封裝整合技術（以橋接封裝彌補製程代差），以及建立基於 AI 模型壓縮與推論優化的替代運算生態。外交家雜誌分析指出，此一科技脫鉤趨勢正迫使亞太地區盟友——尤其是高度嵌入中美兩套供應鏈的韓國、台灣、日本及東南亞製造中心——在選邊壓力不斷升高的情況下艱難維持戰略模糊。供應鏈技術陣營化一旦固化，將對全球半導體產業的長期投資格局與市場結構造成深遠影響。</p>
+        <a href="https://thediplomat.com/2025/12/outlook-geopolitical-trends-and-global-diplomacy-in-2026/" target="_blank" rel="noopener" class="nc-src">The Diplomat</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ENERGY-ECO</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">FEDERAL RESERVE / WARSH / FOMC JULY / RATE HIKE ODDS / SINTRA ECB FORUM / LABOR MARKET SLOWDOWN / INFLATION 4% / POLICY DILEMMA / EXTENDED HOLD</span>
+        </div>
+        <h3 class="nc-title"><a href="https://finance.yahoo.com/economy/policy/articles/fed-hike-interest-rates-july-060507499.html" target="_blank" rel="noopener">聯準會主席 Warsh 歐洲央行論壇措辭謹慎 Fed 7 月升息機率驟降 通膨 4% 遠高目標使政策兩難加深</a></h3>
+        <p class="nc-body">聯準會主席 Kevin Warsh 在葡萄牙辛特拉歐洲央行年會上發表謹慎偏鴿言論，加上 6 月非農就業僅增 57,000（遠遜市場預期的 115,000），使市場對 Fed 7 月 28 至 29 日 FOMC 會議升息的押注迅速降溫。CME FedWatch 工具顯示 7 月升息機率已低於 20%，市場重新定價升息路徑延至 9 月至 10 月之間。然而，通膨依然高達 4%，為 Fed 目標的兩倍，勞動市場降溫是否構成暫停觀望的足夠理由，抑或僅為季節性雜訊，Warsh 的第二次 FOMC 決議將是重要訊號試金石，也直接決定美元與全球利率差異的中短期走向。</p>
+        <a href="https://finance.yahoo.com/economy/policy/articles/fed-hike-interest-rates-july-060507499.html" target="_blank" rel="noopener" class="nc-src">Yahoo Finance</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">IQI GLOBAL / JULY 2026 OUTLOOK / ENERGY GEOPOLITICS / HORMUZ RISK / OIL ABOVE 100 / MONETARY EASING DELAY / FINANCIAL MARKET VOLATILITY / RISK REPRICING</span>
+        </div>
+        <h3 class="nc-title"><a href="https://iqiglobal.com/blog/global-economic-outlook-july-2026/" target="_blank" rel="noopener">IQI Global 7 月全球經濟展望：市場敘事從利率轉向能源地緣政治 荷姆茲成全球最大風險節點 油價突破百元可能性仍存</a></h3>
+        <p class="nc-body">IQI Global 7 月全球經濟展望指出，金融市場的核心定價邏輯正從「增長與利率差異」敘事轉向「能源安全與地緣政治風險」敘事，此一切換已在期貨定價、避險資產輪動及新興市場資本流向中有所體現。荷姆茲海峽仍是全球最關鍵能源咽喉——逾 20% 全球石油流量與近 20% LNG 貿易通過此水道——若伊朗相關外交情勢再度惡化引發通行受阻，油價可能快速重返每桶百元以上，直接延後主要央行貨幣寬鬆時程並推升跨資產類別波動率。分析師建議投資組合在此敘事切換期適度增加能源實物資產及地緣政治對沖倉位的配置比重。</p>
+        <a href="https://iqiglobal.com/blog/global-economic-outlook-july-2026/" target="_blank" rel="noopener" class="nc-src">IQI Global</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge medium">MEDIUM</span>
+          <span class="nc-tag">DELOITTE / GLOBAL ECONOMIC OUTLOOK 2026 / STAGFLATION RISK / OIL SHOCK / CENTRAL BANK DILEMMA / RECESSION / RATE PATH / SECOND-HALF 2026 / ASSET ALLOCATION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html" target="_blank" rel="noopener">Deloitte 2026 全球經濟展望：能源衝擊推升滯脹風險 各國央行陷升息誘發衰退兩難 下半年是全球景氣關鍵轉折期</a></h3>
+        <p class="nc-body">德勤（Deloitte）2026 年全球經濟展望警告，地緣政治驅動的能源價格衝擊正使全球主要經濟體面臨「升息對抗通膨」與「降息防止衰退」之間的尖銳政策兩難。若霍爾木茲局勢反轉導致油價再度飆升，全球經濟滯脹（高通膨低增長）情境的概率將顯著提升，對固定收益市場的影響尤為深遠。下半年關鍵觀察指標包括：聯準會 9 至 10 月升息決策、歐洲央行能否在能源通膨壓力下暫停升息，以及中國內需復甦能否提供全球增長的正向緩衝。德勤建議企業管理層將能源成本鎖定、匯率對沖及供應鏈多元化列為 2026 年下半年的優先財務風險管理項目。</p>
+        <a href="https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html" target="_blank" rel="noopener" class="nc-src">Deloitte</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+  </div>
+
+</div>
+</div>
+</body>
+</html>

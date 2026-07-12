@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today Digest 2026-07-13</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#060a14;--surface:#0c1526;--card:#0f1d32;--card-h:#142240;
+  --border:#1a2d4a;--border-l:#243d5f;
+  --c-cyan:#00d4ff;--c-orange:#fb923c;--c-purple:#a78bfa;--c-green:#34d399;
+  --danger:#ef4444;--warn:#f59e0b;--info:#3b82f6;
+  --text:#dde4ef;--text2:#8fa3bf;--text3:#4a6282;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.9}
+.rpt-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.rpt-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.rpt-title{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:0.2em;margin-bottom:0.5rem}
+.rpt-date{font-size:28px;font-weight:700;color:var(--text);font-family:var(--mono)}
+.rpt-sub{font-size:18px;color:var(--text2);margin-top:0.5rem}
+.rpt-sec{margin-bottom:3.5rem}
+.sec-head{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:1.75rem;padding-bottom:0.875rem;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.sec-head::after{content:'';position:absolute;bottom:-1px;left:0;width:90px;height:2px;border-radius:1px}
+.rpt-sec.cyber  .sec-head::after{background:var(--c-cyan);  box-shadow:0 0 8px var(--c-cyan)}
+.rpt-sec.taiwan .sec-head::after{background:var(--c-orange);box-shadow:0 0 8px var(--c-orange)}
+.rpt-sec.geo    .sec-head::after{background:var(--c-purple);box-shadow:0 0 8px var(--c-purple)}
+.rpt-sec.eco    .sec-head::after{background:var(--c-green); box-shadow:0 0 8px var(--c-green)}
+.sec-code{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.2em;padding:5px 12px;border-radius:3px;border:1px solid;
+  white-space:nowrap;min-height:28px;line-height:18px;
+}
+.rpt-sec.cyber  .sec-code{color:var(--c-cyan);  border-color:var(--c-cyan);  background:rgba(0,212,255,0.08)}
+.rpt-sec.taiwan .sec-code{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.08)}
+.rpt-sec.geo    .sec-code{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.08)}
+.rpt-sec.eco    .sec-code{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.08)}
+.sec-title{font-family:var(--sans);font-size:24px;font-weight:700;color:var(--text);letter-spacing:0.02em}
+.news-grid{display:grid;gap:1.25rem}
+.nc{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:6px;padding:1.5rem 1.5rem 1.5rem 1.75rem;
+  position:relative;overflow:hidden;
+  transition:background 0.2s ease,border-color 0.2s ease;
+}
+.nc::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.nc:hover{background:var(--card-h);border-color:var(--border-l)}
+.rpt-sec.cyber  .nc::before{background:var(--c-cyan)}
+.rpt-sec.taiwan .nc::before{background:var(--c-orange)}
+.rpt-sec.geo    .nc::before{background:var(--c-purple)}
+.rpt-sec.eco    .nc::before{background:var(--c-green)}
+.nc-meta{display:flex;align-items:center;gap:0.625rem;margin-bottom:0.75rem;flex-wrap:wrap}
+.badge{
+  font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;padding:4px 10px;border-radius:3px;border:1px solid;
+  display:inline-block;min-height:26px;line-height:18px;white-space:nowrap;
+}
+.badge.critical{background:rgba(239,68,68,0.15);  color:#fca5a5;border-color:#ef4444}
+.badge.high    {background:rgba(245,158,11,0.15); color:#fcd34d;border-color:#f59e0b}
+.badge.medium  {background:rgba(59,130,246,0.15); color:#93c5fd;border-color:#3b82f6}
+.badge.warning {background:rgba(251,146,60,0.15); color:#fdba74;border-color:#fb923c}
+.badge.info    {background:rgba(100,116,139,0.12);color:#94a3b8;border-color:#475569}
+.nc-tag{
+  font-family:var(--mono);font-size:12px;color:var(--text3);
+  background:rgba(26,45,74,0.7);padding:4px 9px;
+  border-radius:3px;border:1px solid var(--border);
+  min-height:26px;line-height:18px;
+}
+.nc-title{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:0.7rem}
+.nc-title a{color:var(--text);text-decoration:none;transition:color 0.2s}
+.nc-title a:hover{color:var(--c-cyan);text-decoration:underline;text-decoration-color:rgba(0,212,255,0.4)}
+.rpt-sec.taiwan .nc-title a:hover{color:var(--c-orange)}
+.rpt-sec.geo    .nc-title a:hover{color:var(--c-purple)}
+.rpt-sec.eco    .nc-title a:hover{color:var(--c-green)}
+.nc-body{font-size:18px;color:var(--text2);line-height:1.9;margin-bottom:1.1rem}
+.nc-src{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  text-decoration:none;padding:0 14px;height:44px;
+  border-radius:4px;border:1px solid var(--border);
+  background:transparent;transition:all 0.2s;
+}
+.nc-src::before{content:'↗';font-size:14px}
+.nc-src:hover{color:var(--c-cyan);border-color:var(--c-cyan);background:rgba(0,212,255,0.06)}
+.rpt-sec.taiwan .nc-src:hover{color:var(--c-orange);border-color:var(--c-orange);background:rgba(251,146,60,0.06)}
+.rpt-sec.geo    .nc-src:hover{color:var(--c-purple);border-color:var(--c-purple);background:rgba(167,139,250,0.06)}
+.rpt-sec.eco    .nc-src:hover{color:var(--c-green); border-color:var(--c-green); background:rgba(52,211,153,0.06)}
+.disclaimer{
+  margin-top:4rem;padding:1.5rem 2rem;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  font-family:var(--mono);font-size:13px;color:var(--text3);
+  line-height:1.8;text-align:center;
+}
+@media(max-width:768px){
+  .rpt-wrap{padding:1rem 1rem 3rem}
+  .sec-title{font-size:22px}
+  .nc{padding:1.25rem 1rem 1.25rem 1.25rem}
+  .nc-title{font-size:19px}
+}
+@media(max-width:480px){.nc-tag{display:none}}
+</style>
+</head>
+<body>
+<div id="report-content">
+<div class="rpt-wrap">
+
+  <div class="rpt-header">
+    <div class="rpt-title">TODAY DIGEST // DAILY INTEL REPORT</div>
+    <div class="rpt-date">2026-07-13</div>
+    <div class="rpt-sub">全球資安 ｜ 台海觀察 ｜ 地緣政治 ｜ 能源經濟</div>
+  </div>
+
+  <!-- 網路資安 -->
+  <section class="rpt-sec cyber">
+    <div class="sec-head">
+      <span class="sec-code">CYBER-SEC</span>
+      <h2 class="sec-title">網路資安</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">CVE-2026-45659 / SHAREPOINT SERVER / RCE / CVSS 8.8 / CISA KEV / ACTIVE EXPLOITATION / MICROSOFT / REMOTE CODE EXECUTION / PATCH REQUIRED</span>
+        </div>
+        <h3 class="nc-title"><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">SharePoint Server 高危 RCE 漏洞 CVE-2026-45659 確認遭主動利用 — CISA 緊急列入 KEV 目錄</a></h3>
+        <p class="nc-body">CISA 將 Microsoft SharePoint Server 遠端程式執行漏洞 CVE-2026-45659（CVSS 評分 8.8）正式列入已知遭利用漏洞（KEV）目錄，確認攻擊者已在野利用此漏洞對未修補系統發動攻擊。受影響的 SharePoint 部署廣泛存在於政府機構、金融機構及跨國企業的協作環境中，漏洞一旦被利用可讓未授權攻擊者在伺服器端執行任意程式碼，進而橫向滲透企業內網。聯邦機構依 CISA 要求須在限期內完成修補；企業組織應立即套用 Microsoft 安全性更新，並優先檢查暴露於外網或僅受 VPN 保護的 SharePoint 實例。</p>
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener" class="nc-src">The Hacker News</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">CVE-2026-50746 / UBIQUITI UNIFI / CVSS 10.0 / IMPROPER ACCESS CONTROL / NETWORK DEVICE / CISA KEV / FIRMWARE UPDATE / ENTERPRISE NETWORK</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.hackerstorm.com/search-insights/cisa-kev-cve-data" target="_blank" rel="noopener">Ubiquiti UniFi CVE-2026-50746 滿分 CVSS 10.0 嚴重漏洞：不當存取控制允許攻擊者完全接管網路設備</a></h3>
+        <p class="nc-body">Ubiquiti 針對 UniFi 系列產品中多個嚴重安全漏洞發布緊急更新，其中 CVE-2026-50746 以 CVSS 10.0 滿分評級最為危急——該漏洞源於不當存取控制實作，允許未授權攻擊者在無需身份驗證的情況下完全接管受影響設備，進而監控、重定向或中斷企業網路流量。UniFi 設備廣泛部署於全球中小企業、校園及共享辦公空間，高度依賴自動更新機制或雲端管理介面的使用者尤需警惕。管理員應立即升級至 Ubiquiti 發布的最新韌體版本，並稽核 Network Application 的存取日誌以確認是否已遭入侵。</p>
+        <a href="https://www.hackerstorm.com/search-insights/cisa-kev-cve-data" target="_blank" rel="noopener" class="nc-src">Hackerstorm / CISA</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">BROWSER RANSOMWARE / CHROME / FILE SYSTEM ACCESS API / ANDROID / WINDOWS / CHECK POINT / PHOTO ENCRYPTION / FILELESS / NO TRADITIONAL MALWARE / EMERGING TECHNIQUE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://research.checkpoint.com/2026/6th-july-threat-intelligence-report-2/" target="_blank" rel="noopener">Check Point 揭露瀏覽器原生勒索軟體新手法：濫用 Chrome File System Access API 直接加密 Android 與 Windows 本機照片</a></h3>
+        <p class="nc-body">Check Point Research 7 月 6 日週報揭露一種突破性勒索軟體技術：攻擊者透過惡意網頁利用 Chrome 的 File System Access API，在 Android 與 Windows 系統上無需安裝任何傳統惡意軟體即可直接加密使用者本機照片與文件，完全繞過終端防毒軟體與沙箱偵測機制。此技術代表勒索攻擊向「無落地式（fileless）」瀏覽器原生方向演進，使現有端點防護方案面臨嚴峻挑戰。安全研究人員建議：停用瀏覽器對「本地檔案系統存取」的預設授權、定期離線備份重要資料，並對可疑網站的彈出式授權請求保持高度警覺。</p>
+        <a href="https://research.checkpoint.com/2026/6th-july-threat-intelligence-report-2/" target="_blank" rel="noopener" class="nc-src">Check Point Research</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">IRAN / APT / CRITICAL INFRASTRUCTURE / GAS STATION / ATG / AUTOMATIC TANK GAUGE / FUEL MONITORING / ICS / OT SECURITY / INTERNET-EXPOSED / NO PASSWORD</span>
+        </div>
+        <h3 class="nc-title"><a href="https://techcrunch.com/2026/07/07/the-worst-hacks-and-breaches-of-2026-so-far/" target="_blank" rel="noopener">伊朗駭客入侵美國多州加油站自動油槽計量系統：無密碼保護 ATG 設備暴露於公開網際網路釀重大 OT 安全危機</a></h3>
+        <p class="nc-body">美國官員披露，疑似伊朗國家級駭客成功滲透美國多個州的加油站燃料儲存監控系統，入侵途徑是直接利用暴露於公開網際網路且完全未設置密碼保護的自動油槽計量（ATG）裝置。雖然本次入侵並未實際改動燃料實體儲量，但攻擊者已取得對燃料監控感測器的完整讀寫存取權，具備觸發虛假警報、製造燃料短缺恐慌或為後續物理破壞奠定基礎的能力。此事件再次暴露 OT/ICS 設備長期缺乏基本網路衛生管理的結構性問題——在美伊緊張局勢持續升溫背景下，能源基礎設施的 OT 資安防護迫切需要系統性升級。</p>
+        <a href="https://techcrunch.com/2026/07/07/the-worst-hacks-and-breaches-of-2026-so-far/" target="_blank" rel="noopener" class="nc-src">TechCrunch</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">VECT RANSOMWARE / TEAMPCAP / RaaS PARTNERSHIP / CREDENTIAL THEFT / INITIAL ACCESS BROKER / RANSOMWARE-AS-A-SERVICE / THREAT ACTOR COLLABORATION / ENTERPRISE TARGETING</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.integrity360.com/cyber-news-roundup-july-3rd-2026" target="_blank" rel="noopener">Vect 勒索軟體集團與 TeamPCP 建立 RaaS 合作夥伴關係：初始存取憑證共享模式擴大攻擊規模與速度</a></h3>
+        <p class="nc-body">資安研究人員觀測到新興勒索軟體集團 Vect 與初始存取掮客組織 TeamPCP 正式建立合作關係，確認至少一起已發生攻擊使用了 TeamPCP 取得並售出的企業憑證作為入侵跳板。此合作模式反映當前 RaaS（勒索軟體即服務）生態系中分工精細化趨勢：初始存取掮客專責入侵與維持據點，再將存取權拍賣給勒索軟體運營商執行加密與勒索。Vect 的加入使此類分工模式進一步滲入大型企業目標；防禦重點在於加強特權帳號監控、實施零信任架構，並對異常橫向移動行為建立即時告警機制。</p>
+        <a href="https://www.integrity360.com/cyber-news-roundup-july-3rd-2026" target="_blank" rel="noopener" class="nc-src">Integrity360</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge high">HIGH</span>
+          <span class="nc-tag">SOCIAL SECURITY / DATABASE EXPOSURE / LARGEST DATA BREACH / US GOVERNMENT / PII / NATION-SCALE IMPACT / CONGRESSIONAL INVESTIGATION / IDENTITY THEFT RISK / 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://techcrunch.com/2026/07/07/the-worst-hacks-and-breaches-of-2026-so-far/" target="_blank" rel="noopener">美國社會安全局資料庫曝險：國會議員警告恐成美國史上規模最大資料外洩事件</a></h3>
+        <p class="nc-body">調查美國社會安全局（SSA）相關活動的國會民主黨議員發出嚴重警告，指出政府社安資料庫的曝險事件「極可能成為美國史上最大規模的資料外洩」，波及數以億計的美國公民個人身份識別資訊（PII），包括社安號碼、就業紀錄與福利資料。事件涉及的資料敏感程度遠超一般金融外洩，受害者面臨長期身份盜竊、稅務詐欺及政府福利冒領等複合性風險。調查仍在進行中，但此事件已引發各界對聯邦政府老舊資訊系統安全防護標準的嚴厲批評，並推動國會加速審議政府資安強化立法。</p>
+        <a href="https://techcrunch.com/2026/07/07/the-worst-hacks-and-breaches-of-2026-so-far/" target="_blank" rel="noopener" class="nc-src">TechCrunch</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 台海觀察 -->
+  <section class="rpt-sec taiwan">
+    <div class="sec-head">
+      <span class="sec-code">TAIWAN-STR</span>
+      <h2 class="sec-title">台海觀察</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge critical">CRITICAL</span>
+          <span class="nc-tag">PLA / SLBM / SUBMARINE-LAUNCHED BALLISTIC MISSILE / PACIFIC TEST / SECOND STRIKE CAPABILITY / NUCLEAR DETERRENCE / FIRST SINCE 1982 / INTERNATIONAL WATERS / CHINA MILITARY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-july-10-2026/" target="_blank" rel="noopener">解放軍 7 月 6 日向太平洋公海試射潛射彈道飛彈：1982 年以來首次 展示核二次打擊與美本土打擊能力</a></h3>
+        <p class="nc-body">中國人民解放軍於 7 月 6 日在太平洋公海成功試射潛射彈道飛彈（SLBM），此舉為 1982 年以來首次向國際水域進行此類測試，標誌著中國戰略核力量展示方式的重大轉變。此次試射明確展示解放軍具備從中國內海（近海）對美國本土實施核二次打擊的實戰能力，具有強烈的戰略威懾信號意涵。美方及區域盟友密切追蹤此次試射細節，分析人士指出此舉意在向華盛頓傳遞明確訊號：任何台海衝突可能升級至核層級的代價已顯著提高，直接影響美國介入台海的決策風險評估。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-july-10-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">JOINT SEA-2026 / CHINA-RUSSIA / NAVAL EXERCISE / QINGDAO / AMPHIBIOUS / TAIWAN INVASION CAPABILITY / INTEROPERABILITY / JULY 6-13 / MILITARY ALLIANCE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-july-10-2026/" target="_blank" rel="noopener">中俄「聯合海 2026」青島啟動（7/6–7/13）：演習可能強化解放軍兩棲入侵能力與中俄軍事互通性</a></h3>
+        <p class="nc-body">中俄兩國海軍於 7 月 6 日在青島外海啟動年度聯合海上軍演「聯合海 2026」，預計持續至 7 月 13 日。本次演習涵蓋聯合反潛、兩棲登陸及海上補給科目，分析人士認為部分演習內容有助於強化解放軍兩棲作戰能力，對台灣海峽安全態勢具直接影響。更值得關注的是，此次聯演同步推進中俄海軍指揮通訊互通性，意味著在未來台海危機中，北京可能借助強化的中俄協作關係對美形成更複雜的多線牽制局面，進一步加重美方戰略決策壓力。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-july-10-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">JAPAN DEFENSE REFORM / ARMS EXPORT / MOGAMI-CLASS FRIGATE / AUSTRALIA / NEW ZEALAND / SOUTH KOREA / DEFENSE COOPERATION / TAKAICHI / INDO-PACIFIC SECURITY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-july-10-2026/" target="_blank" rel="noopener">日本高市政府鬆綁防衛裝備出口限制：向澳洲出售最上級護衛艦 強化多邊印太安全網絡</a></h3>
+        <p class="nc-body">日本首相高市早苗領導的政府持續推進防衛政策改革，正式鬆綁長期限制的防衛裝備出口規定，並與澳洲達成最上級護衛艦（Mogami-class frigate）銷售協議，同時與紐西蘭洽談類似交易並深化對韓軍事合作。此系列舉措標誌著日本從「專守防衛」原則向主動建構多邊印太安全網絡的實質轉型，構成美日澳印「四方安全對話」（QUAD）框架下的重要戰力補充。對台灣而言，日本更主動的區域防衛角色代表潛在盟友支援體系的實質強化，亦對解放軍台海行動的戰略計算產生制約效果。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-july-10-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 地緣政治 -->
+  <section class="rpt-sec geo">
+    <div class="sec-head">
+      <span class="sec-code">GEO-POL</span>
+      <h2 class="sec-title">地緣政治</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">G7 EVIAN 2026 / TAIWAN STRAIT / SOUTH CHINA SEA / STATUS QUO / NO UNILATERAL CHANGE / COERCION / G7 STATEMENT / MULTILATERAL DIPLOMACY / INDO-PACIFIC</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues" target="_blank" rel="noopener">G7 愛維揚峰會聯合聲明：七國重申反對以武力單方面改變台海及南海現狀 強調僅可透過和平對話解決</a></h3>
+        <p class="nc-body">G7 峰會領導人於法國愛維揚發表地緣政治聯合聲明，明確重申反對以脅迫或武力在東海、南海及台灣海峽單方面改變現狀的立場，強調相關爭端僅能透過和平途徑與建設性對話解決。聲明措辭較往年更加具體，直接點名「不得以武力或脅迫手段」，被分析人士解讀為對北京近期軍事活動升溫的針對性警示。G7 框架下的多邊共識雖不具直接約束力，但代表北京軍事冒進的外交代價與孤立風險持續上升，有助於強化印太整體嚇阻結構。</p>
+        <a href="https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues" target="_blank" rel="noopener" class="nc-src">G7 Évian / Élysée</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">US DEFENSE / HEGSETH / PARTNERS NOT PROTECTORATES / ASIA-PACIFIC ALLIES / DEFENSE SPENDING / BURDEN SHARING / STRATEGIC AUTONOMY / HEGSETH DOCTRINE / PENTAGON</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.aei.org/articles/china-taiwan-update-july-10-2026/" target="_blank" rel="noopener">美防長 Hegseth 推「夥伴非保護國」框架：亞太盟友須大幅提升防衛支出與自主作戰能量</a></h3>
+        <p class="nc-body">美國防部長 Hegseth 正式確立新的亞太盟友關係框架：美國將維持區域存在，但要求各盟友大幅提升國防支出、建構更強的自主作戰能力，並從對美單方面依賴轉向真正的夥伴關係。此「夥伴非保護國」（partners, not protectorates）原則對台灣、日本、韓國及菲律賓等安全高度依賴美國承諾的夥伴構成重大戰略調整壓力。分析人士指出，此框架若落實執行，將迫使台灣加速自主防衛能力建設，同時帶來美國前沿承諾可信度下降的戰略不確定性，可能在短期內給北京製造「機會窗口」的錯誤感知。</p>
+        <a href="https://www.aei.org/articles/china-taiwan-update-july-10-2026/" target="_blank" rel="noopener" class="nc-src">AEI</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">UN SECURITY COUNCIL / CONFLICT PREVENTION / GEOPOLITICAL FRAGMENTATION / DIPLOMATIC TOOLS / JULY 2026 FORECAST / MULTILATERALISM / GREAT POWER RIVALRY / STRUCTURAL EROSION</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.securitycouncilreport.org/monthly-forecast/2026-07/conflict-prevention-and-peaceful-resolution-of-disputes.php" target="_blank" rel="noopener">聯合國安理會 7 月衝突預防月報：大國地緣政治對抗加深結構性分裂 傳統外交工具效力遭持續侵蝕</a></h3>
+        <p class="nc-body">聯合國安理會 7 月份衝突預防月度預測報告指出，持續激化的大國地緣政治競爭正在結構性削弱安理會及廣泛多邊外交機制的衝突預防效力：常任理事國之間的深層分歧使得預防性外交工具頻繁遭到封鎖或空洞化，多地區同步衝突風險在缺乏協調的情況下持續累積。報告特別關注亞太地區的多維緊張局勢以及中東伊朗問題的溢出效應，警告若無法恢復大國最低限度的外交溝通，衝突預防的全球架構可能面臨系統性失靈風險。</p>
+        <a href="https://www.securitycouncilreport.org/monthly-forecast/2026-07/conflict-prevention-and-peaceful-resolution-of-disputes.php" target="_blank" rel="noopener" class="nc-src">Security Council Report</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 能源經濟 -->
+  <section class="rpt-sec eco">
+    <div class="sec-head">
+      <span class="sec-code">ENERGY-ECO</span>
+      <h2 class="sec-title">能源經濟</h2>
+    </div>
+    <div class="news-grid">
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">IMF / WEO UPDATE / JULY 2026 / ENERGY SHOCK / INFLATION / GROWTH DOWNGRADE / GEOPOLITICAL RISK / IRAN / OIL PRICES / CENTRAL BANK DIVERGENCE</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf" target="_blank" rel="noopener">IMF 7 月世界經濟展望更新：伊朗衝突推升能源衝擊 全球通膨壓力再燃 各主要央行政策路徑分歧加劇</a></h3>
+        <p class="nc-body">國際貨幣基金組織（IMF）發布 2026 年 7 月《世界經濟展望》更新，指出伊朗地緣衝突引發的能源供應中斷已對全球通膨預期形成顯著上行壓力，並開始透過更高的運輸與製造成本滲入廣泛物價指數。IMF 評估顯示，主要央行面臨能源衝擊型通膨與成長放緩並存的「類滯脹」兩難困境，各國政策路徑因此出現明顯分歧：部分央行選擇升息捍衛物價穩定，另一部分則在衰退壓力下按兵不動。全球供應鏈的結構性重組與地緣政治溢價已成為常態化風險定價因素。</p>
+        <a href="https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf" target="_blank" rel="noopener" class="nc-src">IMF</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge warning">WARNING</span>
+          <span class="nc-tag">FED / FOMC / WARSH / INTEREST RATE HOLD / FORWARD GUIDANCE REDUCTION / HAWKISH / INFLATION / MARKET VOLATILITY / TECH STOCKS / POLICY UNCERTAINTY</span>
+        </div>
+        <h3 class="nc-title"><a href="https://intellectia.ai/blog/fed-interest-rate-decision-july-2026" target="_blank" rel="noopener">聯準會 7 月 FOMC 維持利率不動：Warsh 縮減前瞻指引引發市場自行定價 科技股承壓金融能源股走強</a></h3>
+        <p class="nc-body">新任聯準會主席 Kevin Warsh 主導本次 FOMC 決議維持利率不變，同時大幅縮減對未來政策路徑的前瞻指引，迫使市場自行估算聯準會反應函數，預期將引發更顯著的波動性。利率預期走升驅動市場結構性輪動：科技股與成長股因未來現金流折現率提高承受下行壓力，而金融、醫療保健與能源板塊則相對受惠。分析師指出，Warsh 的鷹派框架暗示若核心通膨無法有效降溫，年底前升息機率不可忽視，這對高槓桿企業與新興市場資本流動均構成潛在壓力。</p>
+        <a href="https://intellectia.ai/blog/fed-interest-rate-decision-july-2026" target="_blank" rel="noopener" class="nc-src">Intellectia.ai</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">DOW JONES / S&P500 / STOXX 50 / RECORD HIGH / ECB RATE HIKE / BOJ / RBA / GLOBAL EQUITIES / ENERGY ROTATION / MARKET DIVERGENCE / JULY 2026</span>
+        </div>
+        <h3 class="nc-title"><a href="https://www.cnbc.com/2026/07/07/stock-market-today-live-updates.html" target="_blank" rel="noopener">全球股市創歷史新高：道瓊收盤 52,900 點 歐股 STOXX 50 同步刷新紀錄 ECB、日銀、澳央行升息對抗能源通膨</a></h3>
+        <p class="nc-body">原油價格階段性回落帶動全球股市樂觀情緒，道瓊工業指數收盤創歷史新高 52,900 點，歐洲股市 Euro STOXX 50 上漲 0.9% 至 6,417 點、STOXX 600 升 0.7%，S&P 500 與那斯達克亦維持於 2026 年高位區間。與此同時，ECB、日本央行及澳洲儲備銀行選擇升息以應對能源驅動的通膨壓力，而聯準會、中國人民銀行、英格蘭銀行、加拿大央行及印度央行則選擇按兵不動。上半年能源衝擊與各央行政策分歧已形成「多速全球化」格局，新興市場匯率承壓、資本外流風險升高。</p>
+        <a href="https://www.cnbc.com/2026/07/07/stock-market-today-live-updates.html" target="_blank" rel="noopener" class="nc-src">CNBC</a>
+      </article>
+
+      <article class="nc">
+        <div class="nc-meta">
+          <span class="badge info">INFO</span>
+          <span class="nc-tag">BRENT CRUDE / OIL PRICE / IRAN CONFLICT / ENERGY SUPPLY DISRUPTION / GASOLINE PRICES / INFLATION TRANSMISSION / GLOBAL SUPPLY CHAIN / ENERGY MARKET / RISK PREMIUM</span>
+        </div>
+        <h3 class="nc-title"><a href="https://iqiglobal.com/blog/global-economic-outlook-july-2026/" target="_blank" rel="noopener">伊朗衝突推升布蘭特原油大漲：能源地緣風險溢價常態化 汽油價格攀升加劇廣泛通膨傳導壓力</a></h3>
+        <p class="nc-body">美伊持續對峙引發中東能源供應鏈重大干擾，布蘭特原油期貨价格因此大幅飆升，能源地緣風險溢價已逐步常態化反映在油價基線之上。更高的汽油零售價格正直接推升美歐消費者物價指數，並透過更高的運輸與製造成本對更廣泛的商品和服務形成二次通膨傳導。根據 IQI Global 全球經濟展望分析，若伊朗情勢持續緊張、波斯灣航運通道受阻風險不消除，能源通膨的持久性將顯著高於市場共識，進一步壓縮各主要央行的降息空間與時間表。</p>
+        <a href="https://iqiglobal.com/blog/global-economic-outlook-july-2026/" target="_blank" rel="noopener" class="nc-src">IQI Global</a>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    本網站內容由 AI 自動產生，僅供參考，非投資或資安建議。資訊可能有所延遲，使用前請自行查證。
+  </div>
+
+</div>
+</div>
+</body>
+</html>

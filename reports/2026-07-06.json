@@ -1,0 +1,194 @@
+{
+ "date": "2026-07-06",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Avalon 模組化惡意軟體框架內嵌 CrownX 勒索軟體：AI 輔助研發可規避全主流 EDR，透過偽造法律文件郵件發動完整多階段攻擊鏈",
+     "url": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
+     "summary": "資安研究人員揭露名為 Avalon 的全新模組化惡意軟體框架，其內建 CrownX 勒索軟體元件，並設有針對 Microsoft Defender、CrowdStrike、SentinelOne、FortiEDR、ESET、McAfee 等主流 EDR 工具的專屬規避子系統。攻擊鏈以偽造法律文件電子郵件為起點，利用 ISO 映像封裝惡意酬載以繞過電子郵件閘道層掃描，逐步執行憑證竊取、橫向移動、遠端存取及備份系統破壞等完整攻擊流程。Avalon 程式碼風格與架構顯示出 AI 輔助開發特徵，代表惡意軟體開發門檻持續降低；樣本自 3 月 11 日上傳至 VirusTotal 至今仍維持零偵測率，企業應立即更新 EDR 規則並強化電子郵件 ISO 附件過濾政策。",
+     "source": "The Hacker News",
+     "tags": [
+      "AVALON",
+      "CROWNX",
+      "AI-ASSISTED MALWARE",
+      "MODULAR FRAMEWORK"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "FortiBleed 憑證竊取行動確認連結 INC 及 Lynx 勒索軟體：43 萬台 FortiGate 防火牆遭植入自訂封包嗅探工具，逾 1.1 億組 VPN 認證資料遭竊",
+     "url": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/",
+     "summary": "資安研究機構確認大規模 FortiBleed 攻擊行動已直接促成 INC 及 Lynx 兩大勒索軟體組織的後續部署，分析師在 FortiBleed 基礎設施上追蹤到與兩組織勒索協商面板共用同一操作者，首次建立起大規模憑證竊取與後續勒索軟體攻擊之間的完整犯罪供應鏈。攻擊者在遭入侵的設備上植入名為「FortiGate Sniffer」的自訂封包截取工具，從即時流量中竊取 VPN 認證資料；超過 43 萬台設備遭掃描，409 個目標確認完整入侵，354 個完成全攻擊鏈，已觸發至少 12 次勒索軟體部署。Fortinet 用戶應立即稽核登入記錄並強制輪換所有 VPN 憑證。",
+     "source": "BleepingComputer",
+     "tags": [
+      "FORTIBLEED",
+      "INC RANSOMWARE",
+      "LYNX RANSOMWARE",
+      "430K FIREWALLS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "runZero 揭露 FatFs 韌體函式庫 7 個 CVE 至今無上游修補：數百萬台安全攝影機、無人機、工業控制器及硬體加密錢包面臨程式碼執行風險",
+     "url": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
+     "summary": "資安公司 runZero 揭露嵌入式設備韌體廣泛採用的 FatFs 小型檔案系統函式庫存在 7 個安全漏洞，涵蓋 Espressif ESP-IDF、STM32Cube、Zephyr RTOS、ArduPilot、MicroPython 等主流嵌入式平台，影響安全監控攝影機、工業控制器、消費物聯網、無人機及硬體加密錢包等數百萬台設備。攻擊者只需向目標設備提交蓄意構造的 USB 隨身碟、SD 記憶卡或韌體更新包，即可觸發整數溢位（CVE-2026-6682）或欄位溢位（CVE-2026-6687）等記憶體損毀缺陷並執行任意程式碼。由於 FatFs 由單一維護者管理，runZero 多次聯繫及透過 JPCERT/CC 協助均未獲回應，目前無官方修補程式，設備製造商須自行實作輸入驗證等緩解控制。",
+     "source": "The Hacker News / runZero",
+     "tags": [
+      "FATFS",
+      "FIRMWARE",
+      "CVE-2026-6682",
+      "CVE-2026-6687"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA KEV 七月持續擴增：多個跨產業高危漏洞確認遭積極利用，政府、醫療、金融及關鍵基礎設施面臨緊迫修補壓力",
+     "url": "https://www.hackerstorm.com/search-insights/cisa-kev-cve-data",
+     "summary": "CISA 已知遭利用漏洞（KEV）目錄在七月持續擴增，涵蓋政府、醫療、金融及關鍵基礎設施的多個高危漏洞；聯邦民事行政部門機構（FCEB）依指令須在規定時限內完成修補，逾期將面臨合規風險。最新追蹤數據顯示，七月新增 KEV 條目中，多個漏洞在 CISA 公告前已遭勒索軟體行為者與國家級 APT 組織積極武器化，漏洞公開至大規模利用的時間視窗持續壓縮至 24–72 小時以內。資安團隊應建立與 CISA KEV 更新同步的自動化修補優先排序流程，並對暴露在公網的高風險服務實施緊急隔離或臨時存取管控。",
+     "source": "CISA / Hackerstorm",
+     "tags": [
+      "CISA KEV",
+      "JULY 2026",
+      "KNOWN EXPLOITED VULNERABILITIES",
+      "ACTIVE EXPLOITATION"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "賴清德下令強化台灣海事韌性：封鎖情境桌上兵推後指示擴大無人機偵察、完善商船通訊並更新能源關鍵物資儲備機制",
+     "url": "https://www.aei.org/articles/china-taiwan-update-july-2-2026/",
+     "summary": "AEI 七月初台海情勢更新確認，台灣總統賴清德在完成模擬中國「準封鎖」情境的桌上演習後，正式指示國安會（NSC）、國防部（MND）、海巡署（CGA）及相關機構強化海事韌性，包括擴大無人機海域偵察覆蓋、改善與過境商業船隊的即時通訊協調，以及更新能源和關鍵物資戰略儲備計劃。演習模擬中國海警船隻攔截商船並強制要求透過北京海關系統申報的脅迫情境，顯示台灣政府將「非全面封鎖的灰色地帶海事脅迫」視為近中期最需因應的高機率威脅，「全社會防衛」的系統性部署正在加速落地。",
+     "source": "AEI",
+     "tags": [
+      "LAI CHING-TE",
+      "MARITIME QUARANTINE DRILL",
+      "NSC",
+      "MND"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "《日本時報》深析台灣複合威脅噩夢情境：解放軍封鎖、地震、破壞行動同步疊加，多域危機考驗台灣全社會韌性極限",
+     "url": "https://www.japantimes.co.jp/news/2026/07/05/asia-pacific/taiwan-blockade-earthquake-sabotage-invasion/",
+     "summary": "《日本時報》七月五日深度分析詳述台灣所面臨的最極端多域複合威脅情境——若解放軍同步實施海上封鎖、網路攻擊關鍵基礎設施及特種部隊破壞行動，並適逢台灣周期性發生的重大地震，應急指揮體系、資源調度能力與民心士氣將面臨前所未有的考驗。報告指出，台灣政府與軍方的桌上兵推及民防整備雖已大幅進步，但跨機構協調漏洞、地下基礎設施強化不足及民間戰略物資儲備短缺仍是核心弱點。分析師強調，提升台灣韌性的關鍵不僅在於軍事嚇阻，更需將「全社會防衛」理念從政策文件落地為可執行的地方應變計畫。",
+     "source": "The Japan Times",
+     "tags": [
+      "TAIWAN BLOCKADE",
+      "NIGHTMARE SCENARIO",
+      "MULTI-DOMAIN",
+      "EARTHQUAKE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "立法院長韓國瑜率跨黨派代表團赴美會見國會議員，就台灣國際參與、對美貿易及印太安全架構進行跨黨派磋商",
+     "url": "https://www.aei.org/articles/china-taiwan-update-july-2-2026/",
+     "summary": "台灣立法院長韓國瑜近期率跨黨派國會代表團赴美，分別與共和黨及民主黨國會議員舉行雙邊會談，聚焦台灣國際組織參與受阻問題、台美貿易關係深化，以及美方在川普政府對中政策框架下對台安全承諾的清晰度。AEI 分析指出，此次代表團訪美時機恰逢川普政府以台灣軍售作為對北京談判籌碼而刻意延遲批准的敏感節點，跨黨派議會外交的強化有助於繞過行政部門政策不確定性、直接鞏固美國國會層面雙黨對台支持的共識基礎，並就台灣特別國防預算削減與封鎖因應演習等近期發展向美方官員進行了詳細簡報。",
+     "source": "AEI",
+     "tags": [
+      "HAN KUO-YU",
+      "TAIWAN DELEGATION",
+      "US CONGRESS",
+      "BIPARTISAN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "《外交家》：重新審視中俄演進中的複合威脅——北韓部隊赴俄作戰、中方提供 CBRN 軍事訓練，威脅烈度超越西方最壞情境預估",
+     "url": "https://thediplomat.com/2026/07/reckoning-with-the-evolving-china-russia-threat/",
+     "summary": "《外交家》七月最新深度分析指出，北韓部隊已在歐洲戰場與俄軍並肩作戰並從中積累現代戰爭實戰經驗，而路透社報導更揭露中方軍事人員向俄羅斯部隊提供包括放射性、生物及化學戰（CBRN）在內的秘密訓練，中俄戰略協作烈度已超越西方戰略界的最壞情境預估。文章指出西方政策圈的兩大核心誤判：認為經濟相互依存可制約北京行為、制裁可摧毀莫斯科戰爭能力；而 2001 年《俄中睦鄰友好合作條約》的升級版本預計年內簽署，將進一步強化這一威權主義軸心的制度性基礎，需要西方對因應框架進行根本性的策略更新。",
+     "source": "The Diplomat",
+     "tags": [
+      "CHINA-RUSSIA",
+      "NORTH KOREA TROOPS",
+      "CBRN TRAINING",
+      "UKRAINE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "《外交家》：亞洲諸強競逐北極能源航道但阻礙重重——制裁曝險、俄羅斯主權壁壘與氣候不確定性共同制約亞洲能源布局",
+     "url": "https://thediplomat.com/2026/07/asia-is-racing-to-the-arctic-but-its-not-easy/",
+     "summary": "《外交家》七月分析揭示，中國、印度、日本及韓國正基於能源安全焦慮與制裁規避壓力加速爭奪北極能源資源與北方海航道通行權，但各方均面臨截然不同的戰略阻礙。中國透過北冰洋液化天然氣投資深化對俄依賴，卻需應對西方次級制裁風險；日韓則在俄羅斯資產參與方面承受盟友壓力。北極主權框架的模糊性與俄羅斯對北方海路的單邊主張，使非俄方參與者的長期利益保障充滿不確定性；制裁地景的複雜化正迫使亞洲能源買家在供應安全、地緣政治可信度與盟友關係之間做出愈發艱難的戰略取捨。",
+     "source": "The Diplomat",
+     "tags": [
+      "ARCTIC",
+      "ASIA ENERGY",
+      "CHINA INDIA JAPAN KOREA",
+      "SANCTIONS EXPOSURE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布魯金斯學會：外交手段在美國管理台海關係中的核心作用——清晰紅線、軍事溝通熱線與制度化對話是防止誤判升級的三大支柱",
+     "url": "https://www.brookings.edu/articles/the-role-of-diplomacy-in-us-management-of-cross-strait-relations/",
+     "summary": "布魯金斯學會分析強調，在美中競爭加劇的背景下，外交機制而非單純軍事嚇阻才是防止台海危機從灰色地帶脅迫演變為武裝衝突的最後防線。報告指出，清晰界定美方紅線、維持美中高層軍事溝通熱線，以及建立危機中可靠的快速降溫管道，是台海衝突管理的三大核心工具；而川普政府以台灣軍售作為對中談判槓桿的策略性使用，正侵蝕此一外交架構的可信基礎。無論在戰略層面維持何種程度的模糊性，都必須確保危機出口的外交渠道暢通，以避免因雙方都缺乏可信溝通後門而被迫走向不可控升級。",
+     "source": "Brookings Institution",
+     "tags": [
+      "BROOKINGS",
+      "US-CHINA DIPLOMACY",
+      "CROSS-STRAIT",
+      "CRISIS MANAGEMENT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "美股標普 500 收 7,483 點再創新高，但 6 月非農就業僅增 5.7 萬遠遜預期，聯準會 7 月升息機率驟降至 18%",
+     "url": "https://247wallst.com/investing/2026/07/02/stock-market-live-july-2-2026-sp-500-spy-flat-with-new-jobs-data/",
+     "summary": "美國 6 月非農就業報告揭示新增就業僅 57,000，大幅低於市場預估的約 11 萬，且前幾個月數據同步向下修正，為 2026 年 2 月以來最疲軟讀數。就業數據疲軟使市場對聯準會 7 月加息的機率預期從約 29% 急降至 18%，支撐 S&P 500 收在 7,483.24 點的新高水位。然而 FOMC 委員意見高度分歧——約九名委員傾向年內再升息一至兩次，另九名委員偏向按兵不動甚至降息一次，聯準會政策路徑的不確定性持續壓抑中小型股相對表現，而羅素 2000 及 S&P 中型股 400 指數均錄得跌幅，資金持續集中於大型科技及金融龍頭。",
+     "source": "24/7 Wall St.",
+     "tags": [
+      "S&P 500",
+      "JUNE NFP 57K",
+      "JOBS MISS",
+      "FED RATE HIKE PROBABILITY"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "MacroMicro 全球央行年底利率預期追蹤：聯準會維持 3.75% 上限、ECB 升息路徑受能源通膨牽制、日銀鷹派壓力升溫，主要經濟體貨幣政策加速分歧",
+     "url": "https://en.macromicro.me/collections/6005/global-central-bank/143492/world-central-banks-yearend-interest-rate-expectations-2026",
+     "summary": "MacroMicro 全球央行年底利率預期追蹤顯示，2026 年下半年主要央行的貨幣政策路徑正加速分歧：聯準會維持 3.50–3.75% 目標區間，市場對年底前升息的定價持續搖擺；歐洲央行在能源通膨壓力下被迫升息後，7 月 24 日會議是否再度出手高度不確定；日本銀行則因日圓持續貶值引發的輸入型通膨壓力而面臨鷹派行動的市場預期升溫。全球貨幣政策的碎片化格局正在重塑資本流動路徑，利率差異成為 2026 年下半年匯率市場的核心驅動力，新興市場面臨資本外流與本幣貶值的雙重壓力。",
+     "source": "MacroMicro",
+     "tags": [
+      "GLOBAL CENTRAL BANKS",
+      "YEAR-END RATE",
+      "FED 3.75%",
+      "ECB"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "IQI Global 七月全球經濟展望：原油跌至每桶 67 美元、市場敘事從利率轉向地緣政治能源風險，霍爾木茲仍是最大尾部風險",
+     "url": "https://iqiglobal.com/blog/global-economic-outlook-july-2026/",
+     "summary": "IQI Global 七月全球經濟展望指出，隨著美伊外交進展與霍爾木茲海峽通行壓力緩解，布蘭特原油從 4 月高峰已回落至每桶約 67–68 美元區間，逆轉了今年上半年的能源通膨衝擊。金融市場的核心敘事正從「利率路徑」轉向「能源安全與地緣政治風險定價」，能源及原材料類股年初至今仍為表現最佳板塊，而科技股與 AI 相關標的則因聯準會維持高利率而持續承壓。報告警告，霍爾木茲海峽的停火協議執行機制仍模糊，任何外交逆轉均可能迅速推升油價並重燃通膨預期，為全球經濟軟著陸帶來新的擾動風險。",
+     "source": "IQI Global",
+     "tags": [
+      "OIL PRICE",
+      "HORMUZ DIPLOMACY",
+      "GEOPOLITICS-ENERGY NARRATIVE",
+      "IQI GLOBAL"
+     ]
+    }
+   ]
+  }
+ ]
+}

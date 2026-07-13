@@ -1,0 +1,207 @@
+{
+ "date": "2026-07-03",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA 緊急將 Microsoft SharePoint RCE 漏洞 CVE-2026-45659 列入 KEV，認證用戶無需管理員權限即可觸發遠端程式碼執行，聯邦機構修補期限 7 月 4 日",
+     "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
+     "summary": "CVE-2026-45659 是 SharePoint Server 因反序列化不受信任資料而導致的高嚴重性遠端程式碼執行漏洞（CVSS 8.8），攻擊者僅需具備 Site Member 以上的合法帳號權限即可發動攻擊，無需管理員特權。CISA 於 7 月 1 日確認遭到積極利用並將其列入 KEV 目錄，要求美國聯邦文職行政機構（FCEB）於 7 月 4 日前完成修補。此漏洞值得特別關注之處在於，微軟原先在 Patch Tuesday 公告中將其標記為「較不可能被利用」，然而 CISA 的 KEV 列入等同宣告野外利用已確認存在。受影響版本為 SharePoint Server 2016 Enterprise、2019 及 Subscription Edition，微軟已於 2026 年 5 月修補此問題，SharePoint Online 不受影響。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-45659",
+      "SHAREPOINT RCE",
+      "CVSS 8.8",
+      "DESERIALIZATION"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "Adobe 緊急修補 ColdFusion 與 Campaign Classic 共 7 個 CVSS 10.0 最高級漏洞，無需任何認證即可上傳並執行任意程式碼，Priority Rating 1 要求立即部署",
+     "url": "https://www.bleepingcomputer.com/news/security/adobe-patches-seven-max-severity-coldfusion-campaign-flaws/",
+     "summary": "Adobe 於 6 月 30 日發布資安公告 APSB26-68，修補影響 ColdFusion 2023（Update 20 及更早版本）與 ColdFusion 2025（Update 9 及更早版本）的 6 個最高嚴重性漏洞（CVE-2026-48276、CVE-2026-48277、CVE-2026-48281、CVE-2026-48282、CVE-2026-48283、CVE-2026-48316），全部 CVSS 10.0 滿分，攻擊者無需任何認證即可透過任意檔案上傳路徑取得伺服器完整控制權並執行任意程式碼。Adobe Campaign Classic 亦同步修補多個 CVSS 10.0 遠端程式碼執行漏洞。雖然 Adobe 目前未發現野外利用，但 ColdFusion 歷史上因高知名度長期受到駭客高度關注，Adobe 已將此批漏洞列為最高 Priority Rating 1，面向網際網路的實例應立即升級至 ColdFusion 2023 Update 21 或 2025 Update 10。",
+     "source": "BleepingComputer",
+     "tags": [
+      "ADOBE COLDFUSION",
+      "CVE-2026-48276",
+      "7x CVSS 10.0",
+      "UNAUTHENTICATED RCE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "微軟調查揭露同一企業網路同時遭兩組互不相知的攻擊者入侵：Storm-2603 部署 Warlock 勒索軟體，FortiGate 憑證遭大量收割後轉售 INC 與 Lynx 勒索集團",
+     "url": "https://www.securityweek.com/cisa-warns-of-actively-exploited-microsoft-sharepoint-vulnerability/",
+     "summary": "微軟最新勒索軟體調查揭露一起罕見案例：同一受害企業網路內，兩組完全獨立的攻擊者同步進行滲透但彼此不知情。其一為 Storm-2603，慣用方法是利用本地部署 SharePoint 已知漏洞部署 Warlock 勒索軟體；另一組威脅行為者則先收割並出售大量 FortiGate 防火牆憑證，再由購買這批憑證的 INC 與 Lynx 勒索集團執行加密部署。此類「雙重入侵」案例凸顯企業資安缺口往往不是單點問題，而是防禦縱深全面失守的結果，同時也說明受損 VPN 設備憑證已成為勒索軟體經濟生態中可交易的商品。",
+     "source": "SecurityWeek",
+     "tags": [
+      "STORM-2603",
+      "WARLOCK RANSOMWARE",
+      "FORTIGATE CREDENTIAL HARVEST",
+      "INC LYNX"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "2026 年 7 月資料外洩事件追蹤：台灣航電設備廠商 AeroVision Avionics 遭駭，Stryker wiper 攻擊後遺症持續，跨國跨產業同步入侵態勢明顯",
+     "url": "https://sharkstriker.com/blog/july-2026-data-breaches/",
+     "summary": "SharkStriker 7 月份資料外洩追蹤報告顯示，7 月 2 日單日即爆發多起入侵事件，受害組織橫跨多個國家與產業：台灣航電設備廠商 AeroVision Avionics 確認遭入侵（資料外洩影響範圍待確認）、西班牙工程公司 A. Bianchini Ingeniero S.A. 及越南食品企業 B'Laofood JSC 同步受害，顯示跨國協同攻擊態勢。此外，美國醫療科技大廠 Stryker 遭受 2 月 wiper 惡意程式破壞性攻擊後，多名前後任員工涉及訴訟的法律糾紛持續延燒，凸顯破壞性攻擊對企業治理的長尾影響。航太與國防供應鏈廠商正成為 2026 年下半年的重點攻擊目標。",
+     "source": "SharkStriker",
+     "tags": [
+      "JULY 2026 DATA BREACHES",
+      "AEROVISION AVIONICS TAIWAN",
+      "STRYKER WIPER",
+      "CROSS-SECTOR"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "CSIS 重大網路事件資料庫更新：國家級 APT 以電信、國防工業基地為首要目標，中俄朝三國已確認入侵 24 個美國 DIB 組織，國家級攻擊正進入「機器速度」時代",
+     "url": "https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents",
+     "summary": "CSIS 戰略技術專案「重大網路事件」持續追蹤資料庫最新更新顯示，中國 APT 組織 UNC3886 對新加坡四大電信商發動長達數月的隱蔽滲透行動，利用零日漏洞與 rootkit 建立持久存取，為本年度東南亞最重大供應鏈型滲透事件。中俄朝三國 APT 組織今年已確認入侵至少 24 個美國國防工業基地（DIB）組織，VPN 設備與網路閘道漏洞為最常見突破口。Armis 2026 網路戰年報同步警告，國家級攻擊已進入「機器速度」自動化時代，89% 資安主管示警 AI 加持的攻擊浪潮即將重塑全球威脅基準線。",
+     "source": "CSIS",
+     "tags": [
+      "NATION-STATE",
+      "UNC3886 SINGAPORE",
+      "DIB 24 ORGS",
+      "MACHINE-SPEED ATTACK"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "AEI 6 月 26 日台海情勢更新：中國海警擴大台灣以東水域主張、解放軍以灰色地帶行動常態化施壓，台灣 140 億美元對美軍購遭川普作為對北京談判籌碼拖延",
+     "url": "https://www.aei.org/articles/china-taiwan-update-june-26-2026/",
+     "summary": "美國企業研究院（AEI）最新台海情勢週報顯示，中國海警近期持續升高在台灣以東水域的行動強度，主張更廣泛的管轄主張並騷擾台灣海巡署船隻；解放軍海軍騰出執勤空間讓海警承擔日常施壓任務，使「灰色地帶」強制行動實現制度化常態化。政治層面，台灣所期盼的 140 億美元對美軍售案至今未獲川普政府簽署，外界分析認為川普政府將台灣軍售視為對北京外交談判的政治籌碼，使台灣的安全採購時程陷入不確定性。台灣民調數據顯示，多數民眾優先支持強化國防合作，而非改善兩岸關係，顯示台灣社會的安全認知與政府的政策彈性之間存在落差。",
+     "source": "AEI",
+     "tags": [
+      "AEI",
+      "CHINA COAST GUARD",
+      "TAIWAN EAST",
+      "PLA NAVY"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "華盛頓大學 JSIS「避免戰爭」報告：台灣行政立法政治僵局拖累防衛預算執行，恐使北京誤判台灣抵抗意志而增加意外升級風險",
+     "url": "https://jsis.washington.edu/wordpress/wp-content/uploads/2026/04/Averting-War_Taiwan-and-US-China-Relations-in-2026.pdf",
+     "summary": "華盛頓大學傑克森國際研究院（JSIS）2026 年 4 月發布「避免戰爭：台灣與 2026 年美中關係」報告，分析台海安全取決於三組相互交織的變數：美中危機管理溝通機制的穩健程度、台灣內部政治整合能力與防衛決心，以及解放軍軍力評估與北京決策層的風險耐受度。報告特別警示，台灣行政部門與反對黨主導的立法院之間的政治僵局，嚴重拖累防衛預算審議（5 月通過的特別預算較行政院版本縮減 38%），可能使北京誤判台灣社會的抵抗意志與戰略決心，無意間增加意外衝突升級的結構性風險。",
+     "source": "JSIS / University of Washington",
+     "tags": [
+      "AVERTING WAR",
+      "JSIS UW",
+      "TAIWAN POLITICAL GRIDLOCK",
+      "DEFENSE BUDGET"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布魯金斯學會：美國管理兩岸關係的外交角色分析——川普政府的「混合訊號」策略如何在保持彈性的同時動搖嚇阻可信度",
+     "url": "https://www.brookings.edu/articles/the-role-of-diplomacy-in-us-management-of-cross-strait-relations/",
+     "summary": "布魯金斯學會最新分析指出，美國對台海外交管理正面臨前所未有的結構性挑戰。川普政府對台安全承諾發出矛盾訊號，包括鼓勵歐洲盟友聚焦歐大西洋事務而非投入印太嚇阻，以及將台灣軍售用作外交槓桿等，形成「多重戰略模糊」。這一策略短期或能維持外交彈性，但長期將侵蝕台海嚇阻的可信度基礎，為北京預留更大的試探空間。報告強調，若美國無法在外交靈活性與安全承諾明確性之間取得適當平衡，亞太盟友體系的向心力將面臨持續考驗。",
+     "source": "Brookings Institution",
+     "tags": [
+      "BROOKINGS",
+      "US DIPLOMACY",
+      "CROSS-STRAIT",
+      "STRATEGIC AMBIGUITY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "《外交家》2026 地緣政治趨勢展望：美中全面競爭、AI 軍備競賽、新冷戰陣營化與多極秩序崛起並行，全球外交進入結構性重組期",
+     "url": "https://thediplomat.com/2025/12/outlook-geopolitical-trends-and-global-diplomacy-in-2026/",
+     "summary": "《外交家》年度地緣政治展望指出，2026 年全球格局受四大結構性力量主導：美中競爭已從局部對立全面延伸至科技、軍事、外交、供應鏈等多個維度，雙方爭奪中間國家站隊的力道較去年顯著加強；部分地區衝突呈現冷戰式陣營化徵兆，大國代理戰爭格局隱現；AI 成為新維度軍備競賽場域，各國競相部署以強化作戰效能及情報蒐集能力；多極秩序加速浮現，全球南方國家（Global South）以拒絕選邊的戰略自主外交積極謀取最大利益，傳統西方主導的多邊機制承壓明顯。",
+     "source": "The Diplomat",
+     "tags": [
+      "GEOPOLITICAL TRENDS 2026",
+      "US-CHINA",
+      "NEW COLD WAR",
+      "AI ARMS RACE"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "現代外交：2026 年亞洲地緣政治——衝突持續主導地區議程，中美競爭、北韓核武升級與東南亞戰略角力三線並行",
+     "url": "https://moderndiplomacy.eu/2025/12/30/asia-in-2026-conflict-continues-to-dominate/",
+     "summary": "現代外交（Modern Diplomacy）分析指出，亞洲 2026 年安全環境由三條並行衝突線主導：美中戰略競爭全面滲透印太安全架構，雙方在南海、尖閣諸島及麻六甲海峽等關鍵航運通道的軍事存在持續擴張，任何擦槍走火的系統風險不可低估；北韓持續強化核武部署並深化與俄羅斯軍事合作，平壤已成為中俄對美陣線的隱性戰略支撐；越南、菲律賓、印尼等東南亞中型國家的戰略槓桿價值顯著上升，在大國競爭中謀取最大利益的同時，選邊壓力同步升高，地區安全架構加速碎片化。",
+     "source": "Modern Diplomacy",
+     "tags": [
+      "ASIA CONFLICT 2026",
+      "NORTH KOREA RUSSIA",
+      "SOUTH CHINA SEA",
+      "SENKAKU"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布魯金斯學會：亞洲新地緣政治格局下的北韓外交前景——俄羅斯蛻變為制裁規避主動協助者，無核化外交時間窗口急速收窄",
+     "url": "https://www.brookings.edu/collection/the-new-geopolitics-of-asia-and-the-prospects-of-north-korea-diplomacy/",
+     "summary": "布魯金斯學會研究集刊分析亞洲新地緣政治格局對北韓外交的結構性影響，指出俄羅斯在烏克蘭戰爭背景下大量接收北韓彈藥與武器，從過去名義上的制裁執法者蛻變為制裁規避的主動協助者，中俄兩國的戰略性包庇使聯合國制裁框架在 2026 年幾乎失去實質約束力。北韓藉此機遇加速核武多元化部署，包括戰術核武、DF-17 型彈道飛彈的 HGV 高超音速彈頭等新能力，核威嚇能力呈現不可逆的質變提升。無核化外交的可行性與時間窗口正以前所未有的速度收窄，北韓問題正從「可談判議題」轉變為「既成事實管理」。",
+     "source": "Brookings Institution",
+     "tags": [
+      "NORTH KOREA",
+      "RUSSIA",
+      "SANCTIONS EVASION",
+      "DENUCLEARIZATION"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "Convera 7 月全球外匯展望：利率差異重返匯市核心驅動力，美元強勢壓制歐元日圓，S&P 500 逼近 7,420 歷史高位但科技股獲利了結帶來下行壓力",
+     "url": "https://convera.com/blog/market-insights/fx-research/monthly-global-fx-outlook/fx-outlook-july-2026/",
+     "summary": "Convera 7 月外匯展望指出，進入下半年最顯著的市場轉變是利率差異（rate differential）重新取代地緣政治與能源因素，成為主導貨幣走勢的核心力量：美元因聯準會維持 3.50–3.75% 鷹派立場持續強勢，歐元與日圓承受相對貶壓；隨著中東緊張局勢傳出緩和跡象、油價從峰值大幅回落，通膨壓力趨緩但央行政策路徑仍高度不確定。股市方面，S&P 500 逼近 7,420 點歷史高位，科技股在獲利了結賣壓及利率高位預期下承壓，黃金因美元強勢有所回調但地緣政治避險需求仍提供支撐。",
+     "source": "Convera",
+     "tags": [
+      "CONVERA",
+      "FX JULY 2026",
+      "USD STRENGTH",
+      "S&P 7420"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Vanguard：油價衝擊使全球央行陷入升息誘發衰退兩難困境，停滯性通膨風險顯著上升，ECB 基線預測 2026 年歐元區 GDP 成長僅 0.8%",
+     "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/oil-shock-complicates-central-bank-outlooks.html",
+     "summary": "Vanguard 宏觀分析報告指出，荷姆茲衝突驅動的能源衝擊使全球主要央行陷入政策兩難：能源通膨居高需要持續升息壓制，但能源成本上漲同步打擊企業獲利率與消費者信心，過度升息恐誘發衰退。報告指出，停滯性通膨（stagflation）風險較三個月前顯著上升，ECB 基線情境已將 2026 年歐元區 GDP 成長預測大幅下修至 0.8%。面對能源通膨與增長下滑的雙重壓力，央行政策決策的容忍空間已大幅收窄，每一次利率決策都面臨更高的市場預期管理挑戰，政策錯誤的代價前所未有地高昂。",
+     "source": "Vanguard",
+     "tags": [
+      "VANGUARD",
+      "OIL SHOCK",
+      "CENTRAL BANK DILEMMA",
+      "STAGFLATION RISK"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "歐洲央行政策委員 Dolenc：若中東局勢持續緩和、能源成本維持現水準且無第二輪效應，ECB 7 月 24 日會議可能暫停升息，市場重新定價",
+     "url": "https://www.investing.com/news/economy-news/ecb-may-hold-rates-in-july-if-mideast-tensions-ease-says-dolenc--bloomberg-93CH-4768521",
+     "summary": "歐洲央行政策委員會成員 Dolenc 透過彭博社表示，若中東緊張局勢不再惡化、能源成本維持當前水準且未見工資與通膨形成第二輪互強效應，ECB 在 7 月 24 日利率決策會議採取「暫停升息」策略是合理且恰當的選擇。此番言論為市場帶來 ECB 升息週期可能提前喘息的強烈預期訊號，歐元小幅走強，歐元區政府公債殖利率下滑。油價走勢已取代通膨數據成為 7 月 ECB 決策前最關鍵的觀察指標，荷姆茲局勢能否持續穩定將直接決定 ECB 下一步行動，同時對全球債市、外匯市場及新興市場資金流向帶來連鎖重定價效應。",
+     "source": "Investing.com / Bloomberg",
+     "tags": [
+      "ECB JULY HOLD",
+      "DOLENC",
+      "MIDEAST TENSIONS",
+      "ENERGY COSTS"
+     ]
+    }
+   ]
+  }
+ ]
+}

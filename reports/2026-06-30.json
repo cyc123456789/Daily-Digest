@@ -1,0 +1,207 @@
+{
+ "date": "2026-06-30",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Splunk Enterprise CVE-2026-20253 無認證 RCE 遭積極利用：CVSS 9.8 PostgreSQL 邊車服務零驗證缺陷，首度進入 CISA KEV 成 Splunk 史上最高威脅等級漏洞",
+     "url": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
+     "summary": "Splunk Enterprise CVE-2026-20253（CVSS 9.8）源自 PostgreSQL 邊車服務完全缺乏身份驗證機制，任何可達到服務的網路使用者均可無需憑證即執行任意檔案操作並升級為完整 RCE。watchTowr Labs 發布概念驗證代碼後六天內即確認遭到實際攻擊，CISA 於 6 月 18 日將其列入已知遭利用漏洞目錄，成為 Splunk 平台首度進入 KEV 清單的里程碑事件。AWS 上的 Splunk Enterprise 預設啟用此邊車服務，雲端部署尤其暴露；受影響版本為 10.0.0–10.0.6 及 10.2.0–10.2.3，應立即升級至 10.0.7 或 10.2.4 並將管理介面下線。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-20253",
+      "SPLUNK",
+      "PRE-AUTH RCE",
+      "CVSS 9.8"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "美國全國保險委員會協會（NAIC）遭 Oracle PeopleSoft 零時差 CVE-2026-35273 入侵：ShinyHunters 聲稱竊取 3.1 TB 資料公開於暗網，信評機構暫停數據饋送",
+     "url": "https://www.securityweek.com/insurance-regulators-group-naic-hit-in-oracle-peoplesoft-hack/",
+     "summary": "美國全國保險委員會協會（NAIC）於 6 月 11 日確認遭到未授權入侵，攻擊者利用 Oracle PeopleSoft Enterprise PeopleTools 零時差漏洞 CVE-2026-35273（CVSS 9.8），在 Oracle 正式公告發布前至少 14 天已遭主動利用。ShinyHunters 組織聲稱竊取 3.1 TB 數據並已公開至暗網論壇，涉及法定財務申報資訊與信評機構評等數據，導致多家信評機構暫停向 NAIC 提供數據饋送，其投資評等業務可能停滯數月。事件揭示保險監管機構對 Oracle 企業系統零時差漏洞的高度暴露，以及 ShinyHunters 在攻擊金融監管機構方面的持續破壞力。",
+     "source": "SecurityWeek",
+     "tags": [
+      "NAIC",
+      "CVE-2026-35273",
+      "ORACLE PEOPLESOFT",
+      "CVSS 9.8"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "烏克蘭 SSU 與美國 FBI 聯合揭露俄羅斯 FSB 系統性竊取 Signal 及通訊平台憑證行動：鎖定政府官員、軍事人員與政治人物，進化至竊取備份恢復金鑰",
+     "url": "https://thehackernews.com/2026/06/ukraine-says-russian-intelligence-used.html",
+     "summary": "烏克蘭安全局（SSU）與美國 FBI 聯合揭露由俄羅斯情報機構（FSB）主導的持續性社交工程行動，目標鎖定烏克蘭、歐洲及美國境內的政府官員、軍事人員及政治人物的即時通訊帳號。攻擊者冒充 Signal 官方客服發送詐騙簡訊，誘騙受害者洩露帳號憑證，並進化至專門竊取 Signal 備份恢復金鑰——即使目標換用新帳號亦可存取其完整歷史訊息。此行動被研究人員關聯至 UNC5792、UNC4221 及 Star Blizzard 等 FSB 追蹤群組，顯示俄羅斯已將高度鎖定的即時通訊情報蒐集提升至戰略優先層級。",
+     "source": "The Hacker News",
+     "tags": [
+      "FSB",
+      "SSU",
+      "FBI",
+      "SIGNAL"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "伊朗關聯 MuddyWater APT 積極利用 Langflow AI 框架 CVE-2025-34291：CORS 配置錯誤結合 SameSite=None 竊取 Session 令牌，AI 工具鏈成新型攻擊面",
+     "url": "https://innovatecybersecurity.com/security-threat-advisory/top-10-cybersecurity-news-june-15-2026-check-point-vpn-authentication-bypass-exploited-in-the-wild-splunk-enterprise-pre-auth-remote-code-execution-and-more/",
+     "summary": "伊朗關聯 APT 組織 MuddyWater 已確認積極利用 Langflow AI 應用框架中的 CVE-2025-34291，該漏洞結合 CORS 配置錯誤與 SameSite=None Cookie 屬性缺陷，允許攻擊者竊取已驗證使用者的 Session 令牌，以合法身份存取 AI 工作流程、模型設定及整合的 API 金鑰。Langflow 廣泛部署於企業 AI 開發環境，此次利用標誌著國家級威脅行為者已將 AI/ML 開發工具鏈納入常規攻擊目標。組織應立即審查 Langflow 部署的網路存取控制、停用不必要的跨來源請求，並輪換所有可能遭洩露的 API 憑證。",
+     "source": "Innovate Cybersecurity",
+     "tags": [
+      "MUDDYWATER",
+      "IRAN",
+      "APT",
+      "CVE-2025-34291"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Armis 2026 網路戰報告：國家級攻擊已達「機器速度」，AI 驅動自動化壓縮防禦反應窗口，OT 與關鍵基礎設施暴露風險急劇上升",
+     "url": "https://www.armis.com/blog/nation-state-attacks-hit-machine-speed-key-takeaways-of-the-2026-armis-cyberwarfare-report-and-what-it-means-for-security-teams/",
+     "summary": "Armis 2026 年度網路戰報告指出，國家級威脅行為者的攻擊速度已實現「機器速度化」，AI 輔助漏洞利用大幅壓縮從初始存取到橫向移動的時間窗口，傳統人工驅動的防禦響應已明顯落後。報告強調 OT（操作技術）與關鍵基礎設施系統的暴露風險急劇上升，能源、水務、製造及醫療系統因資產可見性不足成為優先攻擊目標。安全團隊應部署具備即時 AI 偵測能力的資產情報平台，優先確保 OT/IoT 環境的完整可見性，以縮短對抗機器速度攻擊的反應時間。",
+     "source": "Armis",
+     "tags": [
+      "ARMIS",
+      "CYBERWARFARE 2026",
+      "NATION STATE",
+      "MACHINE SPEED"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "G7 埃維昂峰會六年連續重申台灣海峽現狀不容改變，新增稀土產業鏈去中化目標強化戰略支撐架構",
+     "url": "https://eng.mizzima.com/2026/06/29/35764",
+     "summary": "2026 年 G7 埃維昂峰會（法國，6/15–17）首腦聯合聲明再度明確重申，任何試圖以武力或脅迫方式片面改變台灣海峽現狀的行為均不可接受，應透過和平對話方式解決，此為 G7 自 2021 年以來連續第六年就台海問題作出集體表態。峰會同時設立 G7 稀土關鍵礦產生產目標，以降低對中國稀土壟斷的依賴，被分析師解讀為在科技供應鏈層面對台海戰略的深度布局。台灣政府對 G7 聲明熱烈歡迎，視其為民主陣營對台灣安全集體背書的持續強化。",
+     "source": "Mizzima",
+     "tags": [
+      "G7 EVIAN",
+      "TAIWAN STRAIT",
+      "STATUS QUO",
+      "RARE EARTH"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "台灣外交部歡迎 G7 峰會台海聲明：連續六年集體表態強化多邊嚇阻框架，分析人士指措辭較去年更為直接有力",
+     "url": "https://www.taipeitimes.com/News/front/archives/2026/06/18/2003859293",
+     "summary": "台灣外交部對 G7 埃維昂峰會台海聲明表示高度歡迎，強調此次聲明是民主國家對台灣主權地位與台海和平穩定最一致、最有力的多邊表態之一。台灣官員指出，G7 連續六年在峰會聲明中納入台海議題，顯示民主聯盟在台灣安全問題上的戰略共識已從臨時集結轉化為制度性承諾。分析人士觀察，今年 G7 台海措辭較去年更加直接，並新增稀土供應鏈去中化部分，顯示民主國家對台海議題的關切已從純軍事嚇阻延伸至科技與經濟韌性層面。",
+     "source": "Taipei Times",
+     "tags": [
+      "TAIPEI TIMES",
+      "TAIWAN",
+      "G7",
+      "DIPLOMATIC RESPONSE"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "G7 峰會高市早苗與川普深入協商印太安全：中東危機籠罩峰會議程，日美印太協調框架在台海嚇阻架構中的角色持續強化",
+     "url": "https://www.japantimes.co.jp/news/2026/06/17/japan/politics/takaichi-trump-g7-china-indopacific/",
+     "summary": "G7 埃維昂峰會期間，日本首相高市早苗與美國總統川普就印太安全進行深入雙邊協商，中東伊朗衝突與台海穩定並列為雙邊議程核心關切。高市早苗此前因發表「日本可能在台灣危機中軍事介入」言論而導致日中關係降至近十年冰點，此次 G7 峰會提供了她在多邊框架下闡述日本印太安全立場的重要舞台。分析人士指出，日美印太協調的深化與 G7 集體台海聲明相互強化，正在形成以日美同盟為骨幹、G7 民主聯盟為外圍的多層次台海嚇阻架構。",
+     "source": "Japan Times",
+     "tags": [
+      "JAPAN",
+      "TAKAICHI",
+      "TRUMP",
+      "G7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "菲律賓率先宣告全國能源緊急狀態：荷姆茲危機重創 ASEAN 石油進口國，馬科斯動用瑪蘭帕亞基金應急採購，東南亞能源安全結構性漏洞暴露",
+     "url": "https://www.developmentaid.org/news-stream/post/206233/philippines-energy-emergency",
+     "summary": "菲律賓總統費迪南·馬科斯二世在三月下旬發布行政命令宣告全國能源緊急狀態，成為全球首個因荷姆茲海峽封鎖宣告國家能源緊急的國家——菲律賓 98% 石油依賴中東進口，危機爆發後每日平均供油存量從 57 天驟降至 45 天，柴油每公升突破 130 披索、汽油突破 100 披索。預算部批准動用 200 億披索（約 4.06 億美元）瑪蘭帕亞能源基金緊急採購燃料，以穩定供應可及性。泰國、越南等 ASEAN 鄰國亦面臨嚴峻供應壓力，此次危機深度暴露東南亞能源安全體系對荷姆茲通道的結構性依賴。",
+     "source": "DevelopmentAid",
+     "tags": [
+      "PHILIPPINES",
+      "ENERGY EMERGENCY",
+      "HORMUZ",
+      "OIL CRISIS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "G7 埃維昂峰會地緣政治聯合聲明：烏克蘭持續支持、伊朗制裁維持、荷姆茲停火監督——七大工業國在多重衝突疊加下的集體戰略表態",
+     "url": "https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues",
+     "summary": "G7 七大工業國領導人在法國埃維昂峰會（6/15–17）發表地緣政治聯合聲明，就烏克蘭戰爭持續支持基輔、維持對俄制裁機制、伊朗荷姆茲停火監督以及台海印太穩定表達集體立場。聲明重申 G7 承諾繼續向烏克蘭提供財政及安全援助，並就伊朗核談判前景與荷姆茲停火落實機制的後續監督框架表達關切。分析師指出，本次 G7 聲明較以往更具操作性，反映多重地緣衝突疊加背景下各國試圖在聯合聲明中設定更清晰行動基準的戰略共識。",
+     "source": "Élysée Palace / G7 Évian 2026",
+     "tags": [
+      "G7 EVIAN",
+      "UKRAINE",
+      "RUSSIA",
+      "IRAN"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CSIS 持續更新：美伊衝突進入第五個月，CENTCOM 軍事行動與荷姆茲停火並行，中東戰略格局深度重塑中",
+     "url": "https://www.csis.org/programs/latest-analysis-war-iran",
+     "summary": "美國智庫戰略與國際研究中心（CSIS）持續追蹤美伊衝突最新動態，衝突延燒至第五個月，美國中央司令部（CENTCOM）空中行動與外交停火談判呈現「邊打邊談」的複雜格局。CSIS 分析指出，荷姆茲海峽貿易通道雖已恢復部分通行，但伊朗海軍與革命衛隊的封鎖能力並未喪失，停火的脆弱性使全球能源市場持續處於高度不確定狀態。隨著衝突進入第五個月，美國中期選舉周期開始影響決策層的戰略選項評估，伊朗內部強硬派與務實派之間的路線鬥爭亦成為停火能否持續的關鍵變量。",
+     "source": "CSIS",
+     "tags": [
+      "IRAN",
+      "US",
+      "CENTCOM",
+      "CSIS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "Vanguard 宏觀分析：油價衝擊使全球央行陷入進退維谷政策困境，停滯性通膨（Stagflation）風險較三個月前顯著上升",
+     "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/oil-shock-complicates-central-bank-outlooks.html",
+     "summary": "Vanguard 最新宏觀分析指出，伊朗衝突引發的油價衝擊已使全球主要央行面臨自 1970 年代以來最嚴峻的政策兩難：能源成本驅動的供給面通膨壓力要求貨幣緊縮，而能源價格衝擊對實體經濟的需求壓縮效應又同時要求寬鬆刺激。Vanguard 評估停滯性通膨風險較三個月前明顯上升，歐元區尤其面臨能源進口依賴高、製造業基礎厚重的雙重壓力，升息可能加速工業衰退。報告建議投資者在資產配置上增加能源股、通膨保值債券及大宗商品敞口，以對沖央行政策不確定性帶來的組合波動。",
+     "source": "Vanguard",
+     "tags": [
+      "VANGUARD",
+      "OIL SHOCK",
+      "CENTRAL BANKS",
+      "STAGFLATION"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "JP Morgan 2026 市場展望：S&P 500 逼近 7,420 點歷史新高，能源與材料類股年內雙冠領漲——能源衝擊下的非典型結構性牛市",
+     "url": "https://www.jpmorgan.com/insights/global-research/outlook/market-outlook",
+     "summary": "JP Morgan 全球研究部 2026 市場展望指出，S&P 500 於 6 月 17 日收盤於 7,420 點附近創歷史新高，但此次多頭結構高度非典型：能源（Energy）與材料（Materials）類股以年內最佳表現雙雙領漲，受惠於荷姆茲危機帶動的能源供應緊縮溢價。傳統牛市主力科技類股則因「更高更長」（higher-for-longer）利率預期而面臨本益比收縮壓力，市場呈現明顯的防禦性輪動特徵。JP Morgan 分析師指出，此輪能源驅動的結構性輪動能否維持，關鍵取決於荷姆茲停火的持久性與中東地緣局勢的後續演變。",
+     "source": "JP Morgan",
+     "tags": [
+      "JP MORGAN",
+      "S&P 500",
+      "ALL-TIME HIGH",
+      "ENERGY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "英格蘭銀行與聯準會同步維持利率不變：BoE 3.75%、Fed 3.50–3.75%，全球貨幣政策「高位持續」的新均衡格局持續成型",
+     "url": "https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html",
+     "summary": "英格蘭銀行貨幣政策委員會宣布維持基準利率於 3.75% 不變，與美國聯準會主席 Kevin Warsh 堅守 3.50–3.75% 目標區間的立場高度一致，兩大英語圈央行均以「物價穩定」為壓倒性政策優先目標。英國受惠於北海天然氣自產能力部分緩和了荷姆茲衝擊，但服務業通膨仍頑固維持高位，降息時機尚未成熟。全球主要央行中，歐洲央行升息、聯準會與英格蘭銀行按兵不動、日本銀行小幅升息的政策分歧，正在形成 2022–23 年全球寬鬆潮後的新型「貨幣政策碎片化」格局，對匯率及跨境資本流動形成新的不確定性壓力。",
+     "source": "U.S. Bank",
+     "tags": [
+      "BANK OF ENGLAND",
+      "FED WARSH",
+      "PRICE STABILITY",
+      "RATE HOLD"
+     ]
+    }
+   ]
+  }
+ ]
+}

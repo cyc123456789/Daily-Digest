@@ -1,0 +1,207 @@
+{
+ "date": "2026-07-01",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA 緊急示警 Lantronix EDS5000 序列伺服器 CVE-2025-67038 遭積極利用：CVSS 9.8 指令注入漏洞列入 KEV 目錄，聯邦機構限期 72 小時內修補",
+     "url": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
+     "summary": "Lantronix EDS5000 系列裝置的 HTTP RPC 模組在身分驗證失敗時會執行 shell 指令，且使用者名稱未經過濾即直接拼接進指令字串，使攻擊者得以注入任意作業系統命令並取得 root 權限。Forescout Vedere Labs 觀測到威脅行為者最早自 4 月 5 日起即鎖定誘捕系統發動攻擊，研判攻擊者可能逆向工程官方修補程式以建構漏洞利用。CISA 已將其列入已知遭利用漏洞目錄，要求聯邦文職機構於三日內完成修補並升級至 2.2.0.0R1 版本。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2025-67038",
+      "LANTRONIX EDS5000",
+      "CISA KEV",
+      "CVSS 9.8"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "libssh2 CVE-2026-55200 公開概念驗證攻擊碼：CVSS 9.2 預驗證堆積溢位漏洞波及 curl、Git、PHP 與海量嵌入式裝置",
+     "url": "https://thehackernews.com/2026/06/public-poc-released-for-critical.html",
+     "summary": "libssh2 自 1.11.1 以下所有版本均存在 CVE-2026-55200，其 ssh2_transport_read() 函式未對 packet_length 欄位設定上限檢查，惡意或遭入侵的 SSH 伺服器可送出特製封包觸發堆積記憶體損壞並執行任意程式碼，攻擊在用戶端尚未完成身分驗證前即可觸發。由於 libssh2 廣泛嵌入 curl、Git、PHP、備份代理程式與韌體更新工具，影響面極廣；維護團隊已於 6 月 12 日合併修補，但公開 PoC 已在野外流通，建議所有相依套件立即升級。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-55200",
+      "LIBSSH2",
+      "PRE-AUTH RCE",
+      "CVSS 9.2"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "DirtyClone Linux 核心漏洞公開可運作攻擊鏈：本地使用者透過複製封包即可取得 Root 權限，主流發行版預設配置全數受影響",
+     "url": "https://www.securityweek.com/dirtyclone-linux-kernel-vulnerability-leads-to-root-access/",
+     "summary": "DirtyClone（CVE-2026-43503，CVSS 8.8）是 DirtyFrag 與 Fragnesia 漏洞的變種，源於核心輔助函式 __pskb_copy_fclone() 與 skb_shift() 未正確傳遞 SKBFL_SHARED_FRAG 旗標，使具備 CAP_NET_ADMIN 權限的本地使用者得以操控特權執行檔的記憶體分頁快取進而取得 root 權限。Debian、Fedora、Ubuntu 等啟用非特權使用者命名空間的主流發行版均受影響，對多租戶雲端環境、Kubernetes 叢集與容器化工作負載風險尤高。JFrog Security Research 已於 6 月 25 日公開完整攻擊鏈示範，建議盡速升級至 v7.1-rc5 以上版本。",
+     "source": "SecurityWeek",
+     "tags": [
+      "CVE-2026-43503",
+      "DIRTYCLONE",
+      "LINUX KERNEL",
+      "LPE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "中國駭客大規模濫用微軟簽署驅動程式 Truesight.sys 漏洞：逾 2500 個變種規避簽章偵測，於核心層停用資安防護機制",
+     "url": "https://www.techradar.com/pro/security/huge-cyberattack-found-hitting-vulnerable-microsoft-signed-legacy-drivers-to-get-past-security",
+     "summary": "研究人員發現一波源自中國、主要鎖定中國境內受害者的大規模惡意活動，攻擊者利用已知存在任意程序終止漏洞的舊版 Truesight.sys 驅動程式（2.0.2 版），製作超過 2500 個獨特變種以維持有效簽章並規避防毒軟體偵測。核心模式驅動程式運作於 Windows 最高權限層級（Ring 0），可完全存取目標主機並停用資安工具的進階防護能力，達成隱蔽持久化與不留痕跡的資料外洩。微軟已於 2026 年 4 月更新中移除對已棄用跨簽章根程式所簽署核心驅動程式的信任，要求所有驅動程式須通過 WHCP 認證簽署始能於 Windows 11 24H2／25H2 及 Windows Server 2025 載入。",
+     "source": "TechRadar",
+     "tags": [
+      "TRUESIGHT.SYS",
+      "SIGNED DRIVER ABUSE",
+      "2500+ VARIANTS",
+      "EDR KILLER"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Black Kite 報告：歐洲淪為勒索軟體新主戰場，2026 年前四月攻擊量年增 55%，第三方供應鏈成主要突破口",
+     "url": "https://www.helpnetsecurity.com/2026/06/26/black-kite-european-cyber-threats-report/",
+     "summary": "Black Kite 研究團隊統計歐洲地區 2026 年前四個月共發生 684 起勒索軟體攻擊，較 2025 年同期的 441 起大幅增加 55%，其中英、德、法、義、西五大市場合計占比達 68.5%。攻擊者日益將焦點轉向第三方供應商作為入侵跳板，製造業遭攻擊比例超過四分之一，專業科學技術服務業緊隨其後占 17.8%。研究人員指出，勒索軟體加速演化、供應鏈成為主要攻擊路徑，加上監理法規日益要求強化第三方風險管理，三股力量正同時對歐洲企業形成壓力。",
+     "source": "Help Net Security",
+     "tags": [
+      "BLACK KITE",
+      "EUROPE",
+      "RANSOMWARE +55%",
+      "SUPPLY CHAIN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "中國海警在台灣以東海域升高行動：滋擾過境商船並遭台灣海巡署驅離闖入限制水域船艦，雙方廣播警告對峙持續升級",
+     "url": "https://asia.nikkei.com/politics/international-relations/taiwan-tensions/taiwan-says-china-coast-guard-harassed-commercial-shipping-off-its-coast",
+     "summary": "台灣海巡署表示，近日於台灣周邊海域活動的中國海警船隻持續「滋擾」過境商船，要求船隻提供起訖港資訊並片面主張管轄權；北京則因應日本與菲律賓宣布展開海域劃界正式談判而動怒，中國官媒稱已派遣船艦在台灣以東海域執行「特別海上交通執法行動」。台灣海巡署證實已將四艘進入南部限制水域的中國公務船「驅離」，雙方一度互相廣播警告，緊張情勢明顯升溫；美國國務院則表示，期盼兩岸分歧能以和平、免於脅迫的方式解決。",
+     "source": "Nikkei Asia",
+     "tags": [
+      "CHINA COAST GUARD",
+      "TAIWAN EAST WATERS",
+      "COMMERCIAL SHIPPING",
+      "JURISDICTION CLAIM"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "解放軍最先進航艦福建艦再度穿越台灣海峽：緊接台灣五日「即刻戰備」動員操演之後，國防部全程密切監控動態",
+     "url": "https://www.scmp.com/news/china/military/article/3358227/plas-advanced-aircraft-carrier-fujian-transits-taiwan-strait-amid-military-drills",
+     "summary": "中國海軍最新型 003 型航空母艦福建艦於週二穿越台灣海峽，時間點恰好緊接在台灣啟動為期五天、旨在強化快速轉換至戰時體制能力的「即刻戰備」演習之後。台灣國防部表示，已運用聯合情監偵能量全程密切監控福建艦動態並掌握其行蹤，並公布一張甲板淨空的福建艦照片。軍事評論人士分析，福建艦此行可能是返回海南島母港休整，後續將前往南海展開進一步訓練任務。",
+     "source": "South China Morning Post",
+     "tags": [
+      "PLA FUJIAN",
+      "TYPE 003 CARRIER",
+      "TAIWAN STRAIT TRANSIT",
+      "COMBAT READINESS DRILL"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "賴清德盼美方儘速核准 140 億美元軍售案：川普將其視為對北京談判籌碼遲未簽署，台灣對美軍購進程再添變數",
+     "url": "https://www.aljazeera.com/news/2026/6/18/taiwan-hopes-us-arms-sale-package-can-be-approved-soon-president-says",
+     "summary": "台灣總統賴清德表示，希望美方能盡快核准國會已通過的 140 億美元對台軍售案，國務卿魯比歐先前則表示該案「仍在審查中」。然而川普政府遲遲未簽署這項軍售協議，川普本人將其形容為對中國國家主席習近平談判時的「絕佳籌碼」，代理海軍部長洪克強則指出，延宕部分原因在於五角大廈須優先確保美軍在伊朗戰事中有充足武器存量。台灣國防部另提出一項價值新台幣 210 億元、聚焦監偵與小型無人水面載具的特別防衛採購方案。",
+     "source": "Al Jazeera",
+     "tags": [
+      "LAI CHING-TE",
+      "US ARMS SALE",
+      "$14B PACKAGE",
+      "TRUMP"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "日中危機持續延燒：遼寧艦 J-15 戰機鎖定日本 F-15 火控雷達引爆爭端，日美防長通話協調降溫成效仍有限",
+     "url": "https://www.scmp.com/news/china/military/article/3336143/japan-us-defence-chiefs-cover-radar-row-and-other-china-tensions-phone-call",
+     "summary": "日本防衛大臣小泉進次郎指控，遼寧號航艦艦載 J-15 戰機於宮古海峽附近兩度對日本 F-15 戰機鎖定火控雷達，此舉被視為攻擊前最危險的信號之一，迫使遭鎖定戰機立即採取迴避動作；北京則否認部分指控。此事件源於去年 11 月日本首相高市早苗在國會發言指出，若中國攻台可能構成日本「存亡危機事態」，引爆日中外交危機並持續延燒至今。日本與美國防長已透過電話磋商因應雷達爭端及其他對中緊張情勢，但分析人士警告，若情勢持續惡化，未來一兩年內爆發有限度空中或海上衝突的可能性不容輕忽。",
+     "source": "South China Morning Post",
+     "tags": [
+      "JAPAN-CHINA",
+      "FIRE-CONTROL RADAR",
+      "J-15 LIAONING",
+      "MIYAKO STRAIT"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美國財政部 OFAC 制裁北韓-俄羅斯軍火交易掩護網絡：三實體遭凍結資產，平壤對俄輸送武器規避國際制裁持續曝光",
+     "url": "https://home.treasury.gov/news/press-releases/jy1697",
+     "summary": "美國財政部海外資產管制辦公室（OFAC）宣布制裁三個涉入北韓與俄羅斯軍火交易規避網絡的實體，凍結其在美資產並禁止美國個人與其進行交易。財政部援引多邊制裁監督團隊（MSMT）報告指出，俄羅斯持續向北韓提供財政利益、外交支持與防務合作，並已將軍事技術轉移予平壤，同時協助訓練北韓部隊。聯合國安理會常任理事國俄羅斯先前已否決延長獨立專家小組監督對北韓制裁的決議，使國際社會對制裁執行成效的疑慮進一步加深。",
+     "source": "U.S. Department of the Treasury",
+     "tags": [
+      "US TREASURY OFAC",
+      "NORTH KOREA",
+      "RUSSIA",
+      "ARMS DEAL"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "馬科斯南海外交新戰略：菲律賓力推 7 月前完成南海行為準則談判文本，準備接任東協輪值主席化解主權僵局",
+     "url": "https://www.scmp.com/week-asia/politics/article/3357162/philippines-unpicks-aseans-south-china-sea-sovereignty-deadlock",
+     "summary": "菲律賓總統小馬可仕在獨立紀念日演說中將南海重新定位為「共同脆弱性」而非單純領土爭端場域，試圖為僵持的多邊談判尋求新突破口。2026 年上半年，中國海警船多次驅離菲律賓漁船、解放軍在呂宋島以東實施實彈演習，雙方並就仙賓礁問題互相指控，黃岩島周邊更出現長達 352 公尺的中方攔阻設施。菲律賓外交部長拉薩羅要求每週召開南海行為準則談判會議，目標於 7 月菲律賓接任東協輪值主席前完成文本草案；中菲雙方今年 1 月已在宿霧重啟對話，並就更新海巡合作備忘錄取得進展。",
+     "source": "South China Morning Post",
+     "tags": [
+      "PHILIPPINES",
+      "SOUTH CHINA SEA",
+      "CODE OF CONDUCT",
+      "ASEAN CHAIR"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "原油第二季暴跌近 30% 創 2020 年以來最大單季跌幅：荷姆茲海峽通行恢復釋放滯留庫存，油價回落至每桶 70 美元附近",
+     "url": "https://fortune.com/article/price-of-oil-06-30-2026/",
+     "summary": "原油價格 6 月 30 日報每桶約 70.7 美元，第二季累計下跌約 30%，是自 2020 年以來最大的單季跌幅。此波下跌主因為美伊朝向荷姆茲海峽和平協議邁進後，原本滯留波斯灣內的原油供給加速釋出，市場供給驟增壓低油價。今年稍早油價曾因伊朗戰事一度從年初的 57 美元飆升至 4 月高點 113 美元，如今隨停火進展回落，凸顯中東地緣局勢對全球能源市場波動的主導性影響。",
+     "source": "Fortune",
+     "tags": [
+      "WTI BRENT",
+      "HORMUZ TRAFFIC RESUMED",
+      "Q2 -30%",
+      "LARGEST QUARTERLY DROP SINCE 2020"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "華爾街寫下六年最佳單季表現：道瓊收復 52000 點關卡，標普 500 收 7440 點再創歷史新高，那斯達克漲幅領跑三大指數",
+     "url": "https://www.cnbc.com/2026/06/28/stock-futures-today-live-updates.html",
+     "summary": "美股在第二季最後交易週維持強勢，道瓊工業指數收盤首度突破 52000 點，較前一交易日上漲 306.63 點（+0.59%），標普 500 指數上漲 1.18% 收於 7440.43 點再創歷史新高，那斯達克綜合指數更大漲 2.07% 收 25820.14 點，三大指數合計寫下近六年來最佳單季表現。市場目前聚焦即將公布的 5 月職位空缺及勞動力流動調查（JOLTS）數據，其結果將牽動聯準會後續利率政策走向，10 年期公債殖利率目前約在 4.38% 附近盤整。",
+     "source": "CNBC",
+     "tags": [
+      "DOW 52000",
+      "S&P 500 7440",
+      "NASDAQ 25820",
+      "Q2 BEST IN 6 YEARS"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "黃金第二季重挫近 14% 創 2013 年以來最大季跌幅：美元指數衝上 13 個月高點，市場押注聯準會 9 月再度升息",
+     "url": "https://tradingeconomics.com/commodity/gold",
+     "summary": "黃金 6 月 30 日報每盎司約 4031.67 美元，單日上漲 0.38%，但本季累計重挫約 14%，創下 2013 年第二季以來最大單季跌幅，較今年 1 月每盎司 5595 美元的歷史高點已回落近 28%。中東衝突推升能源價格、抵銷市場對聯準會降息的預期，美元指數同步衝上 13 個月高點，交易員目前押注 9 月升息機率已逼近 65%。儘管金價走弱，高盛（5400 美元）、摩根大通（約 6000 美元）與摩根士丹利（5200 美元）等機構的長期金價目標價迄今未調降。",
+     "source": "Trading Economics",
+     "tags": [
+      "GOLD -14% Q2",
+      "DOLLAR INDEX 13-MONTH HIGH",
+      "FED RATE HIKE BETS",
+      "STEEPEST DROP SINCE 2013"
+     ]
+    }
+   ]
+  }
+ ]
+}

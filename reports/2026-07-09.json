@@ -1,0 +1,207 @@
+{
+ "date": "2026-07-09",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "SecurityWeek 深析 2026 年國家級網路戰：AI 武器化加速 RaaS 與 APT 協作模糊邊界 供應鏈入侵成最高效滲透媒介",
+     "url": "https://www.securityweek.com/cyber-insights-2026-cyberwar-and-rising-nation-state-threats/",
+     "summary": "SecurityWeek 2026 年國家級網路洞察報告確認，今年針對政府、醫療、金融、能源及關鍵基礎設施的 APT 組織行動數量持續攀升，攻擊者大規模採用生成式 AI 工具加速魚叉式網路釣魚內容製作、惡意代碼自動化生成與複雜橫向移動路徑規劃，使攻擊週期從數週縮短至數小時。報告特別指出，國家支持的 APT 組織與勒索軟體即服務（RaaS）集團之間的戰術邊界正快速模糊化，部分案例中 APT 行為者直接利用 RaaS 基礎設施轉移追蹤重點。供應鏈妥協依然是最高效的入侵向量——單一受信任供應商淪陷即可觸發瀑布式下游侵害，防禦方需以零信任架構與供應商存取持續審計應對。",
+     "source": "SecurityWeek",
+     "tags": [
+      "NATION-STATE",
+      "APT 2026",
+      "AI-WEAPONIZATION",
+      "SUPPLY CHAIN"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "2026 年 6 月最大網路攻擊盤點：FortiBleed 43 萬台設備淪陷、Canvas 2.75 億師生資料外洩、多起國家級 APT 行動同步爆發",
+     "url": "https://www.cm-alliance.com/cybersecurity-blog/june-2026-biggest-cyber-attacks-data-breaches-ransomware-attacks",
+     "summary": "CM-Alliance 月度盤點揭示，2026 年 6 月是年內迄今攻擊密度最高的單月：FortiBleed 攻擊行動確認 43 萬台 FortiGate 設備憑證遭竊，直接導入 INC 及 Lynx 勒索軟體組織後續部署行動；ShinyHunters 集團攻陷 Canvas LMS 竊走 3.65 TB 含 2.75 億師生個人資料與私人訊息；同月多個國家級行為者利用 Microsoft SharePoint、Cisco SD-WAN、Oracle PeopleSoft 等多個零時差漏洞同步對政府與金融骨幹發動入侵。報告特別警示，攻擊者利用已知漏洞的時間視窗已壓縮至修補公告發布後數小時以內，傳統 72 小時修補週期已明顯落後於當前威脅速度。",
+     "source": "CM-Alliance",
+     "tags": [
+      "JUNE 2026 RECAP",
+      "FORTIBLEED",
+      "CANVAS LMS",
+      "APT CAMPAIGNS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA KEV 7 月擴張加速：SharePoint RCE、Gitea 認證繞過、Linux Bad Epoll 等高危漏洞密集列入已知遭利用目錄",
+     "url": "https://www.hackerstorm.com/search-insights/cisa-kev-cve-data",
+     "summary": "Hackerstorm 對 CISA 已知遭利用漏洞（KEV）目錄的即時追蹤顯示，2026 年 7 月新增條目數已超越上月同期速度，反映野外漏洞利用的進一步加快。本月重要新增包含：CVE-2026-45659（SharePoint RCE，Storm-2603 積極利用）；CVE-2026-20896（Gitea 認證控制繞過，攻擊者僅需特製單一 HTTP 標頭即可在未授權情況下存取所有倉庫及機密）；CVE-2026-46242（Linux Bad Epoll 本地提權至 root）。依 BOD 22-01 指令，聯邦機構須在規定期限內完成修補，企業安全團隊應優先以 KEV 新增條目作為修補排序的第一層過濾器，而非單純依賴 CVSS 評分決定處置優先級。",
+     "source": "Hackerstorm / CISA",
+     "tags": [
+      "CISA KEV JULY 2026",
+      "SHAREPOINT CVE-2026-45659",
+      "GITEA CVE-2026-20896",
+      "ACTIVE EXPLOITATION"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Kaspersky Securelist：2026 Q1 漏洞與利用態勢報告 — CVSS 9.0+ 比例年增 23%、零時差利用速度突破 24 小時關口",
+     "url": "https://securelist.com/vulnerabilities-and-exploits-in-q1-2026/119733/",
+     "summary": "Kaspersky Securelist 發布的 2026 年第一季漏洞態勢分析指出，CVSS 評分 9.0 以上的嚴重漏洞佔比較 2025 年同期上升 23%，零時差漏洞從公開披露到首次在野利用的平均時間已縮短至 24 小時以內，創有記錄以來最短。報告特別警示，操作技術（OT）與工業控制系統（ICS）環境的攻擊面擴張最為明顯，歸因於製造業數位轉型加速將傳統隔離設備接入網路，但配套安全措施卻嚴重滯後。分析師建議企業將 OT 環境的漏洞修補 SLA 從傳統週期大幅壓縮，並對 OT 系統實施獨立漏洞追蹤機制與即時威脅情報整合，避免成為下一波國家級 APT 攻擊的跳板。",
+     "source": "Securelist / Kaspersky",
+     "tags": [
+      "Q1 2026 VULNERABILITY LANDSCAPE",
+      "CVSS 9+",
+      "ZERO-DAY EXPLOITATION",
+      "OT/ICS"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "TechTarget 速報：國家級駭客持續活躍全球舞台 — 中國 APT 滲透電信骨幹、俄 FSB 盜取即時通訊憑證、北韓 RAT 擴散",
+     "url": "https://www.techtarget.com/searchsecurity/news/366639319/News-brief-Nation-state-hackers-active-on-the-global-stage",
+     "summary": "TechTarget 安全速報彙整多起持續進行中的國家級網路行動：中國 APT 組織 UNC3886 深度滲透新加坡四大電信業者的手法已複製至東南亞更多電信骨幹目標，攻擊者利用零時差漏洞與客製化 rootkit 實現長達數月的靜默潛伏；俄羅斯 FSB 旗下 Star Blizzard 持續透過 Signal 平台竊取政府官員及軍事人員憑證，以高精確度欺騙手法規避傳統安全意識訓練；北韓 APT37 ScarCruft 部署 NarwhalRAT 進行針對性間諜行動，目標集中於南韓政府及國防承包商。新世代多層代理 Botnet 架構已使基於入侵指標（IOC）的傳統偵測機制幾乎全面失效，行為異常偵測已成防禦前沿。",
+     "source": "TechTarget",
+     "tags": [
+      "UNC3886",
+      "SINGAPORE TELECOM",
+      "APT37",
+      "STAR BLIZZARD"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "info",
+     "title": "布魯金斯學會新框架：「保持距離」戰略如何在不自動捲入台海衝突下維持嚇阻可信度 強化台灣自主防衛為核心主軸",
+     "url": "https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/",
+     "summary": "布魯金斯學會政策分析提出「保持距離」（strategy for staying out）台海戰略框架，核心主張為：美方應系統性強化台灣的不對稱武器採購、後備動員能力與全社會韌性，而非擴大前沿軍事部署，以在避免自動捲入台海衝突的同時維持嚇阻可信度。分析指出，解放軍軍力快速積累已顯著提高美方直接介入的政治與軍事成本，戰略清晰路線若缺乏相應軍事準備的配套，反而可能誘使北京誤判美方決心。報告建議美方建立獨立於川習峰會外交之外的制度性對台支持機制——涵蓋定期高層軍事交流、透明軍售時程及情報共享框架——確保嚇阻訊號的一致性不因雙邊峰會談判妥協而遭到侵蝕。",
+     "source": "Brookings Institution",
+     "tags": [
+      "BROOKINGS",
+      "US TAIWAN POLICY",
+      "STRATEGY FOR STAYING OUT",
+      "ASYMMETRIC DEFENSE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美國防衛優先組織：一中政策框架的戰略彈性分析 — 台海紅線管理、現狀維護與嚇阻的長期結構性取捨",
+     "url": "https://www.defensepriorities.org/explainers/target-taiwan-one-china-and-cross-strait-stability/",
+     "summary": "美國智庫「國防優先」（Defense Priorities）分析台海穩定的結構性制約指出，「一中政策」框架的戰略模糊性長期維繫台海和平，核心在於美中雙方對「行動紅線」的相互隱性理解。然而，近年來美台軍售擴大、政治接觸升格及防衛工業合作密切化，正逐步重新定義這些隱性邊界，須謹慎管理以避免北京誤判。報告強調，在強化台灣防衛能力的同時，美方必須維持清晰的外交溝通渠道以傳遞意圖——否則嚇阻強化與衝突風險管理之間的平衡將失控，無論是嚇阻失敗還是過度升級均構成高代價結果。台灣應優先將有限防衛預算投入不對稱戰力而非大型平台，以最大化實際嚇阻效益。",
+     "source": "Defense Priorities",
+     "tags": [
+      "DEFENSE PRIORITIES",
+      "ONE CHINA POLICY",
+      "CROSS-STRAIT STABILITY",
+      "RED LINE MANAGEMENT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美日澳多邊陣線持續對北京台海軍事施壓提出警告：NATO 峰會後盟友協調訊號再度強化 但實際約束效果仍受質疑",
+     "url": "https://www.japantimes.co.jp/news/2026/01/02/asia-pacific/politics/us-china-military-exercises-taiwan/",
+     "summary": "NATO 安卡拉峰會落幕後，美國與日本等盟友持續在多邊場合重申要求北京停止對台灣的軍事施壓立場。美方官員指出，解放軍在台灣周邊海空域持續升高的軍事演習與海警船隻行動，製造不必要的地區緊張並破壞國際航行自由。然而，分析人士普遍指出，盟友的聯合聲明一再重申卻缺乏具體強制機制配套，其對北京決策行為的實際影響力高度存疑——北京慣以「干涉中國內政」駁斥多邊聲明，並在聲明期間維持甚至提升軍事行動節奏。日本在台海安全議題上的立場明確化持續深化，與澳洲、菲律賓、英國的防衛合作協調趨密，形成更緊密的多邊嚇阻網絡架構。",
+     "source": "The Japan Times",
+     "tags": [
+      "US-JAPAN ALLIES",
+      "CHINA MILITARY PRESSURE",
+      "TAIWAN STRAIT",
+      "MULTI-LATERAL DETERRENCE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "伊朗-川普對峙再度升溫：核談破裂疑慮推高油價、通膨壓力加劇全球不確定性、聯準會政策路徑遭受連帶衝擊",
+     "url": "https://www.npr.org/2026/07/08/nx-s1-5885946/iran-trump-oil-stock-inflation-gas-federal-reserve",
+     "summary": "NPR 7 月 8 日報導，川普總統在美伊核談關鍵節點發表強硬措辭，加劇市場對談判前景的疑慮，直接推升國際油價並對通膨預期形成上行壓力：能源板塊 ETF（XLE）盤前跳漲逾 2%，科技板塊（XLK）則因投資人轉向防禦持倉而回落近 2%，全球政府公債殖利率同步攀升。此輪對峙若持續發展，不僅將衝擊中東原油產量與霍爾木茲海峽通行預期，更將對聯準會 7 月 28 至 29 日 FOMC 決策形成複雜干擾——通膨居高不下、就業降溫、油價反彈三重訊號同向並行，使「升息」與「按兵不動」的政策辯論更加膠著，Warsh 主席的下一次公開發言將是最重要的前瞻信號。",
+     "source": "NPR",
+     "tags": [
+      "IRAN",
+      "TRUMP",
+      "NUCLEAR TALKS",
+      "OIL MARKET"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "2026 年全球制裁地景深度分析：傳統制裁工具效力遭結構性侵蝕、晶片出口管制仍具實效但正加速北京自主替代路線",
+     "url": "https://www.linkedin.com/pulse/navigating-sanctions-landscape-2026-strategic-insights-bosz-k4uoc",
+     "summary": "制裁政策分析師 2026 年最新研究指出，西方對中國廣泛使用的傳統制裁工具——資產凍結、出口禁令、實體清單——其邊際效力正遭受系統性侵蝕：北京持續深化人民幣跨境結算網絡並繞過 SWIFT 體系，對俄羅斯制裁的規避路徑（透過中亞及中東轉口）已形成成熟商業生態。唯有晶片出口管制仍具顯著實質效力，但同時也正在加速北京投入自主晶片架構設計、先進封裝技術與 AI 模型壓縮的平行替代路線。分析師預測，2027 年後量子計算與通訊技術的出口管制將成為下一個制裁拉鋸的前沿戰場，屆時技術圍堵的執行難度將大幅提升。",
+     "source": "LinkedIn / 制裁政策分析",
+     "tags": [
+      "SANCTIONS 2026",
+      "CHINA",
+      "RUSSIA",
+      "CHIP EXPORT CONTROLS"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "亞太防衛格局深度重組：菲律賓深化日澳加紐聯盟、東南亞軍購轉向 BrahMos 與韓系平台、美國夥伴戰略觸發多元化效應",
+     "url": "https://thediplomat.com/",
+     "summary": "《外交家》雜誌最新分析指出，在美國國防部長赫格塞斯「夥伴非被保護國」（partners, not protectorates）戰略框架下，亞太地區盟友正加速拓寬防衛選項以降低對美軍單一依賴。菲律賓在強化美日澳加拿大紐西蘭安全夥伴關係之外，同步推進 BrahMos 超音速飛彈採購與韓國防衛平台引進；越南、印尼亦在延伸美歐系武器採購的同時保留俄系裝備更換彈性。此一多元化趨勢反映亞太國家在美中戰略競爭壓力下奉行「多元嚇阻」而非「選邊站隊」的現實邏輯，但也對美國主導的多邊安全架構統一性——特別是情報共享標準與裝備互通性——形成潛在挑戰。",
+     "source": "The Diplomat",
+     "tags": [
+      "ASIA-PACIFIC",
+      "PHILIPPINES",
+      "JAPAN",
+      "AUSTRALIA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "CNBC 7 月 7 日美股直播：中東緊張引爆板塊輪動 能源 ETF 跳漲逾 2% 科技股回落 公債殖利率急升反映通膨重定價",
+     "url": "https://www.cnbc.com/2026/07/07/stock-market-today-live-updates.html",
+     "summary": "CNBC 7 月 7 日美股即時報導顯示，中東局勢升溫引發顯著的跨板塊資金輪動：追蹤標普 500 能源板塊的 XLE ETF 盤前跳漲逾 2%，反映市場對伊朗相關油供衝擊的風險溢酬重新定價；科技板塊 ETF XLK 則因投資人進行獲利了結、轉向防禦性部位而跌約 2%。全球政府公債殖利率同步急升，顯示債券市場正在重新定價更持久的通膨情境——與 6 月非農就業數據大幅低於預期所引發的降溫預期形成鮮明對比。分析師指出，當前市場對「地緣政治主導通膨」敘事的接受程度持續提升，若伊朗情勢進一步惡化，能源板塊輪動行情的持續性將主導 7 月下旬聯準會決策前的市場定價邏輯。",
+     "source": "CNBC",
+     "tags": [
+      "US STOCKS",
+      "XLE",
+      "XLK",
+      "ENERGY SECTOR"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "MacroMicro 全球央行年底利率預期全面分歧：Fed 維持高位鷹派 ECB 升息路徑受能源牽制 日銀鷹派壓力持續升溫",
+     "url": "https://en.macromicro.me/collections/6005/global-central-bank/143492/world-central-banks-yearend-interest-rate-expectations-2026",
+     "summary": "MacroMicro 全球央行年底利率預期數據顯示，2026 年下半年各主要央行貨幣政策路徑分歧已達近十年最高水準。美國聯準會在通膨維持 4%（為目標兩倍）的背景下，市場預期年底基準利率將維持 3.5–3.75% 區間，7 月升息機率僅剩 18%，9 月至 10 月升息預期佔主流；歐洲央行在伊朗衝突驅動的能源通膨壓力下已將存款利率調升至 2.25%，7 月 24 日會議能否暫停仍分歧；日本央行在日圓貶壓與輸入型通膨雙重夾擊下的鷹派壓力持續升溫。此一全球貨幣政策碎片化格局將在未來數月持續放大跨境資本流動失衡與匯率波動，新興市場外債成本壓力首當其衝。",
+     "source": "MacroMicro",
+     "tags": [
+      "FEDERAL RESERVE",
+      "ECB",
+      "BOJ",
+      "GLOBAL RATE DIVERGENCE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "IQI Global 7 月全球經濟展望：市場定價敘事完成切換 能源地緣政治成核心風險變數 荷姆茲局勢決定下半年景氣走向",
+     "url": "https://iqiglobal.com/blog/global-economic-outlook-july-2026/",
+     "summary": "IQI Global 7 月全球經濟展望確認，全球金融市場的核心定價邏輯已從過去兩年的「增長與利率差異」敘事系統性切換至「能源安全與地緣政治風險溢酬」敘事，此一切換已在能源期貨升水結構、避險資產輪動及新興市場資本外流數據中得到印證。霍爾木茲海峽仍是全球最關鍵的能源咽喉——逾 20% 全球石油流量與近 20% LNG 貿易通過此水道——若伊朗相關外交情勢再度惡化引發通行受阻，油價可能快速重返每桶百元以上，延後主要央行任何降息計畫並大幅推升跨資產波動率。分析師建議在此敘事切換期適度增加能源實物資產對沖倉位，同時密切關注美伊核談進展作為最關鍵的前瞻指標。",
+     "source": "IQI Global",
+     "tags": [
+      "IQI GLOBAL",
+      "GEOPOLITICS-ENERGY NARRATIVE",
+      "HORMUZ RISK",
+      "OIL ABOVE 100"
+     ]
+    }
+   ]
+  }
+ ]
+}

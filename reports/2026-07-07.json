@@ -1,0 +1,194 @@
+{
+ "date": "2026-07-07",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA 緊急將 CVE-2026-45659 列入 KEV 目錄：微軟 SharePoint Server 高危 RCE 漏洞遭積極利用，CVSS 評分 8.8",
+     "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
+     "summary": "美國網路安全暨基礎設施安全局（CISA）已將微軟 SharePoint Server 遠端程式碼執行漏洞 CVE-2026-45659 新增至已知遭利用漏洞（KEV）目錄，CVSS 評分 8.8 屬高危等級，漏洞源自對不可信資料的反序列化處理缺陷。攻擊者可在未經完整驗證或以低權限帳號的情況下，透過蓄意構造的 HTTP 請求遠端執行任意程式碼，現已確認遭野外積極利用。聯邦民事行政部門機構（FCEB）依 CISA 指令須在規定期限內完成修補；企業組織應立即優先套用微軟安全更新，並稽核 SharePoint 伺服器的外部可訪問性設定以降低風險。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-45659",
+      "SHAREPOINT SERVER",
+      "RCE",
+      "DESERIALIZATION"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "新發現 APT 組織以 AI 生成惡意程式攻擊三國電力網：高度客製化攻擊鏈顯示國家級威脅行為者技術能力大幅躍升",
+     "url": "https://www.techtimes.com/articles/319680/20260704/new-apt-group-hits-power-grids-three-countries-ai-crafted-malware.htm",
+     "summary": "資安研究人員揭露一個先前未記錄的 APT 組織對三個國家的電力網關鍵基礎設施發動協調攻擊，攻擊所使用的惡意程式碼具有顯著的 AI 輔助生成特徵，客製化程度精確且遠超一般人工開發能力。攻擊目標鎖定工業控制系統（ICS）與 SCADA 設備，利用電力調度通訊協定漏洞建立持久化立足點並嘗試橫向移動至發電控制模組。此案例印證 AI 工具正在系統性降低國家級 APT 組織開發高度客製化攻擊工具的門檻，關鍵基礎設施的安全評估框架須緊急整合 AI 生成威脅場景與防禦應對。",
+     "source": "TechTimes",
+     "tags": [
+      "APT",
+      "AI-CRAFTED MALWARE",
+      "POWER GRID",
+      "CRITICAL INFRASTRUCTURE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Armis 2026 年網路戰爭報告：國家級攻擊已達機器速度——AI 自主攻擊鏈顛覆傳統人類回應時效，安全團隊框架需根本重建",
+     "url": "https://www.armis.com/blog/nation-state-attacks-hit-machine-speed-key-takeaways-of-the-2026-armis-cyberwarfare-report-and-what-it-means-for-security-teams/",
+     "summary": "Armis 發布《2026 年網路戰爭報告》指出，國家級威脅行為者的攻擊節奏已實現「機器速度」自動化，從漏洞武器化到初始存取再到橫向移動的完整攻擊鏈可在數分鐘內完成，遠超人工安全響應的反應時效。報告揭示，AI 驅動的自主攻擊代理（agentic attack agents）已在實際事件中被觀察到，能夠自主決策目標優先順序、規避偵測機制並在受損環境中自主擴散。報告建議安全團隊轉向「假設已被突破」的防禦心態，建立以 AI 對抗 AI 的自動化響應能力，並對關鍵資產部署基於異常行為而非已知特徵的偵測機制。",
+     "source": "Armis",
+     "tags": [
+      "ARMIS",
+      "CYBERWARFARE 2026",
+      "NATION-STATE",
+      "MACHINE SPEED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Conduent 資料外洩持續擴大至 6,220 萬人：成 2026 年最大健保數據洩露事件，PHI 及財務資料已流入暗網",
+     "url": "https://www.brightdefense.com/resources/recent-data-breaches/",
+     "summary": "企業服務供應商 Conduent 的資料外洩事件在七月持續擴大，醫療保健行業通報顯示受影響人口規模已超過 6,220 萬人，成為 2026 年迄今規模最大的健保數據外洩事件之一。Conduent 作為政府及醫療機構的大型業務流程外包（BPO）服務商，其遭駭代表典型第三方供應鏈風險——眾多依賴其處理敏感資料的下游客戶機構，在未直接遭攻擊的情況下仍成為受害者。外洩的個人健康資訊（PHI）及相關財務數據已流入暗網交易市場，企業應立即稽核與高風險第三方服務商的資料共享範疇，並啟動受影響個人的通知程序。",
+     "source": "BrightDefense",
+     "tags": [
+      "CONDUENT",
+      "DATA BREACH",
+      "HEALTHCARE",
+      "62.2 MILLION"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "華盛頓大學 JSIS 報告《避免戰爭：2026 年台灣與美中關係》：灰色地帶升級為最高概率威脅，建議強化危機降溫管道",
+     "url": "https://jsis.washington.edu/wordpress/wp-content/uploads/2026/04/Averting-War_Taiwan-and-US-China-Relations-in-2026.pdf",
+     "summary": "華盛頓大學傑克遜國際研究學院（JSIS）最新發布的《避免戰爭》報告評估，近期最高概率威脅並非全面軍事入侵，而是解放軍透過海上封鎖、飛彈演習及灰色地帶海事脅迫逐步升高壓力的「強制外交」路徑，可能在雙方缺乏可信後撤機制的情況下意外滑向不可控衝突。報告提出三項優先政策建議：美中雙方建立「台海危機熱線」以阻止誤判、美方明確界定觸發直接介入的行動紅線、台灣加速完成關鍵基礎設施韌性升級以提高北京發動封鎖的成本。學者強調，2026 年是可信嚇阻機制能否在升高軍事活動背景下完整建立的關鍵視窗年。",
+     "source": "JSIS / University of Washington",
+     "tags": [
+      "JSIS",
+      "AVERTING WAR",
+      "TAIWAN 2026",
+      "GRAY ZONE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "Asia on the Horizon 印太周報：台海緊張指數回落至 2024 年 5 月前基準，解放軍海軍演訓模式轉向常態化台海通行",
+     "url": "https://behorizon.org/asia-on-the-horizon/",
+     "summary": "「Asia on the Horizon」最新印太地緣政治周報指出，2026 年以來解放軍對台灣防空識別區（ADIZ）的侵擾頻率已回落至 2024 年 5 月前的基準水平，六月甚至出現連續 12 天無侵擾紀錄。分析人士認為，此一緊張指數下降並非意味北京放棄軍事壓台選項，而是反映在美台深化合作背景下，刻意降低短期公開對抗烈度、轉向灰色地帶海事脅迫的策略調整。解放軍海軍福建號航母已完成台海通行訓練，顯示中國正著手建立三艘航母在不同戰區輪替部署的常態化機制，以長期保持台海周邊的軍事存在能力。",
+     "source": "Asia on the Horizon",
+     "tags": [
+      "BEHORIZON",
+      "INDO-PACIFIC BRIEFING",
+      "PLA",
+      "ADIZ"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布魯金斯學會：重新校準美國對台支持策略——區分「強化自我防衛能力」與「承諾直接介入」以降低誤判升級風險",
+     "url": "https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/",
+     "summary": "布魯金斯學會最新報告提出差異化嚇阻替代框架，主張美方應明確區分「提升台灣自我防衛能力」與「承諾直接軍事介入」兩條政策路線，避免戰略模糊在危機時刻因誤判演變為不可控升級。報告指出美台關係的核心張力：台灣需充分軍事支持以維持嚇阻可信度，而美國須避免發出過於明確的安全承諾引發道德危機（moral hazard），進而削弱對北京的實際嚇阻效果。此分析框架恰逢川普政府內部就對台承諾清晰度與對中談判戰略之間合理定位持續辯論的敏感時期，為政策制定者提供了差異化校準路徑。",
+     "source": "Brookings Institution",
+     "tags": [
+      "BROOKINGS",
+      "US TAIWAN POLICY",
+      "STRATEGIC RECALIBRATION",
+      "MORAL HAZARD"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "NATO 安卡拉峰會 2026：核心議題聚焦俄羅斯威脅評估、烏克蘭戰爭終局分歧與美國對集體防衛承諾可信度",
+     "url": "https://moderndiplomacy.eu/2026/07/06/nato-ankara-summit-2026-key-issues-leaders-and-what-to-expect/",
+     "summary": "NATO 2026 年度峰會於土耳其首都安卡拉舉行，面臨本屆峰會以來最複雜的地緣政治壓力，核心議題圍繞：俄羅斯對北約東翼的持續軍事威脅評估、烏克蘭戰爭終局方案的盟友內部分歧，以及美國在川普政府下對北約共同防衛承諾的可信度。土耳其作為峰會主辦國，其在北約與俄羅斯之間的微妙仲裁角色帶來額外外交張力；多國領袖計劃就達成國防支出 GDP 佔比目標時間表提出更明確承諾，回應美方批評。此次峰會成果對亞太盟友（包括台灣）就美國安全承諾可信度的觀感具有重要間接影響。",
+     "source": "Modern Diplomacy",
+     "tags": [
+      "NATO",
+      "ANKARA SUMMIT 2026",
+      "TURKEY",
+      "COLLECTIVE DEFENSE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "G7 愛維昂峰會領袖聯合聲明：全員重申反對以武力或脅迫單方面改變現狀，明確涵蓋台灣海峽、東海及南海",
+     "url": "https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues",
+     "summary": "G7 領袖在法國愛維昂峰會發表的地緣政治聯合聲明中，明確重申反對任何以武力或脅迫單方面改變東海、南海及台灣海峽現狀的企圖，強調相關分歧應透過對話和平解決。聲明在烏克蘭持續衝突、俄朝軍事合作深化以及中俄戰略軸心加固的複雜背景下，釋出了民主國家集團捍衛規則基礎國際秩序的堅定立場。分析師指出，此次聲明的關鍵意義在於一致性與明確性——沒有任何 G7 成員對台灣條款提出保留意見，為後續個別盟友的對中政策選擇奠定了多邊授權基礎。",
+     "source": "G7 Évian / Élysée",
+     "tags": [
+      "G7",
+      "EVIAN 2026",
+      "TAIWAN STRAIT",
+      "EAST CHINA SEA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "2026 年制裁地景導覽：美歐對俄伊中供應鏈的次級制裁執法力度升高，亞洲企業合規風險急劇複雜化",
+     "url": "https://www.linkedin.com/pulse/navigating-sanctions-landscape-2026-strategic-insights-bosz-k4uoc",
+     "summary": "制裁法律與合規領域最新分析指出，2026 年全球制裁地景正進入前所未有的複雜化階段：美國財政部海外資產控制辦公室（OFAC）及歐盟持續升高對俄羅斯「制裁規避網路」的打擊力度，並同步強化對協助中國取得受管控半導體及軍民兩用技術的第三國中間商的次級制裁執法。亞洲企業面臨的核心挑戰在於供應鏈透明度要求與地緣政治中立立場之間日益難以兼顧——參與對俄或對伊朗貿易的交易對手可能觸發跨境合規風險，而過度迎合西方制裁要求又可能導致中國市場業務損失。企業應建立動態制裁篩查機制，並針對高風險市場部署端對端供應鏈溯源能力。",
+     "source": "LinkedIn / Sanctions & Compliance Experts",
+     "tags": [
+      "SANCTIONS 2026",
+      "OFAC",
+      "EU SANCTIONS",
+      "RUSSIA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "Convera 七月全球外匯展望：美元強勢重整、油價鬆動，利率差異成為匯市核心驅動力，取代地緣政治溢價敘事",
+     "url": "https://convera.com/blog/market-insights/fx-research/monthly-global-fx-outlook/fx-outlook-july-2026/",
+     "summary": "Convera 七月全球外匯展望指出，隨著美伊外交緩和與霍爾木茲海峽通行壓力消退，油價自高峰明顯回落，帶動能源驅動的通膨預期降溫，外匯市場的核心敘事正從「地緣政治溢價」回歸「利率差異導向」。美元在聯準會維持鷹派立場背景下持續走強，而歐元、日圓及新興市場貨幣則因各自央行的寬鬆壓力面臨下行風險；利率差異取代地緣政治風險重新成為外匯定價的主導邏輯。分析師預計，主要央行政策分歧進一步擴大將使 2026 年下半年匯市波動率顯著高於上半年，企業外匯風險管理的對沖需求急迫上升。",
+     "source": "Convera",
+     "tags": [
+      "CONVERA",
+      "FX JULY 2026",
+      "USD STRENGTH",
+      "OIL EASING"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Vanguard 分析：油價衝擊使央行決策路徑複雜化——能源通膨與成長放緩同步出現，滯脹風險重燃政策兩難",
+     "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/oil-shock-complicates-central-bank-outlooks",
+     "summary": "Vanguard 最新分析指出，地緣政治驅動的油價衝擊對全球主要央行造成雙重困境：能源成本推升頭期通膨使降息空間大幅受限，另一方面油價高企侵蝕家庭購買力、拖累實體需求，令央行難以在抗通膨與防衰退之間取得平衡。聯準會、歐洲央行及英倫銀行分別面臨不同烈度的政策壓力，而日本銀行則在通膨終於達標的歷史性時刻卻面臨油價帶來的外生性干擾。分析師警告，若霍爾木茲局勢反轉導致油價再度飆升，滯脹情境重現的概率將顯著上升，資產配置應逐步納入能源實物資產與通膨連結債券的防禦性倉位。",
+     "source": "Vanguard",
+     "tags": [
+      "VANGUARD",
+      "OIL SHOCK",
+      "STAGFLATION RISK",
+      "FED"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "T. Rowe Price 全球市場周報：那斯達克與標普 500 再創新高，通訊服務及金融板塊領漲，不動產與能源類股受高利率拖累收跌",
+     "url": "https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html",
+     "summary": "T. Rowe Price 最新全球市場周報顯示，那斯達克綜合指數、標普 500 及道瓊工業平均指數本周收高，而羅素 2000 及標普中型股 400 指數則錄得下跌，呈現大型科技與金融龍頭主導、中小型股承壓的典型分化格局。就板塊表現而言，通訊服務、金融及消費者可選消費品板塊領漲，不動產、公用事業及能源板塊收跌，反映市場持續以「利率敏感性」作為板塊輪動邏輯。分析師強調，現階段市場集中化風險（前十大持股佔比持續升高）意味著若聯準會政策出現意外鷹派轉向，指數回調的傳導速度與幅度可能遠超市場共識預期。",
+     "source": "T. Rowe Price",
+     "tags": [
+      "T. ROWE PRICE",
+      "WEEKLY UPDATE",
+      "S&P 500",
+      "NASDAQ"
+     ]
+    }
+   ]
+  }
+ ]
+}

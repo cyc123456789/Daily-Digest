@@ -1,0 +1,233 @@
+{
+ "date": "2026-07-04",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "史上首起 AI 全自主勒索軟體攻擊：JADEPUFFER 操作者以 LLM 代理完整執行滲透、憑證竊取、橫向移動至加密清除企業資料庫，全程無人工介入",
+     "url": "https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/",
+     "summary": "資安公司 Sysdig 發現有史以來首起從頭到尾完全由 AI 代理自主運行的勒索軟體攻擊事件，攻擊者代號「JADEPUFFER」，利用大型語言模型（LLM）自動化完成完整攻擊鏈——包含初始滲透、憑證竊取、橫向移動、加密與清除企業生產資料庫，全程無需人工介入。此案例標誌著勒索軟體威脅正式進入 AI 自動化時代，攻擊速度與規模大幅超越傳統人工操作模式，傳統基於時間異常的威脅偵測機制面臨根本性失效風險。網路保險公司已緊急啟動 AI 驅動攻擊的風險模型重估，AI 代理攻擊鏈可將整個入侵至加密的過程壓縮至分鐘級別。",
+     "source": "The Cyber Express",
+     "tags": [
+      "JADEPUFFER",
+      "AI-RUN RANSOMWARE",
+      "SYSDIG",
+      "LLM ATTACK CHAIN"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Anubis 勒索軟體積極利用 Citrix Bleed 2（CVE-2025-5777）取得初始存取，CISA 列入 KEV，Sphinx 重品牌後擴張速度超越前身",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "summary": "與 Anubis 勒索軟體行動相關的威脅行為者已被確認積極利用 Citrix Bleed 2 漏洞（CVE-2025-5777）取得目標組織的初始存取權限。Anubis 是 2024 年底自 Sphinx 勒索軟體重品牌而來的勒索軟體即服務（RaaS）組織，其附屬成員透過 Citrix Gateway 及 NetScaler ADC 的認證繞過漏洞建立立足點，隨後部署加密負載並索取贖金。CISA 已將 CVE-2025-5777 列入已知遭利用漏洞（KEV）目錄，所有仍暴露於公開網際網路的未修補 Citrix 設備應視為高度優先攻擊目標，立即套用官方更新。",
+     "source": "CISA",
+     "tags": [
+      "ANUBIS RANSOMWARE",
+      "CVE-2025-5777",
+      "CITRIX BLEED 2",
+      "RAAS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "APT 組織 ToddyCat 部署新型惡意程式 Umbrij，透過 Google API 靜默竊取企業 Gmail 商業通訊，繞過傳統登入異常偵測",
+     "url": "https://thehackernews.com/",
+     "summary": "研究人員將新型惡意程式 Umbrij 歸因於 APT 組織 ToddyCat，此惡意程式設計用途為透過 Google API 合法 token 靜默存取受害者以 Gmail 托管的企業電子郵件，在不觸發異常登入告警的情況下持續竊取商業機密與高層往來通訊。攻擊者優先鎖定已將企業電子郵件系統遷移至 Google Workspace 的跨國企業，利用被竊 OAuth token 進行無聲情報蒐集，此設計刻意規避傳統基於憑證異常與地理位置異常的偵測機制。企業 Google Workspace 管理員應即刻稽核第三方 OAuth 應用程式授權，並對異常 API 存取流量設置告警。",
+     "source": "The Hacker News",
+     "tags": [
+      "TODDYCAT",
+      "UMBRIJ MALWARE",
+      "GOOGLE API",
+      "GMAIL ESPIONAGE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "2026 年 6 月重大資安事件回顧：製藥巨頭 Novo Nordisk 與英國諾丁漢大學雙雙確認資料外洩，製藥與高等教育成攻擊集中新目標",
+     "url": "https://www.cm-alliance.com/cybersecurity-blog/june-2026-biggest-cyber-attacks-data-breaches-ransomware-attacks",
+     "summary": "CM Alliance 2026 年 6 月最大資安事件月報指出，丹麥製藥巨頭 Novo Nordisk 與英國諾丁漢大學在本月確認遭受資料外洩，成為製藥研發及高等教育機構持續被針對性攻擊的最新案例。此外政府、遊戲及重要公用事業等多個產業亦同步爆發事件，顯示攻擊者正採取跨產業、多目標並行的廣泛撒網策略。製藥研發資料（含候選藥物化合物、臨床試驗數據）因具高度商業及戰略價值，已成為國家級 APT 與犯罪組織的共同覬覦目標。",
+     "source": "CM Alliance",
+     "tags": [
+      "NOVO NORDISK",
+      "UNIVERSITY OF NOTTINGHAM",
+      "DATA BREACH",
+      "PHARMA"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Scattered Spider 成員從芬蘭引渡至美國，19 歲雙重國籍青年在芝加哥聯邦法院面對共謀、電腦入侵及詐欺多項重罪",
+     "url": "https://www.techtarget.com/searchsecurity/news/366639319/News-brief-Nation-state-hackers-active-on-the-global-stage",
+     "summary": "一名被指控隸屬 Scattered Spider 駭客組織的 19 歲美/愛沙尼亞雙重國籍青年於 7 月 1 日從芬蘭成功引渡至美國，於芝加哥聯邦法院出庭，面對共謀、電腦入侵及詐欺等重罪指控。Scattered Spider 以針對大型跨國企業實施社交工程攻擊聞名，過去成功滲透 MGM Resorts、Caesars Entertainment 等高知名度目標並造成數億美元損失。此次跨大西洋引渡的成功彰顯美國聯邦執法機構強化跨國追緝網路犯罪人員的持續決心，亦是對英語系駭客組織最具震懾意義的執法行動之一。",
+     "source": "TechTarget",
+     "tags": [
+      "SCATTERED SPIDER",
+      "EXTRADITION",
+      "FINLAND",
+      "US CHARGES"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Armis 2026 年網路戰報告：國家級攻擊進入 AI 驅動「機器速度」時代，89% 資安主管示警、66% 企業過去一年至少遭受兩次入侵",
+     "url": "https://www.armis.com/blog/nation-state-attacks-hit-machine-speed-key-takeaways-of-the-2026-armis-cyberwarfare-report-and-what-it-means-for-security-teams/",
+     "summary": "Armis 2026 年網路戰年度報告警告，由 AI 加速的國家級網路攻擊已進入「機器速度」自動化時代，全球 89% 的資安領導者對即將到來的 AI 加持攻擊浪潮拉響警報，而調查中 66% 的企業在過去一年內至少遭受兩次重大資安事件，較去年顯著上升。儘管 79% 的 IT 主管聲稱已備妥防禦，實際防禦縱深普遍無法應對高速自動化攻擊鏈。電信網路、雲端平台與企業身份系統已取代傳統端點，成為 2026 年國家級行為者的首要攻擊標的。",
+     "source": "Armis",
+     "tags": [
+      "ARMIS 2026 CYBERWARFARE REPORT",
+      "MACHINE SPEED",
+      "AI-CHARGED",
+      "NATION STATE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "AEI 7 月 2 日台海情勢更新：解放軍 ADIZ 活動回落歷史基準、台灣立院代表團訪美，北京推優惠措施加速政治經濟滲透策略",
+     "url": "https://www.aei.org/articles/china-taiwan-update-july-2-2026/",
+     "summary": "美國企業研究所（AEI）最新台海情勢更新指出，2026 年 6 月解放軍 ADIZ 入侵架次顯著下降，恢復至每月約 200 架次的歷史基準線，且出現長達 12 天無中線侵越的平靜期，被分析人士解讀為北京調整對台施壓節奏的信號。台灣立法院長韓國瑜率跨黨派代表團於 6 月 21 至 26 日訪美，就台灣國際參與、貿易及安全議題積極進行游說。中國則趁機推出涵蓋鬆綁觀光限制、恢復直航的系列對台優惠措施，多名分析師警告此舉更可能是北京以政治經濟滲透取代純軍事施壓的統戰策略調整，而非真正的戰略收縮。",
+     "source": "AEI",
+     "tags": [
+      "AEI",
+      "PLA ADIZ BASELINE",
+      "CHINA STRATEGY SHIFT",
+      "ECONOMIC INCENTIVES"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "慕尼黑安全報告 2026 印太篇：赫格塞斯「夥伴非被保護國」戰略轉向，印太盟友對美安全承諾可信度疑慮持續深化",
+     "url": "https://securityconference.org/en/publications/munich-security-report/2026/indo-pacific/",
+     "summary": "2026 年慕尼黑安全報告印太章節深度分析，美國國防部長赫格塞斯於香格里拉對話明確宣示「夥伴而非被保護國」（Partners, not protectorates）的戰略轉向，要求印太盟友大幅提升國防支出，同時川普政府對台軍售遲滯與對貿易盟友的強硬立場，使印太各國對美國安全承諾的可信度疑慮顯著加深。韓國、台灣、菲律賓已相繼宣布提高國防預算以因應戰略自主化需求，日本與澳洲則積極拓展 AUKUS 及多邊防衛合作框架，以降低對單一安全保證體系的依賴。台灣行政與立法機構持續的政治僵局更增添防衛預算落實的不確定性，恐使北京對台灣抵抗意志產生誤判。",
+     "source": "Munich Security Conference",
+     "tags": [
+      "MUNICH SECURITY REPORT",
+      "INDO-PACIFIC",
+      "US RELIABILITY",
+      "HEGSETH"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布魯金斯學會：美國應重新校準對台支持策略，在維持嚇阻可信度與避免被拖入台海衝突之間尋求平衡",
+     "url": "https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/",
+     "summary": "布魯金斯學會最新政策分析呼籲，美國需重新校準對台支持的戰略框架，在維持足夠嚇阻可信度以防止北京誤判的同時，明確避免因模糊承諾而被動捲入台海武裝衝突。報告指出，川普政府對台軍售的選擇性遲滯與作為對北京談判籌碼的使用方式，正在侵蝕美台關係的戰略互信基礎。美國外交政策應透過更清晰的紅線界定與持續的高層軍事交流，向北京傳遞明確的嚇阻信號，同時支持台灣提升非對稱防衛能力，而非在大型平台採購上陷入政治角力。",
+     "source": "Brookings Institution",
+     "tags": [
+      "BROOKINGS",
+      "US TAIWAN SUPPORT",
+      "RECALIBRATION",
+      "CROSS-STRAIT STRATEGY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "info",
+     "title": "《外交家》7 月：亞洲各大國加速競逐北極能源航道，中俄韓日四方利益角力，制裁規避與能源安全成核心驅動力",
+     "url": "https://thediplomat.com/2026/07/asia-is-racing-to-the-arctic-but-its-not-easy/",
+     "summary": "《外交家》雜誌 7 月最新報導深度剖析，亞洲主要大國正加速布局北極地區，搶奪能源資源、北方海航道控制權與戰略定位，中國、俄羅斯、韓國、日本四方利益在此交匯並形成複雜競合局面。能源安全計算與制裁規避是亞洲北極布局的核心驅動力：儘管歐盟計劃於 2027 年 1 月起禁止進口俄羅斯 LNG，目前仍是俄羅斯 LNG 的主要買家，而東亞能源缺口使北方海航道成為全球供應鏈的潛在替代路線。北極地緣政治格局複雜化，預期將對 2026 年下半年的全球能源市場定價形成新的結構性影響因素。",
+     "source": "The Diplomat",
+     "tags": [
+      "THE DIPLOMAT",
+      "ARCTIC",
+      "ASIA ENERGY SECURITY",
+      "SANCTIONS EXPOSURE"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "WEF：「封鎖外交」成為 2026 年地緣政治新型強制工具，台海、霍爾木茲、麻六甲三大咽喉要道面臨最高風險",
+     "url": "https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/",
+     "summary": "世界經濟論壇（WEF）報告分析，「封鎖外交」（Blockade Diplomacy）正崛起為 2026 年地緣政治博弈的新型強制手段，各競爭性大國透過海上封鎖、通訊切斷與港口施壓等工具強化談判籌碼，並與傳統外交及制裁手段並行使用以達成最大威懾效果。此趨勢對台灣海峽、霍爾木茲海峽與麻六甲海峽三大全球貿易咽喉要道具有直接戰略含義，企業供應鏈韌性規劃需將海上通道突發封鎖列為高優先風險情境。分析師特別警告，封鎖行動一旦啟動往往難以在短期內解除，其持久性遠超傳統制裁，且可能引發對等報復的螺旋升級。",
+     "source": "World Economic Forum",
+     "tags": [
+      "WEF",
+      "BLOCKADE DIPLOMACY",
+      "MARITIME COERCION",
+      "SUPPLY CHAIN RISK"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "BeHorizon 印太週報：美中競爭重塑東南亞多邊格局，菲律賓強化三邊安全合作，ASEAN 戰略模糊面臨選邊壓力",
+     "url": "https://behorizon.org/asia-on-the-horizon/",
+     "summary": "BeHorizon 本週印太態勢週報指出，美中戰略競爭持續主導東南亞多邊外交格局，菲律賓在南海主權爭端上強化與美、日的三邊安全合作框架，澳洲則積極拓展 AUKUS 核潛艦及先進能力移轉計畫在東南亞的培訓角色。東協各國在維持對美安全夥伴關係的同時，透過「雙軌外交」繼續保有與中國的深度經濟往來，但此種戰略模糊正面臨越來越大的結構性壓力，要求各方明確選邊站隊的外部訊號持續累積，東協傳統共識機制面臨空前挑戰。",
+     "source": "BeHorizon",
+     "tags": [
+      "BEHORIZON",
+      "INDO-PACIFIC WEEKLY",
+      "US-CHINA COMPETITION",
+      "ASEAN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "IQI Global 2026 年 7 月全球經濟展望：金融市場從利率敘事轉向能源與地緣政治風險定價，霍爾木茲仍是最大黑天鵝",
+     "url": "https://iqiglobal.com/blog/global-economic-outlook-july-2026/",
+     "summary": "IQI Global 7 月全球經濟展望報告指出，金融市場正從過去幾個月以「成長率與利率」為核心的定價邏輯，明顯轉向以「地緣政治與能源安全」為主導的新市場敘事。油價近期下滑暫時緩解通膨壓力，為各國央行提供短暫政策喘息空間，但霍爾木茲海峽仍是全球最重要的能源黑天鵝風險點——約 20% 的全球石油流量與近 20% 的全球 LNG 貿易流量通過此咽喉要道。匯率市場方面，利率差異重新成為主導外匯走勢的首要驅動力，取代了前幾個季度以地緣政治消息面主導的波動模式，美元指數維持強勢格局。",
+     "source": "IQI Global",
+     "tags": [
+      "IQI GLOBAL",
+      "JULY 2026 OUTLOOK",
+      "ENERGY RISK REPRICING",
+      "GEOPOLITICAL RISK"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "J.P. Morgan 2026 市場展望：美股 S&P 500 逼近歷史高位，聯準會降息時程持續延後，地緣政治衝擊可能觸發明顯回調",
+     "url": "https://www.jpmorgan.com/insights/global-research/outlook/market-outlook",
+     "summary": "J.P. Morgan 全球研究 2026 年市場展望顯示，在聯準會維持 3.50–3.75% 政策利率的情況下，美股 S&P 500 仍持續逼近歷史高位，市場繼續押注最遲 2026 年底前的單次 25 基點降息，但持續的地緣政治衝突使降息時程風險明顯偏向延後。報告分析師特別指出，美股估值已處於歷史高位，債市與股市之間的信用利差壓縮幅度達歷史性水平，在此背景下任何地緣政治突發事件——無論是霍爾木茲封鎖威脅還是台海緊張升溫——均可能觸發幅度不容小覷的市場調整。機構投資人持續以科技股為核心抵禦利率高原期，但板塊輪動跡象增加。",
+     "source": "J.P. Morgan",
+     "tags": [
+      "JP MORGAN",
+      "2026 MARKET OUTLOOK",
+      "S&P 500 HISTORICAL HIGH",
+      "FED RATE CUT DELAY"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "MacroMicro 全球央行利率預期：ECB 升息 25bp 至 2.25% 應對輸入型通膨，英國央行陷升息衰退兩難，政策分歧放大新興市場風險",
+     "url": "https://en.macromicro.me/collections/6005/global-central-bank/143492/world-central-banks-yearend-interest-rate-expectations-2026",
+     "summary": "MacroMicro 全球央行年底利率預期追蹤資料顯示，歐洲央行（ECB）6 月 11 日決議將存款利率上調 25 個基點至 2.25%，以因應油價衝擊帶動的輸入型通膨壓力，為 2022 年緊縮周期以來的重要政策轉折點。英格蘭銀行（BOE）則深陷政策兩難：升息將加速衰退風險，放任通膨高燒則侵蝕薪資購買力與政府公信力，市場對英鎊走勢預期高度分歧。全球主要央行政策立場分歧持續擴大，正放大跨市場利率差異，並對新興市場資本流動帶來新的結構性不穩定風險，部分東南亞央行已被迫跟進升息以防資本外流。",
+     "source": "MacroMicro",
+     "tags": [
+      "MACROMICRO",
+      "GLOBAL CENTRAL BANKS",
+      "ECB RATE HIKE 25BP",
+      "BOE STAGFLATION DILEMMA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "德勤 2026 全球經濟展望：多重衝擊下停滯性通膨風險顯著上升，歐元區 GDP 預測僅 0.8%，政府財政緩衝空間持續消耗",
+     "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html",
+     "summary": "德勤 2026 全球經濟展望報告指出，在油價衝擊、央行緊縮政策與地緣政治不確定性的多重夾擊下，全球停滯性通膨（Stagflation）風險已顯著上升，歐洲央行預測歐元區 GDP 增速僅 0.8%，為近年低點。供應鏈韌性建設、能源轉型投資與數位資安支出形成「三重財政壓力」，各國政府財政政策空間持續收窄，應對下一波衝擊所需的財政緩衝資源已大幅消耗。報告建議企業優先投資備援供應鏈節點，以應對可能持續的地緣政治擾動；並預警若中東或台海情勢再度升溫，全球增長前景將面臨進一步下修壓力。",
+     "source": "Deloitte Insights",
+     "tags": [
+      "DELOITTE",
+      "STAGFLATION",
+      "GLOBAL GDP SLOWDOWN",
+      "OIL SHOCK"
+     ]
+    }
+   ]
+  }
+ ]
+}

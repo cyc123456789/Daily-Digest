@@ -1,0 +1,207 @@
+{
+ "date": "2026-07-10",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "北韓 Contagious Interview 升級版 PolinRider：108 惡意套件橫跨 npm、Packagist、Go 與 Chrome 擴展全面滲透開發者供應鏈",
+     "url": "https://www.integrity360.com/cyber-news-roundup-july-3rd-2026",
+     "summary": "Integrity360 資安週報揭示，北韓國家級威脅行為者已將 Contagious Interview 行動進化為代號 PolinRider 的新一輪供應鏈攻擊：攻擊者在 npm、Packagist、Go 模組代理及 Google Chrome 擴展商店共發布 108 個獨特惡意套件，精心偽裝成合法開發工具或知名套件的補丁版本。這些套件下載後會側載後門模組，靜默竊取開發環境的 AWS 金鑰、SSH 私鑰、瀏覽器儲存憑證及 CI/CD 管線機密，並回傳至北韓控制的 C2 基礎設施。此波攻擊特別鎖定自由軟體開發者、加密貨幣交易所工程師及區塊鏈新創，是北韓以 IT 人力為幌子竊取數位資產策略的技術延伸。開發團隊應立即審查套件安裝紀錄，強制啟用套件完整性驗證（npm audit、Go checksum），並對 Chrome 擴展授權進行零信任審查。",
+     "source": "Integrity360",
+     "tags": [
+      "NORTH KOREA",
+      "POLINRIDER",
+      "CONTAGIOUS INTERVIEW",
+      "SUPPLY CHAIN"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "ChocoPoC 竊密木馬：偽裝成合法漏洞概念驗證程式碼、鎖定資安研究員的 GitHub Python 惡意儲存庫",
+     "url": "https://thehackernews.com/",
+     "summary": "The Hacker News 報導，研究人員發現代號 ChocoPoC 的資料竊取木馬被隱藏在多個 GitHub 上公開的 Python 概念驗證（PoC）漏洞利用程式碼儲存庫中，刻意以近期高危 CVE 為餌，鎖定主動下載新鮮 PoC 的滲透測試人員及漏洞研究員。受害者一旦執行程式碼，ChocoPoC 即竊取本機儲存的 API 金鑰、VPN 憑證、研究筆記及存取過的目標主機資訊，直接污染威脅情報生態圈並製造橫向滲透風險。此類「供應鏈毒化威脅情報」手法有別於傳統端點攻擊，防禦重點在於：對下載的 PoC 強制使用隔離沙箱環境執行，對 GitHub 儲存庫來源嚴格審查提交歷史與帳號可信度，以及在研究環境中啟用出站網路流量監控以偵測異常 C2 回連行為。",
+     "source": "The Hacker News",
+     "tags": [
+      "CHOCOPIC",
+      "SECURITY RESEARCHER TARGETING",
+      "FAKE EXPLOIT CODE",
+      "PYTHON POC"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "俄羅斯持續大規模網路攻擊歐洲民用能源與水利基礎設施：發電廠及水壩遭入侵 真實世界危害風險急遽升高",
+     "url": "https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents",
+     "summary": "CSIS 重大網路事件追蹤資料庫確認，2026 年迄今歸因（或部分歸因）俄羅斯行為者的一系列網路攻擊已跨越「單純情報蒐集」邊界，直接針對歐洲多國民用能源基礎設施（電廠、電網控制系統）及水利設施（水壩、水處理站）發動具破壞性潛力的入侵行動，對社區居民的真實世界安全造成有形威脅。分析人士指出，此波攻擊反映俄羅斯在烏克蘭戰場壓力下主動擴大「灰色地帶衝突」地理範圍的戰略意圖，以能源恐慌與社會動盪作為政治槓桿。歐盟成員國已啟動緊急網路防衛協調機制，但各國關鍵基礎設施的資安投資水準與應對能力仍存在顯著落差，部分老舊工業控制系統（ICS/SCADA）長期處於高暴露風險中。",
+     "source": "CSIS",
+     "tags": [
+      "RUSSIA",
+      "APT",
+      "EUROPE",
+      "ENERGY INFRASTRUCTURE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "TechCrunch 2026 上半年最大駭客事件與資料外洩盤點：Conduent 外洩確認擴大至 6220 萬人 成年度最大健保數據洩露事件",
+     "url": "https://techcrunch.com/2026/07/07/the-worst-hacks-and-breaches-of-2026-so-far/",
+     "summary": "TechCrunch 最新整理 2026 年上半年最嚴重的資安事件盤點，確認 Conduent 資料外洩受影響人數已更新擴大至逾 6220 萬人，超越先前所有估計，成為 2026 年度迄今規模最大的健保相關數據洩露事件，波及全美多個州政府醫療援助計劃及大型保險業者客戶；加上 Canvas LMS 2.75 億師生數據洩露、FortiBleed 43 萬台設備淪陷、伊朗駭客入侵 ATG 加油站監控系統等重大事件，2026 年上半年實際受影響個人總數已達歷史級規模。報告特別指出，今年多起最嚴重外洩的共同特徵是：受害者在事件發生後數週乃至數月才獲通知，反映企業內部偵測能力依然嚴重滯後，法律規定的洩露通知時限執行力度亟需強化。",
+     "source": "TechCrunch",
+     "tags": [
+      "2026 WORST BREACHES",
+      "CONDUENT 62.2M",
+      "HEALTHCARE DATA",
+      "ANNUAL ROUNDUP"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Gitea CVE-2026-20896 認證完全繞過漏洞遭積極利用：單一特製 HTTP 標頭即可存取所有私有倉庫與機密",
+     "url": "https://www.hackerstorm.com/articles/latest-news",
+     "summary": "Hackerstorm CVE 追蹤最新報告確認，攻擊者正積極利用 Gitea 平台的嚴重認證控制繞過漏洞（CVE-2026-20896），只需在 HTTP 請求中加入特製單一標頭即可繞過所有身份驗證機制，未授權存取目標實例的所有私有儲存庫、CI/CD 管線機密、部署金鑰及敏感程式碼。此類攻擊對自架 Gitea 實例的組織（尤其是政府機構、研究機構及中小型科技企業）構成高度威脅——這些組織往往將 Gitea 作為內部程式碼協作平台，卻缺乏企業級的漏洞修補週期管理。CISA 已將此漏洞列入 KEV 目錄，要求聯邦機構立即套用修補程式；自架實例管理員應在等待官方修補期間立即檢查訪問日誌、對外部網路存取啟用強制 MFA 或網路隔離，並輪換所有在倉庫中儲存的 API 金鑰與部署憑證。",
+     "source": "Hackerstorm",
+     "tags": [
+      "GITEA",
+      "CVE-2026-20896",
+      "AUTH BYPASS",
+      "SINGLE HTTP HEADER"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "AEI 七月上旬台海態勢更新：ADIZ 入侵頻率回落疫前基準、福建艦完成台海穿越、韓國瑜代表團訪美國會",
+     "url": "https://www.aei.org/articles/china-taiwan-update-july-2-2026/",
+     "summary": "美國企業研究所（AEI）7 月 2 日台海情勢更新揭示三項重要動態：其一，台灣防部 6 月份錄得連續 12 天無 ADIZ 越線紀錄，解放軍月度入侵架次已回落至 2024 年賴清德就職後雙倍升高前的基準水準，顯示北京暫時調整施壓節奏；其二，中國福建號航空母艦近期穿越台灣海峽，完成艦員海峽操作訓練並測試設備適應性，中國已進入三艘航母同時服役的新時代，並可能建立各戰區指揮部輪替駐艦機制以持續保持壓力；其三，台灣立法院院長韓國瑜率多黨代表團訪問美國國會（6 月 21 至 26 日），就台灣國際參與、貿易及安全議題進行倡議，反映台美在正式外交管道之外的立法機關接觸持續深化。",
+     "source": "AEI",
+     "tags": [
+      "AEI",
+      "TAIWAN STRAIT",
+      "ADIZ BASELINE REDUCTION",
+      "FUJIAN CARRIER"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "外交關係協會報告：美台關係新時代——因應北京更具進攻性中國的戰略架構重整",
+     "url": "https://www.cfr.org/task-force-reports/us-taiwan-relations-in-a-new-era/introduction",
+     "summary": "美國外交關係協會（CFR）「美台關係新時代」特別工作組報告指出，隨著中國對台灣的軍事、經濟及外交壓力全面升級，美台關係正進入自 1979 年以來最關鍵的戰略轉型期。報告強調，美國應在維持「一中政策」框架的同時，從三個維度系統性強化對台支持：一是加速高性能防衛武器交付，縮短核准到實際交付的時間差；二是深化情報共享與聯合訓練機制，提升台灣軍隊與美國作戰概念的互通性；三是擴大對台灣半導體及關鍵科技供應鏈的支持，使台灣經濟韌性成為整體嚇阻戰略的核心組成。報告特別警告，北京正把對台政治、軍事及經濟壓力三軌並行、協調施用，要求華盛頓以同樣系統性的跨域整合策略加以應對，而非以個別政策工具逐一應對北京的複合施壓手段。",
+     "source": "Council on Foreign Relations",
+     "tags": [
+      "CFR",
+      "US-TAIWAN RELATIONS",
+      "NEW ERA",
+      "CHINA ASSERTIVENESS"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布魯金斯學會：外交在美國管理兩岸關係中的角色——制度性接觸如何維繫台海危機管控與嚇阻架構",
+     "url": "https://www.brookings.edu/articles/the-role-of-diplomacy-in-us-management-of-cross-strait-relations/",
+     "summary": "布魯金斯學會最新分析聚焦外交工具在美國台海政策中的功能定位，指出外交接觸與軍事嚇阻並非相互競爭而是互補關係：維持穩健的美中外交溝通渠道有助於傳遞清晰意圖、降低誤判風險，但必須以可信軍事嚇阻為後盾，否則外交接觸反而可能被北京解讀為美國決心軟化的訊號。報告建議美方建立獨立於峰會外交之外的制度性溝通機制——包括軍事熱線定期使用、危機行為規範的結構性對話以及學術與政策界「1.5 軌」持續交流——以確保在雙邊關係緊張期間仍保有可靠的意圖傳遞管道。此一分析框架對於評估未來「川習峰會」中台灣議題的談判取捨具有重要參考價值，即便是以外交讓步換取短期關係改善的作法，若缺乏清晰的紅線宣示配套，都可能對整體嚇阻架構造成侵蝕。",
+     "source": "Brookings Institution",
+     "tags": [
+      "BROOKINGS",
+      "CROSS-STRAIT DIPLOMACY",
+      "US MANAGEMENT",
+      "INSTITUTIONAL ENGAGEMENT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "南海七月管控緊張態勢深度分析：菲律賓與北京同步進行外交與海洋主張行動 雙方均無立即升級衝突誘因",
+     "url": "https://www.kba13.com/southeast-asia-strategic-outlook-july-2026/",
+     "summary": "KBA13 東南亞戰略展望（2026 年 7 月）深入剖析南海當前局勢，指出 2026 年 7 月南海呈現「管控性緊張」（managed tension）的典型案例：整體摩擦程度高、戰術事件頻率升高，但北京與馬尼拉（以及主要外部行為者）均無立即升級至須以決定性手段解決的危機誘因。菲律賓與北京正同時採取外交姿態與海洋主張行動的雙軌策略：馬尼拉推動 7 月前完成南海行為準則談判文本，同時加速 BrahMos 飛彈部署；北京則一面維持常態化海警船隻存在，一面保留習近平對馬科斯的直接外交接觸空間。分析師警告，此種刻意維持的「模糊穩定」雖短期可控，但在美中戰略競爭壓力下，任何一次升級事件引爆時間點的不確定性都在上升。",
+     "source": "KBA13 Insight",
+     "tags": [
+      "SOUTH CHINA SEA",
+      "PHILIPPINES",
+      "BEIJING",
+      "MANAGED TENSION"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "聯合國安理會七月衝突預防月度預測：地緣政治分裂加深、國際法遭踐踏無力感升高 調解與預防性外交空間持續收窄",
+     "url": "https://www.securitycouncilreport.org/monthly-forecast/2026-07/conflict-prevention-and-peaceful-resolution-of-disputes.php",
+     "summary": "安理會報告（Security Council Report）2026 年 7 月月度預測指出，全球衝突格局的深化、地緣政治分裂的加劇以及對國際法違規行為的有罪不罰現象，正在以結構性方式侵蝕聯合國衝突預防機制的有效性——調解工具的政治運作空間正因大國博弈而急遽收窄。報告揭示，當安理會五大常任理事國中存在根本性立場對立時（如俄烏衝突、台海問題、伊朗核談），衝突預防決議往往在起草階段即遭死路，預防性外交的制度性優勢因此大打折扣。分析人士呼籲聯合國秘書長加大運用《聯合國憲章》第 99 條獨立斡旋職能，繞開安理會僵局維持最低限度的危機溝通管道，以防止管理性衝突在無預警情況下急遽升級。",
+     "source": "Security Council Report",
+     "tags": [
+      "UN SECURITY COUNCIL",
+      "CONFLICT PREVENTION",
+      "DIPLOMACY",
+      "GEOPOLITICAL DIVISIONS"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "《外交家》亞太地緣政治七月總覽：美中戰略競爭主導地區安全優先序 各盟友加速多元化防衛佈局",
+     "url": "https://thediplomat.com/",
+     "summary": "《外交家》雜誌 2026 年 7 月亞太地緣政治分析確認，美中戰略競爭持續主導整個亞太政治與安全格局的優先排序，雙方在尖閣諸島、南沙群島、西沙群島、朝鮮半島、台灣海峽以及麻六甲海峽、呂宋海峽等海上通道的競逐正持續白熱化。美國防長赫格塞斯的「夥伴非被保護國」戰略框架在各盟友間引發明確的政策轉型反應——日本加速擴軍、菲律賓多元化軍購、澳洲強化第一島鏈前沿存在。然而分析人士指出，此一戰略施壓對夥伴的要求——更高國防預算、更強自主作戰能力——在各國內政制約下的兌現速度不一，恐製造新的安全差距被北京及平壤所利用的時間窗口。",
+     "source": "The Diplomat",
+     "tags": [
+      "ASIA-PACIFIC",
+      "US-CHINA RIVALRY",
+      "MARITIME ROUTES",
+      "ENERGY RESOURCES"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "7 月 8 日美股收盤：川普 NATO 峰會宣告「停火協議已終結」 油價急漲 5-6% 布蘭特逼近 78 美元 道瓊期貨跌逾 560 點",
+     "url": "https://econcurrents.substack.com/p/08-july-2026-market-close-and-major",
+     "summary": "EconCurrents 7 月 8 日美股收盤報告顯示，川普總統在土耳其 NATO 峰會上宣告與伊朗的臨時停火備忘錄「已結束」，立即引爆跨資產劇烈波動：布蘭特原油急漲 5-6% 逼近每桶 78 美元、西德州中質原油突破 73 美元，能源類股（Diamondback Energy、Occidental Petroleum、Valero Energy）盤前均大漲逾 2%；同時道瓊工業指數期貨暴跌逾 560 點（跌幅 1.1%），標普 500 期貨下滑 0.9%，那指 100 期貨下跌 1.3%，10 年期美國公債殖利率攀升至約 4.57%——創近四週新高，顯示市場正在重新為更持久的能源通膨定價，聯準會 7 月底 FOMC 會議的政策路徑再度蒙上不確定陰影。",
+     "source": "EconCurrents",
+     "tags": [
+      "OIL SHOCK",
+      "TRUMP",
+      "NATO SUMMIT",
+      "IRAN CEASEFIRE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "聯準會 2026 年 7 月利率決策深度分析：Warsh 主席首次執掌 FOMC 鷹派框架成形 通膨 4% 使政策空間高度受限",
+     "url": "https://intellectia.ai/blog/fed-interest-rate-decision-july-2026",
+     "summary": "Intellectia.ai 對聯準會 2026 年 7 月 FOMC 會議的前瞻分析指出，G10 六大央行中 7 月阻力最小的選擇是「按兵不動」——靜待美伊停火協議、關稅截止期限及稀土對峙等多重地緣政治不確定性出清後再行定向。然而，聯準會新主席 Warsh 執掌後的首次 FOMC（6 月）已展現鮮明的「物價穩定優先」鷹派基調：儘管 6 月非農就業人數僅 57,000 人、遠遜預期，通膨仍維持 4%——為目標值的兩倍——使降息論據持續缺乏說服力。市場當前將 7 月升息機率定價在 18% 低位，9 月至 10 月升息預期佔主流；但若油價因伊朗情勢進一步上行，此一預期可能被快速重新定價，Warsh 主席的下次公開講話將是決定市場方向的最重要信號。",
+     "source": "Intellectia.ai",
+     "tags": [
+      "FEDERAL RESERVE",
+      "JULY 2026 FOMC",
+      "KEVIN WARSH",
+      "INTEREST RATE HOLD"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Marc Chandler 七月全球外匯月度展望：利率差異重返匯市核心驅動力 美元強勢延續 新興市場外債壓力升溫",
+     "url": "https://www.marctomarket.com/2026/06/july-2026-monthly.html",
+     "summary": "知名外匯宏觀分析師 Marc Chandler 在 Marc to Market 7 月月報中指出，在油價地緣政治衝擊與各主要央行貨幣政策路徑全面分歧的背景下，「利率差異」（rate differentials）已重新確立為全球外匯市場最主要的定價框架：美元強勢延續、支撐美元的利差優勢在聯準會降息推遲情況下仍有望維持至 2026 年底。歐元、英鎊及日圓均面臨各自的下行壓力——歐洲央行被能源通膨升息後前景不明，日圓貶壓使日本銀行面臨在鴿派傳統與輸入型通膨之間的抉擇；新興市場貨幣則承受美元強勢與外幣債務成本雙重壓力。Chandler 特別點出，近期能源價格波動已超越利率差異成為短期外匯走勢最大的外生擾動因素，操作上須為油價突發波動保留較大的倉位緩衝。",
+     "source": "Marc to Market",
+     "tags": [
+      "MARC TO MARKET",
+      "GLOBAL FX",
+      "JULY 2026 MONTHLY",
+      "US DOLLAR"
+     ]
+    }
+   ]
+  }
+ ]
+}

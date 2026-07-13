@@ -1,0 +1,207 @@
+{
+ "date": "2026-06-27",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "國家級 APT 滲透全球主要證券交易所：五個月無聲竊取高管 Outlook 信箱，利用合法雲端儲存掩護 C2 通訊",
+     "url": "https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents",
+     "summary": "CSIS 重大網路事件追蹤報告記錄了一起高度隱蔽的國家級間諜行動：攻擊者成功滲透一家全球主要股票交易所，針對高階主管的 Microsoft Outlook 信箱發動長達五個月的靜默竊密行動。攻擊者使用合法雲端儲存服務（如 OneDrive、Dropbox）作為命令與控制通道，並以偽裝成系統更新任務的排程工作維持持久存取，成功規避傳統基於流量分析的偵測機制。此案再次凸顯金融基礎設施面臨的高端持續性威脅（APT）態勢，以及 Microsoft 365 生態系統在缺乏完整日誌保留與行為異常偵測機制下的結構性安全盲點。",
+     "source": "CSIS",
+     "tags": [
+      "APT",
+      "FINANCIAL SECTOR",
+      "OUTLOOK",
+      "CLOUD STORAGE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA 警告 Ubiquiti UniFi OS 多個漏洞遭積極利用，聯邦機構限期 6 月 26 日前完成修補",
+     "url": "https://cybersecuritynews.com/cisa-ubiquiti-unifi-os-vulnerability/",
+     "summary": "CISA 正式將 Ubiquiti UniFi OS 的多個安全漏洞加入「已知利用漏洞目錄（KEV）」，並確認至少一個漏洞已在野外被積極利用，其中包含可被遠端未授權攻擊者觸發的認證繞過及遠端代碼執行路徑。CISA 依據 BOD 22-01 聯邦強制令要求所有聯邦民政機構（FCEB）在截止日期前完成修補，私部門組織亦應比照優先處理。UniFi 系列設備廣泛部署於企業網路邊界、零售及中小型機構的網路管理層，相關漏洞一旦遭利用可能造成整個網路管理平面的完全淪陷，影響範圍遠超單一設備。",
+     "source": "Cybersecurity News / CISA",
+     "tags": [
+      "UBIQUITI",
+      "UNIFIOS",
+      "CISA KEV",
+      "NETWORK INFRASTRUCTURE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Splunk Enterprise 嚴重漏洞揭露數日即遭積極利用：SIEM 平台本身淪為攻擊者立足點",
+     "url": "https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/",
+     "summary": "SecurityWeek 報導，Splunk Enterprise 的一個高嚴重性安全漏洞在公開揭露後僅數日即出現積極在野利用案例，攻擊者透過此漏洞可在 Splunk 伺服器上執行任意代碼，取得對企業核心日誌收集與安全監控平台的完全控制權。此事件尤其令人警惕，因為 Splunk 通常作為企業的安全事件與信息管理（SIEM）核心，掌握組織內幾乎所有系統的日誌流，攻擊者一旦控制 Splunk 平台，不僅可竊取高度敏感的安全遙測數據，更可藉此抹除自身活動軌跡並偵測防禦者的應急響應動作，造成「防禦者失盲」的危險局面。",
+     "source": "SecurityWeek",
+     "tags": [
+      "SPLUNK",
+      "SIEM",
+      "ENTERPRISE SECURITY",
+      "ACTIVE EXPLOITATION"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA 將 SolarWinds Serv-U 阻斷服務漏洞列入 KEV：檔案傳輸管理平台再成高價值攻擊目標",
+     "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+     "summary": "CISA 將 SolarWinds Serv-U 受管理檔案傳輸（MFT）解決方案的阻斷服務（DoS）漏洞正式加入已知利用漏洞目錄，確認該漏洞已遭積極在野利用。繼 MOVEit、GoAnywhere、Fortra 等 MFT 解決方案在近兩年相繼淪為大規模勒索軟體與數據竊取攻擊目標後，Serv-U 的漏洞利用顯示攻擊者對企業檔案交換基礎設施的持續性高度關注。Serv-U 廣泛部署於金融、醫療及政府機構的敏感文件傳輸工作流程中，相關機構應立即評估暴露面並依 CISA 要求在規定時限內完成修補及替代控制部署。",
+     "source": "The Hacker News / CISA",
+     "tags": [
+      "SOLARWINDS",
+      "SERV-U",
+      "FILE TRANSFER",
+      "CISA KEV"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "SecurityWeek 2026 網路洞察：國家級攻擊全面升級，AI 武器化使攻擊週期從數週壓縮至數小時",
+     "url": "https://www.securityweek.com/cyber-insights-2026-cyberwar-and-rising-nation-state-threats/",
+     "summary": "SecurityWeek 2026 年度網路安全洞察報告深度分析了國家級威脅行為者在本年度的顯著演化：AI 輔助漏洞發現與利用工具的普及使攻擊者能夠在漏洞揭露後數小時內完成武器化，攻擊週期較 2024 年壓縮超過 80%。報告特別指出，中國、俄羅斯、北韓、伊朗四大國家級行為者均已針對各自優先目標建立了不同程度的 AI 輔助攻擊能力，其中以情報竊取、關鍵基礎設施預置（pre-positioning）及選舉影響行動最為活躍。面對此一趨勢，傳統以人工研判為核心的安全運營中心（SOC）模型正面臨根本性挑戰，AI 對 AI 的自動化防禦競爭格局已於 2026 年正式形成。",
+     "source": "SecurityWeek",
+     "tags": [
+      "NATION STATE",
+      "AI ATTACKS",
+      "CYBERWAR",
+      "2026 THREAT LANDSCAPE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "AEI 分析：北京以選擇性雙邊接觸策略替代多邊透明機制，刻意規避香格里拉對話凸顯主導敘事意圖",
+     "url": "https://www.aei.org/articles/china-taiwan-update-june-5-2026/",
+     "summary": "美國企業研究院（AEI）台海情勢更新指出，北京在 5 月 28–29 日安排與美方進行海上與空域安全雙邊磋商，刻意以此替代防長層級的香格里拉多邊對話出席。分析師認為，此策略反映北京正系統性地以交易性雙邊框架取代多邊透明機制——雙邊接觸讓中方得以主導議程設定、限制盟友可見度，並將每次對話轉化為各自表述的籌碼，有效瓦解美國聯合盟友形成統一戰略框架的努力。此外，北京持續以對台武器銷售案為由拖延 Hegseth 訪中，顯示北京正同步在多條外交軌道上進行戰略性施壓，以最大化其談判槓桿。",
+     "source": "AEI",
+     "tags": [
+      "US-CHINA",
+      "MARITIME SAFETY",
+      "BILATERAL",
+      "MULTILATERAL AVOIDANCE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美國批評解放軍台灣周邊軍事演習「製造不必要緊張局勢」，盟友聯合聲明反對 ADIZ 頻繁侵擾但成效存疑",
+     "url": "https://www.aljazeera.com/news/2026/1/1/us-says-chinese-military-drills-around-taiwan-cause-unnecessary-tensions",
+     "summary": "美國政府發表聲明批評中國解放軍在台灣周邊進行的軍事演習及艦機頻繁進入台灣防空識別區（ADIZ）的行為「製造不必要的緊張局勢」，並聯合日本、澳洲、加拿大等盟友發出協調一致的外交訊號。然而分析人士指出，各方聲明均缺乏具體的後果威脅或行動承諾，北京對此類外部輿論壓力的容忍閾值已顯著提升，解放軍的戰術層面行為未見實質收斂。如何將外交意志與嚇阻意圖轉化為改變解放軍行為的實際手段，仍是美國及其盟友面臨的核心戰略難題。",
+     "source": "Al Jazeera",
+     "tags": [
+      "PLA",
+      "TAIWAN",
+      "MILITARY DRILLS",
+      "US ALLIED RESPONSE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "2026 亞太地緣政治風險年中評估：台灣海峽、南海主權爭端與技術制裁三重壓力節點同步升溫",
+     "url": "https://www.specialeurasia.com/2026/01/07/asia-pacific-risk-2026/",
+     "summary": "SpecialEurasia 對 2026 年亞太地緣政治風險的年度評估顯示，本年度主要風險節點集中在三個高度互聯的維度：一是台灣海峽的軍事施壓與可信嚇阻的持續博弈；二是南海黃岩島、南沙群島等敏感海域的主權灰色行動衝突，解放軍海警船艦已在多個爭議礁岩建立「常態性存在」；三是美中在先進半導體（尤其是 2nm 以下製程及 AI 訓練晶片）出口管制領域的技術制裁競爭。報告指出，2026 年下半年三個風險維度同步升溫的可能性正在提高，任何一個節點的突發事件均可能觸發跨域連鎖反應，亞太地區系統性風險正處於近年來的相對高點。",
+     "source": "SpecialEurasia",
+     "tags": [
+      "GEOPOLITICAL RISK",
+      "TAIWAN",
+      "SOUTH CHINA SEA",
+      "TECH WAR"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "G7 伊維昂峰會地緣政治領導人聲明全文：俄羅斯制裁升級、北韓圍堵強化、印太穩定三大支柱正式確立",
+     "url": "https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues",
+     "summary": "G7 伊維昂峰會於 6 月 17 日發布地緣政治議題領導人聲明，確立三大核心支柱：一是升級對俄羅斯的能源與金融制裁，覆蓋油氣部門並強化制裁執行機制以防止繞道規避；二是強化對北韓核武與彈道導彈計劃的多邊圍堵，七大工業國承諾聯合執法打擊北韓加密貨幣竊盜及技術走私；三是重申對印太地區穩定與「基於規則的國際秩序」的集體承諾，間接回應中國在台海與南海的軍事施壓。峰會聲明被視為 G7 今年最具實質意義的多邊安全共識文件，但批評者指出執行機制的落實力度仍待觀察。",
+     "source": "G7 Évian 2026 / Élysée",
+     "tags": [
+      "G7",
+      "EVIAN 2026",
+      "RUSSIA SANCTIONS",
+      "NORTH KOREA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "今日地緣政治速報（6/25）：荷姆茲停火外交懸局、俄烏前線最新態勢、全球制裁體系韌性持續受壓測",
+     "url": "https://geopol.substack.com/p/in-geopolitics-today-thursday-june-4bd",
+     "summary": "Jānis Vīksne 地緣政治每日速報（6 月 25 日）聚焦三條主線：荷姆茲海峽停火談判中美伊雙方圍繞執行機制的拉鋸仍未達成具體共識，「60 天停火時限」的模糊性使市場與外交界均處於高度不確定狀態；俄烏前線方面，夏季攻勢態勢正在形成，西方彈藥供應是否充足成為關鍵變數；在制裁領域，G7 伊維昂聲明後俄羅斯制裁繞道行為的偵測與反制成為多邊執法的首要挑戰，尤其是中間國（特別是中亞、土耳其、阿聯酋）扮演的制裁「漏洞」角色正引發更多關注。",
+     "source": "Geopolitics Today / Substack",
+     "tags": [
+      "HORMUZ",
+      "UKRAINE",
+      "GLOBAL SANCTIONS",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "CSIS 亞太最新分析：美中戰略競爭延伸至技術標準、規則制定與多邊機構話語權的全面對抗格局",
+     "url": "https://www.csis.org/regions/asia",
+     "summary": "美國戰略與國際研究中心（CSIS）亞太分析指出，2026 年的美中競爭已遠超軍事範疇，深度延伸至三個關鍵的非傳統競爭域：一是 AI 與半導體技術標準的制定話語權之爭，包括下一代通訊協議、AI 倫理框架及工業物聯網標準；二是多邊機構改革的議程控制，中國正積極在聯合國附屬機構、WTO 及東盟相關平台推動有利於己的規則修改；三是基礎設施外交的地緣競爭，「一帶一路」對 PGII（全球基礎設施與投資夥伴關係）的直接競爭正在印太多個關鍵節點同步展開，形成複雜的制度碎片化態勢。",
+     "source": "CSIS",
+     "tags": [
+      "CSIS",
+      "ASIA PACIFIC",
+      "STRATEGIC COMPETITION",
+      "TECH"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "聯準會 Warsh 鷹派路徑重塑 2026 下半年市場預期：「higher for longer」利率如何影響股債資產重新定價",
+     "url": "https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html",
+     "summary": "美國銀行（U.S. Bank）市場分析評估聯準會新主席 Kevin Warsh 首次記者會後的政策信號：Warsh 全票維持聯邦基金利率 3.50–3.75% 目標區間，但更新後的點陣圖顯示年底前升息概率顯著提升，相較 3 月預測呈現明顯鷹派轉向。此訊號已驅動市場重新定價 2026 下半年的利率路徑，成長股（尤其是高估值科技股）面臨貼現率上升壓力，而金融股與能源股相對受益；同時，「higher for longer」利率環境正驅動美元資產相對吸引力回升，資本從新興市場流向美元計價資產的結構性趨勢短期料將持續。",
+     "source": "U.S. Bank",
+     "tags": [
+      "FEDERAL RESERVE",
+      "WARSH",
+      "HIGHER FOR LONGER",
+      "US EQUITIES"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "歐洲央行 6 月升息 25 基點背後：伊朗衝突驅動能源通膨頑固，歐元區近三年首度重啟升息週期始末",
+     "url": "https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html",
+     "summary": "CNBC 深度解析歐洲央行（ECB）決定升息 25 基點至 2.25% 的完整邏輯：伊朗戰爭引發的全球能源供應衝擊驅動歐元區能源分項通膨年增高達 10.9%，使 ECB 陷入「緊縮對抗能源通膨，但緊縮同時抑制因能源衝擊已受壓的實體經濟」的政策兩難。本次升息是 ECB 自 2023 年以來首度升息，標誌著此前多國爭議的「能源衝擊是暫時性的」論述宣告失效。市場對 ECB 後續路徑高度分歧：鷹派認為能源通膨的「二次傳遞效應」尚未充分顯現，鴿派則擔憂升息恐令歐元區核心國（尤其德國）的製造業衰退雪上加霜。",
+     "source": "CNBC",
+     "tags": [
+      "ECB",
+      "EUROZONE",
+      "ENERGY INFLATION",
+      "IRAN"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美國銀行 2026 年中財政與貨幣政策展望：財政貨幣雙緊縮格局下新興市場承壓，資本回流已開發市場加速",
+     "url": "https://www.privatebank.bankofamerica.com/articles/washington-update.html",
+     "summary": "美國銀行（Bank of America）華盛頓展望報告評估 2026 年下半年的財政與貨幣政策雙緊縮格局：聯準會維持高利率搭配美國財政赤字擴張同步發生，形成「緊貨幣、寬財政」的結構性矛盾，預計推高長端美國公債殖利率。對於新興市場而言，美元走強疊加本國通膨壓力，使亞洲、拉美多個新興經濟體面臨貨幣貶值與資本外流的雙重衝擊；台灣、韓國等出口導向的亞洲科技供應鏈經濟體，則需在匯率競爭力與通膨控制之間謹慎拿捏。報告建議投資人在 2026 下半年適度降低新興市場配置比例，優先考量美元計價的優質固定收益資產。",
+     "source": "Bank of America",
+     "tags": [
+      "BANK OF AMERICA",
+      "FISCAL POLICY",
+      "EMERGING MARKETS",
+      "USD"
+     ]
+    }
+   ]
+  }
+ ]
+}

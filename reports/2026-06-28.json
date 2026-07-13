@@ -1,0 +1,194 @@
+{
+ "date": "2026-06-28",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "KongTuke 初始存取代理人部署自毀型 Mistic 後門：保險、教育、IT 業遭靜默滲透，勒索軟體攻擊鏈顯著加速",
+     "url": "https://www.bleepingcomputer.com/news/security/stealthy-mistic-backdoor-linked-to-ransomware-access-broker-kongtuke/",
+     "summary": "BleepingComputer 報導，Symantec 研究人員揭露一個由初始存取代理人（IAB）KongTuke 操控的新型隱匿後門 Mistic，自 2026 年 4 月起已持續滲透保險、教育、IT 及專業服務業。Mistic 透過 ClickFix 多階段感染鏈投遞，利用合法微軟端點安全工具（MpExtMs.exe）進行 DLL 側載以混入正常流程，所有惡意酬載均在記憶體中執行、不寫入磁碟，並內建 Kill Switch 可即時自毀清除痕跡。KongTuke 隨後將受陷企業存取權出售給 Qilin、Interlock、Rhysida、Akira 等多個勒索軟體組織，已知受害者橫跨多個高價值產業垂直，顯示供應鏈型勒索攻擊鏈正進一步模組化與產業化。",
+     "source": "BleepingComputer",
+     "tags": [
+      "KONGTUKE",
+      "MISTIC",
+      "IAB",
+      "RANSOMWARE"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "CISA 緊急指令：Check Point VPN CVE-2026-50751（CVSS 9.3）零時差遭 Qilin 勒索軟體積極利用，聯邦機構限 72 小時修補",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-check-point-flaw-exploited-by-ransomware-gangs/",
+     "summary": "CISA 依 BOD 22-01 發布緊急指令，要求所有聯邦民政機構在 72 小時內修補 Check Point Remote Access VPN 及 Mobile Access 的認證繞過零時差漏洞 CVE-2026-50751（CVSS 9.3）。該漏洞源自棄用 IKEv1 金鑰交換協議的邏輯缺陷，允許未經授權的遠端攻擊者建立合法 VPN 隧道並進入企業內網，最早利用活動可追溯至 2026 年 5 月 7 日，已有數十個組織遭到入侵，Check Point 以中度信心將其歸因於 Qilin 勒索軟體附屬組織。私部門組織尤其是依賴 Check Point 作為邊界防禦的金融與政府承包商，應立即評估 IKEv1 配置並優先部署官方熱修補程式。",
+     "source": "BleepingComputer / CISA",
+     "tags": [
+      "CHECK POINT",
+      "CVE-2026-50751",
+      "CVSS 9.3",
+      "VPN ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Linux 核心 CVE-2026-46331「pedit COW」本地提權漏洞：公開 PoC 一日內即讓無特權用戶取得 root，v5.18–v7.1-rc6 全線受影響",
+     "url": "https://cybersecuritynews.com/linux-pedit-cow-exploit/",
+     "summary": "CybersecurityNews 報導，Linux 核心流量控制子系統 act_pedit 存在界外寫入漏洞 CVE-2026-46331，綽號「pedit COW」，其根本原因是 tcf_pedit_act() 函式在計算寫入範圍時遺漏了執行期偏移量，導致 COW（Copy-on-Write）操作誤污染共享頁快取，攻擊者得以覆寫 /bin/su 的快取映像並直接取得 root shell。作者驗證的武器化 PoC 在 CVE 分配後 24 小時內公開，受影響範圍涵蓋 v5.18 至 v7.1-rc6 所有版本，RHEL 8/9/10、AlmaLinux 及 Debian 13 已發布修補核心版本。尚未修補的系統應緊急限制 act_pedit 模組載入，並封鎖非特權用戶命名空間，以降低提權風險。",
+     "source": "Cybersecurity News",
+     "tags": [
+      "LINUX KERNEL",
+      "CVE-2026-46331",
+      "PEDIT COW",
+      "LPE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "eSecurity Planet 週度要覽：AI 輔助漏洞利用鏈壓縮攻擊週期至數小時，供應鏈風險成本週最大威脅向量",
+     "url": "https://www.esecurityplanet.com/weekly-roundup/zero-days-ai-exploits-and-supply-chain-risks-define-this-week-in-cybersecurity-in-june-2026/",
+     "summary": "eSecurity Planet 本週資安回顧指出，零時差漏洞、AI 加速漏洞利用與供應鏈攻擊三大趨勢在過去一週同步升溫，形成高度複合的威脅態勢。AI 輔助漏洞發現工具的廣泛使用使攻擊者得以在 CVE 公開後數小時內完成武器化（較 2024 年加速超過 80%），而軟體供應鏈攻擊則因開源套件信任機制的結構性缺陷而持續擴張。報告特別指出，本週多起重大漏洞的公開利用時間窗口已縮短至「漏洞揭露後 24 小時內」，傳統基於週期性掃描與月度補丁的防禦節奏已嚴重落後攻擊速度，企業安全團隊正面臨以有限資源對抗機器速度攻擊者的根本性困境。",
+     "source": "eSecurity Planet",
+     "tags": [
+      "AI EXPLOIT",
+      "SUPPLY CHAIN",
+      "ZERO-DAY",
+      "WEEKLY ROUNDUP"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "解放軍最先進航母福建號穿越台灣海峽：遼寧號返港後即由福建號接棒，北京正建立台海-南海-西太平洋「航母輪換巡邏圈」",
+     "url": "https://www.stripes.com/theaters/asia_pacific/2026-06-24/fujian-taiwan-china-valiant-shield-22063199.html",
+     "summary": "Stars and Stripes 報導，中國第三艘航母福建號（18）於 6 月 23-24 日南向穿越台灣海峽，台灣國防部發布空中偵照並表示正以聯合情監偵機制持續追蹤。福建號是中國首艘裝備電磁彈射系統（EMALS）的航母，戰鬥力遠超使用滑躍式起飛甲板的遼寧號與山東號，其穿越台灣海峽正值 40 天南海部署的遼寧號甫返青島，分析師認為北京正刻意建立遼寧號-福建號-山東號的「三艦輪換台海存在機制」，旨在將軍事施壓常態化並消耗台灣及美軍的情監偵資源，中國距真正的「三航母戰鬥群同步作戰能力」仍有差距，但象徵性施壓效果已顯著提升。",
+     "source": "Stars and Stripes",
+     "tags": [
+      "FUJIAN",
+      "PLAN CARRIER",
+      "TAIWAN STRAIT TRANSIT",
+      "CATAPULT"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "AEI 台海更新（6/26）：台灣最新民調顯示逾六成民眾優先強化國防合作而非改善兩岸關係，不對稱戰力建設獲多數支持",
+     "url": "https://www.aei.org/articles/china-taiwan-update-june-26-2026/",
+     "summary": "美國企業研究院（AEI）6 月 26 日台海情勢更新引述 6 月 16 日公布的台灣民意調查：多數台灣受訪者表示優先項目是強化台灣國防能力及深化美台軍事合作，而非改善兩岸關係。此一民意走向在近年的解放軍軍事施壓背景下持續強化，呼應布魯金斯學會早先提出的「台灣自主防衛能力強化優於增加美軍前沿部署」論述。AEI 分析師同時指出，北京近期推動的 KMT 訪問和「融合十點計劃」顯示中方正轉向以經濟利誘與政治分化策略取代純粹的軍事威懾，但此策略在民意向背不利的情況下收效有限。",
+     "source": "AEI",
+     "tags": [
+      "TAIWAN PUBLIC OPINION",
+      "DEFENSE PRIORITY",
+      "US-TAIWAN",
+      "CROSS-STRAIT"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "外交家雜誌深析：中國真的進入「三航母時代」了嗎？福建號全戰備能力評估與解放軍海軍遠海作戰能力差距檢視",
+     "url": "https://thediplomat.com/2026/06/has-china-really-entered-the-three-carrier-era/",
+     "summary": "The Diplomat 深度分析評估中國是否真正進入「三航母時代」：福建號雖裝備先進電磁彈射系統且預計 2026 年達成完全戰備，但其艦載機飛行員培訓完整週期、艦隊防空協同指管能力及持續遠海作戰的後勤補給體系，距美軍核動力航母戰鬥群的整體作戰效能仍有相當差距。然而報告強調，三艘航母的輪換部署能力已讓解放軍海軍在台灣海峽、南海、西太平洋實現「戰略存在常態化」的政治目標，即便真實作戰能力尚有限制，其在衝突升級管理與灰色地帶施壓中的嚇阻價值已不容低估。",
+     "source": "The Diplomat",
+     "tags": [
+      "PLAN",
+      "FUJIAN",
+      "THREE-CARRIER",
+      "CATAPULT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "伊朗戰爭第 120 天（6/27）：伊朗再度宣布封閉荷姆茲、CENTCOM 空襲伊朗飛彈庫，60 天停火協議瀕臨瓦解",
+     "url": "https://www.globalsecurity.org/military/ops/iran-war-oprep.htm",
+     "summary": "GlobalSecurity 每日戰報指出，6 月 27 日是美伊衝突開打以來最具危機感的 24 小時之一：伊朗針對貨輪 Ever Lovely 發動的無人機攻擊觸發美軍反制，CENTCOM 對伊朗飛彈與無人機儲存設施及沿岸雷達站發動空襲，同日德黑蘭再度宣布荷姆茲海峽關閉，國際海事組織暫停船員撤離計劃，瑞士斡旋的技術談判陷入停滯。此事態使 6 月 17 日簽署的 60 天停火備忘錄遭受建立以來最嚴峻的壓力測試，全球貿易與能源市場面臨新一輪的「封鎖溢價」衝擊，各主要航運保險人已開始重新評估荷姆茲通道的可保性。",
+     "source": "GlobalSecurity",
+     "tags": [
+      "IRAN WAR",
+      "HORMUZ",
+      "CENTCOM STRIKE",
+      "CEASEFIRE CRISIS"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "俄羅斯-東協能源合作聯合聲明：LNG、氫能、核電全面深化合作，制裁繞道路徑從中亞延伸至東南亞",
+     "url": "https://responsiblestatecraft.org/asean-russia/",
+     "summary": "Responsible Statecraft 分析，俄羅斯與東協通過聯合能源合作聲明，承諾在 LNG、天然氣、可再生能源、氫能及核電等領域深化協作，此舉是莫斯科「亞洲轉軸」戰略在西方制裁壓力下的最新進展。分析師指出，此合作架構實質上為俄羅斯提供了規避西方能源制裁的東南亞出口通道，尤其是越南、泰國、印尼等無意跟隨 G7 制裁立場的東協成員國。此發展亦顯示美國的印太盟友體系出現明顯裂縫：G7 伊維昂聲明要求加強制裁執行，但多個主要東協國家正走向相反方向，削弱了西方對俄制裁的整體效果。",
+     "source": "Responsible Statecraft",
+     "tags": [
+      "RUSSIA",
+      "ASEAN",
+      "ENERGY COOPERATION",
+      "LNG"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "Hegseth 香格里拉對話「夥伴非保護國」戰略框架：亞太盟友防衛支出壓力升高，多邊安全架構加速重組",
+     "url": "https://behorizon.org/asia-on-the-horizon/",
+     "summary": "Asia on the Horizon 分析美國國防部長 Hegseth 在香格里拉對話中提出的「夥伴，非保護國（partners, not protectorates）」戰略框架：美國維持在亞太的前沿存在，但明確要求盟友增加國防支出、建立獨立作戰能力，並從依賴美國安全保證走向戰略自主。此框架對日本、韓國、澳洲、菲律賓等核心盟友產生直接壓力，各方已開始調整採購優先順序與國防投入計劃。分析指出，此框架在短期可能削弱美國延伸嚇阻的可信度，中長期若盟友能力真正提升則有助建立更分散式的嚇阻架構；然而如何在「要求盟友分擔」與「維持可信承諾」之間取得平衡，是 Hegseth 框架面臨的核心戰略矛盾。",
+     "source": "Asia on the Horizon",
+     "tags": [
+      "HEGSETH",
+      "INDO-PACIFIC",
+      "PARTNERS NOT PROTECTORATES",
+      "BURDEN SHARING"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "2026 荷姆茲危機：伊朗再度封閉海峽觸發「封鎖溢價」回歸，布蘭特原油重探三位數關口，亞洲能源安全再承壓",
+     "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+     "summary": "維基百科荷姆茲危機條目記錄，荷姆茲海峽自 2026 年危機爆發以來已成全球能源供應最大的結構性不確定因素：伊朗此次重新封閉宣告使布蘭特原油期貨迅速反彈，市場對「60 天停火框架」崩潰的擔憂觸發「封鎖溢價」再度計入油價。台灣、韓國、日本等高度仰賴中東能源進口的亞洲經濟體首當其衝，各國能源主管機關緊急啟動戰略石油儲備評估機制。荷姆茲危機同時驅動各國加速多元化能源來源佈局，包括加強澳洲 LNG 採購、推進核電擴建計劃，以及與美洲頁岩油氣供應商重新議約。",
+     "source": "Wikipedia / Hormuz Crisis",
+     "tags": [
+      "HORMUZ",
+      "OIL PRICE",
+      "ENERGY SECURITY",
+      "SHIPPING"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "央行超級週五大決策盤點：Fed 維持高利率、ECB 升息 25 基點、BoJ 政策信號分歧，全球貨幣政策碎片化加劇",
+     "url": "https://statisticsoftheworld.com/blog/central-bank-super-week-june-2026-fed-ecb-boj-boe",
+     "summary": "Statistics of the World 整理央行超級週五大決策：美聯準（Fed）全票維持 3.50–3.75% 目標區間，但點陣圖轉鷹，Warsh 措辭強調「以物價穩定為優先」；歐洲央行（ECB）升息 25 基點至 2.25%，為 2023 年以來首度升息；英倫銀行（BoE）維持 3.75%；日本銀行（BoJ）在日圓貶壓升溫下偏鷹表態引發市場波動；加拿大央行（BoC）則暗示進一步降息空間收窄。五大央行政策方向高度分歧，標誌著後新冠時代「同步政策周期」的終結，全球資本流動在不同利率吸引力下加速重分配，外匯與固定收益市場波動率均顯著提升。",
+     "source": "Statistics of the World",
+     "tags": [
+      "FED",
+      "ECB",
+      "BOJ",
+      "BOE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "J.P. Morgan 2026 年中市場展望：S&P 500 逼近 7,420 歷史新高，能源與原材料年初至今雙雙領漲，地緣風險成下半年最大尾端風險",
+     "url": "https://www.jpmorgan.com/insights/global-research/outlook/market-outlook",
+     "summary": "J.P. Morgan 全球研究 2026 年中展望更新指出，S&P 500 於 6 月 17 日盤中觸及 7,420 點歷史高位，能源與原材料板塊受荷姆茲危機推動年初至今雙雙領漲，科技及 AI 相關股票則在高利率環境下表現相對審慎。展望 2026 下半年，J.P. Morgan 分析師將地緣政治風險（尤其是荷姆茲再度封閉與美伊關係惡化）列為最大的「尾端風險」情境，並指出若能源價格再度飆升至 4 月高峰（WTI $113），將顯著壓縮企業獲利並推遲聯準會任何降息的可能性，投資組合應考慮增加能源類股的地緣政治對沖配置。",
+     "source": "J.P. Morgan Global Research",
+     "tags": [
+      "S&P 500",
+      "JPMORGAN",
+      "MARKET OUTLOOK",
+      "ENERGY MATERIALS"
+     ]
+    }
+   ]
+  }
+ ]
+}

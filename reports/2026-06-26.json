@@ -1,0 +1,176 @@
+{
+ "date": "2026-06-26",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "macOS.Gaslight：北韓系 Rust 後門植入提示注入酬載，史上首見以 AI 分析工具本身作為攻擊目標",
+     "url": "https://thehackernews.com/2026/06/new-gaslight-macos-malware-uses-prompt.html",
+     "summary": "SentinelOne 研究人員揭露全新 macOS 惡意程式 Gaslight，以 Rust 語言撰寫，並高度確信與北韓國家級威脅行為者相關。此惡意程式最大特色在於內嵌一段 38 條偽造「系統失敗」訊息的 Markdown 提示注入酬載，設計目的是欺騙資安分析師使用的 AI 輔助鑑識工具，使其中止或拒絕分析樣本，從而有效迴避 AI 輔助威脅情報流程。Gaslight 透過 Telegram bot API 作為命令與控制（C2）通道，可執行互動式 shell、竊取 macOS Keychain、瀏覽器資料及系統指紋，並將成果壓縮後透過 Telegram 上傳。此案標誌著 DPRK 網路武器庫開始針對防禦側 AI 工具本身發動對抗性攻擊，迄今最為複雜的 macOS 諜報植入程式之一。",
+     "source": "The Hacker News / SentinelOne",
+     "tags": [
+      "DPRK",
+      "MACOS",
+      "PROMPT INJECTION",
+      "AI EVASION"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "F5 緊急修補 NGINX 兩大關鍵 RCE 漏洞：CVE-2026-42530 與 CVE-2026-42055 波及全球 38% 網站伺服器，需立即更新",
+     "url": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
+     "summary": "F5 於 6 月 17–18 日發布緊急帶外安全更新，修補 NGINX 中兩個關鍵漏洞。CVE-2026-42530 為 HTTP/3 QUIC 模組中的 use-after-free 漏洞（CVSS 待評分），遠端未授權攻擊者可重複觸發 worker 崩潰，並在 ASLR 停用或可被繞過的系統上執行任意程式碼。CVE-2026-42055 則為 ngx_http_proxy_v2_module 及 ngx_http_grpc_module 的堆積緩衝區溢位漏洞，特定配置下同樣允許遠端代碼執行。由於 NGINX 支撐全球約 38% 的活躍網站，上次同等級漏洞揭露後僅三天即出現積極利用，各組織應立即套用修補並審查 HTTP/3 及 gRPC 反向代理配置。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-42530",
+      "CVE-2026-42055",
+      "NGINX",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Armis 2026 網路戰報告：國家級攻擊已達機器速度，89% 資安主管示警 AI 武器化浪潮重塑全球威脅態勢",
+     "url": "https://www.armis.com/blog/nation-state-attacks-hit-machine-speed-key-takeaways-of-the-2026-armis-cyberwarfare-report-and-what-it-means-for-security-teams/",
+     "summary": "Armis 發布的《2026 網路戰報告》顯示，國家級威脅行為者已成功將 AI 整合至攻擊鏈的每一環節，攻擊速度達到人類防禦者無法及時響應的「機器速度」。調查顯示 89% 的資安領導者表達對 AI 助長的國家級攻擊的高度警戒，尤其集中在關鍵基礎設施、電信及國防供應鏈領域。報告記錄的攻擊模式涵蓋自動化漏洞掃描至開發、自適應 C2 規避，以及協調式多平台同步攻擊，顯示 2026 年已成為網路武器 AI 化的分水嶺年份，傳統基於簽章與人工研判的防禦架構正面臨根本性挑戰。",
+     "source": "Armis Security",
+     "tags": [
+      "NATION STATE",
+      "AI-ASSISTED ATTACK",
+      "CYBERWAR 2026"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "CISA 2026 年 6 月第二週漏洞彙整：多個工控與網路設備 CVE 新增已知利用清單，要求政府機構 72 小時內修補",
+     "url": "https://www.cisa.gov/news-events/bulletins/sb26-166",
+     "summary": "CISA 發布 6 月 8 日當週的漏洞彙整公告（SB26-166），新增多個工業控制系統（ICS）及網路邊界設備的已確認在野利用漏洞至「已知利用漏洞目錄（KEV）」，並依照 BOD 22-01 聯邦強制令要求所有聯邦機構在 72 小時內完成修補。本週公告涵蓋 Cisco SD-WAN、多個 OT 協議閘道及 VPN 設備的高危漏洞，其中 Cisco Catalyst SD-WAN CVE-2026-20245（CVSS 7.8）已為 2026 年遭積極利用的第 7 個 Cisco SD-WAN 漏洞，顯示攻擊者對 WAN 邊緣設備的持續性針對態勢。私部門組織亦應比照辦理，優先修補與 KEV 重疊的暴露面。",
+     "source": "CISA",
+     "tags": [
+      "CISA",
+      "KEV",
+      "ICS",
+      "NETWORK DEVICES"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "AEI 台海更新：北京以對台武器銷售作為外交槓桿拖延 Hegseth 訪問，同步以雙邊美中海上安全磋商替代多邊場合",
+     "url": "https://www.aei.org/articles/china-taiwan-update-june-5-2026/",
+     "summary": "AEI 6 月 5 日台海情勢更新指出，北京以美國對台武器銷售案為由，持續拖延美國國防部長 Hegseth 的訪中行程，將軍售議題作為雙邊外交槓桿。同時，中方在 5 月 28–29 日安排與美方舉行海事與空域安全雙邊磋商，以此替代防長層級的香格里拉多邊對話出席，藉由主導對話形式與議程設定來強化太平洋地區戰略主導地位。分析師認為，此策略顯示北京正試圖在維持高層軍事溝通的同時，以個別交易性談判架構取代多邊透明機制，降低盟友可見度並分割美國及其夥伴的協調能力。",
+     "source": "AEI",
+     "tags": [
+      "US-CHINA",
+      "ARMS SALES",
+      "HEGSETH",
+      "LEVERAGE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美聯合日本、澳洲等盟友敦促北京停止對台軍事施壓，多邊外交嚇阻訊號持續強化但成效受質疑",
+     "url": "https://www.japantimes.co.jp/news/2026/01/02/asia-pacific/politics/us-china-military-exercises-taiwan/",
+     "summary": "美國政府持續聯合日本、澳洲、加拿大等印太盟友，發出聯合外交聲明敦促北京停止對台灣的軍事施壓行動，反對解放軍艦機在台灣周邊海空域進行的高頻次巡邏與演習，尤其是頻繁進入台灣防空識別區（ADIZ）的行為。儘管多邊嚇阻訊號的規模與頻率均有所提升，分析師普遍指出北京對此類外部壓力的容忍閾值正在抬高，現有發聲機制缺乏具體行動後果作為支撐，對解放軍戰術層面的實際行為影響有限，如何將外交意志轉化為可信的嚇阻力仍是聯盟面臨的核心挑戰。",
+     "source": "The Japan Times",
+     "tags": [
+      "PLA",
+      "MILITARY PRESSURE",
+      "MULTILATERAL RESPONSE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "荷姆茲外交迷局：60 天停火時限持續浮動，美伊停戰協議執行機制模糊，全球能源供應鏈脆弱性尚未消除",
+     "url": "https://www.malaymail.com/amp/news/what-you-think/2026/06/22/unclear-diplomacy-and-a-movable-60-day-timeline-a-dangerous-path-through-the-strait-of-hormuz-phar-kim-beng/224768",
+     "summary": "馬來郵報（Malay Mail）資深分析文章剖析荷姆茲海峽停火談判困局：美伊之間圍繞「60 天停火時限」的外交磋商持續拉鋸，但協議執行機制、監督機制與違約認定標準均陷入模糊，使市場難以對停火可持續性作出明確定價。伊朗方面以停戰協議條款遭違反為由，保留重新關閉海峽的外交選項，使每一次油輪通行仍處於地緣政治不確定性之下。分析師警告，在具有約束力的多邊執行架構建立之前，荷姆茲海峽的開放狀態仍屬脆性穩定，任何外交失誤均可能引發新一輪能源衝擊。",
+     "source": "Malay Mail",
+     "tags": [
+      "HORMUZ",
+      "CEASEFIRE",
+      "IRAN",
+      "ENERGY CORRIDOR"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CSIS 伊朗戰爭最新分析：美伊軍事衝突對中東能源走廊的結構性衝擊持續擴散，地區安全格局加速重組",
+     "url": "https://www.csis.org/programs/latest-analysis-war-iran",
+     "summary": "美國戰略與國際研究中心（CSIS）持續追蹤伊朗戰爭態勢，最新分析評估美伊軍事衝突對中東能源走廊產生的結構性長期衝擊正持續向外擴散：波斯灣航運保險費率維持高位、海灣合作委員會（GCC）成員國加速尋求美國駐軍保證，以色列與阿拉伯國家的非正式安全合作因共同伊朗威脅認知進一步深化。報告指出，雖然荷姆茲局部停火緩和了最緊迫的能源恐慌，但伊朗核計劃的不確定性、胡塞武裝的紅海行動以及黎凡特地區代理人衝突仍構成複合性風險，中東地區安全格局將在未來 12–18 個月內持續面臨深度重組壓力。",
+     "source": "CSIS",
+     "tags": [
+      "IRAN WAR",
+      "MIDDLE EAST",
+      "CSIS ANALYSIS"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "The Diplomat 2026 地緣政治趨勢展望：多極角力格局加速成形，美中競爭向印太全域延伸，中等強國戰略空間收窄",
+     "url": "https://thediplomat.com/2025/12/outlook-geopolitical-trends-and-global-diplomacy-in-2026/",
+     "summary": "《外交家》雜誌（The Diplomat）2026 全球地緣政治展望評估顯示，2026 年已進入多極競爭格局全面顯現的關鍵節點：中美在印太地區的競爭已從軍事、科技擴展至規則制定、標準設立及多邊機構話語權的全面爭奪。東南亞、南亞等中等強國面臨日益收窄的戰略自主空間，在大國競爭加劇的壓力下被迫加快選邊或對沖決策。印太地區同時出現平行安全架構（AUKUS、Quad、雙邊防務條約密集化）與平行經濟架構（IPEF、CPTPP 與中國主導的 RCEP）並行競爭的局面，形成複雜的制度碎片化態勢。",
+     "source": "The Diplomat",
+     "tags": [
+      "ASIA PACIFIC",
+      "MULTIPOLARITY",
+      "2026 OUTLOOK"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "6 月 24 日美股盤後：道瓊收 51,848 點創近期高位，S&P 500 收 7,358、那指 25,476，科技股撐盤抵消聯準會不確定性",
+     "url": "https://www.cnbc.com/2026/06/23/stock-market-today-live-updates.html",
+     "summary": "美國主要股指 6 月 24 日呈現分化走勢：道瓊工業平均指數上漲 182 點（+0.35%）收報 51,848.90，顯示藍籌工業股相對抗壓；而對利率更敏感的那斯達克綜合指數小跌 0.43% 至 25,476.64，S&P 500 下滑 0.10% 至 7,358.22，反映市場在消化聯準會維持鷹派立場後的謹慎情緒。分析師指出，AI 與大型科技類股持續獲資金青睞並提供結構性支撐，但利率敏感的成長股在更高更久（higher-for-longer）利率環境下估值壓力持續。整體市場正在 Fed 政策路徑不確定性與強勁企業盈利之間尋求動態平衡。",
+     "source": "CNBC",
+     "tags": [
+      "US EQUITIES",
+      "S&P 500",
+      "NASDAQ",
+      "DOW"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油跌至 73.74 美元（-4.33%）創今年次低，荷姆茲停火紅利逐步消化，亞洲能源進口國通膨壓力趨緩",
+     "url": "https://tradersagency.com/blog/ecb-rate-decision-june-2026-hike-iran-energy/",
+     "summary": "國際基準布蘭特原油近月期貨下跌 4.33% 至每桶 73.74 美元，觸及美國與以色列 2 月底首次對伊朗發動空襲以來的最低水準，反映市場正逐步消化荷姆茲停火的正面訊號。WTI 從年初 57 美元飆至 4 月高峰 113 美元後持續回落至 76 美元附近，油價企穩有助緩解歐元區通膨（目前年增仍達 10.9% 能源分項）及亞洲能源進口國的輸入性通膨壓力，為後續主要央行政策正常化提供更大空間。然而分析師警告，荷姆茲外交前景未明，油價仍處於高度政治敏感區間。",
+     "source": "Traders Agency",
+     "tags": [
+      "BRENT CRUDE",
+      "OIL PRICE",
+      "IRAN CEASEFIRE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "J.P. Morgan 全球研究展望：三大央行路徑分岐加劇，Fed 按兵 3.5–3.75%、ECB 升至 2.25%、英倫銀行維持 3.75%，全球資本流動重新定價",
+     "url": "https://www.jpmorgan.com/insights/global-research/outlook/market-outlook",
+     "summary": "J.P. Morgan 全球研究部最新市場展望分析三大主要央行政策路徑的明顯分岐：聯準會新主席 Warsh 在 6 月會議中全票維持聯邦基金利率 3.50–3.75% 目標區間，同時強調物價穩定優先，市場已將年底前再度升息概率上調；歐洲央行鷹派升息 25 基點至 2.25% 成為近三年來首次；英格蘭銀行則按兵不動維持 3.75%。三大央行立場的分化驅動美元資產相對吸引力回升，新興市場貨幣承壓，全球固定收益資產重新定價，資本從新興亞洲流向已開發市場的趨勢短期內料將延續。",
+     "source": "J.P. Morgan Global Research",
+     "tags": [
+      "CENTRAL BANKS",
+      "FED",
+      "ECB",
+      "BOE"
+     ]
+    }
+   ]
+  }
+ ]
+}

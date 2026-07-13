@@ -1,0 +1,207 @@
+{
+ "date": "2026-07-08",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Storm-2603 單次行動同時入侵兩家企業：Warlock 勒索軟體利用 SharePoint CVE-2026-45659 橫向移動 故意製造調查障礙",
+     "url": "https://gbhackers.com/warlock-ransomware-2/",
+     "summary": "微軟事件調查揭露，威脅行為者 Storm-2603 在一次入侵行動中同時潛伏並感染兩個相互獨立的企業網路，手法為利用 SharePoint CVE-2026-45659 反序列化漏洞取得初始立足點後，刻意採用複數持久化後門並混淆事件記錄，使入侵者的橫向移動行為難以在事件調查期間被完整還原。Storm-2603 部署的 Warlock 勒索軟體具備主動偵測沙箱環境並延遲執行的規避能力，同時在加密前優先竊取敏感資料以作為雙重勒索籌碼。企業應立即隔離尚未修補的 SharePoint 伺服器，並對 SharePoint 服務帳號的橫向移動痕跡進行全面取證審查。",
+     "source": "GBHackers",
+     "tags": [
+      "STORM-2603",
+      "WARLOCK RANSOMWARE",
+      "CVE-2026-45659",
+      "SHAREPOINT"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "ShinyHunters 攻陷全球最大學習平台 Canvas：2.75 億師生資料外洩 3.65 TB 全球 8800 所院校私訊學籍紀錄遭竊",
+     "url": "https://www.cnn.com/2026/05/07/us/canvas-hack-strands-college-students-finals-week",
+     "summary": "4 月 25 日，駭客組織 ShinyHunters 入侵學習管理平台 Instructure Canvas，竊取包含全球 8,800 所院校逾 2.75 億師生私訊、學業紀錄及個人資料的 3.65 TB 資料。事發恰逢北美高等院校期末考試期間，嚴重癱瘓線上課程運作數日，引發大規模社會輿論風波。Instructure 事後據報支付約一千萬美元贖金換取資料刪除承諾，但資料是否真正銷毀、是否已流入暗網市場仍存在高度不確定性。此事件再次暴露高等教育機構大量集中儲存敏感師生資料的第三方平台供應鏈風險，應急通報機制與備援架構的缺失使危機衝擊加倍放大。",
+     "source": "CNN",
+     "tags": [
+      "SHINYHUNTERS",
+      "INSTRUCTURE",
+      "CANVAS LMS",
+      "275M USERS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "疑似伊朗駭客滲透美國多州加油站 ATG 燃油監控系統：零密碼保護的 ICS 設備成關鍵基礎設施最脆弱入口",
+     "url": "https://www.cnn.com/2026/05/15/politics/iran-hackers-tank-readers-gas-stations",
+     "summary": "美國官員披露，疑似伊朗背景的威脅行為者成功入侵美國多個州加油站的自動燃油量測（ATG）系統，攻擊者藉由直接暴露於公網且未設密碼保護的工業控制介面取得存取權限，理論上可竄改燃料量顯示數值、使真實洩漏事故被忽略。美國情報機關指出，伊斯蘭革命衛隊（IRGC）早在 2021 年內部文件中即將 ATG 列為破壞性網路攻擊的潛在目標，此次事件印證了長達數年的安全警告。雖無已知實體損害報告，但此事件顯示美國關鍵民生基礎設施中仍存在大量具公開網路暴露面的老舊工業控制系統，亟需納入聯邦 ICS 安全整備優先清單。",
+     "source": "CNN Politics",
+     "tags": [
+      "IRAN",
+      "ATG",
+      "AUTOMATIC TANK GAUGE",
+      "US GAS STATIONS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "2026 年網路戰新態勢：新世代 Botnet 使 IoC 偵測失效 AI 自主勒索軟體 JADEPUFFER 完成首起無人介入完整攻擊鏈",
+     "url": "https://thecyberexpress.com/cyber-warfare-2026-nation-state-attacks/",
+     "summary": "2026 年的國家級網路威脅已出現兩大結構性轉變：其一，新一代多層代理 Botnet 架構已將攻擊流量徹底融入合法網路行為中，使傳統基於入侵指標（IoC）的偵測機制幾乎完全失效；其二，Sysdig 研究人員記錄到威脅行為者 JADEPUFFER 首次實現 LLM 代理完整自主執行漏洞利用、憑證竊取、橫向移動至資料庫加密清除的全攻擊鏈，全程無人工介入。上述趨勢意味著防禦者必須放棄依賴已知特徵的回應邏輯，轉向以行為異常偵測和自動化響應為核心的下一代安全架構，並將 AI 自主攻擊代理納入威脅建模的標準情境。",
+     "source": "The Cyber Express",
+     "tags": [
+      "BOTNET 2026",
+      "MULTI-TIER PROXY",
+      "IOC EVASION",
+      "NATION-STATE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "CISA KEV 7 月持續更新：Tenda 路由器身份驗證繞過與 Linux KVM Hypervisor 使用後釋放漏洞新列入 已知遭利用目錄",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "summary": "CISA 本週持續更新已知遭利用漏洞（KEV）目錄，新增兩個高風險條目：CVE-2026-11405 為中國製 Tenda 網路設備密碼驗證繞過漏洞，攻擊者無需認證即可取得完整管理控制權限；CVE-2026-53359（代號 Januscape）為 Linux 核心 KVM hypervisor 組件的使用後釋放（use-after-free）漏洞，公開概念驗證攻擊碼已可造成主機核心崩潰，研究人員另聲稱掌握可執行完整主機程式碼的分離版本利用鏈。兩個漏洞均已確認有野外利用證據，聯邦機構須按 CISA 指令時限完成修補，企業和雲端服務提供商應優先評估 KVM 虛擬化環境的受衝擊範圍。",
+     "source": "CISA",
+     "tags": [
+      "CISA KEV",
+      "CVE-2026-11405",
+      "TENDA",
+      "AUTHENTICATION BYPASS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "CSIS 深析習近平史無前例軍事清洗：解放軍 52% 高層職位遭異動 對台灣軍事行動能力產生重大結構性影響",
+     "url": "https://www.csis.org/analysis/assessing-xis-unprecedented-purges-chinas-military-key-developments-and-potential",
+     "summary": "戰略暨國際研究中心（CSIS）最新分析指出，自 2022 年至今逾百名解放軍高階將領遭清洗或調查，波及幾乎所有兵種，約 52% 高層指揮職位發生異動——此一規模在中共建軍史上前所未見。1 月中央軍委副主席張又俠及聯合參謀部部長劉振立因「嚴重違紀違法」遭調查，顯示清洗仍在持續推進。CSIS 分析師指出，高層空缺與新任指揮官在其職位上的經驗不足，恐顯著削弱解放軍在台海封鎖或兩棲作戰中的實際協調與指揮能力，可能使北京在作戰時間表決策上產生誤判風險。此一評估為當前嚇阻辯論提供了重要的不確定性變數。",
+     "source": "CSIS",
+     "tags": [
+      "CSIS",
+      "PLA PURGE",
+      "XI JINPING",
+      "CMC PURGE"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "AEI 台海更新：賴清德指示全面強化海上封鎖韌性 擴大無人機偵察商船護衛 同步曝光解放軍思想整風訓練詳情",
+     "url": "https://www.aei.org/articles/china-taiwan-update-july-2-2026/",
+     "summary": "台灣政府完成海上封鎖桌上推演後，賴清德總統指示國安會、國防部、海巡署等機構擴大無人機海上偵察與商船護衛任務、建立商船緊急通訊機制，並全面更新能源及關鍵物資應急儲備計畫。同步揭露的解放軍意識形態訓練營詳情（4 月 8 日至 6 月 12 日）顯示，習近平親自主持開訓並強調高階將領須帶頭落實「說真話、出諫言、反腐行」的整風精神，進一步加強黨對軍隊的絕對政治控制。分析人士認為，台灣此次大規模封鎖韌性演練與北京的軍事整風同步發生，標誌著兩岸在各自備戰邏輯上的加速趨同，是近期台海局勢中最值得關注的戰略信號之一。",
+     "source": "AEI",
+     "tags": [
+      "AEI",
+      "TAIWAN UPDATE",
+      "LAI CHING-TE",
+      "MARITIME RESILIENCE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布魯金斯學會：川普-習近平 2026 年多次峰會計畫使台灣政策一貫性面臨嚴峻考驗 美台關係恐成雙邊談判交換籌碼",
+     "url": "https://www.brookings.edu/articles/the-role-of-diplomacy-in-us-management-of-cross-strait-relations/",
+     "summary": "布魯金斯學會外交政策研究員分析指出，川普政府計畫 2026 年與習近平舉行多次雙邊峰會，引發台灣政策持續性的核心疑慮：峰會個人化外交邏輯可能使川普傾向將對台軍售、過境許可或安全承諾作為換取北京讓步的談判籌碼，形成美台關係受美中峰會節奏主導的結構性脆弱性。作者主張，美方應建立獨立於峰會外交之外的制度性對台支持框架——包括定期高層軍事交流、透明軍售時程，以及明確美台防衛合作的政策邊界，確保嚇阻信號的一致性不因峰會交換而受到侵蝕。",
+     "source": "Brookings Institution",
+     "tags": [
+      "BROOKINGS",
+      "US-CHINA DIPLOMACY",
+      "TRUMP-XI SUMMIT",
+      "TAIWAN POLICY CONTINUITY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "NATO 安卡拉峰會實況：俄羅斯猛轟基輔逾 400 架無人機釀 11 死 澤倫斯基爭取愛國者防空 川普持續施壓盟國防費",
+     "url": "https://www.cnbc.com/2026/07/07/trump-nato-turkey-russia-ukraine-spending.html",
+     "summary": "NATO 安卡拉峰會召開前夕，俄羅斯以數十枚彈道飛彈與逾四百架攻擊無人機猛烈轟炸烏克蘭首都基輔，造成至少 11 人罹難、多處民用基礎設施受損；烏克蘭隨即以四百餘架無人機反擊莫斯科地區。川普抵達土耳其後在峰會上再度向北約成員國施壓，要求大幅提高國防支出佔 GDP 比例，並暗示美國不應持續為防衛支出不足的盟友承擔過多義務。烏克蘭峰會期間宣布與愛沙尼亞、荷蘭、丹麥三國簽署新一批無人機供應協議，展示多邊軍援仍在持續擴大，但澤倫斯基爭取更多愛國者防空系統的請求能否在峰會期間獲得具體承諾仍是最大懸念。",
+     "source": "CNBC",
+     "tags": [
+      "NATO",
+      "ANKARA SUMMIT",
+      "RUSSIA",
+      "UKRAINE"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "峰會前夕俄烏戰局急遽升溫：俄羅斯選擇 NATO 峰會時間視窗發動最大規模空襲 烏克蘭以史上最大無人機群反擊",
+     "url": "https://www.npr.org/2026/07/06/nx-s1-5883752/russia-ukraine-war-escalates-before-nato-summit",
+     "summary": "俄羅斯刻意選擇 NATO 安卡拉峰會召開的時間視窗發動今年以來規模最大的空中攻勢，戰略意圖被分析人士解讀為向北約盟友傳遞警示訊號——俄羅斯不懼升級且具備持續消耗西方防空儲備的能力。烏克蘭以史上最大規模無人機群反擊莫斯科地區，展示其不對稱反制能力已大幅提升。此輪升溫恰逢峰會討論是否進一步加速對烏軍援的關鍵節點，俄方的行動時機選擇顯示其試圖對峰會決策製造心理壓力，影響北約成員國就前沿部署與深度打擊能力授權問題的政治意志。",
+     "source": "NPR",
+     "tags": [
+      "RUSSIA-UKRAINE WAR",
+      "ESCALATION",
+      "KYIV",
+      "DRONE ATTACK"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美中 AI 晶片管制戰進入深水區：北京加速自主晶片設計與先進封裝路線 亞太供應鏈技術陣營化全面加速",
+     "url": "https://thediplomat.com/2025/12/outlook-geopolitical-trends-and-global-diplomacy-in-2026/",
+     "summary": "美國持續升級對中國 AI 晶片及高效能運算設備的出口管制，正迫使北京系統性轉向三條並行替代路徑：自主晶片架構設計（繞過對英偉達 GPU 的依賴）、先進封裝整合技術（以橋接封裝彌補製程代差），以及建立基於 AI 模型壓縮與推論優化的替代運算生態。外交家雜誌分析指出，此一科技脫鉤趨勢正迫使亞太地區盟友——尤其是高度嵌入中美兩套供應鏈的韓國、台灣、日本及東南亞製造中心——在選邊壓力不斷升高的情況下艱難維持戰略模糊。供應鏈技術陣營化一旦固化，將對全球半導體產業的長期投資格局與市場結構造成深遠影響。",
+     "source": "The Diplomat",
+     "tags": [
+      "US-CHINA",
+      "CHIP SANCTIONS",
+      "AI SEMICONDUCTOR",
+      "AUTONOMOUS DESIGN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "聯準會主席 Warsh 歐洲央行論壇措辭謹慎 Fed 7 月升息機率驟降 通膨 4% 遠高目標使政策兩難加深",
+     "url": "https://finance.yahoo.com/economy/policy/articles/fed-hike-interest-rates-july-060507499.html",
+     "summary": "聯準會主席 Kevin Warsh 在葡萄牙辛特拉歐洲央行年會上發表謹慎偏鴿言論，加上 6 月非農就業僅增 57,000（遠遜市場預期的 115,000），使市場對 Fed 7 月 28 至 29 日 FOMC 會議升息的押注迅速降溫。CME FedWatch 工具顯示 7 月升息機率已低於 20%，市場重新定價升息路徑延至 9 月至 10 月之間。然而，通膨依然高達 4%，為 Fed 目標的兩倍，勞動市場降溫是否構成暫停觀望的足夠理由，抑或僅為季節性雜訊，Warsh 的第二次 FOMC 決議將是重要訊號試金石，也直接決定美元與全球利率差異的中短期走向。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "FEDERAL RESERVE",
+      "WARSH",
+      "FOMC JULY",
+      "RATE HIKE ODDS"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "IQI Global 7 月全球經濟展望：市場敘事從利率轉向能源地緣政治 荷姆茲成全球最大風險節點 油價突破百元可能性仍存",
+     "url": "https://iqiglobal.com/blog/global-economic-outlook-july-2026/",
+     "summary": "IQI Global 7 月全球經濟展望指出，金融市場的核心定價邏輯正從「增長與利率差異」敘事轉向「能源安全與地緣政治風險」敘事，此一切換已在期貨定價、避險資產輪動及新興市場資本流向中有所體現。荷姆茲海峽仍是全球最關鍵能源咽喉——逾 20% 全球石油流量與近 20% LNG 貿易通過此水道——若伊朗相關外交情勢再度惡化引發通行受阻，油價可能快速重返每桶百元以上，直接延後主要央行貨幣寬鬆時程並推升跨資產類別波動率。分析師建議投資組合在此敘事切換期適度增加能源實物資產及地緣政治對沖倉位的配置比重。",
+     "source": "IQI Global",
+     "tags": [
+      "IQI GLOBAL",
+      "JULY 2026 OUTLOOK",
+      "ENERGY GEOPOLITICS",
+      "HORMUZ RISK"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Deloitte 2026 全球經濟展望：能源衝擊推升滯脹風險 各國央行陷升息誘發衰退兩難 下半年是全球景氣關鍵轉折期",
+     "url": "https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook-2026.html",
+     "summary": "德勤（Deloitte）2026 年全球經濟展望警告，地緣政治驅動的能源價格衝擊正使全球主要經濟體面臨「升息對抗通膨」與「降息防止衰退」之間的尖銳政策兩難。若霍爾木茲局勢反轉導致油價再度飆升，全球經濟滯脹（高通膨低增長）情境的概率將顯著提升，對固定收益市場的影響尤為深遠。下半年關鍵觀察指標包括：聯準會 9 至 10 月升息決策、歐洲央行能否在能源通膨壓力下暫停升息，以及中國內需復甦能否提供全球增長的正向緩衝。德勤建議企業管理層將能源成本鎖定、匯率對沖及供應鏈多元化列為 2026 年下半年的優先財務風險管理項目。",
+     "source": "Deloitte",
+     "tags": [
+      "DELOITTE",
+      "GLOBAL ECONOMIC OUTLOOK 2026",
+      "STAGFLATION RISK",
+      "OIL SHOCK"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "date": "2026-06-24",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA 更新 KEV 目錄：Cisco CVE-2026-20262 Catalyst SD-WAN Manager 漏洞遭積極利用，限期 72 小時修補",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "summary": "美國網路安全暨基礎設施安全局（CISA）將 Cisco Catalyst SD-WAN Manager 中危漏洞 CVE-2026-20262（CVSS 6.5）列入「已知遭利用漏洞目錄（KEV）」，並要求聯邦機構於 72 小時內完成修補。漏洞屬未授權資訊揭露缺陷，攻擊者可在無需身份驗證的情況下從遠端取得敏感組態資訊，進而作為後續滲透入口。研究人員發現多個針對電信業者與政府骨幹網路的 SD-WAN 設備已有入侵跡象，Cisco 已發布更新版本。",
+     "source": "CISA",
+     "tags": [
+      "CVE",
+      "ACTIVE EXPLOITATION"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "北韓 APT37 ScarCruft 部署全新 NarwhalRAT 遠端存取木馬，透過偽冒微軟帳號安全通知發動魚叉式網釣",
+     "url": "https://thehackernews.com/",
+     "summary": "北韓國家支持威脅組織 ScarCruft（亦稱 APT37 / Reaper Group）近期被研究人員發現正透過偽冒 Microsoft 帳號安全通知的魚叉式網釣電子郵件，散佈全新自訂惡意程式 NarwhalRAT。此 RAT 具備鍵盤記錄、螢幕截圖、檔案竊取及持久化後門等功能，主要針對韓國政府官員、記者與人權工作者。分析顯示，ScarCruft 持續升級其社交工程技術，以規避傳統電子郵件安全閘道的偵測，並利用合法雲端服務作為指揮與控制（C2）通道。",
+     "source": "The Hacker News",
+     "tags": [
+      "APT37",
+      "DPRK",
+      "SPEAR-PHISHING"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Check Point 6 月威脅情報：MuddyWater 利用 Langflow CORS 與 SameSite=None 缺陷竊取 API Token，鎖定 AI 開發平台",
+     "url": "https://research.checkpoint.com/2026/8th-june-threat-intelligence-report/",
+     "summary": "Check Point Research 於 6 月 8 日威脅情報週報揭露，伊朗國家支持 APT 組織 MuddyWater 正積極利用 AI 工作流程平台 Langflow 的跨來源資源共用（CORS）配置錯誤與 SameSite=None Cookie 缺陷，竊取用戶 API Token 並以此存取受害者的 LLM 後端及雲端服務憑證。此攻擊向量顯示 AI 開發工具鏈已成為 APT 的新興目標，企業部署的 AI 平台若缺乏嚴格的 SameSite 策略與 CORS 白名單管控，面臨高度橫向移動風險。",
+     "source": "Check Point Research",
+     "tags": [
+      "APT",
+      "LANGFLOW",
+      "MUDDYWATER"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Trend Micro：2026 Q1 美國公共部門遭中俄伊三路 APT 全面圍攻，能源與選舉基礎設施成首要目標",
+     "url": "https://www.trendmicro.com/en_us/research/26/d/us-public-sector-under-siege.html",
+     "summary": "趨勢科技（Trend Micro）發布《Q1 2026 美國公共部門威脅態勢報告》，詳細記錄中國（Volt Typhoon、Salt Typhoon）、俄羅斯（Sandworm、APT29）、伊朗（MuddyWater）三路威脅行為者在 2026 年第一季對美國聯邦及州政府機構、能源基礎設施與選舉相關系統的協同攻擊態勢。報告指出，針對美國能源管理系統（EMS）與工業控制系統（ICS）的探測活動較 2025 年同期增加 43%，凸顯關鍵基礎設施的攻擊面擴張速度遠超防禦能量。",
+     "source": "Trend Micro",
+     "tags": [
+      "THREAT INTEL",
+      "US PUBLIC SECTOR"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "勒索軟體新興組織「The Gentlemen」Q1 快速擴張：受害者從 35 暴增至 182，躍升全球第二活躍團夥",
+     "url": "https://industrialcyber.co/reports/ransomware-reaches-elevated-new-normal-as-attack-volumes-hold-steady-into-2026-reshape-baseline-risk-expectations/",
+     "summary": "Industrial Cyber 最新勒索軟體態勢報告指出，新興威脅組織「The Gentlemen」自 2025 年 8 月現身以來，在 2026 年第一季爆炸性成長，受害者數量從 Q4 2025 的 35 名躍升至 Q1 2026 的 182 名，成為全球第二活躍的勒索軟體集團。報告同時確認，2026 年勒索軟體攻擊總量已達「升高後的新常態」，威脅行為者正加速轉向純資料竊取勒索模式（不加密即脅迫），以降低作業成本並縮短受害到勒索的時間窗口。製造業、醫療與金融機構為主要受害產業。",
+     "source": "Industrial Cyber",
+     "tags": [
+      "RANSOMWARE",
+      "THREAT ACTOR"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "危機集團深度報告：台海「三體問題」——解放軍軍力失衡已大幅抬高美方干預成本，嚇阻可信度受質疑",
+     "url": "https://www.crisisgroup.org/cmt/asia-pacific/taiwan-strait-china-united-states/three-body-problem-taiwan-strait",
+     "summary": "國際危機集團（International Crisis Group）發布最新台海分析報告，以「三體問題」框架解析中美台三角博弈的深層動力，指出中國大規模軍事擴張已在多個關鍵作戰能力指標上逆轉對美軍事均勢，顯著抬高美國介入台海衝突的代價與風險。報告警告，在荷姆茲危機持續消耗美軍戰略預備隊的當前情況下，美國「自動捲入」承諾的可信度正受到北京的精密測試，台灣自身的防衛韌性建設已刻不容緩。",
+     "source": "International Crisis Group",
+     "tags": [
+      "MILITARY BALANCE",
+      "DETERRENCE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "AEI 台海週報：北京刻意迴避香格里拉對話，以雙邊海上安全會談維繫美中溝通並主導敘事節奏",
+     "url": "https://www.aei.org/articles/china-taiwan-update-june-5-2026/",
+     "summary": "AEI 台海更新報告指出，中國國防部長董軍缺席 2026 年香格里拉對話（5 月 29 日至 31 日），但北京在論壇前夕（5 月 28 至 29 日）主動與美國舉行雙邊海上及空中安全機制磋商，以此低調接觸管道替代多邊場合曝光。分析師認為，此一「迴避多邊、著力雙邊」的外交策略，使北京得以在不被公開施壓的情況下維持與美溝通，同時令西方陣營在香格里拉的集體敘事空間更為寬裕，而非成為對中批評的公開靶標。",
+     "source": "AEI",
+     "tags": [
+      "PRC STRATEGY",
+      "SHANGRI-LA"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "北京延後 Hegseth 訪華計劃：以台灣軍售議題作為外交槓桿，凸顯北京以軍售換取戰略讓步的慣用手法",
+     "url": "https://www.japantimes.co.jp/news/2026/01/02/asia-pacific/politics/us-china-military-exercises-taiwan/",
+     "summary": "北京以美國持續對台軍售作為理由，推遲美國防長 Pete Hegseth 的訪華計劃，進一步將台灣軍售問題制度化為美中高層軍事交流的交換條件。日本時報分析指出，此舉反映北京長期將高層訪問邀請作為外交籌碼的策略，試圖透過管控美中軍事對話節奏，迫使華府在台灣軍售上做出讓步或自我克制。美方官員則重申，對台安全合作與美中軍事溝通管道屬不同政策軌道，不接受掛鉤要求。",
+     "source": "The Japan Times",
+     "tags": [
+      "US-CHINA",
+      "ARMS SALES LEVERAGE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "Hegseth 香格里拉對話揭示「夥伴非保護國」新戰略框架：盟友擴大防衛支出，亞太多邊安全架構加速重組",
+     "url": "https://behorizon.org/asia-on-the-horizon/",
+     "summary": "美國防長 Pete Hegseth 在 2026 年香格里拉對話上正式闡述「夥伴非保護國（Partners, Not Protectorates）」戰略框架，呼籲盟友顯著提高國防預算並建構更強大的自主作戰能力，以取代對美國安全保證的過度依賴。會議場邊，日本、澳洲、加拿大、紐西蘭、印度與南韓等國家趁機擴大雙邊防務合作，加速形成超越傳統四方安全對話（Quad）與 AUKUS 的更廣泛安全聯盟圈。亞太地區防衛架構的多極化趨勢正以前所未見的速度深化。",
+     "source": "Asia on the Horizon",
+     "tags": [
+      "SHANGRI-LA",
+      "US STRATEGY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "SpecialEurasia 亞太地緣風險 2026 評估：南海、台灣海峽、朝鮮半島三條壓力線同步升溫，多線危機管理挑戰陡增",
+     "url": "https://www.specialeurasia.com/2026/01/07/asia-pacific-risk-2026/",
+     "summary": "地緣風險分析機構 SpecialEurasia 年度亞太評估報告指出，2026 年亞太地區面臨南海（菲律賓、越南與中國的海上主權衝突）、台灣海峽（持續的解放軍軍事施壓）、朝鮮半島（北韓彈道導彈試射及核武計劃進展）三條同步升溫的壓力線。報告警告，三條危機線之間的「聯動風險」日益顯著——任一方向的緊張升溫都可能分散美國及其盟友在其他方向的威懾注意力，為機會主義行動者創造窗口。",
+     "source": "SpecialEurasia",
+     "tags": [
+      "ASIA-PACIFIC",
+      "RISK ASSESSMENT"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "G7 伊維昂聲明聚焦北韓加密貨幣竊盜：七大工業國承諾聯合執法，矛頭指向平壤資助彈道計劃的網路犯罪鏈",
+     "url": "https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues",
+     "summary": "G7 伊維昂峰會聯合聲明特別點名北韓透過大規模加密貨幣竊盜行動為其彈道導彈與核武計劃籌資，承諾七大工業國將加強聯合執法行動，協調凍結北韓相關錢包資產並追蹤資金洗白路徑。分析師指出，北韓自 2022 年以來估計已竊取逾 30 億美元加密資產，其中相當比例流入武器研發預算，G7 此次聯合承諾能否轉化為實質制裁行動，仍有待觀察。",
+     "source": "G7 Évian 2026（法國總統府）",
+     "tags": [
+      "DPRK",
+      "CYBER",
+      "G7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "聯準會新主席 Kevin Warsh 6 月決策記者會：「物價穩定優先」措辭強硬，市場迅速重新定價 2026 升息路徑",
+     "url": "https://www.kiplinger.com/news/live/fed-meeting-updates-and-commentary-june-2026",
+     "summary": "聯準會新任主席 Kevin Warsh 在 6 月利率決策後記者會上，以強硬的「物價穩定承諾（commitment to price stability）」措辭回應通膨疑慮，令市場迅速重新評估年內利率路徑。Kiplinger 報導，期貨市場在記者會後已將 2026 年底再升息一次的概率定價至約 55%，與年初預期年內降息一至兩次的情景形成鮮明對比。Warsh 強調，在荷姆茲能源通膨黏性未消、就業市場依然強韌的背景下，Fed 不會預先承諾任何降息時程。",
+     "source": "Kiplinger",
+     "tags": [
+      "FED",
+      "MONETARY POLICY",
+      "WARSH"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "英格蘭銀行維持 3.75% 不動，全球主要央行趨同按兵：伊朗戰爭能源通膨讓降息窗口持續推遲",
+     "url": "https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html",
+     "summary": "英格蘭銀行貨幣政策委員會於最新會議一致決定維持基準利率 3.75% 不變，與美國聯準會同步按兵不動，令原本市場年初預期的「主要央行協同降息」情境落空。US Bank 利率追蹤分析指出，歐元區、英國、美國三大央行現均面臨相同困境：荷姆茲危機引發的能源通膨持續黏著，令降息在政治上難以為繼，但全球製造業需求下滑又令維持高利率的代價漸增，政策兩難局面可能延續至 2027 年初。",
+     "source": "U.S. Bank",
+     "tags": [
+      "BOE",
+      "CENTRAL BANKS",
+      "GLOBAL RATES"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "J.P. Morgan 2026 市場展望：能源與原材料年初至今領漲，S&P 500 逼近 7,420 歷史新高但估值拉伸風險不容忽視",
+     "url": "https://www.jpmorgan.com/insights/global-research/outlook/market-outlook",
+     "summary": "J.P. Morgan 全球研究部最新市場展望報告指出，2026 年能源與原材料類股因荷姆茲供應鏈約束而成為年初至今表現最佳的兩大板塊，帶動標普 500 指數攀升至 7,420 點附近的歷史新高。報告同時警告，當前市場普遍低估地緣政治尾部風險，高科技股本益比已計入大量「平穩著陸」假設，一旦能源通膨再加速或 Fed 意外轉鷹，成長股面臨快速估值修正的脆弱性顯著。J.P. Morgan 建議維持能源與防禦型股票超配，並降低高倍數成長股敞口。",
+     "source": "J.P. Morgan Global Research",
+     "tags": [
+      "EQUITY",
+      "ENERGY SECTOR",
+      "OUTLOOK"
+     ]
+    }
+   ]
+  }
+ ]
+}

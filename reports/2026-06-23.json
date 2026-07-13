@@ -1,0 +1,180 @@
+{
+ "date": "2026-06-23",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "ShinyHunters 利用 Oracle PeopleSoft 零時差漏洞 CVE-2026-35273（CVSS 9.8）大規模攻陷全球高等教育機構",
+     "url": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html",
+     "summary": "Mandiant 與 Google 威脅情報小組（GTIG）確認，威脅組織 UNC6240（即 ShinyHunters）於 5 月 27 日至 6 月 9 日間針對全球 Oracle PeopleSoft 應用基礎設施發動大規模零時差攻擊，漏洞編號 CVE-2026-35273（CVSS 9.8），屬遠端程式碼執行（RCE）漏洞。攻擊目標涵蓋約 300 個 PeopleSoft 實例、100 個組織，其中 68% 為高等教育機構且多位於美國境內。Oracle 已於 6 月 10 日緊急發布帶外補丁，要求所有用戶立即套用。",
+     "source": "The Hacker News",
+     "tags": [
+      "ZERO-DAY",
+      "CVE-2026-35273"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "新加坡啟動史上最大規模「網路衛士行動」：UNC3886 以零時差防火牆漏洞與 Rootkit 滲透四大電信商",
+     "url": "https://www.bleepingcomputer.com/news/security/chinese-cyberspies-breach-singapores-four-largest-telcos/",
+     "summary": "新加坡政府正式公布，中國國家支持威脅組織 UNC3886 對新加坡四大電信業者 M1、SIMBA Telecom、Singtel 及 StarHub 發動了一場「蓄意、精準且周密籌謀」的滲透行動，利用防火牆零時差漏洞取得入口後植入 rootkit 長期潛伏。新加坡網路安全局（CSA）隨即啟動代號「網路衛士行動（Operation Cyber Guardian）」的應對措施，為該國迄今規模最大的網路事件回應行動。UNC3886 自 2021 年起活躍，慣於針對 Ivanti、Juniper、VMware 等網路基礎設施產品的漏洞。",
+     "source": "BleepingComputer",
+     "tags": [
+      "APT",
+      "TELECOM ESPIONAGE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "五眼聯盟等盟國情報機構聯合點名三家中國科技企業為 Salt Typhoon 電信攻擊行動幕後主使",
+     "url": "https://therecord.media/allied-spy-agencies-blame-chinese-companies-salt-typhoon",
+     "summary": "由美、英、澳、加、紐西蘭組成的五眼聯盟（Five Eyes）及其他盟國情報機構，就 Salt Typhoon 長達數年的全球電信基礎設施滲透行動正式發出聯合歸因聲明，具體點名三家中國科技企業涉及協助或支援此攻擊行動。FBI 官員亦確認，Salt Typhoon 對美國電信業者及國會人員的滲透至 2026 年 2 月仍持續活躍。此次多邊公開歸因被視為西方情報合作在網路威脅溯源上的重要里程碑。",
+     "source": "The Record (Recorded Future)",
+     "tags": [
+      "ATTRIBUTION",
+      "SALT TYPHOON"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "中國駭客攻擊焦點轉向 Juniper Networks 路由器，UNC3886 持續擴大網路基礎設施滲透版圖",
+     "url": "https://therecord.media/china-continues-attacks-routers-juniper",
+     "summary": "The Record 最新報導指出，被歸因於 UNC3886 的中國國家支持駭客在完成對 Ivanti 與 VMware 產品的大規模攻擊後，已將目標轉向 Juniper Networks 路由器，持續深化對全球關鍵網路基礎設施的滲透能力。研究人員描述 UNC3886 為「高度紀律嚴明且極具隱匿性」的國家級威脅行為者，其慣用策略為入侵邊界設備後橫向移動至核心網路並植入自訂後門程式。此攻擊模式對企業和政府的骨幹網路防禦構成嚴峻挑戰。",
+     "source": "The Record",
+     "tags": [
+      "NETWORK INFRASTRUCTURE",
+      "APT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "Armis 2026 網路戰爭年度報告：國家級攻擊已達「機器速度」，89% 資安主管憂慮 AI 驅動國家攻擊迫在眉睫",
+     "url": "https://www.armis.com/blog/nation-state-attacks-hit-machine-speed-key-takeaways-of-the-2026-armis-cyberwarfare-report-and-what-it-means-for-security-teams/",
+     "summary": "Armis 發布《2026 年網路戰爭報告》，指出國家支持的網路攻擊已達到以 AI 輔助自動化為核心的「機器速度」，大幅壓縮防禦端的偵測與回應時間窗口。調查顯示高達 89% 的資安領導者正對即將到來的 AI 強化國家級攻擊表達強烈憂慮。報告特別指出，傳統上以情報竊取為目標的 APT 組與以勒索獲利為驅動的威脅行為者之間界線日益模糊，混合動機攻擊正成為新常態。",
+     "source": "Armis",
+     "tags": [
+      "THREAT INTELLIGENCE",
+      "CYBERWAR"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "AEI 分析：北京發布兩岸融合十點計劃，金門、馬祖基礎設施連結與直航優惠構成政治戰新手段",
+     "url": "https://www.aei.org/articles/china-taiwan-update-june-5-2026/",
+     "summary": "AEI 最新台海週報分析，中國公布的兩岸融合十點計劃包含對金門、馬祖兩離島的基礎設施連接方案，將建立通往福建省的直接交通與能源設施連結，並開放若干台灣城市直航。報告指出北京同步放寬旅遊限制並提升台灣電視節目進入管道，顯示對台戰略正從純軍事施壓轉向政治與經濟滲透並行的複合手段。分析師警告此舉將使台灣邊境離島在戰略上更趨脆弱。",
+     "source": "AEI",
+     "tags": [
+      "CROSS-STRAIT",
+      "POLITICAL WARFARE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "布魯金斯：美國應重新校準對台支持策略，強化不對稱嚇阻同時避免「自動捲入」戰爭義務",
+     "url": "https://www.brookings.edu/articles/a-strategy-for-staying-out-recalibrating-us-support-to-taiwan/",
+     "summary": "布魯金斯研究院最新分析呼籲美國政府重新校準對台支持戰略，核心主張是在強化台灣不對稱嚇阻能力的同時，避免給予可能被解讀為「自動捲入」義務的明確安全承諾，以降低意外升級風險。報告認為，在荷姆茲危機持續分散美軍戰略資源的背景下，美台防務合作應聚焦於台灣本身防禦韌性的深度建設，而非依賴美軍直接介入的保證。此分析引發美國國會及五角大廈政策討論。",
+     "source": "Brookings Institution",
+     "tags": [
+      "US-TAIWAN STRATEGY",
+      "DETERRENCE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "Defense Priorities 深度分析：美軍介入台海衝突面臨的 A2/AD 挑戰與作戰損耗預估",
+     "url": "https://www.defensepriorities.org/explainers/target-taiwan-challenges-for-a-us-intervention/",
+     "summary": "Defense Priorities 最新政策分析詳細評估美軍若介入台海衝突所面對的反介入/區域拒止（A2/AD）環境挑戰，包括解放軍精確打擊能力對美軍前沿基地的威脅，以及從關島或日本投射戰力的後勤困境。報告警告，在荷姆茲危機持續壓縮美軍戰略預備隊的現況下，美國對台灣的實際軍事援助能力已受到顯著侵蝕，應促使政策制定者更審慎評估「嚇阻失敗後」的應對選項。",
+     "source": "Defense Priorities",
+     "tags": [
+      "MILITARY ANALYSIS",
+      "A2AD"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "習近平訪平壤深化中朝「戰略合作」：北京藉紀念友好條約 65 周年重申對金正恩的戰略影響力主導地位",
+     "url": "https://www.cnn.com/2026/06/07/asia/china-xi-jinping-north-korea-kim-jong-un-intl-hnk",
+     "summary": "中國國家主席習近平與夫人彭麗媛於 6 月 8 至 9 日對北韓進行國事訪問，與金正恩舉行峰會並宣示加強「戰略合作」，此為習近平 2019 年以來首次訪問平壤，也是其 2026 年首次出訪。分析人士指出，此次訪問時機刻意選在中朝友好合作互助條約 65 週年，顯示北京積極重建對金正恩的戰略主導地位，以抗衡金正恩近兩年來深化的對俄羅斯依賴關係，並防止朝鮮半島局勢在中方利益範圍外演變。",
+     "source": "CNN",
+     "tags": [
+      "CHINA-DPRK",
+      "STRATEGIC ALIGNMENT"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "G7 伊維昂峰會聲明：深切關注北韓核武與彈道導彈計劃，承諾強化對俄制裁並擴及油氣部門",
+     "url": "https://www.elysee.fr/en/G7evian/2026/06/17/g7-leaders-statement-on-geopolitical-issues",
+     "summary": "G7 領導人於法國伊維昂峰會發表地緣政治聯合聲明，對北韓的核武及彈道導彈計劃表達深切關切，重申致力於完全、可驗證且不可逆的北韓去核化（CVID）目標。在俄烏議題上，G7 承諾加大對俄羅斯戰爭經濟的制裁壓力，新增制裁範圍將涵蓋油氣部門，以進一步削減俄羅斯的戰爭財源。聲明亦呼籲中國對北韓施壓，並就荷姆茲海峽危機對全球能源安全的衝擊表達一致立場。",
+     "source": "G7 Évian 2026（法國總統府）",
+     "tags": [
+      "G7 SUMMIT",
+      "MULTILATERAL"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "WEF：「封鎖外交」成為 2026 年地緣政治新常態，霍姆茲危機正在重塑全球多邊談判格局",
+     "url": "https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/",
+     "summary": "世界經濟論壇（WEF）最新地緣政治分析指出，荷姆茲海峽封閉正在催生一種新型「封鎖外交」模式，各方強權越來越頻繁地以關鍵海上通道的管控或威脅作為外交談判籌碼。分析顯示，此趨勢正從荷姆茲蔓延至麻六甲海峽、台灣海峽等其他戰略水道的地緣政治算計之中。亞太地區多個中小型國家正在評估分散供應鏈路徑與建立戰略能源儲備的緊迫性，以因應封鎖外交常態化的新風險環境。",
+     "source": "World Economic Forum",
+     "tags": [
+      "GEOPOLITICS",
+      "BLOCKADE DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "WTI 原油從 4 月高峰 $113 回落至 $76，但歐元區能源價格年增仍達 10.9%——通膨壓力未退",
+     "url": "https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html",
+     "summary": "儘管西德州輕原油（WTI）期貨價格已從 4 月高峰每桶 $113 大幅回落至約 $76，跌幅逾 30%，但歐元區能源物價年增率仍維持在 10.9%，顯示荷姆茲危機的能源通膨衝擊遠比原油現貨表面數字更具黏性。CNBC 分析指出，油價回落部分源自需求端預期萎縮，而非供給面改善，一旦全球製造業活動回升，價格可能迅速反彈。台灣、日本、南韓等能源進口國仍面臨持續的輸入型通膨壓力。",
+     "source": "CNBC",
+     "tags": [
+      "OIL MARKETS",
+      "HORMUZ"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "ING Think：能源市場三情境分析——荷姆茲走向決定 Fed 升息路徑與亞太匯率波動烈度",
+     "url": "https://think.ing.com/articles/three-scenarios-for-energy-central-banks-rates-and-fx-markets/",
+     "summary": "ING 研究院提出三種能源市場情境框架：（一）荷姆茲在 Q3 重開，油價回落至 $65 以下，Fed 重啟降息、日圓回穩；（二）海峽繼續封閉，通膨持續黏著，Fed 年內升息一次、日圓貶至 170 區間；（三）衝突擴大，油價重返 $100 以上，央行政策陷入「對抗通膨 vs. 支撐經濟」的兩難困局。ING 認為目前情境二的概率最高，亞太匯率市場在此背景下的波動性將明顯高於歷史均值。",
+     "source": "ING Think",
+     "tags": [
+      "SCENARIOS",
+      "MONETARY POLICY",
+      "FX"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "高盛 6 月市場脈動：標普 500 逼近 7,420 歷史新高，能源與原材料年初至今雙雙領漲但估值風險累積",
+     "url": "https://am.gs.com/en-us/advisors/insights/article/market-pulse",
+     "summary": "高盛資產管理 6 月《市場脈動》報告指出，標普 500 指數站上 7,420 點附近歷史新高，能源與原材料為年初至今表現最佳的兩大類股，直接受惠於荷姆茲海峽封閉引發的供應鏈約束。報告同時警告，市場估值已計入大量對地緣政治尾部風險的忽視，若荷姆茲情況惡化或 Fed 政策意外轉鷹，高本益比類股面臨快速估值修正的脆弱性不容輕忽，建議投資人維持對能源及防禦類股的超配。",
+     "source": "Goldman Sachs Asset Management",
+     "tags": [
+      "EQUITIES",
+      "US MARKET"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "date": "2026-07-14",
+ "focus": "川普宣布美伊停火破局，重啟荷姆茲海峽油輪封鎖並徵收 20% 通行費，全球油價與股市應聲重挫。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "勒索軟體 GodDamn 濫用微軟簽署惡意驅動程式 PoisonX 癱瘓 EDR 防護",
+     "url": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html",
+     "summary": "Broadcom Symantec 揭露新型勒索軟體 GodDamn（Beast/Monster 家族最新變種），利用取得微軟官方簽章的惡意驅動程式 PoisonX 關閉端點防護，短短數日內入侵十台主機後加密。攻擊搭配 AnyDesk、PsExec 等合法工具，以 BYOVD 手法規避偵測。",
+     "source": "The Hacker News",
+     "tags": ["GODDAMN RANSOMWARE", "POISONX", "BYOVD", "SYMANTEC"]
+    },
+    {
+     "severity": "critical",
+     "title": "15 年歷史 Linux 核心漏洞 GhostLock（CVE-2026-43499）曝光：本機提權至 Root 並可容器逃逸",
+     "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+     "summary": "Nebula Security 揭露存在於 Linux futex 程式碼長達 15 年的 use-after-free 漏洞，任何本機使用者無需特殊權限即可取得 Root 控制權，並能突破容器隔離。該漏洞已有公開 PoC，並可與瀏覽器沙箱逃逸漏洞串連形成完整攻擊鏈。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-43499", "GHOSTLOCK", "LINUX KERNEL", "ROOT ESCALATION"]
+    },
+    {
+     "severity": "critical",
+     "title": "CISA 緊急列入 4 項遭積極利用漏洞：Adobe ColdFusion 滿分路徑穿越、Langflow AI 平台認證繞過在列",
+     "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+     "summary": "CISA 將 Adobe ColdFusion（CVE-2026-48282，CVSS 10.0）路徑穿越漏洞、Langflow AI 代理平台（CVE-2026-55255，CVSS 9.9）跨租戶 IDOR 漏洞及兩項 Joomla 外掛漏洞列入已知遭利用目錄，要求聯邦機關三日內完成修補。Langflow 漏洞已遭串連用於遠端程式碼執行攻擊鏈。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-48282", "CVE-2026-55255", "CISA KEV", "COLDFUSION"]
+    },
+    {
+     "severity": "high",
+     "title": "微軟修補 Defender 提權漏洞 RoguePlanet（CVE-2026-50656）：資安引擎本身曾淪為攻擊面",
+     "url": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html",
+     "summary": "研究人員揭露 Microsoft Defender 核心掃描引擎存在競爭條件缺陷，攻擊者可藉此由一般使用者權限提升至 SYSTEM 最高權限。微軟已透過惡意軟體防護引擎更新自動修補，這是同一研究者揭露的第四個 Defender 相關漏洞。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-50656", "ROGUEPLANET", "MICROSOFT DEFENDER", "PRIVILEGE ESCALATION"]
+    },
+    {
+     "severity": "high",
+     "title": "中國背景駭客組織 UAT-7810 擴大 LapDogs 代理伺服器網路：新後門 LONGLEASH、DOGLEASH 相繼曝光",
+     "url": "https://blog.talosintelligence.com/uat-7810/",
+     "summary": "Cisco Talos 揭露中國背景 APT 組織 UAT-7810 持續利用未修補 Ruckus 無線路由器漏洞擴建作業中繼站（ORB）網路，新增 LONGLEASH、DOGLEASH、JARLEASH 等多款自製後門，供其他威脅行為者租用以攻擊高價值目標並隱匿攻擊來源。",
+     "source": "Cisco Talos",
+     "tags": ["UAT-7810", "LAPDOGS", "CHINA APT", "ORB NETWORK"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "台灣海巡署帶外國國會議員登艦視察 反制中國海警常態化侵擾金門海域",
+     "url": "https://www.usnews.com/news/world/articles/2026-07-09/taiwan-pushes-back-at-china-patrols-with-coast-guard-trip-for-foreign-lawmakers",
+     "summary": "台灣海巡署 7 月 9 日安排多國國會議員登艦視察金門海域巡防任務，展現反制中國海警「灰色地帶」侵擾的決心。中國海警船隻前一日仍對金門海域進行例行侵入，台灣持續以提高國際能見度反制北京藉海警立法宣示主權的手法。",
+     "source": "U.S. News & World Report",
+     "tags": ["TAIWAN COAST GUARD", "CHINA COAST GUARD", "KINMEN", "GRAY ZONE"]
+    },
+    {
+     "severity": "medium",
+     "title": "中國海警持續在台灣以東海域巡弋 國際社會批評「以執法之名行主權宣示之實」",
+     "url": "https://www.usnews.com/news/world/articles/2026-07-04/china-launches-coast-guard-patrol-east-of-taiwan-despite-international-pushback",
+     "summary": "中國海警船隻於本月展開新一輪台灣以東海域巡邏，儘管遭國際社會批評仍持續擴大在台灣周邊的常態化存在。分析認為此舉旨在測試台灣及友盟反應底線，並藉此建立既成事實。",
+     "source": "U.S. News & World Report",
+     "tags": ["CHINA COAST GUARD", "LAWFARE", "TAIWAN STRAIT", "GRAY ZONE"]
+    },
+    {
+     "severity": "info",
+     "title": "民調：多數對高市持正面評價的台灣民眾看好日本會出兵協防台灣",
+     "url": "https://foreignpolicy.com/2026/07/07/china-taiwan-japan-invasion-polling/",
+     "summary": "《外交政策》報導最新民調顯示，在對日本首相高市早苗持正面評價的台灣受訪者中，64% 認為若台海爆發衝突日本很可能出兵協助防衛。日本安全保障框架下已將台海封鎖情境視為「存亡危機事態」，台日安全合作範疇並持續擴大至海底電纜與資安領域。",
+     "source": "Foreign Policy",
+     "tags": ["JAPAN", "TAKAICHI", "TAIWAN DEFENSE", "POLLING"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "川普宣布伊朗停火協議「已終結」 重啟荷姆茲海峽油輪封鎖並徵收 20% 通行費",
+     "url": "https://www.cnn.com/2026/07/13/world/live-news/iran-war-trump",
+     "summary": "美國總統川普宣布今年 4 月生效的美伊停火協議正式破局，並下令重啟對伊朗籍油輪的荷姆茲海峽封鎖，對通過船貨課徵 20% 費用，美方自居「海峽守護者」角色。伊朗最高領袖哈梅內意誓言「復仇」，美伊衝突面臨停火以來最大規模升溫。",
+     "source": "CNN",
+     "tags": ["IRAN", "HORMUZ", "TRUMP", "CEASEFIRE COLLAPSE"]
+    },
+    {
+     "severity": "high",
+     "title": "南海仲裁十週年：14 國聯合聲明重申裁決具法律拘束力 北京持續否認效力",
+     "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/07/joint-statement-on-the-tenth-anniversary-of-the-philippines-china-south-china-sea-arbitral-tribunal-award",
+     "summary": "美國、日本、澳洲、英國等 14 國於南海仲裁案十週年發布聯合聲明，重申 2016 年常設仲裁法院裁決北京「九段線」歷史性權利主張於國際法上不具法律基礎。北京十年來持續拒絕承認裁決效力，南海緊張情勢未見緩解跡象。",
+     "source": "U.S. Department of State",
+     "tags": ["SOUTH CHINA SEA", "ARBITRAL RULING", "PHILIPPINES", "UNCLOS"]
+    },
+    {
+     "severity": "warning",
+     "title": "南海行為準則談判恐再度落空 菲律賓推動新規則書陷入僵局",
+     "url": "https://www.crisisgroup.org/cmt/asia-pacific/south-china-sea-philippines-china/manilas-push-new-rulebook-south-china-sea-peters-out",
+     "summary": "國際危機組織分析指出，菲律賓擔任東協輪值主席期間力推的南海行為準則談判進展有限，北京與馬尼拉在南沙及仁愛礁等爭議海域仍持續發生海上對峙，雙方逐漸轉向情報戰、騷擾等混合手段而非直接軍事衝突。",
+     "source": "International Crisis Group",
+     "tags": ["SOUTH CHINA SEA", "CODE OF CONDUCT", "ASEAN", "PHILIPPINES"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "伊朗封鎖消息衝擊華爾街：道瓊跌逾百點、那斯達克重挫 1.4%，油價應聲跳漲",
+     "url": "https://money.usnews.com/investing/news/articles/2026-07-13/s-p-500-nasdaq-futures-decline-as-us-iran-escalation-rattles-sentiment",
+     "summary": "川普宣布重啟荷姆茲海峽封鎖後，美股三大指數同步收黑，道瓊工業指數下跌 136.25 點至 52,500.76 點，那斯達克綜合指數重挫 371.75 點，科技股領跌避險情緒升溫，能源類股則因油價跳漲而走揚。",
+     "source": "US News (Reuters)",
+     "tags": ["DOW JONES", "NASDAQ", "IRAN ESCALATION", "OIL PRICE"]
+    },
+    {
+     "severity": "medium",
+     "title": "6 月 CPI 數據將於 7/14 公布 為聯準會本月利率決策前最後關鍵通膨指標",
+     "url": "https://www.fool.com/investing/2026/07/13/the-latest-inflation-data-will-drop-on-july-14-here-s-why-it-s-a-big-deal-for-the-stock-market/",
+     "summary": "美國 6 月消費者物價指數將於台灣時間 7 月 14 日晚間公布，為聯準會本月利率會議前最後一項重大通膨數據。市場目前預期聯準會維持利率不變機率達 65%，並押注 9 月及明年 1 月各再降息一碼，聯準會主席沃許同日將赴國會作證。",
+     "source": "The Motley Fool",
+     "tags": ["CPI", "FEDERAL RESERVE", "WARSH", "JUNE INFLATION"]
+    }
+   ]
+  }
+ ]
+}

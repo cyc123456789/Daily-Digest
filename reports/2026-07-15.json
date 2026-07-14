@@ -1,0 +1,138 @@
+{
+ "date": "2026-07-15",
+ "focus": "美軍持續空襲伊朗、重啟霍爾木茲海峽封鎖並徵收通行費，全球油價暴漲逾9%，美股台股同步重挫",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Citrix NetScaler 六項新漏洞公開 24 小時內即遭主動利用 CVE-2026-8451 被喻為「CitrixBleed 重演」",
+     "url": "https://thehackernews.com/2026/07/citrix-patches-six-netscaler-flaws.html",
+     "summary": "Citrix 修補 NetScaler ADC／Gateway 六項漏洞（CVE-2026-8451、8452、8655、10816、10817、13474），CVSS 最高 8.8，含 SAML IdP 記憶體越界讀取、未授權任意檔案讀取與 HTTP/2 畸形請求造成阻斷服務。CVE-2026-8451 公開後不到 24 小時即遭在野利用，受影響版本應立即升級至 14.1-72.61 或 13.1-63.18 以上；CVE-2026-13474 另需手動調整設定才能完全修復。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-8451", "CITRIX NETSCALER", "CITRIXBLEED", "ACTIVE EXPLOITATION"]
+    },
+    {
+     "severity": "critical",
+     "title": "CISA 將 18 年前 Cisco IOS 老舊 CSRF 漏洞列入 KEV：CVE-2008-4128 確認遭在野利用",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/07/13/cisa-adds-one-known-exploited-vulnerability-catalog",
+     "summary": "CISA 於 7 月 13 日將 2008 年揭露的 Cisco IOS 12.4（871 系列路由器）HTTP 管理介面跨站請求偽造漏洞 CVE-2008-4128 列入已知遭利用漏洞目錄，證實時隔多年仍持續被用於攻擊未修補或已停產設備。聯邦文職機關須於 7 月 16 日前完成修補或下線相關設備，其餘組織應立即盤點是否仍有老舊 Cisco IOS 裝置暴露於管理介面。",
+     "source": "CISA",
+     "tags": ["CVE-2008-4128", "CISCO IOS", "CISA KEV", "CSRF"]
+    },
+    {
+     "severity": "high",
+     "title": "微軟 Defender 提權漏洞「BlueHammer」CISA 更新警示：已遭勒索軟體集團實際用於入侵鏈",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-windows-bluehammer-flaw-now-exploited-by-ransomware-gangs/",
+     "summary": "CVE-2026-33825（CVSS 未定，本機提權至 SYSTEM）4 月已修補並列入 KEV，CISA 近日更新條目證實該漏洞已被勒索軟體集團用於實際攻擊：駭客先透過遭入侵的 FortiGate SSL VPN 取得初始存取，再利用 BlueHammer 搭配 UnDefend 工具停用防護後橫向移動並部署勒索軟體。尚未套用 4 月更新的 Windows 裝置應立即確認修補狀態。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-33825", "BLUEHAMMER", "MICROSOFT DEFENDER", "RANSOMWARE"]
+    },
+    {
+     "severity": "medium",
+     "title": "Progress 緊急下線 ShareFile 儲存區控制器後確認零時差路徑穿越漏洞 已釋出修補版本",
+     "url": "https://www.bleepingcomputer.com/news/security/progress-confirms-sharefile-zero-day-flaw-behind-storage-zone-shutdown/",
+     "summary": "Progress 因偵測到「可信外部威脅」於 7 月 10 日緊急要求所有 ShareFile Storage Zone Controller（5.x、6.x 版）客戶立即關閉伺服器，隨後確認為高風險路徑穿越零時差漏洞，已釋出 5.12.5 與 6.0.2 修補版本並恢復服務。Progress 表示目前無證據顯示客戶帳號或資料遭未授權存取，仍建議受影響組織儘速套用更新後才重新上線。",
+     "source": "BleepingComputer",
+     "tags": ["SHAREFILE", "STORAGE ZONE CONTROLLER", "ZERO-DAY", "PATH TRAVERSAL"]
+    },
+    {
+     "severity": "medium",
+     "title": "美財政部制裁勒索軟體「基礎設施供應商」：VPN 服務商 1VPNS 與惡意程式加殼工具賣家同列黑名單",
+     "url": "https://thehackernews.com/2026/07/us-sanctions-first-vpn-service-and.html",
+     "summary": "OFAC 於 7 月 13 日制裁匿名 VPN 服務商 First VPN Service（1VPNS）、其管理者 Dmytro Rashevskyi，以及販售惡意程式加殼工具（cryptor）規避防毒偵測的白俄羅斯籍 Yevgeniy Silayev，三者長期協助勒索軟體集團隱匿身分並攻擊美國企業、醫院與市政單位。此舉延續 5 月由法荷執法機關主導、FBI 波士頓分局支援查扣 1VPNS 基礎設施的「Operation Saffron」行動。",
+     "source": "The Hacker News",
+     "tags": ["OFAC SANCTIONS", "1VPNS", "RANSOMWARE ENABLER", "CRYPTOR"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：7/14 6 時至 7/15 6 時偵獲共艦 6 艘、公務船 3 艘 另有 4 架次共機進入西南空域",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部公布最新台海周邊動態，統計期間偵獲中國海軍艦艇 6 艘、海警等公務船 3 艘持續在台海周邊活動，另有 4 架次解放軍軍機進入台灣西南空域，國軍運用聯合情監偵系統及岸置飛彈系統嚴密監控應處。此為例行性灰色地帶活動，未見逾越海峽中線之異常升高跡象。",
+     "source": "國防部",
+     "tags": ["MND", "TAIWAN STRAIT", "GRAY ZONE", "SW ADIZ"]
+    },
+    {
+     "severity": "warning",
+     "title": "中共《民族團結進步促進法》上路 陸委會：兩岸交流政治風險全面升高",
+     "url": "https://www.cna.com.tw/news/acn/202607140295.aspx",
+     "summary": "陸委會副主委沈有忠表示，中國《民族團結進步促進法》定義模糊且具威嚇性質，未來兩岸交流恐須符合「鑄牢中華民族共同體意識」要求，若消極不配合促統即可能被扣上「破壞民族團結」帽子並遭制裁。陸委會將強化兩岸交流案件審查，涉統戰疑慮者不予許可，並研議修法反制跨境鎮壓；日本、美國與歐洲議會等國際社會已表達高度關注。",
+     "source": "中央社",
+     "tags": ["MAC", "ETHNIC UNITY LAW", "CROSS-STRAIT", "UNITED FRONT"]
+    },
+    {
+     "severity": "warning",
+     "title": "140 億美元對台軍售仍卡關：美國務院稱「非暫停、僅在審查」 國會催促儘速通知",
+     "url": "https://www.cnn.com/2026/05/29/asia/us-arms-sales-taiwan-work-explainer-intl-hnk-ml",
+     "summary": "國會於今年 1 月已預先核准的 140 億美元對台軍售案遲未正式通知，美國海軍部代理部長 Hung Cao 曾證實對台軍售出現「暫停」，惟國務卿 Rubio 隨後改口稱僅是「審查中」而非暫停，兩岸與國會之間說法出現落差。台灣對美軍購積壓總額截至 2 月底仍高達 320 億美元，凸顯後續交付時程的不確定性。",
+     "source": "CNN",
+     "tags": ["US ARMS SALE", "14B PACKAGE", "CONGRESS", "FMS BACKLOG"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "美軍 7/14 再度空襲伊朗多處目標 內唐亞胡警告「反擊將是完全不同等級」",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/7/13/iran-war-live-us-bombs-iranian-cities-again-as-hormuz-standoff-intensifies",
+     "summary": "美軍官員證實 7 月 14 日再對伊朗境內「新浮現威脅」發動數次追加空襲，延續 7 月 13 日對布什爾、恰巴哈爾、賈斯克、阿布穆薩與阿巴斯港等地沿海防禦、飛彈與無人機設施的大規模攻擊。以色列總理內唐亞胡警告伊朗勿攻擊以色列，否則「反擊將不是重演，而是完全不同、更強大的等級」；科威特軍方同步表示已攔截多枚朝其領空而來的「敵對目標」。",
+     "source": "Al Jazeera",
+     "tags": ["IRAN WAR", "US STRIKES", "NETANYAHU", "HORMUZ"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜川普收回霍爾木茲海峽 20% 過路費提議 惟持續推進對伊朗海上封鎖",
+     "url": "https://www.cnbc.com/2026/07/13/trump-iran-hormuz-strait-charge-reimburse.html",
+     "summary": "川普原宣布美方將對通過霍爾木茲海峽的貨運船隻徵收 20% 費用作為「護航保護費」，隔日即撤回徵費提議，但強調對伊朗船隻的封鎖行動仍將持續推進。該海峽承載全球約 2 成能源供應，衝突爆發後單日通行船隻數已由開戰前的 147 艘驟降至 22 艘，全球海運與能源供應鏈持續承壓。",
+     "source": "CNBC",
+     "tags": ["HORMUZ TOLL", "TRUMP", "SHIPPING BLOCKADE", "ENERGY SUPPLY"]
+    },
+    {
+     "severity": "warning",
+     "title": "菲律賓宣布擴大南海據點部署 國防部長：將對北京持續侵擾採取更強硬反制",
+     "url": "https://www.newsweek.com/south-china-sea-philippines-arbitral-ruling-unclos-12169607",
+     "summary": "南海仲裁十週年之際，菲律賓國防部長表示將強化與美、日、澳等盟友協作，擴大在南海更多據點的存在以反制中國持續侵擾；北京則重申菲律賓主張缺乏歷史與法律依據，並警告相關活動威脅區域穩定。雙方外交與海上主張行動同步進行，短期內無立即降溫跡象。",
+     "source": "Newsweek",
+     "tags": ["SOUTH CHINA SEA", "PHILIPPINES", "UNCLOS", "US-JAPAN-AUSTRALIA"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "布蘭特原油單日暴漲近 10% 創六年最大漲幅 一度衝破 87 美元 因霍爾木茲封鎖再起",
+     "url": "https://www.cnbc.com/2026/07/13/trump-iran-hormuz-strait-charge-reimburse.html",
+     "summary": "受美國重啟霍爾木茲海峽對伊朗封鎖行動影響，布蘭特原油 9 月合約單日大漲 9.6% 收在每桶 83.80 美元，為六年來最大單日漲幅，盤中一度衝高至 87.37 美元，為 2026 年 6 月以來新高。市場擔憂全球約兩成原油運輸路徑持續受阻，能源地緣政治風險溢價明顯常態化。",
+     "source": "CNBC",
+     "tags": ["BRENT CRUDE", "HORMUZ", "OIL SHOCK", "ENERGY RISK PREMIUM"]
+    },
+    {
+     "severity": "warning",
+     "title": "台股加權指數 7/14 收跌 819 點失守 45,000 點 那斯達克同步重挫 1.6%",
+     "url": "https://www.capitalfutures.com.tw/zh-tw/financial/breakingnewsarticle?contentid=c25071400331",
+     "summary": "台股加權指數 7 月 14 日收盤 44,561.25 點，較前一交易日大跌 819.27 點、跌幅 1.81%，主因中東情勢升溫、油價飆漲衝擊風險偏好。同日美股道瓊收 52,498.70 點（跌 138.31 點、0.3%），標普 500 跌 0.8% 至 7,515.47 點，那斯達克重挫 1.6%（408.43 點）至 25,873.18 點，晶片與科技股承壓最深。",
+     "source": "工商時報／CNBC",
+     "tags": ["TWII", "DOW JONES", "NASDAQ", "RISK-OFF"]
+    },
+    {
+     "severity": "medium",
+     "title": "新台幣兌美元 7/14 收 32.172 元 貶 0.2 分 六月 CPI 降溫至 3.5% 緩解聯準會升息壓力",
+     "url": "https://www.cnbc.com/2026/07/14/stock-market-today-live-updates.html",
+     "summary": "台北外匯市場新台幣兌美元 7 月 14 日收在 32.172 元，小貶 0.2 分，成交金額 16.64 億美元；美國 6 月 CPI 月增 -0.4%、年增率降至 3.5%，優於市場預期的 3.8%，緩解聯準會 7 月會議升息疑慮，但油價衝擊仍使通膨路徑前景複雜化。",
+     "source": "CNBC",
+     "tags": ["USD/TWD", "JUNE CPI", "FEDERAL RESERVE", "INFLATION"]
+    }
+   ]
+  }
+ ]
+}

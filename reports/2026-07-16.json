@@ -1,0 +1,130 @@
+{
+ "date": "2026-07-16",
+ "focus": "美伊荷姆茲對峙升級：川普撤回過路費改推波灣投資方案，揚言擊伊朗電廠橋樑，衝突連燒第四夜，布蘭特原油站上85美元",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "SonicWall SMA1000 兩項零時差漏洞遭在野利用 CVSS 10.0 滿分 CISA 急列 KEV",
+     "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/",
+     "summary": "SonicWall 證實 CVE-2026-15409（SSRF，CVSS 10.0）與 CVE-2026-15410（程式碼注入）遭駭客於零時差攻擊中串聯利用，影響 SMA6210、SMA7210、SMA8200v 等搭載 12.4.3／12.5.0 韌體的裝置。廠商已提供 12.4.3-03453 與 12.5.0-02835 兩版本熱修復，CISA 已列入 KEV 並要求聯邦機關 7/17 前完成修補。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-15409", "SONICWALL", "CISA KEV", "ZERO-DAY"]
+    },
+    {
+     "severity": "critical",
+     "title": "微軟 7 月修補星期二創紀錄：SharePoint、ADFS 雙零時差已遭在野利用列入 KEV",
+     "url": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html",
+     "summary": "微軟本月修補逾 560 項漏洞，其中 SharePoint Server 權限提升漏洞 CVE-2026-56164 與 ADFS 漏洞 CVE-2026-56155（CVSS 7.8）已遭實際攻擊利用，攻擊者可藉此取得系統管理員權限。CISA 已同步列入 KEV，分別訂 7/17 與 7/28 為聯邦機關修補期限，兩者均已釋出修補程式。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-56164", "CVE-2026-56155", "MICROSOFT", "CISA KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "CISA／NSA 聯合警告：俄羅斯 FSB Center 16 持續攻陷全球路由器 波及國防、能源、通訊關鍵基礎設施",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-194a",
+     "summary": "CISA 與 NSA 等多國夥伴 7/13 發布聯合資安公告（AA26-194A），指俄羅斯聯邦安全局（FSB）Center 16 持續利用設定不當、未修補的網路路由器，滲透美國及盟邦的國防工業基礎、能源、通訊與政府機構網路，尚未有單一 CVE 對應但影響範圍廣泛。公告建議立即強化路由器安全設定、修補韌體並停用不必要服務，目前無已知緩解漏洞可完全修補。",
+     "source": "CISA",
+     "tags": ["AA26-194A", "FSB CENTER 16", "RUSSIA", "CRITICAL INFRASTRUCTURE"]
+    },
+    {
+     "severity": "warning",
+     "title": "新勒索集團 D1R 聲稱入侵晶片設計大廠 Synopsys 並外流博世資料 廠商否認遭駭",
+     "url": "https://www.scworld.com/brief/synopsys-denies-data-breach-claims-by-new-ransomware-group-d1r",
+     "summary": "新興勒索軟體集團 D1R 宣稱透過 Synopsys 官網註冊表單的邏輯瑕疵竊得 4 萬筆客戶資料庫，並據此對博世（Bosch）發動勒索、限期 11 天談判否則外流其研發資料。Synopsys 調查後否認遭入侵，稱未接獲勒索聯繫，駭客提供的「證據」實為公開使用手冊截圖，真實性存疑，目前無官方修補或緩解措施可言。",
+     "source": "SC Media",
+     "tags": ["D1R", "SYNOPSYS", "BOSCH", "RANSOMWARE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "陸委會：7 月以來新增 10 名台灣人赴陸失聯 國台辦否認稱「假訊息」",
+     "url": "https://www.cna.com.tw/news/acn/202607150095.aspx",
+     "summary": "陸委會表示 7 月以來新增 10 件台灣民眾赴中國大陸後失聯案件，其中 4 人結伴旅遊全部失聯、1 人探親、1 人求職、另 4 人原因不明；累計 2024 年至今已有 385 名台灣人赴陸後失聯或人身自由受限。中國國台辦發言人朱鳳蓮 7/15 否認，指陸委會「編造假訊息」，兩岸資訊攻防再起。",
+     "source": "中央社",
+     "tags": ["MAC", "TAO", "MISSING PERSONS", "CROSS-STRAIT"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部 7/13 至 17 日執行「聯合防禦操演」深化作戰韌性 同期中國海警、科研船台海周邊集結",
+     "url": "https://www.cna.com.tw/news/aipl/202607120166.aspx",
+     "summary": "國防部自 7/13 起實施為期 5 天 4 夜的「聯合防禦操演」，強化國軍聯合作戰韌性。同一期間，中國海警編隊（含 2102 號艦）會同「東方紅 3 號」科研船，在台海北、中、南部海域多點同步活動，另有多艘編號艦艇於台灣北部、東北海域出沒，國軍出動軍艦與岸置飛彈系統嚴密監控應處。",
+     "source": "中央社",
+     "tags": ["MND", "JOINT DEFENSE EXERCISE", "CHINA COAST GUARD", "GRAY ZONE"]
+    },
+    {
+     "severity": "medium",
+     "title": "賴總統視導聯合防禦操演 籲朝野放下歧見支持國防預算",
+     "url": "https://tw.news.yahoo.com/%E5%9C%8B%E8%BB%8D%E5%B1%95%E9%96%8B%E8%81%AF%E5%90%88%E9%98%B2%E7%A6%A6%E6%93%8D%E6%BC%94-%E8%B3%B4%E7%B8%BD%E7%B5%B1%E7%9B%BC%E6%9C%9D%E9%87%8E%E6%94%AF%E6%8C%81%E5%9C%8B%E9%98%B2%E9%A0%90%E7%AE%97-045038565.html",
+     "summary": "配合國軍「聯合防禦操演」，總統賴清德前往部隊視導，公開呼籲朝野放下政黨歧見、支持國防預算審查，強調台灣整體防衛韌性攸關國家存續，不應受政治對立牽制，凸顯 2026 年度國防預算在立法院審查進度仍有分歧。",
+     "source": "Yahoo 新聞",
+     "tags": ["TAIWAN PRESIDENT", "DEFENSE BUDGET", "JOINT DEFENSE EXERCISE", "LEGISLATURE"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜川普撤回荷姆茲海峽 20% 過路費 改推波灣投資協議 揚言下週打擊伊朗電廠與橋樑",
+     "url": "https://www.japantimes.co.jp/news/2026/07/15/world/us-iran-blockade-hormuz-fee/",
+     "summary": "美軍持續空襲伊朗進入第四個夜晚，川普政府重啟荷姆茲海峽伊朗港口封鎖，但撤回原先擬對過境油輪徵收 20% 通行費的計畫，改稱將以波灣國家未來對美投資協議取代該收入，並稱美國將成為「海峽守護者」。川普揚言若德黑蘭不重返談判桌，下週將打擊伊朗發電廠與橋樑等基礎設施，伊朗則揚言封鎖區域所有石油出口航線反制，衝突有進一步擴大風險。",
+     "source": "Japan Times",
+     "tags": ["IRAN", "HORMUZ", "TRUMP", "US STRIKES"]
+    },
+    {
+     "severity": "warning",
+     "title": "南海爭端未見緩解：中菲於斯卡伯勒淺灘、仙賓礁再起摩擦 日本首度戰鬥部隊參與巴里卡坦軍演",
+     "url": "https://www.irishtimes.com/world/2026/07/13/dispute-in-south-china-sea-between-china-and-philippines-shows-no-signs-of-easing/",
+     "summary": "中國海警持續於斯卡伯勒淺灘驅離菲律賓漁船，解放軍並於呂宋島以東實施實彈演習，中菲雙方另就仙賓礁主權互控。分析指出南海衝突手法正從正面對峙轉向情報戰、騷擾與戰略干擾等混合手段；日本則自 1945 年以來首度派出戰鬥部隊參與「巴里卡坦 2026」聯合軍演，凸顯區域盟邦軍事介入程度升高。",
+     "source": "The Irish Times",
+     "tags": ["SOUTH CHINA SEA", "PHILIPPINES", "SCARBOROUGH SHOAL", "JAPAN"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股強彈：加權指數收 45,631.59 點 大漲 893.64 點（+2.00%）",
+     "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+     "summary": "台股加權指數 7/15 收盤大漲 893.64 點，漲幅 2.00%，收在 45,631.59 點，盤中最高觸及 45,881.91 點，成交量達新台幣 9,854.23 億元，自前二日重挫後強力反彈。",
+     "source": "Yahoo 股市",
+     "tags": ["TWII", "TAIEX", "REBOUND"]
+    },
+    {
+     "severity": "info",
+     "title": "美股 7/14 全面收漲：那斯達克漲 0.9% 收 26,107 點 CPI 降溫緩解升息疑慮",
+     "url": "https://www.cnbc.com/2026/07/14/stock-market-today-live-updates.html",
+     "summary": "美股三大指數 7/14 全面收漲：道瓊漲 0.02% 收 52,508.66 點、標普 500 漲 0.4% 收 7,543.89 點、那斯達克漲 0.9% 收 26,107.01 點。6 月 CPI 降溫幅度優於預期，市場對聯準會 7 月升息機率預期降至約 17%，但 9 月升息預期仍近六成。",
+     "source": "CNBC",
+     "tags": ["DOW JONES", "S&P 500", "NASDAQ", "CPI"]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油站上 85 美元創逾一個月新高 美伊衝突與荷姆茲封鎖推升能源風險溢價",
+     "url": "https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html",
+     "summary": "布蘭特原油 7/15 一度衝破每桶 85 美元，為美軍持續打擊伊朗、重啟荷姆茲海峽港口封鎖以來連續第三個交易日走揚。波灣主要產油國雖已依臨時和平協議增加出口，但市場仍憂心荷姆茲航運安全，能源地緣風險溢價持續存在，若衝突延燒恐進一步推升通膨壓力。",
+     "source": "CNBC",
+     "tags": ["BRENT CRUDE", "HORMUZ", "OIL PRICE", "ENERGY RISK"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元 7/15 重貶收 32.178 元",
+     "url": "https://money.udn.com/money/story/5616/9617850",
+     "summary": "台北外匯市場新台幣兌美元 7/15 收盤重貶 1.46 角至 32.178 元，主要受美元指數走強及荷姆茲海峽緊張情勢下避險資金流向美元資產影響。",
+     "source": "經濟日報",
+     "tags": ["USD/TWD", "TAIWAN DOLLAR", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "date": "2026-07-17",
+ "focus": "美軍對伊朗展開第二波空襲、川普揚言下週打擊發電廠與橋樑，荷姆茲海峽衝突持續升溫；CISA同步急列Oracle EBS在野利用漏洞，修補期限僅3天",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA 緊急列入 Oracle E-Business Suite 在野利用漏洞 CVE-2026-46817：3 天修補期限、Payments 模組恐遭完全接管",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/07/15/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA 於 7/15 將 Oracle E-Business Suite Payments 模組不當權限管理漏洞 CVE-2026-46817 與 KNX Association 協定漏洞 CVE-2023-4346 併列 KEV 目錄，確認已遭在野利用。未經驗證攻擊者僅需 HTTP 網路存取即可完全接管 Oracle Payments 元件，CISA 訂出僅 3 天（7/18）的修補期限，遠短於常規 21 天窗口；Oracle 已釋出更新，敦促用戶立即套用。",
+     "source": "CISA",
+     "tags": ["CVE-2026-46817", "ORACLE", "KEV", "EBS"]
+    },
+    {
+     "severity": "critical",
+     "title": "Zoom 修補 CVSS 9.8 滿分漏洞 CVE-2026-53412：Windows 用戶端未經驗證即可遭帳號接管",
+     "url": "https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html",
+     "summary": "漏洞影響 Zoom Desktop Client for Windows、VDI Client for Windows 與 Meeting SDK for Windows，因輸入驗證不當，攻擊者無需帳號、僅需網路存取即可奪取用戶帳號，波及雲端會議紀錄、聯絡人資料，甚至可能串連至企業 SSO 憑證。目前尚無在野利用證據，Zoom 已釋出修補版本，籲用戶立即更新。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-53412", "ZOOM", "CVSS9.8"]
+    },
+    {
+     "severity": "high",
+     "title": "AsyncAPI npm 套件遭供應鏈攻擊：GitHub Actions 權杖遭竊、逾 300 萬週下載量套件植入多階段木馬",
+     "url": "https://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html",
+     "summary": "攻擊者 7/14 以偽裝慈善捐款的 PR 混淆視聽，藉錯誤設定的 GitHub Actions 工作流程竊取高權限個人存取權杖，直接將惡意提交推送至 4 個 @asyncapi 命名空間套件（合計逾 300 萬週下載量）。惡意程式於載入時執行，竊取瀏覽器密碼、SSH 金鑰、雲端與加密貨幣憑證並建立多管道 C2 通訊；受害套件已全數從 npm 下架。",
+     "source": "The Hacker News",
+     "tags": ["NPM", "SUPPLY-CHAIN", "ASYNCAPI", "GITHUB-ACTIONS"]
+    },
+    {
+     "severity": "warning",
+     "title": "新型勒索軟體 Spirals 24 小時內完成入侵到加密：鎖定曝露於公網的 IIS 伺服器",
+     "url": "https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/",
+     "summary": "Symantec 揭露以 Rust 撰寫的新勒索家族 Spirals，透過暴露公網的 IIS 伺服器植入 Web Shell，繞過 UAC、傾印 LSASS 與 SAM 憑證並以 WMI 橫向擴散逾十台主機，全程不到 24 小時完成加密，並以 6 天外流資料要脅。目前僅發現南亞一家 IT 服務業者受害，屬新興、尚未大規模擴散的威脅。",
+     "source": "BleepingComputer",
+     "tags": ["RANSOMWARE", "SPIRALS", "IIS"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "國軍聯合防禦操演壓軸：AH-1W 眼鏡蛇攻擊直升機台南實施縱深防禦演練",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/07/17/2003860896",
+     "summary": "陸軍航空暨特戰指揮部 7/17 出動 2 架 AH-1W 眼鏡蛇攻擊直升機於台南實施縱深防禦操演，作為 7/13 至 17 日「聯合防禦操演」壓軸項目，驗證去中心化指揮下的聯合作戰效能與地面支援能量。總統賴清德先前已呼籲朝野放下歧見、支持國防預算審查。",
+     "source": "Taipei Times",
+     "tags": ["聯合防禦操演", "AH-1W", "國防預算"]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：24 小時內偵獲共機 5 架次、共艦 7 艘，3 架次逾越中線進入中部、西南空域",
+     "url": "https://www.globalsecurity.org/wmd/library/news/taiwan/2026/taiwan-260716-roc-mnd01.htm",
+     "summary": "國防部公布最新一輪 24 小時動態，偵獲中共解放軍機 5 架次、艦艇 7 艘及官方船隻 2 艘在台海周邊活動，其中 3 架次逾越海峽中線，進入我中部及西南防空識別區。國軍運用戰備任務機、艦與岸置飛彈系統嚴密監控應處，強調台海周邊灰色地帶活動仍屬常態化壓力。",
+     "source": "GlobalSecurity.org（轉引國防部）",
+     "tags": ["MND", "共機", "共艦", "ADIZ"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美軍對伊朗展開第二波空襲 川普揚言下週打擊發電廠與橋樑",
+     "url": "https://www.cbsnews.com/live-updates/us-iran-war-trump-ceasefire-talks-strait-of-hormuz/",
+     "summary": "美伊停火協議徹底破裂後，美軍週三對伊朗發動第二波打擊，目標為削弱伊朗攻擊荷姆茲海峽船隻的能力，川普並考慮進一步擴大軍事行動。川普揚言若德黑蘭不重返談判桌，下週將「打擊其所有發電廠與橋樑」；白宮堅稱與伊朗對話管道未斷，但外界對停火前景日趨悲觀，衝突有持續擴大風險。",
+     "source": "CBS News",
+     "tags": ["IRAN", "HORMUZ", "TRUMP", "US-STRIKES"]
+    },
+    {
+     "severity": "warning",
+     "title": "美中俄三方共識瓦解：北韓核武地位因大國對抗加劇而更形鞏固",
+     "url": "https://foreignpolicy.com/2026/07/16/north-korea-sanctions-nuclear-weapons-united-states-russia-china-united-nations-security-council/",
+     "summary": "《外交政策》分析指出，美中俄三方一致對北韓制裁的共識已然瓦解，俄羅斯因烏克蘭戰爭所需彈藥與人力，已恢復對北韓超額油品輸送、解凍其資產並將北韓銀行納入俄國金融體系；中國則持續作為北韓最大貿易夥伴提供經濟命脈。地緣政治分裂反而讓北韓核武現狀更難逆轉，區域安全風險同步升高。",
+     "source": "Foreign Policy",
+     "tags": ["NORTH-KOREA", "SANCTIONS", "RUSSIA", "CHINA"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股 7/16 收跌 6.61 點、創三個月低量 台積電逆勢收最高 2470 元",
+     "url": "https://finance.ettoday.net/news/3202260",
+     "summary": "台股加權指數 7/16 開低走低，終場收跌 6.61 點（-0.01%），以 45,624.98 點作收，成交量創三個月以來低量；台積電表現相對抗跌，以最高 2470 元收盤，漲幅 1.23%，對大盤跌勢有收斂作用。",
+     "source": "ETtoday",
+     "tags": ["TWII", "TAIEX", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股 7/15 收漲：那斯達克漲 0.62% 收 26,269 點、標普 500 漲 0.38%，惟半導體記憶體股遭拋售",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-15-dow-sp-nasdaq-091813320.html",
+     "summary": "美股三大指數 7/15 全面收漲：道瓊漲 0.29% 收 52,658.64 點、標普 500 漲 0.38% 收 7,572.40 點、那斯達克漲 0.62% 收 26,269.23 點，通膨數據降溫、蘋果股價創歷史新高帶動大型科技股走強；惟費城半導體指數重挫 2.08%，美光、迈威爾等記憶體與晶片股遭大幅拋售。",
+     "source": "Yahoo Finance",
+     "tags": ["S&P500", "NASDAQ", "DOW-JONES"]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油 7/16 收 84.95 美元 荷姆茲海峽封鎖未解、能源風險溢價居高不下",
+     "url": "https://www.cls.cn/detail/2427792",
+     "summary": "布蘭特原油期貨 7/16 結算價收報每桶 84.95 美元，上漲 0.26%；WTI 原油收報 79.60 美元，漲 0.33%。荷姆茲海峽封鎖僵局未解，加上美伊衝突持續升級，市場能源地緣風險溢價維持高檔，若衝突進一步擴大恐再度推升油價與通膨壓力。",
+     "source": "財聯社",
+     "tags": ["BRENT", "WTI", "HORMUZ", "OIL-PRICE"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元 7/16 午盤升 1.1 分 暫收 32.178 元",
+     "url": "https://money.udn.com/money/story/5616/9631432",
+     "summary": "台北外匯市場新台幣兌美元 7/16 午盤微幅回升 1.1 分，暫收 32.178 元，成交金額 6.42 億美元，日內交易區間約在 32.17 至 32.2 元之間，波動相對收斂。",
+     "source": "經濟日報",
+     "tags": ["USD-TWD", "TAIWAN-DOLLAR", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

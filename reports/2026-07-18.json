@@ -1,0 +1,198 @@
+{
+ "date": "2026-07-18",
+ "focus": "台股創史上最大單日跌點暴跌2953點，美伊衝突升級致荷姆茲海峽遭封鎖、科威特水電設施遇襲，全球市場劇烈震盪",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA 緊急列入 SharePoint 反序列化漏洞 CVE-2026-58644：CVSS 9.8，攻擊者竊取 IIS 機碼建立持久後門",
+     "url": "https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html",
+     "summary": "CISA 於 7/16 將 Microsoft SharePoint Server 反序列化漏洞 CVE-2026-58644（CVSS 9.8）列入 KEV 目錄，確認已遭在野利用。攻擊者以至少 Site Owner 權限即可遠端寫入並執行任意程式碼，竊取 IIS 機碼以維持長期存取。影響所有受支援的地端 SharePoint Server（Subscription Edition、2019、2016），微軟已釋出修補，CISA 要求聯邦機構 7/19 前完成修補。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-58644",
+      "SHAREPOINT",
+      "KEV",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "Fortinet FortiSandbox 兩項命令注入漏洞遭在野利用 CISA 急發修補令",
+     "url": "https://www.theregister.com/security/2026/07/17/attackers-target-critical-fortisandbox-flaws-as-cisa-issues-patch-order/5274287",
+     "summary": "CISA 將 Fortinet FortiSandbox 未經驗證作業系統命令注入漏洞 CVE-2026-39808 與 CVE-2026-25089 列入 KEV，攻擊者無需帳密即可透過惡意 HTTP 請求取得系統層級執行權限。CVE-2026-39808 影響 4.4.0–4.4.8 版；CVE-2026-25089 影響 5.0.0–5.0.5、4.4.0–4.4.8 及全部 4.2 版本，含 Cloud 與 PaaS 版本。Fortinet 已釋出 4.4.9 及 5.0.6 修補版本，籲用戶立即升級。",
+     "source": "The Register",
+     "tags": [
+      "CVE-2026-39808",
+      "CVE-2026-25089",
+      "FORTINET",
+      "KEV"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "可口可樂旗下 Fairlife 遭勒索軟體攻擊 美國生產線全面停擺",
+     "url": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/",
+     "summary": "可口可樂 7/16 證實旗下高蛋白乳品品牌 fairlife 遭第三方未經授權入侵，波及生產相關系統，美國廠區生產線已暫停，加拿大廠區未受影響。公司已啟動危機應變並通報執法單位，惟目前尚未有勒索軟體集團出面認領，資料是否外洩、是否涉及贖金要求均待調查釐清。",
+     "source": "BleepingComputer",
+     "tags": [
+      "RANSOMWARE",
+      "COCA-COLA",
+      "FAIRLIFE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "中國背景駭客集團 GoldenEyeDog 分支 CylindricalCanine 遭起底：曾竊取 DigiCert 程式碼簽署憑證用於簽署惡意軟體",
+     "url": "https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html",
+     "summary": "資安業者 Expel 揭露，今年 4 月 DigiCert 客服人員設備遭入侵、憑證遭竊事件，係由中國網路犯罪集團 GoldenEyeDog（又稱 APT-Q-27）旗下分支 CylindricalCanine 所為。攻擊者以偽裝成截圖檔案的釣魚郵件植入惡意程式，取得 27 張程式碼簽署憑證並用以簽署 Zhong Stealer 竊資軟體，凸顯供應鏈信任機制遭濫用的風險。DigiCert 已撤銷受影響憑證。",
+     "source": "The Hacker News",
+     "tags": [
+      "GOLDENEYEDOG",
+      "DIGICERT",
+      "CODE-SIGNING"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "陸委會證實：2 名現職與退休警員赴福建旅遊遭中國國安人員強制帶走隔離詢問",
+     "url": "https://newtalk.tw/news/view/2026-07-17/1047664",
+     "summary": "陸委會證實，今年 6 月 1 名退休警察與 1 名現職員警赴福建旅遊，於下榻民宿遭中共國安人員強制帶往第三地隔離詢問，且被要求返台後不得向所屬機關通報。國台辦則反指陸委會編造假訊息，雙方各執一詞，事件凸顯台灣執法人員赴陸從事私人旅遊亦面臨政治風險升高。",
+     "source": "Newtalk新聞",
+     "tags": [
+      "MAC",
+      "FUJIAN",
+      "DETENTION",
+      "警員"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜陸委會：7 月新增通報 10 名台灣人赴陸失聯，其中 4 人同行團確認遭拘留",
+     "url": "https://www.cna.com.tw/news/acn/202607160338.aspx",
+     "summary": "延續近日兩岸失聯人數攀升趨勢，陸委會進一步證實 7 月新增通報的 10 名在陸失聯台灣人中，1 個 4 人同行團已確認遭中國拘留、原因不明，另有 1 人高度懷疑遭拘留、其餘 5 人仍無消息。陸委會強調每案均有憑有據，國台辦則持續否認並指控為抹黑操作。",
+     "source": "中央社 CNA",
+     "tags": [
+      "MAC",
+      "MISSING",
+      "CHINA"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：最新 24 小時偵獲共機 5 架次、共艦 7 艘 台海周邊灰色地帶壓力持續",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部公布最近一輪 24 小時動態，偵獲解放軍機 5 架次、艦艇 7 艘及官方船 1 艘在台海周邊活動，國軍運用戰備任務機、艦與岸置飛彈系統嚴密監控應處。此輪監控適逢國軍 7/13 至 17 日「聯合防禦操演」剛落幕，顯示解放軍常態化侵擾並未因我方演習結束而降溫。",
+     "source": "國防部（經 WebSearch 綜整，數字為近似值）",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊衝突全面升級：伊朗關閉荷姆茲海峽、美軍炸伊朗橋樑致 8 死 20 傷",
+     "url": "https://www.cnn.com/2026/07/17/world/live-news/iran-war-trump",
+     "summary": "美軍連續第 6 晚空襲伊朗沿岸目標，鎖定飛彈庫、防空系統與港市巴斯坦阿巴斯周邊橋樑，霍爾木茲甘省橋樑攻擊已知造成至少 8 死、20 傷。伊朗革命衛隊隨後宣布關閉荷姆茲海峽，指控美方介入海峽通行管理；巴基斯坦與卡達正嘗試斡旋雙方重回談判桌，但衝突升級態勢未見緩解跡象。",
+     "source": "CNN",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-STRIKES"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "伊朗攻擊科威特發電暨海水淡化廠 波灣第三國基礎設施首度捲入戰火",
+     "url": "https://www.bloomberg.com/news/articles/2026-07-17/iran-attacks-kuwait-desalination-and-power-plants-as-hostilities-worsen",
+     "summary": "伊朗飛彈週五擊中科威特一座發電暨海水淡化廠，損及供應該國約 9 成飲用水的關鍵設施並造成人員傷亡。此為美伊衝突延燒以來首見波灣第三國民生基礎設施遭波及，凸顯波斯灣沿岸密集的淡化廠網絡在戰事升溫下極度脆弱，若擴大恐威脅區域數百萬人飲水安全。",
+     "source": "Bloomberg",
+     "tags": [
+      "KUWAIT",
+      "IRAN",
+      "INFRASTRUCTURE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "歐盟通過對俄無人機產業新制裁 回應俄軍持續空襲基輔",
+     "url": "https://www.pravda.com.ua/eng/news/2026/07/16/8044404/",
+     "summary": "歐盟理事會 7/17 通過新一輪對俄制裁，鎖定 5 個機構與 1 名個人，涉及俄羅斯「見證者」（Shahed）與「梟龍」（Geran）攻擊型無人機零組件之研發生產。此案由歐盟外交最高代表卡拉斯提出，係對俄軍近期加大力度空襲烏克蘭平民與基輔的直接回應，俄烏戰爭相關制裁架構並已延長至 2027 年 7 月。",
+     "source": "Ukrainska Pravda",
+     "tags": [
+      "EU",
+      "RUSSIA",
+      "SANCTIONS",
+      "DRONE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "台股 7/17 崩跌 2953 點創史上最大跌點 台積電重挫 7.29% 外資賣超破紀錄",
+     "url": "https://www.businesstoday.com.tw/article/category/183008/post/202607170020/",
+     "summary": "台股加權指數 7/17 開低殺低，終場重挫 2,953.71 點（-6.47%），收在 42,671.27 點，改寫史上單日收盤最大跌點紀錄，成交量放大至 1.21 兆元、外資賣超估達 1,890 億元亦創新高。台積電暴跌 180 元（-7.29%）為個股史上最大單日跌點，聯電、國巨、南亞科同步跌停。導火線為南韓意外升息並管制槓桿型 ETF、引爆美股費城半導體指數重挫 4.29%，加上台積電上修資本支出引發獲利壓縮疑慮，疊加中東戰事催化，龐大獲利了結賣壓於同日集中爆發。",
+     "source": "今周刊",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "SEMICONDUCTOR"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "布蘭特原油因荷姆茲海峽封鎖飆漲近 87 美元 WTI 站上 79 美元",
+     "url": "https://www.cnbc.com/2026/07/17/oil-price-today-brent-wti.html",
+     "summary": "受伊朗革命衛隊宣布關閉荷姆茲海峽、科威特發電淡化廠遇襲等消息激勵，布蘭特原油盤中一度衝高至每桶 86.73 美元，較前一交易日大漲約 3%，日高觸及 85.95 至 86 美元區間；WTI 原油同步站穩 79 美元上方。荷姆茲海峽為全球約五分之一原油與天然氣運輸要道，市場能源地緣風險溢價急遽攀升，牽動後續全球通膨與各國央行決策。",
+     "source": "CNBC",
+     "tags": [
+      "BRENT",
+      "WTI",
+      "HORMUZ"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "美股同步收黑：那斯達克跌 1.4%創晶片股拋售延續 Netflix 財測疲弱重挫 11%",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html",
+     "summary": "美股三大指數 7/17 全面收跌：那斯達克綜合指數跌約 1.4%，標普 500 跌約 1%，道瓊工業指數跌約 0.7%。半導體類股延續拋售賣壓，AI 資本支出降溫疑慮持續發酵；串流龍頭 Netflix 財測不如預期單日重挫 11%，加上中東地緣政治風險升溫，共同拖累大盤走勢。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "SEMICONDUCTOR"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "新台幣受台股崩盤與地緣風險衝擊 面臨資金外流貶值壓力",
+     "url": "https://www.cbc.gov.tw/tw/lp-645-1.html",
+     "summary": "受台股史上最大跌點及中東地緣政治風險升溫影響，外資單日賣超台股創紀錄新高，新台幣兌美元同步面臨資金外流帶來的貶值壓力；台北外匯市場即時收盤精確價位以中央銀行公告為準，本次因資料源存取受限僅取得近似區間（約 32.1–32.2 元附近），建議以央行牌告匯率複核。",
+     "source": "中央銀行（數字為近似值）",
+     "tags": [
+      "TWD",
+      "FOREX",
+      "CAPITAL-OUTFLOW"
+     ]
+    }
+   ]
+  }
+ ]
+}

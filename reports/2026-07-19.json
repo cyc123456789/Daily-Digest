@@ -1,0 +1,130 @@
+{
+ "date": "2026-07-19",
+ "focus": "美伊衝突再升級：伊朗飛彈擊中約旦美軍基地致2名美軍陣亡、1人失蹤，為衝突重啟以來首見美軍陣亡，死亡總數增至16人。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "醫療巨擘亞培遭雙重外洩：ShinyHunters語音釣魚攻陷Entra SSO入侵癌症診斷系統，21日勒索期限逼近",
+     "url": "https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/",
+     "summary": "ShinyHunters勒索集團宣稱6月中旬透過語音釣魚（vishing）攻陷亞培員工帳號，取得Microsoft Entra單一登入權限並入侵Exact Sciences癌症診斷業務系統，將原訂7/18公開資料的勒索期限延至7/21。另一名駭客ShadowByt3$則聲稱自7/4起透過LabCentral客戶入口網站外洩核心實驗室診斷資料。亞培證實兩起事件並展開調查，目前尚無資料遭公開，建議受影響客戶留意後續通知。",
+     "source": "BleepingComputer",
+     "tags": ["SHINYHUNTERS", "ABBOTT", "DATA BREACH", "VISHING"]
+    },
+    {
+     "severity": "high",
+     "title": "印度最大核電廠庫丹庫拉姆承包商外洩：勒索集團World Leaks公開1.9萬份機敏檔案含廠房藍圖",
+     "url": "https://www.aljazeera.com/news/2026/7/16/data-breach-reportedly-targets-indias-kudankulam-nuclear-power-plant",
+     "summary": "勒索軟體集團World Leaks在暗網公開承包商Reliance Group遭外洩的85.8萬份檔案，其中逾1.9萬份與庫丹庫拉姆核電廠相關，內容含廠房藍圖、供應商資料與設備檢驗紀錄，時間跨度自2016至2025年中。印度核能公司NPCIL回應稱外洩內容未涉及核安敏感資訊，Reliance證實第三方資料中心供應商Yotta伺服器遭「部分入侵」，尚未有官方修補或緩解措施公告。",
+     "source": "Al Jazeera",
+     "tags": ["WORLD LEAKS", "KUDANKULAM", "CRITICAL INFRA", "RANSOMWARE"]
+    },
+    {
+     "severity": "high",
+     "title": "埃森哲證實遭入侵：駭客「888」兜售35GB原始碼與Azure雲端金鑰",
+     "url": "https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/",
+     "summary": "駭客「888」在暗網論壇兜售聲稱竊自埃森哲的35GB資料，內容包含原始碼、SSH與RSA金鑰、Azure PAT權杖及儲存體存取金鑰，並附上內部Azure DevOps儲存庫畫面佐證。埃森哲證實為「單一事件」並稱已完成源頭整治，但未證實外洩範圍或是否波及客戶環境，同一駭客過去也曾多次兜售埃森哲相關資料。",
+     "source": "BleepingComputer",
+     "tags": ["ACCENTURE", "DATA BREACH", "AZURE", "SUPPLY CHAIN"]
+    },
+    {
+     "severity": "high",
+     "title": "美國車險商AssuranceAmerica外洩690萬筆駕照資料 為今年美國最大駕照外洩案之一",
+     "url": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/",
+     "summary": "AssuranceAmerica證實今年3月因員工帳密遭竊導致駭客入侵，外洩姓名、聯絡資訊、駕照號碼及保單、車輛與理賠資料，影響約690萬人。公司已停用遭竊憑證、隔離受影響系統並加強監控，但表示不會提供受影響用戶身分盜用防護服務，僅建議自行監控信用與金融帳戶。",
+     "source": "BleepingComputer",
+     "tags": ["ASSURANCEAMERICA", "DATA BREACH", "INSURANCE", "PII"]
+    },
+    {
+     "severity": "warning",
+     "title": "資安業者揭露首起「全自主AI代理」勒索軟體攻擊JADEPUFFER：無人操作全程由AI完成",
+     "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/",
+     "summary": "資安公司Sysdig分析指出，JADEPUFFER攻擊利用Langflow舊漏洞CVE-2025-3248（缺乏身分驗證機制）入侵網際網路暴露伺服器後，由AI代理自主完成偵察、憑證竊取、橫向移動、權限提升與加密1,342項設定檔的全流程，其中一次還在31秒內自行修復失敗的登入嘗試。研究人員認為此案大幅降低網路犯罪門檻，預示攻擊規模與速度將全面升級，Langflow已於更早版本修補該漏洞。",
+     "source": "BleepingComputer / Sysdig",
+     "tags": ["JADEPUFFER", "AI RANSOMWARE", "LANGFLOW", "CVE-2025-3248"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：最新24小時偵獲共艦8艘、公務船4艘 未偵獲共機",
+     "url": "https://newtalk.tw/news/view/2026-07-18/1047901",
+     "summary": "國防部表示，自7/17上午6時至7/18上午6時，偵獲中國軍艦8艘、公務船4艘持續在台海周邊活動，同時段未偵獲共機出海。國軍運用任務機、艦及岸置飛彈系統嚴密監控與應處。",
+     "source": "Newtalk新聞",
+     "tags": ["國防部", "台海", "共艦", "灰色地帶"]
+    },
+    {
+     "severity": "warning",
+     "title": "陸委會證實4人赴陸旅遊團全員遭中國拘留 宣布本週起每週四定期公布赴陸拘押數據",
+     "url": "https://news.ltn.com.tw/news/politics/breakingnews/5505189",
+     "summary": "陸委會副主委梁文傑證實，日前失聯的4人赴陸旅遊團全數遭中國當局拘留，具體原因尚未明朗，家屬是接獲當事人電話告知才得知消息。陸委會宣布未來將定期在每週四記者會公布國人赴陸遭關押、拘留、盤查的數據，並依詐欺犯罪、其他犯罪、宗教案件、國安案件分類揭露，統計自2024年以來已有385人赴陸失聯或人身自由受限。",
+     "source": "自由時報",
+     "tags": ["陸委會", "兩岸", "拘留", "國安"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "美伊戰事升級：伊朗飛彈擊中約旦美軍基地 2名美軍陣亡、1人失蹤 衝突重啟以來首見美軍陣亡",
+     "url": "https://www.cnn.com/2026/07/18/politics/iran-war-us-service-members-killed-jordan",
+     "summary": "美國中央司令部證實，7/17伊朗彈道飛彈與無人機攻擊約旦穆瓦法克·薩爾提空軍基地，造成2名美軍陣亡、1人失蹤，另有4人送醫後已出院。這是本輪衝突自兩週前重啟以來美軍首次出現陣亡，使美軍在此波戰事中的死亡人數增至16人，戰事已進入第七個連續交火夜。",
+     "source": "CNN",
+     "tags": ["伊朗", "美軍", "約旦", "戰爭升級"]
+    },
+    {
+     "severity": "critical",
+     "title": "伊朗革命衛隊警告將發動「全面攻勢」 川普考慮擴大打擊伊朗民生基礎設施",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/7/18/iran-war-live-us-and-iran-exchange-attacks-for-7th-consecutive-night",
+     "summary": "伊朗最高領袖穆傑塔巴·哈梅內伊的軍事顧問、革命衛隊高層警告，若美方持續空襲將對美方發動「全面攻勢」。川普則被提報可擴大打擊選項，包括伊朗電廠、海水淡化廠等民生基礎設施，甚至不排除地面行動，分析警告此舉恐引發伊朗報復波灣國家能源設施及紅海航運，衝突升級風險持續攀升。",
+     "source": "Al Jazeera",
+     "tags": ["伊朗", "哈梅內伊", "川普", "荷姆茲海峽"]
+    },
+    {
+     "severity": "warning",
+     "title": "菲律賓就《中國日報》辱菲影片提出外交抗議 南海仲裁十週年後火藥味再起",
+     "url": "https://www.aljazeera.com/news/2026/7/18/manila-protests-racist-portrayal-of-filipinos-in-china-daily-videos",
+     "summary": "菲律賓外交部就中國官媒《中國日報》發布將菲律賓人描繪為猴子的系列影片提出正式抗議，痛批內容「超越政治辯論」屬「貶低、去人性化、種族歧視」。該系列影片恰逢南海仲裁十週年宣傳活動之一，凸顯中菲在南海主權爭端與美菲、日菲防衛合作深化背景下的外交摩擦持續升溫。",
+     "source": "Al Jazeera",
+     "tags": ["菲律賓", "南海", "外交抗議", "中國日報"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "南韓緊急喊停個股槓桿ETF新掛牌 監管機關坦承監理失靈釀全球股災連動",
+     "url": "https://www.bloomberg.com/news/articles/2026-07-16/south-korea-to-halt-new-listings-of-single-stock-leveraged-etfs",
+     "summary": "南韓金融委員會宣布自7/16起暫停所有個股槓桿ETF新掛牌，距離5月27日核准上市僅七週。16檔鎖定三星電子、SK海力士等半導體龍頭股的2倍槓桿ETF規模數週內從30億美元暴增至91億美元，6月22日單日重挫逾25%並觸發韓股熔斷，衝擊波及那斯達克期貨與全球晶片股。金管會宣布自8/5起將保證金門檻由1000萬韓元提高至3000萬韓元，並增設強制投資人教育課程。",
+     "source": "Bloomberg",
+     "tags": ["南韓", "槓桿ETF", "KOSPI", "金融監理"]
+    },
+    {
+     "severity": "medium",
+     "title": "黃金創六週最大單週跌幅：美伊戰事推升通膨與升息預期 削弱避險買盤",
+     "url": "https://www.cnbc.com/2026/07/17/gold-on-track-for-biggest-weekly-loss-in-six-as-iran-war-fans-inflation-worries.html",
+     "summary": "現貨黃金收在每盎司4,015.09美元，創六週以來最大單週跌幅，一度觸及7月1日以來最低點。分析指出，荷姆茲海峽封鎖推升油價、加劇通膨與聯準會升息預期，透過美元走強、公債殖利率上升的機制壓抑無息資產黃金，使其避險效果罕見地不敵通膨升息邏輯。",
+     "source": "CNBC",
+     "tags": ["黃金", "通膨", "聯準會", "避險資產"]
+    },
+    {
+     "severity": "medium",
+     "title": "新台幣週五收貶至32.386元 台股崩盤與美元避險需求同步施壓匯率",
+     "url": "https://www.exchangerates.org.uk/USD-TWD-spot-exchange-rates-history-2026.html",
+     "summary": "美元兌新台幣7/17收在32.386元，較前一交易日升值0.35%，受台股史上最大跌點衝擊及中東情勢帶動的美元避險買盤雙重壓力，新台幣過去一個月已貶值逾2.4%，過去一年貶值幅度達10.12%。",
+     "source": "ExchangeRates.org.uk",
+     "tags": ["新台幣", "匯率", "美元", "資金外流"]
+    }
+   ]
+  }
+ ]
+}

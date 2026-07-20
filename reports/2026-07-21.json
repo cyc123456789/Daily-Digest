@@ -1,0 +1,130 @@
+{
+ "date": "2026-07-21",
+ "focus": "菲律賓指控中國海警持棍擊傷海軍人員，仁愛礁爆發近年最嚴重衝突，恰逢中國外長王毅即將訪馬尼拉前夕。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "nginx 高風險漏洞 CVE-2026-42533：regex map 腳本引擎堆積溢位可致遠端執行程式碼",
+     "url": "https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html",
+     "summary": "影響 nginx 0.9.6 至 1.31.2 所有版本，在特定 regex map 搭配字串運算的設定下，未經驗證攻擊者可用惡意 HTTP 請求觸發堆積緩衝區溢位，導致 worker 行程當機，若 ASLR 失效更可能遠端執行程式碼。F5 已於 7 月 15 日釋出修補版本 nginx 1.30.4（穩定版）與 1.31.3（開發版），CVSS v4 評為 9.2。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-42533", "NGINX", "F5", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "微軟 7 月修補星期二創紀錄：Print Spooler 漏洞 CVE-2026-58608 可遠端執行程式碼",
+     "url": "https://www.zerodayinitiative.com/blog/2026/7/14/the-july-2026-security-update-review",
+     "summary": "微軟本月一口氣修補約 570 個漏洞，其中 Windows Print Spooler 服務的 CVE-2026-58608（CVSS 8.8）為競態與釋放後使用漏洞，攻擊者可藉由操控印表機控制代碼在無需使用者互動下遠端執行程式碼。資安機構將其與 SharePoint RCE 並列為須於 48 小時內優先修補的高危項目，官方修補已隨 7 月更新釋出。",
+     "source": "Zero Day Initiative",
+     "tags": ["CVE-2026-58608", "MICROSOFT", "PRINT SPOOLER", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "美國後勤承包商 Conduent 資料外洩擴大至 6220 萬人 躍居史上第三大醫療外洩案",
+     "url": "https://www.hipaajournal.com/conduent-business-solutions-data-breach/",
+     "summary": "為政府機關與醫療院所處理理賠及文件的後勤承包商 Conduent，其 2024 年遭入侵事件持續擴大，最新確認影響人數已突破 6222 萬人，外洩資料包含社會安全碼、醫療紀錄與健保資訊，僅次於 Change Healthcare 與 Anthem，成為史上第三大醫療資料外洩事件。",
+     "source": "HIPAA Journal",
+     "tags": ["CONDUENT", "DATA BREACH", "HEALTHCARE"]
+    },
+    {
+     "severity": "warning",
+     "title": "勒索軟體集團 The Gentlemen 超車 Qilin 登頂 三個月內橫掃 77 國逾 300 起攻擊",
+     "url": "https://www.infosecurity-magazine.com/news/the-gentlemen-most-prolific/",
+     "summary": "資安業者統計顯示，新興勒索軟體集團 The Gentlemen 在 5 至 7 月間發動逾 300 起攻擊，累計受害者數量超越稱霸五個月的 Qilin，成為最活躍的勒索軟體操作者；其雙重勒索模式鎖定企業與政府機構，攻擊範圍橫跨 77 個國家。",
+     "source": "Infosecurity Magazine",
+     "tags": ["RANSOMWARE", "THE GENTLEMEN", "QILIN"]
+    },
+    {
+     "severity": "medium",
+     "title": "7-Zip XZ 解碼器堆積緩衝區溢位 CVE-2026-14266：惡意壓縮檔可觸發程式碼執行",
+     "url": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html",
+     "summary": "影響 7-Zip 21.07 至 26.01 版本，開啟特製 XZ 壓縮封裝檔案可觸發 C/XzDec.c 中的堆積緩衝區溢位並在使用者權限下執行任意程式碼。官方已於 6 月 25 日釋出的 26.02 版修補，ZDI 評為 7.0（高風險），截至 7 月 20 日尚未發現在野利用或公開 PoC。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-14266", "7-ZIP", "ZDI"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24 小時內偵獲共艦 6 艘、共機 13 架次逾越海峽中線",
+     "url": "https://www.rti.org.tw/news?uid=3&pid=209510",
+     "summary": "國防部公布最新一日動態，統計 7 月 19 日上午 6 時至 7 月 20 日上午 6 時，國軍偵獲中國海軍艦艇 6 艘，以及 13 架次共機逾越海峽中線並侵擾北部、中部、西南及東部空域，國軍任務機艦與岸置飛彈系統嚴密監控應處。",
+     "source": "中央廣播電臺",
+     "tags": ["MND", "PLA", "TAIWAN STRAIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "分析｜「平靜才是異常」：台海危機已外溢至晶片管制與同盟經略等多重戰場",
+     "url": "https://moderndiplomacy.eu/2026/07/20/the-calm-is-the-anomaly-why-the-taiwan-strait-is-more-dangerous-than-the-headlines-suggest/",
+     "summary": "分析指出，2026 年初共機擾台架次一度明顯下滑曾被誤讀為北京降溫，實為每年農曆春節與兩會前後的例行季節性減緩，入夏後頻率已回升，且戰場已擴及東京貿易管制與台北晶片出口審查等非軍事領域。文章警告北京已將台灣問題納入同盟管理、科技圍堵與經濟脅迫的整體布局，任一戰線的誤判都可能壓縮各方樂觀預期的時間表。",
+     "source": "Modern Diplomacy",
+     "tags": ["TAIWAN STRAIT", "PLA", "CHIP EXPORT CONTROL"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "仁愛礁爆衝突：菲律賓指控中國海警持棍重擊海軍人員頭部致重傷",
+     "url": "https://www.bloomberg.com/news/articles/2026-07-20/philippine-navy-personnel-injured-after-china-coast-guard-row",
+     "summary": "菲律賓軍方指控，中國海警一艘橡皮艇上 8 名人員於仁愛礁接近菲國擱淺軍艦時，與試圖攔截的菲國橡皮艇發生衝突，一名中國海警人員持木棍重擊菲律賓海軍人員頭部致其重傷，並損壞該艇。事件發生於中國外長王毅預定訪問馬尼拉、與東協外長會晤的兩天前，為近年南海最嚴重的一次肢體衝突。",
+     "source": "Bloomberg",
+     "tags": ["SOUTH CHINA SEA", "PHILIPPINES", "SECOND THOMAS SHOAL"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜美伊衝突連燒第九夜：美軍再襲伊朗、油輪遭擊，伊朗釋出談判訊號",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-20-2026",
+     "summary": "美軍對伊朗發動第九夜空襲，並證實再有一名美軍在衝突中身亡；美方同時擊中一艘試圖規避封鎖、駛往哈爾克島的油輪。伊朗官員稍後釋出談判仍在進行的訊號，帶動西德州原油期貨自高點回落至每桶 83 美元下方，市場觀望情勢是否降溫。",
+     "source": "TheStreet",
+     "tags": ["IRAN", "STRAIT OF HORMUZ", "US MILITARY"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "布蘭特原油單日跳漲 3.3% 站上 91 美元 卡達 LNG 油輪遭波及",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-20-2026",
+     "summary": "布蘭特原油期貨 7 月 20 日大漲 3.3% 至每桶 90.97 美元，英國海事貿易組織通報包括卡達 LNG 油輪 Al Rekayyat 在內共 3 艘船隻於荷姆茲海峽周邊遭波及，適逢美軍對伊朗發動第九夜空襲、伊朗片面中止此前協議承諾，能源風險溢價持續墊高。",
+     "source": "TheStreet",
+     "tags": ["BRENT", "HORMUZ", "OIL"]
+    },
+    {
+     "severity": "info",
+     "title": "台股加權指數 7/20 收跌 221.57 點 失守 42,500 點",
+     "url": "https://finance.ettoday.net/news/3204391",
+     "summary": "台股 7 月 20 日開高走低，加權指數終場收 42,449.7 點，下跌 221.57 點、跌幅 0.52%，成交量 9838.63 億元，市場持續消化美伊衝突升溫與科技股財報季前的不確定性。",
+     "source": "ETtoday",
+     "tags": ["TAIEX", "TAIWAN STOCK"]
+    },
+    {
+     "severity": "info",
+     "title": "美股週一收漲：標普漲 0.63%、那斯達克漲 1.02% 財報季登場前科技股回神",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-20-2026",
+     "summary": "美股三大指數週一收漲，標普 500 上漲 0.63%、那斯達克上漲 1.02%、道瓊上漲 0.23%，羅素 2000 指數則下跌 0.42%。投資人一方面消化美伊衝突升溫消息，另一方面等待本週 Alphabet、英特爾、IBM、特斯拉等科技大廠財報，市場聚焦企業能否將 AI 投資轉化為實際獲利。",
+     "source": "TheStreet",
+     "tags": ["S&P 500", "NASDAQ", "EARNINGS"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元收升 4 分 報 32.248 元",
+     "url": "https://udn.com/news/story/7239/9639389",
+     "summary": "台北外匯市場新台幣兌美元 7 月 20 日收在 32.248 元，升值 4 分，成交量 24.71 億美元，走勢相對平穩，尚未明顯反映台股下跌與國際油價走升帶來的外部壓力。",
+     "source": "聯合新聞網",
+     "tags": ["TWD", "USD", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

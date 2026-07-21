@@ -1,0 +1,146 @@
+{
+ "date": "2026-07-22",
+ "focus": "WordPress核心「wp2shell」漏洞鏈遭大規模在野利用 官方對6.9、7.0系列啟動強制自動更新",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Oracle PeopleSoft 零時差漏洞遭 ShinyHunters 攻陷逾 300 機構 官方 7 月關鍵修補釋出",
+     "url": "https://www.techtimes.com/articles/321140/20260721/peoplesoft-exploit-behind-100-breaches-gets-patched-oracles-record-july-cpu.htm",
+     "summary": "ShinyHunters 集團於 5/27–6/9 期間鏈結 CVE-2026-35278（PeopleTools 未驗證前遠端執行程式碼，CVSS 9.8）與 CVE-2026-35273 提權漏洞，攻陷大學、宗教機構、非營利組織及政府單位共逾 300 個機構。Oracle 已於 7 月例行關鍵修補更新（CPU）中正式釋出修補程式，未更新的 PeopleSoft PeopleTools 環境仍持續暴露於風險中。",
+     "source": "TechTimes",
+     "tags": ["CVE-2026-35278", "ORACLE", "SHINYHUNTERS", "PEOPLESOFT"]
+    },
+    {
+     "severity": "critical",
+     "title": "WordPress 核心「wp2shell」漏洞鏈遭大規模在野利用 官方強制觸發自動更新",
+     "url": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/",
+     "summary": "CVE-2026-63030（嚴重任意程式碼執行）與 CVE-2026-60137（高風險 SQL 注入）可鏈結成無需帳號即可完全接管網站的遠端程式碼執行漏洞，影響 WordPress 6.9.0–6.9.4 與 7.0.0–7.0.1，且無需任何外掛即可觸發。公開概念驗證於 7/17 揭露後數小時內即遭實際攻擊，WordPress.org 已就此嚴重性對受影響版本啟動強制自動更新至 6.9.5／7.0.2，尚未更新站台應立即確認。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-63030", "CVE-2026-60137", "WORDPRESS", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "資安業者揭露首起完全由 AI 代理自主執行的勒索軟體攻擊鏈 新型 ENCFORGE 專門摧毀 AI 模型資產",
+     "url": "https://www.helpnetsecurity.com/2026/07/21/jadepuffer-encforge-ransomware/",
+     "summary": "Sysdig 威脅研究團隊追蹤的 JADEPUFFER 代理式攻擊者，透過 Langflow 平台已知漏洞 CVE-2025-3248（未驗證程式碼執行，CVSS 9.8，官方已修補至 1.3.0 以上版本）入侵後，由 LLM 代理自主完成偵察、竊密、橫向移動與部署，近期升級部署新型 Go 語言勒索軟體 ENCFORGE，鎖定約 180 種副檔名，鎖定模型權重、向量資料庫與訓練資料集等 AI/ML 基礎設施進行加密。",
+     "source": "Help Net Security",
+     "tags": ["JADEPUFFER", "ENCFORGE", "AI-AGENT", "LANGFLOW"]
+    },
+    {
+     "severity": "high",
+     "title": "Qilin 勒索軟體集團持續利用 Palo Alto PAN-OS 驗證繞過漏洞入侵企業網路",
+     "url": "https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html",
+     "summary": "CVE-2026-0257（CVSS 7.8）影響 PAN-OS GlobalProtect 入口網站與閘道，在啟用驗證覆寫 Cookie 與特定憑證設定時允許未驗證攻擊者繞過登入建立合法 VPN 連線。Palo Alto Networks 已於 5/13 釋出修補，但攻擊者持續利用未修補設備入侵後執行憑證竊取、橫向移動並部署 Qilin 勒索軟體，未更新至修補版本的 PAN-OS 10.2、11.1、11.2、12.1 用戶仍具高風險。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-0257", "QILIN", "PALOALTO", "RANSOMWARE"]
+    },
+    {
+     "severity": "high",
+     "title": "接案平台 Paidwork 資料外洩 2330 萬用戶銀行與個資曝光",
+     "url": "https://www.helpnetsecurity.com/2026/07/20/paidwork-data-breach-23-million-users/",
+     "summary": "零工經濟平台 Paidwork 外洩約 11GB 資料庫，含 2330 萬組電子郵件、銀行帳號、交易紀錄、身分證件與居住地址等敏感個資，bcrypt 密碼雜湊亦包含在內。外洩最早於 3 月在駭客論壇兜售，7 月完整資料庫公開流出並登錄 HIBP 資料庫，Paidwork 官方至今尚未公開回應或提供修補進度。",
+     "source": "Help Net Security",
+     "tags": ["PAIDWORK", "DATA-BREACH", "BCRYPT"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "解放軍直升機、無人機首度穿越台海中線以東限航區 專家憂演練「偵打一體」兵力投送",
+     "url": "https://www.chinatimes.com/realtimenews/20260721003192-260417",
+     "summary": "國防部證實中共直升機與無人機各 1 架次於中線以東 R9 限航區長時間逗留飛行，為 2022 年北京單方面否定海峽中線默契以來，共軍旋翼機首度直接穿越台海中央狹窄海域。專家分析，此新戰術可能是在演練「偵打一體」的偵蒐與打擊力量投送模式，為對台奪局作戰預作準備。",
+     "source": "中時新聞網",
+     "tags": ["台海中線", "解放軍", "直升機", "偵打一體"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：偵獲 21 架次共機出海演訓 19 架次進入西南空域執行今年第二次遠海長航",
+     "url": "https://tw.news.yahoo.com/%E5%81%B5%E7%8D%B221%E6%9E%B6%E6%AC%A1%E5%85%B1%E6%A9%9F%E5%87%BA%E6%B5%B7-19%E6%9E%B6%E9%80%B2%E5%85%A5%E8%A5%BF%E5%8D%97%E7%A9%BA%E5%9F%9F%E5%9F%B7%E8%A1%8C%E9%81%A0%E6%B5%B7%E9%95%B7%E8%88%AA-053700327.html",
+     "summary": "國防部指出，殲-16 戰機、空警-500 預警機與運油-20 加油機等共 21 架次共機出海，其中 19 架次進入台灣西南空域及西太平洋執行今年第二次「遠海長航」任務。國軍運用聯合情監偵系統嚴密監控，並派遣任務機艦與岸置飛彈系統應處。",
+     "source": "東森新聞／中央社",
+     "tags": ["共機", "遠海長航", "西南空域"]
+    },
+    {
+     "severity": "info",
+     "title": "國防部：最近 24 小時偵獲共艦 5 艘、共機 4 架次在台海周邊活動",
+     "url": "https://www.cna.com.tw/news/aipl/202607210034.aspx",
+     "summary": "國防部公布 7/20 上午 6 時至 7/21 上午 6 時期間，偵獲中共海軍艦艇 5 艘、各型機艦共 4 架次在台海周邊活動，國軍運用任務機艦及岸置飛彈系統嚴密監控應處。",
+     "source": "中央社",
+     "tags": ["國防部", "共艦", "共機"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜美國務院譴責中國仁愛礁「危險挑釁」行動 重申 2016 南海仲裁具法律拘束力",
+     "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/07/chinas-actions-against-philippine-navy-personnel-at-second-thomas-shoal",
+     "summary": "針對 7/20 中國海警船人員以木棍重擊菲律賓海軍人員頭部致傷一事，美國國務院發言人皮戈特發表聲明譴責中方「危險且挑釁」的行為模式已破壞區域和平穩定，並重申 2016 年南海仲裁裁決最終且對中菲雙方具法律拘束力，呼籲北京立即停止破壞穩定的行徑。中方則反控菲方船隻非法擱置仁愛礁並率先以槳、棍攻擊中方執法人員。",
+     "source": "U.S. Department of State",
+     "tags": ["仁愛礁", "南海仲裁", "菲律賓", "南海"]
+    },
+    {
+     "severity": "warning",
+     "title": "歐盟、英國首次聯合對俄羅斯網路攻擊實施制裁 認定 FSB「中心 16」須為波蘭能源電網攻擊負責",
+     "url": "https://therecord.media/russia-blamed-for-poland-grid-cyberattack-in-joint-uk-eu-sanctions-package",
+     "summary": "英國與歐盟於 7/13 首次同步（各依自身法律框架）對俄羅斯發動聯合制裁，正式將去年冬季一度威脅切斷波蘭 50 萬人供暖的能源電網攻擊歸咎於俄羅斯聯邦安全局（FSB）訊號情報部門「中心 16」。制裁另涵蓋針對法國、德國、荷蘭、奧地利、羅馬尼亞等多國政府網路與關鍵基礎設施的破壞行動，英國新增制裁 24 個目標，歐盟制裁 13 個目標。",
+     "source": "The Record",
+     "tags": ["FSB", "波蘭", "制裁", "關鍵基礎設施"]
+    },
+    {
+     "severity": "info",
+     "title": "分析：川普訪中之行料延長美中貿易休兵 惟關稅與科技管制摩擦點未解",
+     "url": "https://www.mayerbrown.com/en/insights/publications/2026/07/trumps-china-visit-will-likely-extend-trade-truce-while-points-of-friction-remain",
+     "summary": "分析指出，川普今年稍早已訪問北京，中方承諾採購 200 架波音客機及每年 170 億美元美國農產品，雙方預計今年內至少再會晤三次（華府、APEC、G20），貿易休兵有望延續，但半導體出口管制、關稅豁免期限（多項對等關稅將於 7/24 到期）等結構性摩擦仍未解決。",
+     "source": "Mayer Brown",
+     "tags": ["川普", "中美貿易", "關稅"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股 7/21 收漲 1783.17 點創收盤最大漲點紀錄 電子權值股全面強彈",
+     "url": "https://tw.stock.yahoo.com/news/%E9%9B%BB%E5%AD%90%E6%AC%8A%E5%80%BC%E8%82%A1%E5%BC%B7%E5%BD%88-%E5%8F%B0%E8%82%A1%E5%8B%81%E6%8F%9A1783%E9%BB%9E%E5%89%B5%E6%9C%80%E5%A4%A7%E6%BC%B2%E9%BB%9E-063217057.html",
+     "summary": "加權指數 7/21 終場上漲 1783.17 點（+4.2%），收在 44,232.87 點，創史上單日收盤最大漲點紀錄，成交值達新台幣 8356.24 億元。台積電收漲 90 元至 2410 元、聯發科亮燈漲停收 3670 元，投信與自營商合計買超 164.07 億元，外資賣超 43.32 億元。",
+     "source": "Yahoo奇摩股市／經濟日報",
+     "tags": ["台股", "加權指數", "台積電"]
+    },
+    {
+     "severity": "info",
+     "title": "美股 7/21 收漲：那斯達克漲 1.4%、標普 500 漲 0.4% 財報季科技股回神",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-21-2026",
+     "summary": "美股三大指數 7/21 全面收漲，那斯達克指數上漲約 1.4%、標普 500 上漲約 0.4%、道瓊工業指數上漲約 0.26%，主因企業財報季表現優於預期提振科技股，惟中東地緣緊張情勢仍為市場潛在風險因子。",
+     "source": "TheStreet",
+     "tags": ["美股", "那斯達克", "標普500"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油 7/21 收 90.66 美元創波段新高 中東地緣風險溢價持續發酵",
+     "url": "https://www.investing.com/commodities/brent-oil",
+     "summary": "布蘭特原油期貨 7/21 上漲 1.61% 至每桶 90.66 美元，受美伊衝突延燒及荷姆茲海峽航運風險影響，能源地緣政治風險溢價持續墊高油價，市場關注後續是否進一步推升全球通膨與央行利率決策。",
+     "source": "Investing.com",
+     "tags": ["布蘭特原油", "中東", "能源"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元盤中一度貶破 32.4 元 台股熱錢與地緣風險交織影響匯價",
+     "url": "https://news.cnyes.com/news/id/6541437",
+     "summary": "新台幣兌美元 7/21 盤中一度貶值 0.5% 至約 32.41 元附近（正式收盤價以央行公告為準，此為盤中近似值），市場人士指出台股資金流向與中東地緣風險交織，持續牽動匯價波動方向。",
+     "source": "鉅亨網",
+     "tags": ["新台幣", "匯率", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

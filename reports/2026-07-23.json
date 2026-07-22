@@ -1,0 +1,138 @@
+{
+ "date": "2026-07-23",
+ "focus": "北韓駭客組織Sapphire Sleet 19分鐘攻陷140餘個npm套件；SharePoint、ServiceNow同日各爆嚴重在野漏洞",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "SharePoint 再爆高危漏洞 CVE-2026-50522 公開 PoC 釋出後遭在野利用",
+     "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+     "summary": "反序列化漏洞 CVE-2026-50522（CVSS 9.8）影響 SharePoint Server Subscription Edition、2019 及 2016 Enterprise（Microsoft 365 SharePoint Online 不受影響），未經驗證攻擊者可送出特製序列化物件於伺服器端執行任意程式碼。微軟已於 7 月 14 日發布修補程式，但公開概念驗證碼釋出後，研究人員已偵測到針對地端未修補伺服器的實際攻擊。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-50522", "SHAREPOINT", "RCE", "MICROSOFT"]
+    },
+    {
+     "severity": "critical",
+     "title": "ServiceNow AI Platform 沙箱逃逸漏洞修補後 4 天即遭在野利用",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
+     "summary": "CVE-2026-6875（CVSS 9.5）為 ServiceNow AI Platform 沙箱逃逸漏洞，未經驗證攻擊者可逃逸沙箱於伺服器端執行任意程式碼。官方代管實例自 4 月起已修補、自架版本更新於 7 月 13 日釋出，但研究人員 7 月 17 日即證實在野攻擊，且發現繞過既有防禦的第二條沙箱逃逸攻擊鏈，尚未升級的自架客戶仍暴露風險。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-6875", "SERVICENOW", "SANDBOX-ESCAPE"]
+    },
+    {
+     "severity": "high",
+     "title": "北韓駭客組織 Sapphire Sleet 19 分鐘內攻陷 140 餘個 npm 套件 鎖定 AI 開發生態系",
+     "url": "https://tech-insider.org/npm-supply-chain-attack-2026/",
+     "summary": "微軟威脅情資團隊指出，北韓國家級駭客組織 Sapphire Sleet 奪取 npm 維護者帳號控制權後，於 19 分鐘內對 Mastra AI 套件生態系植入逾 140 個惡意版本，為 2026 年迄今規模最大的 npm 供應鏈攻擊。事件凸顯 AI 開發工具鏈已成為國家級行動者新目標，下游使用該套件的開發環境均應立即檢查是否安裝到受污染版本。",
+     "source": "Tech Insider／Microsoft Threat Intelligence",
+     "tags": ["NPM", "SUPPLY-CHAIN", "NORTH-KOREA", "SAPPHIRE-SLEET"]
+    },
+    {
+     "severity": "high",
+     "title": "日本最大冷凍食品商日冷（Nichirei）遭 RansomHouse 入侵 系統癱瘓逾一週波及全國供應鏈",
+     "url": "https://www.japantimes.co.jp/business/2026/07/22/companies/nichirei-cyberattack-ransomhouse/",
+     "summary": "勒索軟體集團 RansomHouse 承認入侵日本食品龍頭日冷公司，攻擊自 7 月 13 日起導致系統中斷至今尚未恢復，波及肯德基日本、永旺（AEON）、藏壽司等約 5,000 家合作夥伴的物流與訂單系統，多地爆出冷凍食品缺貨、菜單縮減與門市暫停線上訂購，官方尚未公布復原時程或是否支付贖金。",
+     "source": "The Japan Times",
+     "tags": ["RANSOMHOUSE", "RANSOMWARE", "JAPAN", "SUPPLY-CHAIN"]
+    },
+    {
+     "severity": "medium",
+     "title": "美國信用合作社遭 DragonForce 入侵 客戶財務資料與委外資安報告外流",
+     "url": "https://www.dexpose.io/dragonforce-ransomware-attack-on-one-community-fcu/",
+     "summary": "勒索軟體集團 DragonForce 宣稱入侵美國 One Community 聯邦信用合作社，外流客戶財務文件、繳款延遲紀錄及內部資安評估報告，並點名其委外資安廠商 TraceSecurity 防護「執行不力」導致外洩，凸顯中小型金融機構第三方風險管理缺口。目前尚無官方公開的修補或求償進度說明。",
+     "source": "DeXpose／Ransomware.live",
+     "tags": ["DRAGONFORCE", "RANSOMWARE", "FINANCIAL", "US"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24 小時內偵獲 16 架次共機、13 架次逾越中線 比例創近期新高",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部統計自 7/22 上午 6 時至 7/23 上午 6 時，偵獲中共 16 架次軍機（其中 13 架次逾越台海中線，進入北部、中部、西南及東部空域）及 8 艘共艦，合計 24 機艦船持續在台海周邊活動，逾越中線比例偏高。國軍運用任務機艦及岸置飛彈系統嚴密監控與應處（因國防部官網頁面採 JS 動態渲染、直連受阻，數字取自中央社等媒體轉載彙整）。",
+     "source": "國防部／中央社（近似值）",
+     "tags": ["國防部", "共機", "台海中線"]
+    },
+    {
+     "severity": "medium",
+     "title": "陸委會譴責香港獨立書店遭搜查 國台辦反控赴陸失聯數據「編造假訊息」",
+     "url": "https://www.ettoday.net/news/20260722/3206014.htm",
+     "summary": "陸委會就香港「留下書舍」與「田園書屋」遭國安處第三度搜查、店員遭捕一事表態，指此象徵香港言論與出版自由空間持續消逝；陸委會並將自本週起每週定期公布台灣人赴陸遭關押、拘留數據，國台辦則反控民進黨當局「編造假訊息」、拿不出具體例證，雙方隔海交鋒未見緩解。",
+     "source": "ETtoday",
+     "tags": ["陸委會", "國台辦", "香港", "言論自由"]
+    },
+    {
+     "severity": "medium",
+     "title": "台灣對美軍購預算僵局未解 F-16 交機進度一再延宕考驗防衛期程",
+     "url": "https://www.twreporter.org/a/special-military-procurement-budget-in-deadlock",
+     "summary": "立法院三讀通過的國防特別預算僅先撥付新台幣 88 億餘元供 2026 年度優先軍購項目，原訂 2026 年全數交機的 66 架 F-16 戰機已延至下半年才開始首批交付，反映台美採購程序與美方產能雙重延宕，朝野對後續高達 7,800 億元特別預算的協商進度仍是外界觀察焦點。",
+     "source": "報導者",
+     "tags": ["F-16", "軍購", "國防預算"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜美伊衝突連燒第 11 夜 川普揚言伊朗每攻擊船隻就炸毀電廠橋樑",
+     "url": "https://www.cnbc.com/2026/07/22/us-iran-war-trump-hormuz-.html",
+     "summary": "美軍對伊朗展開第 11 個夜晚空襲，鎖定軍事作戰中心、海上作戰能量、機庫與無人機儲存設施等後勤基礎設施；伊朗稍早在荷姆茲海峽攻擊一艘油輪迫使船員棄船。川普揚言伊朗每對船隻出手一次，美方就會摧毀一座伊朗橋樑或發電廠，伊朗則揚言擴大反制打擊美國相關能源設施，緊張情勢未見降溫跡象。",
+     "source": "CNBC",
+     "tags": ["伊朗", "荷姆茲海峽", "美伊衝突"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜南海仁愛礁衝突延燒 中菲互召大使抗議 王毅同步訪馬尼拉談行為準則",
+     "url": "https://www.usnews.com/news/world/articles/2026-07-21/china-summons-philippine-ambassador-over-south-china-sea-encounter",
+     "summary": "繼中國海警人員涉嫌持棍重擊菲律賓海軍人員頭部一事後，中菲雙方相互召見對方大使表達抗議；但中國外長王毅同時間睽違兩年再訪馬尼拉，與菲律賓外長拉薩羅會晤，雙方雖各執一詞（菲方稱遭中國海警攻擊、中方反控菲方蛙人挑釁在先），仍同聲強調此次衝突「未改變」推進南海行為準則談判的意願。",
+     "source": "U.S. News／Rappler",
+     "tags": ["南海", "仁愛礁", "王毅", "菲律賓"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股 7/22 收漲約 592.91 點站上 44,800 點關卡 電子權值股同步走揚",
+     "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+     "summary": "加權指數 7/22 終場上漲約 592.91 點（+1.34%），收在 44,825.78 點附近，延續前一交易日歷史級大漲走勢，電子權值股同步走揚（因 Yahoo Finance API 直連與 WebFetch 均受阻，數字為 WebSearch 彙整近似值，正式收盤價請以證交所公告為準）。",
+     "source": "Yahoo奇摩股市（近似值）",
+     "tags": ["台股", "加權指數"]
+    },
+    {
+     "severity": "info",
+     "title": "美股 7/22 早盤走勢分歧 那斯達克、標普靜待 Alphabet、特斯拉財報",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-22-dow-sp-500-nasdaq-alphabet-tesla-earnings-083644887.html",
+     "summary": "美股三大指數 7/22 開盤漲跌不一，道瓊指數上漲約 0.3%、標普 500 小漲約 0.2%、那斯達克小跌約 0.1%，市場聚焦盤後登場的 Alphabet、特斯拉財報，油價走高及關稅不確定性亦為觀察焦點（因 API 直連受阻，數字為 WebSearch 彙整近似值）。",
+     "source": "Yahoo Finance（近似值）",
+     "tags": ["美股", "標普500", "那斯達克"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油飆漲穿越 94 美元 荷姆茲油輪遇襲推升能源風險溢價",
+     "url": "https://www.investing.com/commodities/brent-oil",
+     "summary": "布蘭特原油期貨 7/22 一度飆漲約 3.4% 至每桶 94.13 美元，創逾一個月新高，主因伊朗稍早在荷姆茲海峽攻擊一艘油輪迫使船員棄船，加上美軍對伊朗展開第 11 夜空襲，能源地緣政治風險溢價持續墊高油價（此價格為 WebSearch 彙整近似值）。",
+     "source": "Investing.com（近似值）",
+     "tags": ["布蘭特原油", "荷姆茲海峽", "能源"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元盤中貶破 32.48 元 續受台股資金與地緣風險牽動",
+     "url": "https://news.cnyes.com/news/id/6542673",
+     "summary": "美元兌新台幣 7/22 盤中一度上漲約 0.44% 至 32.488 元附近（正式收盤價以央行公告為準，此為盤中近似值），市場持續消化中東地緣風險及美國利率路徑不確定性對匯價的影響。",
+     "source": "鉅亨網",
+     "tags": ["新台幣", "匯率", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

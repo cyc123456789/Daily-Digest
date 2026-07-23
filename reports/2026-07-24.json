@@ -1,0 +1,146 @@
+{
+ "date": "2026-07-24",
+ "focus": "中國宣布台灣海峽兩日實彈射擊劃設禁航區，同日國防部曝共機21架次、20架次逾越中線，共軍動態全面升溫",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Check Point SmartConsole 零時差漏洞遭在野利用 CVE-2026-16232 可完整接管防火牆管理伺服器",
+     "url": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
+     "summary": "CVE-2026-16232（CVSS 9.1）為 SmartConsole 登入流程驗證繞過漏洞，未經驗證攻擊者可取得應用程式權杖並以完整管理權限登入管理伺服器、竄改安全政策。Check Point 已於 7 月 22 日針對 R81.20、R82、R82.10 釋出 Jumbo Hotfix，官方證實已有少數客戶遭實際攻擊，CISA 已列入 KEV 並要求聯邦機關於 7 月 25 日前完成修補。",
+     "source": "The Hacker News／CISA",
+     "tags": ["CVE-2026-16232", "CHECKPOINT", "KEV", "AUTH-BYPASS"]
+    },
+    {
+     "severity": "high",
+     "title": "Linux 核心 XFS「RefluXFS」競爭條件漏洞 CVE-2026-64600 影響逾 1,640 萬台伺服器",
+     "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/07/22/refluxfs-a-linux-kernel-local-privilege-escalation-to-root-in-xfs-cve-2026-64600",
+     "summary": "Qualys 揭露的 CVE-2026-64600（暱稱 RefluXFS）存在於 XFS 檔案系統寫時複製路徑，一般本機帳號即可利用競爭窗口取得主機 root 權限，即便在 SELinux Enforcing 模式下仍可成功，且變更直接落於磁碟層、重開機後仍存在、不留核心日誌。修補已於 7 月 16 日併入核心主線，RHEL、Oracle Linux、AlmaLinux、Rocky Linux、Fedora 等發行版正陸續回植，Qualys 指出目前無可靠暫時緩解措施，須儘速更新核心。",
+     "source": "Qualys",
+     "tags": ["CVE-2026-64600", "LINUX", "XFS", "PRIVILEGE-ESCALATION"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Anubis 勒索軟體集團認領可口可樂子公司 Fairlife 攻擊 宣稱竊得 1TB 資料",
+     "url": "https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/",
+     "summary": "繼 7 月中 Fairlife 遭勒索軟體癱瘓美國產線一事後，Anubis 勒索軟體集團已於暗網外洩網站認領此攻擊，宣稱早在官方公開揭露前一週即入侵並加密其 Nutanix 基礎架構，竊得約 1TB 企業資料，並限期本週內展開談判否則公開外洩，惟集團尚未提供竊得資料的實際證明。",
+     "source": "BleepingComputer",
+     "tags": ["ANUBIS", "RANSOMWARE", "FAIRLIFE", "COCA-COLA"]
+    },
+    {
+     "severity": "medium",
+     "title": "Chaos 勒索軟體集團新型後門 msaRAT 借道 Chrome／Edge 瀏覽器躲避偵測",
+     "url": "https://thehackernews.com/2026/07/chaos-ransomware-uses-msarat-to-route.html",
+     "summary": "Cisco Talos 揭露 Chaos 勒索軟體集團採用的 Rust 後門 msaRAT，透過 Chrome DevTools Protocol 操控無頭瀏覽器並經 WebRTC／Twilio TURN 中繼傳輸指揮控制流量，惡意程式本身不與外部建立任何直接連線，防禦端偵測到的僅是瀏覽器對 Cloudflare、Twilio 的正常連線，大幅降低被偵測風險；集團慣用電子郵件或語音釣魚搭配遠端管理工具取得初始存取，企業應留意異常無頭瀏覽器行程。",
+     "source": "Cisco Talos／The Hacker News",
+     "tags": ["CHAOS", "MSARAT", "RANSOMWARE", "C2"]
+    },
+    {
+     "severity": "medium",
+     "title": "醫療計費軟體商 Craneware 遭入侵 資料外洩波及全美近 2,000 家醫院帳務系統",
+     "url": "https://techcrunch.com/2026/07/20/hackers-stole-significant-amount-of-data-from-tech-firm-relied-on-by-thousands-of-us-hospitals-and-pharmacies/",
+     "summary": "英國醫療財務軟體商 Craneware（服務全美約 2,000 家醫院及 1 萬家診所、藥局）證實資料環境遭未經授權存取，攻擊者外流大量檔名、部分員工資料及客戶與合作夥伴紀錄，公司稱多數屬非敏感或已公開的法規資料，客戶端服務未中斷；已通報英國 ICO 與美國 FBI，尚未證實是否涉及病患健康資訊。",
+     "source": "TechCrunch",
+     "tags": ["CRANEWARE", "HEALTHCARE", "DATA-BREACH", "US"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "中國宣布台灣海峽 7/23、7/24 連兩日實彈射擊 劃設禁航區禁止進入",
+     "url": "https://www.chinatimes.com/realtimenews/20260723002132-260409",
+     "summary": "中國海事局發布航行警告，於台灣海峽部分海域自 7 月 23 日 6 時至 18 時、及 7 月 24 日 6 時至 18 時分別實施實彈射擊，公告期間全面禁止船隻進入相關海域。此舉緊接近期共機、共艦活動頻率攀升之後，動作時間點與範圍再度牽動台海情勢神經。",
+     "source": "中時新聞網",
+     "tags": ["台灣海峽", "實彈射擊", "禁航區", "中國海事局"]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：24 小時內偵獲共機 21 架次、20 架次逾越中線創新高比例 共艦 6 艘、公務船 2 艘",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部統計自昨日上午 6 時至今日上午 6 時，偵獲中共軍機 21 架次，其中高達 20 架次逾越台海中線進入北部及西南空域，逾越比例創近期新高；另偵獲共艦 6 艘、公務船 2 艘在周邊海域活動。國防部同時公告中共預計於西昌衛星發射中心執行運載火箭發射，飛行方向朝西太平洋並將經過台灣防空識別區（ADIZ），國軍已提升監控應處。",
+     "source": "國防部",
+     "tags": ["國防部", "共機", "台海中線", "ADIZ"]
+    },
+    {
+     "severity": "medium",
+     "title": "陸委會回應國台辦批評限制陸貨入台 強調標準行之有年、朝野一致",
+     "url": "https://www.chinatimes.com/realtimenews/20260723002132-260409",
+     "summary": "針對國台辦批評台灣限制大陸產品（如電動機車等）進口一事，陸委會 23 日回應指出，相關限制措施行之有年，無論民進黨或國民黨執政期間均採同一標準處理，非針對特定時期政策，暗示北京無需選擇性放大解讀。",
+     "source": "中時新聞網",
+     "tags": ["陸委會", "國台辦", "兩岸經貿"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜葉門胡塞武裝擊中沙國兩艘油輪 川普警告伊朗再攻擊船隻就炸毀電廠或橋樑",
+     "url": "https://www.cnbc.com/2026/07/23/iran-war-us-trump-houthis-red-sea-oil.html",
+     "summary": "葉門胡塞組織宣稱在紅海擊中兩艘沙烏地籍油輪，川普隨後重申警告：伊朗（或其代理人）此後每對荷姆茲海峽船隻動用飛彈、火箭、無人機等武器攻擊一次，美方就會摧毀一座伊朗橋樑或發電廠；伊朗軍方消息人士則透過塔斯尼姆通訊社反嗆將報復美國在區域內的能源基礎設施利益，緊張情勢未見降溫跡象。",
+     "source": "CNBC",
+     "tags": ["伊朗", "胡塞", "荷姆茲海峽", "美伊衝突"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜王毅晤菲律賓外長拉扎羅 就仁愛礁衝撞事件提出強烈抗議",
+     "url": "https://www.ettoday.net/news/20260723/3206229.htm",
+     "summary": "中國外長王毅於東亞合作系列外長會期間在馬尼拉會晤菲律賓外長拉扎羅，就日前菲方人員持划槳、長棍衝撞中方在仁愛礁海警船一事表達嚴正抗議，並警告若菲方藉域外國家挑釁滋事「只能自吞苦果」；拉扎羅則重申菲方奉行一個中國政策、盼透過對話解決爭端，雙方基本立場仍各執一詞，但仍維持會晤管道。",
+     "source": "ETtoday",
+     "tags": ["南海", "仁愛礁", "王毅", "菲律賓"]
+    },
+    {
+     "severity": "info",
+     "title": "日本高市內閣研議修改憲法第九條 擬強化自衛隊能力",
+     "url": "https://www.specialeurasia.com/2026/01/07/asia-pacific-risk-2026/",
+     "summary": "日本首相高市早苗領導的內閣被指正評估修改和平憲法第九條，以強化自衛隊軍事能力並提升日本在印太安全架構中的角色，此舉料將牽動中日、南北韓及區域軍力平衡的外交敏感神經，後續修憲進程與周邊國家反應值得持續觀察。",
+     "source": "SpecialEurasia",
+     "tags": ["日本", "憲法第九條", "自衛隊"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "布蘭特原油衝破每桶 100 美元 創六周新高 胡塞攻擊沙國油輪推升風險溢價",
+     "url": "https://www.singtaousa.com/2026/07/23/news/usa/war-in-iran-escalates-global-oil-prices-top-100-per-barrel/",
+     "summary": "布蘭特原油期貨 7/23 一度大漲逾 6%，9 月合約衝上每桶約 99.7～100.6 美元，創 6 月初以來新高，主因葉門胡塞武裝襲擊沙烏地籍油輪、疊加美伊衝突持續延燒的地緣政治風險溢價，市場並憂心衝突若進一步升溫，油價恐挑戰 2022 年高點。",
+     "source": "星島日報",
+     "tags": ["布蘭特原油", "荷姆茲海峽", "胡塞", "能源"]
+    },
+    {
+     "severity": "medium",
+     "title": "Alphabet、特斯拉財報後盤後重挫逾 6%、12% AI 資本支出激增引爆現金流疑慮",
+     "url": "https://www.cnbc.com/2026/07/23/stock-market-today-live-updates.html",
+     "summary": "Alphabet 第二季營收年增 24% 至 1198 億美元優於預期、雲端業務更大增 82%，但因上調 2026 年資本支出至 1,950～2,050 億美元、市場憂心 AI 基建投入侵蝕獲利，股價盤後跌逾 6%；特斯拉營收年增 26% 至 282.4 億美元但淨利年減 5%，自由現金流轉負為兩年多來首見，股價重挫逾 12%，兩大權值股拖累標普 500 當日收跌逾 1.2%、那斯達克跌約 2%。",
+     "source": "CNBC",
+     "tags": ["ALPHABET", "TESLA", "美股", "財報"]
+    },
+    {
+     "severity": "info",
+     "title": "台股 7/23 收漲 25.03 點來到 44,850.81 點 台積電尾盤翻紅收 2,405 元",
+     "url": "https://www.cna.com.tw/news/afe/202607230162.aspx",
+     "summary": "加權指數 7/23 盤中上下震盪逾 700 點，一度上探 45,089.82 點、下探 44,340.76 點，終場受台積電尾盤急拉翻紅帶動，收在 44,850.81 點、上漲 25.03 點，成交值約新台幣 892.5 億元；台積電（2330）收盤價 2,405 元，上漲 5 元。",
+     "source": "中央社",
+     "tags": ["台股", "加權指數", "台積電"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元持續承壓 續於 32.4 元附近整理 資金與地緣風險交織影響匯價",
+     "url": "https://www.cbc.gov.tw/tw/np-382-1.html",
+     "summary": "新台幣兌美元近日持續於 32.4 元上下水準整理，受台股資金流動、美伊衝突推升油價及美元避險需求等因素交織影響（因即時牌價來源受阻，此為近期區間近似值，正式收盤匯率請以央行公告為準）。",
+     "source": "中央銀行（近似值）",
+     "tags": ["新台幣", "匯率", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

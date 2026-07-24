@@ -1,0 +1,146 @@
+{
+ "date": "2026-07-25",
+ "focus": "美伊衝突外溢伊拉克、伊朗拒絕停火，油價破百美元推升聯準會9月升息機率飆至82%，全球股市重挫、台股跌2.67%",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Clop勒索集團升級PTC Windchill／FlexPLM攻擊 CVE-2026-12569已轉入大規模勒索信件階段",
+     "url": "https://www.bleepingcomputer.com/news/security/clop-ransomware-targets-windchill-flexplm-in-data-theft-attacks/",
+     "summary": "Clop自6月起以零時差手法利用CVE-2026-12569（CVSS 9.8，已列入CISA KEV）入侵暴露於網路的PTC Windchill PDMLink與FlexPLM系統，植入JSP網頁後門竊取資料。Ransom-ISAC觀察到集團自7月20日起寄發「Windchill PDMLink module serious data leak」勒索郵件，鎖定製造、汽車、航太與零售業，受影響版本應立即修補並排查是否已遭植入後門。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-12569", "CLOP", "PTC-WINDCHILL", "KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "AD CS「Certighost」漏洞概念驗證公開 CVE-2026-54121 低權限帳戶可偽冒網域控制站",
+     "url": "https://thehackernews.com/2026/07/certighost-exploit-lets-low-privileged.html",
+     "summary": "研究人員H0j3n與Aniq Fakhrul於7月24日公開CVE-2026-54121（CVSS 8.8）概念驗證程式碼，攻擊者僅需一般網域帳戶即可誘騙憑證授權單位核發網域控制站憑證並完成偽冒。微軟已於7月14日修補，目前尚未有在野利用回報，但PoC公開後掃描與攻擊風險大增，未套用7月更新的AD CS環境應立即檢查並修補。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-54121", "CERTIGHOST", "ACTIVE-DIRECTORY", "PRIVILEGE-ESCALATION"]
+    },
+    {
+     "severity": "high",
+     "title": "AI代理Kimi K3自主挖掘Redis多項零時差漏洞 官方7月23日連發7個安全更新",
+     "url": "https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html",
+     "summary": "研究員Chaofan Shou宣稱以32個Kimi K3 AI代理協同對Redis原始碼進行模糊測試，發現串流消費群組共享NACK重複釋放（double-free）與RedisBloom TDigest模組堆積溢位，並串成可通過驗證的遠端執行程式碼PoC，影響Redis 6.2.22、7.4.9、8.6.4、8.8.0等主線版本。Redis已於7月23日釋出7項安全更新，用戶應儘速升級；相關漏洞細節與利用手法尚未經官方獨立驗證。",
+     "source": "The Hacker News",
+     "tags": ["REDIS", "ZERO-DAY", "AI-AGENT", "RCE"]
+    },
+    {
+     "severity": "medium",
+     "title": "Chick-fil-A遭大規模帳號填充攻擊 逾1.3萬會員個資與金流資料外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/chick-fil-a-data-breach-affects-more-than-13-000-customers/",
+     "summary": "Chick-fil-A證實6月17日至19日間會員忠誠計畫App遭第三方外洩憑證發動帳號填充攻擊，7月13日確認逾1.3萬名顧客帳戶遭存取，姓名、電子郵件、會員編號、付款識別碼、QR code與部分卡號外流。公司已強制登出受影響帳戶、移除已儲存付款方式並補償點數，此為該忠誠App今年第二度遭類似手法入侵。",
+     "source": "BleepingComputer",
+     "tags": ["CHICK-FIL-A", "CREDENTIAL-STUFFING", "DATA-BREACH", "PII"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機8架次（6架次逾越中線）、共艦6艘、公務船4艘",
+     "url": "https://aninews.in/news/world/asia/taiwan-detects-heightened-chinese-military-activity-around-its-territory20260724065755/",
+     "summary": "台灣國防部公布最新24小時動態，偵獲中共軍機8架次，其中6架次逾越台海中線進入北部、西南及東部空域，另有解放軍艦艇6艘、公務船4艘持續在台海周邊活動。國軍運用聯合情監偵手段嚴密掌握，並適時派遣任務機、艦及岸置飛彈系統應處。",
+     "source": "ANI",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "ADIZ"]
+    },
+    {
+     "severity": "medium",
+     "title": "海軍沱江級「丹江艦」成軍 賴清德：年底前12艘全數到位、以實力達成和平",
+     "url": "https://www.cna.com.tw/news/aipl/202607240142.aspx",
+     "summary": "沱江級第二批次首艦「丹江艦」（PGG-627）24日在高雄左營軍港成軍，可搭載雄風二、三型反艦飛彈及海欉樹防空飛彈，外界稱其為「航母殺手」。總統賴清德出席典禮時強調將持續推動國艦國造、國防自主，12艘沱江級艦艇預計年底前全數成軍。",
+     "source": "中央社CNA",
+     "tags": ["ROC-NAVY", "TUO-CHIANG-CLASS", "DEFENSE-INDUSTRY", "LAI-CHING-TE"]
+    },
+    {
+     "severity": "medium",
+     "title": "魯比歐重申美國對台政策不變 強調軍售審查與習近平訪美無關",
+     "url": "https://www.cna.com.tw/news/aipl/202607240073.aspx",
+     "summary": "美國國務卿魯比歐24日被問及是否因習近平9月可能訪美而暫緩對台軍售時表示，兩者並無關聯，美國對台政策沒有改變；對台軍售仍在內部審查中，並指出美方去年12月才完成史上最大規模單筆對台軍售。魯比歐同時強調美中身為全球最大兩個經濟體與核武國家，仍須保持溝通與可合作領域的往來。",
+     "source": "中央社CNA",
+     "tags": ["RUBIO", "US-TAIWAN", "ARMS-SALES", "US-CHINA"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜陸委會評估台海實彈射擊：地點偏東山島外海、對台影響不大",
+     "url": "https://www.cna.com.tw/news/acn/202607230298.aspx",
+     "summary": "中國漳州海事局無預警發布航行警告，7月23日、24日各上午6時至晚間6時在台灣海峽部分海域實施實彈射擊並劃設禁航區。陸委會研判演習海域主要位於福建東山島外海、距金門約57.6浬，屬中共內水範圍的局部射擊，對台灣本島周邊航運與港口運作影響不大，外交部同步譴責北京應「即刻停止軍事挑釁」。",
+     "source": "中央社CNA",
+     "tags": ["台海", "實彈射擊", "陸委會", "東山島"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊戰事外溢伊拉克：無人機突襲美軍基地、伊朗拒絕停火提案、美眾院二度表決要求撤軍",
+     "url": "https://www.local10.com/news/world/2026/07/24/drones-target-northern-iraqi-city-where-us-forces-are-based-as-us-iran-fighting-escalates/",
+     "summary": "美軍完成連續第13夜對伊朗軍事目標空襲後，伊拉克北部艾比爾一處駐有美軍的基地24日遭至少5架自殺式無人機突襲，美軍及聯軍部隊將其擊落、無人員傷亡。伊朗官員同步向路透社證實，已拒絕由伊拉克總理轉交的川普停火提案，堅持荷姆茲海峽控制權須納入協議核心；美國眾議院則二度表決要求川普終止對伊軍事行動或取得國會授權。",
+     "source": "AP/Local10",
+     "tags": ["IRAN", "ERBIL", "HORMUZ", "US-MILITARY"]
+    },
+    {
+     "severity": "warning",
+     "title": "北韓藉中俄挺腰硬化核武立場 分析指聯合國制裁效力持續遭侵蝕",
+     "url": "https://www.38north.org/2026/07/north-korea-balances-between-china-and-russia-while-hardening-its-regional-posture/",
+     "summary": "分析指出，北韓近月加速向中俄靠攏，金正恩7月16日會晤中共全國政協主席王滬寧，紀念中北友好合作互助條約65週年。俄羅斯2024年否決延續聯合國專家小組後，國際社會追蹤北韓規避制裁的能力大幅減弱，北韓因而在核武與飛彈計畫上幾乎不受制裁掣肘，也讓南韓面臨重建國際制裁協調機制的壓力。",
+     "source": "38 North",
+     "tags": ["NORTH-KOREA", "CHINA", "RUSSIA", "SANCTIONS"]
+    },
+    {
+     "severity": "medium",
+     "title": "川普證實9月24日將於白宮接待習近平 盼將關稅休兵轉為長期架構",
+     "url": "https://modeldiplomat.com/story/xis-september-white-house-visit-tests-truce",
+     "summary": "川普證實將於9月24日聯合國大會期間邀請習近平訪問白宮，為5月北京峰會後雙方約定的年內第二次會晤，目標是把將於2025年10月到期、為期一年的關稅休兵轉化為由雙邊「貿易委員會」主導的制度化「管理貿易」架構。惟台灣軍售、南海仁愛礁與日本對台政策等未解爭議仍是潛在引爆點。",
+     "source": "Model Diplomat",
+     "tags": ["TRUMP", "XI-JINPING", "US-CHINA", "TRADE-TRUCE"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "台股7/24重挫1195點收43654點 台積電跌2.29% 創近期最大單日跌點",
+     "url": "https://finance.ettoday.net/news/3207024",
+     "summary": "受美股前一交易日全面下跌與中東地緣風險發酵影響，台股24日開低走低，加權指數終場大跌1195.97點、跌幅2.67%，收在43654.84點，成交量達7924.35億元；權值股台積電下跌55元至2350元，跌幅2.29%，電子權值股全面走弱。",
+     "source": "ETtoday",
+     "tags": ["TAIEX", "TSMC", "TAIWAN-STOCK", "SELLOFF"]
+    },
+    {
+     "severity": "high",
+     "title": "美股7/24收黑：標普跌1.2%、那斯達克重挫2.2% 道瓊跌逾500點",
+     "url": "https://sg.finance.yahoo.com/news/stock-market-news-july-24-132200865.html",
+     "summary": "美股週五收盤全面走跌，標普500指數下跌90.66點（1.2%）收7408.30點，那斯達克綜合指數重挫553.21點（2.2%）收25137.69點，道瓊工業指數下跌506.93點（1%）收51711.65點。Alphabet與特斯拉財報後賣壓延續，加上中東戰事推升油價與升息疑慮，科技股領跌大盤。",
+     "source": "Yahoo Finance/CNBC",
+     "tags": ["SP500", "NASDAQ", "DOW", "EARNINGS"]
+    },
+    {
+     "severity": "high",
+     "title": "伊朗戰事推升通膨疑慮 聯準會9月升息機率一週內從53%飆升至82%",
+     "url": "https://www.cnbc.com/2026/07/23/fed-interest-rate-odds-oil-jobless-claims.html",
+     "summary": "布蘭特原油週四（23日）本季首度衝破每桶100美元，帶動市場對通膨升溫的擔憂；根據CME FedWatch工具，聯邦資金期貨顯示9月政策會議升息機率已升至約82%，較一週前不到53%大幅攀升。多數分析師仍預期聯準會下週例會將維持現行3.50%至3.75%利率不變，但市場情緒已罕見地從「降息」轉向「升息」押注。",
+     "source": "CNBC",
+     "tags": ["FED", "RATE-HIKE", "OIL", "INFLATION"]
+    },
+    {
+     "severity": "medium",
+     "title": "新台幣持續承壓在32.35元附近整理 美元避險買盤與台股資金外流交織",
+     "url": "https://www.exchange-rates.org/exchange-rate-history/usd-twd-2026",
+     "summary": "受中東地緣風險推升美元避險需求，加上台股連日重挫引發資金外流，新台幣兌美元24日持穩於32.35元上下整理，較前一交易日貶值約0.1%；市場人士認為，若伊朗戰事與油價波動未見緩解，新台幣匯價恐持續承壓。",
+     "source": "Exchange-Rates.org",
+     "tags": ["TWD", "USD", "FOREX", "CAPITAL-OUTFLOW"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "date": "2026-07-26",
+ "focus": "美伊停火協議瀕臨瓦解，內唐亞胡七度訪美、雙方互控違約；SonicWall SMA零時差漏洞遭勒索軟體用於入侵企業網路",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "SonicWall SMA1000系列零時差漏洞遭Inc勒索軟體用於入侵企業 官方7月14日才發布公告",
+     "url": "https://thehackernews.com/2026/07/sonicwall-sma-zero-days-exploited.html",
+     "summary": "與Inc勒索軟體有關聯的駭客集團至少自6月22日起，即以零時差方式串聯SonicWall SMA1000系列的未驗證SSRF漏洞CVE-2026-15409（CVSS 10.0）與程式碼注入漏洞CVE-2026-15410取得root權限，早於SonicWall 7月14日發布修補公告前便已入侵多個企業網路竊取憑證。尚未套用更新的SMA1000設備應立即修補並排查是否已遭植入後門。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-15409", "CVE-2026-15410", "SONICWALL", "INC-RANSOMWARE"]
+    },
+    {
+     "severity": "critical",
+     "title": "俄羅斯國家級駭客利用Zimbra零時差零點擊漏洞 竊取NATO相關機構郵件與2FA驗證碼",
+     "url": "https://thehackernews.com/2026/07/russian-espionage-group-exploited.html",
+     "summary": "遭荷蘭情報單位追蹤為Laundry Bear（亦稱Void Blizzard／TA488）的俄羅斯國家級駭客組織，被揭露自2025年7月起即利用Zimbra Collaboration Suite漏洞CVE-2025-66376，僅需寄送特製郵件、無需使用者點擊即可植入JavaScript竊取憑證、90天信件內容、密碼與雙因子驗證碼，鎖定美、歐與烏克蘭政府及軍事相關機構。Zimbra已釋出修補，未升級的自架郵件伺服器應立即更新並排查外洩情形。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2025-66376", "ZIMBRA", "VOID-BLIZZARD", "ESPIONAGE"]
+    },
+    {
+     "severity": "high",
+     "title": "GitLab自架版本遠端執行程式碼漏洞遭公開利用 官方6月靜默修補未列為資安漏洞",
+     "url": "https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html",
+     "summary": "研究團隊depthfirst於7月24日公開一條可對GitLab自架18.11.3以下未更新版本執行任意指令的攻擊鏈概念驗證：攻擊者只需具備推送權限的一般帳號、透過提交特製Jupyter notebook洩漏記憶體位址即可完成遠端執行，無需管理員或CI權限。該修補其實已於6月10日以「Oj函式庫升級」名義隨附於一般更新中，未被列入安全公告、未取得CVE編號，管理員應立即確認是否已升級至最新版本。",
+     "source": "The Hacker News",
+     "tags": ["GITLAB", "RCE", "SELF-MANAGED", "NO-CVE"]
+    },
+    {
+     "severity": "warning",
+     "title": "駭客冒用Claude.ai網域投放惡意廣告 假冒官方安裝程式散布SectopRAT竊資木馬",
+     "url": "https://www.bleepingcomputer.com/news/security/fake-claude-app-promoted-by-bing-ads-pushes-sectoprat-malware/",
+     "summary": "研究單位Huntress揭露一起名為FakeAgent的惡意廣告活動：攻擊者於Bing刊登「Claude Desktop app」贊助廣告，導向架設在合法claude.ai網域上的公開Artifact頁面，再轉址下載偽裝成官方安裝檔的SectopRAT木馬。該惡意頁面在Anthropic下架前已被下載逾7,100次，7月21至22日期間至少29家企業受害，木馬具備側錄密碼、瀏覽器資料與遠端控制能力，並以VMProtect封裝規避分析。用戶應僅透過官方網站下載軟體，避免點擊搜尋引擎贊助廣告連結。",
+     "source": "BleepingComputer",
+     "tags": ["SECTOPRAT", "MALVERTISING", "CLAUDE-ARTIFACT", "INFOSTEALER"]
+    },
+    {
+     "severity": "medium",
+     "title": "勒索軟體集團DevMan推出第三代RaaS入口網站 整合酬載製作、受害者管理與分潤系統",
+     "url": "https://thehackernews.com/2026/07/devman-raas-portal-centralizes-payload.html",
+     "summary": "由前身其他勒索軟體集團附屬成員另起爐灶的DevMan，近日將其勒索軟體即服務（RaaS）平台升級至v3版本，集中化酬載建置、入侵目標追蹤、團隊權限控管與加盟者八二分潤機制，並提供Rust改寫變種。截至目前該集團已宣稱攻擊184個受害組織，以美國製造、零售、電子、科技與醫療產業為主，反映勒索軟體地下經濟持續朝專業化平台演進。",
+     "source": "The Hacker News",
+     "tags": ["DEVMAN", "RAAS", "RANSOMWARE-ECOSYSTEM"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機29架次（17架次逾越中線）、共艦6艘、公務船5艘",
+     "url": "https://www.cna.com.tw/news/aipl/202607250034.aspx",
+     "summary": "國防部公布最新24小時動態，偵獲中共軍機29架次，其中17架次逾越台海中線並進入台灣北部、中部及西南空域，另有共艦6艘、公務船5艘在台海周邊活動，中共機艦船總計達40架次／艘，為近日規模較大的一次。國軍運用任務機、艦及岸置飛彈系統嚴密監控應處。",
+     "source": "中央社CNA",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "ADIZ"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜陸委會持續每週公布赴陸失聯人數 國台辦反控「編造數據、拿不出具體例證」",
+     "url": "https://udn.com/news/story/7331/9643634",
+     "summary": "陸委會自本月中旬起依規劃持續每週四公布國人赴陸旅遊、經商失聯及遭拘押的最新統計，做為督促北京說明個案下落的施壓手段；國台辦則反控陸委會「編造假訊息」、要求提出具體個案佐證，雙方隔海持續交鋒，短期內難有共識。",
+     "source": "聯合新聞網",
+     "tags": ["陸委會", "國台辦", "赴陸失聯", "兩岸關係"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊停火協議瀕臨瓦解 內唐亞胡七度訪美、雙方互控違反備忘錄",
+     "url": "https://www.cnn.com/2026/07/24/world/live-news/iran-war-trump",
+     "summary": "美伊戰事逼近兩週未歇，以色列總理內唐亞胡24日第七度赴白宮會晤川普，此前美軍已連續兩週對伊朗目標實施空襲。伊朗否認媒體報導其拒絕伊拉克斡旋的停火提案，反指川普政府片面違反雙方停火備忘錄承諾，是近期衝突再度升溫的元兇；美方五角大廈證實已有至少4名美軍在伊朗最新一波飛彈攻擊中陣亡，伊朗衛生部則統計自6月27日以來已有59人喪生、666人受傷。雙方目前均未釋出重啟外交協商的訊號。",
+     "source": "CNN",
+     "tags": ["IRAN", "ISRAEL", "NETANYAHU", "CEASEFIRE"]
+    },
+    {
+     "severity": "high",
+     "title": "美國對中國等逾60個經濟體加徵強迫勞動關稅生效 中國稅率達12.5%",
+     "url": "https://www.scmp.com/news/us/diplomacy/article/3361650/us-slaps-fresh-tariffs-china-50-plus-countries-latest-wave",
+     "summary": "美國7月24日對中國、日本、南韓、瑞士與歐盟等逾60個經濟體開徵新一波10%至12.5%不等關稅，就在原訂到期的暫時性10%統一關稅措施失效前數小時生效。此波關稅源於針對強迫勞動供應鏈的301條款調查，華府認為既有措施未能有效阻絕強迫勞動產品流入市場，中國適用稅率為12.5%，預期將進一步推升相關進口成本與供應鏈摩擦。",
+     "source": "South China Morning Post",
+     "tags": ["US-CHINA", "TARIFF", "SECTION-301", "FORCED-LABOR"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "歐洲央行7月23日維持利率2.25%不變 市場預期9月10日會議轉向升息",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html",
+     "summary": "歐洲央行7月22至23日利率會議決議維持三項關鍵利率不變，存款機制利率續留2.25%，符合市場預期；此前央行已於6月11日因地緣政治推升能源價格而升息一碼，為2023年以來首次。總裁拉加德表示部分理事已開始討論是否需要進一步升息，市場目前預期下次9月10日會議可能轉向升息。",
+     "source": "European Central Bank",
+     "tags": ["ECB", "LAGARDE", "RATE-DECISION", "EUROZONE"]
+    },
+    {
+     "severity": "warning",
+     "title": "美股本週聚焦聯準會7月29、30日利率決策 布蘭特原油上週四已站上百美元關卡",
+     "url": "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html",
+     "summary": "美股上週五（24日）在Alphabet、特斯拉財報後重挫收黑，本週市場焦點轉向週三登場的聯準會FOMC利率決策會議，目前利率維持在3.50%至3.75%區間，期貨市場定價9月升息機率已飆升至約八成。花旗全球總體策略主管Dirk Willer指出，中東衝突持續升溫是最大下檔風險；布蘭特原油上週四（23日）本季首度衝破每桶100美元，週末伊朗戰事未見降溫，能源價格波動預期延續至本週開盤。",
+     "source": "CNBC",
+     "tags": ["FOMC", "FED", "OIL", "MARKET-OUTLOOK"]
+    }
+   ]
+  }
+ ]
+}

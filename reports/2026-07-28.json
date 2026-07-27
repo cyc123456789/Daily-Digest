@@ -1,0 +1,130 @@
+{
+ "date": "2026-07-28",
+ "focus": "美伊連續第三夜停火、外交斡旋現曙光，布蘭特原油單日重挫逾5%創近期最大跌幅",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "四大會計師事務所安永(EY)遭ShinyHunters入侵 供應鏈攻擊竊得工單資料",
+     "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+     "summary": "勒索集團ShinyHunters宣稱透過供應鏈攻擊取得安永(EY)員工帳密，藉此入侵其Jira、GitHub與Azure環境，竊取可能含客戶稅務資料的第三方支援工單。安永4月23日發現異常，追溯攻擊者於3月28日至4月12日間下載大量文件，集團揚言若7月31日前未獲聯繫將公開外洩資料，目前尚無修補措施可言，安永已展開調查並通報客戶。",
+     "source": "BleepingComputer",
+     "tags": ["SHINYHUNTERS", "EY", "SUPPLY-CHAIN", "DATA-BREACH"]
+    },
+    {
+     "severity": "high",
+     "title": "澳洲能源巨頭Origin Energy遭入侵 用戶個資與部分金融資料外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/australian-energy-provider-origin-says-data-breach-exposes-client-data/",
+     "summary": "Origin Energy於7月22日確認資安事件，駭客宣稱取得達200萬名用戶個資，內容包含姓名、地址、生日、電話及部分信用卡或銀行帳號等敏感資訊，公司共有480萬用戶正清查受影響範圍。公司已通報澳洲網路安全中心(ACSC)與聯邦警方，並為受影響用戶開設專屬支援入口，尚無明確修補或緩解時程公布。",
+     "source": "BleepingComputer",
+     "tags": ["ORIGIN-ENERGY", "DATA-BREACH", "AUSTRALIA", "CRITICAL-INFRASTRUCTURE"]
+    },
+    {
+     "severity": "warning",
+     "title": "中國國家級駭客組織UAT-7810擴大代理伺服器網路 新型LONGLEASH後門鎖定未修補邊緣設備",
+     "url": "https://thehackernews.com/2026/07/china-linked-uat-7810-expands-orb.html",
+     "summary": "Cisco Talos揭露中國關聯駭客組織UAT-7810持續擴建代理中繼(ORB)網路「LapDogs」，藉未修補的Ruckus與ASUS路由器漏洞（CVE-2020-22653、CVE-2020-22658、CVE-2023-25717）入侵邊緣設備，供其他中國國家級駭客組織借道掩護間諜行動。新型後門LONGLEASH具備流量代理與跳板控制能力，受影響型號應儘速套用廠商既有修補程式並更換預設金鑰。",
+     "source": "The Hacker News",
+     "tags": ["UAT-7810", "CHINA", "ORB-NETWORK", "LONGLEASH"]
+    },
+    {
+     "severity": "medium",
+     "title": "KARR藍牙防盜裝置設計缺陷 220萬輛北美汽車曾可遭近距離解鎖熄火",
+     "url": "https://www.theregister.com/security/2026/07/23/millions-of-california-bought-cars-can-be-hijacked-via-bluetooth/",
+     "summary": "加州大學聖地牙哥分校研究人員發現，經銷商加裝的KARR與SWDS藍牙防盜模組（Acrisure製造）因全數共用同一組金鑰，攻擊者僅需在車輛約5公尺內即可解鎖車門並使引擎熄火，即便車主拒絕啟用該付費升級，裝置仍留在車上持續運作。受影響車款涵蓋本田、豐田、馬自達、福特與Jeep等經銷商加裝案例，Acrisure已於7月20日釋出App更新修補，車主須主動下載安裝。",
+     "source": "The Register",
+     "tags": ["BLUETOOTH", "KARR", "AUTOMOTIVE", "ACRISURE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "陸委會：中共複合式施壓升級 東部海域24浬主權議題絕不退讓",
+     "url": "https://www.cna.com.tw/news/acn/202607270198.aspx",
+     "summary": "陸委會副主委沈有忠指出，中共近期持續擴增對台複合式施壓，海警、公務船與科研船頻繁侵擾台灣周邊，甚至首度出現至台灣東部經濟海域片面宣稱執法的騷擾作為。陸委會重申立場：24浬以外避免升高衝突，24浬以內涉及主權絕不退讓。國防部同期公布最近一次24小時動態為共機4架次、共艦7艘、公務船3艘在台海周邊活動。",
+     "source": "中央社",
+     "tags": ["台海", "陸委會", "灰色地帶", "主權"]
+    },
+    {
+     "severity": "medium",
+     "title": "美國會撥款5億美元軍援台灣 川普仍暫緩140億美元軍售案",
+     "url": "https://www.defensenews.com/global/asia-pacific/2026/07/27/us-congress-approves-money-for-taiwan-defense-does-it-mean-trump-is-done-hesitating/",
+     "summary": "美國眾議院日前通過法案，內含5億美元對台外國軍事融資(FMF)，展現國會持續力挺台灣防衛的具體行動。但川普總統自5月與習近平會晤後，仍暫緩批准價值140億美元的對台重大軍售包裹，凸顯白宮欲以軍售作為對中談判籌碼，與國會挺台立場之間的落差。",
+     "source": "Defense News",
+     "tags": ["台灣", "軍售", "美國國會", "FMF"]
+    },
+    {
+     "severity": "info",
+     "title": "中國推「台青e家」統戰平台 陸委會示警蒐集台灣青年個資",
+     "url": "https://newtalk.tw/news/view/2026-07-27/1049645",
+     "summary": "陸委會副主委沈有忠批評中國近期推出的「台青e家」網路平台是「打腫臉充胖子」，實為遂行統戰目的、蒐集台灣青年個資的手法，呼籲民眾提高警覺。此舉被視為中共對台認知作戰與資訊蒐集並行操作的最新案例。",
+     "source": "Newtalk新聞",
+     "tags": ["統戰", "陸委會", "認知作戰"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜美伊連續第三夜停火 外交斡旋現曙光",
+     "url": "https://www.bloomberg.com/news/articles/2026-07-27/middle-east-tensions-ease-as-the-us-and-iran-pause-hostilities",
+     "summary": "美國與伊朗週末已連續兩晚未再互襲，川普證實下令暫停對伊朗空襲以爭取外交協商空間，卡達與巴基斯坦居中斡旋努力彌合雙方歧見。伊朗官員表示只要美方停止攻擊，德黑蘭也將停止軍事行動，但伊朗外交部同時強調目前雙方並無正式談判進行中。",
+     "source": "Bloomberg",
+     "tags": ["美伊衝突", "停火", "伊朗", "外交"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜南海衝突連環爆 中菲本週第三度交鋒 黃岩島遭水砲攻擊",
+     "url": "https://www.aljazeera.com/news/2026/7/24/philippines-accuses-china-of-using-water-cannon-on-vessels-for-second-day",
+     "summary": "繼仁愛礁衝突造成菲律賓海軍人員受傷後，中國海警船本週對菲律賓公務船再度採取強硬行動，連續兩天在黃岩島對補給漁民的菲國船隻發射水砲，為本週第三度交鋒，凸顯南海緊張持續升溫。儘管雙方外交層級多次接觸，北京駐馬尼拉大使仍稱衝突「未改變」中方對簽署南海行為準則的期待。",
+     "source": "Al Jazeera",
+     "tags": ["南海", "中菲", "黃岩島", "仁愛礁"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "布蘭特原油單日重挫逾5%（近似值） 美伊停火降溫地緣風險溢價",
+     "url": "https://news.cnyes.com/news/id/6546342",
+     "summary": "受美伊連續停火消息激勵，布蘭特原油周一開盤一度重挫逾5%、盤中最深跌幅據多方報導超過13%，為近期最大單日跌幅（各交易時段與資料來源估算略有差異，實際成交價以交易所報價為準）。市場解讀為中東供應中斷風險降溫，但分析師提醒地緣風險溢價尚未完全反映，若停火破局油價恐再度反彈。",
+     "source": "鉅亨網",
+     "tags": ["布蘭特原油", "美伊", "油價", "地緣風險"]
+    },
+    {
+     "severity": "info",
+     "title": "台股7/27收跌20.65點至43,634點 台積電持平守住季線",
+     "url": "https://udn.com/news/story/7251/9653466",
+     "summary": "台股27日開低走低，加權指數終場下跌20.65點、跌幅0.05%，收43,634.19點，成交量7,176.86億元。台積電收平盤2,350元、守住季線2,344元支撐，金融與生技類股走揚部分抵銷電子權值股跌勢。",
+     "source": "聯合新聞網",
+     "tags": ["台股", "加權指數", "台積電"]
+    },
+    {
+     "severity": "info",
+     "title": "美股7/27道瓊創新高 那斯達克受晶片股拖累小跌",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-27-132000679.html",
+     "summary": "美股上週五收盤表現分歧，道瓊工業指數上漲137.89點、漲幅0.33%，收42,313.00點創歷史新高；那斯達克指數下跌70.70點，收18,119.59點；標普500小跌7.20點，收5,738.17點。費城半導體指數重挫1.76%，反映市場對AI資本支出疑慮及財報季前的觀望氣氛。",
+     "source": "Yahoo Finance",
+     "tags": ["美股", "道瓊", "那斯達克", "費半"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元7/27收32.305元 升值5.3分",
+     "url": "https://tw.stock.yahoo.com/news/7-27%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A532-305%E5%85%83%E4%BD%9C%E6%94%B6-%E5%8D%87%E5%80%BC5-3%E5%88%86-080300713.html",
+     "summary": "新台幣兌美元27日以32.305元作收，升值5.3分，成交金額14.4億美元，扭轉上週五貶值走勢。匯價變動反映台股資金動向與美伊地緣風險降溫後市場風險情緒回穩。",
+     "source": "Yahoo奇摩股市",
+     "tags": ["新台幣", "匯率", "台幣"]
+    }
+   ]
+  }
+ ]
+}

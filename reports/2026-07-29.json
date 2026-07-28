@@ -1,0 +1,130 @@
+{
+ "date": "2026-07-29",
+ "focus": "台股暴跌2,030點創史上第三大跌點,晶片股全面重挫;CISA同日列管Arista VeloCloud滿分漏洞",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA緊急列管Arista VeloCloud滿分漏洞 FortiOS資訊洩漏亦遭在野利用",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/07/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA於7/27將Arista VeloCloud Orchestrator本地部署版CVE-2026-16812(CVSS 10.0,OS指令注入)與Fortinet FortiOS CVE-2025-68686(CVSS 5.3,資訊洩漏)列入KEV在野利用清單。前者要求聯邦機關7/20前完成修補,後者須於8/10前處理;VeloCloud瑕疵可讓攻擊者遠端取得VCO主機特權存取。",
+     "source": "CISA",
+     "tags": ["CVE-2026-16812", "ARISTA", "KEV", "FORTIOS"]
+    },
+    {
+     "severity": "critical",
+     "title": "JetBrains緊急修補TeamCity CVSS 9.8未授權RCE漏洞",
+     "url": "https://blog.jetbrains.com/teamcity/2026/07/cve-2026-63077/",
+     "summary": "TeamCity On-Premises代理輪詢協定存在不安全反序列化缺陷CVE-2026-63077(CVSS 9.8),未經授權攻擊者可繞過驗證執行任意系統指令,影響2026.1.3與2025.11.7之前所有版本。JetBrains已於7/28發布修補版本,並為無法立即升級的用戶提供安全修補外掛,目前尚未發現在野利用。",
+     "source": "JetBrains",
+     "tags": ["CVE-2026-63077", "TEAMCITY", "JETBRAINS", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "醫療計費商MCBS遭PEAR勒索集團入侵 126萬病患個資外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/data-breach-at-medical-billing-firm-mcbs-affects-126-million-people/",
+     "summary": "美國醫療計費服務商MCBS證實遭PEAR勒索軟體集團入侵,駭客宣稱竊得3.3TB資料,影響南喬治亞放射會診等7家醫療機構共126萬名病患,外洩資料含姓名、地址、社會安全號碼、保險與病歷資訊。該集團不加密系統癱瘓業務,僅以外洩資料要脅勒索。",
+     "source": "BleepingComputer",
+     "tags": ["MCBS", "PEAR", "DATA-BREACH", "HEALTHCARE"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Conduent資料外洩規模擴大至6220萬人 躍居史上第三大醫療外洩",
+     "url": "https://www.govinfosecurity.com/conduent-hack-victim-count-now-tops-622-million-a-31900",
+     "summary": "企業後勤服務商Conduent的2024年資安事件受害人數持續攀升,最新向聯邦申報數字達6,222萬4,658人,僅次於Change Healthcare與Anthem,成為史上第三大醫療資料外洩案。外洩資料含社會安全號碼、病歷與保險資訊,凸顯供應商層級資安風險持續擴大、影響難以估計。",
+     "source": "GovInfoSecurity",
+     "tags": ["CONDUENT", "DATA-BREACH", "HEALTHCARE", "SUPPLY-CHAIN"]
+    },
+    {
+     "severity": "warning",
+     "title": "疑似東亞背景駭客組織以Telegram為C2 鎖定中東多國政府",
+     "url": "https://thehackernews.com/2026/07/teleshim-abuses-telegram-for-c2-in.html",
+     "summary": "Zscaler ThreatLabz揭露一起針對中東政府機構的間諜活動,攻擊者部署前所未見的TELESHIM、MIXEDKEY、BINDCLOAK三款惡意程式,其中TELESHIM濫用Telegram API作為C2通道混入正常流量,並以受害機器序號衍生金鑰加密酬載限制執行對象、增加分析難度。目前尚未歸因至特定已知APT組織。",
+     "source": "The Hacker News / Zscaler ThreatLabz",
+     "tags": ["TELESHIM", "APT", "MIDDLE-EAST", "ESPIONAGE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內偵獲共艦7艘 共機掛零",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5487354",
+     "summary": "國防部公布最近一次24小時(7/28至7/29上午6時)台海周邊動態,共偵獲中國海軍艦艇7艘次活動,未偵獲共機擾台,為近期少見未出現共機架次的一日。國軍持續運用聯合情監偵能力嚴密監控應處。",
+     "source": "自由軍武頻道",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT"]
+    },
+    {
+     "severity": "medium",
+     "title": "漢光42號實兵演習8/5登場 賴清德：維持台海和平為首要戰略目標",
+     "url": "https://www.cna.com.tw/news/aipl/202607280023.aspx",
+     "summary": "總統賴清德7/28視訊聽取國軍簡報,提及即將於8月5日展開的漢光42號實兵演習,強調當前國安戰略首要目標是維持台海和平穩定現狀,要求國軍無論面對灰色地帶襲擾或備戰訓練皆須共享資訊、彼此支援,並鼓勵演習中如實反映問題、逐項修正。",
+     "source": "中央社",
+     "tags": ["HAN-KUANG", "LAI-CHING-TE", "TAIWAN-DEFENSE"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜川習會前哨戰 中國劃定關稅與AI制裁紅線",
+     "url": "https://www.bloomberg.com/news/articles/2026-07-27/china-vows-response-to-us-sanctions-threat-against-ai-firms?srnd=homepage-americas",
+     "summary": "川習9月24日白宮會晤前,北京釋出強硬訊號,警告華府勿對中國AI企業實施新制裁,同時為後續美國關稅設下上限,意圖在談判前劃定紅線。分析指出雙方在關稅休兵框架與科技管制摩擦點上仍有嚴重歧見,峰會前氣氛轉趨緊繃。",
+     "source": "Bloomberg",
+     "tags": ["US-CHINA", "TARIFF", "AI-SANCTIONS", "XI-TRUMP"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜美航艦喬治華盛頓號通過呂宋海峽進入南海 中菲仁愛礁、黃岩島衝突未歇",
+     "url": "https://www.epochtimes.com/gb/26/7/27/n14818523.htm",
+     "summary": "中菲上週在仁愛礁、黃岩島連環爆發海警驅離、水砲攻擊等多起衝突,美國「喬治華盛頓號」航艦打擊群結束在菲律賓海近兩個月部署後,穿越呂宋海峽進入南海。北京目前仍以海警執法手段應對而非解放軍武力介入,顯示暫無意升高至軍事對抗層級,但區域緊張持續發酵。",
+     "source": "大紀元",
+     "tags": ["SOUTH-CHINA-SEA", "PHILIPPINES", "US-NAVY", "SCARBOROUGH"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股創史上第三大單日跌點 晶片股全面重挫",
+     "url": "https://www.ntdtv.com/b5/2026/07/28/a104119170.html",
+     "summary": "台股7/28終場重挫2,030.83點(-4.65%)收41,603.36點,創史上第三大單日跌點紀錄,受全球晶片股拋售與亞股同步走弱牽動,電子指數重挫5.11%、半導體指數跌4.42%。台積電收2,280元跌2.98%,聯發科更以跌停作收。(數字經WebSearch整理,近似值)",
+     "source": "新唐人電視台",
+     "tags": ["TAIEX", "TSMC", "CHIP-SELLOFF"]
+    },
+    {
+     "severity": "info",
+     "title": "美股7/28收盤漲跌互見 那斯達克受半導體股拖累",
+     "url": "https://finance.sina.cn/usstock/mggd/2026-07-28/detail-inikhuhn8262425.d.html",
+     "summary": "美股7/28收盤漲跌不一,道瓊上漲262.98點(+0.51%)收52,210.23點,標普500上漲1.24點(+0.02%)收7,413.22點,那斯達克下跌43.74點(-0.18%)收24,932.08點。半導體類股普遍下跌,AMD跌4%、泰瑞達跌5%領跌。(數字經WebSearch整理,近似值)",
+     "source": "新浪財經",
+     "tags": ["DOW", "SP500", "NASDAQ"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油跌破90美元關卡 中東風險溢價降溫",
+     "url": "https://fortune.com/article/price-of-oil-07-28-2026/",
+     "summary": "布蘭特原油7/28跌至每桶86.58美元,單日下跌1.54%,自稍早突破100美元關卡後持續回落,反映美伊軍事衝突情勢趨緩、地緣風險溢價縮小。(數字經WebSearch整理,近似值)",
+     "source": "Fortune",
+     "tags": ["BRENT", "OIL", "ENERGY"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元收貶至32.384元",
+     "url": "https://money.udn.com/money/story/5616/9655458",
+     "summary": "新台幣兌美元7/28終場收32.384元,貶值7.9分,總成交金額約25.27億美元,延續近期台股資金流出與美元走強的雙重壓力格局。(數字經WebSearch整理,近似值)",
+     "source": "經濟日報",
+     "tags": ["TWD", "USD", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

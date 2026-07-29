@@ -1,0 +1,146 @@
+{
+ "date": "2026-07-30",
+ "focus": "台股7/29重挫近1,570點創史上第7大單日跌點，聯準會同日9比3表決維持利率不變，三位官員罕見主張升息",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "SAP NetWeaver ABAP驚爆CVSS 9.9記憶體損毀漏洞 官方7月已修補",
+     "url": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
+     "summary": "SAP於7月安全更新修補NetWeaver Application Server ABAP的CVE-2026-44747，CVSS高達9.9，影響核心版本7.22至9.20，已通過身分驗證的攻擊者可觸發記憶體損毀導致資料外洩、竄改或系統中斷。官方尚未觀察到在野利用，但因屬核心層級漏洞通常需完整修補而非設定變更，建議企業儘速安排更新工作。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-44747", "SAP", "NETWEAVER", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "跨國APT組織Nimbus Manticore布建NightLedger後門 鎖定五國電信金融政府機構",
+     "url": "https://thehackernews.com/2026/07/nimbus-manticore-deploys-nightledger.html",
+     "summary": "資安研究人員揭露名為Nimbus Manticore的跨國網路間諜行動，部署前所未見的Windows後門NightLedger及兩款自製WebSocket穿隧工具BridgeHead、ArcBridge以維持長期潛伏存取。受害目標橫跨埃及、約旦與坦尚尼亞政府機關、巴基斯坦航空業、衣索比亞電信業及布吉納法索金融部門，顯示鎖定關鍵基礎設施的廣泛意圖。",
+     "source": "The Hacker News",
+     "tags": ["NIGHTLEDGER", "APT", "ESPIONAGE", "BACKDOOR"]
+    },
+    {
+     "severity": "high",
+     "title": "校準儀器大廠Fluke遭ShinyHunters入侵 逾2100萬筆Salesforce紀錄外洩",
+     "url": "https://sentinel.ht/shinyhunters-fluke-salesforce-records-breach/",
+     "summary": "勒索軟體集團ShinyHunters宣稱透過Salesforce相關存取入侵美國量測儀器大廠Fluke Corporation，竊得逾100GB資料、超過2100萬筆Salesforce紀錄，內含80萬組不重複電子郵件、姓名、電話與地址等企業聯絡資訊。Fluke遭指拒絕與駭客談判，資料真偽尚待第三方驗證，目前未見官方證實外洩範圍。",
+     "source": "BreachNews / Sentinel",
+     "tags": ["FLUKE", "SHINYHUNTERS", "SALESFORCE", "DATA-BREACH"]
+    },
+    {
+     "severity": "medium",
+     "title": "瑞士軌道車廠Stadler Rail遭Everest集團勒索1230萬美元 拒絕支付",
+     "url": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/",
+     "summary": "勒索軟體集團Everest透過入侵Stadler Rail與供應商共用的資料交換平台竊取技術文件，開價約1230萬美元要求贖金，Stadler Rail確認拒絕支付且強調自身IT系統、產線與全球列車營運均未受影響、無個資外流。公司已向瑞士圖爾高州警方提出刑事告訴。",
+     "source": "BleepingComputer",
+     "tags": ["STADLER-RAIL", "EVEREST", "SUPPLY-CHAIN", "RANSOMWARE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "中國預告今日發射火箭穿越台灣防空識別區 國防部24小時內另偵獲共機1架次、共艦7艘",
+     "url": "https://news.pts.org.tw/article/819671",
+     "summary": "國防部公告中國預計今（30）日自太原衛星發射中心朝西太平洋發射火箭，飛行路徑將穿越台灣防空識別區，國軍已提升戒備並監控應處。另24小時內偵獲中共機艦持續在台海周邊活動，計1架次軍機進入西南空域、共艦7艘次巡弋，國軍運用聯合情監偵系統嚴密掌握。",
+     "source": "公視新聞網",
+     "tags": ["國防部", "ADIZ", "火箭", "共機共艦"]
+    },
+    {
+     "severity": "warning",
+     "title": "陸委會：國人赴陸每月平均16人失聯遭盤查 半數具公職身分",
+     "url": "https://newtalk.tw/news/view/2026-07-29/1050020",
+     "summary": "陸委會公布統計，今年以來國人赴中國大陸平均每月約16人遭留置盤查、限制人身自由或失聯，其中具現職或退離職公務員身分者比例高達5成，凸顯赴陸人身安全風險持續升高。陸委會重申將持續每週公布相關數據，籲請國人赴陸提高警覺。",
+     "source": "Newtalk新聞",
+     "tags": ["陸委會", "赴陸安全", "公務員"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜漢光42號實兵演習8/5起10天9夜 首度南北兩旅全員動員驗證反封鎖",
+     "url": "https://www.cna.com.tw/news/aipl/202607280038.aspx",
+     "summary": "國防部證實漢光42號實兵演習將於8月5日起連續10天9夜登場，結合「同心36號」教召動員，首度由北部與南部各一個後備旅級單位全旅動員，逾5000名後備軍人參與。演習納入反封鎖護航操演，驗證西太平洋物資接轉能力，賴清德強調今年將增加更多不預設劇本的臨機狀況。",
+     "source": "中央社",
+     "tags": ["漢光演習", "國防部", "反封鎖", "後備動員"]
+    },
+    {
+     "severity": "info",
+     "title": "上海貓熊贈台儀式遭陸委會回絕 國台辦批「無禮、暴露對抗思維」",
+     "url": "https://udn.com/news/story/7331/9657640",
+     "summary": "台北市立動物園上海贈台小貓熊正式亮相，陸委會拒絕上海市官員來台參加見面儀式，國台辦發言人批評民進黨當局刁難無禮、暴露對抗思維，並稱各項兩岸交流採購措施持續推進。陸委會方面則強調審查標準行之有年、朝野立場一致。",
+     "source": "聯合新聞網",
+     "tags": ["陸委會", "國台辦", "兩岸交流"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜中國制裁菲律賓國防部長Teodoro全家禁入境 南海衝突本週三度交鋒",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3356786/china-sanctions-philippine-defence-chief-teodoro",
+     "summary": "中國以「多次發表涉華錯誤言論」為由，宣布制裁菲律賓國防部長小蓋伯特．特奧多羅，禁止其本人及配偶、子女入境中國大陸、香港與澳門，並禁止陸方組織及個人與其進行任何交易往來。菲律賓外交部譴責此舉為「不友善行為」，此前中國海警本週已與菲律賓公務船在南海發生第三度衝突。",
+     "source": "South China Morning Post",
+     "tags": ["菲律賓", "南海", "制裁", "TEODORO"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜中日高市涉台言論爭端未解 兩國外長峰會邊會首度碰面",
+     "url": "https://www.bloomberg.com/news/articles/2026-07-23/china-japan-top-diplomats-hold-first-talks-since-takaichi-row",
+     "summary": "中國外長王毅與日本外相茂木敏充在馬尼拉東協系列峰會場邊「巧遇」會談，是日本首相高市早苗發表台灣有事言論引爆外交爭端以來雙方首次面對面接觸。中方持續以停止日本海鮮進口、勸阻赴日旅遊等手段向東京施壓，雙方僵局未見緩解跡象，高市重申「對話大門始終敞開」。",
+     "source": "Bloomberg",
+     "tags": ["日本", "中國", "高市早苗", "外交爭端"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜俄羅斯實彈測試北韓KN-23飛彈精準度大躍進 核潛艦推進技術同步回流平壤",
+     "url": "https://asiatimes.com/2026/07/north-koreas-missile-pipeline-to-russia-paying-strategic-dividends/",
+     "summary": "分析指出，北韓近期恢復對俄輸送KN-23、KN-24戰術彈道飛彈及機動發射系統以補充俄軍消耗，俄羅斯則在烏克蘭戰場實彈測試北韓飛彈並將命中精度由公里級提升至公尺級，相關升級技術與核潛艦推進技術同步回流北韓，凸顯中俄挺腰下北韓核武與飛彈能力持續精進。",
+     "source": "Asia Times",
+     "tags": ["北韓", "俄羅斯", "飛彈", "核潛艦"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "台股7/29重挫近1,570點跌破4萬點關卡 創史上第7大單日跌點（近似值）",
+     "url": "https://newtalk.tw/news/view/2026-07-29/1050045",
+     "summary": "台股7/29收盤重挫約1,564至1,578點（各資料源略有出入，屬近似值），以約4萬25至4萬39點作收，跌幅約3.8%，為史上單日第7大跌點，台積電等權值股同步走弱。此波賣壓延續前一交易日創史上第三大單日跌點的賣壓，市場歸咎AI資本支出疑慮與聯準會利率決策前的觀望氣氛。",
+     "source": "Newtalk（近似值）",
+     "tags": ["台股", "加權指數", "台積電"]
+    },
+    {
+     "severity": "high",
+     "title": "聯準會9比3表決維持利率3.5%–3.75%不變 三位官員罕見主張升息",
+     "url": "https://www.cnn.com/2026/07/29/business/live-news/federal-reserve-interest-rate-07-29-26",
+     "summary": "聯邦公開市場委員會（FOMC）以9票對3票表決維持聯邦基金利率區間於3.5%至3.75%不變，克里夫蘭聯準銀行總裁哈瑪克、明尼阿波利斯聯準銀行總裁卡什卡利與達拉斯聯準銀行總裁羅根三人罕見主張升息，反映伊朗戰事推升能源價格後，聯準會內部對通膨風險的分歧持續擴大。",
+     "source": "CNN Business",
+     "tags": ["FED", "利率決策", "通膨"]
+    },
+    {
+     "severity": "info",
+     "title": "美股7/29道瓊挫近0.8% 標普、那斯達克同步收黑（近似值）",
+     "url": "https://247wallst.com/investing/2026/07/29/stock-market-live-july-29-2026-sp-500-spy-slightly-higher-as-markets-wait-on-the-fed/",
+     "summary": "美股7/29收盤走勢分歧，道瓊工業指數下跌約0.78%，標普500指數跌約0.13%，那斯達克指數跌約0.11%（各報價來源略有差異，屬近似值），投資人聚焦聯準會利率決議及科技股財報表現，羅素2000小型股指數則逆勢上漲約0.2%。",
+     "source": "247 Wall St.（近似值）",
+     "tags": ["美股", "道瓊", "標普500"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油守穩89美元上下 新台幣兌美元收32.366元升值1.8分（近似值）",
+     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c398c037-c498-4e97-b3a3-763e52420fa2",
+     "summary": "布蘭特原油7/29盤中報價約在89.5至90.5美元間波動（不同報價源略有落差，屬近似值），中東地緣風險溢價持續影響油價走勢。新台幣兌美元同日以32.366元作收，升值1.8分，成交量約24.2億美元，匯價續受台股資金流向牽動。",
+     "source": "MoneyDJ理財網（近似值）",
+     "tags": ["布蘭特原油", "新台幣匯率", "能源"]
+    }
+   ]
+  }
+ ]
+}

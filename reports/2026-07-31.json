@@ -1,0 +1,138 @@
+{
+ "date": "2026-07-31",
+ "focus": "美國明尼蘇達州逾30處供水系統遭協同式OT攻擊癱瘓部分設施，CISA同步將Cisco防火牆管理平台寫死密碼漏洞列入KEV，資安風險升溫。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA緊急列管Cisco Secure FMC寫死密碼漏洞 CVE-2026-20316 遭用於零時差攻擊",
+     "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
+     "summary": "CISA於7月29日將此漏洞列入KEV，影響Cisco Secure Firewall Management Center，因軟體內建寫死密碼（CWE-259），未經驗證攻擊者可用低權限帳號登入取得存取權，進而竄改防火牆規則、竊取安全配置資訊。Cisco已發布修補程式，聯邦機關依BOD 26-04須立即修補，CISA建議所有組織同步比照辦理。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-20316", "CISCO", "KEV", "HARDCODED-PASSWORD"]
+    },
+    {
+     "severity": "critical",
+     "title": "Rails Active Storage重大漏洞CVE-2026-66066 CVSS 9.5 未驗證攻擊者可讀取伺服器機密並執行程式碼",
+     "url": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
+     "summary": "漏洞源於Active Storage將未經驗證的上傳檔案交給libvips處理、未關閉其「unfuzzed」圖片載入器，攻擊者上傳惡意檔案觸發變體圖產生後即可讀取任意伺服器檔案，包括secret_key_base、資料庫密碼與雲端憑證，並可能進一步升級為遠端程式碼執行。受影響版本為Rails 7.0.0–7.2.3.1、8.0.0–8.0.5、8.1.0–8.1.3，官方已釋出7.2.3.2、8.0.5.1、8.1.3.1修補版本，並呼籲已曝險應用程式全面更換所有機密憑證。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-66066", "RAILS", "ACTIVE-STORAGE", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "美國明尼蘇達州逾30處供水系統遭協同式OT攻擊 布拉罕水廠一度離線",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-target-over-30-minnesota-water-utilities-in-coordinated-ot-attack/",
+     "summary": "7月26至27日間，明尼蘇達州逾30處市政供水與污水處理系統遭協同式操作技術（OT）攻擊，布拉罕（Braham）水廠因無線連線遭入侵導致操作系統關閉、無法注水，一度離線約90分鐘；普利茅斯（Plymouth）兩座水塔通訊中斷但維持人工運作，楓平原（Maple Plain）因自動控制受影響宣布地方緊急狀態。州衛生單位表示尚無需民眾改變用水習慣的通報，攻擊者身分仍待查。",
+     "source": "BleepingComputer",
+     "tags": ["OT-ATTACK", "WATER-UTILITY", "MINNESOTA", "CRITICAL-INFRASTRUCTURE"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜俄羅斯國家駭客組織Void Blizzard轉戰Microsoft OWA 新型OWAReaper植入程式躲避密碼重設",
+     "url": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-exchange-owa-zero-day-for-long-term-mailbox-access/",
+     "summary": "繼稍早利用Zimbra零點擊漏洞攻擊北約相關機構後，俄羅斯國家級駭客組織Void Blizzard（亦稱Laundry Bear）自7月22日起改用Outlook Web Access跨站腳本漏洞CVE-2026-42897（CVSS 8.1）鎖定美歐政府、電信、金融與航太機構信箱，收件人無需點擊即可中招。資安業者Proofpoint於7月29日揭露新型瀏覽器端植入程式OWAReaper，可在密碼重設、瀏覽器重啟甚至裝置重灌後持續存在，因立足點藏於信箱本身而非作業系統。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-42897", "VOID-BLIZZARD", "OWA", "ESPIONAGE"]
+    },
+    {
+     "severity": "high",
+     "title": "Qilin勒索軟體集團持續利用Palo Alto GlobalProtect驗證繞過漏洞CVE-2026-0257入侵企業網路",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/",
+     "summary": "CVE-2026-0257（CVSS 7.8）為PAN-OS GlobalProtect入口網站與閘道的驗證繞過漏洞，攻擊者可偽造驗證覆寫Cookie繞過登入。資安業者Arctic Wolf指出，Qilin勒索軟體集團自6月起持續以此漏洞作為多起入侵事件的初始入侵管道，得手後透過LSASS記憶體傾印、NTDS擷取等方式取得管理員憑證並橫向移動。Palo Alto已於5月修補，CISA已列入KEV並要求聯邦機關限期完成修補。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-0257", "PALO-ALTO", "QILIN", "RANSOMWARE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "中共本月第4度「聯合戰備警巡」 22架次共機伴共艦擾台16架次逾越中線",
+     "url": "https://tw.news.yahoo.com/%E4%B8%AD%E5%85%B1%E6%9C%AC%E6%9C%88%E7%AC%AC4%E5%BA%A6-%E8%81%AF%E5%90%88%E6%88%B0%E5%82%99%E8%AD%A6%E5%B7%A1-%E6%AE%B2-11-%E6%AE%B2-051936034.html",
+     "summary": "國防部指出，7月30日上午7時24分起，中共出動殲-11、殲-16、轟-6及運-8等機型共22架次軍機，其中16架次逾越台海中線並進入我北部、中部、西南及東部空域，並與共艦協同行動，是本月第4度所謂「聯合戰備警巡」。國軍運用任務機、艦及岸置飛彈系統嚴密監控應處。",
+     "source": "中央社",
+     "tags": ["聯合戰備警巡", "逾越中線", "共機共艦", "國防部"]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共艦8艘、公務船4艘、共機1架次 中共火箭穿越ADIZ未釀事端",
+     "url": "https://rti.org.tw/news?pid=211737&uid=3",
+     "summary": "國防部表示，7月30日6時至31日6時內，計偵獲中共軍艦8艘、海上公務船4艘、軍機1架次於西南空域活動，我軍運用任務機、艦及岸置飛彈系統嚴密監控應處。中共同日於太原衛星發射中心發射運載火箭，飛行路徑經過台灣防空識別區，我方全程監偵，未發生異常狀況。",
+     "source": "中央廣播電臺",
+     "tags": ["國防部", "共機共艦", "ADIZ", "火箭"]
+    },
+    {
+     "severity": "warning",
+     "title": "陸委會揭露基層公務員赴陸遭陸方安全單位連續盤查3次逾6小時",
+     "url": "https://www.chinatimes.com/realtimenews/20260730004010-260409",
+     "summary": "陸委會副主委梁文傑7月30日表示，一名內政部所屬三級機關基層公務員今年6月赴福建旅遊，遭大陸國安單位連續盤查三次，被帶離住處強行查看手機、逼問工作內容，總計盤查逾6至7小時。陸委會同步反駁國台辦有關兩岸直航「供不應求」的說法，稱國人赴日韓泰越等地需求同樣強勁。",
+     "source": "中國時報",
+     "tags": ["陸委會", "國台辦", "赴陸安全", "兩岸關係"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊戰事持續失控 美方指控伊朗伊斯蘭革命衛隊突襲式彈道飛彈攻擊",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/7/29/iran-war-live-us-accuses-irgc-of-surprise-ballistic-missile-attacks",
+     "summary": "美伊衝突延燒進入第5個月，美方指控伊朗伊斯蘭革命衛隊（IRGC）發動突襲式彈道飛彈攻擊，川普總統一度暫停新一輪空襲行動。伊朗總統佩澤希齊揚呼籲國人「堅定對抗敵人」，德黑蘭表示目前並未與美方進行任何談判，將持續自衛直到維護自身利益為止。",
+     "source": "Al Jazeera",
+     "tags": ["伊朗", "美伊衝突", "IRGC", "飛彈攻擊"]
+    },
+    {
+     "severity": "warning",
+     "title": "北韓睽違37天再射彈道飛彈至黃海 南韓加速自製核潛艦因應水下核武威脅",
+     "url": "https://www.worldjournal.com/wj/story/121488/9527517",
+     "summary": "北韓時隔37天再度向黃海試射彈道飛彈，同時持續向俄羅斯輸出KN-23、KN-24等彈道飛彈換取技術援助，外界關注其自製核動力潛艦若獲水下發射能力，將大幅提高預警難度。南韓則同步加快首艘自製核潛艦的建造時程以為因應。",
+     "source": "世界日報",
+     "tags": ["北韓", "彈道飛彈", "核潛艦", "南韓"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "美股7/30強彈：道瓊漲逾590點、那斯達克飆升2.63%走出Fed恐慌賣壓",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-30-dow-sp-500-nasdaq-treasury-yields-microsoft-082255995.html",
+     "summary": "美股7月30日自聯準會會後賣壓中強勁反彈，道瓊指數收漲591.75點（+1.15%）至52,185.89點，那斯達克指數大漲642.90點（+2.63%）至25,085.85點，標普500指數上漲約1.5%。微軟公布雲端營收成長逾四成後股價勁揚近12%，帶動科技股全面走高。",
+     "source": "Yahoo Finance",
+     "tags": ["道瓊", "那斯達克", "標普500", "微軟財報"]
+    },
+    {
+     "severity": "info",
+     "title": "台股7/30劇烈震盪逾1,700點 尾盤翻黑收39,933點失守4萬點關卡",
+     "url": "https://finance.ettoday.net/news/3210350",
+     "summary": "台股7月30日大幅震盪逾1,700點，早盤重挫至39,404.65點，其後最高彈升至41,155.42點，尾盤翻黑收跌105.88點，以39,933.3點作收，失守4萬點關卡，成交量1兆1,036.86億元。台積電逆勢收漲5元至2,205元，聯發科上漲85元至3,235元。",
+     "source": "ETtoday",
+     "tags": ["台股", "加權指數", "台積電"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油7/30跌破90美元關卡 中東風險溢價續降溫",
+     "url": "https://www.forbes.com/advisor/investing/oil-prices-today/",
+     "summary": "布蘭特原油7月30日收報約90.04美元/桶，較前一日下跌0.78%，早盤一度受美伊軍事衝突消息影響觸及92美元上方，隨後回落。市場持續消化美伊戰事發展對能源供應風險的影響。",
+     "source": "Forbes Advisor",
+     "tags": ["布蘭特原油", "能源", "美伊衝突"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元7/30貶破32.5元關卡 收32.454元創波段新低",
+     "url": "https://www.chinatimes.com/realtimenews/20260730004318-260410",
+     "summary": "新台幣兌美元7月30日以32.38元開盤，因外資匯出力道增強一度貶破32.5元、最低觸及32.518元，尾盤因出口商拋匯力守收斂，終場收32.454元，貶值8.8分，台北及元太外匯市場成交金額達31.93億美元。",
+     "source": "工商時報",
+     "tags": ["新台幣", "匯率", "外資匯出"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "date": "2026-08-01",
+ "focus": "解放軍建軍99週年前夕，官媒罕見披露「首次對台島實施合圍」演訓論述，同日中國海警秀山艦再赴台灣以東巡查，台海情勢持續升溫。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Check Point SmartConsole驗證繞過漏洞遭在野利用 CVSS 9.1公開PoC已釋出",
+     "url": "https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html",
+     "summary": "Check Point Security Management Server與Multi-Domain Security Management的SmartConsole登入流程存在信任邊界缺陷CVE-2026-16232，攻擊者可偽造SIC憑證取得應用程式權杖並以最高權限登入竄改安全政策。官方已於7月22日發布修補並經CISA列入KEV，惟Rapid7近日釋出概念驗證程式，尚未套用更新的企業風險急遽升高。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-16232", "CHECKPOINT", "CISA-KEV", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "微軟Azure Cosmos DB「CosmosEscape」漏洞鏈曝光 攻擊者可取得跨租戶平台主金鑰",
+     "url": "https://thehackernews.com/2026/07/azure-cosmos-db-flaw-exposed-platform.html",
+     "summary": "資安廠商Wiz揭露Gremlin查詢引擎沙箱逃逸漏洞鏈CosmosEscape，具備一般帳戶權限的攻擊者可跳脫沙箱取得未經租戶、地區或API類型限制的平台級簽章金鑰，理論上可讀寫Cosmos DB上所有客戶資料庫。微軟已於7月完成全區域修補，並表示除研究人員測試外未發現客戶資料遭存取，用戶無須採取行動。",
+     "source": "The Hacker News / Wiz",
+     "tags": ["AZURE", "COSMOSDB", "CLOUD", "MICROSOFT"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜明尼蘇達供水系統OT攻擊延燒 CISA發布緊急警訊、疑為伊朗駭客所為",
+     "url": "https://www.securityweek.com/cisa-urges-water-sector-to-protect-ot-after-coordinated-attacks-on-plcs/",
+     "summary": "繼30餘處明尼蘇達州供水系統遭協同式OT攻擊、布拉罕水廠一度離線後，CISA於7月30日發布警訊，指出鎖定PLC的攻擊事件顯著增加，並與英、澳、加三國資安機關聯合發布關鍵系統隔離指引。資安業者Tenable指出攻擊手法與伊朗背景駭客組織CyberAv3ngers過往鎖定小型水廠的模式相符，惟官方尚未正式歸咎攻擊者身分。",
+     "source": "SecurityWeek",
+     "tags": ["OT", "ICS", "CISA", "CYBERAV3NGERS"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜Fastjson零時差漏洞CVE-2026-16723推出修補 官方籲即刻升級或啟用SafeMode",
+     "url": "https://github.com/alibaba/fastjson2/wiki/Security-Advisory:-Remote-Code-Execution-in-fastjson-1.2.68%E2%80%931.2.83",
+     "summary": "先前遭鎖定攻擊、CVSS 9.0且無官方修補的Fastjson 1.x遠端程式碼執行漏洞，Alibaba已釋出1.2.84版修補。由於Fastjson 1.x已停止維護，官方建議無法立即升級的Spring Boot部署改用「-Dfastjson.parser.safeMode=true」啟用SafeMode，或改用noneautotype版本以阻斷攻擊面。",
+     "source": "GitHub Security Advisory（Alibaba）",
+     "tags": ["CVE-2026-16723", "FASTJSON", "JAVA"]
+    },
+    {
+     "severity": "high",
+     "title": "美國防承包商RTX資安事件外洩員工社會安全碼 已提交州政府並面臨集體訴訟",
+     "url": "https://www.teiss.co.uk/news/aerospace-and-defense-giant-rtx-corp-discloses-data-breach-exposing-social-security-numbers-17901",
+     "summary": "航太國防巨擘RTX Corporation揭露6月25日發生的資安事件，外洩資料包含姓名、地址與社會安全碼，7月23日起陸續發函通知受影響人士並提供24個月免費信用監控。已有前員工對RTX提起集體訴訟，指控公司延遲逾一個月才通報，使受害者喪失即時應變機會。",
+     "source": "teiss",
+     "tags": ["RTX", "DATA-BREACH", "DEFENSE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "解放軍建軍99週年前夕 官媒罕見披露「首次對台島實施合圍」實戰化演訓",
+     "url": "https://udn.com/news/story/7331/9662412",
+     "summary": "中共將於8月1日迎建軍99週年，解放軍報刊文提及聯合演訓「首次對台島實施合圍、首次在台島以東設置實戰射擊靶場」，強調「多軍兵種一體聯動、精準協同的強力封控懾壓」。文章同時將焦點指向建軍百年目標關鍵期，外界解讀具高度政治訊號。",
+     "source": "聯合新聞網",
+     "tags": ["解放軍", "建軍節", "封控"]
+    },
+    {
+     "severity": "warning",
+     "title": "中國海警秀山艦編隊再赴台灣以東常態化巡查 海巡署駁「假執法真擴權」",
+     "url": "https://newtalk.tw/news/view/2026-07-31/1050546",
+     "summary": "中國海警秀山艦、崇明艦編隊7月31日上午分別於蘭嶼東方151浬、東北方43浬海域活動，中方稱為「常態化執法巡查」。海巡署派遣台北艦全程監控，強調中國海警此舉是「假執法、真擴權」，將持續嚴密掌握動態並密切因應。",
+     "source": "Newtalk新聞",
+     "tags": ["中國海警", "海巡署", "台灣以東"]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機27架次（22架次逾越中線）、共艦9艘、公務船2艘",
+     "url": "https://newtalk.tw/news/view/2026-07-31/1050461",
+     "summary": "國防部公布最新24小時動態，共機分四批次於台灣北部、台海、西南及東南空域活動，西南空域出現殲-16、轟-6等主力機型，共9架次共機在西南空域活動；共艦與公務船持續在台海周邊活動。國軍表示已嚴密監控應處。",
+     "source": "Newtalk新聞",
+     "tags": ["國防部", "共機", "共艦"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜陸委會：兩年半來402人赴陸失聯遭盤查限制人身自由 邱垂正示警風險攀升",
+     "url": "https://udn.com/news/story/7331/9657624",
+     "summary": "陸委會主委邱垂正表示，2024年1月至2026年7月，國人赴陸失聯、遭陸方留置盤查及限制人身自由的通報案件累計達402人，顯示國人赴陸人身安全風險急遽攀升，籲請國人赴陸前提高警覺並向陸委會登錄行程。",
+     "source": "聯合新聞網",
+     "tags": ["陸委會", "赴陸風險", "邱垂正"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "南海爭端升溫 中國駁斥菲律賓黃岩島領海基線劃設 稱「非法無效」",
+     "url": "https://www.anews.com.tr/world/2026/07/31/china-rejects-philippine-maritime-claim-in-south-china-sea-calls-move-illegal",
+     "summary": "中國外交部7月31日反駁菲律賓劃定黃岩島（斯卡伯勒淺灘）領海基線，稱黃岩島為中國「固有領土」，劃界行為「非法、無效」並侵犯中國領土主權，重申不承認2016年南海仲裁結果。此前中菲雙方本月已在黃岩島與仁愛礁三度發生海上衝突。",
+     "source": "Anews",
+     "tags": ["南海", "黃岩島", "菲律賓"]
+    },
+    {
+     "severity": "medium",
+     "title": "北京稱華府承諾對中替代關稅上限訂於20% 為川習9月會晤鋪路",
+     "url": "https://www.bloomberg.com/news/articles/2026-07-27/china-says-us-pledged-to-cap-replacement-tariffs-at-20",
+     "summary": "中國商務部首度證實，美方在雙邊貿易談判中承諾將對中國商品的替代關稅上限訂在20%。分析人士認為此舉為9月川普與習近平在白宮會晤鋪路，雙方盼將今年的關稅休兵轉化為長期架構，但雙方在稀土管制與部分農產品關稅上仍存分歧。",
+     "source": "Bloomberg",
+     "tags": ["美中貿易", "關稅", "川習會"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股7/31爆量狂飆3186.45點收43,119.75點 創史上最大單日漲點",
+     "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%A3%863186-45%E9%BB%9E%E5%89%B5%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E6%BC%B2%E9%BB%9E-7%E6%9C%88%E4%B8%8B%E8%B7%8C3006%E9%BB%9E-063321506.html",
+     "summary": "台股7/31大漲3186.45點（漲幅7.98%）收43,119.75點，改寫史上最大單日漲點紀錄，成交量達8,337億元。台積電攻上漲停貢獻大盤逾1,746點，信驊、川湖等權值股同步亮燈漲停，惟全月仍下跌3,006.16點。",
+     "source": "Yahoo奇摩股市",
+     "tags": ["台股", "台積電", "加權指數"]
+    },
+    {
+     "severity": "info",
+     "title": "美股7/31同步走高 標普漲0.67%、那斯達克攀升1.32%",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html",
+     "summary": "美股週五收盤走高，標普500指數上漲0.67%，那斯達克指數受科技股與AI資本支出題材帶動勁揚1.32%，市場情緒延續聯準會維持利率不變後的緩步回穩態勢。",
+     "source": "Yahoo Finance",
+     "tags": ["美股", "標普500", "那斯達克"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油站穩88美元關卡 本月累計漲幅逾兩成",
+     "url": "https://www.investing.com/commodities/brent-oil",
+     "summary": "布蘭特原油期貨最新報88.18美元，較前一交易日86.88美元續揚，盤中一度觸及88.99美元高點。受中東情勢與伊朗戰事外溢影響，布蘭特原油7月以來累計漲幅已超過兩成。",
+     "source": "Investing.com",
+     "tags": ["布蘭特原油", "能源價格", "中東"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元升值至32.288元 延續近期回穩走勢",
+     "url": "https://www.xe.com/en-us/currencyconverter/convert/?Amount=1&From=USD&To=TWD",
+     "summary": "新台幣兌美元最新報32.288元，較前一交易日32.411元升值，延續近期在32.3元附近整理後的回穩走勢，與台股同步反映市場風險情緒緩解。",
+     "source": "XE.com",
+     "tags": ["新台幣", "匯率", "美元"]
+    }
+   ]
+  }
+ ]
+}

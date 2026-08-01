@@ -1,0 +1,130 @@
+{
+ "date": "2026-08-02",
+ "focus": "美方研判本週末對伊朗發動新一輪打擊，美伊戰事恐再升級，牽動全球油價與金融市場避險情緒。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美居家安控商Brinks Home遭ShinyHunters入侵 語音釣魚突破MFA外洩逾490萬筆客戶資料",
+     "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/",
+     "summary": "勒索集團ShinyHunters宣稱以Microsoft Entra語音釣魚（vishing）誘騙員工完成MFA驗證，於7月13日入侵美國居家安控業者Brinks Home，竊得逾490萬筆Salesforce紀錄，包含110萬筆客戶聯絡資料、逾4000名員工個資及380萬筆客服對話紀錄。Brinks Home於7月20日確認事件，執行長證實警報監控服務未受影響，目前委請鑑識公司調查中，尚未見官方修補措施。",
+     "source": "BleepingComputer",
+     "tags": ["SHINYHUNTERS", "VISHING", "DATA-BREACH", "SALESFORCE"]
+    },
+    {
+     "severity": "high",
+     "title": "英國教育部遭ExfilSquad入侵 逾60.7萬筆教職員與機構聯絡資料外洩",
+     "url": "https://www.scworld.com/brief/uk-department-for-education-confirms-data-breach-affecting-over-600000-records",
+     "summary": "英國教育部（DfE）證實其Help Desk Self-Service Portal與Turing Scheme Portal遭入侵，駭客集團ExfilSquad竊得逾60.7萬筆記錄，包含校長、大學職員與政府官員的姓名、職稱、電子郵件與電話。DfE已通報資訊委員辦公室（ICO），並會同國家網路安全中心（NCSC）、國家犯罪局（NCA）調查，目前無勒索軟體部署跡證，但駭客已於Telegram公開部分截圖並要求贖金。",
+     "source": "SC Media",
+     "tags": ["EXFILSQUAD", "UK", "DATA-BREACH", "GOVERNMENT"]
+    },
+    {
+     "severity": "medium",
+     "title": "半導體大廠亞德諾（Analog Devices）遭ExfilSquad入侵 部分檔案外洩惟營運未受影響",
+     "url": "https://www.bleepingcomputer.com/news/security/analog-devices-discloses-data-breach-says-operations-unaffected/",
+     "summary": "類比晶片大廠Analog Devices證實6月23日遭未經授權存取，部分檔案遭外洩，公司已啟動事件應變並知會執法單位，強調生產與客戶服務未受影響，資料尚未見公開流出或遭濫用跡象。勒索集團ExfilSquad一度將該公司列入外洩網站，其後又將其下架，外界研判可能已進入贖金談判階段。",
+     "source": "BleepingComputer",
+     "tags": ["EXFILSQUAD", "ANALOG-DEVICES", "SEMICONDUCTOR"]
+    },
+    {
+     "severity": "warning",
+     "title": "新型Bit2Watt攻擊手法曝光 惡意雲端租戶可藉GPU工作負載擾亂資料中心電網",
+     "url": "https://thehackernews.com/2026/07/new-bit2watt-attack-could-let-cloud.html",
+     "summary": "浙江大學研究團隊揭露Bit2Watt攻擊概念，惡意雲端租戶僅需正常GPU執行個體存取權限，即可透過協同排程製造每秒逾千次的功率震盪（實測RTX 4090可達6000赫茲），在小型電網上可產生逾46%總諧波失真並增加約兩成廢熱。此攻擊利用合法工作負載執行路徑，難以被既有異常偵測機制發現，目前尚無官方修補，僅能靠電網層級監控因應。",
+     "source": "The Hacker News",
+     "tags": ["BIT2WATT", "GPU", "POWER-GRID", "CLOUD"]
+    },
+    {
+     "severity": "medium",
+     "title": "npm v12正式上線 預設停用安裝腳本阻斷供應鏈攻擊最大攻擊面",
+     "url": "https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html",
+     "summary": "GitHub於7月釋出npm v12，為16年來最大幅度安全改版：預設停用preinstall、install、postinstall等安裝腳本，同時封鎖Git依賴與遠端來源，須明確授權才會執行。此舉針對過去Shai-Hulud蠕蟲、Nx攻擊等利用安裝腳本自動執行程式碼竊取機密或散布惡意程式的攻擊路徑，開發者升級後如仍需安裝腳本須手動加入允許清單。",
+     "source": "The Hacker News",
+     "tags": ["NPM", "SUPPLY-CHAIN", "GITHUB"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "解放軍建軍99週年 陸國防部長董軍：當祖國統一「穩固底牌」 強硬對台措辭升溫",
+     "url": "https://udn.com/news/story/7331/9664190",
+     "summary": "中國人民解放軍8月1日迎建軍99週年，陸國防部長董軍在慶祝活動致詞強調解放軍將「當好祖國統一的穩固底牌」，重申將堅決挫敗任何形式「台獨」分裂行徑與外部軍事干涉。此番表態延續稍早解放軍報「首次對台島實施合圍」演訓論述，對台文攻武嚇持續升溫。",
+     "source": "聯合新聞網",
+     "tags": ["解放軍", "建軍節", "董軍", "對台"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內偵獲共機5架次、共艦10艘、公務船2艘 共17機艦船台海周邊持續活動",
+     "url": "https://newtalk.tw/news/view/2026-08-01/1050692",
+     "summary": "國防部通報，7月31日6時至8月1日6時期間，偵獲中共軍機5架次進入西南及東部空域，另有共艦10艘、公務船2艘在台海周邊活動，合計17機艦船。國軍運用任務機、艦及岸置飛彈系統嚴密監控應處，強調全程掌握中共動態。",
+     "source": "Newtalk新聞",
+     "tags": ["國防部", "共機", "共艦", "台海"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜漢光42號實兵演習首度納入「行動網路降速」演練 8/5起10天9夜登場",
+     "url": "https://www.storm.mg/article/11152157",
+     "summary": "漢光42號實兵演習將於8月5日至14日登場，今年結合同心36號動員演習，對台北後備旅、駐台南137步兵旅實施全旅編實動員，逾5000名後備軍人參與，聚焦「多域拒止、韌性防衛」9大操演項目。演習首度納入行動網路降速演練，8月10日中部、13日北部防空演習期間將於演習區域實施30分鐘網路降速，另於高雄、屏東、新北、宜蘭4縣市同步舉辦城鎮韌性演習。",
+     "source": "風傳媒",
+     "tags": ["漢光演習", "國防部", "城鎮韌性"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美方研判本週末對伊朗發動新一輪打擊 美伊戰事恐再升級",
+     "url": "https://www.cnn.com/2026/08/01/world/live-news/iran-war-trump",
+     "summary": "據多名美國官員透露，川普政府正研議最快本週末對伊朗展開新一輪軍事打擊，具體規模與目標尚未確定，官員也稱行動仍可能取消。此前川普已多次揚言擴大攻擊伊朗關鍵基礎設施如發電廠與橋樑，惟民調顯示僅28%美國人支持其處理對伊戰事的方式，油價上漲已對美國內政治構成壓力。",
+     "source": "CNN",
+     "tags": ["伊朗", "美伊戰爭", "川普"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜中國南部戰區黃岩島海空聯合演練 回應菲律賓延伸大陸架主張",
+     "url": "https://www.washingtonpost.com/world/2026/08/01/china-military-drills-scarborough-shoal-philippines/ba32b214-8da8-11f1-8912-d71e69d679d7_story.html",
+     "summary": "解放軍南部戰區8月1日宣布在黃岩島（斯卡伯勒淺灘）周邊海空域展開聯合軍演，測試海空協同作戰與快速增援能力，官媒稱此舉為因應「特定國家」破壞區域和平穩定的必要回應。此次軍演緊接菲律賓向聯合國提交大陸架延伸主張、企圖將黃岩島納入其中，中菲南海對峙本月已三度交鋒，情勢未見降溫。",
+     "source": "The Washington Post（路透）",
+     "tags": ["南海", "黃岩島", "菲律賓", "解放軍"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "美伊戰事升溫牽動全球資產 布蘭特原油守穩地緣風險溢價、黃金避險買盤降溫",
+     "url": "https://www.investing.com/analysis/gold-faces-2-iran-trades-safehaven-demand-and-higherrate-pressure-200683696",
+     "summary": "受美伊戰事本週末恐再升級消息影響，黃金上週五（7/31）以每盎司約4,113美元開盤，儘管地緣風險升溫，金價本週仍小跌約1.5%，反映油價走升與升息預期同步牽制避險買盤的拉鋸格局。市場分析指出，投資人傾向於週末期間保留避險部位，靜待戰事後續發展。",
+     "source": "Investing.com",
+     "tags": ["黃金", "布蘭特原油", "美伊戰爭", "避險"]
+    },
+    {
+     "severity": "medium",
+     "title": "聯準會9月升息機率攀升至63% 油價走揚推升通膨疑慮",
+     "url": "https://www.cnbc.com/2026/07/23/fed-interest-rate-odds-oil-jobless-claims.html",
+     "summary": "據CME FedWatch工具，截至7月30日，市場預期聯準會9月會議升息一碼的機率已攀升至63.2%，較稍早的預期明顯提高，主因近期油價因中東情勢走升，市場憂心推升通膨數據，進而迫使聯準會轉向緊縮以抑制物價壓力。",
+     "source": "CNBC",
+     "tags": ["聯準會", "升息", "通膨"]
+    },
+    {
+     "severity": "info",
+     "title": "台股8月展望：法人估40,000至45,000點區間震盪築底 台積電上修獲利展望撐盤",
+     "url": "https://udn.com/news/story/7251/9663925",
+     "summary": "台股歷經7月劇烈震盪後，多位分析師預期8月將進入區間震盪築底階段，指數可望於40,000至45,000點來回整理，市場將密切關注中東局勢、上市櫃公司7月營收財報、MSCI季度調整、輝達財報等關鍵變數。台積電法說已上修今年營收與資本支出展望，市場預估台股2026年企業獲利成長率由40%上修至48%，基本面續獲支撐。",
+     "source": "聯合新聞網",
+     "tags": ["台股", "台積電", "展望"]
+    }
+   ]
+  }
+ ]
+}

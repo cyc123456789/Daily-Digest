@@ -1,0 +1,114 @@
+{
+ "date": "2026-08-03",
+ "focus": "SharePoint RCE CVE-2026-50522遭公開PoC引爆攻擊潮，駭客竊取機器金鑰可在修補後持續入侵，企業須立即輪換金鑰因應。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "SharePoint RCE漏洞CVE-2026-50522遭公開PoC引爆攻擊潮 駭客竊取機器金鑰可繞過修補持續入侵",
+     "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+     "summary": "CVE-2026-50522為SharePoint Server Subscription Edition、2019與2016 Enterprise版的反序列化漏洞，CVSS高達9.8。微軟已於7月Patch Tuesday釋出修補（16.0.19725.20434以上），但watchTowr指出公開PoC釋出後數小時內即遭在野利用，攻擊者竊取伺服器簽章用機器金鑰，即使事後修補仍可持續偽造存取權杖，企業須同步輪換金鑰而非僅套用更新。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-50522", "SHAREPOINT", "RCE", "MICROSOFT"]
+    },
+    {
+     "severity": "critical",
+     "title": "ServiceNow AI Platform沙箱逃逸漏洞CVE-2026-6875遭在野利用 未授權者可遠端執行程式碼",
+     "url": "https://thehackernews.com/2026/07/critical-servicenow-ai-platform-flaw.html",
+     "summary": "CVE-2026-6875影響ServiceNow AI Platform託管與自架版本，CVSS 9.5，未授權攻擊者可逃逸沙箱取得高權限並執行任意程式碼，已確認遭在野利用。官方已針對雲端實例部署更新，自架客戶須立即升級至Australia Patch 2、Yokohama Patch 13或Zurich Patch 9以上版本，並啟用新推出的Guarded Script功能阻擋惡意存取。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-6875", "SERVICENOW", "RCE", "AI"]
+    },
+    {
+     "severity": "high",
+     "title": "中國駭客以DeepSeek結合Hermes Agent框架發動全自動化攻擊 Unit 42揭露AI自主駭侵行動",
+     "url": "https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/",
+     "summary": "Palo Alto Networks旗下Unit 42發現中國籍駭客「knaithe」將DeepSeek接入開源Hermes Agent框架充當攻擊推理引擎，透過Telegram下達指令即可自動掃描目標、尋找公開漏洞並執行攻擊，約460個目標中已確認3起成功入侵，包含竊取Citrix NetScaler記憶體資料及疑似對馬來西亞政府機構的工作階段挾持。研究人員因Hermes意外自曝環境而發現此攻擊鏈，凸顯AI自主攻擊工具鏈已進入實戰階段。",
+     "source": "Unit 42 (Palo Alto Networks)",
+     "tags": ["DEEPSEEK", "APT", "AI-ATTACK", "CHINA"]
+    },
+    {
+     "severity": "high",
+     "title": "可口可樂Fairlife子公司遭Anubis勒索軟體入侵 逾1TB企業資料確認外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+     "summary": "Anubis勒索軟體集團入侵可口可樂旗下乳製品品牌Fairlife，加密其Nutanix超融合基礎架構並竊得約1TB企業資料，一度迫使美國四座工廠暫停生產。可口可樂已確認資料遭竊，因拒絕支付贖金，駭客設定的談判期限屆滿後已將竊得資料公開下載，目前多數美國產線已恢復運作，加拿大產線未受影響。",
+     "source": "BleepingComputer",
+     "tags": ["ANUBIS", "RANSOMWARE", "COCA-COLA", "DATA-BREACH"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共艦8艘、公務船2艘、共機5架次 其中3架次逾越海峽中線",
+     "url": "https://newtalk.tw/news/view/2026-08-02/1050792",
+     "summary": "國防部公布最近一次24小時監控動態，共偵獲中國大陸軍艦8艘、公務船2艘及軍機5架次，其中3架次逾越海峽中線進入我西南空域，國軍以任務機、艦及岸置飛彈系統嚴密監控應處。",
+     "source": "Newtalk新聞",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜漢光42號實兵演習確定8/5至14登場 城鎮韌性演習增為2天強化反封鎖驗證",
+     "url": "https://www.cna.com.tw/news/aipl/202607280038.aspx",
+     "summary": "國防部證實漢光42號實兵演習將於8月5日至14日登場，採全年度連貫演訓模式，2個旅級單位首度全旅動員；配套的城鎮韌性（防空）演習則排定8月7日及8月10日至13日舉行，較以往增為2天，並強化西太平洋反封鎖物資接轉與護航演練。",
+     "source": "中央社 CNA",
+     "tags": ["HANKUANG", "TAIWAN-MILITARY", "DEFENSE"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜菲日美首度三方南海聯合演習 中國連兩日對菲律賓公務船發動水砲攻擊",
+     "url": "https://www.japantimes.co.jp/news/2026/07/26/japan/south-china-sea-military-exercise/",
+     "summary": "菲律賓、日本與美國7/21至25首度舉行三方聯合軍演，出動軍艦與軍機展現印太夥伴關係；中國则以軍艦連續兩日對菲律賓公務船在黃岩島海域發射水砲回應，南海緊張態勢持續升溫，美方另派出航艦打擊群同步在爭議海域巡弋。",
+     "source": "The Japan Times",
+     "tags": ["SOUTH-CHINA-SEA", "PHILIPPINES", "SCARBOROUGH-SHOAL"]
+    },
+    {
+     "severity": "medium",
+     "title": "美中關稅談判8月12日期限「並非板上釘釘」 美貿易官員淡化緊張為川習會鋪路",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3320617/august-12-deadline-china-tariffs-not-set-stone-says-us-trade-negotiator",
+     "summary": "美國貿易談判代表表示，原訂8月12日到期的美中關稅休兵期限並非絕對硬性期限，雙方仍在磋商是否延長或調整，以為稍後可能舉行的川習會創造空間；市場解讀為雙方有意避免關稅休兵到期引發新一輪貿易緊張。",
+     "source": "South China Morning Post",
+     "tags": ["US-CHINA", "TARIFF", "TRADE"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "美股8/1三大指數收高 那斯達克週漲1.59%創本週最佳表現（近似值）",
+     "url": "https://finance.sina.com.cn/stock/usstock/c/2026-08-01/doc-iniktyyn9096513.shtml",
+     "summary": "美股8月1日收盤：道瓊上漲276.97點（+0.53%）收52,485.03點，那斯達克上漲251.68點（+1.00%）收25,373.85點，標普500上漲52.09點（+0.70%）收7,489.72點；本週三大指數同步收漲，那斯達克週漲1.59%表現最佳，亞馬遜財報帶動大漲逾15%為主要推力。",
+     "source": "新浪財經（近似值）",
+     "tags": ["US-STOCKS", "NASDAQ", "SP500"]
+    },
+    {
+     "severity": "info",
+     "title": "台股8/2收漲219.4點收45,557.31點 台積電走高1.06%（近似值）",
+     "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+     "summary": "台股加權指數8月2日終場上漲219.4點（+0.48%），收45,557.31點；台積電（2330）上漲25元收2,380元，漲幅1.06%，鴻海、廣達同步走高，聯發科則小幅下跌，法人估後續於40,000至45,000點區間震盪整理。",
+     "source": "Yahoo股市（近似值）",
+     "tags": ["TAIEX", "TSMC", "TAIWAN-STOCKS"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油守穩88美元關卡 月漲逾22%地緣風險溢價未退（近似值）",
+     "url": "https://www.investing.com/commodities/brent-oil",
+     "summary": "布蘭特原油最新報價約87.93美元／桶，近一個月累計上漲逾22.86%，主因美伊衝突延燒、紅海胡塞武裝攻擊及沙國對伊朗支持團體發動空襲，推升中東航運與能源風險溢價；新台幣兌美元則延續近期回穩走勢，7/31收在32.292元附近。",
+     "source": "Investing.com（近似值）",
+     "tags": ["BRENT-OIL", "TWD", "ENERGY"]
+    }
+   ]
+  }
+ ]
+}

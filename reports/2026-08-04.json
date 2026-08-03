@@ -1,0 +1,188 @@
+{
+ "date": "2026-08-04",
+ "focus": "INC勒索軟體集團利用SonicWall SMA 1000已修補漏洞加速攻勢，累計逾885名受害者，企業應盡速確認韌體更新與VPN金鑰輪替。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "INC勒索軟體集團加速攻勢 利用SonicWall SMA 1000已修補漏洞入侵逾885名受害者",
+     "url": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html",
+     "summary": "INC勒索軟體集團自8月起攻勢加劇，鏈式利用CVE-2026-15409與CVE-2026-15410兩項SonicWall SMA 1000系列漏洞達成未授權指令執行，SonicWall已於7月中釋出修補；集團累計聲稱885名受害者，最新一起8月2日曝光，尚未更新韌體或未輪替VPN憑證金鑰的企業風險最高。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-15409",
+      "SONICWALL",
+      "INC-RANSOMWARE",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "GitLab Jupyter Notebook漏洞鏈公開PoC 已驗證使用者可取得git權限執行任意指令",
+     "url": "https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html",
+     "summary": "研究人員7月24日公開GitLab CE/EE（15.2.0至19.0.1版）Jupyter Notebook diff渲染器RCE利用鏈PoC，根源為Oj Ruby JSON解析器的堆疊溢位與整數溢位缺陷；已驗證使用者上傳惡意notebook並觸發diff檢視即可取得git使用者權限執行指令。官方已修補但未發CVE編號，尚未升級版本的自架GitLab伺服器應盡速更新。",
+     "source": "The Hacker News",
+     "tags": [
+      "GITLAB",
+      "RCE",
+      "POC",
+      "OJ-PARSER"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "勒索軟體集團濫用微軟簽署舊版Truesight驅動程式 繞過端點防護部署GodDamn勒索軟體",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-windows-policy-to-load-malicious-kernel-drivers/",
+     "summary": "攻擊者散布微軟合法簽署但含漏洞的Truesight.sys（2.0.2版）舊版驅動程式，利用其可任意終止程序的特權遠端關閉端點防護軟體，再植入GodDamn勒索軟體取得系統完整控制權；微軟已針對此濫用手法撤銷部分相關簽署憑證，企業應封鎖已知含漏洞驅動程式雜湊值並啟用記憶體完整性保護（HVCI）。",
+     "source": "BleepingComputer",
+     "tags": [
+      "GODDAMN",
+      "BYOVD",
+      "RANSOMWARE",
+      "MICROSOFT"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "生技大廠安進（Amgen）雲端環境遭外洩 病患PHI與研發機密資料遭竊",
+     "url": "https://www.bleepingcomputer.com/news/security/amgen-says-cloud-data-breach-exposed-patient-health-proprietary-info/",
+     "summary": "生技大廠安進（Amgen）通報美國證管會，其委外之第三方雲端服務環境遭入侵，病患受保護健康資訊（PHI）及部分研發、商業機密文件遭外洩；公司7月29日認定事件已達重大等級並啟動鑑識調查，尚未公布受影響雲端服務商身分或受害人數，亦未歸因特定駭客組織。",
+     "source": "BleepingComputer",
+     "tags": [
+      "AMGEN",
+      "DATA-BREACH",
+      "HEALTHCARE",
+      "CLOUD"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "陸委會公布2026年第2季大陸情勢報告 中共軍費達台幣8.8兆元為台灣11倍",
+     "url": "https://udn.com/news/story/7331/9668260",
+     "summary": "陸委會3日發布最新「中國大陸情勢報告」，指中共2026年國防支出達人民幣1兆9095.61億元、年增7%，換算台幣約8.8兆元、為台灣國防預算11倍，若以購買力評價換算其軍事能力恐已超越美國；報告並指中共黨員年增101.5萬人，中共並要求從嚴政治審查。",
+     "source": "聯合新聞網",
+     "tags": [
+      "陸委會",
+      "中共軍費",
+      "黨員審查"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內偵獲共艦6艘、公務船1艘、共機1架次進入北部空域",
+     "url": "https://rti.org.tw/news?pid=206538&uid=3",
+     "summary": "國防部表示，過去24小時內偵獲中共軍艦6艘、公務船1艘於台海周邊活動，另有1架次共機進入台灣北部空域，國軍運用任務機艦及岸置飛彈系統嚴密監控應處，整體活動規模較近期趨緩。",
+     "source": "中央廣播電臺",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "陸委會示警兩岸學生交流失衡 將強化各級學校大陸識讀教育",
+     "url": "https://www.cna.com.tw/news/acn/202608030120.aspx",
+     "summary": "陸委會3日表示，兩岸學生交流長期存在不對等現象，將指導各級學校強化大陸識讀教育，提醒師生赴陸從事學術交流應注意人身安全與資訊安全風險，並持續監測中國對台統戰及認知作戰動態。",
+     "source": "中央社",
+     "tags": [
+      "陸委會",
+      "兩岸交流",
+      "大陸識讀"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜中國軍演警告菲律賓「迎頭痛擊」 回應馬尼拉黃岩島聯合國海圖主張",
+     "url": "https://www.scmp.com/news/china/military/article/3362700/beijing-warns-manila-powerful-south-china-sea-toolbox-ready-head-blow",
+     "summary": "中國解放軍8月1日於黃岩島周邊發動海空聯合軍演，隔日解放軍報以「軍聲」署名評論警告菲律賓將面臨「迎頭痛擊」；此舉回應菲律賓稍早向聯合國正式提交黃岩島（Bajo de Masinloc）海圖主張領海基線，中方譴責此舉「非法」，惟菲國政府反駁稱監控未偵得中方所稱軍演規模。",
+     "source": "South China Morning Post",
+     "tags": [
+      "南海",
+      "黃岩島",
+      "菲律賓",
+      "解放軍"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川普喊卡對伊朗大規模軍事打擊 稱週一啟動新一輪談判、德黑蘭否認獲通知",
+     "url": "https://www.bloomberg.com/news/articles/2026-08-02/trump-says-iran-talks-to-begin-monday-after-calling-off-strikes",
+     "summary": "川普2日宣布取消原訂對伊朗發動的「二戰以來最大規模」軍事打擊，稱在沙烏地、阿聯、卡達等波灣盟友勸說下暫緩行動，並將於週一展開新一輪談判；惟伊朗隨後否認獲悉任何談判安排，讓美伊局勢陷入羅生門，川普則稱這是伊朗簽署協議的「最後機會」。",
+     "source": "Bloomberg",
+     "tags": [
+      "美伊衝突",
+      "川普",
+      "伊朗",
+      "停火"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "布蘭特原油單日重挫近6%至83美元 川普喊卡伊朗軍事行動降溫通膨疑慮",
+     "url": "https://www.washingtonpost.com/business/2026/08/03/stocks-markets-dollar-yen-trump-oil/79c60108-8ef3-11f1-9fdc-0a725c989a7b_story.html",
+     "summary": "布蘭特原油3日重挫約6%至每桶82.9美元左右，西德州原油同步下跌近7%至78.93美元，主因川普宣布暫緩對伊朗軍事打擊、重啟談判，加上OPEC+持續增產，市場地緣風險溢價明顯降溫（近似值）。",
+     "source": "The Washington Post（近似值）",
+     "tags": [
+      "布蘭特原油",
+      "能源價格",
+      "美伊局勢"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股8/3那斯達克大漲2.26%收25,948點 油價重挫帶動反彈",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-3-dow-sp-500-nasdaq-big-tech-oil-092516872.html",
+     "summary": "美股3日在油價重挫、通膨疑慮降溫下走高，那斯達克綜合指數上漲574.29點（+2.26%）收25,948.15點，標普500上漲約1.3%，道瓊工業指數上漲逾530點（約1%），科技股領漲（近似值）。",
+     "source": "Yahoo Finance（近似值）",
+     "tags": [
+      "NASDAQ",
+      "US-STOCKS",
+      "SP500"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "台股8/3收漲266.66點至43,386.41點 台積電逆勢下跌55元",
+     "url": "https://finance.ettoday.net/news/3212399",
+     "summary": "台股加權指數3日開低走高，終場上漲266.66點（+0.62%）收43,386.41點，成交量放大至8445.31億元；台積電（2330）逆勢收黑下跌55元至2370元，聯發科、日月光等權值股撐盤帶動大盤翻紅（近似值）。",
+     "source": "ETtoday（近似值）",
+     "tags": [
+      "TAIEX",
+      "台積電",
+      "台股"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元8/3貶1.46角收32.438元 外資匯出壓力未歇",
+     "url": "https://www.cna.com.tw/news/afe/202608030266.aspx",
+     "summary": "新台幣兌美元3日隨外資匯出賣壓收貶1.46角，報32.438元，延續近期弱勢走勢；台股當日雖收漲，惟資金移動方向顯示外資調節動作仍在持續。",
+     "source": "中央社",
+     "tags": [
+      "新台幣",
+      "匯率",
+      "外資匯出"
+     ]
+    }
+   ]
+  }
+ ]
+}

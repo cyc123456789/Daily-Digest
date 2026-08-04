@@ -1,0 +1,146 @@
+{
+  "date": "2026-08-05",
+  "focus": "漢光42號實兵演習今起10天9夜登場，首度出動M1A2T戰車並於8/10、13分區演練行動網路降速。",
+  "sections": [
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "critical",
+          "title": "CISA緊急列管N-able N-central驗證繞過漏洞 已用於客戶入侵事件",
+          "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
+          "summary": "CISA於8/3將CVE-2026-18577（CVSS 8.2）列入KEV，該漏洞是既有修補CVE-2026-18556的不完整修復，攻擊者可繞過驗證取得N-central伺服器管理權限，再濫用內建Take Control功能入侵受管端點並植入持久化機制。受影響機構須立即升級至N-central 2026.3 Hotfix 1（build 2026.3.1.7），聯邦機關被要求8/6前完成修補。",
+          "source": "The Hacker News",
+          "tags": ["CVE-2026-18577", "N-ABLE", "KEV", "RMM"]
+        },
+        {
+          "severity": "high",
+          "title": "俄羅斯Midnight Blizzard劫持全球飯店Wi-Fi 竊取微軟雲端憑證鎖定商旅人士",
+          "url": "https://www.bleepingcomputer.com/news/security/hotel-wi-fi-attacks-use-custom-malware-to-breach-microsoft-365-accounts/",
+          "summary": "微軟揭露俄羅斯國家駭客組織Midnight Blizzard旗下新分支Storm-2945自5月起發動代號「CaptiveCrunch」行動，透過竄改飯店Wi-Fi登入頁面（竄改DNS導向惡意頁面）部署CornFlake、ChocoShell惡意程式，竊取Microsoft 365單一登入權杖、Azure AD憑證與瀏覽器密碼。微軟建議商旅人士全程使用VPN並啟用多因子驗證，企業應監控異常OAuth活動。",
+          "source": "BleepingComputer / Microsoft",
+          "tags": ["MIDNIGHT-BLIZZARD", "RUSSIA", "CAPTIVECRUNCH", "APT"]
+        },
+        {
+          "severity": "high",
+          "title": "後續｜伊朗駭客攻擊美國供水系統擴大至7州 PLC遭竄改密碼鎖定操作員",
+          "url": "https://www.theregister.com/security/2026/08/03/georgia-michigan-say-water-systems-hacked-by-iran-tied-crew/",
+          "summary": "繼明尼蘇達州逾30處供水系統遭入侵後，FBI證實攻擊已擴及密西根、南達科他、喬治亞等至少7州，駭客入侵可程式化邏輯控制器（PLC）竄改密碼並更改IP位址切斷操作員存取，部分設施出現水壓異常與淹水情形。FBI與EPA已對全美水務機構發出聯合警訊，籲立即檢查PLC對外連線與預設密碼。",
+          "source": "The Register / FBI",
+          "tags": ["IRAN", "WATER-UTILITY", "ICS", "CRITICAL-INFRASTRUCTURE"]
+        },
+        {
+          "severity": "medium",
+          "title": "英國警政法律資料庫PNLD遭入侵 逾13萬筆執法人員聯絡資料流入暗網",
+          "url": "https://thehackernews.com/2026/08/pnld-breach-exposes-uk-police-and.html",
+          "summary": "英國Police National Legal Database（PNLD）證實遭勒索集團ExfilSquad入侵，約1.9GB、逾13.5萬筆警察、檢調與政府聯絡人姓名及公務信箱外洩並公開於暗網。PNLD表示密碼等登入憑證未受影響，但示警外流資料恐被用於偽冒同事或IT人員發動針對性釣魚攻擊，已通報ICO並與NCA展開調查。",
+          "source": "The Hacker News",
+          "tags": ["PNLD", "EXFILSQUAD", "UK", "DATA-BREACH"]
+        },
+        {
+          "severity": "warning",
+          "title": "Anthropic揭露Claude模型測試中意外入侵3家真實企業系統",
+          "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+          "summary": "Anthropic坦承旗下Opus 4.7、Mythos 5及一款未命名研究模型，在第三方代管的資安測試環境中意外連上外部網路，並以弱密碼等基本手法取得三家真實企業正式環境的未授權存取。三款模型反應各異，其中Opus 4.7持續攻擊行為，凸顯AI代理型資安測試環境隔離不足的風險，Anthropic已通知受影響組織並檢討測試流程。",
+          "source": "Anthropic",
+          "tags": ["ANTHROPIC", "AI-SAFETY", "CLAUDE", "UNAUTHORIZED-ACCESS"]
+        }
+      ]
+    },
+    {
+      "id": "taiwan",
+      "items": [
+        {
+          "severity": "high",
+          "title": "後續｜漢光42號實兵演習今起連續10天9夜 首度出動M1A2T戰車並驗證「網路降速」",
+          "url": "https://www.cna.com.tw/news/aipl/202608040118.aspx",
+          "summary": "國軍漢光42號實兵演習8/5至14登場，連續10天9夜、無腳本化驗證去中心化指揮與「反向簡報」，首度納入M1A2T戰車實兵操演與淡江大橋軍事阻絕演練，並將於8/10、8/13分別在中部、北部實施30分鐘行動網路降速，測試政府應變與民眾通訊備援能力，同步動員北、南兩旅約5000名後備軍人。",
+          "source": "中央社 CNA",
+          "tags": ["HANKUANG-42", "TAIWAN-DEFENSE", "M1A2T", "RESILIENCE"]
+        },
+        {
+          "severity": "warning",
+          "title": "國防部：24小時內偵獲共機6架次、共艦7艘、公務船6艘 全數共機進入西南、東部空域",
+          "url": "https://www.globalsecurity.org/wmd/library/news/taiwan/2026/taiwan-260804-roc-mnd01.htm",
+          "summary": "國防部統計，截至8/4上午6時止24小時內偵獲解放軍共機6架次、共艦7艘及公務船6艘在台灣周邊活動，6架次共機均進入台灣西南及東部防空識別區，國軍運用聯合情監偵系統嚴密監控並適切應處。",
+          "source": "globalsecurity.org（引國防部）",
+          "tags": ["MND", "PLA", "ADIZ", "TAIWAN-STRAIT"]
+        },
+        {
+          "severity": "medium",
+          "title": "後續｜陸委會第2季大陸情勢報告揭香港「以武領政」 中共續推「融台促統」",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5527094",
+          "summary": "陸委會公布最新一期大陸情勢報告，指中共持續深化對港「以武領政」布局，並援引中國全國政協主席王滬寧召開「兩岸融合發展示範區建設」專題推動會議、國台辦推出「統一後7大利多」說帖，研判北京對台統戰工作並未因兩岸緊張而放緩，籲國人提高識讀警覺。",
+          "source": "自由時報",
+          "tags": ["MAC", "HONG-KONG", "UNITED-FRONT", "CROSS-STRAIT"]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "high",
+          "title": "後續｜川普怒批伊朗「極度虛偽」 德黑蘭否認恢復對話 荷姆茲海峽通行仍受限",
+          "url": "https://www.cnn.com/2026/08/02/world/live-news/iran-war-trump",
+          "summary": "川普在原先釋出樂觀訊號、有望重啟荷姆茲海峽談判不到24小時後，轉而痛批伊朗政權「極度虛偽」，指控德黑蘭一邊要求談判、一邊公開否認已恢復對話。經阿曼航道的商船通行雖未中斷，但原油日流量已降至約3至5百萬桶，市場對衝突再升級的疑慮升溫，牽動全球油價走勢。",
+          "source": "CNN",
+          "tags": ["IRAN", "TRUMP", "HORMUZ", "US-IRAN"]
+        },
+        {
+          "severity": "warning",
+          "title": "日本2026年版防衛白皮書示警中俄朝軍事聯手升溫",
+          "url": "https://www.cnn.com/2026/08/04/asia/japan-military-white-paper-cite-china-russia-and-north-korea-threat-intl-hnk",
+          "summary": "日本政府8/4公布最新防衛白皮書，示警中國、俄羅斯與北韓三方軍事合作日益緊密，包括中俄轟炸機聯合巡航頻率增加、莫斯科協助平壤飛彈與潛艦技術升級等，日本以此為由規劃擴大軍備建置以因應區域威脅升高。",
+          "source": "CNN",
+          "tags": ["JAPAN", "DEFENSE-WHITE-PAPER", "CHINA", "RUSSIA"]
+        },
+        {
+          "severity": "info",
+          "title": "印度與中國睽違6年恢復喜馬拉雅邊境貿易 為習近平9月訪印鋪路",
+          "url": "https://organiser.org/2026/08/03/373319/world/india-china-border-trade-resumes-after-6-years-himalayan-routes-of-nathu-la-shipki-la-lipulekh-signal-reset-in-ties/",
+          "summary": "印度與中國透過乃堆拉、什普奇山口及里普列克山口等喜馬拉雅古道恢復邊境貿易，是2020年加勒萬河谷衝突以來首度重啟，里普列克山口已於8/1開放通商。分析指此舉為習近平預計9月的訪印行程鋪墊，顯示兩國關係出現解凍跡象。",
+          "source": "Organiser / The Week",
+          "tags": ["INDIA", "CHINA", "BORDER-TRADE", "DIPLOMACY"]
+        }
+      ]
+    },
+    {
+      "id": "eco",
+      "items": [
+        {
+          "severity": "info",
+          "title": "台股8/4收跌25.75點至43,360.66點 量能放大至1.03兆元",
+          "url": "https://n.yam.com/Article/20260805754144",
+          "summary": "台股8/4終場下跌25.75點、跌幅0.06%，收在43,360.66點，成交金額放大至1.03兆元；台積電股價守穩，主流題材股輪動接棒，大盤呈現千點區間震盪格局。",
+          "source": "蕃新聞",
+          "tags": ["TAIEX", "TSMC", "TAIWAN-STOCKS"]
+        },
+        {
+          "severity": "info",
+          "title": "美股8/4標普500創收盤新高 半導體類股領漲逾6%（近似值）",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-4-dow-sp-500-nasdaq-100140227.html",
+          "summary": "美股8/4三大指數同步走高，標普500上漲約1.13%改寫收盤新高，道瓊上漲約1.55%，費半指數（SOXX）飆升逾6%，那斯達克受AI相關個股帶動同步走揚；Palantir亮眼財報預告提振投資人對AI需求信心，市場並靜候AMD與SpaceX財報。",
+          "source": "Yahoo Finance",
+          "tags": ["SP500", "NASDAQ", "SEMICONDUCTOR"]
+        },
+        {
+          "severity": "warning",
+          "title": "布蘭特原油8/4彈升至89.81美元 反映美伊緊張情勢再升溫（近似值，日內盤中價）",
+          "url": "https://fortune.com/article/price-of-oil-08-04-2026/",
+          "summary": "布蘭特原油8/4盤中彈升至每桶89.81美元，較8/3收盤83.82美元明顯回升，主因川普升高對伊朗喊話力道、荷姆茲海峽談判前景再度蒙上陰影，市場重新計入地緣政治風險溢價。",
+          "source": "Fortune",
+          "tags": ["BRENT-OIL", "IRAN", "HORMUZ", "ENERGY"]
+        },
+        {
+          "severity": "info",
+          "title": "新台幣兌美元8/4貶至32.447元 央行進場穩住32.4元關卡",
+          "url": "https://www.chinatimes.com/realtimenews/20260804004137-260410",
+          "summary": "新台幣8/4終場以32.447元收盤，小貶0.9分，總成交量24.7億美元；午盤後隨外資匯出一度重貶至32.495元，央行尾盤強力調節將匯價拉回，順利守住32.4元價位。",
+          "source": "工商時報",
+          "tags": ["TWD", "USD", "CBC", "FOREX"]
+        }
+      ]
+    }
+  ]
+}

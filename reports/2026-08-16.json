@@ -1,0 +1,197 @@
+{
+ "date": "2026-08-16",
+ "focus": "SAP Commerce Cloud爆CVSS滿分未驗證RCE漏洞遭在野攻擊，官方緊急籲企業立即修補或限制端點存取",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "SAP Commerce Cloud核心模組現CVSS 10分漏洞 未驗證攻擊者可遠端執行任意程式碼",
+     "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html",
+     "summary": "CVE-2026-58231為Data Hub Adapter擴充套件的授權缺陷，攻擊者無需帳密即可濫用預設驗證用戶端執行任意程式碼，SAP已於8月修補日發布更新。威脅情資商Defused於8月14日偵測到修補釋出3天後即遭鎖定攻擊，官方建議立即修補，無法即時修補者應以IP過濾限制端點存取。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-58231",
+      "SAP",
+      "RCE",
+      "CVSS10"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "CISA列管Metabase SQL注入零時差漏洞 未驗證攻擊者可取得管理員權限",
+     "url": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+     "summary": "CVE-2026-72898（CVSS 10分）存在於密碼重設端點/reset_password，攻擊者可注入SQL取得應用程式資料庫管理權限，進而竊取連線資料庫的憑證與資料。Metabase已於8月6日釋出0.58.24至0.63.5等修補版本，CISA已於8月11日列入KEV清單，敦促尚未修補者先封鎖該端點。",
+     "source": "CISA/The Hacker News",
+     "tags": [
+      "CVE-2026-72898",
+      "METABASE",
+      "KEV",
+      "SQLI"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "Cisco ASA、FTD防火牆零時差漏洞遭利用觸發遠端阻斷服務",
+     "url": "https://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html",
+     "summary": "CVE-2026-20349（CVSS 8.6）影響開啟Remote Access SSL VPN服務的Secure Firewall ASA與FTD裝置，攻擊者免帳密即可遠端送出惡意HTTP請求癱瘓設備。CISA已於8月11日列入KEV並要求聯邦機關於8月14日前完成修補，Cisco已提供涵蓋ASA 9.16–9.24、FTD 7.0–10.0的修補程式，無法修補者無替代緩解方案。",
+     "source": "The Hacker News/CISA",
+     "tags": [
+      "CVE-2026-20349",
+      "CISCO",
+      "KEV",
+      "DOS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "駭客鎖定macOS螢幕分享漏洞植入Monero挖礦程式",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-macos-screen-sharing-flaw-to-deploy-monero-miner/",
+     "summary": "CVE-2026-65400（CVSS 7.1）出在螢幕分享服務SRP驗證機制實作缺陷，若5900連接埠暴露於公開網路，攻擊者可免帳密取得root權限。荷蘭國家資安中心觀測到駭客已藉此植入Monero挖礦程式，蘋果已於8月6日在macOS Tahoe 26.6.1修補，官方建議停用不必要的螢幕分享並避免對外開放5900埠。",
+     "source": "BleepingComputer",
+     "tags": [
+      "CVE-2026-65400",
+      "MACOS",
+      "CRYPTOMINER"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Gunra勒索軟體集團利用Fortinet舊漏洞繞過MFA 竊取雲端資料後加密全網",
+     "url": "https://thehackernews.com/2026/08/gunra-ransomware-exploits-fortinet-and.html",
+     "summary": "FBI、CISA、NSA與南韓警方聯合示警，Gunra集團持續透過FortiOS／FortiProxy既有驗證繞過漏洞（CVE-2024-55591、CVE-2025-24472）入侵VDI驗證伺服器並竄改驗證流程繞過MFA，再以Impacket工具橫向移動、傾印網域控制站憑證。受害對象橫跨政府、醫療、金融、製造與關鍵基礎設施，尚未修補相關Fortinet版本的企業應立即更新並檢視VPN登入紀錄。",
+     "source": "The Hacker News",
+     "tags": [
+      "GUNRA",
+      "FORTINET",
+      "RANSOMWARE",
+      "MFA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機4架次（3架逾越中線）、共艦8艘、公務船1艘",
+     "url": "https://newtalk.tw/news/view/2026-08-15/1053548",
+     "summary": "國防部通報，8月14日6時至15日6時期間偵獲中共軍機4架次，其中3架次逾越台灣海峽中線進入我北部、中部及東部空域，另有共艦8艘、公務船1艘持續在台海周邊活動，國軍嚴密監控應處。",
+     "source": "Newtalk新聞",
+     "tags": [
+      "MND",
+      "PLA",
+      "台海中線"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "中國海警船8月14日闖入金門南方限制水域 海巡署驅離歷時近2小時",
+     "url": "https://www.taiwanhot.net/news/1138185/",
+     "summary": "4艘中國海警船8月14日分兩批進入金門南方限制水域，海巡署出動4艘艦艇一對一監控蒐證，約2小時後將其驅離。此為8月以來第二度出現的類似闖入事件，海委會重申該海域主權屬台灣管轄。",
+     "source": "台灣好新聞",
+     "tags": [
+      "中國海警",
+      "金門",
+      "灰色地帶"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "日本防衛大臣終戰81週年參拜靖國神社 中國強烈譴責「為軍國主義翻案」",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3364135/china-blasts-japanese-officials-visit-yasukuni-shrine-wwii-anniversary",
+     "summary": "日本防衛大臣小泉進次郎8月15日終戰紀念日參拜靖國神社，首相高市早苗雖未親自到場但致贈供品。中國外交部提出嚴正抗議，指控意圖為二戰甲級戰犯翻案、掩蓋侵略史實，並警告日本加速軍事化將面臨歷史清算，南韓亦表達不滿。",
+     "source": "South China Morning Post",
+     "tags": [
+      "JAPAN",
+      "CHINA",
+      "YASUKUNI"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜南韓美國乙支自由護盾演習8/17登場 首度納入無人機、GPS干擾與網攻演練",
+     "url": "https://www.koreatimes.co.kr/amp/southkorea/defense/20260810/s-korea-us-to-hold-ufs-exercise-from-aug-17",
+     "summary": "繼北韓8月12日試射彈道飛彈後，南韓與美國將於8月17日至27日舉行「乙支自由護盾」聯合軍演，約1.8萬南韓官兵與聯合國軍司令部11個成員國參與，今年首度將無人機威脅、GPS干擾與網路攻擊納入演練科目，北韓已批評此舉為「入侵演習」。",
+     "source": "Korea Times",
+     "tags": [
+      "ULCHIFREEDOMSHIELD",
+      "NORTHKOREA",
+      "SOUTHKOREA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美中川習9月峰會前互探底線 北京擴大反制出口管制測試停火默契",
+     "url": "https://www.cnbc.com/2026/08/06/us-china-trump-xi-summit-trade-technology-restrictions.html",
+     "summary": "中國商務部近期祭出去年10月停火以來規模最大的反制措施，將7家美國實體列入限制清單並收緊對美無人機相關技術出口管制，回應美方FCC對中國無人機與路由器的安全限制。雙方預期在川習9月華府峰會前持續「討價還價」，多數摩擦可望在會晤前緩解。",
+     "source": "CNBC",
+     "tags": [
+      "USCHINA",
+      "TRUMPXI",
+      "EXPORTCONTROL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股本週收官：週線大漲1585點漲幅3.58% 電子零組件股單週飆12%",
+     "url": "https://www.storm.mg/article/11156557",
+     "summary": "台股上週雖於14日尾盤翻黑收45,811.01點、下跌210.47點，但全週仍累計上漲1585.10點、漲幅3.58%，上市公司總市值增逾5.18兆元至149.74兆元，電子零組件類股單週大漲12.06%領漲大盤，台積電14日收2,395元下跌40元。",
+     "source": "風傳媒",
+     "tags": [
+      "TWII",
+      "台積電",
+      "週線"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "標普500上週三創收盤新高突破7800點 那斯達克週線收漲",
+     "url": "https://www.cnbc.com/2026/08/12/stock-market-today-live-updates.html",
+     "summary": "標普500指數8月12日在通膨數據降溫、油價下跌帶動下創收盤新高7,798.99點，惟14日因消費者信心轉弱小幅回落0.2%，那斯達克指數當週上漲0.81%收26,803.03點，整體連三週收高，市場預期Fed 9月按兵不動機率約6至7成。",
+     "source": "CNBC",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "FED"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油守穩88美元關卡 美伊停火談判陷入僵局、荷姆茲海峽通行仍受限",
+     "url": "https://www.forbes.com/advisor/investing/oil-prices-today/",
+     "summary": "布蘭特原油上週五收在每桶88.52美元左右，市場持續關注中東停火談判進展；儘管有磋商試圖重新開放荷姆茲海峽航運，惟談判仍陷入僵局，地緣風險溢價尚未完全消退（近似值）。",
+     "source": "Forbes Advisor",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣本週升值0.75% 14日收32.046元升破32元關卡",
+     "url": "https://tw.stock.yahoo.com/news/8-14%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A532-046%E5%85%83%E4%BD%9C%E6%94%B6-%E5%8D%87%E5%80%BC1-22%E8%A7%92-080400542.html",
+     "summary": "新台幣兌美元8月14日以32.046元作收，單日升值1.22角，盤中最高一度來到31.991元，本週累計升值0.75%，延續近期回穩走勢。",
+     "source": "Yahoo奇摩股市",
+     "tags": [
+      "TWD",
+      "FOREX"
+     ]
+    }
+   ]
+  }
+ ]
+}

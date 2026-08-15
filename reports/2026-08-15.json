@@ -1,0 +1,192 @@
+{
+ "date": "2026-08-15",
+ "focus": "VMware vCenter嚴重漏洞遭APT組織全球攻擊，47國逾360個IP受駭；北韓駭客亦藉Windows零時差鎖定國防業",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "VMware vCenter路徑遍歷漏洞遭APT組織全球攻擊 47國逾360個IP受駭",
+     "url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html",
+     "summary": "CVE-2026-59310為vCenter Server目錄遍歷漏洞，CVSS高達9.8，Broadcom已於7月底釋出修補。攻擊者在揭露後5天內即展開全球掃描與攻擊，部署開源工具reverse_ssh建立持久後門，資安公司Quirso已在47國偵測到361個受害IP，尚未更新的系統應立即修補。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-59310",
+      "VMWARE",
+      "VCENTER",
+      "APT"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "CISA緊急列管Windows WinSock零時差漏洞 北韓Lazarus鎖定國防承包商",
+     "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
+     "summary": "CVE-2026-68820為Windows Ancillary Function Driver(AFD.sys)競態條件導致的Use-After-Free漏洞，可讓已具程式碼執行權限的攻擊者提權至SYSTEM。北韓Lazarus集團自7月初起藉「Dream Job」求職釣魚鎖定國防業，微軟已於8/11 Patch Tuesday釋出修補，CISA已列入KEV要求聯邦機關立即更新。",
+     "source": "BleepingComputer",
+     "tags": [
+      "CVE-2026-68820",
+      "LAZARUS",
+      "KEV",
+      "WINDOWS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "GeoServer零時差SQL注入漏洞遭鎖定 揭露數小時內即遭掃描攻擊",
+     "url": "https://thehackernews.com/2026/08/unpatched-geoserver-zero-day-targeted.html",
+     "summary": "開源地理資訊平台GeoServer的jsonArrayContains函式存在未經授權SQL注入漏洞，部分H2資料庫部署情境下可能導致遠端程式碼執行。漏洞於8/12由研究人員公開揭露後數小時內即遭大量掃描與探測攻擊，目前尚未取得CVE編號，官方修補也尚未釋出，建議限制GeoServer對外暴露面。",
+     "source": "The Hacker News",
+     "tags": [
+      "GEOSERVER",
+      "SQLINJECTION",
+      "ZERODAY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Fortinet修補FortiWeb、FortiManager身分驗證繞過漏洞",
+     "url": "https://www.securityweek.com/fortinet-patches-authentication-flaws-in-fortiweb-and-fortimanager/",
+     "summary": "CVE-2026-26035影響FortiWeb，攻擊者可在啟用RADIUS萬用字元選項時以隨機帳密登入管理介面；CVE-2026-70468影響FortiManager，攻擊者持有效憑證並於特定CLI設定下可冒充其管理的任一FortiGate設備。Fortinet已釋出修補，建議管理員檢查相關設定並儘速更新。",
+     "source": "SecurityWeek",
+     "tags": [
+      "FORTINET",
+      "CVE-2026-26035",
+      "CVE-2026-70468"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "加密貨幣硬體錢包商Trezor第三方物流商遭駭 逾1.3萬客戶資料外洩",
+     "url": "https://www.theregister.com/security/2026/08/14/crypto-wallet-maker-trezor-confirms-13000-customers-details-exposed-in-logistics-breach/",
+     "summary": "Trezor證實其合作物流廠商遭入侵，導致逾1.3萬名客戶的姓名、地址等個資外洩，官方強調私鑰與加密資產本身未受影響。事件凸顯供應鏈第三方廠商仍是資料外洩常見破口，受影響用戶應留意後續針對性釣魚攻擊。",
+     "source": "The Register",
+     "tags": [
+      "TREZOR",
+      "SUPPLYCHAIN",
+      "DATABREACH"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共艦6艘、公務船3艘、共機4架次進入西南空域",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部統計，8月14日6時至8月15日6時期間，偵獲中共海軍艦艇6艘、公務船3艘在台海周邊活動，另有解放軍機4架次進入我西南空域，國軍運用任務機、艦、岸置飛彈系統嚴密監控應處。",
+     "source": "國防部",
+     "tags": [
+      "MND",
+      "共機",
+      "共艦"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜漢光42號演習8/14圓滿落幕 總統：持續強化嚇阻與韌性",
+     "url": "https://www.cna.com.tw/news/aipl/202608143003.aspx",
+     "summary": "自8月5日起連續10天9夜的漢光42號實兵演習於8月14日結束，本次首度南北兩旅全員動員並納入城鎮韌性、網路降速等反封鎖驗證項目。總統賴清德表示將持續強化國軍嚇阻戰力與社會韌性，以因應中共灰色地帶威脅。",
+     "source": "中央社",
+     "tags": [
+      "漢光演習",
+      "國防"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "共軍證實8月中旬與印尼海軍在台灣東部海域聯合演練",
+     "url": "https://www.cna.com.tw/news/acn/202608110336.aspx",
+     "summary": "中國國防部宣布，解放軍海軍艦艇將於8月中旬與印尼海軍在「台灣島東部海域」進行通信與海上補給聯合演練，中方稱旨在提升兩國海軍協同作戰能力。此舉被視為解放軍持續向台灣周邊海域拓展常態化軍事存在的一環。",
+     "source": "中央社",
+     "tags": [
+      "解放軍",
+      "印尼",
+      "台灣海峽"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "info",
+     "title": "美中關係：華府從關稅轉向供應鏈改造 為川習9月會晤鋪路",
+     "url": "https://www.bloomberg.com/news/newsletters/2026-08-11/us-moves-past-tariffs-to-focus-on-supply-chain-revamps-in-china-trade-policy",
+     "summary": "報導指出，美國政府對中國貿易政策的重心正從關稅本身轉向供應鏈重組工具，雙方並已原則同意就農產品互惠減稅框架展開協商。川普稍早已證實習近平將於9月24日左右赴美舉行雙邊峰會，市場關注後續是否觸及關稅實質讓步。",
+     "source": "Bloomberg",
+     "tags": [
+      "美中關係",
+      "貿易",
+      "川習會"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "北韓試射彈道飛彈 南韓美國準備乙支自由護盾聯合軍演",
+     "url": "https://www.nbcnews.com/world/north-korea/north-korea-launches-ballistic-missile-sea-south-korea-says-rcna592037",
+     "summary": "北韓8月12日自元山地區試射彈道飛彈，飛行約700公里落於日本專屬經濟海域外，為今年第11次疑似彈道飛彈試射，南韓研判是對即將登場的美韓「乙支自由護盾」聯合軍演（8/17至27日、逾4萬美韓軍力參與）表達抗議。",
+     "source": "NBC News",
+     "tags": [
+      "北韓",
+      "彈道飛彈",
+      "美韓軍演"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8/14收跌210.47點至45,811.01點 早盤一度大漲逾380點",
+     "url": "https://newtalk.tw/news/view/2026-08-14/1053456",
+     "summary": "加權指數8月14日開高走低，早盤延續美股創高氣勢一度大漲逾380點，午後高檔賣壓出籠翻黑，終場收45,811.01點、下跌210.47點（0.46%），成交金額1兆665.4億元，外資期貨轉為減碼。",
+     "source": "Newtalk新聞",
+     "tags": [
+      "台股",
+      "加權指數"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股8/14收跌：道瓊挫108點、標普創高後回落 CPI降溫9月按兵率升至64%",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026",
+     "summary": "美股三大指數8月14日走低，道瓊跌108點（0.20%）收53,732點，標普500自歷史新高回落0.2%，那斯達克跌約0.3%。7月CPI年增3.4%、月增0.1%不如預期升溫，據CME FedWatch，市場預期聯準會9月按兵不動機率已升至64%。",
+     "source": "TheStreet",
+     "tags": [
+      "美股",
+      "聯準會",
+      "CPI"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油守穩88美元關卡 中東與美伊局勢牽動油價（近似值）",
+     "url": "https://www.forbes.com/advisor/investing/oil-prices-today/",
+     "summary": "布蘭特原油現貨約每桶88.52美元，本週稍早一度重挫逾2%至87美元附近，油價走勢持續受美伊緊張情勢與全球需求預期拉鋸影響，市場關注是否牽動聯準會9月利率決策的通膨評估。",
+     "source": "Forbes Advisor",
+     "tags": [
+      "布蘭特原油",
+      "能源"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8/14升破32元大關 收32.046元升值1.22角",
+     "url": "https://news.cnyes.com/news/id/6577177",
+     "summary": "新台幣兌美元8月14日全日呈升值態勢，盤中一度升破32元關卡，終場收在32.046元、升值1.22角，台北外匯經紀公司成交值擴大至22.28億美元，市場資金動能回流台幣資產。",
+     "source": "鉅亨網",
+     "tags": [
+      "新台幣",
+      "匯率"
+     ]
+    }
+   ]
+  }
+ ]
+}

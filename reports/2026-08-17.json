@@ -1,0 +1,122 @@
+{
+ "date": "2026-08-17",
+ "focus": "CISA將JetBrains TeamCity未驗證RCE漏洞（CVSS 9.8）列入在野利用清單，恐波及CI/CD建置鏈與下游供應鏈",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA列管JetBrains TeamCity未驗證RCE漏洞 CVSS 9.8恐波及CI/CD供應鏈",
+     "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
+     "summary": "JetBrains於7月27日修補TeamCity On-Premises反序列化漏洞CVE-2026-63077（CVSS 9.8），攻擊者無需驗證即可繞過身分檢查並執行任意系統指令。CISA已將其列入KEV並設下8月8日的極短修補期限，成功入侵可竊取憑證、竄改建置產物甚至發動供應鏈式攻擊。影響TeamCity 2026.1.3、2025.11.7之前版本，官方已提供修補版本。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-63077", "TEAMCITY", "CISA-KEV", "SUPPLY-CHAIN"]
+    },
+    {
+     "severity": "critical",
+     "title": "Adobe Commerce權限控管漏洞公告數小時內即遭利用 駭客可劫持顧客帳號",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-adobe-commerce-flaw-to-hijack-customer-accounts/",
+     "summary": "CVE-2026-71362（CVSS 9.1）為Adobe Commerce與Magento Open Source的身分驗證錯誤漏洞，攻擊者無需帳號、權限或使用者互動即可切換顧客身分、竊取個資。資安業者Sansec證實公告發布數小時內即出現實際攻擊。影響2026年7月修補前的Commerce、Commerce B2B及Magento Open Source，Adobe已釋出獨立修補程式並呼籲立即更新。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-71362", "ADOBE-COMMERCE", "MAGENTO", "ACCOUNT-TAKEOVER"]
+    },
+    {
+     "severity": "high",
+     "title": "疑似伊朗駭客攻勢擴大至美國12州水務系統 部分設施被迫改回人工操作",
+     "url": "https://www.cbsnews.com/news/more-states-water-systems-cyberattacks-iran-backed-hackers/",
+     "summary": "美國聯邦調查人員證實，鎖定水處理設施操作技術（OT）的網路攻擊已擴大至至少12州，包括密西根、明尼蘇達、喬治亞、紐澤西與南達科他，明尼蘇達州逾30個社區水系統受影響。部分業者因駭客取得幫浦、閥門與水壓遠端控制權，被迫切換為人工操作；官方雖未正式歸因，但多方消息指向與伊朗有關的駭客組織，尚無官方修補時程可循，建議業者立即檢視OT對外連線。",
+     "source": "CBS News",
+     "tags": ["CRITICAL-INFRASTRUCTURE", "IRAN", "WATER-UTILITY", "OT"]
+    },
+    {
+     "severity": "high",
+     "title": "LiteLLM供應鏈攻擊延燒 逾2500企業、43萬條CI/CD管線遭波及",
+     "url": "https://www.securityweek.com/over-2500-organizations-impacted-by-litellm-supply-chain-attack/",
+     "summary": "資安業者CloudSEK揭露，駭客組織TeamPCP先前入侵開源掃描工具Trivy的GitHub Action與發布流程，藉此竊得LiteLLM專案的PyPI發布權杖，上傳含惡意程式碼的1.82.7、1.82.8版本；惡意套件雖僅上線約40分鐘，仍波及輝達、三星、思科、西門子、德勤等逾2,500家企業、約43萬條CI/CD管線的憑證與權杖恐外洩。研究人員強調曝險不等於已遭入侵，但建議受影響組織立即輪替金鑰並稽核建置紀錄。",
+     "source": "SecurityWeek",
+     "tags": ["LITELLM", "SUPPLY-CHAIN", "PYPI", "CI-CD"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機5架次（4架逾中線）、共艦7艘、公務船1艘",
+     "url": "https://news.ebc.net.tw/news/politics/552056",
+     "summary": "國防部17日公布，自16日上午6時至17日上午6時止，共偵獲中共機5架次、共艦7艘及公務船1艘持續在台海周邊活動，其中4架次共機逾越台海中線並進入台灣北部及西南空域。國軍運用任務機、艦及岸置飛彈系統嚴密監控應處。",
+     "source": "東森新聞",
+     "tags": ["MND", "PLA", "台海中線"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜共軍與印尼海軍台灣東部海域演練完成 外交部、美方齊聲譴責軍事施壓",
+     "url": "https://udn.com/news/story/7331/9688073",
+     "summary": "中國解放軍東部戰區證實，海軍「紅河艦」與印尼海軍「萊」號巡防艦已在台灣以東海域完成海上通訊、編隊運動、海上整補等所有預定通航演練科目。我外交部譴責北京恣意妄為、升高區域緊張情勢；美國國務院同步呼籲北京停止對台軍事施壓，改採有意義對話。印尼海軍則澄清此僅為返國途中的例行交會演習，並非作戰性質。",
+     "source": "聯合新聞網",
+     "tags": ["PLA", "INDONESIA", "台灣東部海域"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜美韓乙支自由護盾軍演今起登場 為期11天首度演練反制無人機與GPS干擾",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5534786",
+     "summary": "美韓年度「乙支自由護盾」聯合軍演17日至27日登場，約1.8萬名南韓軍人參與；鑑於北韓部隊自烏克蘭戰場取得實戰經驗，今年首度強化演練反制無人機、GPS訊號干擾、電子戰與網路攻擊等新型態威脅。另有報導指出，美方在演習規劃中首度提及「第一島鏈」，駐韓美軍戰力部署恐牽動台海情勢。",
+     "source": "自由時報",
+     "tags": ["ULCHIFREEDOMSHIELD", "NORTHKOREA", "第一島鏈"]
+    },
+    {
+     "severity": "warning",
+     "title": "南海：美國譴責中國以「自然保護區」名義擴大黃岩島主張 菲律賓漁權遭壓縮",
+     "url": "https://www.aljazeera.com/news/2026/8/8/us-slams-chinese-nature-reserve-as-effort-to-claim-south-china-sea",
+     "summary": "美國國務院譴責中國以劃設「自然保護區」為由，限制菲律賓漁民進入黃岩島（史卡波羅淺灘）周邊水域，痛批此舉是北京擴張南海主權主張的手段、否定菲方合法權利。此前中菲雙方7月已在黃岩島及仁愛礁一週內三度發生衝突，促使美菲日展開聯合海上演習因應，南海緊張情勢持續升高。",
+     "source": "Al Jazeera",
+     "tags": ["南海", "PHILIPPINES", "USCHINA"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8/17開低走高 收漲68.2點至45,877.39點",
+     "url": "https://finance.ettoday.net/news/3185126",
+     "summary": "台股17日開低走高，加權指數終場上漲68.2點，收在45,877.39點，漲幅0.15%，成交量約1兆1,020億元。權值股表現分歧，台積電收黑跌15元至2385元，鴻海小漲3元至272元，聯發科則下跌100元至4460元；中小型類股國精化、楠梓電、南亞等多檔漲停。",
+     "source": "ETtoday",
+     "tags": ["TWII", "台積電"]
+    },
+    {
+     "severity": "info",
+     "title": "美股上週五收平淡整理 聯準會新主席華許將於傑克森霍爾年會首度亮相",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html",
+     "summary": "美股上週五（8/14）收平淡整理，標普500指數跌13.23點至7,785.76點，那斯達克跌73.84點至26,729.16點，道瓊跌107.59點至53,732.41點，仍寫下連三週收漲。市場關注8月27至29日登場的傑克森霍爾全球央行年會，這將是新任聯準會主席華許（Kevin Warsh）上任以來首次發表主旨演說，利率路徑訊號備受矚目。",
+     "source": "Yahoo Finance",
+     "tags": ["SP500", "NASDAQ", "FED", "JACKSONHOLE"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油站穩89美元關卡 荷姆茲海峽通行量僅剩衝突前一成（近似值）",
+     "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-89-Amid-US-Iran-Stalemate-Over-Hormuz.html",
+     "summary": "布蘭特原油近日站穩89美元關卡，美國能源資訊署（EIA）已將2026年布蘭特油價預測由82美元上調至87美元。美伊對荷姆茲海峽重啟仍陷僵局，海峽單日通行船隻僅剩約8艘，較衝突前的120艘大幅萎縮，供應風險溢價持續反映在油價上。因即時報價源受限，數字為近期報導綜合，屬近似值。",
+     "source": "OilPrice.com",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣本週維持32元附近整理 交易員估下週有望測試31字頭（近似值）",
+     "url": "https://www.cna.com.tw/news/afe/202608140271.aspx",
+     "summary": "新台幣近日在外資匯入帶動下重返32元價位，14日以32.046元作收，升值1.22角；交易員指出，若美國9月降息預期升溫、美元指數持續走弱，新台幣可望在下週測試31元大關。因即時匯價源受限，本則數字以近期趨勢與市場預期為準，屬近似值。",
+     "source": "中央社",
+     "tags": ["TWD", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

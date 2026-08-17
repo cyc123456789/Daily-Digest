@@ -1,0 +1,130 @@
+{
+ "date": "2026-08-18",
+ "focus": "美伊臨時停火協議到期在即，中東戰事恐重燃，衝擊全球油價與公債殖利率，美股同步收黑；台海方面共艦持續活動，川習9月峰會前台灣軍售成籌碼。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜VMware vCenter CVSS 9.8漏洞遭中國駭客利用 部署Babuk變種勒索軟體",
+     "url": "https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
+     "summary": "德國資安公司Quirso揭露，疑似中國語系駭客組織自8月初起大規模掃描利用CVE-2026-59310（VMware vCenter目錄遍歷漏洞，CVSS 9.8），全球逾360個IP、47國受害，部分ESXi主機遭植入Babuk變種勒索軟體加密檔案。Broadcom已於7月29日釋出修補程式，未更新之vCenter伺服器仍應立即列為高風險資產優先修補。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-59310", "VMWARE", "RANSOMWARE", "CHINA-NEXUS"]
+    },
+    {
+     "severity": "critical",
+     "title": "俄羅斯駭客集團TA488部署OWAReaper植入物 重灌伺服器亦無法清除",
+     "url": "https://thehackernews.com/2026/07/russian-hackers-exploit-microsoft-owa.html",
+     "summary": "俄國國家級駭客組織TA488（Laundry Bear）利用Exchange本地部署OWA的CVE-2026-42897跨站腳本漏洞，只要受害者開啟惡意郵件即可觸發「半點擊」入侵；植入物OWAReaper會在伺服器端授予攻擊者信箱Owner權限，即使更改密碼或重灌主機也無法清除，須手動檢查並撤銷異常委派權限。微軟已修補該XSS漏洞，但既有的惡意權限授予需個別排查。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-42897", "EXCHANGE", "TA488", "OWAREAPER"]
+    },
+    {
+     "severity": "high",
+     "title": "車險業者AssuranceAmerica員工帳號遭駭 近700萬筆駕照資料外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/",
+     "summary": "美國汽車保險機構AssuranceAmerica證實，攻擊者於3月16日入侵一名員工帳號後存取內部系統，竊取姓名、聯絡方式、保單理賠資料及駕照號碼，受影響人數達698萬9千人，為今年美國最大宗駕照資料外洩事件。公司未提供免費身分盜用監控服務，受害者須自行留意信用異常。",
+     "source": "BleepingComputer",
+     "tags": ["DATA-BREACH", "ASSURANCEAMERICA", "DRIVERS-LICENSE"]
+    },
+    {
+     "severity": "high",
+     "title": "COLDCARD硬體錢包韌體隨機數瑕疵 累計8800萬美元比特幣遭竊",
+     "url": "https://www.bleepingcomputer.com/news/security/coldcard-wallet-rng-flaw-likely-linked-to-88-million-bitcoin-theft/",
+     "summary": "研究人員發現COLDCARD Mk3硬體錢包因2021年韌體變更導致金鑰產生退化為約40位元熵值的偽隨機數，遠低於原設計的128位元，攻擊者得以離線暴力破解種子詞並重建私鑰。截至8月7日已有逾1,367枚比特幣（約8800萬美元）遭盜領，廠商Coinkite已釋出修補韌體，舊裝置使用者應盡速更換錢包種子。",
+     "source": "BleepingComputer",
+     "tags": ["COLDCARD", "CRYPTOCURRENCY", "RNG-FLAW"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共艦8艘、公務船4艘 未通報共機逾越中線",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5509361",
+     "summary": "國防部表示，8月17日6時至8月18日6時止，偵獲中國軍艦8艘、公務船4艘持續在台海周邊活動，國軍嚴密監控應處；本次通報未列共機架次，為近期少見未見共機出動的通報窗口。",
+     "source": "自由時報",
+     "tags": ["MND", "PLA", "台海中線"]
+    },
+    {
+     "severity": "warning",
+     "title": "台灣規劃2027年國防預算衝上1.1兆元創新高 因應美方施壓強化嚇阻",
+     "url": "https://www.bloomberg.com/news/articles/2026-08-10/taiwan-plans-record-defense-budget-to-counter-china-report-says",
+     "summary": "彭博報導，台灣規劃將2027年國防預算提高至新台幣1.1兆元（約340億美元）、創歷史新高，佔GDP比重上看3.32%，回應美方要求台灣提高自身防衛支出的壓力，預算將納入無人機、重型魚雷等裝備採購項目。",
+     "source": "Bloomberg",
+     "tags": ["TAIWAN", "DEFENSE-BUDGET", "MND"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜川習9月峰會籌備現亂象 140億美元對台軍售案成談判籌碼",
+     "url": "https://udn.com/news/story/6809/9693356",
+     "summary": "港媒報導，原訂9月24日前後登場的川習峰會籌備出現混亂，美方尚無明確主責單位，北京因此日益焦慮。川普稍早證實已與習近平談及對台140億美元軍售案，並直言「握有這張牌對我方談判非常有利」，暗示軍售進度將視中方態度而定，台灣議題成雙方角力焦點。",
+     "source": "聯合新聞網",
+     "tags": ["US-CHINA", "TAIWAN-ARMS-SALE", "TRUMP-XI"]
+    },
+    {
+     "severity": "high",
+     "title": "美伊臨時停火協議到期在即 中東戰事恐重燃 油價、公債殖利率同步走高",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html",
+     "summary": "美國與伊朗的臨時停火協議即將到期，雙方就荷姆茲海峽通行與衝突終局的談判仍陷僵局，市場憂心戰事重燃，帶動原油與美國30年期公債殖利率同步走高，美股8/17應聲收黑。",
+     "source": "Yahoo Finance",
+     "tags": ["US-IRAN", "CEASEFIRE", "HORMUZ", "OIL"]
+    },
+    {
+     "severity": "medium",
+     "title": "川普對中國無人機課徵最高100%關稅 9月3日生效 台灣等盟友適用15%",
+     "url": "https://www.manufacturingdive.com/news/trump-tariffs-drones-uas-components-defense-supply-chain-war/827889/",
+     "summary": "白宮宣布以國安為由，對搭載熱顯像等軍規功能、起飛重量逾25公斤的無人機課徵100%關稅，小型無人機課25%，主要針對中國供應鏈；台灣、日本、南韓、歐盟等盟友來源產品則適用較低的15%稅率，9月3日起生效。",
+     "source": "Manufacturing Dive",
+     "tags": ["TARIFF", "DRONE", "US-CHINA", "SUPPLY-CHAIN"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8/17開低走高 收漲68.2點至45,877.39點",
+     "url": "https://finance.ettoday.net/news/3185126",
+     "summary": "台股8月17日開盤走低後翻紅，終場上漲68.2點、漲幅0.15%，收45,877.39點，成交量約1兆1020億元，AI供應鏈類股買盤回籠，惟權值股台積電下跌15元收2385元。",
+     "source": "ETtoday",
+     "tags": ["TWII", "台積電"]
+    },
+    {
+     "severity": "info",
+     "title": "美股8/17收黑：道瓊跌0.5%、標普跌0.4%、那斯達克跌0.3%",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html",
+     "summary": "美股週一收低，市場憂心美伊停火協議到期恐致中東戰事再起，帶動油價與30年期公債殖利率走高，壓抑風險性資產；AI概念股受惠Anthropic營收成長利多部分抵銷跌幅。",
+     "source": "Yahoo Finance",
+     "tags": ["SP500", "NASDAQ", "DOWJONES"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油8/17收88.31美元 美伊停火不確定性升溫",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "布蘭特原油8月17日收在每桶88.31美元，較前一交易日小跌0.24%，但因美伊臨時停火協議即將到期、荷姆茲海峽通行風險未解，油價仍維持高檔整理格局。",
+     "source": "Trading Economics",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8/17升破32元關卡 收31.852元升值1.94角",
+     "url": "https://money.udn.com/money/story/12509/9696757",
+     "summary": "新台幣兌美元8月17日收在31.852元，較前一交易日收盤32.046元升值1.94角，盤中一度觸及31.824元的高點，全日成交額17.84億美元，正式升破32元整數關卡。",
+     "source": "經濟日報",
+     "tags": ["TWD", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

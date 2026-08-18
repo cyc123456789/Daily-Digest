@@ -1,0 +1,130 @@
+{
+ "date": "2026-08-19",
+ "focus": "美伊60天停火期滿談判未果，荷姆茲海峽船隻遭不明武器擊中船員傷亡，伊朗轉向全面進攻姿態，戰爭風險驟升推升油價、震盪全球股市。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA列管Ray分散式運算框架高風險漏洞 聯邦機關須3日內修補",
+     "url": "https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html",
+     "summary": "CISA將開源分散式運算框架Ray的漏洞(CVE-2025-62593，CVSS 9.4)列入KEV在野利用清單，影響2.52.0版之前所有版本；攻擊者可偽造瀏覽器標頭搭配DNS重綁定，誘使受害者造訪惡意網頁即遠端執行程式碼。官方已於2.52.0版修補，聯邦機關須於8月20日前完成修補。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2025-62593", "CISA-KEV", "RCE", "RAY"]
+    },
+    {
+     "severity": "critical",
+     "title": "SAP Commerce Cloud滿分漏洞修補3天內即遭掃描攻擊",
+     "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-cve-2026-58231.html",
+     "summary": "SAP Commerce Cloud權限驗證缺陷(CVE-2026-58231，CVSS滿分10.0)讓未驗證攻擊者可濫用預設驗證機制、輸入特製資料執行任意程式碼。SAP已於8月11日發布修補(Security Note 3771065)，但研究機構的誘捕系統自8月14日起就偵測到掃描攻擊。建議升級至2211.55、2211-jdk21.17或後續版本，無法立即升級者可設定IP過濾限制存取端點。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-58231", "SAP", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "DeadLock勒索軟體用Polygon區塊鏈藏C2 逾80受害者難以剷除",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/08/10/deadlock-ransomware-breaking-down-a-rust-based-encryptor-with-decentralized-recovery-infrastructure/",
+     "summary": "微軟揭露勒索軟體集團DeadLock將聯絡代理位址存於Polygon智能合約，並透過去中心化Session通訊網路與Wasabi雲端儲存竊得檔案，即使部分基礎設施遭查封仍可切換聯絡管道維持勒索作業。該集團自2025年中活躍至今，已知逾80名受害者，多為歐洲IT、礦業、製造與運輸業者，目前無公開修補措施，僅能靠端點防護與備份因應。",
+     "source": "Microsoft Security Blog",
+     "tags": ["DEADLOCK", "RANSOMWARE", "POLYGON"]
+    },
+    {
+     "severity": "high",
+     "title": "法國財政部稽徵總局遭駭 67.8萬納稅人資料外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/french-tax-authority-data-breach-affects-678-000-individuals/",
+     "summary": "法國公共財政總局(DGFiP)證實遭駭客入侵，竊得67.8萬名個人與企業的參考稅額、家庭係數、扣繳稅率及地籍資料；駭客以「ZeroBytes」名義在論壇兜售資料庫。官方強調線上稽徵平台帳號密碼未受影響，已關閉部分敏感系統並會同法國國家資訊系統安全局(ANSSI)調查止血，目前無需用戶自行修補。",
+     "source": "BleepingComputer",
+     "tags": ["DGFIP", "DATA-BREACH", "FRANCE"]
+    },
+    {
+     "severity": "high",
+     "title": "ShinyHunters聲稱洗劫居家保全業者Brinks Home近500萬筆資料",
+     "url": "https://www.foxnews.com/tech/brinks-home-data-breach-puts-1m-customers-alert",
+     "summary": "駭客集團ShinyHunters聲稱透過語音釣魚(vishing)入侵Brinks Home的Salesforce環境，竊得逾110萬筆客戶聯絡資料、逾4千筆員工個資及380萬筆客服對話紀錄。Brinks證實部分IT環境於7月20日遭未授權存取，但尚未證實駭客聲稱的資料量與外洩範圍，暫無修補時程公告。",
+     "source": "Fox News",
+     "tags": ["SHINYHUNTERS", "SALESFORCE", "VISHING"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：共機13架次擾台 10架次逾越中線、共艦5艘同步活動",
+     "url": "https://news.ebc.net.tw/news/politics/552356",
+     "summary": "國防部統計8月18日6時至19日6時期間，偵獲中共機13架次、艦艇5艘、公務船2艘在台海周邊活動，其中10架次逾越台灣海峽中線，逾越比例偏高。國軍運用聯合情監偵能力嚴密監控，並派遣機艦與岸置飛彈系統妥適應處。",
+     "source": "東森新聞",
+     "tags": ["PLA", "台海中線", "MND"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川普證實將與習近平談對台軍售 紐時：形同送北京大禮",
+     "url": "https://udn.com/news/story/124870/9510616",
+     "summary": "紐約時報報導，川普政府暫緩批准原已核定、價值140億美元的對台軍售案，作為與習近平談判的籌碼；川普證實將在會談中與習近平討論對台軍售議題，並坦言「習近平希望我們不要這麼做」。分析指此舉形同協助北京削弱台灣政府國防採購進度，外交部先前已重申軍售屬台灣關係法安全承諾。",
+     "source": "聯合新聞網（引紐約時報）",
+     "tags": ["TAIWAN", "ARMS-SALE", "US-CHINA"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "美伊60天停火期滿談判破裂 荷姆茲海峽船隻遇襲、伊朗轉向全面進攻姿態",
+     "url": "https://www.epochtimes.com/gb/26/8/18/n14831971.htm",
+     "summary": "美伊60天臨時停火協議8月17日正式到期，永久結束戰爭的談判未獲突破，美方已排除延長停火。一艘船隻8月18日駛出荷姆茲海峽時遭不明發射物擊中，輪機艙受損並造成船員傷亡；伊朗高層官員向路透社表示，鑒於談判停滯，伊朗將轉向「全面進攻性」軍事姿態。川普重申伊朗絕不能以任何形式擁核。",
+     "source": "大紀元",
+     "tags": ["IRAN", "HORMUZ", "CEASEFIRE"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川普下令縮減美韓乙支自由護盾軍演規模 北韓譴責挑釁升級",
+     "url": "https://www.storm.mg/article/11157040",
+     "summary": "美韓「乙支自由護盾」聯合軍演8月17日至28日登場，首度納入無人機、GPS干擾與網攻演練，動用南韓1.8萬與美國2.85萬兵力。川普17日表示已要求國防部長赫格塞斯「大幅縮減」演習規模；北韓外交部仍譴責演習比去年更具挑釁性，警告將採取新威懾措施。",
+     "source": "風傳媒",
+     "tags": ["NORTH-KOREA", "UFS", "US-ROK"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "台股8/18爆量重挫548點 台積電尾盤遭狙擊",
+     "url": "https://www.chinatimes.com/realtimenews/20260818002532-260410",
+     "summary": "台股8/18盤中巨震839點，早盤一度大漲逾200點後翻黑，尾盤台積電、聯發科等權值股遭獲利賣壓狙擊，終場收45,308.68點，重挫548.59點，成交金額達9,584億元，為近期最大單日跌幅。",
+     "source": "中時新聞網",
+     "tags": ["TAIEX", "TSMC", "TAIWAN-STOCK"]
+    },
+    {
+     "severity": "info",
+     "title": "美股8/18收黑 油價債券殖利率走升壓抑大盤",
+     "url": "https://www.cnbc.com/2026/08/17/stock-market-today-live-updates.html",
+     "summary": "美股8/18收盤走跌，道瓊跌0.21%、標普500跌0.44%、那斯達克跌1.02%，晶片股領跌。市場受地緣政治不確定性升溫、長期公債殖利率居高及油價上揚拖累，投資人對AI相關個股評價轉趨謹慎。",
+     "source": "CNBC",
+     "tags": ["DOW", "SP500", "NASDAQ"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油8/18漲逾2%站上91美元 美伊停火到期添亂",
+     "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-august-18-2026-crude-rises-0-5percent-to-91-3-per-barrel-as-us-iran-ceasefire-ends",
+     "summary": "布蘭特原油期貨8/18上漲逾2%至每桶91美元上下，因美伊60天停火協議到期、荷姆茲海峽通行不確定性升溫。油價自年初以來因中東局勢反覆而大幅波動，能源成本上升亦增添聯準會9月利率決策的壓力。",
+     "source": "HDFC Sky",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8/18貶9.3分收31.945元",
+     "url": "https://money.udn.com/money/story/5616/9699177",
+     "summary": "台北外匯市場新台幣兌美元8/18以31.945元收盤，貶值9.3分，終結連日升值走勢，當日成交金額約18.44億美元，開盤價31.84元、盤中最高31.774元、最低31.964元。",
+     "source": "經濟日報",
+     "tags": ["TWD", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

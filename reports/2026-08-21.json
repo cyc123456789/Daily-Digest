@@ -1,0 +1,122 @@
+{
+ "date": "2026-08-21",
+ "focus": "CISA列管MLflow SSRF漏洞：攻擊者竊取雲端憑證部署挖礦程式，AI基礎設施成新攻擊面",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA列管MLflow SSRF漏洞 攻擊者竊取雲端憑證並部署挖礦程式",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/",
+     "summary": "CISA於8月19日將機器學習平台MLflow的伺服器端請求偽造漏洞CVE-2026-64849列入已知在野利用清單，影響3.15.0之前所有版本，官方已於3.15.0修補，未修補者應立即升級或將MLflow自公開網路移除。根源為webhook網址驗證的TOCTOU瑕疵：攻擊者註冊指向自控伺服器的網址通過檢查，觸發時再以HTTP轉址導向雲端metadata端點。已確認多起事件中攻擊者成功外洩雲端憑證，用於列舉雲端資源、部署挖礦程式並建立新IAM使用者維持存取。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-64849", "MLFLOW", "SSRF", "CISA-KEV"]
+    },
+    {
+     "severity": "critical",
+     "title": "SonicWall SMA1000滿分SSRF漏洞遭INC勒索軟體集團鎖定 CISA確認在野利用",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-sonicwall-sma1000-flaws-now-exploited-by-ransomware-gangs/",
+     "summary": "CISA確認SonicWall SMA1000遠端存取閘道的兩個漏洞已被勒索軟體集團利用並列入KEV，分別是CVSS滿分10.0的SSRF漏洞CVE-2026-15409與高風險程式碼注入漏洞CVE-2026-15410，原廠已於7月14日發布公告與修補。攻擊者可串聯兩者先探測內網資源再取得設備完整控制權，後續情報將大量利用活動歸因於INC Ransomware。SMA1000廣泛部署於大型企業、政府機關與代管服務商，未修補設備應視為已遭入侵處理。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-15409", "SONICWALL", "INC-RANSOMWARE", "CISA-KEV"]
+    },
+    {
+     "severity": "critical",
+     "title": "後續｜Windows WinSock零時差漏洞攻勢擴大 投遞ForestTiger與全新後門Troy",
+     "url": "https://thehackernews.com/2026/08/weekly-recap-vmware-exploits-windows-0.html",
+     "summary": "微軟8月Patch Tuesday修補的WinSock輔助功能驅動程式(afd.sys)釋放後使用漏洞CVE-2026-68820，攻擊活動持續擴大：除既有的權限提升至SYSTEM外，最新樣本顯示攻擊鏈同時投遞ForestTiger與一支從未曝光的後門Troy。同批更新共處理400餘個CVE、含42個重大等級漏洞與3個零時差，尚未套用8月更新的Windows環境應列為最高優先。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-68820", "WINDOWS", "LAZARUS", "ZERO-DAY"]
+    },
+    {
+     "severity": "high",
+     "title": "NASA/JPL衛星地面控制台AIT-GUI漏洞鏈 未驗證攻擊者可下達太空載具指令",
+     "url": "https://thehackernews.com/2026/08/nasa-ait-gui-flaws-could-let.html",
+     "summary": "Cycode研究人員揭露NASA/JPL開源AMMOS Instrument Toolkit的瀏覽器操作台AIT-GUI存在漏洞鏈(GHSA-p9r8-2q67-fp86，CVSS 9.4)，影響2.5.1及更早版本，已於2.5.2修補。問題在於狀態變更端點完全缺少驗證、授權與CSRF防護：/cmd可直接轉送指令至指令匯流排，/script/run與/seq可執行腳本與指令序列。由於這些端點接受瀏覽器表單提交，攻擊者只需誘使操作人員瀏覽惡意網站，即可攻擊僅限本機或位於防火牆後的部署。",
+     "source": "The Hacker News",
+     "tags": ["AIT-GUI", "NASA", "CSRF", "SUPPLY-CHAIN"]
+    },
+    {
+     "severity": "high",
+     "title": "Apple向110國用戶發出傭兵級間諜軟體警告 首度改用鎖定畫面通知",
+     "url": "https://www.bleepingcomputer.com/news/apple/apple-sends-new-threat-notification-alerts-over-mercenary-spyware-attacks/",
+     "summary": "Apple於8月13日對110個國家的使用者發出威脅通知，為該計畫史上單次規模最大的一波，累計通知範圍已超過150國。此次首度將警示直接顯示在iPhone鎖定畫面與設定頁面，不再僅依賴電子郵件，確保目標對象第一時間看到。通知代表疑遭鎖定而非確認入侵，Apple建議收到者啟用鎖定模式並尋求專業協助；數位人權組織Access Now表示求助量較平時高出約三到四成。",
+     "source": "BleepingComputer",
+     "tags": ["APPLE", "SPYWARE", "IOS", "LOCKDOWN-MODE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：13架次共機逾越中線擾台 共艦6艘同步在台海周邊活動",
+     "url": "https://www.rti.org.tw/news?uid=3&pid=209510",
+     "summary": "國防部統計8月19日上午6時至20日上午6時，偵獲共機13架次逾越台海中線及其延伸線，侵擾北部、中部、西南及東部空域，另偵獲共艦6艘在台海周邊活動。相較前一日的20架次共機、7艘共艦，架次略有回落但逾越中線比例仍高，國軍持續以任務機、艦及岸置飛彈系統嚴密監控應處。",
+     "source": "中央廣播電臺",
+     "tags": ["PLA", "TAIWAN-STRAIT", "MND", "ADIZ"]
+    },
+    {
+     "severity": "warning",
+     "title": "美軍第8軍團首度公開提及「第一島鏈」 台海防務納入印太聯防架構",
+     "url": "https://www.cna.com.tw/news/aopl/202608160208.aspx",
+     "summary": "在美韓乙支自由護盾演習前夕，駐韓美軍第8軍團首度在公開文件中提及「第一島鏈」概念，顯示駐韓美軍任務範圍的論述正從朝鮮半島向台海與西太平洋延伸。此一措辭調整反映美方將半島、台海與南海視為同一戰略連續體，對北京而言則是印太聯防架構進一步成形的訊號。",
+     "source": "中央社",
+     "tags": ["FIRST-ISLAND-CHAIN", "USFK", "INDO-PACIFIC", "DETERRENCE"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜美韓乙支自由護盾演習8月21日提前結束 第二階段反擊作戰全數取消",
+     "url": "https://newtalk.tw/news/view/2026-08-20/1054713",
+     "summary": "在川普下令縮減規模後，原定27日結束的美韓「乙支自由護盾」聯合軍演確定於8月21日提前收攤，僅執行第一階段演練，24至27日的第二階段反擊作戰全數取消，整體演習時程較原計畫縮短約一半。韓國總統李在明表示理解川普的決定，北韓則稱將進一步強化核嚇阻力量，並指控美國降低核武使用門檻；金正恩胞妹金與正20日再度譏諷韓國是無路可走的「傀儡」。",
+     "source": "Newtalk新聞",
+     "tags": ["UFS", "NORTH-KOREA", "USFK", "DETERRENCE"]
+    },
+    {
+     "severity": "warning",
+     "title": "川習峰會定於9月24日 議程聚焦盤點釜山承諾執行而非新協議",
+     "url": "https://udn.com/news/story/6809/9677097",
+     "summary": "美方官員將9月24日的美中峰會定調為穩定關係的機會，美國貿易代表葛里爾透露會談將以盤點雙方既有承諾的執行情況為主，而非磋商新協議，重點檢視中方在稀土出口暫緩、採購美國大豆、取消部分報復性關稅與芬太尼禁毒合作上的履約狀況。但會前制裁戰再度升溫：美方將40餘家中國企業列入實體清單、制裁涉運伊朗燃料的航運業者並禁止進口中國製人形機器人，北京隨即反制7家美企並加強無人機技術出口管制，CNN分析峰會不至取消但議程可能縮小。",
+     "source": "聯合新聞網",
+     "tags": ["US-CHINA", "TRUMP", "XI", "EXPORT-CONTROLS"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8月20日收漲214點重返45,000點 台積電漲25元收2,375元、記憶體族群走強",
+     "url": "https://news.ttv.com.tw/news/11508200001300W",
+     "summary": "台股8月20日終場上漲約214點，加權指數重返45,000點附近，收復前一交易日重挫589點的部分失土。權值王台積電上漲25元收2,375元、漲幅1.06%，記憶體族群同步走強成為推升大盤的主要動能。",
+     "source": "台視新聞網",
+     "tags": ["TAIEX", "TSMC", "MEMORY", "EQUITIES"]
+    },
+    {
+     "severity": "warning",
+     "title": "全球債市殖利率飆上數十年高點 美30年期創19年新高、日本10年期創30年新高",
+     "url": "https://www.cnn.com/2026/08/18/investing/global-bond-market",
+     "summary": "通膨黏著與能源成本推升的預期讓全球主權債遭大舉拋售，美國30年期公債殖利率本週創下19年新高，日本10年期公債殖利率亦升抵三十年來最高水準，長天期利率走高將直接轉嫁至房貸與企業融資成本。8月19日美國財政部宣布擴大國債回購操作後殖利率一度回落，帶動美股三大指數同步小幅收紅（道瓊53,463.05點、標普500報7,707.98點、那斯達克26,331.09點）。",
+     "source": "CNN Business",
+     "tags": ["BONDS", "YIELDS", "FED", "INFLATION"]
+    },
+    {
+     "severity": "high",
+     "title": "布蘭特原油8月20日突破93美元創近一個月新高 阿聯酋斷絕對伊貿易再添供給風險",
+     "url": "https://finance.sina.cn/futuremarket/qsyw/2026-08-20/detail-ininxqxq7974813.d.html",
+     "summary": "布蘭特10月合約8月19日收91.62美元、漲0.66%，8月20日盤中再漲逾2%突破93美元，寫下7月24日以來新高，週線漲幅逾4%（8月20日價位為近似值）。推力來自阿聯酋19日宣布暫停與伊朗一切貿易、商業與金融往來，疊加荷姆茲海峽通行量持續低迷——依Kpler數據已從戰前每日1,800萬桶降至490萬桶，市場對供給中斷的風險定價不斷墊高。",
+     "source": "新浪財經",
+     "tags": ["BRENT", "HORMUZ", "IRAN", "UAE"]
+    }
+   ]
+  }
+ ]
+}

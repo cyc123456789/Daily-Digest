@@ -1,0 +1,130 @@
+{
+ "date": "2026-08-22",
+ "focus": "美國宣布對伊朗發動「史上最大規模」經濟制裁攻勢，中國反對、伊朗譴責，中東緊張情勢持續升溫",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA列管TrueConf Server雙漏洞 俄駭客組織Head Mare部署PhantomCore惡意程式",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/08/20/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA於8月20日將TrueConf Server的CVE-2026-72529（缺乏權限驗證）與CVE-2026-72530（程式碼注入）列入在野利用清單，攻擊者可透過4307埠遠端執行任意程式碼並跳出隔離環境。開發商已於2026年6月釋出5.3.9、5.4.9、5.5.5修補版本，聯邦機關須3天內修補前者、2週內修補後者。Kaspersky指出駭客組織Head Mare已利用此漏洞部署PhantomCore惡意程式。",
+     "source": "CISA",
+     "tags": ["CVE-2026-72529", "CVE-2026-72530", "TRUECONF", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "Cl0p勒索軟體PTC Windchill零時差攻勢擴大 逾40企業受害含殼牌、GE、飛利浦",
+     "url": "https://www.securityweek.com/cl0p-ransomware-group-names-over-40-victims-of-ptc-windchill-campaign/",
+     "summary": "Cl0p集團自今年6月起利用CVSS 9.8分的CVE-2026-12569（PTC Windchill PDMLink／FlexPLM反序列化漏洞）在官方修補前發動零時差攻擊，已公開列名逾40家企業，包括殼牌（外洩89GB）、通用電氣（391GB）與飛利浦（13.5GB）等工程藍圖與智財外洩。PTC已於6月17日釋出修補程式，尚未更新的伺服器仍暴露風險。",
+     "source": "SecurityWeek",
+     "tags": ["CVE-2026-12569", "CL0P", "PTC-WINDCHILL"]
+    },
+    {
+     "severity": "high",
+     "title": "Zimbra Collaboration RCE漏洞遭在野利用 CERT Polska證實攻勢持續",
+     "url": "https://securityaffairs.com/197610/security/polands-cert-warns-of-active-exploitation-of-critical-zimbra-collaboration-suite-flaw.html",
+     "summary": "波蘭CERT證實CVE-2026-73570（CVSS 8.9）遭主動利用，未經授權攻擊者可透過預設開啟的SNMP通知與swatchdog服務執行任意系統指令。Zimbra已於7月20日釋出10.1.20版修補，Shadowserver統計全球逾1.2萬台Zimbra伺服器仍暴露於網路，歐洲與亞洲佔多數，管理員應檢查zimbra.log中異常服務狀態變化以判斷是否遭入侵。",
+     "source": "Security Affairs",
+     "tags": ["CVE-2026-73570", "ZIMBRA", "RCE"]
+    },
+    {
+     "severity": "warning",
+     "title": "美國水務系統遭疑似伊朗駭客攻擊擴大至12州 喬治亞兩地發布煮沸水公告",
+     "url": "https://therecord.media/iran-cyberattacks-water-treatment",
+     "summary": "疑似與伊朗有關的駭客持續入侵美國水務操作技術系統，密西根、明尼蘇達、喬治亞、紐澤西與南達科他等至少12州傳出遭駭，明尼蘇達逾30個社區水系統受影響。喬治亞Clayton County水務局因網路活動導致水壓下降並發布煮沸水公告，Columbus Water Works亦證實遭入侵但飲用水未受污染。目前尚無大規模供水中斷，官方尚未正式歸咎伊朗。",
+     "source": "The Record",
+     "tags": ["水務系統", "伊朗", "關鍵基礎設施", "OT"]
+    },
+    {
+     "severity": "warning",
+     "title": "新型後門PATCHCORD鎖定阿富汗電信商與南亞關鍵基礎設施 疑為APT36所為",
+     "url": "https://thehackernews.com/2026/08/new-patchcord-backdoor-targets-afghan.html",
+     "summary": "資安公司Acronis揭露疑似巴基斯坦背景APT36（透明部落）操作的C/C++後門PATCHCORD，透過偽裝阿富汗電信（AFTEL）VPN安裝程式等誘餌，劫持Edge、Chrome、Firefox捷徑取得持久性，可列舉程序、記憶體內執行shellcode並下達任意指令。相關基礎設施亦託管以Google Sheets、GitHub Gists作為C2的SHEETCORD、HACKERAI等新變種，尚無官方修補，建議監控瀏覽器捷徑異常變更。",
+     "source": "The Hacker News",
+     "tags": ["PATCHCORD", "APT36", "後門"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機20架次逾中線、共艦7艘、公務船5艘",
+     "url": "https://rti.org.tw/news?pid=215835&uid=3",
+     "summary": "國防部統計8月21日6時至8月22日6時，共偵獲20架次解放軍機逾越台灣海峽中線並擾北部、西南空域，另有共艦7艘、公務船5艘同步在台海周邊活動，國軍運用任務機艦與岸置飛彈系統嚴密監控應處。",
+     "source": "中央廣播電臺",
+     "tags": ["國防部", "解放軍", "中線"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川習峰會9月24日登場 對台軍售恐成峰會潛在變數",
+     "url": "https://udn.com/news/story/124877/9521055",
+     "summary": "川普已邀習近平於9月24日赴美訪問，選在聯合國大會期間進行，為近9年來首次美國總統接待中方最高層級互動；但立委與美媒指出，若華府批准第二波對台軍售，習近平可能藉此缺席峰會，對台軍售議題成為雙方會前角力焦點，美國國務院則強調將致力維護台海和平。",
+     "source": "聯合新聞網",
+     "tags": ["川習會", "對台軍售", "九月峰會"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "美國宣布對伊朗發動「史上最大規模」經濟制裁攻勢 中國反對、伊朗譴責",
+     "url": "https://www.cnn.com/2026/08/21/world/live-news/iran-war-trump",
+     "summary": "副總統范斯宣布美伊戰事已進入「經濟施壓新階段」，財政部長貝森特稱即將啟動「史上規模最大的協同經濟孤立行動」；美國財政部同步對真主黨追加制裁。中國反對川普「經濟D-Day」威脅，稱制裁不符任何一方利益；伊朗外交部譴責此舉「非法」，中東緊張情勢因此進一步升溫。",
+     "source": "CNN",
+     "tags": ["伊朗", "經濟制裁", "美中關係"]
+    },
+    {
+     "severity": "high",
+     "title": "北韓美韓軍演結束後試射逾10枚短程飛彈 南韓召開緊急安全會議",
+     "url": "https://www.aljazeera.com/news/2026/8/20/north-korea-launches-ballistic-missiles-as-us-south-korea-drills-end",
+     "summary": "北韓8月20日自平壤地區向朝鮮半島東側海域發射逾10枚短程彈道飛彈，飛行距離約300公里，時間點緊接美韓「乙支自由護盾」聯合軍演結束。南韓總統府隨即召開緊急安全會議，國防部與軍方官員與會；北韓官媒罕見連續第3次未依慣例於次日公布發射消息。",
+     "source": "Al Jazeera",
+     "tags": ["北韓", "飛彈", "南韓"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8月21日收漲290點重返4萬5 台積電漲35元收2,410元",
+     "url": "https://news.nextapple.com/finance/20260821/EFD1E25E0D42E9438BAA0C0534836101",
+     "summary": "台股21日開低走高，早盤一度重挫近400點，尾盤在台積電（收2,410元，漲1.47%）與聯發科（收3,790元，漲2.43%）帶動下翻紅，終場收45,224.29點、漲290.55點（+0.65%），三大法人合計買超320.5億元。",
+     "source": "壹蘋新聞網",
+     "tags": ["台股", "台積電", "加權指數"]
+    },
+    {
+     "severity": "info",
+     "title": "美股8月21日收黑：道瓊重挫703點 美伊緊張、公債殖利率走升壓抑大盤",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-080533702.html",
+     "summary": "受美伊經濟制裁升溫與公債殖利率再度彈升影響，道瓊工業指數8月21日下跌703.84點（-1.3%）收52,759.21點，標普500指數跌0.9%收7,641.16點，那斯達克指數跌1%收26,067.17點；市場關注下週傑克森霍爾央行年會、聯準會新主席沃許將首度發表演說。",
+     "source": "Yahoo Finance",
+     "tags": ["美股", "道瓊", "傑克森霍爾"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油8月21日守穩94美元關卡 美伊緊張與荷姆茲海峽風險支撐油價（近似值）",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "布蘭特原油8月21日交易於93.86美元左右（單日+0.08%），接近近一個月高點，受美國對伊朗升級經濟制裁、荷姆茲海峽船運持續受限等因素支撐；MarineTraffic數據顯示過去24小時僅約7艘商船通過荷姆茲海峽，遠低於衝突前水準。",
+     "source": "Trading Economics",
+     "tags": ["布蘭特原油", "荷姆茲海峽"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8月21日升值7.7分收31.848元 資金匯入為主要動能",
+     "url": "https://news.cnyes.com/news/id/6583659",
+     "summary": "新台幣兌美元8月21日以31.848元作收，升值7.7分，台北外匯經紀公司成交量11.13億美元，市場人士指出以資金匯入為交投主軸，帶動台幣走升。",
+     "source": "鉅亨網",
+     "tags": ["新台幣", "匯率"]
+    }
+   ]
+  }
+ ]
+}

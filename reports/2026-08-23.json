@@ -1,0 +1,130 @@
+{
+ "date": "2026-08-23",
+ "focus": "美軍P-8A巡邏機在川習會前穿越台海、中國全程跟監示警，凸顯台灣仍是雙方角力焦點",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜CISA正式列管Zimbra SNMP指令注入漏洞 已修補至10.1.20版本聯邦機關須限期處理",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/08/21/cisa-adds-one-known-exploited-vulnerability-catalog",
+     "summary": "CISA將CVE-2026-73570（Zimbra Collaboration SNMP指令注入，未驗證攻擊者可透過特製SMTP請求以zimbra權限執行任意系統指令）正式列入在野利用清單。影響需安裝zimbra-snmp套件且啟用SNMP通知的部署，Zimbra已於7月20日釋出10.1.20版本修補，尚未升級的機關須列為緊急修補項目。",
+     "source": "CISA",
+     "tags": ["CVE-2026-73570", "ZIMBRA", "KEV", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "Google揭露3個俄羅斯背景間諜集群 濫用OAuth與WhatsApp裝置連結鎖定政府智庫",
+     "url": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
+     "summary": "Google威脅情報團隊追蹤UNC5976、UNC6293、UNC7005三個疑似俄羅斯背景集群，分別以OAuth釣魚頁面竊取驗證權杖、誘騙目標將WhatsApp連結至攻擊者裝置以側錄通話。目標集中於歐洲與美國的學術、國防、政府與智庫人士，Google已終止相關雲端專案但攻擊者持續更換網域規避封鎖，目前無官方修補措施，建議加強帳號驗證流程稽核。",
+     "source": "The Hacker News",
+     "tags": ["APT", "RUSSIA", "OAUTH", "PHISHING"]
+    },
+    {
+     "severity": "high",
+     "title": "Rust套件供應鏈攻擊波及逾2.45億次下載 惡意proc-macro1植入建置期竊資木馬",
+     "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+     "summary": "攻擊者入侵arrayref維護者帳號，於8月20日在23分鐘內連續對arrayref 0.3.10、internment 0.8.7、append-only-vec 0.1.9植入惡意proc-macro1依賴（偽裝成常用的proc-macro2），透過build.rs在編譯期依作業系統投放竊資酬載。Rust安全團隊經Nextron Systems通報後於2小時內下架惡意版本，受影響版本已全數移除，開發者應確認未使用上述版本並清查建置環境。",
+     "source": "The Hacker News",
+     "tags": ["SUPPLY-CHAIN", "RUST", "MALWARE"]
+    },
+    {
+     "severity": "high",
+     "title": "ShinyHunters洩露醫療器材商Baxter International逾710萬筆Salesforce外洩資料",
+     "url": "https://www.govinfosecurity.com/shinyhunters-leaks-71-million-baxter-international-records-a-32630",
+     "summary": "勒索集團ShinyHunters在其洩資網站公布聲稱竊取自Baxter International的710萬筆Salesforce紀錄，包含個資，並指控該公司未能就贖金達成協議。Baxter尚未證實外洩範圍，此為ShinyHunters近期針對Salesforce生態系企業客戶的一系列勒索行動之一，企業應檢視Salesforce第三方應用程式的存取權限與資料外流防護。",
+     "source": "GovInfoSecurity",
+     "tags": ["SHINYHUNTERS", "SALESFORCE", "DATA-BREACH"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "美軍P-8A巡邏機川習會前穿越台海 中國全程跟監示警",
+     "url": "https://www.usnews.com/news/world/articles/2026-08-21/us-navy-aircraft-transited-taiwan-strait-it-says",
+     "summary": "美國第七艦隊證實一架P-8A海神式反潛巡邏機於8月21日在台海國際空域執行例行過境，宣稱展現對自由開放印太的承諾；中國官媒引軍方消息稱已全程跟監應處。此次過境正值川普預告習近平將於9月24日訪美召開峰會前夕，凸顯台灣議題仍是雙方角力焦點。",
+     "source": "US News",
+     "tags": ["US-NAVY", "P-8A", "TAIWAN-STRAIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機3架次均逾中線、共艦8艘、公務船7艘",
+     "url": "https://www.globalsecurity.org/wmd/library/news/taiwan/2026/taiwan-260822-roc-mnd01.htm",
+     "summary": "國防部統計至8月22日上午6時止24小時內，偵獲中國機艦於台海周邊活動，其中3架次共機全數逾越海峽中線並進入台灣北部、西南空域，另有8艘共艦、7艘公務船同步活動。國軍運用任務機艦與岸置飛彈系統嚴密監控應處。",
+     "source": "GlobalSecurity.org",
+     "tags": ["MND", "PLA", "MEDIAN-LINE"]
+    },
+    {
+     "severity": "medium",
+     "title": "中國要求南韓國會團移除2名曾訪台立委 阻擋其隨團赴陸行程",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/08/22/2003862936",
+     "summary": "中國駐首爾大使館要求南韓國會一個15人訪陸團移除國民力量黨金起炫、共同民主黨郭尚彥兩名立委，理由是兩人先前曾訪問台灣。兩位立委反駁稱中方此舉是干預南韓國會職權，這並非中國首次以訪台為由拒發簽證給南韓國會議員。",
+     "source": "Taipei Times",
+     "tags": ["SOUTH-KOREA", "CHINA", "TAIWAN-VISIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美國擬週一公布對伊朗「經濟D日」制裁 伊朗誓言絕不屈服",
+     "url": "https://www.cnn.com/2026/08/22/world/live-news/iran-war-trump",
+     "summary": "美國財長貝森特預告週一將公布針對伊朗的新一輪重手制裁細節，伊朗最高領袖親信則回應美方言論反映其「絕望」，強調德黑蘭絕不屈服。荷姆茲海峽通行量仍處於衝突前約二成的低檔，部分油輪已改採關閉自動識別系統、夜間航行等規避手法通過海峽。",
+     "source": "CNN",
+     "tags": ["IRAN", "SANCTIONS", "HORMUZ"]
+    },
+    {
+     "severity": "medium",
+     "title": "美國制裁真主黨資金網絡並重新認定為伊朗代理人 適逢以黎和談之際",
+     "url": "https://www.aljazeera.com/news/2026/8/21/us-designates-hezbollah-an-iranian-proxy-sanctions-funding-network",
+     "summary": "美國財政部制裁10名涉嫌透過黎巴嫩、土耳其、阿聯與伊朗間商業航班夾帶現金給真主黨的資金網絡人士，並正式將真主黨重新認定為伊朗革命衛隊聖城旅的代理組織而非獨立行為者。此舉發生在美方居中斡旋以色列與黎巴嫩和談之際，意在凸顯真主黨並非可獨立於伊朗談判的對象。",
+     "source": "Al Jazeera",
+     "tags": ["HEZBOLLAH", "SANCTIONS", "IRAN"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股本週震盪收黑：加權指數週跌586點、跌幅1.28% 一度衝上4.6萬點又拉回季線",
+     "url": "https://www.cna.com.tw/news/afe/202608210129.aspx",
+     "summary": "台股本週(8/17-8/21)由45,811.01點跌至45,224.29點，週線收跌586.72點、跌幅1.28%，盤中一度重返4.6萬點後因買盤不濟拉回季線附近整理，代表中小型股的櫃買指數同步走弱。21日終場台積電上漲35元收2,410元，航運、金融股撐盤。",
+     "source": "中央社",
+     "tags": ["TWII", "TSMC", "TAIEX"]
+    },
+    {
+     "severity": "info",
+     "title": "美股那斯達克、標普500結束三連漲：週跌2.5%與1.4% 公債殖利率飆升壓抑風險偏好",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-21-2026",
+     "summary": "美股三大指數本週在公債殖利率飆升與通膨疑慮下走弱，那斯達克週跌2.5%、標普500週跌1.4%，終止先前連三週上漲態勢，科技股單週重挫逾3%領跌。21日尾盤止跌反彈，道瓊漲近1%、標普500與那斯達克同步收漲0.43%，但未能扭轉週線頹勢。",
+     "source": "TheStreet",
+     "tags": ["SP500", "NASDAQ", "TREASURY-YIELDS"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油連兩週勁揚近6%逼近94美元 美國新制裁威脅疊加荷姆茲海峽通行低迷",
+     "url": "https://www.bloomberg.com/news/articles/2026-08-20/latest-oil-market-news-and-analysis-for-aug-21",
+     "summary": "布蘭特原油21日盤中逼近94美元關卡，本週連續第二週上漲近6%，主因美國準備擴大對伊朗經濟制裁，加上荷姆茲海峽船隻通行量仍處低檔，市場擔憂中東供給風險未解，能源價格居高不下恐推升下半年通膨壓力。",
+     "source": "Bloomberg",
+     "tags": ["BRENT", "OIL", "IRAN"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣本週升值0.62% 21日收31.848元 外資匯入撐盤",
+     "url": "https://tw.stock.yahoo.com/news/8-21%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A531-848%E5%85%83%E4%BD%9C%E6%94%B6-%E5%8D%87%E5%80%BC7-7%E5%88%86-080300551.html",
+     "summary": "新台幣兌美元21日以31.848元作收、單日升值7.7分，本週累計升值0.62%，成交金額11.1億美元。外資資金匯入為主要支撐力道，惟市場人士提醒後續走勢仍將受美伊局勢與聯準會政策動向牽動。",
+     "source": "MoneyDJ",
+     "tags": ["TWD", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

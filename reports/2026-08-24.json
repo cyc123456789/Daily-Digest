@@ -1,0 +1,114 @@
+{
+ "date": "2026-08-24",
+ "focus": "美國今日公布對伊朗「經濟D日」制裁,號稱史上最大規模協調經濟孤立行動,牽動全球油價與美中互動角力",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "伊朗背景駭客入侵英國小型發電廠 癱瘓運作4天創首例",
+     "url": "https://www.irishtimes.com/world/uk/2026/08/23/iran-linked-hackers-accused-of-cyberattack-that-shut-down-british-power-plant/",
+     "summary": "英國一座小型發電廠遭疑似伊朗革命衛隊背景駭客入侵,運作癱瘓長達4天,員工被迫改回人工操作才恢復供電。事件未危及英國整體電網供電安全,但被視為對關鍵基礎設施防護能力的一次警示,英國能源安全部已通知電力業者提高警戒。",
+     "source": "The Irish Times",
+     "tags": ["IRAN", "CRITICAL-INFRASTRUCTURE", "UK", "IRGC"]
+    },
+    {
+     "severity": "critical",
+     "title": "GitLab CVSS 9.4未驗證漏洞公開數日內即遭在野利用 可刪除專案偽造修復紀錄",
+     "url": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
+     "summary": "GitLab CE/EE的GraphQL指令注入漏洞CVE-2026-19478(CVSS 9.4)於8月17日修補公告後約2天即遭掃描攻擊,未驗證攻擊者可在無需登入情況下刪除公開專案、偽造合併紀錄掩蓋漏洞或封鎖專案維護者。受影響版本應立即升級至19.2.4、19.1.6、19.0.8或18.11.11以上。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-19478", "GITLAB", "GRAPHQL"]
+    },
+    {
+     "severity": "high",
+     "title": "醫療資料商CareCloud證實遭駭 逾375萬筆病患病歷外洩",
+     "url": "https://techcrunch.com/2026/08/19/carecloud-confirms-3-7m-patients-had-their-medical-records-stolen-in-data-breach/",
+     "summary": "美國電子病歷服務商CareCloud向衛生福利部提交申報,證實今年稍早遭入侵事件外洩逾375萬名患者的個資與醫療紀錄,躍居2026年迄今第五大醫療資料外洩案。CareCloud服務全美數萬家醫療機構,受影響範圍恐持續擴大。",
+     "source": "TechCrunch",
+     "tags": ["CARECLOUD", "HEALTHCARE", "DATA-BREACH"]
+    },
+    {
+     "severity": "medium",
+     "title": "Ransom Busters假冒復原業者二次勒索 向受害企業索最高6萬美元",
+     "url": "https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html",
+     "summary": "研究人員發現自稱「Ransom Busters LTD」的行動者主動聯繫已遭勒索軟體攻擊的企業,宣稱已入侵犯罪集團伺服器可代為刪除竊得資料並協助解密,收費2萬至6萬美元。研判此為勒索軟體集團旗下共犯利用受害者資訊二次詐財,目前尚未有企業確認付款受騙。",
+     "source": "The Hacker News",
+     "tags": ["RANSOMWARE", "EXTORTION", "RANSOM-BUSTERS"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "823金門戰役68週年 賴清德籲朝野支持國防預算 示警中國海警擾金、軍事挑釁擴至第一島鏈",
+     "url": "https://newtalk.tw/news/view/2026-08-23/1055133",
+     "summary": "823砲戰68週年,總統賴清德與國民黨主席鄭麗文23日分別赴金門追思。賴清德表示中國海警對金門周邊水域侵擾變本加厲,軍事挑釁範圍更擴大至第一島鏈,呼籲全民秉持823軍民團結精神支持國防預算與國軍照顧措施,強化國防投資才是確保台海和平的唯一保證。",
+     "source": "Newtalk新聞",
+     "tags": ["TAIWAN", "LAI-CHING-TE", "KINMEN", "DEFENSE-BUDGET"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內偵獲共機8架次(3架逾中線)、共艦6艘在台海周邊活動",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5255086",
+     "summary": "國防部通報,8月22日6時至23日6時止,偵獲中國軍機8架次、艦艇6艘在台海周邊持續活動,其中3架次逾越台灣海峽中線,國軍運用聯合情監偵系統嚴密監控並派遣機艦應處,活動規模與近期相比屬平常範圍。",
+     "source": "自由軍武頻道",
+     "tags": ["MND", "PLA", "MEDIAN-LINE"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "美國今日公布對伊朗「經濟D日」制裁 稱史上最大規模協調經濟孤立行動",
+     "url": "https://www.cna.com.tw/news/aopl/202608220080.aspx",
+     "summary": "美國財政部長貝森特今日(8/24)美東時間下午於財政部召開記者會,公布對伊朗新一輪制裁措施,川普政府宣稱這是「世界史上規模最大的協調經濟孤立行動」,並警告持續與伊朗貿易的國家將面臨嚴重後果。中國購買逾八成伊朗海運石油成關注焦點,伊朗軍方則揚言將以懲罰性、毀滅性手段全面反擊。",
+     "source": "中央社",
+     "tags": ["IRAN", "SANCTIONS", "US", "HORMUZ"]
+    },
+    {
+     "severity": "warning",
+     "title": "日中關係陷「東海深凍」危機 高市對台言論爭議延燒外交停滯",
+     "url": "https://www.thediplomaticaffairs.com/2026/08/20/a-deep-freeze-in-the-east-china-sea/",
+     "summary": "自日本首相高市早苗去年11月在國會稱台灣有事可構成「存亡危機事態」以來,中日關係陷入數十年來最嚴重的一次外交危機,雙方領袖峰會遲無安排。中國持續透過關鍵礦產出口管制施壓日本國防及軍民兩用技術企業,並加大在宮古、大隅海峽的軍艦活動及中俄聯合轟炸機巡邏頻率。",
+     "source": "The Diplomatic Affairs",
+     "tags": ["JAPAN", "CHINA", "TAKAICHI"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "美股上週四收黑：道瓊重挫703點 沃爾瑪財報失色、公債殖利率飆抵近20年新高",
+     "url": "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html",
+     "summary": "美股三大指數上週四(8/20)收低,道瓊工業指數重挫703.84點(-1.32%)至52,759.21點,標普500下跌66.82點,那斯達克下跌263.92點。沃爾瑪股價暴跌9.2%因零售銷售不如預期,加上30年期美債殖利率觸及2007年來新高5.273%,通膨與利率前景擔憂持續壓抑風險偏好。",
+     "source": "CNBC",
+     "tags": ["DOW", "WALMART", "BOND-YIELDS"]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油守穩94美元關卡 市場緊盯美國對伊「經濟D日」制裁後續衝擊",
+     "url": "https://www.cnbc.com/2026/08/21/oil-prices-us-iran.html",
+     "summary": "布蘭特原油期貨上週五(8/21)收在94.39美元、西德州中質油收87.06美元,受美伊60天停火期滿談判破裂及荷姆茲海峽通行量僅剩衝突前一成支撐。市場預期今日美國對伊朗宣布的新制裁措施若進一步限縮伊朗石油出口,油價恐再度走高、加深通膨隱憂。",
+     "source": "CNBC",
+     "tags": ["OIL", "IRAN", "BRENT"]
+    },
+    {
+     "severity": "info",
+     "title": "傑克森霍爾年會8/27登場 新任Fed主席華許28日壓軸演說受矚目",
+     "url": "https://www.techtimes.com/articles/325228/20260821/jackson-hole-2026-what-watch-when-warsh-steps-podium-friday.htm",
+     "summary": "美國聯準會年度傑克森霍爾經濟研討會將於8月27至29日登場,新任主席華許將於28日發表首次年會壓軸演說。華許上任以來已移除FOMC聲明中的前瞻指引改採數據依賴決策,市場對9月利率決策看法分歧,降息與升息機率預期並不一致,投資人期待演說釐清政策方向。",
+     "source": "Tech Times",
+     "tags": ["FED", "JACKSON-HOLE", "WARSH"]
+    }
+   ]
+  }
+ ]
+}

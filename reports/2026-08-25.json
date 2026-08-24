@@ -1,0 +1,122 @@
+{
+ "date": "2026-08-25",
+ "focus": "美智庫指美艦通台海次數减半、140億對台軍售恐延宕，同日共機共艦21架艦次擾台、16架逾中線",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "私募巨頭Apollo證實遭社交工程入侵 員工個資外洩為金融業鎖定式攻擊潮一環",
+     "url": "https://techcrunch.com/2026/08/21/private-equity-firm-apollo-confirms-data-breach-amid-hacking-wave-targeting-financial-giants/",
+     "summary": "私募股權巨頭Apollo Global Management向加州檢察總長申報資料外洩事件，證實駭客於7月6日至10日間透過社交工程手法入侵公司雲端環境，竊得員工姓名、生日、聯絡方式與社會安全號碼。資安研究人員指出，此案為近期鎖定私募與金融巨擘的大規模勒索行動之一，Google稍早已對相關攻擊發出預警。",
+     "source": "TechCrunch",
+     "tags": ["APOLLO", "DATA-BREACH", "SOCIAL-ENGINEERING", "FINANCE"]
+    },
+    {
+     "severity": "warning",
+     "title": "中國背景APT「QUICSILVER行動」鎖定緬甸政府與外交人員 VHD檔案投遞QUICAgent後門",
+     "url": "https://thehackernews.com/2026/08/operation-quicsilver-targets-myanmar.html",
+     "summary": "研究人員揭露疑似中國背景駭客組織自今年4月起針對緬甸政府與資通訊部門發動間諜行動，先以偽裝成畢業典禮邀請函的VHD虛擬硬碟檔案誘騙開啟，經LNK捷徑與濫用ftp.exe等多階段手法，最終植入自製Go語言後門QUICAgent，用於長期情報蒐集，6、7月已陸續發現變種攻擊樣本。",
+     "source": "The Hacker News",
+     "tags": ["APT", "QUICAGENT", "MYANMAR", "CHINA-NEXUS"]
+    },
+    {
+     "severity": "medium",
+     "title": "Keycloak密碼重設流程滿分級漏洞 未驗證攻擊者可跳過信箱驗證接管任意帳號",
+     "url": "https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html",
+     "summary": "Red Hat Build of Keycloak密碼／憑證重設流程被揭露存在CVE-2026-18963（CVSS 9.1），未驗證遠端攻擊者可跳過信箱驗證步驟直接進入設定新密碼階段，藉此接管任意帳號。已修補至26.4.15與26.6.6以上版本，目前尚無公開可用的攻擊程式碼或在野利用證據，建議受影響組織儘速升級。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-18963", "KEYCLOAK", "ACCOUNT-TAKEOVER"]
+    },
+    {
+     "severity": "medium",
+     "title": "首見車載Android主機惡意軟體 MoYu集團藉DoFun韌體更新程式建置代理殭屍網路",
+     "url": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
+     "summary": "卡巴斯基揭露與BadBox殭屍網路相關的MoYu集團，濫用中國車載主機廠商DoFun的合法韌體更新機制，植入投遞程式JarService與代理模組「zhima」，將車輛頭機轉為反向代理節點供攻擊者盜用網路頻寬、從事廣告詐欺，為首宗鎖定車載主機韌體的惡意軟體案例。DoFun回應稱問題已修復。",
+     "source": "The Hacker News",
+     "tags": ["BADBOX", "ANDROID", "MOYU", "BOTNET"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：共機共艦21架艦次「聯合戰備警巡」擾台 16架次逾越中線",
+     "url": "https://tw.news.yahoo.com/21%E6%9E%B6%E5%85%B1%E6%A9%9F%E5%85%B1%E8%89%A6-%E8%81%AF%E5%90%88%E6%88%B0%E5%82%99%E8%AD%A6%E5%B7%A1-%E6%93%BE%E5%8F%B0%E7%A0%B4%E5%A3%9E%E5%85%A9%E5%B2%B8%E5%92%8C%E5%B9%B3-%E5%9C%8B%E8%BB%8D%E7%9B%A3%E6%8E%A7%E7%95%AB%E9%9D%A2%E6%9B%9D%E5%85%89-002753681.html",
+     "summary": "國防部發布新聞稿指出，自25日下午3時12分起，持續偵獲共機及無人機共21架次配合共艦執行「聯合戰備警巡」，其中16架次逾越台海中線及其延伸線，進入我北部、中部、西南及東部空域。國軍運用聯合情監偵掌握狀況，並出動空軍F-16監控共機運油機、海軍崑明艦監控共艦銀川艦，嚴密應處。",
+     "source": "中華民國國防部",
+     "tags": ["共機", "共艦", "中線", "國防部"]
+    },
+    {
+     "severity": "warning",
+     "title": "川習會倒數：美智庫指川普任內美艦通過台海次數銳減5成 140億軍售恐延宕",
+     "url": "https://udn.com/news/story/6809/9710910",
+     "summary": "華府智庫「傳統基金會」分析指出，川普第二任期迄今美軍艦僅3度公開通過台灣海峽，預估全任期共約14次，較第一任期28次減少近5成；另有美方官員透露，因美伊戰事牽動資源部署，140億美元對台軍售案遭暫緩。專家示警，川習9月24日峰會前釋出的訊號恐動搖台灣對美防衛承諾的信心。",
+     "source": "聯合新聞網",
+     "tags": ["台海", "軍售", "川習會", "美軍"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜美國「經濟D日」制裁正式啟動 鎖定伊朗五大命脈產業 伊朗揚言封鎖荷姆茲海峽",
+     "url": "https://www.japantimes.co.jp/news/2026/08/24/world/us-economic-d-day-iran-oil-exports/",
+     "summary": "美國財政部長貝森特24日宣布代號「經濟棄兒行動」的對伊朗制裁，鎖定數位資產、科技、黃金、航空與航運五大命脈產業，並制裁逾60個涉及核武飛彈採購、網路攻擊與石油收入的個人及實體，稱為史上最大規模協調經濟孤立行動。伊朗最高國家安全委員會秘書雷札伊揚言，若波灣鄰國加入對伊制裁，將不惜封鎖荷姆茲海峽；伊朗里亞爾匯價同步創歷史新低。",
+     "source": "The Japan Times",
+     "tags": ["IRAN", "SANCTIONS", "HORMUZ", "ECONOMIC-OUTCAST"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜日本跨黨派國會議員團訪北京 盼緩解「台灣有事」引發的中日外交危機",
+     "url": "https://www.washingtonpost.com/world/2026/08/24/japan-china-takaichi-taiwan/0dcc4606-9f83-11f1-8606-1d40ad00172e_story.html",
+     "summary": "日本跨黨派國會議員團24日赴北京與中國官員會晤，是首相高市早苗涉台言論引爆中日外交危機以來的首次互訪，盼為陷入「深凍」的雙邊關係尋求解套。中方持續要求高市撤回相關言論，日方則堅持不退讓，兩國經貿與人員往來仍持續受到牽制。",
+     "source": "The Washington Post",
+     "tags": ["JAPAN", "CHINA", "TAIWAN", "TAKAICHI"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8/24收跌462點失守4.5萬點 成交量創8月新低",
+     "url": "https://news.cnyes.com/news/id/6585209",
+     "summary": "台股8/24開高走低，加權指數收在44,762.32點，下跌461.97點、跌幅1.02%，失守45,000點關卡；成交金額萎縮至651.9億元，創8月以來最低量。台積電收跌35元，三大法人合計賣超163.77億元，其中外資賣超157.5億元，聯電、環球晶等成熟製程與矽晶圓族群逆勢走揚。",
+     "source": "鉅亨網",
+     "tags": ["台股", "加權指數", "台積電"]
+    },
+    {
+     "severity": "info",
+     "title": "美股8/24表現分歧 道瓊小漲、那斯達克跌近1%受晶片股拖累",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-24-2026",
+     "summary": "美股8/24收盤表現分歧：道瓊上漲114.48點（0.21%），標普500下跌29.16點（0.38%），那斯達克下跌245.29點（0.94%）。美光、邁威爾等AI基礎建設相關晶片股重挫6%至10%，加上美國對伊朗祭出新一輪制裁、美加關稅談判破裂及市場靜候傑克森霍爾年會，恐慌指數VIX上揚逾5%。",
+     "source": "TheStreet",
+     "tags": ["美股", "那斯達克", "晶片股"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油8/24跌逾1%至約93美元 結束連兩週漲勢",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-2-as-Markets-Brace-for-Bessents-Economic-D-Day.html",
+     "summary": "布蘭特原油8/24應聲下跌逾1%至約93美元左右，結束連兩週漲勢，主因市場對美國正式宣布的伊朗「經濟D日」制裁提前反應、獲利了結。中東地緣風險與荷姆茲海峽通行受阻的疑慮未解，油價後續走勢預期仍將維持高度波動。",
+     "source": "OilPrice.com",
+     "tags": ["布蘭特原油", "伊朗", "荷姆茲海峽"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8/24收貶0.6分至31.854元",
+     "url": "https://udn.com/news/story/7239/9710956",
+     "summary": "新台幣兌美元8/24銀行間收盤貶0.6分，收31.854元，成交金額15.17億美元；當日開盤31.82元，盤中最高31.779元、最低31.92元，匯價區間震盪，市場觀望美股走勢與聯準會傑克森霍爾年會前景。",
+     "source": "聯合新聞網",
+     "tags": ["新台幣", "匯率"]
+    }
+   ]
+  }
+ ]
+}

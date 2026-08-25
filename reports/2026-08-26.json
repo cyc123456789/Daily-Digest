@@ -1,0 +1,122 @@
+{
+ "date": "2026-08-26",
+ "focus": "伊朗荷姆茲海峽再擊油輪、川普稱水雷已清並警告「零容忍」；Oracle滿分漏洞遭在野利用，共機共艦29架艦次擾台",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA列管Oracle HTTP Server／WebLogic Proxy Plug-in滿分漏洞 未驗證攻擊者可讀寫關鍵資料",
+     "url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
+     "summary": "Oracle HTTP Server與WebLogic Server Proxy Plug-in存取控制漏洞CVE-2026-21962（CVSS滿分10.0），未驗證遠端攻擊者可透過路徑穿越與HTTP標頭操弄繞過代理存取控制，進而存取或竄改後端WebLogic伺服器的關鍵資料。CISA已於8月24日將此漏洞列入在野利用清單（KEV）並要求聯邦機關限期修補，受影響為Apache HTTP Server／IIS版WebLogic Proxy Plug-in及隨附部署的Oracle HTTP Server。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-21962", "ORACLE", "WEBLOGIC", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "miniOrange SAML SSO外掛雙漏洞遭掃描攻擊 串聯可偽造簽章冒充WordPress管理員登入",
+     "url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
+     "summary": "WordPress的miniOrange SAML 2.0 Single Sign On外掛存在CVE-2026-61979與CVE-2026-15981兩個未驗證身分驗證繞過漏洞，串聯後攻擊者可偽造SAML簽章、以任意使用者（含管理員）身分登入。研究人員已觀察到來自比利時、奈及利亞、德國與美國的掃描攻擊，免費版已修補至17.0.5／17.0.6，但六個付費版本修補進度未公開，建議所有版本立即確認並升級。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-61979", "CVE-2026-15981", "WORDPRESS", "MINIORANGE"]
+    },
+    {
+     "severity": "high",
+     "title": "中間人釣魚平台Mirage2FA肆虐 逾9千組帳密遭鎖定繞過雙重驗證竊取Microsoft 365會話",
+     "url": "https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html",
+     "summary": "商用「網路釣魚即服務」平台Mirage2FA以中間人（AiTM）反向代理架構，即時轉發受害者輸入的帳密與一次性驗證碼給微軟伺服器，藉此竊取已通過雙重驗證的Microsoft 365登入會話Cookie。威脅情資顯示9,426組目標信箱中已有4,532組疑遭得手，受害者遍布94國、以美國占63.7%最多，科技、製造與教育業為主要目標，企業應留意HTML夾帶附件並強制重新驗證登入會話。",
+     "source": "The Hacker News",
+     "tags": ["MIRAGE2FA", "PHISHING", "MICROSOFT-365", "AITM"]
+    },
+    {
+     "severity": "medium",
+     "title": "美製藥研究商Inotiv證實遭Qilin勒索軟體攻擊 逾9500人個資外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/pharma-firm-inotiv-discloses-data-breach-after-ransomware-attack/",
+     "summary": "美國藥物研究服務商Inotiv向主管機關申報，去年8月初遭Qilin勒索軟體集團入侵竊得逾16萬份檔案（約176GB），近日確認9,542人姓名、社會安全號碼等個資外洩並展開通知。公司表示系統已恢復運作，將為受影響者提供24個月免費信用監控與身分盜用防護服務。",
+     "source": "BleepingComputer",
+     "tags": ["INOTIV", "QILIN", "RANSOMWARE", "DATA-BREACH"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機29架次、共艦6艘、公務船5艘 17架次逾越中線",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5517110",
+     "summary": "國防部發布新聞稿指出，自24日上午6時至25日上午6時止，合計偵獲中國軍機29架次、軍艦6艘及公務船5艘持續在台海周邊活動，其中17架次逾越台灣海峽中線及其延伸線，進入我北部、中部、西南及東部空域。國軍運用聯合情監偵系統嚴密監控，並派遣機艦應處。",
+     "source": "自由軍武頻道",
+     "tags": ["共機", "共艦", "中線", "國防部"]
+    },
+    {
+     "severity": "warning",
+     "title": "中國南海北部宣布連5天實彈射擊 黃岩島空域再爆中菲對峙",
+     "url": "https://udn.com/news/story/7331/9708447",
+     "summary": "中國海事局經湛江海事局公告，8月24日至28日每日8時至18時在南海北部、瓊州海峽東側入口以北海域進行實彈射擊、禁止船舶駛入，為近期第三度發布類似航行警告。中共解放軍南部戰區同時指控菲律賓3架小型飛機於8月21日未經批准侵入黃岩島領空,已出動海空兵力跟蹤警告,南海摩擦持續從海面延燒至空中。",
+     "source": "聯合新聞網",
+     "tags": ["南海", "黃岩島", "解放軍", "菲律賓"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "荷姆茲海峽油輪再遭攻擊 川普稱水雷已清並警告「零容忍」 巴基斯坦調停伊朗未見突破",
+     "url": "https://www.usnews.com/news/world/articles/2026-08-25/ship-disabled-by-attack-in-strait-of-hormuz-and-other-news-from-around-the-middle-east",
+     "summary": "一艘油輪24日夜間在阿曼外海的荷姆茲海峽遭飛彈或砲彈擊中失去動力，船員無恙，事件發生於美國宣布對伊朗新一輪制裁後數小時。川普同日表示海峽內水雷已清除或引爆，並警告伊朗若再布雷將依「零容忍」政策擊毀相關船艇；巴基斯坦陸軍參謀長率團赴德黑蘭談判重開海峽及結束美伊戰事，會後未見具體突破即離境。",
+     "source": "U.S. News",
+     "tags": ["IRAN", "HORMUZ", "TANKER-ATTACK", "US-IRAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "美韓峰談北韓去核化未列入公開聲明 專家質疑華府、首爾承諾動搖",
+     "url": "https://www.japantimes.co.jp/news/2026/08/25/asia-pacific/politics/us-south-korea-north-korea-denuclearization/",
+     "summary": "美國與南韓最新一輪雙邊會談後的公開聲明中未再提及北韓「去核化」目標,外界解讀華府與首爾在此議題上的立場出現鬆動。北韓自今年7月以來已至少7度發布聲明抨擊日本國防白皮書為「意圖再侵略」文件,並在美韓年度軍演期間試射短程飛彈,區域三邊協調機制面臨測試。",
+     "source": "The Japan Times",
+     "tags": ["NORTH-KOREA", "DENUCLEARIZATION", "SOUTH-KOREA", "JAPAN"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8/25開高走高收漲407點重返4.5萬點 成交近7000億元",
+     "url": "https://money.udn.com/money/story/5607/9712954",
+     "summary": "台股8/25開高走高，加權指數收在45,169.46點，上漲407.14點、漲幅0.91%，重新站回45,000點關卡；成交金額回升至新台幣約6,960.54億元。市場情緒受美國對伊朗新制裁消息稀釋，資金回流權值股與傳產族群。",
+     "source": "經濟日報",
+     "tags": ["台股", "加權指數", "台積電"]
+    },
+    {
+     "severity": "info",
+     "title": "美股8/25三大指數同步收漲 那斯達克漸強、市場靜候輝達財報與傑克森霍爾年會",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-25-2026",
+     "summary": "美股8/25收盤全面上漲，道瓊上漲約0.22%、標普500上漲約0.41%、那斯達克上漲約0.68%，投資人不理會美加關稅摩擦消息，聚焦即將公布的輝達財報與新任Fed主席華許28日傑克森霍爾年會壓軸演說對利率路徑的暗示。",
+     "source": "TheStreet",
+     "tags": ["美股", "那斯達克", "輝達"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油8/25跌至約90美元 伊朗油輪襲擊未阻跌勢、巴基斯坦調停消息稀釋風險溢價",
+     "url": "https://fortune.com/article/price-of-oil-08-25-2026/",
+     "summary": "布蘭特原油8/25跌至約90.35美元附近，較前一週94美元關卡明顯回落，儘管荷姆茲海峽24日夜間再度發生油輪遇襲事件。市場解讀巴基斯坦介入調停美伊爭端及川普宣布海峽水雷已清除等消息，暫時壓抑了地緣風險溢價，但荷姆茲海峽通行風險並未真正解除。",
+     "source": "Fortune",
+     "tags": ["布蘭特原油", "荷姆茲海峽", "伊朗"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8/25連貶收31.868元 市場靜待美國數據與華許演說",
+     "url": "https://www.cna.com.tw/news/afe/202608250293.aspx",
+     "summary": "新台幣兌美元8/25銀行間收盤貶1.4分，收31.868元，連續第二個交易日走貶。台北及元太外匯市場總成交金額約18.55億美元，市場觀望即將公布的美國經濟數據與新任Fed主席華許在傑克森霍爾年會的首次壓軸演說，交投偏向謹慎。",
+     "source": "中央社",
+     "tags": ["新台幣", "匯率", "傑克森霍爾"]
+    }
+   ]
+  }
+ ]
+}

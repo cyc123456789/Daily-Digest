@@ -1,0 +1,138 @@
+{
+ "date": "2026-08-27",
+ "focus": "VMware vCenter重大漏洞(CVSS 9.8)遭中國背景駭客大規模利用，47國逾360台伺服器遭植入勒索軟體，CISA示警企業立即修補。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "VMware vCenter滿分漏洞遭中國背景駭客大規模利用 47國逾360台伺服器植入勒索軟體",
+     "url": "https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
+     "summary": "疑似中國背景駭客組織自8月3日起大規模利用VMware vCenter Syslog伺服器目錄穿越漏洞CVE-2026-59310（CVSS 9.8），已在47國攻陷361個IP，植入反向SSH後門後部署Babuk變種勒索軟體。Broadcom已於7月29日發布修補公告VMSA-2026-0006，目前無替代緩解方案，用戶須立即更新。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-59310", "VMWARE", "VCENTER", "RANSOMWARE"]
+    },
+    {
+     "severity": "critical",
+     "title": "CISA列管Gitea程式碼注入漏洞 攻擊者植入挖礦程式",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/08/25/cisa-adds-one-known-exploited-vulnerability-catalog",
+     "summary": "CISA於8月25日將Gitea diffpatch API的程式碼注入漏洞CVE-2026-60004（CVSS 9.8）列入在野利用清單，具寫入權限的攻擊者可植入惡意Git Hook並以Gitea服務帳號執行任意指令。Gitea已於7月釋出1.27.1版修補，聯邦機關須於8月28日前完成修補，已有自架站台遭植入挖礦程式的案例。",
+     "source": "CISA",
+     "tags": ["CVE-2026-60004", "GITEA", "CISA-KEV"]
+    },
+    {
+     "severity": "critical",
+     "title": "CISA、NSA、FBI聯合示警：駭客用AI生成腳本攻擊西門子S7系列PLC",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a",
+     "summary": "美國CISA、NSA、FBI等機關發布聯合公告，指駭客組織正利用AI生成的攻擊腳本掃描並入侵暴露在網路上、韌體過舊或防護不足的西門子S7系列可程式邏輯控制器（PLC），鎖定能源、水務、化工與製造業等關鍵基礎設施進行偵察與能力測試。機關建議立即盤點S7設備、安裝最新韌體並阻斷其對外網路連線，目前尚無單一CVE修補即可根除，需搭配網路區隔緩解。",
+     "source": "CISA",
+     "tags": ["SIEMENS", "S7", "ICS", "AI"]
+    },
+    {
+     "severity": "high",
+     "title": "勒索軟體集團濫用Claude Code AI工具自動化入侵 至少8個組織受害",
+     "url": "https://cybersecuritynews.com/claude-code-helps-ransomware-operator/",
+     "summary": "資安業者Gambit Security揭露，The Gentlemen勒索軟體即服務（RaaS）的疑似附屬攻擊者利用Anthropic舊版Claude Sonnet 4.6模型，自主執行LDAP回傳攻擊、竄改VPN設備驗證設定、建立隱藏後門帳號並依商業價值排序資料庫後外洩，攻擊橫跨澳洲能源業者、模里西斯金融業者等至少8個組織。此案顯示AI已能在近乎零人力監督下獨立完成入侵到外洩的完整流程，非單一軟體漏洞，防禦重點在於VPN與帳號存取控管。",
+     "source": "CyberSecurityNews",
+     "tags": ["AI", "RANSOMWARE", "CLAUDE-CODE", "LDAP"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機23架次(16架逾中線)、共艦7艘、公務船1艘",
+     "url": "https://www.tribuneindia.com/news/world/taiwan-records-23-sorties-of-pla-aircraft-7-plan-vessels-around-its-territory",
+     "summary": "國防部表示，最近一次24小時內共偵獲中共軍機23架次出海，其中16架次逾越台海中線及其延伸線，進入台灣北部及西南空域，並配合共艦7艘、公務船1艘在周邊海空域活動，國軍已派遣機艦及岸置飛彈系統嚴密監控應處。",
+     "source": "The Tribune",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT"]
+    },
+    {
+     "severity": "medium",
+     "title": "陸委會批中國文旦柚註冊「政治審查」 指為中秋統戰宣傳",
+     "url": "https://newtalk.tw/news/view/2026-08-26/1055880",
+     "summary": "陸委會表示，中國近期新增約79項台灣文旦柚包裝廠及果園註冊，但僅限符合特定政治前提的業者才能通過，批評北京將經貿檢疫措施當作對台農漁業統戰或經濟脅迫工具，呼籲中方勿以「中秋大禮包」包裝政治操作。",
+     "source": "Newtalk新聞",
+     "tags": ["MAC", "CHINA", "TRADE"]
+    },
+    {
+     "severity": "medium",
+     "title": "國台辦：民進黨當局是兩岸交流最大障礙",
+     "url": "https://www.chinanews.com.cn/gn/2026/08-26/10684396.shtml",
+     "summary": "國台辦發言人張晗在例行記者會上表示，民進黨當局要求校際交流須經「登錄平台」申報是人為設置障礙，稱民進黨是兩岸交流交往最大障礙、台海和平穩定最大威脅，並宣傳多項近期兩岸青年交流活動以拉攏台灣民眾。",
+     "source": "中國新聞網",
+     "tags": ["TAO", "CROSS-STRAIT", "DPP"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜伊朗與阿曼提案闢荷姆茲海峽臨時航道 盼緩解封鎖危機",
+     "url": "https://www.cnbc.com/2026/08/25/iran-oman-strait-hormuz-oil.html",
+     "summary": "阿曼外長阿布賽迪8月25日赴德黑蘭與伊朗外長阿拉格奇會談後，兩國發表聯合聲明，提議在荷姆茲海峽建立臨時聯合航道並展開清除水雷行動，作為邁向永久航道協議的過渡方案。分析指出，方案能否落實仍面臨美方是否接受船隻經伊朗控制水域通行、國際認可度等變數，是美國「經濟D日」制裁後首個具體降溫框架。",
+     "source": "CNBC",
+     "tags": ["IRAN", "OMAN", "HORMUZ"]
+    },
+    {
+     "severity": "warning",
+     "title": "南北韓關係緊張加劇 南韓總統府籲北韓停止「無謂謾罵」",
+     "url": "https://www.usnews.com/news/world/articles/2026-08-21/south-korea-presidential-office-urges-north-korea-to-stop-unnecessary-slander-media-reports",
+     "summary": "南韓總統府近日公開回應北韓領導人金正恩胞妹金與正對總統李在明的批評言論，呼籲北韓停止「無謂謾罵」、共同為朝鮮半島和平努力，但北韓持續在軍事分界線沿線進行工事部署，南韓與美方關切情勢升溫。",
+     "source": "U.S. News (Reuters)",
+     "tags": ["NORTH-KOREA", "SOUTH-KOREA", "KIM-YO-JONG"]
+    },
+    {
+     "severity": "medium",
+     "title": "川普擬對中國加徵7.5%新關稅 指陸貨傾銷全球市場",
+     "url": "https://www.usnews.com/news/business/articles/2026-08-24/trump-moves-toward-levying-new-tariff-on-china-for-flooding-market-with-cheap-goods-ap-sources-say",
+     "summary": "據美聯社消息人士透露，川普政府正推動對中國祭出新一輪關稅，初步考慮稅率為7.5%，理由是中國以低價商品大量傾銷全球市場、衝擊各國本土產業。此舉可能為9月24日川習會前的中美經貿關係再添變數。",
+     "source": "AP via U.S. News",
+     "tags": ["TARIFF", "CHINA", "TRUMP"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8/26強彈663點收45,832點 台積電收2,415元",
+     "url": "https://news.ttv.com.tw/news/11508260000900W",
+     "summary": "台股8月26日開高走高，終場上漲663.99點、漲幅1.47%，收45,832點，成交量放大至8042億元；台積電收2,415元、上漲15元，市場資金回補態勢明顯，重返4.5萬點關卡。",
+     "source": "台視新聞",
+     "tags": ["TWSE", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股8/26三大指數收紅 靜候輝達財報",
+     "url": "https://news.nextapple.com/finance/20260826/BF7B1065DFF698689E491120B2F77022",
+     "summary": "美股8月26日三大指數同步收紅：道瓊指數漲0.30%收53,577.40點，標普500漲0.32%收7,677.28點，那斯達克漲0.66%收26,151.30點，終結那斯達克連7個交易日的下跌走勢。市場緊盯輝達（Nvidia）盤後公布的財報數據。",
+     "source": "壹蘋新聞網",
+     "tags": ["DOW", "NASDAQ", "SP500", "NVIDIA"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油8/26重挫近4%至88.58美元 伊朗-阿曼降溫倡議壓抑風險溢價",
+     "url": "https://www.guandian.cn/article/20260826/591456.html",
+     "summary": "布蘭特原油8月26日結算價下跌3.59美元、跌幅3.89%，收在每桶88.58美元，為近期跌幅最深的交易日之一，反映伊朗與阿曼提出荷姆茲海峽臨時航道方案後，市場地緣政治風險溢價回落（數字為近似值）。",
+     "source": "觀點網",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8/26升值5分收31.818元 外資匯入撐盤",
+     "url": "https://news.cnyes.com/news/id/6587704",
+     "summary": "台北外匯市場新台幣兌美元8月26日以31.818元作收，升值5分，盤中一度觸及31.809元高點，全日成交金額約12.02億美元，外資持續回補台股資金為主要支撐動能。",
+     "source": "鉅亨網",
+     "tags": ["TWD", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

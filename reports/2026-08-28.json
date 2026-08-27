@@ -1,0 +1,146 @@
+{
+ "date": "2026-08-28",
+ "focus": "CISA將Citrix NetScaler漏洞列入在野利用清單，原判僅可致癱瘓的漏洞證實可取得root權限RCE，聯邦機關限8/29修補",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA列管Citrix NetScaler漏洞 原研判僅DoS證實可鏈結取得root RCE",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploiting-citrix-netscaler-rce-flaw-in-attacks/",
+     "summary": "CVE-2026-8452為NetScaler ADC/Gateway記憶體溢位漏洞，Citrix原於6月底發布修補（14.1-72.61、13.1-63.18、13.1-37.272版），當時僅示警可能導致阻斷服務。資安公司watchTowr本月證實攻擊者可鏈結取得root權限遠端執行程式碼，CISA已列入KEV並要求聯邦機關8月29日前完成修補，已觀測到攻擊者植入x.php、z.php等網頁後門。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-8452", "CITRIX", "NETSCALER", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "CISA同批追加列管5項舊版SQL Server、Linux核心等在野利用漏洞",
+     "url": "https://thehackernews.com/2026/08/cisa-adds-six-exploited-flaws-to-kev.html",
+     "summary": "CISA本週一次列管6項在野利用漏洞，除NetScaler外另包含2019年微軟SQL Server RCE(CVE-2019-1068)、2022年Linux核心越界寫入(CVE-2022-0995)等多年前公開的舊洞近期遭重新利用。聯邦機關須於8月29日（SQL Server、NetScaler）或9月9日（其餘項目）前完成修補，凸顯攻擊者持續掃描未修補的老舊系統。",
+     "source": "The Hacker News",
+     "tags": ["CISA-KEV", "CVE-2019-1068", "CVE-2022-0995", "SQL-SERVER"]
+    },
+    {
+     "severity": "high",
+     "title": "美國內華達州政府遭勒索軟體攻擊 逾60機關服務癱瘓",
+     "url": "https://www.cybersecuritydive.com/news/nevada-ransomware-attack-traced-back-to-malware-download-by-employee/805011/",
+     "summary": "內華達州8月24日證實遭勒索軟體攻擊，車輛管理局(DMV)、衛生福利部、公共安全部等逾60個機關服務一度中斷。調查追溯至5月一名員工誤下載偽冒系統管理工具遭植入惡意程式，攻擊者取得逾2.6萬份檔案，州府未支付贖金，已編列150萬美元應變經費。",
+     "source": "Cybersecurity Dive",
+     "tags": ["RANSOMWARE", "NEVADA", "GOVERNMENT"]
+    },
+    {
+     "severity": "warning",
+     "title": "中國背景「Twill Typhoon」APT更新FDMTP後門 鎖定亞太與日本客戶環境",
+     "url": "https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor",
+     "summary": "資安業者Darktrace揭露疑似中國背景駭客組織Twill Typhoon的間諜活動，冒充Yahoo、Apple等CDN網域誘騙下載，透過合法執行檔搭配惡意DLL側載，佈署新版.NET後門FDMTP，具備系統指紋辨識、指令執行、竄改機碼與竊取檔案能力，目標鎖定亞太及日本地區客戶環境。",
+     "source": "Darktrace",
+     "tags": ["TWILL-TYPHOON", "FDMTP", "APT", "APAC"]
+    },
+    {
+     "severity": "medium",
+     "title": "AWS AI程式編輯器Kiro提示注入漏洞 恐外洩敏感資料",
+     "url": "https://thehackernews.com/2026/08/amazon-kiro-prompt-injection-can.html",
+     "summary": "資安研究人員揭露AWS AI驅動IDE「Kiro」存在提示注入漏洞，攻擊者可透過惡意網頁內容操控AI代理外洩敏感資料，影響Windows版Kiro IDE 0.7.45以前版本，Amazon已於0.8.140版修補。另有CVE-2026-10591等相關漏洞同步修補，凸顯AI程式碼助手正成為新興攻擊面。",
+     "source": "The Hacker News",
+     "tags": ["AWS-KIRO", "PROMPT-INJECTION", "AI", "CVE-2026-10591"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "立院三讀藍白版無人機特別預算2400億元 政院版遭否決",
+     "url": "https://www.freemalaysiatoday.com/category/world/2026/08/27/taiwan-lawmakers-approve-us-7-6bil-drone-budget-as-china-threat-grows",
+     "summary": "立法院8月27日三讀通過由在野黨（國民黨、民眾黨）主導的無人載具特別預算案，規模新台幣2400億元、分6年編列，同時否決賴清德政府原提出的2100億元版本。此案為台灣強化不對稱戰力、因應解放軍威脅的重點建案，朝野對國防預算編列方式與期程仍存分歧。",
+     "source": "Free Malaysia Today",
+     "tags": ["TAIWAN", "DRONE", "DEFENSE-BUDGET", "立法院"]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：偵獲共機23架次(17架逾中線) 配合共艦台海周邊活動",
+     "url": "https://www.tribuneindia.com/news/world/taiwan-detects-23-sorties-of-chinese-aircraft-naval-vessels/",
+     "summary": "國防部近期通報最新24小時軍事動態，偵獲解放軍J-10、H-6K、KJ-500等機型共23架次，其中17架次逾越台海中線並進入我北部、中部及西南空域，配合共艦在台海周邊持續活動。（因國防部官網與部分媒體站台於本次資料存取受限，數字取自國際通訊社轉載，如與官方公告有出入以國防部為準）",
+     "source": "The Tribune",
+     "tags": ["MND", "PLA", "MEDIAN-LINE"]
+    },
+    {
+     "severity": "info",
+     "title": "分析：解放軍上半年擾台機次腰斬創3年新低 原因待解",
+     "url": "https://www.scmp.com/news/china/military/article/3361605/why-pla-fighter-jet-sorties-near-taiwan-dropped-3-year-low-first-half-2026",
+     "summary": "南華早報分析指出，解放軍軍機今年上半年擾台架次年減逾半至1334架次，創3年新低，且解放軍未如過往在此期間舉行大規模軍演。學界推測原因包括例行維護整補、川習會前的戰術性降溫，或為外交場合刻意調整操作節奏，尚無定論。",
+     "source": "South China Morning Post",
+     "tags": ["PLA", "TAIWAN-STRAIT", "MILITARY-ANALYSIS"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "中國軍艦跟監台美澳聯合海上演習 南海薩比納淺灘現對峙",
+     "url": "https://www.manilatimes.net/2026/08/27/news/national/chinese-warships-shadow-ph-us-australian-vessels-during-drills/2412797",
+     "summary": "菲律賓、美國、澳洲等國8月27日舉行第19屆多邊海上合作演習(MMCA)期間，中國海軍與海警船艦全程跟監，並與菲律賓軍艦在薩比納淺灘附近就主權主張爆發無線電交鋒。南海緊張延續7月仙賓礁、仁愛礁三度衝突後的對峙態勢，中菲南海行為準則談判仍陷停滯。",
+     "source": "Manila Times",
+     "tags": ["SOUTH-CHINA-SEA", "PHILIPPINES", "SABINA-SHOAL"]
+    },
+    {
+     "severity": "medium",
+     "title": "美財政部制裁協助北韓規避禁運的俄港務機構及中國企業",
+     "url": "https://www.voanews.com/a/us-hits-north-korea-and-russia-with-new-sanctions-treasury-says-/7904085.html",
+     "summary": "美國財政部本週對協助北韓船隻規避制裁的俄羅斯港口服務機構，以及向平壤銷售酒類、菸草等違禁品的中國企業祭出新制裁，意在切斷北韓核武計畫資金來源。國會同時力推「制裁俄羅斯法案」，逾60名參議員連署支持，鎖定俄國能源與金融產業及蒲亭周邊官員。",
+     "source": "VOA News",
+     "tags": ["SANCTIONS", "NORTH-KOREA", "US-TREASURY"]
+    },
+    {
+     "severity": "info",
+     "title": "中印第25輪特別代表會談達成8點共識 為BRICS峰會鋪路",
+     "url": "https://www.indiatvnews.com/news/world/big-india-china-border-breakthrough-doval-wang-talks-yield-8-key-outcomes-on-lac-peace-and-hotlines-2026-08-26-1052496",
+     "summary": "印度國安顧問多瓦爾與中國外長王毅8月25日在北京主持第25輪邊界特別代表會談，雙方就實際控制線和平、邊境管控與軍事熱線達成8點共識，包括增設兩個軍長級會晤地點及邊境熱線管道，並重申2005年邊界問題政治指導原則協議，為習近平9月赴印出席金磚峰會鋪路。",
+     "source": "India TV News",
+     "tags": ["INDIA", "CHINA", "BORDER-TALKS"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "傑克森霍爾年會今晚壓軸：Fed新主席華許首場演說受矚目",
+     "url": "https://www.xtb.com/en/education/jackson-hole-2026-warsh-fed-speech",
+     "summary": "聯準會新任主席華許將於台灣時間28日晚間10時在傑克森霍爾年會發表就任以來首場演說，正值9月FOMC會議前3週。市場目前預期9月升息機率約3分之1，投資人聚焦其對通膨目標與央行獨立性的表態，可能成為左右後市利率路徑的關鍵訊號。",
+     "source": "XTB",
+     "tags": ["FED", "WARSH", "JACKSON-HOLE"]
+    },
+    {
+     "severity": "info",
+     "title": "台股8/27收漲142點站穩4.5萬 台積電收2410元",
+     "url": "https://www.cna.com.tw/news/afe/202608270156.aspx",
+     "summary": "台股8月27日開高走低，加權指數終場上漲142.6點、收45,975.22點，漲幅0.31%，成交值新台幣9,246.83億元。台積電盤中翻黑壓抑指數，終場下跌5元收2,410元。",
+     "source": "中央社",
+     "tags": ["TWSE", "台積電", "台股"]
+    },
+    {
+     "severity": "info",
+     "title": "美股8/27普遍收紅 輝達財報優於預期激勵科技股",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
+     "summary": "美股三大指數8月27日同步收紅，標普500指數收7,673.04點、漲0.42%，道瓊工業指數收53,195.36點、漲0.83%，那斯達克綜合指數收26,168.46點、漲0.39%。輝達財報優於市場預期激勵晶片股，投資人同時消化偏熱通膨數據並靜候隔日傑克森霍爾年會。",
+     "source": "TheStreet",
+     "tags": ["SP500", "NASDAQ", "NVIDIA"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油8/27跌約1%至87美元附近 新台幣連二日升值收31.708元",
+     "url": "https://easternherald.com/2026/08/27/crude-oil-price-today-august-27-2026/",
+     "summary": "布蘭特原油8月27日下跌約1%至每桶87美元附近，PCE通膨數據未能扭轉跌勢，伊朗與阿曼提出的荷姆茲海峽緩解方案持續稀釋風險溢價。新台幣同日升值1.1角，收31.708元，創6月下旬以來新高，外資匯入為主要動能，亞幣中新台幣表現最強。",
+     "source": "Eastern Herald",
+     "tags": ["BRENT", "TWD", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "date": "2026-08-29",
+ "focus": "PaperCut NG/MF零時差漏洞遭鏈結攻擊、全版本受影響，官方已釋出緊急修補；CISA同批列管ownCloud、JFrog等三漏洞。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "PaperCut NG/MF零時差漏洞遭鏈結攻擊 全版本受影響",
+     "url": "https://www.bleepingcomputer.com/news/security/papercut-warns-of-ng-mf-flaw-exploited-in-zero-day-attacks/",
+     "summary": "PaperCut釋出緊急公告，指CVE-2026-82078（資料庫連線工具不安全動態類別載入）與CVE-2026-81578（Web管理介面存取控制缺陷）已遭鏈結利用於零時差攻擊，所有NG/MF版本均可能受影響。官方已於8月27至28日陸續釋出v24至v26緊急修補版本，無法立即更新者應限制管理介面僅限信任IP存取。",
+     "source": "BleepingComputer",
+     "tags": [
+      "PAPERCUT",
+      "CVE-2026-82078",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "CISA列管ownCloud、Linux核心、JFrog Artifactory三漏洞 確認遭在野利用",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/08/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA新增CVE-2023-49105（ownCloud WebDAV身分驗證缺陷，CVSS 9.8）、CVE-2026-53362（Linux核心IPv6堆疊記憶體寫入，CVSS 7.8，曾被用於OpenAI內部環境權限提升）與CVE-2026-66384（JFrog Artifactory路徑穿越）至KEV清單，聯邦機關須於8月30日至9月10日內完成修補。三者均已有官方修補版本，建議立即更新並檢查存取紀錄。",
+     "source": "CISA",
+     "tags": [
+      "CVE-2026-53362",
+      "OWNCLOUD",
+      "JFROG",
+      "CISA"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "英國曼徹斯特機場集團遭駭 870萬旅客資料外洩",
+     "url": "https://therecord.media/cyberattack-on-manchester-airports-group-exposes-millions-customer-info",
+     "summary": "Manchester Airports Group證實外部人士入侵系統，取得曼徹斯特、史坦斯提德與東米德蘭機場共870萬名顧客的停車、貴賓室與機場WiFi註冊資料，含電子郵件、電話、郵遞區號與車牌號碼，付款資訊未外洩。集團已通報英國NCSC與ICO，並拒絕支付駭客勒索。",
+     "source": "The Record",
+     "tags": [
+      "MAG",
+      "DATA BREACH",
+      "UK"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "醫材大廠Boston Scientific遭網攻癱瘓全球營運",
+     "url": "https://www.bleepingcomputer.com/news/security/boston-scientific-says-cyberattack-disrupted-operations-globally/",
+     "summary": "醫療器材商Boston Scientific證實8月25日偵測到資安事件，攻擊癱瘓部分IT系統與商業應用，導致訂單處理與出貨作業中斷，波及全球據點，公司股價應聲下跌。目前尚未證實是否涉及勒索軟體，調查仍在進行中。",
+     "source": "BleepingComputer",
+     "tags": [
+      "BOSTON SCIENTIFIC",
+      "CYBERATTACK",
+      "MEDICAL"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "澳洲逮捕TeamPCP供應鏈駭客集團兩名成員 波及逾千企業",
+     "url": "https://www.bleepingcomputer.com/news/security/australia-arrests-alleged-teampcp-hackers-behind-supply-chain-attacks/",
+     "summary": "澳洲聯邦警察會同FBI、西澳警方逮捕兩名涉嫌主導TeamPCP供應鏈攻擊的男子，該集團過去一年鎖定開源套件與開發平台（含Trivy、LiteLLM、SAP等）竊取憑證與原始碼，估計波及全球逾1,000個組織、外洩逾50萬組憑證、竊取至少300GB資料，全球善後成本達數億美元。",
+     "source": "BleepingComputer",
+     "tags": [
+      "TEAMPCP",
+      "SUPPLY CHAIN",
+      "ARREST"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "ShinyHunters社交工程滲透資安業者ReliaQuest 攻擊遭攔截",
+     "url": "https://www.bleepingcomputer.com/news/security/reliaquest-confirms-failed-data-theft-attack-after-shinyhunters-breach/",
+     "summary": "駭客集團ShinyHunters註冊仿冒網域架設假SSO頁面，並冒充資安員工致電多名ReliaQuest員工，成功誘騙一人輸入憑證並核准MFA，取得身分儀表板唯讀存取權限，但因裝置信任機制阻擋後續存取，客戶系統與資料均未受影響。",
+     "source": "BleepingComputer",
+     "tags": [
+      "RELIAQUEST",
+      "SHINYHUNTERS",
+      "VISHING"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內共艦7艘次在台海周邊活動 無共機擾台",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5487354",
+     "summary": "國防部發布即時軍事動態，指自8月28日6時至29日6時止，偵獲中共軍艦7艘次、公務船3艘次在台海周邊活動，未偵獲共機擾台，為近期擾台頻率明顯偏低的一天。國軍運用機艦與岸置飛彈系統嚴密監控應處。",
+     "source": "自由軍武頻道",
+     "tags": [
+      "MND",
+      "台海"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "國共上海青年交流季落幕 陸委會批「不要附和中共論述」",
+     "url": "https://news.ltn.com.tw/news/politics/breakingnews/5546675",
+     "summary": "國共兩黨「同心同行兩岸青年交流季」8月24日至28日在上海登場，國民黨副主席張榮恭率團參加並重申「九二共識」。陸委會發言人梁文傑表示，交流歸交流，但不樂見與會者一味附和中共敘事、認同其政治主張，並批評國民黨在交流中未能清楚表達己方立場。",
+     "source": "自由時報",
+     "tags": [
+      "陸委會",
+      "兩岸交流",
+      "九二共識"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜中菲南海黃岩島再爆水砲對峙 一週內第三次衝突",
+     "url": "https://abcnews.com/International/wireStory/china-forces-fire-water-cannon-philippine-ships-faceoff-135043764",
+     "summary": "菲律賓海巡署指控中國海警船連續第二天在黃岩島海域對其公務船發射水砲，是本週雙方第三次對峙，一艘中國船隻曾逼近至距菲國公務船僅7公尺處後噴水攻擊。此波衝突延續7月以來仁愛暗沙與黃岩島周邊的緊張態勢，菲律賓國防部同期要求國會將明年國防預算調增6.3%。",
+     "source": "ABC News",
+     "tags": [
+      "SCARBOROUGH SHOAL",
+      "PHILIPPINES",
+      "SOUTH CHINA SEA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "王毅會見美駐華大使龐德偉 為川習會鋪路談「戰略穩定關係」",
+     "url": "https://www.singtaousa.com/2026/08/28/news/world/wang-yi-meets-pang-de-wei/",
+     "summary": "中國外交部長王毅在北京會見美國駐華大使龐德偉，雙方均表示將落實兩國元首共識，推動建設性戰略穩定關係，並籌備下階段高層互動，為預期於9月登場的川習會暖身。龐德偉並代表美方就西藏吉隆土石流傷亡表達慰問。",
+     "source": "星島日報",
+     "tags": [
+      "WANG YI",
+      "US-CHINA",
+      "戰略穩定"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8/28收漲356點站上46,331點 台積電漲10元收2,420元",
+     "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+     "summary": "台股8月28日終場上漲356點、漲幅0.77%，收在46,331點，成交量約新台幣1兆230億元；台積電上漲10元收2,420元。美股輝達財報優於預期的激勵效應延續，帶動台股權值股走揚。",
+     "source": "Yahoo股市",
+     "tags": [
+      "TWII",
+      "台積電"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Fed主席華許傑克森霍爾首場演說示警通膨過高 公債殖利率走升",
+     "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
+     "summary": "聯準會新任主席華許在傑克森霍爾年會發表首場演說，直言近期通膨數據雖優於預期，但無法證明潛在趨勢已實質改善，且未提供明確利率前瞻指引，市場解讀為偏鷹立場。公債市場迅速反映升息預期、殖利率走升；美股S&P 500與那斯達克早盤維持小漲（近似值）。",
+     "source": "CNBC",
+     "tags": [
+      "FED",
+      "WARSH",
+      "JACKSON HOLE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油8/28跌至約88.22美元",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "布蘭特原油8月28日下跌0.34%至每桶88.22美元（近似值），較過去一個月大致持平，但仍較去年同期高出約三成。市場持續消化荷姆茲海峽緊張情勢與OPEC+供給動向。",
+     "source": "TradingEconomics",
+     "tags": [
+      "BRENT",
+      "原油"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8/28升值8分收31.628元 連5週走升",
+     "url": "https://news.cnyes.com/news/id/6590784",
+     "summary": "新台幣8月28日匯價升值8分，終場收在31.628元，已連續5週升值，累計升幅達7.3角，主要受惠外資與出口商資金匯入。",
+     "source": "鉅亨網",
+     "tags": [
+      "TWD",
+      "匯率"
+     ]
+    }
+   ]
+  }
+ ]
+}

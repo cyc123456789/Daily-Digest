@@ -1,0 +1,122 @@
+{
+ "date": "2026-08-30",
+ "focus": "美國醫藥物流巨頭McKesson遭ShinyHunters入侵，2.84億筆病患資料遭竊，駭客索贖5,520萬美元",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美國醫藥巨頭McKesson遭駭 ShinyHunters竊取2.84億筆病患資料索贖5,520萬美元",
+     "url": "https://www.bleepingcomputer.com/news/security/mckesson-discloses-breach-after-shinyhunters-claims-patient-data-theft/",
+     "summary": "McKesson於8月25日發現第三方應用程式遭未授權存取，ShinyHunters聲稱透過語音釣魚滲透兩名員工帳號，從Salesforce與Snowflake竊得約2.84億筆記錄，內容含病患社會安全碼、醫療紀錄與保險資訊。駭客要求5,520萬美元贖金遭拒，McKesson稱調查仍在初期階段，暫不認為客戶需採取行動。",
+     "source": "BleepingComputer",
+     "tags": ["MCKESSON", "SHINYHUNTERS", "DATA BREACH", "HEALTHCARE"]
+    },
+    {
+     "severity": "critical",
+     "title": "後續｜PaperCut緊急補丁遭繞過 釋出第二次修補堵住NG/MF鏈式漏洞",
+     "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+     "summary": "PaperCut於8月28日與資安團隊watchTowr、Huntress合作，針對先前緊急修補遭繞過的問題發布第二輪更新。CVE-2026-82078（CVSS 9.4，資料庫連線工具不安全動態載入類別）與CVE-2026-81578（CVSS 8.8，網頁管理介面驗證繞過）可鏈式串連取得程式碼執行，NG/MF第24、25、26版皆受影響，官方呼籲用戶立即更新。",
+     "source": "BleepingComputer",
+     "tags": ["PAPERCUT", "CVE-2026-82078", "CVE-2026-81578", "PATCH"]
+    },
+    {
+     "severity": "critical",
+     "title": "WPMU DEV Dashboard插件現CVSS 9.8驗證繞過漏洞 逾35萬網站待更新",
+     "url": "https://github.com/advisories/GHSA-82jx-g559-m3rq",
+     "summary": "Wordfence研究員於8月19日發現WPMU DEV Dashboard 5.0.1以下版本存在Hub SSO流程HMAC訊息重放缺陷（CVE-2026-15459），未授權攻擊者可偽造簽章跳過驗證並安裝任意外掛達成遠端程式碼執行，影響約35萬個啟用網站。官方已於8月24日釋出5.0.2版修補，強制伺服器端驗證HMAC僅能使用一次。",
+     "source": "GitHub Advisory Database",
+     "tags": ["CVE-2026-15459", "WORDPRESS", "WPMU DEV", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "新型AiTM釣魚服務NovaCookies月租320美元 濫用真實DocuSign通知竊取M365會話",
+     "url": "https://thehackernews.com/2026/08/novacookies-campaigns-abuse-genuine.html",
+     "summary": "企業瀏覽器廠商Island揭露訂閱制中間人釣魚服務「NovaCookies」，提供誘餌網域、代管與即時轉發功能竊取Microsoft 365已驗證會話。攻擊鏈利用真實DocuSign文件共享通知，並經微軟、Google合法登入端點跳轉躲避偵測，已鎖定美、英、加、德、以色列、阿聯酋數百個組織，目前無官方修補，建議企業啟用防釣魚MFA金鑰。",
+     "source": "The Hacker News",
+     "tags": ["NOVACOOKIES", "AITM", "PHISHING", "MICROSOFT 365"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台海罕見連6日未偵獲共機 國防部：24小時內仍有共艦7艘、公務船6艘活動",
+     "url": "https://tw.news.yahoo.com/%E5%8F%B0%E6%B5%B7%E7%BD%95%E8%A6%8B%E8%BF%916%E5%A4%A9%E6%9C%AA%E5%86%8D%E5%81%B5%E7%8D%B2%E5%85%B1%E6%A9%9F-7%E5%85%B1%E8%89%A6-6%E5%85%AC%E5%8B%99%E8%88%B9%E4%BB%8D%E5%9C%A8%E5%91%A8%E9%82%8A%E6%B4%BB%E5%8B%95-%E5%8C%97%E4%BA%AC%E6%B5%B7%E7%A9%BA%E5%85%B5%E5%8A%9B%E5%87%BA%E7%8F%BE%E6%98%8E%E9%A1%AF%E8%90%BD%E5%B7%AE-052519916.html",
+     "summary": "國防部8月29日公布最近一次（8月28日6時至29日6時）台海周邊動態：未偵獲共機，但共艦7艘、中國公務船6艘持續在周邊活動。國軍上次偵獲共機為8月23日的2架次主戰機，這是近期少見連續6日無共機動態的空中活動落差，國防部未說明具體原因。",
+     "source": "Yahoo新聞",
+     "tags": ["MND", "TAIWAN STRAIT", "PLA"]
+    },
+    {
+     "severity": "info",
+     "title": "福建海警金門海域常態化執法巡查 陸方稱維護廈金水域航行秩序",
+     "url": "https://www.chinanews.com.cn/gn/2026/08-29/10686346.shtml",
+     "summary": "中國海警局東海分局發言人朱安慶8月29日表示，福建海警持續在金門周邊海域開展常態化執法巡查，稱旨在維護兩岸漁民權益與廈金海域航行秩序。此舉延續8月休漁期結束後中國漁船大量出港、對周邊海域造成壓力的態勢，凸顯北京對金門周邊海域管轄權主張的常態化操作。",
+     "source": "中新社",
+     "tags": ["KINMEN", "CHINA COAST GUARD", "CROSS-STRAIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "川習會敲定9月24日登場 習近平訪白宮同時美擬對中國加徵7.5%產能過剩關稅",
+     "url": "https://www.bloomberg.com/news/articles/2026-08-24/us-eyes-china-overcapacity-tariffs-of-7-5-before-xi-trump-talks",
+     "summary": "白宮已敲定9月24日為習近平對美國事訪問日期，為逾十年來中國國家元首首次正式訪美。同時美方擬於高峰會前對中國「產能過剩」商品加徵7.5%關稅，將使對中關稅回升至吉隆坡停火協議設定的約20%上限，議程預期涵蓋AI治理、出口管制與台灣議題。",
+     "source": "Bloomberg",
+     "tags": ["TRUMP", "XI JINPING", "TARIFF", "SUMMIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "北韓試射10枚彈道飛彈 川普縮減美韓軍演隔日回應 中俄持續力挺規避制裁",
+     "url": "https://news.nextapple.com/international/20260820/08520DD1C9BD830235926712CCC68323",
+     "summary": "北韓8月20日向東部海域發射約10枚短程彈道飛彈，時間點正值川普下令縮減美韓聯合軍演隔天。分析指出，金正恩藉俄羅斯與中國持續提供石油、軍事合作等奧援規避國際制裁，國際地位不減反升，川普則稱金正恩已對其示好有所回應。",
+     "source": "壹蘋新聞網",
+     "tags": ["NORTH KOREA", "MISSILE", "KIM JONG UN", "SANCTIONS"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股本週收復月線 累計上漲逾1,100點收46,331點 台積電站穩2,420元",
+     "url": "https://finance.ettoday.net/news/3227386",
+     "summary": "台股本週（8/24-8/28）由挫轉堅，加權指數週線淨漲約1,106點，週五收在46,331點、單日成交量重新站上兆元，台積電同步收復月線收2,420元。市場情緒隨輝達財報優於預期與伊朗荷姆茲海峽風險降溫回穩。",
+     "source": "ETtoday",
+     "tags": ["TAIEX", "TSMC", "TAIWAN STOCK"]
+    },
+    {
+     "severity": "info",
+     "title": "美股週線收紅結束三週低迷 那斯達克週漲0.9% 但週五因華許鷹派發言拉回",
+     "url": "https://www.cnbc.com/2026/08/27/stock-market-today-live-updates.html",
+     "summary": "美股本週標普500週漲0.5%、那斯達克週漲0.9%、道瓊週漲0.5%，創三週來首見週線收紅。惟週五三大指數同步收黑（道瓊跌9.45點、標普跌0.25%、那斯達克跌0.52%），因Fed主席華許於傑克森霍爾年會演說示警通膨過高，市場押注9月升息機率跳升至57%。",
+     "source": "CNBC",
+     "tags": ["S&P 500", "NASDAQ", "FED", "JACKSON HOLE"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油單週重挫逾5% 收在88美元附近 荷姆茲海峽風險降溫壓抑油價",
+     "url": "https://www.aol.com/articles/oil-track-weekly-loss-even-011619000.html",
+     "summary": "布蘭特原油期貨本週結算約89.31美元，單週跌幅超過5%，扭轉先前因伊朗制裁與荷姆茲海峽封鎖疑慮推升的漲勢。市場消化聯準會政策線索與荷姆茲海峽通行安排傳出進展的消息，油價風險溢價明顯收斂。",
+     "source": "AOL/路透",
+     "tags": ["BRENT CRUDE", "OIL PRICE", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣連5週走升 8/28收31.628元 週期累計升值7.3角",
+     "url": "https://news.cnyes.com/news/id/6590784",
+     "summary": "新台幣週五（8/28）以31.628元作收、單日升值8分，延續連續第5週升值走勢，5週以來累計升幅達7.3角，外資資金匯入持續撐盤，台北外匯經紀公司當日成交值16.8億美元。",
+     "source": "鉅亨網",
+     "tags": ["TWD", "TAIWAN DOLLAR", "FOREX"]
+    }
+   ]
+  }
+ ]
+}

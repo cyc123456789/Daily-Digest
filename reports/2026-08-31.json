@@ -1,0 +1,106 @@
+{
+ "date": "2026-08-31",
+ "focus": "ServiceNow AI Platform爆三項CVSS滿分10.0漏洞，未驗證攻擊者可執行任意程式碼或SQL注入，官方籲儘速修補",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "ServiceNow AI Platform三項CVSS滿分10.0漏洞 未驗證攻擊者可執行RCE或SQL注入",
+     "url": "https://thehackernews.com/2026/08/three-cvss-100-servicenow-flaws-could.html",
+     "summary": "ServiceNow於8月27日發布安全公告，修補AI Platform四項漏洞，其中CVE-2026-18885（GraphQL Composite Data API程式碼注入）、CVE-2026-18886（系統設定圖片上傳流程存取控制缺失）及CVE-2026-74820（SQL注入）三項CVSS均為滿分10.0，未經驗證攻擊者可執行任意程式碼或竄改資料庫。雲端託管實例已自動套用修補，自建（self-hosted）客戶須自行更新；官方稱目前未發現在野利用案例。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-18885", "SERVICENOW", "RCE", "SQLI"]
+    },
+    {
+     "severity": "critical",
+     "title": "五款WordPress外掛／主題現CVSS 9.8至10.0重大漏洞 數十萬網站曝險",
+     "url": "https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html",
+     "summary": "資安研究人員披露Avada主題（CVE-2026-18431，CVSS 9.8，任意檔案寫入可致RCE）、TranslatePress外掛（CVE-2026-19632，CVSS 9.8，洩漏管理員密碼重設金鑰）、GiveWP捐款外掛（CVE-2026-82222，CVSS 10.0，遠端命令執行）等五項重大漏洞，影響數十萬個WordPress網站，各廠商已釋出修補版本，管理員應立即更新至安全版本。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-82222", "WORDPRESS", "RCE", "GIVEWP"]
+    },
+    {
+     "severity": "high",
+     "title": "Rhysida勒索軟體入侵柏林市政府網路 竊取5.79TB資料遭拒付贖金",
+     "url": "https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html",
+     "summary": "柏林市政府證實8月遭Rhysida勒索軟體集團入侵州級行政網路，鑑識調查確認交通與環境局資料外洩時間為8月7日至12日，集團宣稱竊得約5.79TB資料並以30枚比特幣勒索。柏林市長韋格納與內政參議員史普蘭格聯合聲明拒絕支付贖金，並強調選舉相關基礎設施與資料未受影響。",
+     "source": "The Hacker News",
+     "tags": ["RHYSIDA", "RANSOMWARE", "GERMANY", "BERLIN"]
+    },
+    {
+     "severity": "warning",
+     "title": "俄羅斯背景APT28旗下HOOKEDGE後門鎖定歐洲政府外交機構 假冒西班牙外交文件植入",
+     "url": "https://thehackernews.com/2026/08/apt28-linked-hookedge-backdoor-targets.html",
+     "summary": "Recorded Future以中等信心將新型批次檔後門「HOOKEDGE」歸因於俄羅斯背景APT28（BlueDelta），攻擊者以帶巨集的Word文件為誘餌，假冒西班牙外交部文件，鎖定羅馬尼亞、西班牙、土耳其政府與外交機構，並濫用webhook.site作為C2與資料外洩管道躲避偵測。目前無官方修補，建議機構加強巨集文件與異常webhook流量監控。",
+     "source": "The Hacker News",
+     "tags": ["APT28", "HOOKEDGE", "BLUEDELTA", "ESPIONAGE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內偵獲共機3架次(1架逾中線)、共艦8艘、公務船5艘 台海連6日無共機紀錄中斷",
+     "url": "https://newtalk.tw/news/view/2026-08-30/1056577",
+     "summary": "國防部表示，29日6時至30日6時期間偵獲3架次共機均為直升機，分別進入台灣北部、東部空域，其中1架次逾越台海中線，另有8艘共艦、5艘公務船在台海周邊活動，國軍運用任務機、艦及岸置飛彈系統嚴密監控應處，結束此前連續6日未偵獲共機的紀錄。",
+     "source": "Newtalk新聞",
+     "tags": ["MND", "PLA", "TAIWAN STRAIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "共軍南部戰區證實黃岩島戰備警巡 中菲南海對峙未歇",
+     "url": "https://udn.com/news/story/7331/8971556",
+     "summary": "中國人民解放軍南部戰區證實自8月29日起在黃岩島領海周邊海空域展開戰備警巡，稱黃岩島為中國固有領土，將持續強化管控力度應對「侵權挑釁」；中國海警同步在該海域執行常態化執法巡查。中菲雙方近期已多次在黃岩島周邊發生船艦對峙與噴水砲驅離事件，緊張態勢持續升溫。",
+     "source": "聯合新聞網",
+     "tags": ["SOUTH CHINA SEA", "SCARBOROUGH", "PHILIPPINES", "PLA"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "川習會9月24日登場 議程納入台灣議題 美方擬會前對中加徵7.5%關稅",
+     "url": "https://finance.yahoo.com/economy/policy/articles/us-eyes-china-overcapacity-tariffs-152951442.html",
+     "summary": "美中官方確認川普將於9月24日在華府接待來訪的習近平，是今年繼5月川普訪北京後第二次川習會晤，議程預期涵蓋AI治理、出口管制、台灣議題及11月10日貿易休兵到期後的雙邊經貿架構。美方同步計畫會前對中國「產能過剩」商品加徵7.5%關稅，將對中整體關稅稅率拉回約20%，官員稱此舉不致引爆貿易休兵破裂。",
+     "source": "Bloomberg",
+     "tags": ["TRUMP", "XI", "TARIFF", "TAIWAN"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜日本跨黨派議員團訪京無果 中方：日方不改台灣立場就無法重啟關係",
+     "url": "https://www.japantimes.co.jp/news/2026/08/27/japan/politics/japanese-lawmakers-visit-china/",
+     "summary": "繼日本跨黨派國會議員團8月訪北京尋求緩解「台灣有事」外交危機後，中共中央對外聯絡部副部長陸慷向訪團表示，中日關係正面臨嚴峻困難、根源明確，除非日本修正對台立場，否則北京不會重啟雙邊關係。首相高市早苗至今未撤回相關言論，中日外交僵局未見緩解。",
+     "source": "The Japan Times",
+     "tags": ["JAPAN", "CHINA", "TAKAICHI", "TAIWAN"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "Fed主席華許鷹派言論推升9月升息押注至逾5成 美元走強、日圓貼近160",
+     "url": "https://www.cnbc.com/2026/08/28/treasury-yields-jackson-hole.html",
+     "summary": "Fed主席華許在傑克森霍爾年會首場演說中強調抗通膨優先，稱「若核心通膨未確實朝2%目標收斂，我們仍有工作要做」，市場解讀為鷹派訊號，2年期公債殖利率單日跳升12個基點至4.35%，交易員押注9月升息機率從演說前約35%躥升至逾57%。美元隨之走強，美元兌日圓觸及160關口，逼近7月底美日聯合干預匯市的水準。",
+     "source": "CNBC",
+     "tags": ["FED", "WARSH", "RATE HIKE", "USDJPY"]
+    },
+    {
+     "severity": "medium",
+     "title": "7月核心PCE年增3.3%符合預期 通膨僵持不退考驗Fed政策路徑",
+     "url": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html",
+     "summary": "美國7月PCE物價指數年增3.7%、核心PCE年增3.3%，均與市場預期一致，但仍遠高於Fed 2%目標。今年5月因以色列-伊朗衝突推升能源價格，通膨曾攀升至4.1%高點，此後6、7月數據顯示通膨僅呈現「持平」而非明顯回落，加深聯準會內部對9月利率決策的分歧。",
+     "source": "CNBC",
+     "tags": ["PCE", "INFLATION", "FED", "CPI"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-01",
+ "focus": "美軍逾月來首度打擊伊朗荷姆茲海峽目標，伊朗誓言報復，布蘭特原油漲破90美元、美股全面收黑",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA將TrueConf視訊會議伺服器雙漏洞列入在野利用清單 Head Mare組織藉此散布PhantomCore",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/",
+     "summary": "CISA證實CVE-2026-72529（CVSS 9.8，未驗證攻擊者可透過TCP 4307埠執行任意腳本）與CVE-2026-72530（CVSS 9.0，程式碼注入並逃逸沙箱）遭俄羅斯背景駭客組織Head Mare串聯利用，竄改TrueConf客戶端安裝檔案，向會議參與者植入PhantomCore惡意軟體。官方已於2026年6月釋出v5.3.9、v5.4.9、v5.5.5修補版本，CISA要求聯邦機關限期3天與2週內完成更新。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-72529", "CISA KEV", "TRUECONF", "HEAD MARE"]
+    },
+    {
+     "severity": "high",
+     "title": "美國ATF（菸酒槍炮及爆裂物管理局）遭Qilin勒索軟體列入外洩名單 司法部認定重大事件",
+     "url": "https://www.bleepingcomputer.com/news/security/atf-confirms-major-incident-after-recent-qilin-breach-claims/",
+     "summary": "Qilin勒索軟體集團8月26日將ATF列上其暗網外洩網站，同日該局證實一套獨立於主網路的系統遭入侵，內含辦案調查對象相關資訊。美國司法部已依聯邦準則將此事列為「重大事件」介入調查，ATF強調eForms系統與企業網路未受影響，但目前外洩資料樣本與具體規模仍無公開證據。",
+     "source": "BleepingComputer",
+     "tags": ["ATF", "QILIN", "RANSOMWARE", "US GOV"]
+    },
+    {
+     "severity": "high",
+     "title": "Aurora勒索軟體集團操控Cursor AI程式碼代理人手動入侵至少7家企業",
+     "url": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
+     "summary": "資安業者CloudSEK與Gambit Security發現，操俄語的Aurora勒索軟體攻擊者於4至5月間，在取得帳密或內網跳板後直接操縱搭載Anthropic Claude Sonnet模型的Cursor AI程式碼代理人執行入侵後手動操作，比利時清潔用品商Christeyns、德國車庫門大廠Teckentrup等至少7家企業證實受害，部分並遭部署客製化ESXi加密程式。事件因攻擊者伺服器意外曝露於公網、留下數月對話紀錄才曝光。",
+     "source": "The Hacker News",
+     "tags": ["AURORA", "RANSOMWARE", "CURSOR AI", "ESXI"]
+    },
+    {
+     "severity": "medium",
+     "title": "Silver Fox駭客集團藏身簽章版中國桌布程式散布ValleyRAT後門",
+     "url": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
+     "summary": "中國背景駭客組織Silver Fox將「QN桌布」正版廣告軟體改造為感染媒介，利用其合法簽章執行檔載入惡意libcef.dll，藉此繞過使用者對已簽章程式的防毒排除清單信任，植入具鍵盤側錄、螢幕截圖與完整遠端控制能力的ValleyRAT（亦稱Winos 4.0）後門。目標鎖定中國與印度使用者，尚無官方修補公告，建議使用者勿將來路不明桌布軟體列入防毒排除清單。",
+     "source": "The Hacker News",
+     "tags": ["SILVER FOX", "VALLEYRAT", "WINOS 4.0", "BACKDOOR"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機3架次(1架逾中線)、共艦8艘、公務船5艘 3架均為直升機",
+     "url": "https://newtalk.tw/news/view/2026-08-30/1056577",
+     "summary": "國防部發布新聞稿指出，8月29日上午6時至8月30日上午6時止，共偵獲中共直升機3架次，其中1架次逾越台海中線，3架次全數進入我北部及東部空域；另有共艦8艘、海警等公務船5艘同步在台海周邊活動。國軍表示已運用任務機、艦及岸置飛彈系統全程監控應處。",
+     "source": "Newtalk新聞",
+     "tags": ["國防部", "共機", "共艦", "台海"]
+    },
+    {
+     "severity": "medium",
+     "title": "廈門推對台12條措施喊金廈大橋年底通車 陸委會：政府無此規劃、勿隨中共議題起舞",
+     "url": "https://news.ltn.com.tw/news/politics/breakingnews/5545504",
+     "summary": "中國福建廈門市發布「促進對台交流合作12條措施」，宣稱將推進金廈大橋建設、爭取年底海上主線通車。陸委會回應強調政府對兩岸通橋並無政策及規劃，籲請社會各界不要隨中共當局設定的議題起舞，提醒相關措施本質仍是對台統戰手法之一環。",
+     "source": "自由時報",
+     "tags": ["陸委會", "廈門", "金廈大橋", "統戰"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "美軍逾月來首度打擊伊朗 荷姆茲海峽附近摧毀火箭發射器 伊朗誓言報復",
+     "url": "https://www.cnbc.com/2026/08/30/us-iran-strikes-strait-hormuz.html",
+     "summary": "美軍8月30日（週日）打擊拉拉克島附近準備向荷姆茲海峽發射水雷火箭的伊朗革命衛隊發射器，為雙方持續逾半年間歇衝突以來，美方逾一個月首次採取軍事行動。伊朗革命衛隊證實有人員傷亡，並誓言報復，市場憂心衝突再度升溫，布蘭特原油應聲走揚。",
+     "source": "CNBC",
+     "tags": ["伊朗", "荷姆茲海峽", "IRGC", "美軍"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川習會倒數：中國半導體關稅逼近70% 美擬加徵7.5%產能過剩新關稅",
+     "url": "https://fortune.com/2026/08/24/trump-new-tariff-china-cheap-exports-trade-war-truce-summit-xi-jinping/",
+     "summary": "距9月24日川習會登場前，美方正籌劃針對中國「產能過剩」商品加徵7.5%新關稅層級，疊加既有第301條款關稅後，中國半導體綜合關稅稅率逼近70%。分析指美方評估此舉不致危及雙方一年期貿易休兵協議或如期登場的川習會，但雙邊就價值最高300億美元非敏感商品的產品別關稅減讓框架仍在磋商中。",
+     "source": "Fortune",
+     "tags": ["川習會", "關稅", "半導體", "美中"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜中菲黃岩島再爆對峙 王毅警告菲國恐「自食苦果」翌日即衝突",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3361523/after-latest-clash-sea-china-warns-philippines-bitter-consequences",
+     "summary": "中國海警稱於黃岩島附近驅離兩艘「非法侵入」中國轄水域的菲律賓公務船，衝突發生於中國外長王毅在東協外長會期間警告菲方若聯合外部勢力挑釁北京將「自食苦果」的隔天。南海行為準則談判持續停滯，中菲海上摩擦頻率已超越外交進展速度。",
+     "source": "South China Morning Post",
+     "tags": ["南海", "黃岩島", "中菲", "王毅"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股8/31收漲203點站上46,128點 連兩日上漲",
+     "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+     "summary": "加權指數8月31日開高走高，終場收46,128.47點，上漲202.98點、漲幅0.44%，盤中最高觸及46,224.69點、最低45,450.21點，延續近日反彈力道。",
+     "source": "Yahoo股市",
+     "tags": ["台股", "加權指數", "TWII"]
+    },
+    {
+     "severity": "warning",
+     "title": "美股週一齊跌：伊朗衝突推升油價、Fed九月升息押注跳增至6成",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-31-dow-sp-500-nasdaq-113851714.html",
+     "summary": "美軍週日打擊伊朗後，道瓊8月31日收跌0.60%、標普500跌0.45%、那斯達克跌0.38%，能源類股逆勢走高近2%，本月漲幅逾6%。市場對Fed 9月升息一碼的押注機率一週內由約4成跳增至62%，Fed主席華許同日在G20場邊重申對美國經濟具信心，並持續示警通膨過熱。",
+     "source": "Yahoo Finance",
+     "tags": ["美股", "FED", "升息", "伊朗"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油衝破90美元 美軍打擊伊朗推升風險溢價",
+     "url": "https://www.thenationalnews.com/news/us/2026/08/30/us-strikes-iran-near-strait-of-hormuz-in-first-military-action-in-a-month/",
+     "summary": "美軍週日打擊伊朗革命衛隊拉拉克島發射器後，布蘭特原油單日上漲近1.9%至89.79美元，週一盤中進一步衝上90美元關卡，市場憂心荷姆茲海峽航運安全再度受威脅，扭轉上週因中東緊張降溫而下跌逾5%的走勢。",
+     "source": "The National",
+     "tags": ["布蘭特原油", "荷姆茲海峽", "伊朗", "油價"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣8/31貶值收31.685元 終止連5週升值走勢",
+     "url": "https://www.investing.com/currencies/usd-twd",
+     "summary": "美元兌新台幣8月31日升值0.13%至31.685元，即新台幣兌美元轉貶，中止先前連續5週升值格局。市場解讀與美元因Fed 9月升息預期升溫而走強有關，加上美軍打擊伊朗牽動避險情緒，新台幣匯率短線轉為區間震盪。",
+     "source": "Investing.com",
+     "tags": ["新台幣", "匯率", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

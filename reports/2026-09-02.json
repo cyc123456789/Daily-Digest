@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-02",
+ "focus": "美軍9月1日再度空襲伊朗革命衛隊，報復荷姆茲海峽水雷攻擊未遂，美伊衝突持續升溫、推升油價並拖累美股。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "駭客鏈結Langflow RCE與Rails漏洞 建立C2通道大規模憑證探測攻擊",
+     "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
+     "summary": "VulnCheck發現攻擊者結合Langflow自訂元件驗證器未授權RCE漏洞（CVE-2026-0768，CVSS 9.8）與Rails「KindaRails2Shell」任意檔案讀取漏洞（CVE-2026-66066，CVSS 9.5），竊取雲端金鑰、SSH與環境變數等憑證。8月30日短短數小時內偵測到逾50次攻擊，至9月1日已增至360次，並觀測到與境外主機建立C2連線；兩項漏洞皆已有修補版本，尚未更新的Langflow與Rails部署應立即升級。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-0768", "CVE-2026-66066", "LANGFLOW", "RAILS"]
+    },
+    {
+     "severity": "critical",
+     "title": "Metabase遭CVSS滿分10.0 SQL注入零時差攻擊 CISA已列入在野利用清單",
+     "url": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+     "summary": "Metabase Cloud遭利用/api/session/reset_password端點的未驗證SQL注入漏洞（CVE-2026-72898，CVSS 10.0），攻擊者可取得管理員權限、竊取連接資料庫憑證並匯出資料。受影響版本涵蓋1.58.0至1.63.3共六條發布線，官方已釋出1.58.24等六個修補版本；CISA已將此漏洞列入在野利用清單，要求聯邦機關8月14日前完成修補。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-72898", "METABASE", "CISA-KEV", "SQLI"]
+    },
+    {
+     "severity": "critical",
+     "title": "GeoServer零時差SQL注入漏洞遭主動掃描 可鏈結取得RCE",
+     "url": "https://thehackernews.com/2026/08/unpatched-geoserver-zero-day-targeted.html",
+     "summary": "開源地理資訊平台GeoServer的jsonArrayContains功能存在未驗證SQL注入漏洞（CVSS 9.8，GHSA-mqjf-5f49-2fjh），公開揭露後數小時內即遭大量掃描與探測，在特定H2資料庫部署下可鏈結取得遠端程式碼執行。官方已釋出3.0.1、2.28.5、2.27.6修補版本，未升級的公開GeoServer應立即更新或以防火牆、VPN隔離。",
+     "source": "The Hacker News",
+     "tags": ["GEOSERVER", "SQLI", "RCE", "GHSA-MQJF"]
+    },
+    {
+     "severity": "high",
+     "title": "北韓Lazarus集團利用Windows核心零時差漏洞植入FudModule後門 鎖定國防產業",
+     "url": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
+     "summary": "Lazarus集團自今年7月起利用Windows Ancillary Function Driver（afd.sys）競態條件零時差漏洞（CVE-2026-68820，CVSS 7.0）取得SYSTEM權限，藉「Dream Job」假求職信滲透國防業者後植入升級版FudModule Rootkit與ForestTiger後門。微軟已於8月Patch Tuesday修補，CISA已列入在野利用清單並要求聯邦機關8月25日前完成修補。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-68820", "LAZARUS", "FUDMODULE", "CISA-KEV"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內偵獲共機2架次、共艦5艘、公務船5艘 均未逾越中線",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部統計自8月31日6時至9月1日6時止，偵獲2架次中國軍機侵擾台灣北部、東部空域，另有5艘共艦、5艘公務船在台海周邊活動，均未通報逾越海峽中線，國軍運用任務機艦與岸置飛彈系統嚴密監控應處。",
+     "source": "中央廣播電臺",
+     "tags": ["MND", "台海", "PLA"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部年度施政報告：中國灰色地帶襲擾升溫 國軍縮減非急迫項目衝刺國防預算",
+     "url": "https://www.taipeitimes.com/News/front/archives/2026/09/01/2003863467",
+     "summary": "國防部隨明年度預算提交「五年建軍及施政計畫報告」與「2026年中國軍力報告」，評估中國對台灣的灰色地帶襲擾持續升溫、軍事能力快速擴張；國軍將延後非急迫採購案，優先編列步槍、夜視器材、可攜式反無人機系統與輪型戰甲車預算，並編列預算汰換1986年生產、已無法有效防護生化核威脅的T3-75防護面具。",
+     "source": "Taipei Times",
+     "tags": ["MND", "國防預算", "灰色地帶"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美軍再度空襲伊朗革命衛隊 報復荷姆茲海峽水雷攻擊企圖",
+     "url": "https://www.washingtontimes.com/news/2026/sep/1/us-strikes-irgc-targets-iran-attempted-attacks-vessels-strait-hormuz/",
+     "summary": "美軍9月1日再度打擊伊朗革命衛隊位於班達阿巴斯等南部據點的目標，川普證實此舉為報復伊朗稍早在荷姆茲海峽試圖對商船佈雷、以及先前攻擊約旦美軍基地。川普警告伊朗若再報復將面臨「更強硬」打擊，美伊自6月停火備忘錄後衝突持續升溫呈膠著狀態。",
+     "source": "Washington Times",
+     "tags": ["伊朗", "荷姆茲海峽", "IRGC", "美軍"]
+    },
+    {
+     "severity": "warning",
+     "title": "美中川習會前討論「非敏感」產品互降關稅 為半導體對抗降溫鋪路",
+     "url": "https://asia.nikkei.com/spotlight/trump-xi-summit/us-china-debate-nonsensitive-tariff-cuts-ahead-of-trump-xi-summit",
+     "summary": "美中官員在9月24日川習會前就「非敏感」產品互降關稅展開初步磋商，但雙方尚未就降幅範圍達成共識；此舉與美方同期擬對中國半導體加徵7.5%產能過剩關稅、推高相關關稅逼近70%的緊縮動作形成對比，顯示雙邊貿易關係仍在鬆緊拉鋸。",
+     "source": "Nikkei Asia",
+     "tags": ["美中", "關稅", "川習會"]
+    },
+    {
+     "severity": "info",
+     "title": "日本首相高市早苗盼川習會前搶先會晤川普 憂兩強博弈波及日本利益",
+     "url": "https://asia.nikkei.com/politics/international-relations/as-us-china-summit-nears-japan-s-takaichi-wants-face-time-with-trump",
+     "summary": "因應9月24日川習會，日本首相高市早苗希望能在國際場合提前與川普會晤溝通，東京方面憂心北京關稅協議、北韓外交動向等議題可能在美中峰會中被犧牲日本利益換取；日中關係因高市先前涉台言論持續緊張，尚未見緩和跡象。",
+     "source": "Nikkei Asia",
+     "tags": ["日本", "高市早苗", "美中", "台灣"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "美股9/1受伊朗衝突與公債殖利率飆升拖累 那斯達克連跌",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-1-135016820.html",
+     "summary": "美股9月1日普遍收黑，標普500指數收7,686.14點、跌0.33%，那斯達克指數收26,370.89點、跌0.12%；美軍當日打擊伊朗革命衛隊推升原油價格，加上全球公債殖利率同步走高，共同壓抑風險偏好。",
+     "source": "Yahoo Finance",
+     "tags": ["S&P500", "NASDAQ", "伊朗", "公債殖利率"]
+    },
+    {
+     "severity": "info",
+     "title": "台股9/1收漲820點站上46,948點 台積電漲35元收2,440元",
+     "url": "https://tradingeconomics.com/taiwan/stock-market/news/540808",
+     "summary": "加權指數9月1日大漲820.25點（+1.78%），收在46,948.72點，創六週新高；台積電上漲35元、漲幅1.46%，收在2,440元，帶動大盤同步走揚。",
+     "source": "Trading Economics",
+     "tags": ["TWII", "台股", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/1漲至92美元附近 美伊衝突升高風險溢價",
+     "url": "https://fortune.com/article/price-of-oil-09-01-2026/",
+     "summary": "布蘭特原油9月1日一度衝上92美元以上，較前一交易日上漲約0.9%，主因美軍當日打擊伊朗革命衛隊、荷姆茲海峽緊張情勢再度升溫，帶動原油風險溢價擴大。",
+     "source": "Fortune",
+     "tags": ["布蘭特原油", "荷姆茲海峽", "伊朗"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/2貶值3.8分收31.666元 終止升值走勢",
+     "url": "https://money.udn.com/money/story/5616/9724986",
+     "summary": "新台幣兌美元9月2日以31.666元作收，貶值3.8分，成交金額27.09億美元；相較9月1日升值3.3分收31.633元的表現，新台幣匯率轉為走貶。",
+     "source": "經濟日報",
+     "tags": ["新台幣", "匯率", "TWD"]
+    }
+   ]
+  }
+ ]
+}

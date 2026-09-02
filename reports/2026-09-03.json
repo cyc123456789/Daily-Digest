@@ -1,0 +1,122 @@
+{
+ "date": "2026-09-03",
+ "focus": "伊朗9月2日反擊波灣鄰國、婚禮空襲爭議延燒，美伊衝突逼近半年；國際油價走高拖累台股重挫784點收46,164點。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "JFrog Artifactory驗證繞過漏洞遭鎖定 攻擊者鑄造管理員權杖列舉憑證",
+     "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
+     "summary": "JFrog於8月28日修補預設組態下的未驗證存取漏洞（CVE-2026-82329，CVSS 9.8），watchTowr於8月31日觀測到攻擊者已開始利用此漏洞鑄造管理員權杖，並列舉使用者、群組、憑證組與聯合存取拓撲。尚未升級的Artifactory部署應立即套用官方修補版本。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-82329", "JFROG", "ARTIFACTORY", "AUTH-BYPASS"]
+    },
+    {
+     "severity": "critical",
+     "title": "Sangoma Switchvox SQL注入漏洞遭在野利用 攻擊者植入反向殼層",
+     "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
+     "summary": "企業VoIP平台Sangoma Switchvox SMB Edition的/pa端點存在未驗證SQL注入漏洞（CVE-2026-9586，CVSS 9.3），可鏈結遠端執行任意程式碼；蜜罐系統自8月30日起偵測到攻擊者利用此漏洞植入反向殼層並列舉執行中程序。官方已於7月14日發布8.4.0.2修補版本，全球約4,000台暴露於網際網路的實例多數位於美國，尚未更新者應立即修補。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-9586", "SANGOMA", "SWITCHVOX", "SQLI"]
+    },
+    {
+     "severity": "high",
+     "title": "GitSpawn漏洞：惡意.git設定可騎劫Claude Code、Codex、Cursor等AI程式碼代理人",
+     "url": "https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html",
+     "summary": "資安業者Manifold Security揭露7款命令列AI程式碼代理人共8項漏洞，惡意程式庫可在其.git設定中埋藏指令，代理人執行例行的context-gathering git指令時即以使用者權限執行、完全繞過沙箱與權限提示。goose、Claude Code與Cursor已釋出修補，但Hermes Agent、Qwen Code、Grok Build及Claude Code另一路徑於9月1日重測時仍可被觸發；OpenAI同日針對Codex發布三項CVE。",
+     "source": "The Hacker News",
+     "tags": ["GITSPAWN", "AI-AGENT", "CLAUDE-CODE", "SUPPLY-CHAIN"]
+    },
+    {
+     "severity": "high",
+     "title": "13款惡意Packagist套件鎖定未修補iPhone 竊取加密貨幣錢包種子",
+     "url": "https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html",
+     "summary": "研究人員發現13款惡意Composer佈景主題套件散布於vsmov、vsphim等命名空間下，注入越南影音串流網站後對iOS 18.4至18.6.x未修補裝置發動WebKit至核心層漏洞鏈（CVE-2025-31277、CVE-2025-43529），8月12日起新增iOS鑰匙圈掃描功能，竊取Bitget、Phantom、Trust Wallet等加密貨幣錢包助記詞。使用者應確認iOS已更新至最新版本並避免安裝來源不明的佈景套件。",
+     "source": "The Hacker News",
+     "tags": ["PACKAGIST", "IOS", "CRYPTO-THEFT", "WEBKIT"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "陸方坦承審問赴滬台青6小時 陸委會：勿再替中共洗白",
+     "url": "https://news.ltn.com.tw/news/politics/breakingnews/5561061",
+     "summary": "國台辦9月2日證實，一名曾任職國際特赦組織的台灣青年入境上海時遭邊防人員盤查並帶至密室審問6小時，最終自願放棄入境返台；北京稱此舉「完全合理合法」。陸委會回應，政府已多次提醒赴陸應注意人身安全風險，如今國台辦親口證實，各界不應再替中共洗白。",
+     "source": "自由時報",
+     "tags": ["陸委會", "國台辦", "上海", "人身安全"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：9月2日偵獲共機5架次(3架逾中線)、共艦持續在台海周邊活動",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部表示9月2日24小時內偵獲中國軍機5架次，其中3架逾越台灣海峽中線進入我西南空域，另有解放軍艦艇同步在台海周邊活動；國軍運用任務機艦與岸置飛彈系統嚴密監控應處。（因新聞索引延遲，數字轉引自外電摘要，屬近似值，正式數據以國防部官網為準。）",
+     "source": "國防部",
+     "tags": ["MND", "台海", "PLA"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜伊朗反擊波灣鄰國 婚禮空襲爭議延燒 六個月戰事再升溫",
+     "url": "https://www.npr.org/2026/09/02/nx-s1-5954013/us-iran-war-latest-updates",
+     "summary": "在美軍9月1日對伊朗革命衛隊發動一夜轟炸後，伊朗9月2日對波灣多個美國盟友國家發動反擊，打破約一個月的低強度僵持。伊朗官方指控美軍空襲擊中南部庫赫斯塔克鎮一場婚禮、造成至少4死68傷，美軍中央司令部表示正在查證；衝突已持續近六個月，推升國際油價並衝擊全球經濟。",
+     "source": "NPR",
+     "tags": ["伊朗", "荷姆茲海峽", "美軍", "波灣"]
+    },
+    {
+     "severity": "warning",
+     "title": "美擬將半導體關稅擴及筆電、伺服器與遊戲主機 盧特尼克：不在美建廠就課稅",
+     "url": "https://www.koreatimes.co.kr/world/20260903/lutnick-trump-govt-considering-targeted-thoughtful-tariff-policy-for-semiconductors",
+     "summary": "美國商務部長盧特尼克表示政府正研擬「精準且審慎」的半導體關稅政策，可能取消今年1月起適用於資料中心與新創企業的豁免，將新關稅擴及筆電、伺服器與遊戲主機；企業若承諾在美國建立晶片產能可獲得較大免稅進口額度，反之則須繳納關稅。此舉正值美中9月24日川習會前夕，業界憂心推升AI資料中心建置成本。",
+     "source": "The Korea Times",
+     "tags": ["半導體關稅", "盧特尼克", "美中", "AI"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股9/2重挫784點收46,164點 台積電跌2.25%至2,385元",
+     "url": "https://focustaiwan.tw/business/202609020017",
+     "summary": "受美軍升高對伊朗軍事行動推升國際油價、通膨疑慮升溫影響，台股9月2日大跌784.00點（-1.67%），收在46,164.72點；電子權值股同步走弱，台積電下跌2.25%至2,385元，單一個股即拖累大盤逾440點。",
+     "source": "Focus Taiwan",
+     "tags": ["TWII", "台積電", "伊朗", "油價"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/2小幅收紅 那斯達克微漲0.04%",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-2-134032621.html",
+     "summary": "美股9月2日在油價走高、公債殖利率攀升下表現分歧，標普500指數收7,663點、上漲0.41%，那斯達克指數收26,110.72點，僅微幅上漲0.04%，投資人持續消化伊朗衝突升溫與Fed利率路徑疑慮。",
+     "source": "Yahoo Finance",
+     "tags": ["S&P500", "NASDAQ", "伊朗", "FED"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/2漲至94.86美元 伊朗波灣衝突推升風險溢價",
+     "url": "https://fortune.com/article/price-of-oil-09-02-2026/",
+     "summary": "布蘭特原油9月2日上漲0.23%至94.86美元，因伊朗反擊波灣鄰國、美伊衝突持續升溫，帶動原油風險溢價擴大；油價自衝突爆發以來已多次觸及90美元以上高點。",
+     "source": "Fortune",
+     "tags": ["布蘭特原油", "伊朗", "荷姆茲海峽", "油價"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/2貶值9.5分收31.728元",
+     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d26d0724-7bd6-4e33-8013-42d1b98036a4",
+     "summary": "新台幣兌美元9月2日以31.728元作收，貶值9.5分，成交金額28.6億美元；早盤以31.650元開出，盤中最高31.650元、最低31.804元，走勢受國際油價走高與風險情緒牽動。",
+     "source": "MoneyDJ",
+     "tags": ["新台幣", "匯率", "TWD"]
+    }
+   ]
+  }
+ ]
+}

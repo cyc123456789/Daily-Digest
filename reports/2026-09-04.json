@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-04",
+ "focus": "美伊衝突再升溫：川普證實對伊朗發動強力打擊，德黑蘭飛彈無人機反擊約旦美軍基地，荷姆茲海峽風險支撐油價高檔",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "VMware vCenter路徑穿越漏洞遭大規模在野利用 47國361台主機中招部署Babuk",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-vmware-vcenter-rce-flaw-exploited-for-reverse-ssh-access/",
+     "summary": "CVE-2026-59310為vCenter Syslog Server路徑穿越漏洞，CVSS達9.8，未經驗證攻擊者可遠端執行任意程式碼。CISA已列入在野利用清單，攻擊者已於47國植入反向SSH並部署Babuk變種勒索軟體；官方籲更新至vCenter 9.1.0.0300、9.0.2.0100、8.0 U3k或8.0 U2f，目前無暫時緩解措施。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-59310", "VMWARE", "CISA-KEV", "RANSOMWARE"]
+    },
+    {
+     "severity": "critical",
+     "title": "SonicWall SMA1000雙零時差漏洞遭鏈結攻擊 兩項CVSS均近滿分",
+     "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/",
+     "summary": "CVE-2026-83548為Work Place介面未驗證SSRF漏洞(CVSS 10.0)，CVE-2026-83549為管理主控台OS指令注入漏洞，兩者鏈結後可形成未驗證遠端程式碼執行。SonicWall於9月1日發布修補並證實遭在野利用，CISA同步列入在野利用清單，籲SMA1000用戶立即更新。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-83548", "CVE-2026-83549", "SONICWALL", "CISA-KEV"]
+    },
+    {
+     "severity": "critical",
+     "title": "Kestra OSS遭CVSS滿分指令注入漏洞攻擊 用於植入加密貨幣礦機",
+     "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+     "summary": "CVE-2026-49869為開源工作流平台Kestra OSS的作業系統指令注入漏洞，CVSS達10.0，未經驗證攻擊者可建立並執行任意工作流。微軟研究指出該漏洞至少自6月底遭利用以建立反向殼層、進行容器環境偵察並部署加密貨幣挖礦程式，CISA已列入在野利用清單，籲用戶儘速升級。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-49869", "KESTRA", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "LiteLLM AI閘道鏈結Starlette漏洞 恐形成未驗證RCE",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/09/02/cisa-adds-seven-known-exploited-vulnerabilities-catalog",
+     "summary": "CVE-2026-59822為LiteLLM的MCP Streamable HTTP端點驗證繞過漏洞，1.84.0以下版本受影響，偽造Bearer權杖即可建立已驗證工作階段；可與Starlette主機標頭驗證繞過漏洞CVE-2026-48710(1.0.1以下版本受影響)鏈結，形成未驗證遠端程式碼執行風險。兩者均已列入CISA在野利用清單，官方籲升級至LiteLLM 1.84.0與Starlette 1.0.1以上版本。",
+     "source": "CISA",
+     "tags": ["CVE-2026-59822", "CVE-2026-48710", "LITELLM", "AI"]
+    },
+    {
+     "severity": "high",
+     "title": "醫療雲端服務商Aesto Health遭駭 954萬病患資料外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/aesto-health-says-data-breach-affects-over-95-million-patients/",
+     "summary": "醫療資料處理商Aesto Health證實其AWS雲端基礎設施於2025年12月遭入侵，波及VillageMD、Everside Health等29家醫療機構、共954萬名病患，外洩姓名、社會安全碼、財務帳號與健康保險資訊等敏感資料。公司已向美國衛福部通報，為今年第二大醫療資料外洩事件，目前無公開修補時程。",
+     "source": "BleepingComputer",
+     "tags": ["AESTO-HEALTH", "DATA-BREACH", "HEALTHCARE", "AWS"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機6架次全數逾中線、共艦9艘、公務船7艘",
+     "url": "https://money.udn.com/money/story/7307/9673918",
+     "summary": "國防部通報，9月2日6時至9月3日6時期間偵獲中國軍機6架次，全數逾越台灣海峽中線進入台灣西南空域，另有共艦9艘、公務船7艘同步在台海周邊活動。國軍以任務機、艦及岸置飛彈系統嚴密監控應處。",
+     "source": "經濟日報",
+     "tags": ["MND", "台海", "解放軍"]
+    },
+    {
+     "severity": "medium",
+     "title": "陸方赴陸新規9月上路 陸委會：合法行為恐遭審問 籲注意風險",
+     "url": "https://www.storm.mg/article/11161772",
+     "summary": "中國9月起實施出入境新規，陸委會副主委梁文傑警告，台人赴陸從事合法行為仍可能遭中共審問，籲民眾赴陸前先向旅行社完成登錄以掌握風險；他強調登錄屬自願性質，不會強制民眾配合。",
+     "source": "風傳媒",
+     "tags": ["陸委會", "兩岸", "中國"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美軍強力打擊伊朗 德黑蘭飛彈無人機反擊約旦美軍基地",
+     "url": "https://www.nbcnews.com/world/iran/us-launched-large-powerful-strikes-iran-trump-says-rcna595581",
+     "summary": "川普證實美軍對伊朗荷姆茲海峽周邊目標發動「強力打擊」，回應伊朗先前布雷未遂與飛彈攻擊美軍約旦基地。伊朗隨後以飛彈與無人機反擊，美方在約旦阿卡巴上空傳出爆炸，美伊衝突六個月來持續升溫，荷姆茲海峽能源運輸風險居高不下。",
+     "source": "NBC News",
+     "tags": ["伊朗", "荷姆茲海峽", "美軍", "衝突"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜美半導體關稅箭在弦上 商務部長證實已通知所有主要晶片廠",
+     "url": "https://www.epochtimes.com/gb/26/9/2/n14841600.htm",
+     "summary": "美國商務部長盧特尼克9月2日證實，川普政府正準備對進口半導體加徵新關稅，所有主要晶片製造商均已獲知；若承諾赴美設廠可望豁免課稅。此舉被視為9月24日川習會前的談判籌碼，市場關注關稅範圍是否進一步擴及筆電、伺服器等下游產品。",
+     "source": "大紀元",
+     "tags": ["半導體", "關稅", "川習會", "美中"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/3收跌307點失守46K 台積電逆勢收2,390元",
+     "url": "https://news.ttv.com.tw/news/11509030000700W",
+     "summary": "台股9月3日收盤下跌307.06點，收45,857.66點，跌幅0.67%，未能守住46,000點關卡，成交量約9,462億元；台積電逆勢上漲5元，收2,390元。",
+     "source": "台視新聞",
+     "tags": ["台股", "台積電", "TAIEX"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/3收紅終止連跌 那斯達克、標普同漲0.5%",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-03-2026",
+     "summary": "美股9月3日全面收高，終止三日連跌：道瓊漲295.07點(0.6%)收53,061.95點，標普500漲0.5%收7,666.60點，那斯達克漲118.05點(0.5%)收26,217.83點，AI相關類股表現強勁。",
+     "source": "TheStreet",
+     "tags": ["美股", "那斯達克", "道瓊"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/3收94.30美元 荷姆茲海峽風險支撐高檔",
+     "url": "https://xnews.jin10.com/details/229017",
+     "summary": "布蘭特原油期貨9月3日收跌0.11%，報每桶94.30美元，仍處近期相對高檔；美伊在荷姆茲海峽周邊的軍事衝突持續為油價提供風險溢價支撐。",
+     "source": "金十數據",
+     "tags": ["布蘭特原油", "荷姆茲海峽", "能源"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/3貶值收31.755元 Fed官員鴿派發言降溫9月升息押注",
+     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a5e6b10f-fd30-44fc-8341-4fbdd550043a",
+     "summary": "新台幣9月3日以31.755元收盤，貶值2.7分，成交金額19.3億美元。同日Fed理事華許表示傾向9月維持利率不變，市場升息押注機率由前一日6成回落至約5成，2年期公債殖利率同步走低。",
+     "source": "MoneyDJ",
+     "tags": ["新台幣", "FED", "利率"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "date": "2026-09-05",
+ "focus": "川習會倒數：美中印太軍事首長首度會晤降低台海誤判風險，陸方同時藉中埃聯合聲明矮化台灣主權引外交部抗議",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Elementor Pro遭CVSS臨界漏洞在野利用 近20萬次攻擊嘗試部署網頁後門",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-elementor-pro-flaw-exploited-to-take-over-wordpress-sites/",
+     "summary": "WordPress外掛Elementor Pro（逾600萬安裝量）4.2.1以下版本存在檔案上傳驗證繞過漏洞CVE-2026-32475，攻擊者可先送空檔案再夾帶PHP後門取得遠端執行權限。官方已於8/19釋出4.2.2修補，但Wordfence統計顯示修補後仍攔截近20萬次攻擊嘗試，未升級站台持續曝險。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-32475", "WORDPRESS", "ELEMENTOR", "WEBSHELL"]
+    },
+    {
+     "severity": "critical",
+     "title": "Cisco Nexus 9000交換器爆CVSS 9.8漏洞 未驗證攻擊者可取得Root權限",
+     "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
+     "summary": "搭載Cisco Silicon One ASIC的Nexus 9000系列因TCP 43210/43211埠意外對外暴露，未驗證攻擊者可直接連線執行任意程式碼並取得Root權限（CVE-2026-20212）。Cisco已釋出修補版NX-OS及Live Protect緩解措施，官方稱截至9/3尚未發現在野利用或PoC公開，建議立即升級或以iACL阻擋相關埠。",
+     "source": "The Hacker News",
+     "tags": ["CVE-2026-20212", "CISCO", "NEXUS", "RCE"]
+    },
+    {
+     "severity": "critical",
+     "title": "HPE ArubaOS-CX同現CVSS 9.8緩衝區溢位漏洞 未驗證攻擊者可提權執行程式碼",
+     "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-critical-arubaos-cx-remote-code-execution-flaw/",
+     "summary": "HPE於9/1針對企業級ArubaOS-CX交換器共修補35項漏洞，其中CVE-2026-73749為緩衝區溢位漏洞，未驗證攻擊者可傳送惡意封包觸發高權限程式碼執行。HPE表示尚未發現在野利用或公開PoC，強烈建議用戶升級至公告所列修補版本。",
+     "source": "BleepingComputer",
+     "tags": ["CVE-2026-73749", "HPE", "ARUBA", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "湯森路透旗下法律科技平台C-Track遭外洩 波及美加11州、維京群島及安大略法院",
+     "url": "https://thehackernews.com/2026/09/thomson-reuters-court-software-breach.html",
+     "summary": "湯森路透旗下West Publishing的法院案件管理平台C-Track今年3月遭未經授權存取，直到6/30才被發現，外洩資料含姓名、社會安全號碼、駕照號碼、病歷及保密／封存法院文件，影響美國11州、維京群島及加拿大安大略省三家法院。受影響用戶獲提供12個月Experian信用監控。",
+     "source": "The Hacker News",
+     "tags": ["THOMSON REUTERS", "DATA BREACH", "COURT RECORDS"]
+    },
+    {
+     "severity": "warning",
+     "title": "FBI示警OAuth同意釣魚攻擊鎖定知名人士 密碼重設也無法阻斷存取",
+     "url": "https://www.helpnetsecurity.com/2026/09/02/oauth-consent-phishing-fbi-warning/",
+     "summary": "FBI旗下IC3發布公告，指攻擊者假冒政府官員、媒體等身分於通訊軟體私訊目標，誘導核准惡意應用程式的OAuth權限請求，藉此在不需密碼的情況下持續存取受害者信箱與敏感資料。由於存取權杖獨立於密碼之外，重設密碼無法中斷攻擊者存取，用戶須直接於應用程式安全性設定中撤銷授權。",
+     "source": "Help Net Security",
+     "tags": ["OAUTH", "PHISHING", "FBI", "IC3"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "川習會前美中印太軍事首長首度會晤 雙方同意維持溝通管道降低台海誤判風險",
+     "url": "https://taiwanpost.net/2026/meihua/165060",
+     "summary": "美軍印太司令帕帕羅與新任中共東部戰區司令楊志斌9/3在加拿大維多利亞出席美加聯合舉辦的亞太國防軍司令會議，兩人首次面對面會談。雙方就維持高階軍事溝通管道、降低誤判風險及規範軍隊間安全專業互動交換意見，時機恰逢川習會倒數階段。",
+     "source": "台灣郵報",
+     "tags": ["台海", "印太司令", "楊志斌", "帕帕羅"]
+    },
+    {
+     "severity": "warning",
+     "title": "中埃聯合聲明稱「台灣是中國一部分」 外交部嚴正抗議譴責",
+     "url": "https://newtalk.tw/news/view/2026-09-03/1057654",
+     "summary": "習近平9/1至2日對埃及進行國是訪問，雙方發布聯合聲明稱台灣是中華人民共和國不可分割的一部分。我外交部發言人蕭光偉9/3表達嚴正抗議與強烈譴責，強調任何貶抑台灣主權的敘事都無法改變台灣與中國互不隸屬的客觀事實。",
+     "source": "Newtalk新聞",
+     "tags": ["中國", "埃及", "外交部", "主權"]
+    },
+    {
+     "severity": "warning",
+     "title": "北京警告太平洋島國論壇勿邀台灣與會 稱將有「後果」",
+     "url": "https://udn.com/news/amp/story/6809/9684375",
+     "summary": "太平洋島國論壇今年重新邀請台灣外交部長林佳龍出席8/30至9/4在帛琉舉行的峰會開幕式，中國對此表達強烈不滿。中國太平洋島國事務特使錢波8/31警告此舉將有「後果」，中國外交部並敦促論壇秘書長恪守一中原則、避免影響中國與論壇關係。",
+     "source": "聯合新聞網",
+     "tags": ["太平洋島國論壇", "一中原則", "外交", "帛琉"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內偵獲共艦、公務船各5艘 未發現共機活動",
+     "url": "https://www.mnd.gov.tw/PublishTable.aspx?Types=%E5%8D%B3%E6%99%82%E8%BB%8D%E4%BA%8B%E5%8B%95%E6%85%8B&title=%E5%9C%8B%E9%98%B2%E6%B6%88%E6%81%AF",
+     "summary": "因國防部官網頁面為JS動態渲染無法直接解析，數字為綜合近期公開媒體報導彙整之近似值：9/3上午6時至9/4上午6時期間，國軍偵獲中共海軍艦艇及海警／公務船各5艘持續在台海周邊活動，未偵獲共機動態，國軍稱嚴密監控應處。",
+     "source": "國防部",
+     "tags": ["國防部", "台海", "共艦", "公務船"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜美伊交火再起 美副總統范斯：終戰時機取決伊朗",
+     "url": "https://newtalk.tw/news/view/2026-09-04/1057744",
+     "summary": "美軍8/30打擊伊朗拉拉克島、摧毀部署中的水雷發射器後，伊朗隨即對約旦美軍基地發射飛彈報復，雙方近日再度交火，這場已持續逾6個月的衝突僵局未歇。美國副總統范斯表示不會將其定調為「戰爭」，衝突何時結束「取決於伊朗」。",
+     "source": "Newtalk新聞",
+     "tags": ["伊朗", "荷姆茲海峽", "美軍", "衝突"]
+    },
+    {
+     "severity": "medium",
+     "title": "南早：中美貿易休戰料延長 習近平9月訪美將攜企業大咖同行",
+     "url": "https://udn.com/news/story/6809/9720849",
+     "summary": "隨著川習會9月登場進入倒數，據報導釜山達成的一年期中美貿易休戰幾乎肯定延長，雙方傾向在峰會前避免爭端進一步升高。消息指習近平訪美將攜多家中國企業高層隨行，聚焦半導體與關稅等未決議題。",
+     "source": "聯合新聞網",
+     "tags": ["川習會", "中美貿易", "半導體關稅"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "台股收復46500點 大漲693點創波段新高 台積電收2,410元",
+     "url": "https://news.cnyes.com/news/id/6597350",
+     "summary": "受聯準會9月升息疑慮降溫及電子權值股買盤湧入激勵，台股9/4震盪走高收46,551點，大漲693點（+1.51%），周漲219點連二紅，成交值825.6億元。台積電收2,410元、上漲20元。",
+     "source": "鉅亨網",
+     "tags": ["台股", "加權指數", "台積電"]
+    },
+    {
+     "severity": "medium",
+     "title": "美股三大指數同漲逾1% 沃勒鴿派言論降溫9月升息押注",
+     "url": "https://finance.sina.com.cn/world/2026-09-04/doc-iniqrazh1629623.shtml",
+     "summary": "Fed理事沃勒9/4釋出偏鴿信號，使市場對9月升息押注機率從約63%驟降至52%，帶動美股全線收紅：道瓊漲1.18%收53,686.11點、標普500漲1.06%收7,747.71點、那斯達克漲1.4%收26,584.06點，科技股集體走強。",
+     "source": "新浪財經",
+     "tags": ["道瓊", "標普500", "那斯達克", "FED"]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油守住95美元關卡 荷姆茲海峽航運受阻風險溢價未歇",
+     "url": "https://newtalk.tw/news/view/2026-09-03/1057501",
+     "summary": "美伊衝突持續，荷姆茲海峽航運量大減（單日僅4艘商船通過，遠低於近10日均值約13艘），布蘭特原油期貨在95美元附近震盪，市場憂心衝突若進一步升級恐推升能源價格與全球通膨壓力。",
+     "source": "Newtalk新聞",
+     "tags": ["布蘭特原油", "荷姆茲海峽", "能源"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元9/4匯價於31.6元附近整理",
+     "url": "https://invest.cnyes.com/forex/detail/USDTWD/overview",
+     "summary": "因即時匯率數據源存取受限，數字為公開報導綜合估算之近似值：新台幣兌美元9/4匯價於31.6元附近整理，在Fed 9月升息預期反覆及美伊地緣風險雙重影響下呈現小幅波動格局。",
+     "source": "鉅亨網",
+     "tags": ["新台幣", "匯率", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

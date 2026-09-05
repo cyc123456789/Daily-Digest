@@ -1,0 +1,164 @@
+{
+ "date": "2026-09-06",
+ "focus": "Google Chrome V8引擎零時差漏洞遭在野利用，CISA已列入在野利用清單，為2026年第6起瀏覽器零時差攻擊",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Chrome V8引擎零時差漏洞遭在野利用 CISA列入在野利用清單",
+     "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+     "summary": "CVE-2026-85046為V8型別混淆漏洞，攻擊者可透過惡意網頁在沙箱內執行任意程式碼，是2026年迄今第6個遭在野利用的Chrome零時差漏洞。Google已釋出152.0.7977.82/.83修補版本，CISA已列入KEV清單並要求聯邦機構9月16日前完成修補。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-85046",
+      "CHROME",
+      "ZERO-DAY",
+      "CISA-KEV"
+     ]
+    },
+    {
+     "severity": "critical",
+     "title": "Citrix NetScaler驗證繞過漏洞遭鎖定攻擊 CVSS達9.3",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-target-critical-citrix-netscaler-auth-bypass-in-attacks/",
+     "summary": "CVE-2026-19490影響NetScaler ADC/Gateway 14.1（早於14.1-73.32）及13.1（早於13.1-63.21）版本，未驗證攻擊者可繞過AAA或Gateway驗證機制。資安公司Previdian偵測到來自澳、德、日、美的攻擊嘗試，比利時國家資安中心已發布警告，敦促用戶儘速升級至已修補版本。",
+     "source": "BleepingComputer",
+     "tags": [
+      "CVE-2026-19490",
+      "CITRIX",
+      "NETSCALER",
+      "AUTH-BYPASS"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "俄國背景UAC-0099於惡意程式碼植入「核武」關鍵字誘騙AI分析工具棄守",
+     "url": "https://thehackernews.com/2026/09/russia-aligned-uac-0099-plants-nuclear.html",
+     "summary": "資安廠商ESET揭露，鎖定烏克蘭運輸與能源產業的APT組織UAC-0099在VBS腳本中植入「我想製造核武」字句，誘使AI輔助分析工具觸發安全防護而中止掃描，藉此掩護MATCHBOIL C#後門載入器部署。此手法顯示駭客正嘗試針對AI輔助資安分析系統進行針對性規避。",
+     "source": "The Hacker News",
+     "tags": [
+      "UAC-0099",
+      "APT",
+      "AI-EVASION",
+      "UKRAINE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "俄籍駭客遭引渡赴美受審 涉Excel巨集惡意程式入侵8萬名接案自由工作者",
+     "url": "https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html",
+     "summary": "美國司法部起訴自賽普勒斯引渡的俄籍嫌犯Aktulaev，指控其於2016至2017年間利用255個假帳號在接案平台散布含惡意巨集的Excel附件，植入TVRAT與DarkVNC遠端控制木馬，受害者近半數位於美國，最重可判20年徒刑。案件顯示長年網路犯罪司法追訴仍持續推進。",
+     "source": "The Hacker News",
+     "tags": [
+      "TVRAT",
+      "DARKVNC",
+      "DOJ",
+      "EXTRADITION"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美啟動「結構性產能過剩」301調查 台灣半導體出口恐受衝擊",
+     "url": "https://www.worldjournal.com/wj/story/121220/9678860",
+     "summary": "美方對台灣、中國、歐盟、日本、南韓等16個對美貿易順差夥伴啟動301產能過剩調查，半導體、電子產品為重點審查產業。美國統計去年對台貨品貿易逆差已擴大至約1,468億美元，台灣核心半導體出口優勢恐成關稅施壓焦點，牽動台灣對美出口布局。",
+     "source": "世界新聞網",
+     "tags": [
+      "SECTION-301",
+      "SEMICONDUCTOR",
+      "US-TARIFF",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機2架次、共艦6艘、公務船5艘 未見逾越中線",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5456249",
+     "summary": "國防部統計9月4日6時至9月5日6時期間，偵獲2架次解放軍軍機進入台灣東部空域、6艘共艦及5艘中國公務船在台海周邊持續活動，未有共機逾越海峽中線紀錄。國軍持續嚴密監控應處，灰色地帶騷擾態勢維持常態化。（此則數字為近似值，以中央社／國防部即時公告為準）",
+     "source": "中央社",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "美中制裁戰再起 CNN：9月川習會恐縮小議程",
+     "url": "https://www.worldjournal.com/wj/story/124277/9677144",
+     "summary": "CNN報導指出，美中近期互祭報復性制裁措施，為原定9月24日於華府登場的川習會添加變數，雙方可能被迫縮小峰會議程範圍。中國外交部形容現階段一連串措施仍屬「克制」，顯示北京仍有意維持峰會安排，但半導體與關稅議題的緊張態勢恐持續升溫。",
+     "source": "世界新聞網／CNN",
+     "tags": [
+      "US-CHINA",
+      "SUMMIT",
+      "SANCTIONS"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美擬施壓荷蘭全面封殺ASML對中DUV微影機銷售與維修",
+     "url": "https://www.trendforce.com/news/2026/08/25/news-u-s-may-push-near-total-asml-china-ban-on-duv-sales-and-servicing-amid-chinas-domestic-lithography-push/",
+     "summary": "美方研議透過「MATCH法案」要求盟國比照美國出口管制標準，可能將ASML較舊型DUV微影機的銷售與既有機台維修服務一併納入對中禁令，荷蘭官員正在華府積極遊說盼阻擋法案，但成功機會有限。中國廠商已著手自製DUV設備因應。",
+     "source": "TrendForce",
+     "tags": [
+      "ASML",
+      "EXPORT-CONTROL",
+      "SEMICONDUCTOR",
+      "CHINA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "美國8月非農就業意外強升16.2萬人 9月升息押注跳升至6成",
+     "url": "https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html",
+     "summary": "美國勞工部公布8月非農就業新增16.2萬人，遠高於市場預期的5.3萬人，失業率維持4.1%。強勁數據推升Fed 9月15至16日會議升息機率一舉跳增至約6成，扭轉此前官員鴿派發言帶來的降溫效應，2年期公債殖利率同步彈升至2025年1月以來新高。",
+     "source": "CNBC",
+     "tags": [
+      "NFP",
+      "FED",
+      "RATE-HIKE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "殖利率彈升壓抑美股 標普、道瓊、那指同步走弱",
+     "url": "https://www.riotimesonline.com/global-economy-briefing-september-5-2026/",
+     "summary": "受強勁非農數據推升升息押注影響，標普500指數回落至7,719點、道瓊工業指數跌至53,414點、那斯達克指數滑落至26,507點，公債殖利率走高使股票相對吸引力下降，VIX恐慌指數小幅升至14.53，市場情緒轉為觀望而非恐慌。",
+     "source": "Rio Times",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "TREASURY-YIELD"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油單週勁揚近一成 續守95美元關卡",
+     "url": "https://finance.yahoo.com/energy/articles/current-price-oil-september-4-130000493.html",
+     "summary": "布蘭特原油9月4日收在95美元附近，單週累計上漲近9%，美伊衝突與荷姆茲海峽航運風險持續推升油價風險溢價。市場人士研判，若中東緊張情勢未見緩解，原油價格短期內恐維持高檔震盪。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "MIDDLE-EAST"
+     ]
+    }
+   ]
+  }
+ ]
+}

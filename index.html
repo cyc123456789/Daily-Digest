@@ -11,14 +11,18 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0e1116;--panel:#141a22;--line:#222b37;--line-l:#2e3a49;
-  --text:#e8ecf1;--text2:#9aa7b4;--text3:#5c6b7a;
+  /* 近黑底配近白字原本是 15.9:1，18px 中文長時間讀會有光暈感；把地板抬起來、天花板壓下來。
+     --text3 原本 3.46:1 低於 AA，而它用在全站所有小字（tag／來源／則數／footer）。 */
+  --bg:#161a1f;--panel:#1b2027;--line:#2d343d;--line-l:#3b444f;
+  --text:#d6dce3;--text2:#a2acb7;--text3:#78838f;
   --c-cyber:#4fc3e8;--c-taiwan:#e8a15c;--c-geo:#b39ce8;--c-eco:#6fcf97;
-  --s-critical:#f27e7e;--s-high:#e8c468;--s-warning:#e8a15c;--s-medium:#7ea8f2;--s-info:#7a8a99;
+  /* severity 只讓 critical／high 帶顏色，其餘降成低彩度：原本 --s-warning 與 --c-taiwan
+     是同一個 #e8a15c，同頁上台海觀察的橘和 WARNING 的橘分不出來。 */
+  --s-critical:#ef7f7f;--s-high:#ddc25f;--s-warning:#c49a6c;--s-medium:#8ba3c4;--s-info:#78838f;
   --mono:'IBM Plex Mono',ui-monospace,monospace;
   --sans:'Noto Sans TC',-apple-system,sans-serif;
   --serif:'Noto Serif TC',serif;
-  --rail-w:216px;
+  --rail-w:216px;--page:1180px;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.85}
@@ -28,14 +32,14 @@ a{color:inherit}
 
 /* ── MASTHEAD ── */
 .mast{border-bottom:1px solid var(--line);background:var(--bg)}
-.mast-in{max-width:1180px;margin:0 auto;padding:1.75rem 1.25rem 0}
+.mast-in{max-width:var(--page);margin:0 auto;padding:1.75rem 1.25rem 0}
 .mast-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .wordmark{font-family:var(--serif);font-weight:900;font-size:26px;letter-spacing:0.02em}
 .wordmark small{font-family:var(--mono);font-weight:400;font-size:11px;color:var(--text3);letter-spacing:0.25em;margin-left:0.75rem;vertical-align:0.2em}
 .mast-date{display:flex;align-items:baseline;gap:1rem;margin:1.25rem 0 0.4rem}
 .d-big{font-family:var(--mono);font-weight:600;font-size:clamp(30px,6vw,44px);letter-spacing:0.02em}
 .d-week{font-size:18px;color:var(--text2)}
-.focus-line{color:var(--text2);font-size:18px;max-width:46em;margin-bottom:0.4rem}
+.focus-line{color:var(--text2);font-size:18px;max-width:36em;margin-bottom:0.4rem}
 .focus-line b{color:var(--text);font-weight:500}
 /* category index bar */
 .cat-bar{display:flex;gap:0.25rem;overflow-x:auto;padding:0.6rem 0 0;margin:0 -2px}
@@ -68,7 +72,7 @@ a{color:inherit}
 .mast-top-rel{position:relative}
 
 /* ── LAYOUT ── */
-.wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem;display:flex;gap:3rem}
+.wrap{max-width:var(--page);margin:0 auto;padding:0 1.25rem;display:flex;gap:3rem}
 .rail{
   width:var(--rail-w);flex-shrink:0;
   position:sticky;top:0;align-self:flex-start;
@@ -77,6 +81,9 @@ a{color:inherit}
 .rail::-webkit-scrollbar{width:3px}
 .rail::-webkit-scrollbar-thumb{background:var(--line)}
 .rail-label{font-family:var(--mono);font-size:11px;letter-spacing:0.25em;color:var(--text3);margin-bottom:0.75rem}
+.rail-month{font-family:var(--mono);font-size:11px;letter-spacing:0.2em;color:var(--text3);
+  padding:1.1rem 0 0.35rem 0.9rem;border-top:1px solid var(--line);margin-top:0.5rem}
+.rail-month:first-child{border-top:0;margin-top:0;padding-top:0}
 .date-list{list-style:none}
 .date-btn,.dp-item{
   display:flex;align-items:center;justify-content:space-between;width:100%;
@@ -104,14 +111,15 @@ main{flex:1;min-width:0;padding:2.25rem 0 4rem}
 .item-meta{display:flex;align-items:center;gap:0.9rem;margin-bottom:0.55rem;font-family:var(--mono);font-size:12.5px}
 .item-idx{color:var(--text3)}
 .sev{font-weight:600;letter-spacing:0.14em}
-.sev-critical{color:var(--s-critical)}.sev-high{color:var(--s-high)}
+.sev-critical{background:var(--s-critical);color:var(--bg);padding:1px 6px;border-radius:3px}
+.sev-high{color:var(--s-high)}
 .sev-warning{color:var(--s-warning)}.sev-medium{color:var(--s-medium)}.sev-info{color:var(--s-info)}
 .item-src{color:var(--text3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .item-title{font-family:var(--serif);font-weight:700;font-size:21.5px;line-height:1.65;margin-bottom:0.6rem}
 .item-title a{text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.15s}
 .item-title a:hover{border-bottom-color:var(--cat)}
 .item-title .nolink{color:var(--text)}
-.item-sum{color:var(--text2);font-size:17.5px;margin-bottom:0.7rem;max-width:46em}
+.item-sum{color:var(--text);font-size:17.5px;margin-bottom:0.7rem;max-width:36em}
 .item-tags{display:flex;flex-wrap:wrap;gap:0.4rem 1.1rem;font-family:var(--mono);font-size:11.5px;color:var(--text3);letter-spacing:0.04em}
 .item-tags span::before{content:'#';opacity:0.5;margin-right:1px}
 
@@ -119,7 +127,7 @@ main{flex:1;min-width:0;padding:2.25rem 0 4rem}
 .state.err{color:var(--s-critical)}
 
 footer{border-top:1px solid var(--line)}
-.foot-in{max-width:1180px;margin:0 auto;padding:1.5rem 1.25rem 2.5rem;font-size:14px;color:var(--text3);line-height:1.8}
+.foot-in{max-width:var(--page);margin:0 auto;padding:1.5rem 1.25rem 2.5rem;font-size:14px;color:var(--text3);line-height:1.8}
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
@@ -128,9 +136,28 @@ footer{border-top:1px solid var(--line)}
   .wrap{gap:0}
   main{padding-top:1.5rem}
   .sec-title{font-size:22px}
-  .item-title{font-size:20px}
+  .item-title{font-size:20px;line-height:1.5}
   .item{padding-left:0.95rem}
   .d-week{font-size:16px}
+  /* 原本 overflow-x 捲動會把第四個分類整個藏在畫面外，而且沒有任何可捲動的提示 */
+  .cat-bar{flex-wrap:wrap;overflow:visible;gap:0 0.15rem;
+    position:sticky;top:0;z-index:40;background:var(--bg);
+    box-shadow:0 1px 0 var(--line)}
+  .cat-link{height:42px;padding:0 0.7rem;font-size:14px}
+  /* 一則約一個螢幕、一天 14 則，把字級與行高收一點，內容不藏 */
+  body{font-size:17px;line-height:1.75}
+  .item-sum{font-size:16px;line-height:1.8}
+  .focus-line{font-size:16.5px}
+  .item{padding:1.3rem 0 1.2rem 0.95rem}
+  .sec{margin-bottom:2.5rem}
+}
+/* 大螢幕：多出來的寬度給版面與左欄，閱讀欄（36em）不動 */
+@media(min-width:1560px){
+  :root{--page:1400px;--rail-w:250px}
+  .wrap{gap:4rem}
+}
+@media(min-width:1960px){
+  :root{--page:1620px;--rail-w:280px}
 }
 @media(max-width:480px){
   .wordmark small{display:none}
@@ -266,8 +293,15 @@ document.addEventListener('click',function(){menu.classList.remove('open');btn.s
 
 fetch('manifest.json').then(function(r){return r.json()}).then(function(list){
   dates=list;
-  var rail=$('date-list');
+  var rail=$('date-list'),lastMonth='';
   list.forEach(function(d,i){
+    var m=d.slice(0,7);
+    if(m!==lastMonth){                       // 67 個日期平鋪很難定位，依月份分段
+      lastMonth=m;
+      var h=document.createElement('li');
+      h.className='rail-month';h.textContent=m;
+      rail.appendChild(h);
+    }
     var li=document.createElement('li');
     var b=document.createElement('button');
     b.className='date-btn';b.dataset.date=d;

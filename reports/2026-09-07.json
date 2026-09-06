@@ -1,0 +1,122 @@
+{
+ "date": "2026-09-07",
+ "focus": "美伊軍艦飛彈交火升級，荷姆茲海峽商船運輸實質中斷，牽動全球油價與供應鏈風險。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "MikroTik RouterOS「MikroTrick」漏洞鏈遭在野利用 攻擊者可取得裝置完整控制權",
+     "url": "https://cert.pl/en/posts/2026/09/vulnerabilities-in-mikrotik-routeros-actively-exploited/",
+     "summary": "波蘭CERT示警，MikroTik RouterOS存在CVE-2026-67279與CVE-2026-67276漏洞鏈（暱稱MikroTrick），攻擊者可在未通過SSH身分驗證下取得裝置完整控制權，最早於9月2日即遭觀測到在野利用。MikroTik已於9月3日釋出修補版本7.25 beta3、7.24.2、7.23.4及6.49.21長期支援版，籲用戶儘速更新。",
+     "source": "CERT Polska",
+     "tags": ["MIKROTIK", "ROUTEROS", "RCE", "SSH"]
+    },
+    {
+     "severity": "high",
+     "title": "Magento／Adobe Commerce驚爆「StyleSmuggler」零時差漏洞 已修補商店照樣遭植入後門",
+     "url": "https://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
+     "summary": "研究人員發現名為StyleSmuggler的零時差漏洞影響所有現行版本Magento Open Source與Adobe Commerce（含最新2.4.9），攻擊者無需身分驗證即可濫用範本渲染與郵件機制取得程式碼執行權並植入永久後門，連完整套用7、8月安全更新的2.4.6-p15商店都未能倖免。截至9月6日Adobe尚未發布公告、CVE編號或修補方案，僅能透過WAF規則暫時緩解。",
+     "source": "The Hacker News",
+     "tags": ["MAGENTO", "ADOBE-COMMERCE", "ZERO-DAY", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "ASUS Control Center Enterprise爆CVSS滿分10.0漏洞 攻擊者免密碼即可取得管理權限",
+     "url": "https://cybersecuritynews.com/asus-control-center-vulnerability/",
+     "summary": "CVE-2026-75754為ASUS Control Center Enterprise（ACC）缺少關鍵功能身分驗證的漏洞，結合SSRF可讓遠端攻擊者無需密碼或使用者互動即取得平台及其管理裝置的完整管理權限，CVSS 4.0評分達滿分10.0。ASUS已釋出v3.1.0.9修補，無法立即更新者應將ACC管理介面與公網隔離並封鎖2222連接埠。",
+     "source": "ASUS（經 Cyber Security News 轉述）",
+     "tags": ["ASUS", "RCE", "AUTH-BYPASS"]
+    },
+    {
+     "severity": "high",
+     "title": "身分驗證商IDScan遭疑外洩1.53億筆美加駕照資料 遭四起集體訴訟、FBI已介入調查",
+     "url": "https://www.bleepingcomputer.com/news/security/idscan-sued-over-alleged-data-breach-affecting-153-million-drivers/",
+     "summary": "暗網服務Nexus兜售逾1.53億筆美加駕照掃描檔、千萬筆身分證與旅行證件，資安研究者Brian Krebs追查外洩源頭指向身分驗證商IDScan.net。IDScan已於美國路易斯安那州遭四起集體訴訟指控違反FTC資安規範，FBI紐奧良分局已展開調查，惟公司系統是否確遭入侵及實際受害人數仍未確認。",
+     "source": "BleepingComputer",
+     "tags": ["DATA-BREACH", "IDSCAN", "FBI"]
+    },
+    {
+     "severity": "medium",
+     "title": "PostgreSQL修補12年歷史「PostGREShell」漏洞 具複寫權限帳號可取得永久後門",
+     "url": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
+     "summary": "CVE-2026-6471（CVSS 7.2）源於PostgreSQL邏輯解碼功能授權缺失，凡具REPLICATION權限且伺服器啟用wal_level=logical者（常見於備份工具、待命伺服器、CDC管線），皆可能遭利用載入任意檔案取得程式碼執行與永久後門，影響9.4至18所有版本。已修補至18.6、17.11、16.15、15.19及14.24版，建議儘速升級並限縮複寫權限授予範圍。",
+     "source": "PostgreSQL Global Development Group（經 The Hacker News 轉述）",
+     "tags": ["POSTGRESQL", "RCE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美半導體232關稅箭在弦上 傳台廠下周宣布200至300億美元對美新投資",
+     "url": "https://www.worldjournal.com/wj/story/121475/9733591",
+     "summary": "美國商務部長盧特尼克證實，川普政府正研議對進口半導體加徵232條款新關稅，據悉台灣晶片廠最快下週宣布新一輪200至300億美元對美投資案。行政院表示將持續爭取台美MOU優惠待遇，包含配額內免稅及配額外最惠稅率，盼降低半導體出口衝擊。",
+     "source": "世界新聞網",
+     "tags": ["SEMICONDUCTOR", "US-TARIFF", "TAIWAN", "TSMC"]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：9月5日至6日偵獲共機21架次(13架逾中線)、共艦10艘、公務船5艘",
+     "url": "https://newtalk.tw/news/view/2026-09-06/1058066",
+     "summary": "國防部統計9月5日6時至9月6日6時期間，偵獲21架次解放軍軍機，其中13架次逾越台海中線進入北部、中部、西南及東部空域，另有10艘共艦及5艘中國公務船持續在台海周邊活動。國軍運用任務機、艦與岸置飛彈系統嚴密監控應處，灰色地帶騷擾態勢維持常態化。",
+     "source": "Newtalk新聞",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜荷姆茲海峽全面封閉 美伊軍艦飛彈交火再升級",
+     "url": "https://www.bloomberg.com/news/articles/2026-09-06/iran-says-it-targeted-oil-tankers-in-response-to-us-strikes",
+     "summary": "美伊自9月1日重啟交火後衝突持續升級，美軍擊沉3艘伊朗油輪，伊朗革命衛隊則首度以彈道飛彈攻擊美國海軍艦艇並宣稱鎖定多艘美方相關油輪，荷姆茲海峽因船東拒絕承保、船員不願航行已實質封閉，截至9月6日商船運輸大幅停擺。伊朗並揚言將於海峽外劃設限制區，情勢仍在持續惡化。",
+     "source": "Bloomberg",
+     "tags": ["HORMUZ", "IRAN", "MIDDLE-EAST", "IRGC"]
+    },
+    {
+     "severity": "warning",
+     "title": "美參院86票通過對俄伊制裁法案 眾院9月復會後審議追加關稅",
+     "url": "https://www.nbcnews.com/politics/congress/senate-passes-sanctions-bill-russia-iran-named-late-sen-lindsey-graham-rcna589949",
+     "summary": "以已故參議員葛理翰命名的「制裁俄羅斯與伊朗法案」在參院以86比11跨黨派票數過關，授權總統對俄羅斯石油天然氣主要買家課徵最高100%關稅並擴大對伊朗制裁，眾院已提出同版法案，將於9月復會後審議。此案與荷姆茲海峽衝突同步推進，反映華府對俄伊兩國制裁力道持續加碼。",
+     "source": "NBC News",
+     "tags": ["SANCTIONS", "RUSSIA", "IRAN", "US GOV"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "荷姆茲海峽運輸停擺衝擊全球供應鏈 世銀示警恐拖累61個發展中經濟體",
+     "url": "https://blogs.worldbank.org/en/opendata/strait-of-hormuz-disruption-sends-oil-prices-surging",
+     "summary": "荷姆茲海峽承載全球約兩成石油運輸，因船運保費飆升、船員拒絕航行已近乎停擺，世界銀行示警此一衝擊恐拖累61個發展中經濟體，海運保費與運費同步走揚，亞歐貿易亦受波及。市場人士指出，即使僅是對供給缺口的預期心理，亦足以推升油價並拖累全球經濟成長。",
+     "source": "World Bank",
+     "tags": ["HORMUZ", "OIL", "BRENT", "SUPPLY-CHAIN"]
+    },
+    {
+     "severity": "info",
+     "title": "Fed 9月15至16日利率會議登場 市場押注升息一碼機率近6成",
+     "url": "https://www.marketplace.org/story/2026/08/31/will-the-fed-raise-rates-at-september-fomc-meeting",
+     "summary": "聯準會將於9月15至16日召開利率決策會議並同步公布經濟預測摘要（SEP）與利率點陣圖，市場目前押注升息一碼機率約5成8至6成6。主席華許重申核心通膨未見明顯改善，中東能源成本居高不下與7月按兵不動後的市場疑慮，成為推升9月升息機率的兩大關鍵因素。",
+     "source": "Marketplace",
+     "tags": ["FED", "RATE-HIKE", "FOMC"]
+    },
+    {
+     "severity": "info",
+     "title": "OPEC+完成年度增產計畫 傳年底前維持配額不變因應中東供給不確定性",
+     "url": "https://worldoil.com/news/2026/8/2/opec-approves-final-production-quota-increase-of-2026/",
+     "summary": "OPEC+核心產油國9月增產18.8萬桶／日，完成2023年以來自願減產的階段性回補，沙烏地、俄羅斯、伊拉克等成員國透過視訊會議敲定此決議。消息人士透露，受中東供給不確定性影響，OPEC+目前傾向今年剩餘時間維持配額不變，暫不進一步增產。",
+     "source": "World Oil",
+     "tags": ["OIL", "OPEC", "BRENT"]
+    }
+   ]
+  }
+ ]
+}

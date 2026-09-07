@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-08",
+ "focus": "美伊「油輪戰」持續升級，中央司令部緊急改道92艘商船因應伊朗飛彈威脅，荷姆茲海峽戰爭風險未歇。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美國多州水務系統遭駭客入侵操縱PLC 造成水壓異常與淹水 FBI示警持續逾一月",
+     "url": "https://www.fbi.gov/investigate/cyber/alerts/2026/malicious-cyber-actors-targeting-water-and-wastewater-sector-internet--facing-programmable-logic-controllers-causing-operational-disruptions",
+     "summary": "FBI證實自7月27日起，美國至少7個州的自來水／污水處理系統遭駭客入侵，攻擊者鎖定Rockwell Automation／Allen-Bradley MicroLogix 1100及1400系列可程式邏輯控制器（PLC），竄改密碼與網路設定切斷操作員遠端存取，明尼蘇達州逾30個社區供水系統受影響並一度出現淹水與水壓下降，部分社區發布煮沸水公告。FBI籲用戶立即變更PLC預設密碼、停用不必要的網際網路連線並強化網路區隔。",
+     "source": "FBI",
+     "tags": ["ICS", "PLC", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "PaperCut漏洞遭鎖定攻擊美歐學校 攻擊者建立特權帳號竊取憑證",
+     "url": "https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html",
+     "summary": "CVE-2026-81578（驗證繞過）與CVE-2026-82078（不安全反射）為PaperCut NG/MF列印管理軟體漏洞，兩者已於8月31日列入CISA在野利用清單。攻擊者鏈結兩漏洞入侵美國中小學及大學的PaperCut伺服器，建立名為「Administrator17」的特權帳號並部署Meterpreter酬載竊取帳密，受害機構遍及美國、丹麥與愛爾蘭教育界。PaperCut已於9月1日發布第三版緊急修補，未更新機構應立即升級。",
+     "source": "PaperCut（經 The Hacker News 轉述）",
+     "tags": ["PAPERCUT", "CISA-KEV", "AUTH-BYPASS"]
+    },
+    {
+     "severity": "high",
+     "title": "醫藥物流巨頭McKesson遭ShinyHunters入侵 駭客宣稱竊得2.84億筆病患資料",
+     "url": "https://techcrunch.com/2026/08/31/hackers-claim-millions-of-patient-records-stolen-during-data-breach-at-healthcare-giant-mckesson/",
+     "summary": "美國最大醫藥物流商McKesson證實遭未經授權存取，勒索集團ShinyHunters宣稱竊得2.84億筆病患資料，內容包含姓名、地址、社會安全碼及診斷、用藥、過敏史等受保護健康資訊。McKesson表示正調查外洩範圍與真實性，尚未證實駭客宣稱的資料量，目前無公開修補或安全公告時程。",
+     "source": "TechCrunch",
+     "tags": ["DATA-BREACH", "HEALTHCARE", "MCKESSON", "SHINYHUNTERS"]
+    },
+    {
+     "severity": "warning",
+     "title": "伊朗APT組織Nimbus Manticore擴充惡意工具庫 鎖定歐洲國防與電信業",
+     "url": "https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html",
+     "summary": "與伊朗革命衛隊有關聯的APT組織Nimbus Manticore（亦稱GalaxyGato、Mirage Kitten）近期擴充基礎設施與惡意工具，新增類TWOSTROKE後門與SSH通道工具，透過偽造求職信等社交工程手法投遞。該組織以中東（尤其以色列、阿聯）為主要目標，近期活動範圍已擴大至西歐，鎖定電信（特別是衛星業者）、國防承包商及航太業。目前無官方修補公告，建議相關產業加強郵件過濾與端點監控。",
+     "source": "The Hacker News",
+     "tags": ["IRAN", "APT", "NIMBUS-MANTICORE", "BACKDOOR"]
+    },
+    {
+     "severity": "medium",
+     "title": "近2.2萬台Microsoft Exchange伺服器未修補 NTLM中繼漏洞恐遭權限提升",
+     "url": "https://www.bleepingcomputer.com/news/security/nearly-22-000-microsoft-exchange-servers-vulnerable-to-hijack-attacks/",
+     "summary": "CVE-2026-62911（CVSS 8.0）為Microsoft Exchange Server的身分驗證繞過漏洞，攻擊者可透過NTLM中繼攻擊取得提權存取，該漏洞已於8月Patch Tuesday修補，惟研究人員掃描發現全球仍有近2萬2千台對外暴露的Exchange伺服器未套用更新。安全單位籲企業儘速安裝8月累積更新並限制Exchange管理介面對外暴露。",
+     "source": "BleepingComputer",
+     "tags": ["MICROSOFT", "EXCHANGE", "AUTH-BYPASS"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：9月6日至7日偵獲共機13架次逾越中線、共艦10艘、公務船5艘",
+     "url": "https://udn.com/news/story/10930/9737182",
+     "summary": "國防部統計9月6日6時至9月7日6時期間，偵獲中國軍機13架次全數逾越台灣海峽中線，進入我北部、中部、西南及東部空域，另有10艘共艦及5艘中國公務船同步在台海周邊活動。國軍運用任務機、艦與岸置飛彈系統嚴密監控應處，灰色地帶騷擾態勢維持常態化。",
+     "source": "聯合新聞網",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜經長證實台廠加碼200億美元赴美投資 累計規模達550億美元",
+     "url": "https://www.cna.com.tw/news/afe/202609030176.aspx",
+     "summary": "針對美國商務部長盧特尼克稍早提及台灣下週將宣布200至300億美元對美新投資，經濟部長龔明鑫證實，此為台灣半導體與AI伺服器業者近期追加的200億美元投資，加計今年稍早已宣布的350億美元，台廠對美投資總額已達約550億美元。此舉正值美方研議半導體232條款關稅之際，被視為台廠因應關稅壓力、爭取MOU優惠待遇的布局之一。",
+     "source": "中央社",
+     "tags": ["SEMICONDUCTOR", "US-TARIFF", "TAIWAN", "TSMC"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊「油輪戰」持續升級 中央司令部改道92艘商船因應飛彈威脅",
+     "url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed",
+     "summary": "美伊過去24小時內再爆新一輪攻擊，美軍鎖定3艘伊朗油輪，伊朗則同步打擊多艘油輪並向巡弋荷姆茲海峽附近的美國軍艦發射彈道飛彈。美國中央司令部證實已在海峽內改道92艘商船、癱瘓3艘可疑船隻並登船盤查2艘，伊朗國會議長警告若再遭打擊將以「更快、更猛烈、更痛苦」的方式回應，這場延燒逾半年的衝突戰爭風險持續攀升。",
+     "source": "Al Jazeera",
+     "tags": ["HORMUZ", "IRAN", "IRGC", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "美特使見完普丁又見澤倫斯基 澤倫斯基：預期戰爭仍將持續",
+     "url": "https://kyivindependent.com/us-envoys-witkoff-kushner-arrive-in-ukraine/",
+     "summary": "川普特使維特科夫與庫許納9月5日在莫斯科與普丁展開逾3小時閉門會談後，隔日轉赴基輔會晤澤倫斯基，雙方一度同意暫停攻擊彼此首都以利會談進行。澤倫斯基會後表示預期戰爭仍將持續，並將倚賴美方協助度過冬季；莫斯科堅持要求烏克蘭放棄北約入會並割讓頓巴斯，三方會談最快須待9月底俄羅斯國家杜馬選舉後才可能恢復。",
+     "source": "Kyiv Independent",
+     "tags": ["RUSSIA", "UKRAINE", "CEASEFIRE", "US-GOV"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "台股收盤大漲775點站上47,326點創9個月新高 台積電飆升2,460元",
+     "url": "https://udn.com/news/story/7251/9739232",
+     "summary": "受費城半導體指數逆勢大漲激勵，台股9月7日收盤上漲775.14點（+1.67%），終場收在47,326.27點，改寫近9個月新高，成交量達9,399億元。台積電與聯發科合計貢獻逾500點漲幅，其中台積電收盤上漲50元至2,460元，漲幅2.07%，尾盤並出現大額買盤敲進。",
+     "source": "聯合新聞網",
+     "tags": ["TWII", "TSMC"]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油9月7日漲至97.39美元 美伊衝突持續推升風險溢價",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "布蘭特原油期貨9月7日上漲1.15%至每桶97.39美元，延續上週漲勢，美伊持續交火及荷姆茲海峽航運中斷疑慮持續推升能源風險溢價，市場憂心衝突若未見緩解，油價短期恐維持高檔震盪。",
+     "source": "Trading Economics",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣升值收31.552元 創近3個月新高",
+     "url": "https://news.cnyes.com/news/id/6599335",
+     "summary": "新台幣兌美元9月7日以31.552元作收，升值7.8分，創近3個月新高，台北外匯經紀公司成交值18.32億美元，全日高低價差1.46角，早盤升貶互見後午盤轉強收高。",
+     "source": "鉅亨網",
+     "tags": ["TWD", "USDTWD"]
+    },
+    {
+     "severity": "info",
+     "title": "OPEC+維持10月原油配額不變 荷姆茲海峽衝突削弱其市場影響力",
+     "url": "https://egyptoil-gas.com/news/opec-keeps-october-oil-output-policy-unchanged-as-iran-war-limits-supply/",
+     "summary": "沙烏地、俄羅斯、伊拉克等7個OPEC+核心產油國於9月6日決議維持10月產量配額不變，因美伊衝突持續干擾波灣經荷姆茲海峽的原油出口，使成員國實際產量遠低於配額目標，配額數字與實際出口量已明顯脫節。OPEC+訂10月4日再度開會，並將於11月審視2027年產能配額的容量評估報告。",
+     "source": "Egypt Oil & Gas",
+     "tags": ["OPEC", "OIL", "HORMUZ"]
+    }
+   ]
+  }
+ ]
+}

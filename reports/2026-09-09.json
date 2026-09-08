@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-09",
+ "focus": "美伊衝突再升級：美軍癱瘓3艘伊朗油輪，伊朗發射飛彈攻擊美艦艇未果，荷姆茲海峽戰事逼近全面軍事衝突邊緣。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "N-able N-central爆CVSS滿分10.0零時差漏洞 遭在野利用可未驗證取得RCE",
+     "url": "https://www.helpnetsecurity.com/2026/09/07/n-able-n-central-hotfix-cve-2026-86218/",
+     "summary": "N-able於9月5日發布N-central 2026.3 Hotfix 4（build 2026.3.1.14）修補CVE-2026-86218，此為CWE-96靜態程式碼注入漏洞，未經驗證的攻擊者即可遠端執行程式碼。廠商已私下通知客戶偵測到在野攻擊，資安業者Huntress並釋出概念驗證(PoC)；Shadowserver統計全球近1,500台面向公網的N-central伺服器曝險，以美歐居多，仍在HF3版本的地端用戶須立即升級，託管版(NCOD)已由廠商完成修補。",
+     "source": "N-able（經 Help Net Security 轉述）",
+     "tags": ["N-CENTRAL", "RCE", "ZERO-DAY", "RMM"]
+    },
+    {
+     "severity": "high",
+     "title": "SAP 9月修補日爆兩項CVSS近滿分漏洞 逾萬台系統暴露OVERPASS與S4GET風險",
+     "url": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-overpass-kernel-vulnerability/",
+     "summary": "SAP發布9月安全更新，修補20項漏洞，其中CVE-2026-44756（暱稱OVERPASS）為核心Extended Passport Protocol解析程式的緩衝區溢位瑕疵，CVSS達10.0，未經授權攻擊者可取得管理員權限完全掌控系統，影響逾1萬台面向公網的SAP系統；CVE-2026-58240（暱稱S4GET）則是NetWeaver訊息伺服器缺少驗證機制的漏洞，CVSS 9.8，攻擊者免帳密即可跨叢集執行任意指令。兩者皆尚無在野利用報告，廠商已提供修補程式，建議立即套用。",
+     "source": "SAP（經 BleepingComputer 轉述）",
+     "tags": ["SAP", "CVE-2026-44756", "CVE-2026-58240", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "資安研究員公開CrowdStrike Falcon「FalconFlank」零時差PoC 濫用巨集清除機制取得SYSTEM權限",
+     "url": "https://www.bleepingcomputer.com/news/security/new-crowdstrike-falconflank-zero-day-grants-system-privileges/",
+     "summary": "化名Chaotic Eclipse的資安研究員於9月初公開「FalconFlank」概念驗證，利用CrowdStrike Falcon Sensor for Windows的惡意巨集修復功能瑕疵，誘導以高權限運行的資安軟體代為執行指令，可在Windows 11與Windows Server 2025上取得SYSTEM層級的命令列。截至目前CrowdStrike尚未確認漏洞、核發CVE編號或釋出修補程式，企業應留意端點異常行為作為緩解措施。",
+     "source": "BleepingComputer",
+     "tags": ["CROWDSTRIKE", "ZERO-DAY", "PRIVILEGE-ESCALATION", "POC"]
+    },
+    {
+     "severity": "medium",
+     "title": "微軟9月修補日修補973項漏洞 含2個已遭在野利用的權限提升零時差",
+     "url": "https://cybersecuritynews.com/microsoft-patch-tuesday-update-september-2026/",
+     "summary": "微軟9月8日發布本月安全更新，橫跨Windows、Office、SQL Server、Exchange、SharePoint及Azure等產品線，共修補973項漏洞。其中CVE-2026-85880（Windows ALPC權限提升）與CVE-2026-81963（Windows Update Stack權限提升，涉及連結解析瑕疵）已遭在野利用，雖僅列「重要」而非「重大」等級，仍建議所有受影響系統立即套用更新。",
+     "source": "Microsoft（經 Cybersecurity News 轉述）",
+     "tags": ["MICROSOFT", "PATCH-TUESDAY", "ZERO-DAY", "PRIVILEGE-ESCALATION"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：9月8日至9日偵獲共機4架次(2架逾中線)、共艦6艘、公務船9艘",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部發布新聞稿，截至今晨6時止的24小時內，偵獲中共軍機4架次、艦艇6艘、公務船9艘持續在台海周邊活動，其中2架次逾越海峽中線進入台灣北部及西南空域。國軍運用聯合情監偵系統嚴密監控應處。",
+     "source": "國防部",
+     "tags": ["TAIWAN-STRAIT", "PLA", "MND", "TAIWAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "川習會9月24日登場 議程涵蓋出口管制、AI治理與台灣議題",
+     "url": "https://www.kharon.com/brief/trump-xi-meeting-china-iran-war-taiwan-ai",
+     "summary": "美國總統川普將於9月24日在華府主持與中國國家主席習近平的高峰會，為今年第二次面對面會晤。據報議程聚焦前沿AI模型風險管理與智慧財產權保護，雙方亦考慮建立AI安全對話機制；出口管制、伊朗戰事與台灣問題預料同列議程，但雙邊在AI、網路行動與數位主權等關鍵議題上進展有限。",
+     "source": "Kharon",
+     "tags": ["US-CHINA", "SUMMIT", "TAIWAN", "AI"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊油輪戰再升級 美軍癱瘓3艘伊朗油輪 伊朗飛彈攻擊美艦艇未果",
+     "url": "https://www.cnn.com/2026/09/05/middleeast/iran-us-tanker-kharg-intl",
+     "summary": "美軍近日在波灣強力反擊，分別於哈爾克島外海及賈斯克附近癱瘓伊朗革命衛隊油輪M/T Downy與M/T Stark 1，另一艘無載重油輪M/T Kylo遭多次擊中後完全摧毀。伊朗革命衛隊隨後宣稱對3艘油輪及3艘美方相關船隻發動攻擊，並朝美軍航艦戰鬥群方向試射飛彈，遭美艦艇成功規避。雙方在川普核准的「以油輪還油輪」報復政策下持續升級，荷姆茲海峽情勢瀕臨全面軍事衝突邊緣。",
+     "source": "CNN",
+     "tags": ["IRAN", "HORMUZ", "IRGC", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "太平洋島國論壇未能一致譴責中國飛彈試射 印太地緣角力浮現裂痕",
+     "url": "https://abcnews.com/International/wireStory/pacific-leaders-summit-fail-reach-unanimous-condemnation-chinas-136185456",
+     "summary": "太平洋島國論壇9月3日在帛琉柯羅爾召開年度峰會，對中國7月在其海域試射彈道飛彈一事僅取得「關切」共識，未能發表一致譴責聲明。分析指出，美中台與紐澳等國近年競相拉攏太平洋島國，使原本立場一致的島國集團出現分歧，此次未達共識被視為印太地緣角力加劇的縮影。",
+     "source": "ABC News",
+     "tags": ["CHINA", "PACIFIC-ISLANDS-FORUM", "MISSILE-TEST"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜美特使莫斯科會晤普丁後轉赴基輔 稱俄烏和談取得實質進展",
+     "url": "https://thehill.com/policy/international/6075212-witkoff-progress-russia-ukraine-talks/",
+     "summary": "川普特使維特科夫與庫許納在莫斯科與俄羅斯總統普丁會談逾3小時後，轉往基輔與烏克蘭總統澤倫斯基會晤。維特科夫表示雙方在俄烏和談上取得「實質進展」，並已著手安排後續三方會談；俄烏雙方同意在特使訪問期間暫停對彼此首都的空襲，但尚未達成全面停火。",
+     "source": "The Hill",
+     "tags": ["UKRAINE", "RUSSIA"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "台股9/8收跌220點失守47,200點 台積電逆勢收2,470元",
+     "url": "https://news.ttv.com.tw/news/11509080001400W",
+     "summary": "台股9月8日開高走低，終場下跌220.49點，收在47,105.78點，跌幅0.47%，成交量8,766.62億元。權王台積電逆勢上漲10元，收2,470元，盤中一度攻上2,505元；鴻海、廣達、台達電、聯發科等權值股翻黑，尾盤跌勢擴大。",
+     "source": "台視新聞",
+     "tags": ["TAIEX", "TSMC", "TAIWAN"]
+    },
+    {
+     "severity": "warning",
+     "title": "美股9/8道瓊挫逾400點 中東緊張與油價走高壓抑買氣",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-8-133744027.html",
+     "summary": "美股9月8日收黑，道瓊工業指數跌0.79%收52,772.27點，標普500跌0.71%收7,631.47點，那斯達克綜合指數跌1.03%收26,099.77點。市場受美國對伊朗油輪新一輪軍事行動、荷姆茲海峽長期受阻疑慮及油價走高牽動，科技股與半導體股普遍承壓。",
+     "source": "Yahoo Finance",
+     "tags": ["S&P500", "NASDAQ", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油9/8漲至97.41美元 美伊衝突推升風險溢價",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "布蘭特原油9月8日上漲0.26%至每桶97.41美元，延續近期漲勢。美軍近日對伊朗油輪的軍事行動及荷姆茲海峽航運受阻疑慮，持續為油價提供風險溢價支撐。",
+     "source": "Trading Economics",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/8升值1.7分收31.535元 外資匯入動能偏強",
+     "url": "https://news.cnyes.com/news/id/6600566",
+     "summary": "新台幣兌美元9月8日升貶互見，終場收在31.535元，升值1.7分，台北外匯經紀公司成交值17.82億美元，資金主要呈現匯入。",
+     "source": "鉅亨網",
+     "tags": ["TWD", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

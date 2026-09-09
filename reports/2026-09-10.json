@@ -1,0 +1,138 @@
+{
+ "date": "2026-09-10",
+ "focus": "美伊衝突再升級：中央司令部擊沉5艘伊朗油輪，伊朗以20枚彈道飛彈突襲約旦美軍基地，布蘭特原油衝破100美元大關。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜StyleSmuggler漏洞正式列入CISA KEV清單 聯邦機關須9/11前完成修補",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+     "summary": "CVE-2026-75650為Adobe Commerce、Adobe Commerce B2B與Magento Open Source模板引擎的PHP注入漏洞，CVSS滿分10.0，影響2.4.4至2.4.9所有版本。Adobe已於9月7日釋出緊急修補，但攻擊者自9月4日起已利用此漏洞部署Rust版Linux後門與PHP網頁殼層，CISA於9月8日正式列入KEV清單，要求聯邦機關9月11日前完成修補。",
+     "source": "CISA",
+     "tags": ["ADOBE-COMMERCE", "MAGENTO", "CVE-2026-75650", "CISA-KEV", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "北韓Lazarus假冒航太獵頭滲透歐印國防業 Windows零時差潛伏5週後才曝光",
+     "url": "https://research.checkpoint.com/2026/shattering-the-dream-when-a-job-offer-becomes-a-zero-day-attack/",
+     "summary": "Check Point研究揭露，Lazarus集團自今年初起假冒航太／國防業獵頭，誘騙法國、德國、巴西、印度等地求職者開啟惡意PDF或下載偽造PDF閱覽器，植入Troy後門並利用Windows核心零時差CVE-2026-68820配合FudModule rootkit取得SYSTEM權限，最終部署ForestTiger後門；微軟已修補該漏洞，但攻擊已潛伏近5週才被發現。",
+     "source": "Check Point Research",
+     "tags": ["LAZARUS", "NORTH-KOREA", "APT", "CVE-2026-68820", "ZERO-DAY"]
+    },
+    {
+     "severity": "high",
+     "title": "Google AI代理開發套件ADK爆CVSS滿分漏洞 未驗證攻擊者可執行任意程式碼",
+     "url": "https://radar.offseq.com/threat/cve-2026-79696-cwe-184-incomplete-list-of-disallowed-inputs-in-google-cloud-agent-development-kit-adk-3b96714136b44311",
+     "summary": "CVE-2026-79696為Google Cloud Agent Development Kit(ADK) for Python 2.0.0至2.6.0版adk web元件的程式碼注入漏洞，影響安裝pytest的OSS、Cloud Run與GKE環境，未經驗證攻擊者可透過偽造測試回放(test session replay)執行任意程式碼，CVSS達滿分10.0。目前尚無在野利用報告，Google已建議使用者立即升級版本。",
+     "source": "OffSeq Threat Radar",
+     "tags": ["GOOGLE", "AI-AGENT", "CVE-2026-79696", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜PaperCut緊急修補48小時內遭繞過 火速二度釋出補丁圍堵攻擊",
+     "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+     "summary": "PaperCut NG/MF於8月27日就CVE-2026-81578(CVSS 8.8存取控制缺陷)與CVE-2026-82078(CVSS 9.4動態類別載入缺陷)釋出首次緊急補丁，但watchTowr研究人員在48小時內即重現攻擊鏈繞過修補，PaperCut被迫二度釋出補丁。兩漏洞串聯可對暴露於網路的伺服器達成未經驗證的遠端程式碼執行，用戶應立即更新至最新版本。",
+     "source": "BleepingComputer",
+     "tags": ["PAPERCUT", "CVE-2026-81578", "CVE-2026-82078", "RCE"]
+    },
+    {
+     "severity": "medium",
+     "title": "媒體巨頭Condé Nast爆3280萬筆用戶資料外洩 駭客論壇兜售舊資料",
+     "url": "https://cybernews.com/security/new-yorker-vogue-wired-conde-nast-data-breach/",
+     "summary": "駭客9月7日在俄語論壇兜售Condé Nast(旗下擁有Vogue、GQ、《紐約客》、WIRED等品牌)約3280萬筆用戶資料，要價1.5萬美元，內容含姓名、電子郵件、電話與住址，不含密碼或金融資訊。研究人員比對樣本後認為資料真實，且與去年12月WIRED外洩事件資料集重疊，屬舊資料重新流出而非新入侵，目前無需修補措施，用戶應留意釣魚郵件。",
+     "source": "Cybernews",
+     "tags": ["CONDE-NAST", "DATA-BREACH"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時偵獲共機4架次、共艦8艘 持續在台海周邊活動",
+     "url": "https://udn.com/news/story/10930/9740689",
+     "summary": "國防部發布最新24小時動態，偵獲中國解放軍機4架次、共艦8艘在台海周邊活動，國軍運用任務機、艦及岸置飛彈系統嚴密監控應處。（因官方系統連線受限，數字取自媒體引述國防部通稿之近似值。）",
+     "source": "聯合新聞網（經媒體引述國防部通稿）",
+     "tags": ["MND", "TAIWAN-STRAIT", "PLA", "TAIWAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "赴陸旅遊登錄惹議 觀光署擬開罰5萬元後改口宣導為主",
+     "url": "https://udn.com/news/story/7331/9742678",
+     "summary": "交通部觀光署原訂9月1日起要求旅行業者為赴陸考察、參訪及自組團旅客逐團完成「赴陸行前登錄」，違者可處1萬至5萬元罰鍰，登錄項目不含旅客個資，僅含團體與行程資訊；旅行業者批評此舉擴權引發反彈後，觀光署改口將先以宣導輔導為主，陸委會副主委梁文傑則強調個人不願登錄「絕對不會強迫」。",
+     "source": "聯合新聞網",
+     "tags": ["TAIWAN", "CROSS-STRAIT", "MAC"]
+    },
+    {
+     "severity": "warning",
+     "title": "外洩文件指中國以百萬人民幣收買密克羅尼西亞 助攔阻台灣參與WHA",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/09/09/2003863939",
+     "summary": "外洩文件顯示，中國駐密克羅尼西亞大使館今年3月致函要求該國聯署反對台灣參與世界衛生大會(WHA)，密克羅尼西亞4月8日去信世衛秘書長譚德塞要求不討論台灣議題，中國隨後於6月10日匯出100萬人民幣「採購公務車輛」補助款，密方6月23日回覆接受；台灣提案5月遭WHA否決。台灣國安會諮委黃重諺證實文件內容與台灣情報高度吻合。",
+     "source": "Taipei Times",
+     "tags": ["CHINA", "TAIWAN", "WHA", "MICRONESIA"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊衝突升級 中央司令部擊沉5艘伊朗油輪 伊朗飛彈突襲約旦美軍基地",
+     "url": "https://www.globalsecurity.org/military/ops/iran-war-oprep.htm",
+     "summary": "美國中央司令部9月8日宣布擊沉5艘伊朗原油油輪，因革命衛隊(IRGC)兩天內兩度試圖攻擊美軍軍艦；伊朗隨後以20枚彈道飛彈報復突襲約旦阿茲拉克(Al Azraq)美軍基地，18枚遭攔截，2枚落於荒地未造成傷亡。布蘭特原油9日盤中衝上100美元關卡，為近6週首見，荷姆茲海峽緊張情勢持續升溫，恐進一步逼近全面軍事衝突邊緣。",
+     "source": "GlobalSecurity.org",
+     "tags": ["IRAN", "HORMUZ", "MIDDLE-EAST", "US-GOV"]
+    },
+    {
+     "severity": "warning",
+     "title": "澤倫斯基：美俄烏三方會談9月可望登場 但戰爭料仍將持續",
+     "url": "https://kyivindependent.com/units-of-ukraines-army-ordered-to-halt-fighting-as-us-envoys-set-to-visit-ukraine-russia/",
+     "summary": "美國特使維科夫(Steve Witkoff)與庫許納(Jared Kushner)分別會晤俄羅斯總統普丁與烏克蘭總統澤倫斯基後，澤倫斯基表示9月可能促成美俄烏三方會談，感謝美方協助重啟談判；但俄羅斯外長拉夫羅夫批評芬蘭與義大利提出的立即停火倡議只是烏克蘭的「拖延戰術」，澤倫斯基也坦言「預期戰爭仍將持續」。",
+     "source": "Kyiv Independent",
+     "tags": ["UKRAINE", "RUSSIA", "CEASEFIRE"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/9量縮收漲77點站穩47,183點 台積電小跌收2,465元",
+     "url": "https://udn.com/news/story/7251/9743831",
+     "summary": "台股9日終場上漲77.58點，收47,183.36點，漲幅0.16%，成交量7,735億元較前一日明顯收斂；權王台積電收在2,465元，下跌5元。市場人士指出美伊衝突推升油價與美股走弱，牽動台股買氣轉趨保守。",
+     "source": "聯合新聞網",
+     "tags": ["TAIEX", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/9三大指數同步收黑 道瓊重挫逾600點",
+     "url": "https://finance.sina.com.cn/stock/usstock/c/2026-09-09/doc-inirehkh5798821.shtml",
+     "summary": "美股9日全面收黑，道瓊指數下跌約1.18%(逾600點)，標普500下跌0.58%，那斯達克下跌0.32%；布蘭特原油衝破100美元大關疊加公債殖利率走升，加深市場對聯準會9月15至16日利率會議前通膨升溫的疑慮。",
+     "source": "新浪財經",
+     "tags": ["DOW", "S&P500", "NASDAQ", "FED"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/9衝破100美元關卡 創近6週新高",
+     "url": "https://fortune.com/article/price-of-oil-09-09-2026/",
+     "summary": "受美伊衝突升級與荷姆茲海峽航運風險影響，布蘭特原油9日盤中一度衝上100.71美元，為近6週來首次站上百元關卡，較前一交易日大漲逾2.8%；市場人士警告若荷姆茲海峽情勢持續惡化，油價恐進一步推升全球通膨壓力。",
+     "source": "Fortune",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/9盤中升值至31.495元 外資匯入撐盤",
+     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2ea37a50-3b2f-496e-8c1b-9c63bd2a2aa4",
+     "summary": "新台幣兌美元9日中午盤中一度升值4.0分至31.495元，台北及元太外匯市場合計成交8.73億美元；外資匯入動能延續近期升勢，市場人士預期在油價走揚與台股保守氣氛下匯價波動可能加大。",
+     "source": "MoneyDJ理財網",
+     "tags": ["TWD", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

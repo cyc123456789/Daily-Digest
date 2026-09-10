@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-11",
+ "focus": "美伊衝突再升級：伊朗以彈道飛彈反擊美軍航艦與驅逐艦，美方稍早已擊沉多艘伊朗油輪，荷姆茲海峽戰事逼近全面軍事對抗邊緣。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "BlueMoon漏洞鏈遭四組國家級駭客爭相濫用 中國APT31串聯Chrome與Windows零時差",
+     "url": "https://www.bleepingcomputer.com/news/security/new-bluemoon-kit-exploited-windows-and-chrome-zero-day-flaws/",
+     "summary": "資安業者Proofpoint揭露攻擊套件「BlueMoon」，串連Chrome V8引擎型別混淆漏洞CVE-2026-85046(已列入CISA KEV)與尚未完全修補的Windows核心權限提升零時差CVE-2026-85880，可讓攻擊者遠端於瀏覽器沙箱內執行程式碼並逃逸取得系統最高權限。中國背景APT31(JungleBamboo)自8月28日率先於間諜郵件攻擊使用，一週內另三個國家級駭客組織隨即跟進，凸顯零時差武器化速度加快。",
+     "source": "Proofpoint（經 BleepingComputer 轉述）",
+     "tags": ["APT31", "CVE-2026-85046", "ZERO-DAY", "CHINA"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Citrix NetScaler漏洞正式列入CISA KEV清單 同批新增Cisco、Fortinet與Chrome漏洞",
+     "url": "https://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
+     "summary": "CISA於9月9日一口氣新增四項確認在野利用漏洞：Citrix NetScaler驗證繞過(CVE-2026-19490，此前已遭鎖定攻擊)、Cisco Firewall Management Center驗證繞過(CVE-2026-20079)、Fortinet緩衝區溢位(CVE-2025-25249)與Chromium V8越界寫入(CVE-2026-87491)，要求聯邦機關9月12日前完成修補。四項均已有官方修補程式，企業應盡速套用。",
+     "source": "CISA（經 The Hacker News 轉述）",
+     "tags": ["CISA-KEV", "CITRIX", "CISCO", "CVE-2026-19490"]
+    },
+    {
+     "severity": "high",
+     "title": "Gitea遭Git Hook注入漏洞持續在野利用 開放註冊預設值助攻擊者輕鬆取得寫入權限",
+     "url": "https://www.securityweek.com/cisa-warns-of-exploited-gitea-vulnerability/",
+     "summary": "CVSS 9.8的Gitea漏洞CVE-2026-60004允許具備儲存庫寫入權限者透過diffpatch API植入可執行的Git Hook，取得Gitea服務帳號權限執行任意指令；由於Gitea預設開放註冊，未經授權訪客也能自行建立帳號取得所需寫入權限。影響1.17以上所有版本，已於1.27.1修補，CISA已列入KEV清單並持續觀察到攻擊活動。",
+     "source": "CISA（經 SecurityWeek 轉述）",
+     "tags": ["GITEA", "CVE-2026-60004", "RCE", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "牙科保險巨頭DentaQuest外洩事件擴大 逾1500萬筆病患資料含社會安全碼曝光",
+     "url": "https://www.hipaajournal.com/dentaquest-data-breach/",
+     "summary": "美國牙科與視力保險管理商DentaQuest證實，駭客集團ShinyHunters於5月17至20日入侵其網路，導致逾1500萬人姓名、地址、社會安全碼、Medicaid／Medicare編號及牙科治療紀錄外洩，為今年迄今通報美國衛生部規模最大的醫療資料外洩案。公司已提供24個月信用監控服務，並面臨集體訴訟。",
+     "source": "HIPAA Journal",
+     "tags": ["SHINYHUNTERS", "DATA-BREACH", "HEALTHCARE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機18架次(13架逾中線)、共艦8艘、公務船1艘",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部9月10日發布偵蒐匯報，自9日6時至10日6時計偵獲解放軍18架次軍機於北部、中部、西南及東部空域活動，其中13架次逾越台海中線；另有海軍艦艇8艘、公務船1艘在周邊海域持續活動，國軍運用岸置飛彈系統、艦艇與機艦嚴密監控應處。",
+     "source": "中華民國國防部",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CROSS-STRAIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "解放軍東部戰區直-10直升機跨晝夜海上訓練 演練科目直指島嶼作戰與反登陸",
+     "url": "https://newtalk.tw/news/view/2026-09-04/1057925",
+     "summary": "解放軍東部戰區陸航部隊近期於福建沿海至台灣海峽正面實施直-10攻擊直升機跨晝夜海上訓練，訓練課目涵蓋對島嶼作戰、近岸抗登陸與反無人系統等場景，與犯台作戰想定高度重合，外界解讀為對台施壓意味濃厚的例行戰備演練。",
+     "source": "Newtalk新聞",
+     "tags": ["PLA", "TAIWAN-STRAIT", "CHINA", "CROSS-STRAIT"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜陸方9月新規爭議未歇 陸委會：真正風險在莫名其妙被留置盤查",
+     "url": "https://udn.com/news/story/7331/9747008",
+     "summary": "因應中國9月起實施赴陸新規定，陸委會副主委梁文傑9月10日再度提醒，台灣民眾赴陸真正風險並非交通意外，而是言行遭陸方認定敏感後在入境時「莫名其妙被帶走、留置」；陸委會同日並回應國台辦近日對台灣「支語警察」現象的批評，籲兩岸應理性看待語言文化差異。",
+     "source": "聯合新聞網",
+     "tags": ["TAIWAN", "CHINA", "CROSS-STRAIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "美伊台面下戰事再升級 伊朗對美國航艦、驅逐艦發射彈道飛彈反制美方打擊3艘油輪",
+     "url": "https://www.armyrecognition.com/news/navy-news/2026/iran-fires-ballistic-missiles-at-u-s-navy-carrier-and-destroyer-as-u-s-strikes-3-oil-tankers",
+     "summary": "美國日前打擊3艘伊朗油輪後，伊朗革命衛隊向在荷姆茲海峽巡弋的美國海軍航空母艦戰鬥群與驅逐艦發射彈道飛彈反制，美方尚未證實是否遭擊中；專家形容此舉為伊朗「精算過的升級」，雙方近來在海峽的攻擊已從油輪戰延伸至直接鎖定軍艦，全球近兩成液化天然氣與四分之一海運石油貿易路線持續面臨中斷風險。",
+     "source": "Army Recognition",
+     "tags": ["IRAN", "HORMUZ", "IRGC", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "川習會9月24日倒數 港媒：白宮籌備缺乏主責單位 北京日益焦慮",
+     "url": "https://udn.com/news/story/6809/9693356",
+     "summary": "川普證實預計9月24日前後在紐約與習近平會晤，為2015年以來習近平首次對美國進行國是訪問；據港媒引述知情人士，美方禮賓、場地與對外訊息目前缺乏明確主責單位，使北京在會前更難掌握安排、擔憂出現意外狀況，雙方在具體成果上也幾乎未有進展。",
+     "source": "聯合新聞網",
+     "tags": ["SUMMIT", "US-CHINA", "CHINA"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/10收跌243點失守47,000點 台積電下跌15元收2,450元",
+     "url": "https://udn.com/news/story/7251/9746210",
+     "summary": "台股9月10日開低走低，加權指數終場下跌242.87點、跌幅0.51%，收在46,940.49點，成交量7,140億元；權王台積電收在2,450元，下跌15元，與台達電合計拖累大盤逾200點，聯發科則逆勢撐盤。",
+     "source": "聯合新聞網",
+     "tags": ["TAIEX", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/10三大指數同步收黑 殖利率彈升與油價走高壓抑買氣",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-083717303.html",
+     "summary": "美股9月10日在公債殖利率走升與布蘭特原油漲破100美元雙重壓力下全面收黑，道瓊工業指數跌0.77%收52,381.08點，標普500跌0.45%收7,638.95點，那斯達克綜合指數跌0.64%收26,253.34點。",
+     "source": "Yahoo Finance",
+     "tags": ["DOW", "SP500", "NASDAQ", "TREASURY-YIELD"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/10衝上100美元關卡創數月新高 美伊衝突持續推升風險溢價",
+     "url": "https://www.forbes.com/advisor/investing/oil-prices-today/",
+     "summary": "受美伊在荷姆茲海峽的軍事衝突持續升級影響，布蘭特原油期貨9月10日盤中最高觸及每桶101至105美元區間(各報價平台數據略有差異，屬近似值)，創下自5月以來新高。市場擔憂衝突若進一步擴大，恐衝擊全球近兩成液化天然氣與四分之一海運原油運輸路線。",
+     "source": "Forbes Advisor（近似值，各平台報價略有差異）",
+     "tags": ["BRENT", "OIL", "HORMUZ", "IRAN"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/10貶值收31.548元 歐洲央行同步升息一碼至2.50%抗通膨",
+     "url": "https://news.cnyes.com/news/id/6603007",
+     "summary": "新台幣兌美元9月10日午盤後貶勢擴大，終場收在31.548元、貶值4.3分，台北外匯經紀成交值19.39億美元；同日歐洲央行將存款機制利率調升1碼至2.50%，主要再融資利率升至2.65%，因中東衝突持續推升能源通膨，歐央行預期今年通膨均值達3.0%。",
+     "source": "鉅亨網",
+     "tags": ["TWD", "USDTWD", "ECB", "RATE-HIKE"]
+    }
+   ]
+  }
+ ]
+}

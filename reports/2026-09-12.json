@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-12",
+ "focus": "美伊衝突升至開戰以來最大規模：伊朗宣稱一波攻擊10艘船隻(含2艘美國關聯)，荷姆茲海峽全面軍事對抗風險持續升高。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜Cisco FMC漏洞遭國家級駭客與Qilin勒索軟體雙重濫用 Talos示警攻擊者已鎖定跳板部署後門",
+     "url": "https://blog.talosintelligence.com/fmc-ongoing-exploitation/",
+     "summary": "Cisco已確認CVSS滿分10.0的Firewall Management Center驗證繞過漏洞CVE-2026-20079(伴隨CVE-2026-20316)遭在野利用；Talos情資顯示至少三群攻擊者，含國家級駭客與Qilin勒索軟體集團，趁虛部署後門、竊取憑證並為加密勒索預作準備。Cisco已於7月29日釋出修補程式，無暫時緩解措施，尚未套用者應立即升級。",
+     "source": "Cisco Talos",
+     "tags": ["CISCO", "CVE-2026-20079", "CISA-KEV", "RANSOMWARE"]
+    },
+    {
+     "severity": "high",
+     "title": "VMware vCenter路徑穿越漏洞遭大規模濫用 361台系統橫跨47國遭植入後門",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-vmware-vcenter-rce-flaw-exploited-for-reverse-ssh-access/",
+     "summary": "資安業者QUIRSO揭露，CVSS 9.8的vCenter Syslog伺服器路徑穿越漏洞CVE-2026-59310自7月Broadcom修補後遭疑似國家級駭客組織鎖定，已在47個國家發現361台系統遭植入以開源工具reverse_ssh建立的隱藏遠端存取後門，可長期潛伏維持控制權。CISA已於8月列入KEV清單，無暫時緩解方案，僅能透過修補阻斷。",
+     "source": "QUIRSO（經 BleepingComputer 轉述）",
+     "tags": ["CISA-KEV", "RCE", "BACKDOOR", "VMWARE"]
+    },
+    {
+     "severity": "high",
+     "title": "諾和諾德遭FulcrumSec入侵 前端程式碼硬編碼憑證外洩1.3TB病患暨商業機密",
+     "url": "https://www.govinfosecurity.com/novo-nordisk-data-breach-tied-to-stolen-github-access-tokens-a-32802",
+     "summary": "勒索性入侵集團FulcrumSec宣稱，透過丹麥藥廠諾和諾德(Novo Nordisk)兩個對外網站前端JavaScript程式碼中硬編碼的Azure與GitHub存取權杖，橫向入侵長達逾兩個月，最終竊得約1.3TB、逾70萬份檔案；諾和諾德拒絕支付2500萬美元贖金，外洩範圍是否含病患個資尚待公司證實。企業應全面稽核前端程式碼是否遺留機密憑證。",
+     "source": "GovInfoSecurity",
+     "tags": ["DATA-BREACH", "HEALTHCARE", "NOVO-NORDISK"]
+    },
+    {
+     "severity": "medium",
+     "title": "新興Panzer勒索軟體攻陷西班牙國家氣象局 短短一月已橫掃11國逾16個受害組織",
+     "url": "https://cyberpress.org/panzer-ransomware-targets-16-organizations/",
+     "summary": "8月初現身的雙重勒索集團Panzer聲稱入侵西班牙國家氣象局(AEMET)，此前一個月內已在至少11國鎖定16至21個受害組織，橫跨政府、製造與電信業，並支援Windows、Linux、ESXi與FreeBSD多平台加密。AEMET尚未證實資料外洩範圍或是否影響氣象預報服務。",
+     "source": "Cyberpress",
+     "tags": ["RANSOMWARE", "PANZER", "SPAIN"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜MikroTik RouterOS「MikroTrick」漏洞鏈正式列入CISA KEV清單",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/09/10/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA於9月10日將稍早遭揭露的MikroTik RouterOS漏洞鏈CVE-2026-67277(權限驗證缺失)與CVE-2026-86060(指令參數注入)正式列入在野利用清單，確認先前資安業者所稱裝置遭完整控制的攻擊已有實際受害案例。聯邦機關須依期限完成修補，仍在使用受影響版本的企業應比照辦理。",
+     "source": "CISA",
+     "tags": ["MIKROTIK", "CISA-KEV", "ROUTEROS"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機11架次(10架次逾中線)、共艦8艘、公務船2艘",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部9月11日發布偵蒐匯報，自10日6時至11日6時計偵獲解放軍軍機11架次於西南及東部空域活動，其中10架次逾越台海中線；另有海軍艦艇8艘、海警等公務船2艘在周邊海域持續活動，國軍運用岸置飛彈系統、艦艇與機艦嚴密監控應處。",
+     "source": "中華民國國防部",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CROSS-STRAIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "中國16年來首度大修《國防動員法》10/1上路 學者：為台海一旦開戰預留法律工具",
+     "url": "https://udn.com/news/story/7331/9738461",
+     "summary": "中國全國人大常委會8月28日通過大修《國防動員法》，為2010年立法以來首次全面翻修，將於10月1日起施行，首度將「經濟社會力量轉化為國防力量」明文入法。學者鄧聿文與台灣立委王定宇均指出，此舉雖非專門針對台灣，但已為台海一旦開戰預留局部動員、資源調度與特別管制的法律依據，對日本、菲律賓等第一島鏈國家亦具威懾意味，赴陸台商恐面臨財產遭徵用風險。",
+     "source": "聯合新聞網",
+     "tags": ["CHINA", "TAIWAN", "TAIWAN-STRAIT", "CROSS-STRAIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊油輪戰創單日最大規模 伊朗一波攻擊10艘船含2艘美國關聯船隻",
+     "url": "https://www.nbcnews.com/world/iran/us-strikes-iranian-tankers-attempted-missile-attacks-navy-warship-rcna596699",
+     "summary": "繼美軍擊沉5艘伊朗油輪後，伊朗宣稱一口氣攻擊10艘船隻，包括2艘美國關聯船隻與8艘油輪，為六個月來美伊戰事中單日規模最大的一波海上攻擊；伊朗革命衛隊稍早並曾對美軍航艦與驅逐艦發射彈道飛彈反制。布蘭特原油一度突破每桶100美元、創7月以來新高，荷姆茲海峽全面軍事對抗風險持續升高。",
+     "source": "NBC News",
+     "tags": ["IRAN", "HORMUZ", "IRGC", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川習會9/24行程拍板 川普證實設國宴款待 雙方研議互降300億美元關稅",
+     "url": "https://www.voachinese.com/a/trump-confirms-xi-s-september-24-visit-as-chinese-leader-reportedly-plans-large-business-delegation-20260904/8194334.html",
+     "summary": "白宮證實習近平將於9月23日晚抵美、24日與川普會晤並獲設國宴款待、25日離境，為2015年以來習近平首次國是訪問；習近平預計罕見率大型企業家代表團隨行，中國商務部證實雙方正研究對約300億美元商品互降關稅，美方另盼中方增發稀土出口許可並擴大採購美國農產品。",
+     "source": "美國之音",
+     "tags": ["SUMMIT", "US-CHINA", "CHINA"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/11重挫755點失守46,200點 台積電收跌40元至2,410元",
+     "url": "https://udn.com/news/story/7251/9748585",
+     "summary": "台股9月11日終場下跌755.64點、跌幅1.61%，收在46,184.85點，成交量7,219億元；權王台積電收在2,410元、下跌40元，同步為指數下跌主因，市場人士歸咎於美股前一日走弱及美伊衝突推升油價的疊加壓力。",
+     "source": "聯合新聞網",
+     "tags": ["TAIEX", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/11在CPI符合預期後止跌反彈 道瓊漲逾500點終結連四黑",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-11-dow-sp-500-nasdaq-cpi-inflation-082201751.html",
+     "summary": "美國8月CPI年增3.4%、核心CPI年增2.4%，均符合市場預期，帶動美股止穩收復近期跌勢：標普500指數上漲0.96%，道瓊工業指數大漲逾1%(約526點)，那斯達克綜合指數漲0.88%，終結先前四連黑走勢；惟中東地緣風險與油價高檔仍是後市變數。",
+     "source": "Yahoo Finance",
+     "tags": ["DOW", "SP500", "NASDAQ", "CPI"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/11回落至106美元關卡 CPI數據帶動美元走強壓抑油價",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "布蘭特原油期貨9月11日下跌1.41%，回落至每桶106.11美元，較前一日觸及的100美元上方高點略為降溫；市場人士指出，美國8月CPI數據符合預期推升美元走強是短線油價回落主因，惟荷姆茲海峽美伊衝突仍是左右後市風險溢價的關鍵變數。",
+     "source": "Trading Economics",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/11貶值收31.638元 本週累計貶值0.03%",
+     "url": "https://tw.stock.yahoo.com/news/9-11%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A531-638%E5%85%83%E4%BD%9C%E6%94%B6-%E8%B2%B6%E5%80%BC9-0%E5%88%86-080300018.html",
+     "summary": "新台幣兌美元9月11日終場收在31.638元，貶值9.0分，台北外匯經紀成交值29.4億美元；盤中最高31.580元、最低31.698元，累計本週貶值0.03%，走勢相對持穩。",
+     "source": "Yahoo奇摩股市",
+     "tags": ["TWD", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "date": "2026-09-14",
+ "focus": "日媒：北京向華府放話，若批准對台新軍售，習近平恐取消9月24日川習會；ConnectWise ScreenConnect CVSS 9.9漏洞遭在野利用列入CISA KEV。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "ConnectWise ScreenConnect爆CVSS 9.9漏洞遭在野利用 CISA列入KEV清單",
+     "url": "https://www.connectwise.com/company/trust/security-bulletins/2026-09-08-screenconnect-bulletin",
+     "summary": "CVE-2026-84869影響ScreenConnect用戶端(26.6.5以前版本)，攻擊者可透過作用中遠端支援連線在未經授權下傳輸並執行檔案，CVSS達9.9分。ConnectWise已於9/8釋出26.6.5修補，雲端環境自動更新，地端部署須盡速升級並重新安裝主機端程式；CISA已證實在野利用並列入KEV清單，要求聯邦機關限期完成修補。",
+     "source": "ConnectWise",
+     "tags": [
+      "CISA-KEV",
+      "RCE",
+      "RMM",
+      "CONNECTWISE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "JFrog Artifactory雙漏洞遭串聯濫用 攻擊者鑄造管理員權杖植入Rust後門",
+     "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
+     "summary": "資安業者Wiz揭露，攻擊者自8月15日至9月8日鏈式利用CVE-2026-42018(權杖冒用，CVSS 7.5)與CVE-2026-42016(權杖範圍驗證缺陷，CVSS 8.1)，在未驗證情況下取得管理員權杖，進而建立持久管理帳號、安裝惡意Groovy外掛並植入Rust後門長期潛伏。JFrog已釋出7.111.21以上等分支修補版本，籲用戶立即升級並排查是否已遭入侵。",
+     "source": "Wiz（經 The Hacker News 轉述）",
+     "tags": [
+      "CVE-2026-42016",
+      "CVE-2026-42018",
+      "JFROG",
+      "BACKDOOR"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "醫療科技商Veradigm遭第三方供應商入侵 病患個資疑外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/veradigm-discloses-patient-data-breach-after-gentlemen-gang-claims-attack/",
+     "summary": "勒索組織「The Gentlemen」9月5日宣稱竊得Veradigm 350萬筆病患資料並公開兜售。Veradigm證實攻擊者以竊得的客服API供應商憑證存取並複製部分病患姓名、地址、社會安全碼等個資，臨床病歷資訊未受影響；確切外洩筆數與資料範圍尚未經監管機關獨立證實。",
+     "source": "Veradigm（經 BleepingComputer 轉述）",
+     "tags": [
+      "RANSOMWARE",
+      "HEALTHCARE",
+      "DATA-BREACH"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "中俄北韓國家級駭客鎖定國防工業基地 兩年來累計濫用逾24個邊緣設備零時差",
+     "url": "https://cloud.google.com/blog/topics/threat-intelligence/threats-to-defense-industrial-base",
+     "summary": "Google威脅情報部門(Mandiant)指出，中國、俄羅斯與北韓關聯駭客組織自2020年以來已鎖定至少24個VPN、路由器等邊緣設備零時差漏洞，入侵至少二十多個國防工業基地相關組織。報告指出邊緣設備因缺乏內部網段隔離防護，長期是國家級間諜活動首選的入侵跳板。",
+     "source": "Google Threat Intelligence（Mandiant）",
+     "tags": [
+      "APT",
+      "CHINA",
+      "RUSSIA",
+      "NORTH-KOREA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜陸方新出入境規定9/15上路 陸委會示警恐將台灣人視為「中國人」限制出境",
+     "url": "https://udn.com/news/story/7331/9689889",
+     "summary": "中國「出入境管理新規」9月15日起實施，陸委會副主委梁文傑再度示警，中方可能援引出口管制、科技法規等理由，將台灣人視為「中國人」限制其出境，籲赴陸民眾提高警覺並事先做好風險準備。",
+     "source": "聯合新聞網",
+     "tags": [
+      "CHINA",
+      "TAIWAN",
+      "CROSS-STRAIT"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：24小時內偵獲共機3架次、共艦6艘 於西南及東部空域活動",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部表示，9月13日上午6時至14日上午6時，計偵獲解放軍各型軍機3架次、艦艇6艘，於台灣西南及東部空域周邊持續活動，國軍運用任務機、艦與岸置飛彈系統嚴密監控應處。",
+     "source": "中華民國國防部",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT",
+      "CROSS-STRAIT"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "國軍9/16至18九鵬實施聯合精準彈藥操演 攻擊無人機首度參演",
+     "url": "https://newtalk.tw/news/view/2026-09-13/1059455",
+     "summary": "國防部宣布9月16日至18日在屏東九鵬基地舉行「聯合精準彈藥操演」，出動愛國者、天弓飛彈、雄風二/三型反艦飛彈、陸軍海馬士多管火箭系統，以及ALTIUS 600M攻擊無人機首度參演，驗證空軍中高空、海軍反艦、陸軍近岸三軍聯合打擊能量。",
+     "source": "Newtalk新聞",
+     "tags": [
+      "MND",
+      "TAIWAN",
+      "DRONE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜日媒：北京向華府放話 若批准新一波對台軍售恐取消川習會",
+     "url": "https://udn.com/news/story/6809/9750880",
+     "summary": "日本共同社引述知情人士報導，中國已向美方傳達，若華府於9月24日川習會前批准對台新軍售案，北京將考慮取消原訂於白宮舉行的川習會晤。消息指出，中方在籌備習近平出訪期間再次重申台灣議題是中美關係「紅線」，川普政府則因欲於11月期中選舉前展現外交成果而高度重視此次峰會。",
+     "source": "共同社（經 聯合新聞網 轉述）",
+     "tags": [
+      "TAIWAN",
+      "US-CHINA",
+      "SUMMIT",
+      "ARMS-SALE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜荷姆茲海峽伊朗商船再遭擊中 1死4傷",
+     "url": "https://www.washingtonpost.com/world/2026/09/13/iran-us-war-hormuz-ship-struck/87fbc410-af37-11f1-b498-8697f35a6743_story.html",
+     "summary": "英國海事貿易組織(UKMTO)通報，一艘伊朗籍商船9月13日在荷姆茲海峽克什姆島(Qeshm)外海遭不明飛射物擊中，伊朗官媒稱造成1死4傷。此為美伊「油輪戰」持續延燒下最新事件，目前仍有42艘油輪在海峽外等待通行，衝突持續推升油價與航運風險。",
+     "source": "The Washington Post",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "OIL"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "中菲南海緊張再升溫 北京指責馬尼拉「挑事」",
+     "url": "https://www.cnbc.com/2026/09/11/china-philippine-south-china-sea-disputes-tensions-.html",
+     "summary": "菲律賓國防部長泰奧多羅9日在首爾國防對話公開批評北京在南海的行為是「脅迫、霸凌與侵略」，中國隔日反批菲律賓「挑事」。雙方言詞交鋒使原已因仁愛礁、黃岩島多次對峙而緊繃的關係再添變數，南海灰色地帶對峙情勢持續升溫。",
+     "source": "CNBC",
+     "tags": [
+      "CHINA",
+      "PHILIPPINES",
+      "SOUTH-CHINA-SEA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "Fed本週利率會議登場 CPI數據升溫市場押注升息一碼機率逾8成",
+     "url": "https://udn.com/news/story/7251/9751243",
+     "summary": "聯準會將於9月16日(台灣時間17日)召開利率會議，繼8月消費者物價指數符合預期、上週五美股反彈收高後，據CME FedWatch與市場預測，交易員預期升息一碼(0.25個百分點)機率已升至約86%。本週適逢台指期結算與美股三巫日，加上地緣政治與油價擾動，市場恐加劇震盪。",
+     "source": "聯合新聞網",
+     "tags": [
+      "FED",
+      "FOMC",
+      "RATE-HIKE",
+      "CPI"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "台股9/14收跌210點失守46,000點 台積電跌40元至2,395元",
+     "url": "https://finance.ettoday.net/news/3219232",
+     "summary": "台股14日開高走低，加權指數終場下跌210點(-0.46%)，收45,811點，失守46,000點關卡，成交量新台幣1,064.5億元；台積電下跌40元至2,395元，跌幅1.64%。",
+     "source": "ETtoday財經雲",
+     "tags": [
+      "TAIEX",
+      "TSMC"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "荷姆茲海峽衝突未歇 布蘭特原油持續站穩每桶100美元上方",
+     "url": "https://zh.tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "受美伊「油輪戰」持續延燒影響，布蘭特原油上週五收在104美元上方，一度衝上107美元創數月新高；本週荷姆茲海峽伊朗商船再遭擊中後，油價恐延續每桶100美元上方的風險溢價，OPEC+暫維持10月配額不變因應供給不確定性。（因即時報價API連線受阻，數字引用當週財經媒體報導，屬近似值）",
+     "source": "TradingEconomics",
+     "tags": [
+      "BRENT",
+      "HORMUZ",
+      "OIL",
+      "OPEC"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "date": "2026-09-15",
+ "focus": "荷姆茲海峽開放談判生變、美方缺席致阿曼調解會議延後，布蘭特原油單日暴漲逾3%逼近106美元，全球股市同步重挫。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "身分驗證商IDScan遭入侵 逾1.53億筆美加駕照掃描外洩 FBI介入調查",
+     "url": "https://www.bleepingcomputer.com/news/security/idscan-confirms-breach-tied-to-153-million-stolen-drivers-licenses/",
+     "summary": "身分驗證服務商IDScan.net於9月4日發布資安公告，證實雲端平台於9月1日前後遭未經授權存取，外洩資料含客戶姓名及駕照、身分證等政府核發證件字號，資料量逾1.53億筆美加駕照掃描檔，另涉逾1000萬張身分證與579,000張醫療卡。FBI紐奧良辦公室已開案調查，公司尚未公布修補時程與詳細影響範圍。",
+     "source": "BleepingComputer",
+     "tags": ["DATA-BREACH", "IDSCAN"]
+    },
+    {
+     "severity": "high",
+     "title": "微軟Defender「ShieldBreak」漏洞修補遭繞過 新PoC證實仍可取得SYSTEM權限",
+     "url": "https://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html",
+     "summary": "資安研究員MSNightmare（化名Chaotic Eclipse／Nightmare Eclipse）證實，微軟先前針對Defender權限提升漏洞CVE-2026-69414（ShieldBreak）釋出的修補未完整封堵雲端檔案代管(CFAPI)機制的邏輯缺陷，其公開的新概念驗證仍可繞過修補、取得SYSTEM層級權限。微軟截至目前尚未釋出完整修補程式，企業應留意端點異常權限提升行為作為緩解。",
+     "source": "The Hacker News",
+     "tags": ["MICROSOFT", "CVE-2026-69414", "ZERO-DAY", "PRIVILEGE-ESCALATION"]
+    },
+    {
+     "severity": "medium",
+     "title": "惡意Twitch瀏覽器擴充功能外洩近3.1萬用戶OAuth權杖 明碼寫入俄羅斯代理伺服器紀錄",
+     "url": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html",
+     "summary": "名為「Twitch Enhanced Viewer／JeetBot」的瀏覽器擴充功能同時上架Chrome線上應用程式店（逾3萬用戶）與Firefox附加元件，以廣告阻擋、強制1080p等訴求吸引安裝，卻將使用者Twitch OAuth權杖以明碼方式寫入俄羅斯商業機器人服務代理伺服器的請求紀錄，攻擊者可憑權杖免密碼與二階段驗證操控受害帳號。開發者已於85.8.7版修改權杖傳輸方式，但強調舊版已外洩的權杖不會被自動撤銷，用戶須自行於Twitch後台重設。",
+     "source": "The Hacker News",
+     "tags": ["TWITCH", "OAUTH", "DATA-BREACH"]
+    },
+    {
+     "severity": "medium",
+     "title": "駭客論壇兜售8.2億筆支付寶用戶資料 螞蟻集團尚未證實外洩真偽",
+     "url": "https://www.escudodigital.com/en/cybersecurity/hacker-puts-data-of-820-million-alipay-users-up-for-sale.html",
+     "summary": "一名駭客9月9日在地下論壇兜售聲稱含8.2億筆支付寶(Alipay)用戶資料的完整資料庫，內容包含姓名、電話號碼、電子郵件與帳戶相關資訊。研究人員指出該筆資料尚未經獨立驗證，實際受影響人數可能因資料庫含重複或多來源紀錄而遠低於宣稱數字，母公司螞蟻集團與支付寶均未證實外洩，目前無需修補措施，用戶應留意冒充支付寶的釣魚簡訊與郵件。",
+     "source": "Escudo Digital",
+     "tags": ["ALIPAY", "CHINA", "DATA-BREACH"]
+    },
+    {
+     "severity": "warning",
+     "title": "伊朗國家級駭客MuddyWater偽裝Chaos勒索軟體成員 藉假旗行動掩護間諜活動",
+     "url": "https://www.infosecurity-magazine.com/news/iran-linked-apt-chaos-ransomware/",
+     "summary": "資安業者Rapid7追蹤到一起入侵事件，將攻擊者歸因為與伊朗情報與安全部有關聯的APT組織MuddyWater，該組織假冒Chaos勒索軟體集團成員，企圖以財務動機的假象掩蓋其真實的間諜目的。攻擊起手式為透過Microsoft Teams螢幕分享對員工進行社交工程竊取憑證並操弄多因子驗證機制，再轉為使用合法帳號進行內部橫向移動。",
+     "source": "Rapid7（經 Infosecurity Magazine 轉述）",
+     "tags": ["IRAN", "APT", "MUDDYWATER", "RANSOMWARE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜中國出入境新規9月15日正式生效 陸委會示警台人赴陸風險升高",
+     "url": "https://www.cna.com.tw/news/acn/202609140035.aspx",
+     "summary": "中國《出境入境管理法實施細則》修正案9月15日起正式生效，擴大禁止出境事由至涉及出口管制、技術進出口管理等「危害國家安全和利益」情事，並賦予邊控機關可不告知當事人的「秘密邊控」與查閱行動裝置電子資料等權力。陸委會示警，台商高層、半導體與高科技人才、基層公務員等5類人士風險最高，台胞證持有人恐被納入同一套管理，籲赴陸民眾提高警覺。（國防部最近一次通報為9月13日6時至14日6時，計偵獲共機3架次、共艦6艘在台海周邊活動，最新24小時數據截稿前尚未發布。）",
+     "source": "中央社",
+     "tags": ["CHINA", "TAIWAN", "CROSS-STRAIT", "MND"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜對台軍售恐成川習會籌碼 藍委籲兵推因應 學者：美方讓步空間更低",
+     "url": "https://udn.com/news/story/7331/9754159",
+     "summary": "因應日媒稍早報導北京揚言若美方於川習會前批准對台新軍售、可能取消原定9月24日的川習會晤，國民黨立委要求國安團隊就潛在約140億美元軍售案進行兵棋推演因應。國家安全研究院學者指出，在美中戰略競爭升高下，美方在對台軍售議題向中方讓步的空間比以往更低；另有學者評估川習二會仍將以經貿議題為主軸，台灣議題預料不會被列入正式議程。",
+     "source": "聯合新聞網",
+     "tags": ["TAIWAN", "US-CHINA", "SUMMIT", "ARMS-SALE"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "阿曼調解荷姆茲海峽開放會談生變 伊朗稱因也門局勢推遲、美方缺席談判",
+     "url": "https://www.aljazeera.com/news/2026/9/14/strait-of-hormuz-talks-postponed-due-to-yemen-events-says-iran",
+     "summary": "阿曼原訂9月14日召集伊朗與波灣阿拉伯國家，就重啟荷姆茲海峽臨時航運通道的方案進行磋商，美國事先自行退出這場不含美方的三方會談，改採藉海峽危機向伊朗施壓重啟核談判的策略。阿曼外長證實會談「為求共識」延後，伊朗則稱是因也門局勢生變；消息傳出前數小時，一艘伊朗商船在海峽遭攻擊造成1死，凸顯開放海峽航運的外交努力仍難敵持續的軍事衝突。",
+     "source": "Al Jazeera",
+     "tags": ["IRAN", "HORMUZ", "OMAN", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "北韓深化對俄軍事合作 傳將再增派至多5萬兵力赴俄",
+     "url": "https://www.nknews.org/2026/09/kim-jong-un-thanks-troops-deployed-to-russia-in-founding-anniversary-ceremony/",
+     "summary": "金正恩於北韓建政紀念活動上公開感謝派赴俄羅斯的部隊，凸顯平壤與莫斯科軍事合作持續深化。烏克蘭方面稍早指控北韓除既有派兵外，已進一步提供無人機操作人員支援俄軍，外媒並引述消息指北韓可能被要求再增派至多5萬兵力；兩國近期並完成圖們江首座公路橋通車，強化陸路運補與經貿連結。",
+     "source": "NK News",
+     "tags": ["NORTH-KOREA", "RUSSIA"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "全球股市因油價飆升與AI疑慮重挫 那斯達克100重跌 10年期美債殖利率破5%創逾3年新高",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-14-2026",
+     "summary": "美股9月14日（週一）全面走跌，標普500下跌約0.7%，科技股集中的那斯達克100指數重挫約1.7%，道瓊工業指數同步走低；亞股同步重挫，日經指數跌1.7%，南韓Kospi暴跌3.3%。市場受中東油價飆升、兩大前沿AI公司呼籲放緩模型開發速度的警訊，以及聯準會本週利率會議前殖利率走升三重壓力夾擊，10年期美債殖利率單日一度突破5%，為2023年以來首見。",
+     "source": "TheStreet",
+     "tags": ["SP500", "NASDAQ", "DOW", "TREASURY-YIELD", "AI"]
+    },
+    {
+     "severity": "warning",
+     "title": "阿曼調解生變加劇風險溢價 布蘭特原油單日跳漲逾3%直逼106美元",
+     "url": "https://www.israelhayom.com/2026/09/14/asian-shares-slide-oil-price-spike-rate-hikes",
+     "summary": "布蘭特原油9月14日單日跳漲逾3%，直逼每桶106美元，此前一週已累計上漲近9%；沙國東西輸油管遇襲關閉、荷姆茲海峽航運持續中斷，加上原訂協調重啟海峽航運的阿曼三方會談臨時延後，供給風險溢價全面加溫。上週五(9/11)布蘭特收在104.60美元、跌2.8%，稍早一度衝上107美元關卡。",
+     "source": "Israel Hayom",
+     "tags": ["BRENT", "OIL", "HORMUZ", "OMAN"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/14貶值收31.688元 中東避險買盤壓抑亞幣",
+     "url": "https://udn.com/news/story/7239/9753798",
+     "summary": "新台幣兌美元9月14日終場收在31.688元，貶值5分，早盤一度重貶逾1角至31.779元後才收斂跌幅；市場人士指出，中東情勢升溫推升美元避險買盤，牽動包括新台幣在內的新興市場貨幣走弱。",
+     "source": "聯合新聞網",
+     "tags": ["TWD", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

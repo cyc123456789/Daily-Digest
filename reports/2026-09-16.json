@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-16",
+ "focus": "荷姆茲海峽因美伊衝突近乎全面封閉，商船通量僅剩平日一成、戰爭險飆升40倍，加劇全球油價與金融市場動盪。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜VMware vCenter「CVE-2026-59310」攻擊升級 CISA示警勒索軟體幫派已加入部署Babuk",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-critical-vmware-vcenter-rce-flaw-now-exploited-by-ransomware-gangs/",
+     "summary": "CISA 9月15日示警，先前遭疑似中國背景APT用於部署反向SSH後門的VMware vCenter目錄穿越漏洞CVE-2026-59310（CVSS 9.8），現已遭勒索軟體集團利用直接在ESXi虛擬化平台部署Babuk變種勒索軟體。受影響為Broadcom今年7月29日修補前的vCenter Server版本，全球已有361個IP、橫跨47國遭入侵，尚未更新者應立即套用官方修補並排查是否已遭植入後門。",
+     "source": "CISA（經 BleepingComputer 轉述）",
+     "tags": ["VMWARE", "RANSOMWARE", "CISA-KEV", "CVE-2026-59310"]
+    },
+    {
+     "severity": "medium",
+     "title": "醫療軟體NextGen Mirth Connect爆三項高風險漏洞 恐洩下游系統管理員密碼",
+     "url": "https://www.hipaajournal.com/high-severity-vulnerabilities-nextgen-healthcare-mirth-connect/",
+     "summary": "NextGen Healthcare旗下醫療資料交換平台Mirth Connect（4.7.1以下版本）被揭露三項CVSS 7至8分漏洞，含可洩露連線系統帳密的SQL注入CVE-2026-82583，以及可讀取伺服器本機檔案的XXE漏洞CVE-2026-78224、CVE-2026-82578。原廠已於4.7.2版修補，醫療機構應盡速升級以避免下游資料庫遭存取。",
+     "source": "NextGen Healthcare（經 HIPAA Journal 轉述）",
+     "tags": ["HEALTHCARE", "CVE-2026-82583", "CVE-2026-82578", "SQL-INJECTION"]
+    },
+    {
+     "severity": "warning",
+     "title": "微軟揭Passkey社交工程滲透雲端帳戶 Storm-3121、UNC6671鎖定企業IT支援台",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+     "summary": "微軟資安團隊揭露自5月起持續進行的入侵行動，攻擊者假冒IT支援人員致電員工私人手機，以「重新設定Passkey」為由誘導受害者完成中間人式驗證或裝置代碼登入流程，取得雲端帳戶存取權後大量透過Graph API下載SharePoint、OneDrive檔案並蒐集郵件。微軟將活動歸因於Storm-3121、Storm-3032（即Mandiant追蹤之UNC6671）等多個駭客集團，建議企業停用非必要的裝置代碼驗證流程並加強IT支援身分驗證。",
+     "source": "Microsoft Security Blog",
+     "tags": ["MICROSOFT", "SOCIAL-ENGINEERING", "PASSKEY"]
+    },
+    {
+     "severity": "medium",
+     "title": "詐騙者假冒政府機關信箱行騙 金融科技Revolut外洩680名用戶身分證件",
+     "url": "https://techcrunch.com/2026/09/12/revolut-confirms-customer-data-breach-through-fake-government-requests/",
+     "summary": "英國金融科技公司Revolut證實，一名員工遭偽冒自真實政府機關網域寄出的詐騙資料調閱請求所騙，將約680名用戶的姓名、生日、地址、護照與駕照掃描檔、驗證自拍及部分交易紀錄外洩給未經授權第三方。Revolut發現後已封鎖該信箱並通報相關政府機關、執法單位及金融監理機構，事件凸顯偽造公部門身分行騙（Pretexting）風險。",
+     "source": "TechCrunch",
+     "tags": ["DATA-BREACH", "SOCIAL-ENGINEERING", "FINTECH"]
+    },
+    {
+     "severity": "medium",
+     "title": "隱形Unicode字元網釣戰役規避過濾器 單週寄出逾237萬封財務詐騙郵件",
+     "url": "https://thehackernews.com/2026/09/phishing-campaign-sends-millions-of.html",
+     "summary": "資安研究人員發現一波大規模網釣行動，利用隱形Unicode標籤字元拆解財務相關關鍵字以躲過郵件過濾系統，單週工作日寄出量最高達237萬封，並與另一波濫用ActiveCampaign行銷平台、鎖定美國小型企業管理局（SBA）貸款申請人的AI生成網釣郵件行動有所關聯。企業應強化郵件閘道對隱形字元與異常標頭的偵測規則。",
+     "source": "The Hacker News",
+     "tags": ["PHISHING", "SOCIAL-ENGINEERING", "UNICODE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：9月14日6時至15日6時偵獲共機7架次全數逾中線、共艦7艘、公務船2艘",
+     "url": "https://www.cna.com.tw/news/aipl/202609150031.aspx",
+     "summary": "國防部通報，9月14日上午6時至15日上午6時期間，共偵獲中共機艦在台海周邊活動，其中7架次共機全數逾越海峽中線並進入我北部、西南及東部空域，另有7艘共艦、2艘公務船在周邊活動，國軍運用機艦與岸置飛彈系統嚴密監控應處。",
+     "source": "中央社",
+     "tags": ["TAIWAN", "TAIWAN-STRAIT", "MND", "PLA"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜美方暫緩140億美元對台軍售因應美伊戰事 川普稱不擔心習近平取消訪美",
+     "url": "https://www.thestandard.com.hk/world/article/342661/Trump-says-he-is-not-worried-Xi-will-cancel-summit-amid-Taiwan-arms-sale-tensions",
+     "summary": "美方證實一項約140億美元的對台軍售案因美伊戰事優先確保己方武器庫存而暫緩推動，北京先前已警告若川普在川習會前批准新一輪對台軍售，習近平可能取消原訂9月24日的華府之行。川普回應稱他並不擔心習近平屆時真的取消訪美行程，川習會議程預料仍將以中東戰事與經貿議題為主軸。",
+     "source": "The Standard",
+     "tags": ["TAIWAN", "ARMS-SALE", "SUMMIT", "US-CHINA"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美伊衝突延燒 荷姆茲海峽商船通量僅剩平日一成 戰爭險飆升40倍",
+     "url": "https://straits.live/",
+     "summary": "受美伊在荷姆茲海峽持續互相攻擊油輪影響，該海峽商船通行量已降至近乎全面封閉狀態，單日僅約6艘船隻通過，遠低於平日約85艘的正常水準；油輪戰爭險保費已飆漲至衝突前的40倍，並有6家船東互保協會（P&I Club）退出承保。荷姆茲海峽承載全球約四分之一原油與近兩成液化天然氣運輸量，封鎖狀態持續加劇全球能源供應與價格壓力。",
+     "source": "Strait of Hormuz Live Tracker",
+     "tags": ["HORMUZ", "IRAN", "OIL", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜金正恩致信普丁誓言「不變支持」俄烏戰爭 暗示將再增派兵力赴俄",
+     "url": "https://www.malaymail.com/news/world/2026/09/15/kim-jong-un-vows-unwavering-support-for-putin-calls-russias-ukraine-war-sacred/235241",
+     "summary": "北韓領導人金正恩致函俄羅斯總統普丁，稱俄羅斯在烏克蘭的戰爭為「神聖戰爭」，承諾提供「不變的支持」並將全面深化與俄羅斯的合作。南韓情報單位估計北韓已派遣約1.5萬名部隊協助俄軍作戰、逾2千人陣亡，外界研判平壤可能如烏克蘭情報單位所稱、再增派最多5萬兵力赴俄，加深北韓與俄羅斯軍事合作對歐亞安全的外溢影響。",
+     "source": "Malay Mail",
+     "tags": ["NORTH-KOREA", "RUSSIA", "UKRAINE"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/15收跌351點失守45,600點 漢微科抽籤凍資逾8,600億壓抑量能",
+     "url": "https://finance.ettoday.net/news/3237780",
+     "summary": "台股9月15日收盤下跌351.03點，收在45,511.49點、跌幅0.77%，成交金額約新台幣6,034.53億元，為今年次低量，主因興櫃股王漢微科申購凍資逾8,656億元排擠市場資金；台積電除息前逆勢收漲5元。",
+     "source": "ETtoday",
+     "tags": ["TAIEX", "TWII", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/15三大指數收黑 Fed利率決議前觀望情緒濃厚",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html",
+     "summary": "美股9月15日道瓊、那斯達克指數雙雙下跌0.7%，標普500指數跌0.4%，投資人在Fed九月利率決議公布前轉趨觀望，並持續消化Anthropic執行長Dario Amodei有關AI安全疑慮的公開言論衝擊科技股信心；道瓊9月以來累計跌幅逾2%，若持續恐創2008年以來單月最差表現。",
+     "source": "Yahoo Finance",
+     "tags": ["DOW", "NASDAQ", "SP500", "FED"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油9/15續守108美元高檔 荷姆茲海峽危機推升風險溢價",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html",
+     "summary": "布蘭特原油9月15日每桶約108美元、WTI約105美元，維持在數月高檔區間，荷姆茲海峽近乎封閉與美伊衝突持續升級的風險溢價是主要支撐力道，市場同時關注Fed利率決議是否進一步影響能源需求前景。",
+     "source": "Yahoo Finance",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "medium",
+     "title": "新台幣9/15重貶1.6角收31.848元 創逾半年最大單日跌幅",
+     "url": "https://tw.stock.yahoo.com/news/9-15%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A531-848%E5%85%83%E4%BD%9C%E6%94%B6-%E8%B2%B6%E5%80%BC1-60%E8%A7%92-080300978.html",
+     "summary": "新台幣兌美元9月15日重貶1.6角，收在31.848元，單日貶幅約0.5%，為逾半年來最大單日貶幅，成交金額26.29億美元。市場人士指出，AI產業前景疑慮升溫加上中東避險情緒升高，外資自台股大舉提款匯出，是新台幣走貶的主要動能。",
+     "source": "Yahoo奇摩股市",
+     "tags": ["TWD", "USDTWD", "FED"]
+    }
+   ]
+  }
+ ]
+}

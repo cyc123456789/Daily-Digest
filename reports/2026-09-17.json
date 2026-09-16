@@ -1,0 +1,146 @@
+{
+ "date": "2026-09-17",
+ "focus": "聯準會3年來首度升息一碼至3.75%-4%，主席沃許稱中東情勢加劇通膨壓力；美股同步收黑，10年期公債殖利率飆破2007年以來新高。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "WSO2 API Manager身分驗證繞過遭在野利用 攻擊者偽造管理員權杖奪取完整控制權",
+     "url": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
+     "summary": "WSO2 API Manager、API控制平面、流量管理員與通用閘道器爆CVSS 9.8-10.0身分驗證繞過漏洞CVE-2026-5430，攻擊者可用未支援演算法簽署的JWT偽造管理員權杖取得完整控制權。WSO2雖已於5月釋出修補（如API Manager 4.6.0更新等級21），但watchTowr蜜罐網路證實9月13日起遭大規模在野利用，尚未升級的部署風險極高。",
+     "source": "WSO2 PSIRT（經 The Hacker News 轉述）",
+     "tags": ["WSO2", "CVE-2026-5430", "JWT", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "微軟9月修補日創紀錄974項漏洞 2枚零時差已遭在野利用",
+     "url": "https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html",
+     "summary": "微軟9月修補星期二一口氣修補974項漏洞，創歷來最大規模，其中CVE-2026-85880（Windows ALPC堆積緩衝區溢位）與CVE-2026-81963（Windows Update Stack權限提升）已遭在野利用，攻擊者可藉此取得SYSTEM權限，微軟均已釋出修補。另有20個可蠕蟲式擴散漏洞影響DHCP、AD、DNS等核心服務。",
+     "source": "Microsoft MSRC（經 The Hacker News 轉述）",
+     "tags": ["MICROSOFT", "CVE-2026-85880", "CVE-2026-81963", "ZERO-DAY"]
+    },
+    {
+     "severity": "high",
+     "title": "Chrome今年第7個在野利用零時差CVE-2026-87491 已列入CISA KEV清單",
+     "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
+     "summary": "Google修補V8引擎越界寫入漏洞CVE-2026-87491，攻擊者可藉惡意HTML頁面在瀏覽器沙盒內執行任意程式碼，是Chrome今年第7個遭在野利用的零時差。修補已隨Chrome 153版釋出，CISA已列入KEV清單，要求聯邦機關9月23日前完成更新。",
+     "source": "CISA（經 The Hacker News 轉述）",
+     "tags": ["GOOGLE", "CHROME", "CVE-2026-87491", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "WordPress外掛WooCommerce Wholesale Lead Capture遭大規模利用 逾10萬次攻擊被擋",
+     "url": "https://thehackernews.com/2026/09/attackers-exploit-woocommerce-wholesale.html",
+     "summary": "WooCommerce Wholesale Lead Capture外掛2.0.3.1以下版本爆CVSS 9.8任意檔案上傳漏洞CVE-2026-27540，未經授權攻擊者可上傳PHP後門取得遠端執行權限。官方已於2.0.3.2版修補，但資安廠商Wordfence已攔截逾10萬次利用嘗試，尚未更新站台風險仍高。",
+     "source": "Wordfence（經 The Hacker News 轉述）",
+     "tags": ["WORDPRESS", "WOOCOMMERCE", "CVE-2026-27540", "RCE"]
+    },
+    {
+     "severity": "medium",
+     "title": "勒索軟體集團RansomHouse攻陷納米比亞國防部隊",
+     "url": "https://www.hendryadrian.com/ransom-namibian-defence-force-sep-2026/",
+     "summary": "勒索軟體集團RansomHouse於9月16日將納米比亞國防部隊列為受害者，估計攻擊時間點約落在9月12日，目前尚未證實外洩資料範圍或是否已完成復原。軍事機構成為勒索軟體目標，凸顯關鍵機構資安韌性隱憂。",
+     "source": "RansomHouse（經 ransomware.live 轉述）",
+     "tags": ["RANSOMWARE", "RANSOMHOUSE", "NAMIBIA", "GOVERNMENT"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機1架次、共艦9艘、公務船7艘 海上壓力增溫",
+     "url": "https://tw.news.yahoo.com/%E5%85%B1%E6%A9%9F11%E6%9E%B6%E9%99%8D%E5%88%B01%E6%9E%B6-%E6%B5%B7%E4%B8%8A%E8%88%B9%E9%9A%BB%E5%8F%8D%E5%A2%9E-24%E5%B0%8F%E6%99%829%E5%85%B1%E8%89%A6-7%E5%85%AC%E5%8B%99%E8%88%B9%E5%9C%A8%E5%8F%B0%E6%B5%B7%E5%91%A8%E9%82%8A-%E5%A3%93%E5%8A%9B%E8%BD%89%E5%90%91%E6%B5%B7%E9%9D%A2-054938334.html",
+     "summary": "國防部統計9月16日6時至17日6時偵獲中國軍機1架次、軍艦9艘、海警與公務船7艘在台海周邊活動，較前一日11架次共機大幅下降，但艦船數量增加，研判解放軍施壓重心由空中轉向海面。",
+     "source": "中央社（經 Yahoo新聞 轉述）",
+     "tags": ["MND", "TAIWAN-STRAIT", "PLA", "TAIWAN"]
+    },
+    {
+     "severity": "warning",
+     "title": "國台辦再揚言「懲獨」民進黨台北市長參選人 陸委會：恐嚇的是全體台灣人民",
+     "url": "https://udn.com/news/story/7331/9759030",
+     "summary": "中國國台辦重申將對「頑固台獨分子」終身追責，並揚言對民進黨台北市長參選人陳柏惟採取「懲獨」措施。陸委會9月16日晚間書面回應強調，此舉不僅針對陳柏惟個人，而是對全體台灣人民的恐嚇，呼籲北京停止升高兩岸對立。",
+     "source": "聯合新聞網",
+     "tags": ["TAIWAN", "CHINA", "CROSS-STRAIT", "MAC"]
+    },
+    {
+     "severity": "warning",
+     "title": "川習二會登場前 學者示警：習近平恐藉會晤挑撥台美日關係",
+     "url": "https://udn.com/news/story/7331/9753866",
+     "summary": "習近平預定9月24日赴白宮與川普進行今年第二次川習會，學者分析川普未必主動提及台海議題，但習近平可能利用會晤散布「日本與台灣才是麻煩製造者」的認知戰敘事，藉此挑撥台美日三方關係。陸委會強調已與美方保持密切溝通，盼會談不出現傷害台灣的結果。",
+     "source": "聯合新聞網",
+     "tags": ["TAIWAN", "US-CHINA", "SUMMIT", "CHINA"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "中菲南海爭端升溫 馬尼拉首爾防務對話痛批北京「威逼霸凌」",
+     "url": "https://www.cnbc.com/2026/09/11/china-philippine-south-china-sea-disputes-tensions-.html",
+     "summary": "菲律賓國防部長泰奧多羅9月8日在首爾防務對話公開宣讀中方遞交的字條，內容重申北京拒絕承認2016年南海仲裁結果，泰奧多羅當場反駁並指控中國在南海採取「威逼、霸凌與侵略」行徑。雙方緊張態勢延續自8月中國海警船與解放軍軍艦於黃岩島海域碰撞事件。",
+     "source": "CNBC",
+     "tags": ["CHINA", "PHILIPPINES", "SOUTH-CHINA-SEA"]
+    },
+    {
+     "severity": "info",
+     "title": "俄烏美三方談判研議10月重啟 澤倫斯基屬意阿聯或土耳其設場",
+     "url": "https://kyivindependent.com/next-ukraine-us-russia-peace-talks-may-take-place-in-october-budanov-says/",
+     "summary": "烏克蘭軍事情報首長布達諾夫表示，下一輪美俄烏三方和談最快可能於10月登場，澤倫斯基則屬意於阿聯、土耳其或瑞士等地舉行。美方特使威特科夫與庫許納稍早已分別走訪基輔與莫斯科，雙方雖同意暫停攻擊彼此首都，但領土等核心爭議仍未解決。",
+     "source": "Kyiv Independent",
+     "tags": ["UKRAINE", "RUSSIA", "CEASEFIRE", "US-GOV"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜美官員淡化沙國輸油管損害 稱數日內可恢復供應",
+     "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+     "summary": "美國能源部長賴特表示，遭伊拉克方向無人機攻擊而關閉的沙烏地阿拉伯東西輸油管道「短暫且暫時」，預期數日內恢復運營；但獨立分析師依衛星影像指出幫浦站受損嚴重，實際停擺恐持續數週，波及每日400至500萬桶原油外銷能力，荷姆茲海峽危機下的替代管線風險未除。",
+     "source": "CNBC",
+     "tags": ["IRAN", "SAUDI", "HORMUZ", "OIL"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "聯準會3年來首度升息一碼至3.75%-4% 主席沃許稱中東情勢推升通膨風險",
+     "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+     "summary": "聯準會決策委員會以12票對0票通過升息一碼，指標利率調升至3.75%-4.00%，為2023年7月來首次升息。主席沃許（Kevin Warsh）強調通膨仍處高檔、中東情勢升溫加劇物價壓力；18位官員中16位預期年底前至少再升息一次。",
+     "source": "CNBC",
+     "tags": ["FED", "FOMC", "RATE-HIKE", "CPI"]
+    },
+    {
+     "severity": "info",
+     "title": "台股9/16收漲337點站上45,848點 台積電除息後順利填息收2,380元",
+     "url": "https://money.udn.com/money/story/5607/9758200",
+     "summary": "台股9/16終場上漲337.41點，收在45,848.9點，成交值放大至新台幣6,437.65億元；台積電除息開低後順利填息，早盤一度大漲逾560點，但Fed利率決議前投資人轉趨觀望，追價買盤保守。",
+     "source": "經濟日報",
+     "tags": ["TAIEX", "TWII", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/16三大指數同步收黑 10年期公債殖利率飆19年新高",
+     "url": "https://www.cnbc.com/2026/09/16/fed-meeting-today-live-updates.html",
+     "summary": "道瓊指數受Fed升息影響下跌逾400點（跌幅0.8%），標普500下跌0.4%，那斯達克指數持平震盪；10年期公債殖利率觸及2007年以來最高水位，市場持續消化聯準會鷹派升息立場。",
+     "source": "CNBC",
+     "tags": ["DOW", "SP500", "NASDAQ", "TREASURY-YIELD"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油9/16回落至103美元下方、新台幣連五貶收31.888元",
+     "url": "https://www.cna.com.tw/news/afe/202609160214.aspx",
+     "summary": "美國官員淡化沙烏地阿拉伯東西輸油管受損疑慮，布蘭特原油9/16走低，西德州原油盤中一度重挫3.4%至102.26美元；新台幣兌美元同日收31.888元，貶值4分、連續第五個交易日走貶，反映中東地緣風險與Fed升息效應同步壓抑亞幣。",
+     "source": "中央社",
+     "tags": ["BRENT", "OIL", "TWD", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "date": "2026-09-18",
+ "focus": "Cisco ISE CVSS 10.0零時差遭在野利用列入CISA KEV，聯邦機關限3天內修補；伊朗劃設荷姆茲海峽外圍「排他區」，美伊緊張再升溫。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Cisco ISE身分驗證繞過遭在野利用 CVSS滿分10.0列入CISA KEV",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "CVE-2026-76460影響Cisco Identity Services Engine與ISE-PIC，因API權限控制不當，未經驗證攻擊者可繞過網頁管理介面取得完整存取權，且不論裝置設定皆受影響。Cisco已釋出更新且無緩解措施可用，CISA要求聯邦機關9月19日前完成修補。",
+     "source": "CISA",
+     "tags": ["CISCO", "CISA-KEV", "CVE-2026-76460", "ZERO-DAY", "PRIVILEGE-ESCALATION"]
+    },
+    {
+     "severity": "high",
+     "title": "醫療巨頭McKesson證實遭入侵 ShinyHunters勒索5,500萬美元未果",
+     "url": "https://www.bleepingcomputer.com/news/security/mckesson-discloses-breach-after-shinyhunters-claims-patient-data-theft/",
+     "summary": "McKesson於8月25日發現第三方應用系統遭入侵，ShinyHunters聲稱竊得2.84億筆資料列，內容涵蓋病患姓名、社會安全碼、Medicaid與用藥紀錄，並索討5,500萬美元遭拒後對外證實外洩。目前確認影響腫瘤暨多專科、外科醫療兩業務單位的部分客戶，調查仍在早期階段。",
+     "source": "BleepingComputer",
+     "tags": ["SHINYHUNTERS", "DATA-BREACH", "HEALTHCARE", "MCKESSON"]
+    },
+    {
+     "severity": "high",
+     "title": "Acronis cPanel備份外掛遭鎖定式攻擊利用 CISA同批列入KEV",
+     "url": "https://www.bleepingcomputer.com/news/security/acronis-warns-of-actively-exploited-flaw-in-its-cpanel-backup-plugin/",
+     "summary": "CVE-2026-87886因檔案權限設定不當，影響cPanel/WHM版Acronis Backup外掛1.9.3.1021前版本與Plesk版1.8.11.638前版本，低權限攻擊者可在Linux主機上提權執行任意動作，目前僅發現針對cPanel環境的有限鎖定式攻擊。官方已釋出1.9.3 HF3修補版本，籲用戶立即更新。",
+     "source": "Acronis（經 BleepingComputer 轉述）",
+     "tags": ["ACRONIS", "CISA-KEV", "CVE-2026-87886", "PRIVILEGE-ESCALATION"]
+    },
+    {
+     "severity": "medium",
+     "title": "中國背景SilkParasite間諜行動鎖定中亞五國政府與能源電信業者",
+     "url": "https://hunt.io/blog/silkparasite-spicerat-central-asia-infrastructure",
+     "summary": "研究人員追蹤SpiceRAT指揮伺服器群組，發現與土庫曼、塔吉克、烏茲別克、吉爾吉斯、哈薩克等國政府、國營能源與電信機構偽裝網域相連，其中一張偽冒烏茲別克鐵路局的憑證由中國國家背景憑證機關簽發，Cisco Talos將此行動與中國APT組織SneakyChef串聯。目前未見公開修補措施，屬持續性情報蒐集行動。",
+     "source": "Hunt.io",
+     "tags": ["APT", "CHINA", "GOVERNMENT", "BACKDOOR"]
+    },
+    {
+     "severity": "info",
+     "title": "Scattered Spider成員認罪案曝光 檢方聲請沒收逾1,600萬美元加密貨幣",
+     "url": "https://www.govinfosecurity.com/texan-scattered-spider-member-pleads-guilty-to-hack-attacks-a-32842",
+     "summary": "德州籍男子Ahmed Elbadawy先前已就電信詐欺共謀與加重身分竊盜罪名認罪，本週因檢方向法院聲請沒收其不法所得（175枚比特幣、1,306枚以太幣，市值合計逾1,600萬美元）而首度公開，案件涉及Scattered Spider集團對數十個組織的社交工程攻擊與資料竊售。",
+     "source": "GovInfoSecurity",
+     "tags": ["SCATTERED-SPIDER", "SOCIAL-ENGINEERING", "DATA-BREACH"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內共艦8艘、公務船2艘、共機17架次全數逾中線 另增19架次二波出海",
+     "url": "https://www.cna.com.tw/news/aipl/202609170034.aspx",
+     "summary": "國防部表示，前一日上午6時起至當天上午6時止，偵獲中共8艘軍艦、2艘公務船，以及17架次軍機逾越海峽中線侵擾北部、西南及東部空域；另自上午8時45分起再偵獲殲11、殲16、轟6K等19架次二波出海，其中15架次逾中線配合共艦操演，國軍運用任務機艦及岸置飛彈系統嚴密監控。",
+     "source": "中央社",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CROSS-STRAIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜中國警告川習會前若批准對台新軍售恐取消會晤 140億美元軍售成籌碼",
+     "url": "https://www.ctee.com.tw/news/20260916702035-430801",
+     "summary": "川習會9月24日登場前，懸而未決的140億美元對台軍售預料成為雙方談判籌碼，北京已向華府放話：會前若批准任何新一波對台軍售，將取消此次國是訪問。學者分析目前美方實際批准軍售的可能性已大幅降低，但議題仍牽動雙方角力節奏。",
+     "source": "工商時報",
+     "tags": ["ARMS-SALE", "SUMMIT", "US-CHINA", "TAIWAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "國台辦指台灣以「中國台北」名義參與APEC 陸委會：按慣例與會",
+     "url": "https://udn.com/news/story/7331/9761430",
+     "summary": "國台辦近日再就台灣參與APEC會議的名義發表評論，陸委會回應強調，台灣是依循APEC既有規定與慣例派員出席，去年12月至今已有逾300人次官員依此慣例赴會，反駁北京片面政治定性的說法。",
+     "source": "聯合新聞網",
+     "tags": ["TAIWAN", "CHINA", "APEC"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜伊朗宣布荷姆茲海峽外圍劃設「排他區」 未經許可船隻恐遭攔截",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-strait-of-hormuz-oil-gas-price-strikes/",
+     "summary": "伊朗最高國家安全委員會官員表示，德黑蘭計畫在荷姆茲海峽外圍劃設海上「排他區」，未經伊朗許可試圖通行的船隻將遭攔阻，是美伊近月互擊油輪、軍艦後的最新升級動作。衛星追蹤顯示9月16日仍有12艘船隻通過海峽，較前一日倍增，其中3艘超大型油輪以空載狀態穿越，顯示航運業持續規避風險。",
+     "source": "CBS News",
+     "tags": ["IRAN", "HORMUZ", "MIDDLE-EAST", "OIL"]
+    },
+    {
+     "severity": "warning",
+     "title": "王毅會晤伊朗外長 中國斡旋籲美伊理性克制、荷姆茲海峽早日開放",
+     "url": "https://www.cna.com.tw/news/acn/202609160288.aspx",
+     "summary": "中國外交部長王毅16日在北京與伊朗外長阿拉格齊會談，表示鼓勵伊朗與美國保持理性克制、依既有共識重構談判機制，並呼籲各方採取有效措施儘早開放荷姆茲海峽航道，同時強調不希望地區緊張向葉門與紅海方向外溢，凸顯北京在美伊僵局中扮演調解角色。",
+     "source": "中央社",
+     "tags": ["CHINA", "IRAN", "HORMUZ", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜俄援朝軍事合作再深化 首批北韓KN-30彈道飛彈部隊進駐俄境內",
+     "url": "https://www.armyrecognition.com/news/army-news/2026/russia-north-korea-kn-30-ballistic-missiles-ukraine",
+     "summary": "烏克蘭軍事情報單位證實，俄羅斯已收到首批北韓「火星-11C」（KN-30）短程彈道飛彈，並在沃羅涅日州部署6輛發射車，可打擊烏克蘭七個地區的縱深設施；另有約90名北韓人員組成的飛彈部隊已進駐俄境，配備最多120枚彈道飛彈，是北韓對俄軍事支援持續升級的最新跡象。",
+     "source": "Army Recognition",
+     "tags": ["NORTH-KOREA", "RUSSIA", "UKRAINE", "MISSILE-TEST"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/17收漲439點站上46,288點 台積電同步走揚",
+     "url": "https://finance.ettoday.net/news/3239177",
+     "summary": "台股9月17日收漲439.1點，漲幅0.96%，收在46,288點，成交量約8,194億元，Fed升息落地後買盤回籠，權值股同步走揚。",
+     "source": "ETtoday",
+     "tags": ["TAIEX", "TSMC", "TAIWAN"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/17止跌反彈 Fed升息落地後那指大漲逾1.6%",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-17-2026",
+     "summary": "美股三大指數9月17日同步收高，那斯達克指數大漲1.69%，標普500上漲1.14%，道瓊上漲0.67%，Fed升息一碼並釋出「軟著陸」訊號後，資金重新湧入半導體與AI概念股，市場情緒由前一日的觀望轉為樂觀。",
+     "source": "TheStreet",
+     "tags": ["NASDAQ", "SP500", "DOW", "FED", "RATE-HIKE"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/17回落至103美元下方 沙國增產紓緩中東供給疑慮",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "布蘭特原油9月17日下跌約2.1%至每桶103.6美元左右，沙烏地阿拉伯釋出更多原油貨源、透過阿曼供應市場，緩解此前荷姆茲海峽危機推升的供給緊張疑慮，但波動仍大，不同報價來源同日一度顯示逾105美元。",
+     "source": "Trading Economics",
+     "tags": ["BRENT", "OIL", "SAUDI", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/17升值收31.881元 終結連五貶",
+     "url": "https://money.udn.com/money/story/5616/9761072",
+     "summary": "新台幣兌美元9月17日以31.881元作收，升值0.7分，終止先前連續五個交易日的貶值走勢，當日成交金額約10.67億美元，盤中最高31.866元、最低31.958元。",
+     "source": "經濟日報",
+     "tags": ["TWD", "USDTWD", "TAIWAN"]
+    }
+   ]
+  }
+ ]
+}

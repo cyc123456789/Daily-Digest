@@ -1,0 +1,146 @@
+{
+ "date": "2026-09-19",
+ "focus": "工作流程平台Orkes Conductor爆CVSS 9.8未授權RCE漏洞遭大規模在野利用，Fortinet單日已阻擋逾1,300次攻擊。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Orkes Conductor工作流引擎爆CVSS 9.8未授權RCE 遭大規模在野利用",
+     "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
+     "summary": "開源工作流編排平台Orkes Conductor 3.21.21至3.30.2前版本存在未授權遠端程式碼執行漏洞（CVE-2026-58138），攻擊者可在工作流定義中注入JavaScript或Python運算式，以Conductor行程權限執行任意系統指令。官方已於6月釋出3.30.2修補，惟8月PoC公開後遭大規模掃描攻擊，Fortinet單日就攔截逾1,300次利用嘗試，尚未升級用戶應立即修補並限制評估器主機存取權限。",
+     "source": "SecurityWeek",
+     "tags": ["ORKES", "CVE-2026-58138", "RCE", "AI-AGENT"]
+    },
+    {
+     "severity": "high",
+     "title": "CISA同批列入KEV：Linux核心競爭條件與越界寫入漏洞遭在野利用",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA於9月18日新增兩項Linux核心漏洞至KEV清單：CVE-2025-39964為加密使用者API中的競爭條件（CVSS 7.8，已有PoC），可能導致加密結果毀損或阻斷服務；CVE-2026-53266則是netfilter橋接ebtables模組的越界寫入，可供本機攻擊者權限提升。聯邦機關須依CISA規定期限完成修補。",
+     "source": "CISA",
+     "tags": ["LINUX-KERNEL", "CISA-KEV", "PRIVILEGE-ESCALATION"]
+    },
+    {
+     "severity": "high",
+     "title": "Check Point管理伺服器爆CVSS 9.8登入堆疊溢位 未驗證可取root",
+     "url": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
+     "summary": "Check Point Quantum Security Management與Log Server（含多網域版本）的未驗證登入流程存在堆疊緩衝區溢位（CVE-2026-91843，CVSS 9.8），攻擊者只需送出過長使用者名稱的偽造登入請求，即可以root權限遠端執行任意程式碼。Check Point已於9月16日透過LivePatch修補，開啟自動更新的用戶已受保護，尚未觀察到在野利用但研判恐將快速被武器化。",
+     "source": "Check Point（經 The Hacker News 轉述）",
+     "tags": ["CHECKPOINT", "CVE-2026-91843", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "Cisco Nexus 9000交換器CVSS 9.8漏洞 未驗證攻擊者可取root",
+     "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
+     "summary": "搭載Silicon One ASIC的Cisco Nexus 9000系列交換器因TCP 43210/43211埠透過預設VRF對外開放，未驗證攻擊者送出構造封包即可以root權限執行任意程式碼，亦可能觸發S1HAL行程當機導致設備重開機（CVE-2026-20212，CVSS 9.8）。Cisco已於9月2日發布修補，受影響型號涵蓋10款含Silicon One ASIC的Nexus 9000產品線，尚未修補用戶應儘速升級。",
+     "source": "Cisco（經 The Hacker News 轉述）",
+     "tags": ["CISCO", "CVE-2026-20212", "RCE"]
+    },
+    {
+     "severity": "medium",
+     "title": "Unbound DNS解析器DNSSEC驗證模組爆嚴重堆積溢位 已釋出修補",
+     "url": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
+     "summary": "NLnet Labs釋出的開源DNS解析器Unbound，1.26.1之前所有版本的DNSSEC驗證器存在堆積溢位（CVE-2026-81642），攻擊者控制惡意網域並誘使解析器查詢，可透過DNSKEY紀錄中的壓縮指標觸發記憶體覆寫並執行任意程式碼。9月16日釋出的1.26.1版本一併修補另8個漏洞，包含CNAME合成程序的CVE-2026-82717；CISA與NLnet Labs均尚未觀察到在野利用。",
+     "source": "NLnet Labs（經 The Hacker News 轉述）",
+     "tags": ["DNS", "CVE-2026-81642", "RCE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：9/17至18偵獲共機28架次(24逾中線)、共艦7艘、公務船2艘",
+     "url": "https://www.cna.com.tw/news/aipl/202609180039.aspx",
+     "summary": "國防部公布，9月17日上午6時至18日上午6時止，合計偵獲中共軍機28架次、共艦7艘及公務船2艘，其中24架次共機逾越海峽中線，進入台灣北部、中部、西南及東部空域。國軍運用任務機艦、岸置飛彈系統嚴密監控應處。",
+     "source": "中央社",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CROSS-STRAIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜賴清德視導九鵬三軍聯合精準射擊全命中 共軍無人機同步現蹤台東外海",
+     "url": "https://www.chinatimes.com/realtimenews/20260918002081-260417",
+     "summary": "國軍九鵬基地9/16至18實施歷年最大規模三軍聯合精準彈藥射擊操演，天弓三型、雄風二三型、海馬士多管火箭系統及「劍風」、ALTIUS-600M等多型攻擊無人機首度納入聯合作戰並全數命中目標；總統賴清德18日親赴視導前夕，共軍無人機現蹤台東外海進行偵蒐。",
+     "source": "中國時報",
+     "tags": ["TAIWAN", "MND", "DRONE", "PLA"]
+    },
+    {
+     "severity": "medium",
+     "title": "國台辦批「文化台獨」 陸委會嗆：對岸沒資格說教",
+     "url": "https://www.cna.com.tw/news/acn/202609170310.aspx",
+     "summary": "中國國台辦以「桃園三結義」發生地遭誤植爭議，指控台灣教育政策造成「文化台獨」後果。陸委會回應，台灣從未經歷文化大革命，對岸沒有資格對台灣如何保存中華文化說教。",
+     "source": "中央社",
+     "tags": ["TAIWAN", "CHINA", "CROSS-STRAIT", "MAC"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜習近平9/23抵美 川普將親赴安德魯斯基地接機 白宮籌備國是訪問規格",
+     "url": "https://www.ettoday.net/news/20260918/3239577.htm",
+     "summary": "美方官員證實，習近平專機預計9月23日下午抵達安德魯斯聯合基地，川普將親自到場迎接並主持歡迎儀式，白宮儀仗隊已展開排練，規格比照川普5月訪北京待遇；川習會9/24登場，140億美元對台軍售案能否過關仍牽動峰會能否如期舉行。",
+     "source": "ETtoday",
+     "tags": ["US-CHINA", "SUMMIT", "CHINA", "ARMS-SALE"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜伊朗擊中一艘試圖通過荷姆茲海峽油輪 UKMTO證實另有商船遭不明武器擊中起火",
+     "url": "https://www.cp24.com/news/world/2026/09/18/iran-says-it-strikes-an-oil-tanker-and-other-mideast-developments/",
+     "summary": "伊朗革命衛隊宣稱擊中一艘試圖「非法通過」荷姆茲海峽的多哥籍油輪「Trend」號；英國海事貿易行動辦公室（UKMTO）另通報海峽內一艘油輪遭不明拋射物擊中起火，事後撲滅、船員平安。德黑蘭數十萬民眾同時集會力挺政府，為美伊開戰以來最大規模動員。",
+     "source": "CTV News",
+     "tags": ["IRAN", "HORMUZ", "OIL", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜北韓援俄陣亡逾2,288人 金正恩誓言擴大合作力挺「聖戰」",
+     "url": "https://www.ettoday.net/news/20260915/3237495.htm",
+     "summary": "烏克蘭情報顯示，赴俄參戰北韓部隊陣亡人數已達2,288人；金正恩回覆普丁賀電時重申將以「同盟關係」全面擴大對俄合作、堅信俄方終將勝利。基輔當局並示警，普丁可能於9月會晤金正恩時要求再增派最多5萬兵力。",
+     "source": "ETtoday",
+     "tags": ["NORTH-KOREA", "RUSSIA", "UKRAINE"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/18收漲892點站上47,180點創新高 三大法人回補近870億",
+     "url": "https://newtalk.tw/news/view/2026-09-18/1060601",
+     "summary": "台股9/18強彈892.75點，以47,180.75點收盤、漲幅1.93%，成交值重返兆元，三大法人合計買超近870億元，台積電、聯發科、台達電等權值股同步走揚。",
+     "source": "Newtalk新聞",
+     "tags": ["TAIEX", "TWII", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/18盤中走弱 公債殖利率走高、選擇權到期效應干擾盤勢",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-18-dow-sp-500-nasdaq-080504071.html",
+     "summary": "美股9/18因公債殖利率走高及季度選擇權到期（三巫日）引發部位調整而承壓，道瓊、標普、那指盤中同步走弱；本則引用為盤中即時報價，非正式收盤數字，僅供參考。",
+     "source": "Yahoo Finance",
+     "tags": ["DOW", "SP500", "NASDAQ", "TREASURY-YIELD"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/18回升至104美元上方 荷姆茲海峽緊張持續支撐油價",
+     "url": "https://fortune.com/article/price-of-oil-09-18-2026/",
+     "summary": "布蘭特原油9/18美東時間上午8時報每桶104.33美元，較前一日上漲0.35美元；荷姆茲海峽油輪遇襲及伊朗劃設排他區的地緣風險持續為油價提供支撐，此數字為盤中即時報價，非正式收盤價。",
+     "source": "Fortune",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/18升值收31.808元 終結連五貶",
+     "url": "https://tw.stock.yahoo.com/news/9-18%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A531-808%E5%85%83%E4%BD%9C%E6%94%B6-%E5%8D%87%E5%80%BC7-3%E5%88%86-080300514.html",
+     "summary": "新台幣9/18兌美元匯率收31.808元，升值7.3分，終結連五貶走勢；本週累計仍貶值0.54%，盤中最高31.722元、最低31.860元，成交額30.38億美元。",
+     "source": "MoneyDJ理財網",
+     "tags": ["TWD", "USDTWD"]
+    }
+   ]
+  }
+ ]
+}

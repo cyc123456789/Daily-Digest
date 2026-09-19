@@ -1,0 +1,122 @@
+{
+ "date": "2026-09-20",
+ "focus": "習近平9/23赴美，24日將與川普於白宮會談並設國宴，對台軍售議題仍是雙方角力焦點。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "WordPress核心「Click2Shell」漏洞鏈曝光 CVSS 9.6可致完整遠端程式碼執行",
+     "url": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
+     "summary": "研究團隊pwn.ai揭露WordPress核心（7.1.1以前所有支援分支，回溯至4.7版）主題預覽功能存在授權缺陷，誘導已登入管理員點擊惡意連結即可強制下載安裝外部佈景主題ZIP檔並鏈結執行任意程式碼，全鏈CVSS達9.6。WordPress已於9月17日釋出7.1.1修補，官方尚未觀察到在野利用，但呼籲所有站台立即更新。",
+     "source": "pwn.ai（經 The Hacker News 轉述）",
+     "tags": ["WORDPRESS", "RCE"]
+    },
+    {
+     "severity": "warning",
+     "title": "中國背景NightEagle間諜行動擴大鎖定俄羅斯企業 竊用VPN帳密植入GhostContainer後門",
+     "url": "https://thehackernews.com/2026/09/three-threat-groups-target-russian.html",
+     "summary": "Kaspersky揭露代號NightEagle（APT-Q-95）的間諜行動已從亞洲擴大至俄羅斯企業，攻擊者以竊得的合法VPN帳密登入受害組織網路，再部署GhostContainer後門長期掌控Exchange伺服器，並透過Cloudflare WARP等通道隱匿流量來源。同批報告並指出另兩組駭客同時以勒索軟體與抹除工具攻擊俄羅斯目標，凸顯地緣衝突下針對俄企業的網路間諜活動升溫。",
+     "source": "Kaspersky（經 The Hacker News 轉述）",
+     "tags": ["APT", "RUSSIA", "VPN", "BACKDOOR"]
+    },
+    {
+     "severity": "medium",
+     "title": "Black Kite報告：2026年前7月全球製造業勒索攻擊暴增近4成 歐洲受害數飆85%",
+     "url": "https://www.securityweek.com/ransomware-attacks-on-manufacturers-surge-as-supply-chain-risk-grows/",
+     "summary": "資安風險評估商Black Kite最新報告指出，2026年前7個月全球製造業遭勒索軟體攻擊達1,183起，較去年同期成長近40%；歐洲受害數暴增85%，德國漲幅逾83%，美國占比則由52.3%降至34.8%。近半數攻擊來自2023、2024年尚未現身的新興勒索集團，顯示供應鏈中斷帶來的高額談判籌碼持續吸引攻擊者鎖定生產線。",
+     "source": "Black Kite（經 SecurityWeek 轉述）",
+     "tags": ["RANSOMWARE", "SUPPLY-CHAIN", "MANUFACTURING"]
+    },
+    {
+     "severity": "medium",
+     "title": "研究揭「BragJack」攻擊技術 惡意擴充功能可挾持5款瀏覽器內建AI代理",
+     "url": "https://www.darkreading.com/endpoint-security/bragjack-browser-agentic-ai",
+     "summary": "資安研究員Gal Weizman揭露BragJack攻擊技術，惡意瀏覽器擴充功能可濫用Chromium的declarativeNetRequest API攔截並改寫網路流量，進而以特權身分操控Chrome、Edge、Opera Neon、Comet及Claude in Chrome等5款瀏覽器內建AI代理，竊取本機檔案、瀏覽紀錄與螢幕截圖。相關兩項CVE（CVE-2026-0628、CVE-2026-55945）已分別於今年1月與7月修補，但技術手法顯示瀏覽器AI代理仍缺乏對第三方擴充功能的信任邊界防護。",
+     "source": "Forever Security（經 Dark Reading 轉述）",
+     "tags": ["AI-AGENT", "CHROME", "BROWSER-EXTENSION"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機20架次(13逾中線)、共艦11艘、公務船3艘",
+     "url": "https://www.cna.com.tw/news/aipl/202609190025.aspx",
+     "summary": "國防部表示，9月18日上午6時至19日上午6時共偵獲中共軍機20架次，其中13架次逾越海峽中線並進入台灣北部、中部、西南及東部空域，另有11艘軍艦、3艘公務船，合計34艘機艦船持續在台海周邊活動，國軍嚴密監控並派遣任務兵力應處。",
+     "source": "中央社",
+     "tags": ["TAIWAN-STRAIT", "PLA", "MND"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜習近平赴美行程底定：9/23晚抵華府、24日白宮國宴與川普閉門會談",
+     "url": "https://udn.com/news/story/6813/9764541",
+     "summary": "美方官員公布習近平訪美完整行程：習近平偕彭麗媛預計9月23日晚間抵達華府、不出席同期登場的聯合國大會，24日將與川普舉行白宮歡迎儀式、閉門會談及國宴，25日離境。雙方預計討論人工智慧、11月到期的貿易停火、稀土及對台軍售等議題，對台軍售能否放行仍是北京視為的「紅線」焦點。",
+     "source": "聯合新聞網",
+     "tags": ["CHINA", "TAIWAN", "SUMMIT", "ARMS-SALE"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜南海爭端升溫至實際衝撞 中國海警船撞擊菲律賓漁業署公務船",
+     "url": "https://www.japantimes.co.jp/news/2026/09/19/asia-pacific/philippines-chinese-ship-rammed-vessel/",
+     "summary": "菲律賓政府表示，9月18日一艘中國海警船（編號CCG-21585）在南沙群島海域衝撞其漁業暨水產資源局（BFAR）公務船「Datu Magat Salamat」，該船正執行對菲律賓漁民發放補貼燃油任務，遭撞後右舷欄杆與支撐結構受損。中國海警則反指責菲方船隻「無視多次嚴正警告」蓄意變向，事故責任在菲方，雙方說法各執一詞，凸顯南海緊張已從言詞交鋒升高至實際碰撞。",
+     "source": "The Japan Times",
+     "tags": ["SOUTH-CHINA-SEA", "PHILIPPINES", "CHINA"]
+    },
+    {
+     "severity": "warning",
+     "title": "北韓深化援俄合作 俄媒證實普丁擬再向金正恩尋求最多5萬援軍",
+     "url": "https://www.cnn.com/2026/08/21/europe/russia-north-korea-ukraine-drones-intl",
+     "summary": "烏克蘭軍事情報持續追蹤北韓對俄軍事合作規模擴大，除既有部隊輪調至庫斯克前線外，另有約400人規模的無人機作戰單位協助偵察與打擊烏克蘭目標；北韓並持續提供俄羅斯大量砲彈、彈道飛彈與多管火箭系統。北韓官方透過金正恩胞妹金與正否認將再增派數萬兵力的說法，稱其為「毫無根據的自編劇本」。",
+     "source": "CNN",
+     "tags": ["NORTH-KOREA", "RUSSIA", "UKRAINE"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股週線收紅995點漲2.16% 上市總市值升破154兆元創新高",
+     "url": "https://ctinews.com/news/items/Bda0RPgmnL",
+     "summary": "台灣加權指數本週（9/11至9/18）上漲995點、漲幅2.16%，收在47,180點，上市公司總市值升破154兆元創歷史新高，外資單日買超逾869億元、成交量重回兆元水準。法人指出，中秋連假後仍須觀察美伊情勢、油價、美債殖利率與川習會等變數，預估大盤呈現「先蹲後跳」格局，短期直上48,000點機率不高。",
+     "source": "中天新聞網",
+     "tags": ["TAIEX", "TWII"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜Fed升息後市場轉向「更高更久」 華爾街策略師下修美股年底目標",
+     "url": "https://www.cnbc.com/2026/09/16/investors-react-to-fed-hike-market-sell-off-brace-for-higher-rates-for-longer.html",
+     "summary": "聯準會9月升息一碼至3.75%-4%後，投資人開始為「利率更高、維持更久」的環境做準備；知名策略師Ed Yardeni將標普500年底目標由8,400點下修至7,900點，示警未來3至6個月經濟下行風險升高，主因能源價格推升公債殖利率走高、壓抑企業獲利前景。",
+     "source": "CNBC",
+     "tags": ["FED", "RATE-HIKE", "SP500", "TREASURY-YIELD"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣本週收31.808元貶值0.54% 中東地緣風險續壓抑亞幣表現",
+     "url": "https://tw.stock.yahoo.com/news/9-18%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A531-808%E5%85%83%E4%BD%9C%E6%94%B6-%E5%8D%87%E5%80%BC7-3%E5%88%86-080300514.html",
+     "summary": "新台幣9/18兌美元匯率收31.808元、單日升值7.3分，但計入整週表現仍貶值0.54%。中東美伊情勢與荷姆茲海峽風險持續推升避險需求，壓抑新台幣等亞洲貨幣走勢。",
+     "source": "Yahoo奇摩股市",
+     "tags": ["TWD", "USDTWD"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油本週維持百美元上方高檔 荷姆茲海峽風險與沙國增產拉鋸",
+     "url": "https://oilprice.com/futures/brent/",
+     "summary": "布蘭特原油本週持續在每桶100美元上方高檔震盪，因荷姆茲海峽緊張情勢與沙國關鍵輸油管受創支撐風險溢價，但沙國增產與其他OPEC+成員擴產部分抵銷漲勢；不同機構最新報價落在99至104美元區間（因週末缺乏正式收盤價，數字為近似值）。",
+     "source": "Oilprice.com",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "date": "2026-09-21",
+ "focus": "共軍直升機首度飛越台海中線滯留R9空域逾9小時；伊朗擊中過境油輪並警告闖關船隻將遭「摧毀」，霍爾木茲危機再升溫。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "中國背景駭客UTA0560串聯Chrome與Windows零時差鎖定NGO 部署GRIMWEDGE惡意軟體",
+     "url": "https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html",
+     "summary": "中國背景駭客組織UTA0560近期利用Chrome瀏覽器與Windows作業系統串聯的零時差漏洞鏈,針對多個非政府組織(NGO)發起攻擊並植入GRIMWEDGE惡意軟體,藉沙箱逃逸取得系統持久潛伏能力。目前官方尚未公布完整修補資訊,企業應加強瀏覽器沙箱隔離與端點偵測部署。",
+     "source": "The Hacker News",
+     "tags": ["APT", "CHINA", "CHROME", "ZERO-DAY"]
+    },
+    {
+     "severity": "high",
+     "title": "WordPress外掛Elementor Pro漏洞遭大規模利用 近20萬次攻擊嘗試植入Webshell",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-elementor-pro-flaw-exploited-to-take-over-wordpress-sites/",
+     "summary": "擁有逾600萬安裝量的WordPress外掛Elementor Pro,其4.2.1及更早版本因表單檔案上傳陣列驗證缺陷(CVE-2026-32475),攻擊者可繞過驗證植入PHP Webshell取得遠端指令執行。廠商已於8月19日釋出4.2.2修補,惟Wordfence統計仍攔截近20萬次針對未更新網站的攻擊嘗試。",
+     "source": "Wordfence（經 BleepingComputer 轉述）",
+     "tags": ["WORDPRESS", "ELEMENTOR", "CVE-2026-32475", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "美國自來水系統PLC遭勒索集團持續鎖定 FBI證實多州出現水壓異常",
+     "url": "https://www.fbi.gov/investigate/cyber/alerts/2026/malicious-cyber-actors-targeting-water-and-wastewater-sector-internet--facing-programmable-logic-controllers-causing-operational-disruptions",
+     "summary": "FBI證實針對美國自來水與污水處理業者的攻擊行動持續擴大,攻擊者鎖定Rockwell Automation/Allen-Bradley MicroLogix系列可程式化邏輯控制器(PLC),更改預設密碼與IP位址奪取控制權;已有多州因入侵出現水壓異常,部分社區發布預防性煮沸警告，惟尚無飲用水安全遭破壞的證據。業者應立即更換預設密碼並將PLC自公網隔離。",
+     "source": "FBI",
+     "tags": ["RANSOMWARE", "CRITICAL-INFRASTRUCTURE", "PLC", "USA"]
+    },
+    {
+     "severity": "medium",
+     "title": "SolarWinds ARM爆內嵌硬編碼金鑰 CVSS 8.8未驗證即可遠端取得程式碼執行",
+     "url": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
+     "summary": "SolarWinds Access Rights Manager(ARM)2026.2及之前版本被發現內嵌硬編碼靜態金鑰(CVE-2026-28326,CVSS 8.8),未經驗證的攻擊者可透過網路遠端取得程式碼執行權限。廠商已於9月17日發布公告並在ARM 2026.2.1修補,目前無在野利用證據,但因免驗證即可攻擊,建議已部署業者儘速更新。",
+     "source": "SolarWinds PSIRT（經 The Hacker News 轉述）",
+     "tags": ["SOLARWINDS", "CVE-2026-28326", "RCE"]
+    },
+    {
+     "severity": "warning",
+     "title": "Google Gemini AI代理測試因目標網域設定失誤 意外入侵真實企業系統",
+     "url": "https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html",
+     "summary": "資安團隊在測試Google Gemini AI代理的自主攻防能力時,因目標網域設定錯誤導致代理實際入侵一家真實企業的系統;Google於察覺後緊急暫停測試並展開調查,目前無公開個資外洩證據。事件凸顯AI自動化攻擊代理若缺乏嚴格範圍控管,可能造成未經授權的實際入侵風險。",
+     "source": "Google（經 The Hacker News 轉述）",
+     "tags": ["GOOGLE", "AI-AGENT", "GEMINI"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "共軍直升機首度飛越台海中線 於R9限制區滯留逾9小時創新模式",
+     "url": "https://money.udn.com/money/story/7307/9645497",
+     "summary": "國防安全學者指出,共軍直升機於9月20日上午10時20分至晚間7時40分,首度飛越台海中線並在中線以東的R9限制區內長時間平行滯留逾9小時,為解放軍首次以直升機及無人機在該空域進行長時程活動。國防部回應中央社表示,已透過聯合情監偵能力有效掌握周邊海空域動態並適切應處。",
+     "source": "中央社",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "TAIWAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜傳習近平募大型商業代表團隨行訪美 川普稱美中將「共同做大事」",
+     "url": "https://udn.com/news/story/6809/9736968",
+     "summary": "路透報導,中國國家主席習近平正籌組大型商業代表團,計劃於9月23日晚間隨行抵達華府近郊安德魯斯聯合基地,並於24日在白宮與川普進行閉門會談及國宴。白宮尚未證實中方企業代表團安排或具體經貿協議內容,對台軍售議題仍被視為北京施壓的籌碼之一。",
+     "source": "路透（經 聯合新聞網 轉述）",
+     "tags": ["CHINA", "US-CHINA", "SUMMIT", "ARMS-SALE"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：9/20晨6時至9/21晨6時偵獲共艦5艘、公務船6艘、共機4架次進入北中及東南部空域",
+     "url": "https://www.mnd.gov.tw/news/plaactlist",
+     "summary": "國防部通報,9月20日上午6時至9月21日上午6時期間，偵獲中國軍艦5艘、公務船6艘、軍機4架次進入台灣北部、中部及東南部空域，國軍運用聯合情監偵能力嚴密監控並適切應處，本次數字較上週同期明顯回落。",
+     "source": "國防部",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CROSS-STRAIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜伊朗擊中多哥籍油輪「Trend」 德黑蘭百萬集會挺政府 警告闖關船隻將遭「摧毀」",
+     "url": "https://www.manilatimes.net/2026/09/20/world/americas-emea/iran-strikes-oil-tanker-in-strait-of-hormuz/2428708",
+     "summary": "伊朗國家廣播電台引述革命衛隊證實,週四夜間擊中一艘企圖「非法通過」霍爾木茲海峽的多哥籍油輪「Trend」;美聯社尚無法立即證實此說法。同一時間,德黑蘭湧現自2月美以空襲以來最大規模挺政府集會,革命衛隊海軍重申未經許可船隻若試圖闖關，將面臨「摧毀」。",
+     "source": "伊朗國家廣播（經 The Manila Times 轉述）",
+     "tags": ["IRAN", "HORMUZ", "OIL", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜多國監督團證實：北韓海外勞工在俄羅斯無人機工廠協助生產軍用機",
+     "url": "https://news.yahoo.co.jp/articles/131282bb5875641703843f626c1f97fd50fef5bd",
+     "summary": "由日美韓等11國組成、監督對北韓制裁執行情況的「多邊制裁監督團」（MSMT）9月20日發布報告指出,派駐俄羅斯的北韓勞工除傳統建築與農務工作外,已被投入無人機工廠,協助生產供俄軍使用的軍用無人機。目前估計約1.5萬至3萬名北韓勞工滯留俄羅斯境內。",
+     "source": "多邊制裁監督團MSMT（經 Yahoo!News Japan 轉述）",
+     "tags": ["NORTH-KOREA", "RUSSIA", "UKRAINE", "DRONE"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "布蘭特原油上週五收103.87美元 週末伊朗再擊油輪恐推升本週開盤風險溢價",
+     "url": "https://www.manilatimes.net/2026/09/20/world/americas-emea/iran-strikes-oil-tanker-in-strait-of-hormuz/2428708",
+     "summary": "布蘭特原油11月期貨上週五(9/18)收在每桶103.87美元,單日下跌0.91%。隨伊朗革命衛隊週末再度擊中一艘油輪並警告攔截未經授權船隻，市場預期本週一開盤，霍爾木茲海峽風險溢價可能再度走高，油價恐重返每桶105美元上方。",
+     "source": "路透（近似值，綜合市場報導）",
+     "tags": ["BRENT", "OIL", "HORMUZ", "IRAN"]
+    },
+    {
+     "severity": "info",
+     "title": "台股上週五收47,180點創高、新台幣收31.808元 本週面對Fed鷹派與中東變數雙重考驗",
+     "url": "https://money.udn.com/money/story/12509/9763372",
+     "summary": "台股加權指數上週五(9/18)收在47,180.75點創歷史新高,週線上漲995點、漲幅2.16%；新台幣同日升值收31.808元，終結連五貶。本週開盤將同步面對Fed升息後「更高更久」鷹派訊號與霍爾木茲海峽週末再度升溫的雙重考驗。",
+     "source": "經濟日報",
+     "tags": ["TAIEX", "TWD", "USDTWD", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股上週五收紅結束Fed升息週觀望 那斯達克漲0.39%惟10年期殖利率仍卡5%關口",
+     "url": "https://www.cnbc.com/2026/09/17/stock-market-today-live-updates.html",
+     "summary": "美股三大指數上週五(9/18)收紅，標普500指數收7,650.50點漲0.17%，那斯達克綜合指數收26,522.55點漲0.39%，結束Fed升息一碼落地後的觀望情緒。惟10年期美債殖利率仍在5%左右盤桓，反映市場對利率「更高更久」路徑的疑慮尚未消散。",
+     "source": "CNBC",
+     "tags": ["SP500", "NASDAQ", "FED", "TREASURY-YIELD"]
+    }
+   ]
+  }
+ ]
+}

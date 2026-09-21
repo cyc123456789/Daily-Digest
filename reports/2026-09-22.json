@@ -1,0 +1,138 @@
+{
+ "date": "2026-09-22",
+ "focus": "習近平9月23至25日訪美會川普，140億美元對台軍售傳將延後至APEC峰會後才公布",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Cisco Secure Email Gateway零時差遭利用取得Root權限 CISA已列入KEV",
+     "url": "https://securityaffairs.com/199137/hacking/cisco-warns-of-ongoing-exploitation-of-critical-email-gateway-zero-day.html",
+     "summary": "CVE-2026-76461（CVSS 9.8）為Cisco AsyncOS郵件解析邏輯的SQL注入漏洞，未經驗證攻擊者可透過惡意郵件觸發，最終以root權限執行作業系統指令，影響所有設定下的實體與虛擬版Secure Email Gateway。該漏洞在廠商公告前即遭在野利用，CISA已列入KEV並要求聯邦機關於9月17日前完成修補，未升級版本的用戶應立即更新。",
+     "source": "Cisco PSIRT（經 SecurityAffairs 轉述）",
+     "tags": ["CISCO", "CVE-2026-76461", "CISA-KEV", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "微軟Azure AI Foundry爆CVSS滿分10.0漏洞 未驗證即可跨網路提權",
+     "url": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html",
+     "summary": "CVE-2026-85889起因於關鍵功能缺少身分驗證（CWE-306），攻擊者無需憑證即可透過網路存取內部管理介面並提升權限，波及AI模型與資料資產的機密性與完整性。微軟9月17日揭露時已在託管服務端完成修補，客戶端無需另行更新，目前無證據顯示遭在野利用。",
+     "source": "Microsoft MSRC（經 The Hacker News 轉述）",
+     "tags": ["MICROSOFT", "CVE-2026-85889", "AI", "PRIVILEGE-ESCALATION"]
+    },
+    {
+     "severity": "warning",
+     "title": "德州電力公司CenterPoint Energy證實外洩 駭客兜售749萬筆客戶資料",
+     "url": "https://securityaffairs.com/199170/data-breach/texas-utility-centerpoint-energy-confirms-data-breach-after-hacker-claims-7-49m-records-stolen.html",
+     "summary": "駭客聲稱透過CenterPoint Energy一支缺乏驗證與速率限制的API取得逾749萬筆客戶紀錄，內容含姓名、電話、帳單地址、帳戶ID與後四碼社會安全碼。公司9月14日向SEC申報8-K，證實有外部系統遭未授權存取個資，但尚未確認確切筆數與欄位範圍，強調電力與天然氣供應未受影響。",
+     "source": "SecurityAffairs",
+     "tags": ["DATA-BREACH", "CRITICAL-INFRASTRUCTURE", "USA"]
+    },
+    {
+     "severity": "warning",
+     "title": "新型RAT「ChainScript」藉假冒Spotify安裝檔散布 以區塊鏈智能合約藏C2",
+     "url": "https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html",
+     "summary": "攻擊者以ClickFix式假驗證彈窗誘導使用者手動執行惡意MSI安裝檔（偽裝成Spotify、Zoom、Teams），植入Node.js版RAT「ChainScript」，具遠端指令、檔案操作、螢幕截圖與加密貨幣錢包掃描能力。其C2位址透過Polygon智能合約動態解析（類EtherHiding手法），增加封鎖難度；用戶應避免依彈窗指示貼上並執行未知指令。",
+     "source": "The Hacker News",
+     "tags": ["SOCIAL-ENGINEERING", "BACKDOOR", "MALWARE"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜140億美元對台軍售傳延至APEC峰會後宣布 川普視為對中談判籌碼",
+     "url": "https://newtalk.tw/news/view/2026-09-20/1060812",
+     "summary": "消息人士指出，華盛頓正考慮將140億美元對台軍售案延後至APEC、G20峰會結束後才正式對外宣布，避免影響川習互動氛圍；川普受訪時坦言曾在峰會前主動向習近平提及此案，將其視為談判工具。美國會「美中戰略競爭特別委員會」主席已致函川普，要求在川習會上對陸強硬、勿因軍售讓步。",
+     "source": "Newtalk新聞",
+     "tags": ["ARMS-SALE", "TAIWAN", "US-CHINA", "SUMMIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：9/20至21偵獲共艦7艘、公務船4艘、共機3架次逾中線",
+     "url": "https://www.cna.com.tw/news/aipl/202609210023.aspx",
+     "summary": "國防部表示，自9月20日上午6時至21日上午6時，偵獲中共海空兵力異動，包括共艦7艘、公務船4艘，另有共機3架次逾越海峽中線，侵擾我中部、西南及東部空域。國軍運用任務機艦及岸置飛彈系統嚴密監控並依情況應處。",
+     "source": "中央社 CNA",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT"]
+    },
+    {
+     "severity": "info",
+     "title": "後續｜北京證實習近平9/23至25日國是訪美 學者：台灣議題非此次重點",
+     "url": "https://udn.com/news/story/7331/9768216",
+     "summary": "中國外交部21日正式宣布，習近平應川普邀請將於9月23日至25日對美國進行國是訪問，為時隔11年再度訪美，24日將於白宮與川普會談。淡江大學兩岸關係研究中心主任張五岳分析，此次川習會聚焦中美經貿協議，在台灣議題上出現重大宣示或交易的機率「微乎其微」。",
+     "source": "聯合新聞網",
+     "tags": ["SUMMIT", "US-CHINA", "CHINA", "TAIWAN"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "荷姆茲海峽再傳油輪遇襲 不明拋射物擊中船體2船員輕傷",
+     "url": "https://english.alarabiya.net/News/middle-east/2026/09/21/tanker-struck-by-projectile-in-strait-of-hormuz-two-crew-injured-ukmto-says",
+     "summary": "英國海事貿易組織（UKMTO）證實，一艘油輪21日通過荷姆茲海峽入境航段時遭不明拋射物擊中，造成2名船員輕傷，船隻仍以自身動力續航前往下一港口。另有一艘LPG油輪駛離海峽時遭不明拋射物碎片擊中，船員均安、無環境污染，美伊戰事延燒下海峽航運風險持續居高不下。",
+     "source": "Al Arabiya English",
+     "tags": ["HORMUZ", "IRAN", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "川普鬆口願在聯大會晤伊朗總統 同時警告恐加大軍事施壓",
+     "url": "https://www.cnbc.com/2026/09/21/us-iran-war-trump-hormuz.html",
+     "summary": "川普21日向福斯新聞表示，若伊朗總統佩澤希齊揚本週赴紐約出席聯合國大會，他「應該會願意」與其會晤，為近七個月美伊戰事以來罕見的外交鬆動信號。但川普同時警告，若德黑蘭不願達成協議，不排除加大軍事行動或經濟制裁；伊朗已提出重啟談判條件，惟雙方尚未證實是否將正式會面。",
+     "source": "CNBC",
+     "tags": ["IRAN", "MIDDLE-EAST", "USA"]
+    },
+    {
+     "severity": "warning",
+     "title": "北韓再射多枚短程彈道飛彈落海 續拒美方對話呼籲",
+     "url": "https://www.washingtontimes.com/news/2026/sep/20/north-korea-launches-multiple-ballistic-missiles/",
+     "summary": "南韓軍方證實，北韓20日朝東部外海試射至少2枚短程彈道飛彈，兩枚發射時間相隔約3小時，均飛行逾200英里落海。此次試射發生在平壤拒絕美方重啟對話呼籲數日後，凸顯朝鮮半島緊張情勢持續升溫。",
+     "source": "The Washington Times",
+     "tags": ["NORTH-KOREA", "MISSILE-TEST", "USA"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/21收漲538點站上47,718點再創歷史新高",
+     "url": "https://newtalk.tw/news/view/2026-09-21/1061060",
+     "summary": "台股21日收盤上漲538.09點、漲幅1.14%，收在47,718.84點續創歷史新高，盤中最高觸及47,750.98點，成交量約8,202億元，三大法人同步買超。",
+     "source": "Newtalk新聞",
+     "tags": ["TAIEX", "TWII", "TAIWAN"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/21那指、標普同創新高 油價回落激勵科技股走揚",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-21-135426827.html",
+     "summary": "美股21日那斯達克指數上漲0.4%（104.25點）收26,522.55點，標普500指數上漲0.2%（12.74點）收7,650.50點，均創收盤新高，油價當日明顯回落帶動科技股走勢。",
+     "source": "Yahoo Finance",
+     "tags": ["SP500", "NASDAQ", "USA"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油跌破102美元創11日新低 沙國荷姆茲海峽出口量明顯回升",
+     "url": "https://www.cnbc.com/2026/09/21/iran-us-oil-prices-crude-saudi-arabia-.html",
+     "summary": "布蘭特原油21日盤中跌至每桶約101美元，創11個交易日新低，主因川普釋出可能與伊朗總統會晤的外交降溫訊號，加上沙烏地阿拉伯經荷姆茲海峽的原油出口量已回升至日均290萬桶，較8月的70萬桶明顯改善。",
+     "source": "CNBC",
+     "tags": ["BRENT", "OIL", "HORMUZ", "SAUDI"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/21升值收31.758元",
+     "url": "https://tw.stock.yahoo.com/news/%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%8D%875%E5%88%86-%E6%94%B631-758%E5%85%83-080533043.html",
+     "summary": "新台幣兌美元21日升值5分，收在31.758元，單日成交金額約22.7億美元，終結近期貶值走勢。",
+     "source": "Yahoo奇摩股市",
+     "tags": ["TWD", "USDTWD", "TAIWAN"]
+    }
+   ]
+  }
+ ]
+}

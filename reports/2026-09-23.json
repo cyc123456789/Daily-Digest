@@ -1,0 +1,212 @@
+{
+ "date": "2026-09-23",
+ "focus": "美伊在荷姆茲海峽直接互襲：美軍擊中3艘伊朗油輪、伊朗飛彈射向美艦致2船員罹難；同日習近平啟程國是訪美三天",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "Adobe Commerce／Magento零時差「StyleSmuggler」CVSS滿分10.0 已遭在野利用植入後門",
+     "url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/",
+     "summary": "CVE-2026-75650（代號StyleSmuggler）為未經驗證即可遠端執行程式碼的漏洞，自9月4日起已遭在野利用，攻擊者藉此在受害商店植入Rust後門與PHP webshell。受影響範圍含Adobe Commerce 2.4.4至2.4.9、Magento Open Source 2.4.6至2.4.9、Adobe Commerce B2B 1.3.3至1.5.3；Adobe已於9月7日釋出Hotfix VULN-39341，但研究人員強調光是修補無法清除已遭入侵的商店，須同步掃描並輪替加密金鑰與所有憑證。",
+     "source": "Sansec（經 BleepingComputer 轉述）",
+     "tags": [
+      "ADOBE",
+      "MAGENTO",
+      "RCE",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "微軟聯合執法瓦解AI驅動網釣平台EvilTokens 逾1.2萬個信箱遭入侵",
+     "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
+     "summary": "微軟數位犯罪部門22日宣布會同執法機關瓦解訂閱制網釣平台EvilTokens，該平台濫用OAuth裝置授權流程繞過MFA取得帳戶存取權，並以AI聊天機器人分析受害者信箱、篩選高價值目標並生成詐騙話術，自2月上線以來已波及逾1萬家組織的1.2萬個信箱。微軟已查封50個相關網站並停用150餘個支援網域，英國倫敦警察廳並逮捕2名涉案男子。",
+     "source": "Microsoft",
+     "tags": [
+      "MICROSOFT",
+      "PHISHING",
+      "AI"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "以色列電信設備商Telrad Networks遭Qilin勒索軟體點名 聲稱竊得內部資料",
+     "url": "https://www.galaxywarden.com/blog/breach/telrad-networks-qilin-2026-09",
+     "summary": "勒索軟體集團Qilin於9月21日在其洩露網站將以色列電信設備製造商Telrad Networks列為受害者，聲稱已竊得公司內部資料並要脅公開，惟Telrad Networks截至目前尚未公開證實此事。Qilin慣用手法為雙重勒索，先加密系統再以公開外洩資料要脅付款。",
+     "source": "GalaxyWarden（彙整 Qilin 洩露網站聲明）",
+     "tags": [
+      "RANSOMWARE",
+      "QILIN",
+      "ISRAEL"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "身分驗證業者IDScan證實外洩 逾1.5億筆駕照資料遭竊",
+     "url": "https://techcrunch.com/2026/09/10/id-verification-giant-idscan-confirms-data-breach-with-more-than-150-million-drivers-licenses-stolen/",
+     "summary": "身分驗證服務商IDScan證實遭入侵，駭客自其雲端環境竊得逾1.5億筆駕照資料，內容包含姓名與駕照號碼等個人身分資訊。公司尚未詳細說明入侵途徑與是否已完成修補，用戶應留意後續衍生的冒名詐騙與釣魚攻擊風險。",
+     "source": "TechCrunch",
+     "tags": [
+      "DATA-BREACH",
+      "USA"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Group-IB：伊朗APT「MuddyWater」躍居2026年最活躍間諜組織之一",
+     "url": "https://www.group-ib.com/masked-actors/muddywater/",
+     "summary": "資安廠商Group-IB研究指出，隸屬伊朗情報部（MOIS）的APT組織MuddyWater為2026年活動最頻繁的伊朗背景駭客集團之一，其發起的「Operation Olalampo」行動快速輪替惡意工具並透過遭入侵的合法信箱發動大規模釣魚攻擊，活動足跡橫跨113個國家，鎖定政府、金融、醫療與科技等產業。",
+     "source": "Group-IB",
+     "tags": [
+      "IRAN",
+      "APT",
+      "PHISHING"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜習近平今啟程國是訪美三天 外媒：北京料要求川普依1982公報停止對台軍售",
+     "url": "https://www.japantimes.co.jp/news/2026/09/22/asia-pacific/politics/china-xi-trump-halt-taiwan-arms-sales/",
+     "summary": "習近平預計23日啟程赴美進行為期三天的國是訪問，24日將與川普在白宮會談，議題涵蓋貿易、稀土、AI安全與台灣問題。路透社引述消息人士指出，習近平預期將援引1982年美中「八一七公報」要求川普停止對台軍售；美方目前考慮將140億美元對台軍售案延後至APEC峰會後才公布，作為對中談判籌碼。",
+     "source": "Reuters（經 The Japan Times 轉述）",
+     "tags": [
+      "SUMMIT",
+      "US-CHINA",
+      "CHINA",
+      "TAIWAN",
+      "ARMS-SALE"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共艦6艘、公務船3艘、共機4架次逾越中線",
+     "url": "https://www.cna.com.tw/news/aipl/202609220037.aspx",
+     "summary": "國防部表示，9月21日上午6時至22日上午6時期間，偵獲中共海空兵力異動，計共艦6艘、公務船3艘，另有共機4架次全數逾越海峽中線，進入我中部及西南空域。國軍運用任務機艦與岸置飛彈系統嚴密監控並依情況應處。",
+     "source": "中央社 CNA",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "川習二會前夕 陸委會：美中台情勢可望維持「三個不變」",
+     "url": "https://newtalk.tw/news/view/2026-09-21/1061066",
+     "summary": "陸委會副主委沈有忠21日於座談會研判，此次川習會後美中台情勢可望維持「三個不變」：中美競爭本質與結構不變、美國對台政策不變、我政府維護台海和平穩定決心不變，預期此次會面不會有太大突破。政府並示警，須留意中共可能藉峰會配合協力者散播「疑美論」「棄台論」等認知作戰，企圖影響年底地方選舉。",
+     "source": "Newtalk新聞",
+     "tags": [
+      "SUMMIT",
+      "US-CHINA",
+      "TAIWAN",
+      "CROSS-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜美伊互襲升級 美軍擊中3艘伊朗油輪、伊朗飛彈射向美艦致油輪2船員罹難",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-strait-of-hormuz-oil-gas-price-strikes/",
+     "summary": "美伊過去24小時互襲明顯升級：美軍打擊3艘與伊朗革命衛隊有關的油輪，德黑蘭則還擊油輪並朝在荷姆茲海峽巡弋的美軍艦艇發射彈道飛彈；一艘沙烏地籍油輪遭伊朗攻擊，2名船員罹難，阿曼海軍出動救起16名船員。雙方軍事對抗程度為近七個月美伊戰事以來最直接的一次交火。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "MIDDLE-EAST",
+      "USA"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "伊朗釋出降溫訊號：若美方降低軍事壓力 一週內可重開荷姆茲海峽",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-22-2026",
+     "summary": "儘管美伊當天爆發直接軍事衝突，伊朗同時透過中間人向美方傳話，若華府採取措施降低軍事壓力，可望在一週內重新開放荷姆茲海峽通行；此一訊號加上沙國經海峽出口量回升，帶動22日國際油價明顯下跌，市場解讀為緊張情勢可能出現轉圜跡象。",
+     "source": "The Street",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "OIL",
+      "MIDDLE-EAST"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "中國對日經濟施壓未歇 高市早苗台灣言論後續效應持續發酵",
+     "url": "https://asiatimes.com/2026/09/chinas-pressure-campaign-against-japan-is-backfiring-badly/",
+     "summary": "日相高市早苗今年稍早表態若中國對台灣採取海上封鎖，恐構成日本「存亡危機事態」、可能出動自衛隊回應，北京隨後對多家日本企業與研究機構祭出稀土等軍民兩用物項出口管制，並中止部分人員交流，兩國關係持續處於低谷。分析指出，北京的施壓手段反而促使東京加快擴軍腳步並深化與盟友的安全合作。",
+     "source": "Asia Times",
+     "tags": [
+      "JAPAN",
+      "CHINA",
+      "TAIWAN",
+      "SANCTIONS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股9/22收漲81點站上47,800點 續創歷史新高",
+     "url": "https://www.cna.com.tw/news/afe/202609220149.aspx",
+     "summary": "台股22日收盤上漲81.33點、漲幅0.17%，收在47,800.17點續創歷史新高，成交金額約新台幣1兆215.69億元；盤中一度上探48,601.53點，惟終場漲幅收斂，八大類股中金融、塑化、紡織等族群收黑。",
+     "source": "中央社 CNA",
+     "tags": [
+      "TAIEX",
+      "TWII",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/22標普那指小幅走高逼近新高 AI晶片股連六日走揚",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-22-2026",
+     "summary": "美股22日走勢分歧，標普500指數持平微漲、羅素2000表現最佳，費城半導體指數相關晶片股連續第六個交易日走高；美中領袖會晤前釋出的正面言論帶來市場信心，但大型銀行股類股走弱逾1.8%。",
+     "source": "The Street",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "USA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/22跌至98美元 伊朗釋出重開荷姆茲海峽訊號激勵降溫",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-22-2026",
+     "summary": "布蘭特原油22日下跌2.1%至每桶約98美元，西德州原油下跌2.6%至89美元，主因伊朗釋出若美方降低軍事壓力願重開荷姆茲海峽的訊號，加上沙烏地阿拉伯經海峽的原油出口量持續回升，市場對供給緊張稍有鬆綁預期。",
+     "source": "The Street",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/22升值收31.708元",
+     "url": "https://www.cna.com.tw/news/afe/202609220213.aspx",
+     "summary": "新台幣兌美元22日升值5分，收在31.708元，單日成交金額約20.13億美元，延續前一交易日升值走勢。",
+     "source": "中央社 CNA",
+     "tags": [
+      "TWD",
+      "USDTWD",
+      "TAIWAN"
+     ]
+    }
+   ]
+  }
+ ]
+}

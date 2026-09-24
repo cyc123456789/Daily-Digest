@@ -1,0 +1,138 @@
+{
+ "date": "2026-09-25",
+ "focus": "川習會落幕：貿易休戰延至明年1月10日，但白宮聲明隻字未提台灣、習近平重申「反台獨」立場",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "WSO2 API Manager JWT驗證繞過漏洞遭在野利用 全球逾千企業曝險",
+     "url": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
+     "summary": "WSO2 API Manager等產品存在JWT簽章驗證繞過漏洞(CVE-2026-5430，CVSS 9.8)，攻擊者可利用系統誤驗證的未支援演算法偽造具管理員權限的JWT權杖，進而完全掌控帳號。watchTowr證實9月13日起已有攻擊者在野利用偽造管理員權杖發動攻擊，受影響版本含API Manager 4.1.0至4.6.0、API Control Plane、Traffic Manager與Universal Gateway，官方修補程式雖已釋出但採用率不足。",
+     "source": "watchTowr（經 The Hacker News 轉述）",
+     "tags": ["WSO2", "CVE-2026-5430", "ZERO-DAY", "CREDENTIAL"]
+    },
+    {
+     "severity": "high",
+     "title": "Cisco Secure FMC CVSS滿分10.0漏洞 Sandworm、Qilin等三組威脅集團接力利用",
+     "url": "https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/",
+     "summary": "Cisco Talos證實其Secure Firewall Management Center軟體的身分驗證繞過漏洞(CVE-2026-20079，CVSS 10.0)遭三個不同威脅集團接力利用，其中一組與俄羅斯背景Sandworm相關、另一組部署Qilin勒索軟體，未驗證攻擊者可執行指令碼取得底層作業系統root權限。CISA已將其列入KEV清單，官方修補程式與緩解措施皆已可取得。",
+     "source": "Cisco Talos（經 BleepingComputer 轉述）",
+     "tags": ["CISCO", "CVE-2026-20079", "CISA-KEV", "QILIN", "RANSOMWARE"]
+    },
+    {
+     "severity": "high",
+     "title": "俄羅斯APT28利用Office新漏洞 24小時內鎖定歐洲海事與運輸機構",
+     "url": "https://www.trellix.com/blogs/research/apt28-stealthy-campaign-leveraging-cve-2026-21509-cloud-c2/",
+     "summary": "Trellix研究團隊揭露俄羅斯背景駭客組織APT28於Microsoft Office漏洞(CVE-2026-21509)公開揭露後24小時內即完成武器化，鎖定波蘭、斯洛維尼亞、土耳其、希臘、阿聯與烏克蘭等國的海事與運輸機構進行間諜行動，並透過雲端C2基礎設施隱匿指揮鏈。微軟已針對該漏洞釋出修補程式，建議受影響機構立即更新。",
+     "source": "Trellix",
+     "tags": ["APT", "RUSSIA", "MICROSOFT", "CVE-2026-21509"]
+    },
+    {
+     "severity": "medium",
+     "title": "阿根廷政府網站遭駭 SUBE交通卡系統用戶個資與卡號外洩",
+     "url": "https://buenosairesherald.com/business/tech/personal-data-of-millions-exposed-after-two-government-sites-hacked",
+     "summary": "阿根廷公共運輸電子票證系統SUBE與另一政府網站遭駭客於9月23日在暗網論壇兜售資料，外洩內容包含數百萬筆民眾個資與交通卡卡片資訊。當局尚未證實確切外洩筆數，亦未公布是否已完成系統修補。",
+     "source": "Buenos Aires Herald",
+     "tags": ["DATA-BREACH", "ARGENTINA", "GOVERNMENT"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "川習會落幕 白宮聲明隻字未提台灣 習近平重申「反台獨」立場",
+     "url": "https://www.cna.com.tw/news/aopl/202609250008.aspx",
+     "summary": "川普與習近平9月24日在白宮舉行閉門會談，會後白宮發布的聲明聚焦經貿、晶片與伊朗情勢，隻字未提及台灣；新華社則報導習近平在會中強調「維護國家統一和領土完整的立場很清楚」，要求美方堅持反對「台獨」並慎重處理台灣問題。面對記者詢問是否談及台灣，川普未正面回應。",
+     "source": "中央社",
+     "tags": ["SUMMIT", "US-CHINA", "TAIWAN", "CHINA"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜白宮官員：川普將盡快裁定140億美元對台軍售案",
+     "url": "https://newtalk.tw/news/view/2026-09-24/1061671",
+     "summary": "川習會登場前，一名美國資深官員向媒體表示，川普將在短時間內就規模140億美元的對台軍售案做出決定，凸顯北京要求延後軍售與台灣持續尋求依既定計畫推進之間的角力仍未落幕。",
+     "source": "Newtalk新聞",
+     "tags": ["ARMS-SALE", "TAIWAN", "US-CHINA"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：9/23至24偵獲共機10架次(5逾中線)、共艦6艘、公務船6艘",
+     "url": "https://news.cts.com.tw/cna/politics/202609/202609243082373.html",
+     "summary": "國防部表示，9月23日上午6時至24日上午6時，共偵獲中國大陸軍機10架次(其中5架次逾越台海中線)、軍艦6艘及公務船6艘，進入台灣北部及中部空域，國軍運用任務兵力、艦艇及岸置飛彈系統嚴密監控應處。",
+     "source": "華視新聞",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CROSS-STRAIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "川習會後美中達成貿易休戰延長協議 財長貝森特：休兵期展延至明年1月10日",
+     "url": "https://udn.com/news/story/125026/9776674",
+     "summary": "美國財政部長貝森特證實，川習會後美中達成協議，將原訂11月10日到期的關稅休兵延長至明年1月10日，期間美方調降部分商品關稅、北京暫緩稀土與關鍵礦物出口管制。雙方在晶片與台灣議題上仍持續角力，但貿易面暫時降溫。",
+     "source": "聯合新聞網",
+     "tags": ["US-CHINA", "CHINA", "SUMMIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "荷姆茲海峽美伊互襲未歇 商船通行量大減",
+     "url": "https://abcnews.com/International/live-updates/iran-live-updates-centcom-targeted-iranian-forces-posed/?id=136080582",
+     "summary": "美伊在荷姆茲海峽的相互攻擊持續升溫，美軍近期打擊伊朗油輪，德黑蘭則以飛彈回擊美軍軍艦與油輪，海峽商船通行量較平時單日約85艘大幅萎縮。美軍持續在區域執行代號「Project Freedom」的行動，監控伊朗軍事動向。",
+     "source": "ABC News",
+     "tags": ["IRAN", "HORMUZ", "MIDDLE-EAST"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜北韓90人飛彈部隊擬進駐俄羅斯沃羅涅日州 編入俄軍飛彈旅",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5529198",
+     "summary": "烏克蘭國防部情報總局官員指出，一支約90人的北韓飛彈部隊預計部署至俄羅斯西部沃羅涅日地區，並將編入俄軍第112飛彈旅指揮體系，顯示北韓對俄軍事支援持續擴大且已深入前線指揮結構。北韓先前已交付「火星-11」系列與新型KN-30彈道飛彈供俄軍使用。",
+     "source": "自由軍事頻道",
+     "tags": ["NORTH-KOREA", "RUSSIA", "MISSILE-TEST"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股中秋連假前收跌132點守住48,000點 台積電跌1%收2,475元",
+     "url": "https://udn.com/news/story/7251/9775404",
+     "summary": "台股9月24日為中秋連假前最後交易日，終場下跌132.69點(-0.28%)，收在48,024.6點，成交金額新台幣7,366.23億元；權值股台積電下跌25元(-1%)收2,475元，五大權值股同步走弱，投資人於長假前轉為觀望。",
+     "source": "聯合新聞網",
+     "tags": ["TAIEX", "TWII", "TSMC"]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/23收跌 PMI數據強勁疊加公債殖利率飆至19年新高",
+     "url": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-9232026-136697299",
+     "summary": "美股9月23日收低，標普500指數跌58.61點(-0.8%)收7,706.03點，那斯達克指數跌308.24點(-1.1%)收26,936.04點，道瓊工業指數跌352.10點(-0.7%)收51,511.59點。S&P Global製造業與服務業PMI雙雙優於預期，帶動10年期公債殖利率跳升至5.11%，創2007年以來新高，科技股承壓。",
+     "source": "ABC News",
+     "tags": ["SP500", "NASDAQ", "DOW", "TREASURY-YIELD"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油9/24回升至104美元上方 亞洲原油進口創戰時新高支撐油價",
+     "url": "https://fortune.com/article/price-of-oil-09-24-2026/",
+     "summary": "國際油價9月24日美東時間上午10時報104.67美元/桶，較前一交易日上漲2.64美元，主因亞洲原油進口量升至開戰以來新高，支撐需求面。此數字為當日盤中報價，非正式收盤價，實際收盤價可能有出入。",
+     "source": "Fortune（近似值）",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/24午盤重貶1.24角 暫收31.84元",
+     "url": "https://www.cna.com.tw/news/afe/202609240097.aspx",
+     "summary": "台北外匯市場新台幣兌美元9月24日中午暫收31.84元，重貶1.24角，成交金額9.32億美元；早盤開盤價31.75元，盤中最高31.71元、最低31.85元。因僅取得午盤數據，實際終場收盤價可能略有差異。",
+     "source": "中央社（近似值）",
+     "tags": ["TWD", "USDTWD", "TAIWAN"]
+    }
+   ]
+  }
+ ]
+}

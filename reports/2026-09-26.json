@@ -1,0 +1,138 @@
+{
+ "date": "2026-09-26",
+ "focus": "川習會後南海風雲再起：中國海警攔阻菲律賓仁愛礁運補任務，兩年來首見對峙式摩擦",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "MikroTik RouterOS「MikroTrick」漏洞鏈遭大規模在野利用 逾12萬台路由器曝險",
+     "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+     "summary": "MikroTik RouterOS存在SSH驗證流程瑕疵CVE-2026-67279，可與另一漏洞CVE-2026-86060組合成「MikroTrick」攻擊鏈，讓未驗證攻擊者取得裝置管理員權限並竄改設定檔。CISA已於9月25日將兩者列入KEV清單，研究人員估計全球逾12.25萬台路由器暴露在攻擊風險中，官方已釋出7.25 beta3、7.24.2、7.23.4、6.49.21等修補版本供受影響用戶升級。",
+     "source": "CERT Polska（經 The Hacker News 轉述）",
+     "tags": ["MIKROTIK", "CISA-KEV", "ZERO-DAY", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "Microsoft SharePoint本地版代碼注入漏洞遭利用 CISA列入KEV要求9/28前修補",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "CVE-2026-65660為SharePoint Server 2016、2019及訂閱版的代碼注入漏洞(CVSS 8.8)，已取得驗證存取的攻擊者可注入程式碼並於伺服器端執行任意指令。CISA於9月25日證實在野利用並列入KEV清單，要求聯邦機關於9月28日前完成修補；微軟已在8月的安全更新中提供對應修補版本(SE 16.0.19725.20522等)。",
+     "source": "CISA",
+     "tags": ["MICROSOFT", "CISA-KEV", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "Adobe Commerce／Magento未驗證帳戶劫持漏洞遭在野利用 CISA同批列入KEV",
+     "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+     "summary": "CVE-2026-71362(CVSS 9.1)為Adobe Commerce、Commerce B2B與Magento Open Source的授權缺陷，攻擊者無需帳號或驗證即可切換顧客工作階段、劫持帳戶並存取個資，8月公開揭露後隨即遭鎖定攻擊。CISA已將其列入KEV，要求聯邦機關於9月27日前完成修補，官方建議升級至2026年8月安全更新版本(APSB26-92)。",
+     "source": "Adobe PSIRT（經 The Hacker News 轉述）",
+     "tags": ["ADOBE", "MAGENTO", "CISA-KEV", "CREDENTIAL"]
+    },
+    {
+     "severity": "warning",
+     "title": "Group-IB／Check Point：伊朗APT「Nimbus Manticore」擴大鎖定歐洲國防與電信業者",
+     "url": "https://www.infosecurity-magazine.com/news/iran-nimbus-manticore-european/",
+     "summary": "與伊朗革命衛隊有關的APT組織Nimbus Manticore(亦稱UNC1549、Smoke Sandstorm)近期將攻擊目標由中東擴大至丹麥、瑞典、葡萄牙等西歐國家，持續鎖定國防、航太與電信業者進行間諜活動，並持續開發TWOSTROKE後門與SSH通道工具規避偵測，是2026年最活躍的伊朗背景APT之一。",
+     "source": "Check Point Research（經 Infosecurity Magazine 轉述）",
+     "tags": ["APT", "IRAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "塞內加爾政府身分證機關遭勒索軟體入侵 近2千萬公民生物特徵資料曝險",
+     "url": "https://therecord.media/senegal-breach-national-id-agency",
+     "summary": "新興勒索軟體集團Green Blood Group入侵塞內加爾「檔案自動化局」(DAF)兩台伺服器，聲稱竊得139GB資料，內容包含全國近1,950萬公民的護照、身分證與生物特徵紀錄。當局已暫停該機關部分作業搶修系統，尚未證實外洩規模與資料完整性是否受影響。",
+     "source": "The Record from Recorded Future News",
+     "tags": ["RANSOMWARE", "DATA-BREACH", "SENEGAL"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "陸委會嚴正回應川習會：中華民國主權國家地位、兩岸互不隸屬為客觀事實",
+     "url": "https://www.setn.com/news/1912863",
+     "summary": "針對川習會後中國持續宣傳「反台獨」立場，陸委會9月25日嚴正回應，強調中華民國為主權國家，與中華人民共和國互不隸屬乃客觀事實，並指中共企圖將台灣議題與美中戰略關係掛鉤、扭曲二戰歷史。總統賴清德同日重申，台灣不會挑釁、不會升高衝突，但也不會在壓力下放棄主權。",
+     "source": "三立新聞網／鉅亨網",
+     "tags": ["CROSS-STRAIT", "TAIWAN", "CHINA", "SUMMIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜140億美元對台軍售恐再延至年底 傳川習會後將先宣布較小型軍售案",
+     "url": "https://www.inside.com.tw/article/42449-trump-taiwan-arms-sale-14-billion-delay-2026",
+     "summary": "消息人士指出，美國川普政府考慮將140億美元對台軍售大案延至11月APEC峰會、12月G20峰會後再作決定，作為對中談判籌碼；但可能於川習會後、APEC前先行宣布規模較小的軍售案，金額達數十億美元的大案短期內仍難產。",
+     "source": "Inside 硬塞的網路趨勢觀察",
+     "tags": ["ARMS-SALE", "TAIWAN", "US-CHINA"]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：9/24至25偵獲共機2架次、共艦6艘、公務船5艘 中秋連假前持續監控",
+     "url": "https://www.cna.com.tw/news/aipl/202609250040.aspx",
+     "summary": "國防部表示，9月24日6時至25日6時期間，共偵獲中國大陸機艦船13架(艘)次在台海周邊活動，其中共機2架次(1架次進入台灣東部空域)，另有共艦6艘、公務船5艘，國軍運用任務兵力、艦艇與岸置飛彈系統嚴密監控應處。適逢中秋連假，國軍戒備未鬆懈。",
+     "source": "中央社",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "美伊代表聯大場邊會談3小時 川普警告未達成協議恐「殲滅」伊朗",
+     "url": "https://www.nbcnews.com/politics/trump-administration/trump-address-united-nations-general-assembly-iran-war-rcna599085",
+     "summary": "川普親信庫許納與威特科夫9月下旬於聯合國大會場邊與伊朗代表團進行約3小時會談，被視為近7個月美伊戰爭以來新的外交契機。川普同時在聯大演說中警告，若無法達成協議，不排除「殲滅」伊朗，並呼籲各國經濟孤立德黑蘭以逼其回到談判桌，但也預期期中選舉後可望與伊朗達成和平協議。",
+     "source": "NBC News",
+     "tags": ["IRAN", "USA", "HORMUZ"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜菲律賓控中國海警攔阻仁愛礁運補任務 兩年來首見對峙式摩擦",
+     "url": "https://www.bloomberg.com/news/articles/2026-09-25/philippines-says-china-hindered-mission-to-disputed-sea-outpost",
+     "summary": "菲律賓9月25日指控，中國海警與海軍艦艇於南海仁愛礁(Second Thomas Shoal)阻撓菲方例行人員輪替與物資運補任務，為兩年來首見的對峙式摩擦。中國海警則反控菲律賓片面挑釁，警告將堅決捍衛主權與海洋權益，雙方言詞交鋒持續升溫。",
+     "source": "Bloomberg／新華社",
+     "tags": ["SOUTH-CHINA-SEA", "PHILIPPINES", "CHINA"]
+    },
+    {
+     "severity": "warning",
+     "title": "衛星影像顯示北韓東、西岸同步擴建新造艦 疑為首艘萬噸級巡洋艦",
+     "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260925/n-korea-building-new-warships-on-both-coasts-nk-news",
+     "summary": "衛星影像分析顯示，北韓正於西岸南浦造船廠與東岸清津造船廠同步建造兩艘新軍艦。南浦廠自7月起已組裝大型船體，可能是北韓首艘萬噸級巡洋艦；清津廠則自8月起可見船體材料組裝，用途尚待確認。兩地並新增大量工人宿舍設施，顯示北韓正依金正恩指示擴大造艦產能。",
+     "source": "NK News（經 Korea Times 轉述）",
+     "tags": ["NORTH-KOREA", "NAVY"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "美股9/25收盤互見 道瓊漲423點、標普那指幾近持平",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html",
+     "summary": "美股9月25日收盤表現分歧：道瓊工業指數大漲423.60點(+0.82%)收51,773.58點，標普500小跌0.02%收7,704.13點，那斯達克指數微漲0.01%收26,939.37點。投資人持續消化公債殖利率飆高、油價波動與地緣政治多重變數。（因網路取得限制以搜尋結果彙整，數字為近似值）",
+     "source": "Yahoo Finance（近似值）",
+     "tags": ["SP500", "NASDAQ", "DOW", "TREASURY-YIELD"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油9/25盤中震盪 於105美元上下區間整理",
+     "url": "https://fortune.com/article/price-of-oil-09-25-2026/",
+     "summary": "國際油價9月25日盤中呈現震盪走勢，布蘭特原油於105美元上下區間整理，主因中東美伊互襲情勢與荷姆茲海峽通行風險續存，但市場缺乏更明確方向。因網路取得限制無法取得單一權威收盤價，數字為綜合多方報價之近似值。",
+     "source": "Fortune／Investing.com（近似值）",
+     "tags": ["BRENT", "OIL", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣9/24終場收31.78元 貶值6.4分 週線仍升0.09%",
+     "url": "https://tw.stock.yahoo.com/news/9-24%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A531-780%E5%85%83%E4%BD%9C%E6%94%B6-%E8%B2%B6%E5%80%BC6-4%E5%88%86-080500699.html",
+     "summary": "台北外匯市場新台幣兌美元9月24日終場以31.780元作收，貶值6.4分，本週(9/21-9/24)升值0.09%。因適逢中秋、教師節四天連假(9/25-9/28)，台灣匯市與股市至9月29日(週二)才恢復交易。（數字為搜尋結果彙整之近似值）",
+     "source": "Yahoo股市（近似值）",
+     "tags": ["TWD", "USDTWD", "TAIWAN"]
+    }
+   ]
+  }
+ ]
+}

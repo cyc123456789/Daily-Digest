@@ -1,0 +1,122 @@
+{
+ "date": "2026-09-27",
+ "focus": "伊朗對美方開出4至5天最後通牒，60天停火路線圖能否化解荷姆茲海峽僵局成本週變數",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Roundcube Webmail未驗證SQL注入CVE-2026-48842遭在野利用",
+     "url": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
+     "summary": "Roundcube Webmail 1.6.x（早於1.6.16）與1.7.x（早於1.7.1）版本的virtuser_query外掛存在preg_replace反斜線逸出繞過瑕疵，攻擊者免登入即可執行SQL注入。加拿大網路安全中心9月21日更新公告證實已遭在野利用，尚未修補的自架伺服器應立即升級至1.6.16或1.7.1版。",
+     "source": "The Hacker News",
+     "tags": ["ROUNDCUBE", "CVE-2026-48842", "SQL-INJECTION", "ZERO-DAY"]
+    },
+    {
+     "severity": "high",
+     "title": "加密貨幣交易所Bitget遭盜3.516億美元 疑北韓Lazarus所為",
+     "url": "https://hackread.com/bitget-hack-suspects-north-korea-lazarus-group/",
+     "summary": "Bitget證實9月24日UTC 18:31偵測到部分熱錢包遭未授權存取，攻擊者盜出約3.516億美元，交易所已凍結相關地址、暫停部分提領並通報執法單位。用戶餘額未受影響，損失將由逾4.64億美元的用戶保護基金全額補償，調查人員初步將矛頭指向北韓Lazarus集團。",
+     "source": "HackRead",
+     "tags": ["NORTH-KOREA", "LAZARUS", "CRYPTOCURRENCY", "BITGET"]
+    },
+    {
+     "severity": "high",
+     "title": "Cisco Nexus 9000系列CVSS 9.8漏洞可致未驗證遠端取得Root",
+     "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
+     "summary": "搭載Silicon One ASIC的Cisco Nexus 9000系列交換器，因TCP 43210、43211連接埠於預設VRF未限制綁定IP，攻擊者可送出惡意封包以Root權限執行程式碼或致設備當機（CVE-2026-20212）。Cisco已釋出修補版本，官方目前未發現在野利用證據，無法立即更新者可用iACL阻擋該連接埠流量。",
+     "source": "Cisco PSIRT（經 The Hacker News 轉述）",
+     "tags": ["CISCO", "CVE-2026-20212", "RCE", "CRITICAL-INFRASTRUCTURE"]
+    },
+    {
+     "severity": "medium",
+     "title": "Salesforce Agentforce「ForcedLeak」提示注入漏洞曝AI代理外洩風險",
+     "url": "https://securityaffairs.com/182676/hacking/forcedleak-flaw-in-salesforce-agentforce-exposes-crm-data-via-prompt-injection.html",
+     "summary": "資安業者Noma Labs揭露CVSS 9.4的「ForcedLeak」漏洞，攻擊者可透過Salesforce Agentforce的Web-to-Lead表單埋藏隱藏指令，誘使AI代理在免登入、免受害者互動下外洩CRM機密資料。僅影響啟用Web-to-Lead功能的租戶，Salesforce已修補相關信任網址繞過問題。",
+     "source": "Noma Security（經 Security Affairs 轉述）",
+     "tags": ["SALESFORCE", "AI-AGENT", "PROMPT-INJECTION"]
+    },
+    {
+     "severity": "info",
+     "title": "ShinyHunters入侵Clop勒索軟體洩露網站並置換首頁",
+     "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/",
+     "summary": "勒索集團ShinyHunters利用Clop洩露網站所用Grav CMS 1.7分支未回補的路徑穿越漏洞（CVE-2026-42608，官方4月已於2.0.0-beta.2修補），入侵並置換該Tor網站首頁，宣稱竊得原始碼、伺服器日誌與Tor隱藏服務私鑰。Clop已將洩露站遷移至新網址。",
+     "source": "BleepingComputer",
+     "tags": ["RANSOMWARE", "CLOP", "GRAV-CMS"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：24小時內偵獲共機5架次(1逾中線)、共艦6艘、公務船5艘",
+     "url": "https://www.cna.com.tw/news/aipl/202609260027.aspx",
+     "summary": "國防部統計自9月25日6時至9月26日6時止，偵獲解放軍5架次軍機（1架次逾越台灣海峽中線進入北部空域）、6艘軍艦及5艘公務船，合計16架次機艦船在台海周邊活動，國軍運用岸置飛彈系統、艦艇及機隊嚴密監控應處。",
+     "source": "中央社 CNA",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CROSS-STRAIT"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜美退將蒙哥馬利：盼川習會後美儘速推進對台軍售",
+     "url": "https://www.cna.com.tw/news/aipl/202609250113.aspx",
+     "summary": "美國退役海軍少將蒙哥馬利9月25日在台北表示，140億美元對台軍售案宣布時程明顯受川習會影響而延後，盼美方儘快啟動國會知會程序，可考慮拆分為數個40億或60億美元小型方案分批推進；他並強調軍售之外，強化美台軍事互通性與聯合演訓才是關鍵。",
+     "source": "中央社 CNA",
+     "tags": ["ARMS-SALE", "TAIWAN", "US-CHINA", "SUMMIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜伊朗交付美方60天停火路線圖 設4至5天最後通牒",
+     "url": "https://www.aljazeera.com/news/2026/9/25/iran-says-it-awaits-us-response-on-seven-day-roadmap-to-end-war",
+     "summary": "伊朗外長阿拉格奇9月23日在聯合國經卡達、巴基斯坦與埃及斡旋，向美方特使維特科夫、庫許納遞交書面路線圖，提出最長60天全區域停火、分階段重開荷姆茲海峽及後續談判時間表。伊朗最高國家安全委員會秘書雷札伊表示已給華府「四至五天」時間全面接受條件，期限落於本週，川普則堅持伊朗須先展現足夠善意才願鬆綁封鎖。",
+     "source": "Al Jazeera",
+     "tags": ["IRAN", "HORMUZ", "MIDDLE-EAST", "USA"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜中國宣布9/28、30南海實彈射擊 回應仁愛礁補給爭端",
+     "url": "https://www.cna.com.tw/news/acn/202609260038.aspx",
+     "summary": "繼菲律賓指控中國海警船攔阻仁愛礁補給任務並發生擦撞後，珠海海事局9月26日發布航行警告，宣布9月28日與30日上午8時至下午5時在珠江口外、萬山群島南側海域實施實彈射擊並禁止船隻駛入。中國海警局同時反批菲方蓄意於中國節日期間挑釁、背信違約。",
+     "source": "中央社 CNA",
+     "tags": ["SOUTH-CHINA-SEA", "PHILIPPINES", "CHINA", "MILITARY-EXERCISE"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股中秋連假前收48,024點 週線漲1.79%連兩紅 休市至9/29",
+     "url": "https://www.setn.com/news/1912136",
+     "summary": "台股於中秋、教師節四天連假前最後交易日（9/24）收在48,024.60點，本週仍上漲843.85點、漲幅1.79%，連兩週收紅；惟外資結束連五買轉賣超新台幣438.73億元，成交量明顯縮至7,366億元觀望氣氛濃厚。市場休市至9月28日，9月29日復市後將聚焦美國PCE物價、非農就業與美光財報表現。",
+     "source": "三立新聞網 SETN",
+     "tags": ["TAIEX", "TWII", "TAIWAN"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油9/26報約104.45美元 荷姆茲最後通牒牽動後市",
+     "url": "https://www.onevalor.com/oil-gas-prices/",
+     "summary": "布蘭特原油9月26日在103至107美元區間高檔盤整，報約104.45美元，市場緊盯伊朗給美方的4至5天最後通牒本週是否到期，以及荷姆茲海峽能否依路線圖分階段重開，油價風險溢價短期內料維持高檔震盪。此數字為市場報價之近似值。",
+     "source": "Valor Oil & Gas Prices",
+     "tags": ["BRENT", "OIL", "HORMUZ", "IRAN"]
+    },
+    {
+     "severity": "info",
+     "title": "黃金9/26報約4,284美元 較今年1月高點回落逾2成",
+     "url": "https://www.150currency.com/",
+     "summary": "現貨黃金9月26日約在每盎司4,284美元，較今年1月創下的5,589.38美元歷史高點回落逾21%。分析指市場正重新定價Fed進一步升息路徑與中東、台海地緣風險降溫預期，導致避險buying力道較年初明顯收斂。此數字為市場報價之近似值。",
+     "source": "150 Currency",
+     "tags": ["GOLD", "FED"]
+    }
+   ]
+  }
+ ]
+}

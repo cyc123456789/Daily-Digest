@@ -1,0 +1,179 @@
+{
+ "date": "2026-09-28",
+ "focus": "川普拒絕伊朗「七日重開荷姆茲海峽」方案，伊朗軍方進入戒備狀態警告已備戰，波灣情勢瀕臨升溫邊緣。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "ShinyHunters竄改URL編碼繞過WAF 大規模利用Oracle PeopleSoft零時差CVE-2026-35273",
+     "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
+     "summary": "Google威脅情資團隊揭露，勒索/資料勒贖集團ShinyHunters（追蹤代號UNC6240）將請求路徑中的字母以URL編碼取代，藉此繞過WAF對CVE-2026-35273（CVSS 9.8，未經授權遠端程式碼執行）的攔截規則，重啟針對Oracle PeopleSoft的攻擊。攻擊已在高等教育、科技、醫療、農業、運輸與政府等產業部署Web shell，波及全球數十個組織；Oracle已釋出修補，但僅升級WAF規則、未同步升級軟體本身的用戶仍持續曝險。",
+     "source": "Google Cloud Threat Intelligence（經 BleepingComputer 轉述）",
+     "tags": [
+      "SHINYHUNTERS",
+      "ORACLE",
+      "CVE-2026-35273",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜WSO2漏洞CVE-2026-5430正式列入CISA KEV 聯邦機構限9/27前修補",
+     "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+     "summary": "CISA將WSO2 API Control Plane、API Manager、Traffic Manager與Universal Gateway的路徑穿越漏洞CVE-2026-5430（CVSS 9.8，可未經授權上傳檔案並取得遠端程式碼執行）正式列入在野利用清單，與先前已收錄的Adobe Commerce帳戶劫持漏洞同批公告，要求聯邦機構9月27日前完成修補。資安業者watchTowr指出，至少自9月13日起就已在誘捕系統上觀測到鎖定此漏洞的攻擊流量，凸顯漏洞遭揭露到正式列管間仍有可觀曝險期。",
+     "source": "CISA（經 The Hacker News 轉述）",
+     "tags": [
+      "WSO2",
+      "CISA-KEV",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "資安檔案傳輸大廠Kiteworks獲聯邦情資示警 要求逾千客戶停機9小時",
+     "url": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
+     "summary": "企業級安全檔案傳輸廠商Kiteworks於9月26日發布公告，指收到美國聯邦情報機關的可信威脅情資，指出可能有威脅行為者鎖定其系統，因此要求客戶配合當地時區排定9小時的預防性停機維護窗口；自管系統的客戶須自行關機，由Kiteworks代管的系統則由官方直接關閉。截至9月27日，Kiteworks尚未發布對應CVE編號、未釋出9.5.1版以外的修補，也未宣布解除警戒，目前無跡象顯示系統已遭入侵。",
+     "source": "Kiteworks（經 The Hacker News 轉述）",
+     "tags": [
+      "KITEWORKS",
+      "ZERO-DAY",
+      "GOVERNMENT"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "新型勒索軟體集團n0n崛起 威脅摧毀備份逼迫金融、科技業就範",
+     "url": "https://www.scworld.com/brief/new-ransomware-group-n0n-escalates-threats-by-targeting-backups",
+     "summary": "資安業者CyberXTron揭露，新興勒索集團n0n自9月18日開始活動，短短4天內Tor洩露網站已公布逾十家受害組織資料，主要透過第三方竊資軟體（infostealer）取得外洩憑證入侵企業網路，並以雙重勒索模式威脅加密或直接摧毀備份與陰影副本施壓。目前以金融服務業（占23%受害者）為首要目標，其次為科技、零售與教育業，多數受害組織集中在美國但已擴及全球，部分受害者拒絕支付贖金後遭公開洩露資料。",
+     "source": "CyberXTron（經 SC Media 轉述）",
+     "tags": [
+      "RANSOMWARE",
+      "DATA-BREACH",
+      "CREDENTIAL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "國防部：9/26晨6時至9/27晨6時偵獲共機2架次、共艦5艘、公務船6艘",
+     "url": "https://newtalk.tw/news/view/2026-09-27/1062133",
+     "summary": "國防部發布最近一次24小時動態通報，9月26日上午6時至9月27日上午6時期間，偵獲中國軍機2架次（均為主戰機種，活動位置在台海西南側）、共艦5艘、公務船6艘持續在台海周邊活動；國軍已運用任務機、艦及岸置飛彈系統嚴密監控應處，本次通報未提及有共機逾越海峽中線。",
+     "source": "中華民國國防部（經 Newtalk新聞 轉述）",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT",
+      "CROSS-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜140億美元對台軍售恐拖至APEC、G20峰會後 代理海軍部長曝彈藥調度為由暫緩",
+     "url": "https://www.storm.mg/article/11134327",
+     "summary": "美國代理海軍部長洪高在參議院聽證會證實，川普政府已暫緩包括PAC-3增程型防空飛彈、M142海馬士多管火箭系統、無人機與指管系統在內、總值約140億美元的對台軍售案，官方說法是為確保美軍對伊朗「怒火」（Epic Fury）軍事行動彈藥充足。學者質疑此說法為藉口，實際考量恐是川普盼保留與北京談判籌碼，軍售案可能延至11月深圳APEC峰會、甚至12月美國G20峰會後才會定案。",
+     "source": "風傳媒（引述美國參議院聽證會證詞）",
+     "tags": [
+      "ARMS-SALE",
+      "TAIWAN",
+      "USA",
+      "IRAN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜川普拒絕伊朗七日重開荷姆茲海峽方案 伊朗軍方進入戒備警告已備戰",
+     "url": "https://newtalk.tw/news/view/2026-09-27/1062210",
+     "summary": "伊朗向美方轉達透過中介方提出的「七日內重開荷姆茲海峽」方案，但川普9月26日公開回絕，聲稱美方已完全掌控荷姆茲海峽；伊朗外長阿拉格齊27日表示尚待中介方轉達美方最終立場，強調開放海峽須以伊方條件獲滿足為前提，不會片面讓步。伊朗國營媒體同日引述軍方發言人指出，武裝部隊已進入高度戒備狀態，為美方可能再次發動攻擊做好準備；川普則稱美方談判代表預計本週將與伊朗再度會談，同時持續考慮是否恢復軍事打擊，波灣情勢持續處於一觸即發邊緣。",
+     "source": "Newtalk新聞（綜合伊朗國營媒體、路透報導）",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "USA",
+      "MIDDLE-EAST"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "菲律賓再控中國海警仁愛礁危險操船 南海爭端持續升溫",
+     "url": "https://money.udn.com/money/story/5599/9777924",
+     "summary": "菲律賓海岸巡防隊指控，9月24日一艘菲方補給船前往仁愛礁為擱淺軍艦「馬德雷山號」進行人員輪替與物資補給時，遭中國海警與解放軍海軍船艦以危險方式操船攔截，雖未實際發生碰撞、也無人受傷，但已構成嚴重碰撞風險，任務最終未能完成。中國海警局則反指菲律賓罔顧警告、於中秋假期期間片面出動補給船，屬蓄意挑釁並嚴重違反《南海各方行為宣言》；北京同時宣布9月28日、30日在南海部分海域實彈射擊，中菲對峙近兩年來罕見升溫。",
+     "source": "聯合新聞網（引述菲律賓海岸巡防隊聲明）",
+     "tags": [
+      "SOUTH-CHINA-SEA",
+      "PHILIPPINES",
+      "CHINA",
+      "MILITARY-EXERCISE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜美中貿易休戰履約進度不一 稀土僅履行三分之二承諾 非敏感商品清單下週公布",
+     "url": "https://www.singtaousa.com/2026/09/25/news/china/us-china-trade-talks-progress-non-sensitive-goods/",
+     "summary": "美中已將原訂11月10日到期的貿易休戰安排延長兩個月至2027年1月10日，但支撐休戰的三大承諾——稀土供應、大豆採購與波音飛機訂單——履約進度參差不齊；美方認為中國僅完成釜山會談中承諾稀土出口保證的三分之二，凸顯休戰協議目前僅發揮避免關稅戰再度升級的最低限度作用。美國貿易代表格里爾表示，雙方正研議將一批不涉及國家安全的「非敏感商品」排除在未來關稅摩擦之外，具體品項、關稅待遇與執行時間表預計下週公布，高階AI晶片與半導體設備等敏感科技出口管制則維持不變。",
+     "source": "星島日報",
+     "tags": [
+      "US-CHINA",
+      "CHINA",
+      "USA",
+      "TRADE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股教師節連假持續休市 上一交易日(9/24)收48,024點、新台幣收31.78元",
+     "url": "https://www.ctee.com.tw/news/20260917700877-430201",
+     "summary": "台灣證券交易所因9月25日中秋節、9月28日教師節連續休市，最近一個交易日9月24日加權指數收在48,024.60點（跌132.69點），台積電收2,475元；新台幣同日終場收31.78元、貶值6.4分。下一個交易日為9月29日，市場將面對Fed升息路徑、美中稀土履約進度與荷姆茲海峽情勢等變數。",
+     "source": "台灣證券交易所、中央銀行（經工商時報轉述）",
+     "tags": [
+      "TAIEX",
+      "USDTWD",
+      "TSMC"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股9/25收紅創波段新高 標普漲0.5%至7,743點、那指漲0.5%至27,069點",
+     "url": "https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html",
+     "summary": "美股上週五(9/25)收高，標普500指數上漲39.28點（0.5%）收7,743.41點，那斯達克綜合指數上漲129.34點（0.5%）收27,068.72點，均創波段新高；市場消化Fed本月稍早升息決定，同時押注科技股在公債殖利率回落下持續吸引買盤。",
+     "source": "CNBC（近似數字，實際成交價以交易所公告為準）",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "FED",
+      "RATE-HIKE"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "Fed 10/28利率決議前瞻：期貨市場估再升息機率逾六成 布蘭特原油守104美元上方",
+     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262172696-fed-rate-hike-october-dot-plot-median-one-more-2026-tradingkey",
+     "summary": "距10月28日FOMC會議剩一個月，聯邦資金期貨與預測市場顯示，交易員預期Fed再升息一碼、將利率上調至4.00%–4.25%區間的機率已升至六至七成，一旦成真將是繼9月之後今年第二次升息，反映Fed對通膨仍高於2%目標的疑慮未解。同時，布蘭特原油9月25日一度貼近105美元關卡，主因荷姆茲海峽因美伊對峙遭部分封鎖、單日通行油輪數僅為正常水準一半左右，結構性風險溢價支撐油價維持在104美元上方，油市對後續美伊談判結果高度敏感。",
+     "source": "TradingKey、TradingEconomics（近似數字）",
+     "tags": [
+      "FED",
+      "RATE-HIKE",
+      "BRENT",
+      "OIL",
+      "HORMUZ"
+     ]
+    }
+   ]
+  }
+ ]
+}

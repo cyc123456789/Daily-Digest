@@ -1,0 +1,25 @@
+{
+ "date": "2026-09-29",
+ "focus": "Citrix NetScaler ADC／Gateway 兩個 CVSS 9.5 零時差遭全球在野利用數週，Citrix 9/27 釋出修補、CISA 要求聯邦機構限期修補。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "critical", "title": "Citrix NetScaler ADC／Gateway 兩個零時差遭全球在野利用 CISA 緊急示警並要求限期修補", "url": "https://www.helpnetsecurity.com/2026/09/28/citrix-netscaler-rce-zero-days-exploited-for-weeks-cve-2026-88771-cve-2026-88772/", "summary": "CVE-2026-88771（輸入驗證不當，預設設定下未驗證即可遠端執行指令）與 CVE-2026-88772（啟用 DTLS 時的記憶體溢位，可致 RCE 或 DoS）皆為 CVSS 4.0 評分 9.5，攻擊者已植入 webshell，攻擊自 9 月起持續數週。Citrix 於 9/27 釋出修補：請升級至 NetScaler 14.1-73.37 以上，或 13.1-64.23 以上的 13.1 版本；CISA 已要求聯邦機構限期修補，建議同時檢查是否已有 webshell 殘留。", "source": "Citrix（經 Help Net Security 轉述）", "tags": ["CITRIX", "NETSCALER", "ZERO-DAY", "CISA-KEV"]},
+   {"severity": "high", "title": "後續｜CISA：勒索軟體集團已利用 JetBrains TeamCity 漏洞 CVE-2026-63077", "url": "https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw/", "summary": "CISA 9/23 更新 KEV 註記，確認 TeamCity On-Premises 的 CVSS 9.8 反序列化漏洞（可繞過驗證並經 agent 輪詢協定執行任意系統指令）已被勒索軟體集團利用，攻擊者可讀取儲存的憑證並竄改 CI/CD 流程。JetBrains 已於 7/25 釋出修補，Shadowserver 仍追蹤到約 160 台未修補的暴露伺服器，請盡速升級。", "source": "CISA（經 BleepingComputer 轉述）", "tags": ["TEAMCITY", "JETBRAINS", "RANSOMWARE", "CISA-KEV"]},
+   {"severity": "high", "title": "後續｜SharePoint CVE-2026-65660 於 CISA 修補期限當日傳出遭實際攻擊", "url": "https://www.securityweek.com/microsoft-sharepoint-flaw-cve-2026-65660-now-exploited-in-attacks/", "summary": "此代碼注入漏洞已於 2026 年 8 月 Patch Tuesday 修補，技術細節公開後數日即遭利用；需低權限已驗證帳號即可執行任意程式碼。CISA 要求聯邦機構 9/28 前修補並做鑑識檢查，尚未安裝 8 月更新的本地版 SharePoint 應立即更新並檢視入侵跡象。", "source": "SecurityWeek", "tags": ["MICROSOFT", "SHAREPOINT", "CVE-2026-65660", "CISA-KEV"]},
+   {"severity": "medium", "title": "Google：中、俄、北韓間諜組織利用邊緣設備零時差已入侵至少二十餘個組織", "url": "https://www.techtarget.com/searchsecurity/news/366639319/News-brief-Nation-state-hackers-active-on-the-global-stage", "summary": "研究指出國家級駭客鎖定 VPN、閘道器等邊緣設備的零時差漏洞，並加強針對國防工業基地的竊密行動。防禦建議：盡速套用邊緣設備廠商修補、縮小管理介面對外暴露面，並持續監控設備日誌異常。", "source": "TechTarget", "tags": ["APT", "ZERO-DAY", "CHINA", "RUSSIA"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "國防部：偵獲共艦5艘、公務船4艘、共機1架次逾越中線進入北部空域", "url": "https://tw.news.yahoo.com/5%E8%89%98%E5%85%B1%E8%89%A64%E8%89%98%E5%85%AC%E5%8B%99%E8%88%B9%E6%93%BE%E5%8F%B0-%E5%9C%8B%E8%BB%8D%E5%9A%B4%E5%AF%86%E7%9B%A3%E6%8E%A7-011751543.html", "summary": "依媒體轉載國防部最新通報，共艦5艘、公務船4艘於台海周邊活動，另有共機1架次逾越中線進入北部空域，國軍嚴密監控應處（國防部網站無法連線，數字取自媒體，另 9/27 通報為共機2架次、共艦5艘、公務船6艘）。中秋連假後共軍活動仍維持中低強度。", "source": "國防部（經Yahoo奇摩新聞轉載）", "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CHINA"]},
+   {"severity": "info", "title": "台灣強調與美方保持密切溝通 2027年國防預算將首度逾GDP 3%", "url": "https://www.usnews.com/news/world/articles/2026-09-23/taiwan-to-maintain-close-contact-with-us-on-arms-sales", "summary": "國防部官員表示將持續與美方聯繫，推動軍售依計畫執行；美方自5月川習會後暫緩140億美元軍售案，川普曾稱軍售是對中談判的「好籌碼」。台灣2027年國防預算將首度超過GDP的3%，賴清德承諾2030年達5%。", "source": "U.S. News（路透）", "tags": ["TAIWAN", "ARMS-SALE", "US-CHINA", "DEFENSE-BUDGET"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "high", "title": "後續｜川普拒絕伊朗重開荷姆茲方案 但預期本週經卡達斡旋恢復間接會談", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-7-day-proposal/", "summary": "川普稱伊朗提案「不是我要的協議」，伊朗則表示條件不變：釋出凍結資產、解除石油制裁與終止美國海軍封鎖。Axios 報導雙方間接會談最快9/28經卡達恢復，市場對突破的期待降溫，油價重新走高。", "source": "CBS News", "tags": ["IRAN", "HORMUZ", "USA", "CEASEFIRE"]},
+   {"severity": "warning", "title": "後續｜仁愛礁補給遭海警攔阻後 中國於南海舉行軍演", "url": "https://thediplomat.com/2026/09/china-conducts-military-exercise-in-south-china-sea-after-confrontation-at-disputed-shoal/", "summary": "菲律賓海巡署稱中國海警船危險操船，導致「拉普拉普號」補給任務暫停，打破2024年7月後暫行安排下的相對平靜。中國隨後在南海舉行軍演，兩國在南海的非軍事對峙有升高跡象。", "source": "The Diplomat", "tags": ["PHILIPPINES", "SOUTH-CHINA-SEA", "CHINA", "MILITARY-EXERCISE"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "warning", "title": "美股9/28盤中走低 美伊緊張再起 10年期公債殖利率升至約5.26%", "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-28-dow-sp-500-nasdaq-080420627.html", "summary": "盤中標普500約7,684點（跌0.78%）、那斯達克約26,823點（跌0.90%）、道瓊約51,465點，川普拒絕伊朗方案推升油價與殖利率（數字為盤中近似值，Yahoo Finance API 無法連線）。布蘭特原油回升至約106美元。", "source": "Yahoo Finance", "tags": ["SP500", "NASDAQ", "TREASURY-YIELD", "BRENT"]},
+   {"severity": "warning", "title": "市場押注Fed 10月再升息機率約67% 16位官員預期年內至少再升一次", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262172696-fed-rate-hike-october-dot-plot-median-one-more-2026-tradingkey", "summary": "Fed 9/16首度升息後利率區間為3.75%至4%，點陣圖顯示19位官員中16位預期年內至少再升息一次，10/28與12/9會議為可能時點。10年期公債殖利率逼近2007年以來高點，能源推升的通膨壓力仍是主因。", "source": "TradingKey", "tags": ["FED", "RATE-HIKE", "TREASURY-YIELD", "USA"]},
+   {"severity": "info", "title": "新台幣9/28約31.77元 台股連假後今日復市", "url": "https://www.cnyes.com/forex/twd", "summary": "美元兌新台幣9/28晚間約31.772元（近似值），台股自中秋與教師節連假休市後於9/29恢復交易，休市前收48,024點。市場焦點在美股走弱、殖利率與油價上升的外溢影響。", "source": "鉅亨網", "tags": ["TWD", "USDTWD", "TAIEX", "TWII"]}
+  ]}
+ ]
+}

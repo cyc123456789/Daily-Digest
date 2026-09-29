@@ -1,0 +1,26 @@
+{
+ "date": "2026-09-30",
+ "focus": "蘋果緊急修補遭「極度精密攻擊」利用的 CoreGraphics 零時差 CVE-2026-86950，由 Meta 通報；美伊荷姆茲談判等待美方回覆，美債殖利率與 Fed 升息預期同步攀高。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "critical", "title": "蘋果修補 CoreGraphics 零時差 CVE-2026-86950 已遭針對性攻擊利用 Meta 通報", "url": "https://www.securityweek.com/apple-patches-meta-reported-zero-day-linked-to-extremely-sophisticated-attack/", "summary": "CVE-2026-86950 為 CoreGraphics 越界寫入漏洞，處理特製檔案（含 PDF、網頁、訊息附件）即可能執行任意程式碼，蘋果稱已用於針對特定對象的「極度精密攻擊」。已於 iOS／iPadOS 26.7.1、macOS Tahoe 26.7.1 與 macOS Sequoia 15.8.1 修補，建議立即更新。", "source": "SecurityWeek", "tags": ["APPLE", "ZERO-DAY", "CVE-2026-86950", "RCE"]},
+   {"severity": "high", "title": "五角大廈人事資料中心 DMDC 外洩 逾 300 萬人個資含社會安全號碼", "url": "https://www.securityweek.com/pentagon-personnel-agency-data-breach-impacts-3-million-people/", "summary": "國防部證實 DMDC 系統因檔案共享系統漏洞，2025 年 10 月至 2026 年 7 月間遭未授權存取，約 276 萬名在世者與 29.4 萬名已故者的姓名、生日、社會安全號碼等未加密資料曝光。漏洞已於 7 月 16 日發現並修補，目前無濫用跡象；受影響者應留意身分盜用並凍結信用資料。", "source": "SecurityWeek", "tags": ["DATA-BREACH", "USA", "GOVERNMENT", "PENTAGON"]},
+   {"severity": "high", "title": "後續｜VMware vCenter CVE-2026-59310 遭勒索軟體集團加入利用 CISA 證實", "url": "https://www.infosecurity-magazine.com/news/vcenter-cve-2026-59310-exploited/", "summary": "此 CVSS 9.8 的 vCenter Syslog 元件目錄遍歷漏洞可讓未驗證攻擊者遠端執行程式碼，已列入 CISA KEV，疑似 APT 自 8 月初起利用（含 reverse_ssh 持久化），CISA 9 月 15 日確認勒索軟體集團亦在利用。Broadcom 已在 VMSA-2026-0006 發布修補，未更新的 vCenter 應立即升級並檢查 cron 排程異常。", "source": "Infosecurity Magazine", "tags": ["VMWARE", "CVE-2026-59310", "RANSOMWARE", "CISA-KEV"]},
+   {"severity": "medium", "title": "日本京王集團遭勒索軟體攻擊 集團商店刷卡與飯店訂房受影響", "url": "https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/", "summary": "京王集團 9 月 26 日凌晨確認伺服器遭勒索軟體攻擊並中斷網路，部分集團商店刷卡與飯店訂房系統受影響，鐵道營運未受波及。目前尚無勒索集團認領，公司已報警並委請外部專家調查是否有客戶資料外洩。", "source": "BleepingComputer", "tags": ["RANSOMWARE", "JAPAN", "CRITICAL-INFRASTRUCTURE"]},
+   {"severity": "medium", "title": "假冒 LastPass Authenticator 安裝檔濫用微軟簽章驅動程式 關閉 145 種防毒與 EDR", "url": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html", "summary": "LastPass 與 Delphos Labs 指出，GitHub 上偽造頁面提供的壓縮檔以 vsdbg.dll 側載，載入經微軟硬體相容性計畫簽章的 Alinubx.sys，終止 145 個資安程序後再執行竊密程式。此為社交工程而非產品漏洞，僅可從 lastpass.com 與官方商店下載；已執行者應視主機為核心層遭入侵並由乾淨裝置重設密碼。", "source": "LastPass／Delphos Labs（經 The Hacker News 轉述）", "tags": ["MICROSOFT", "MALWARE", "EDR", "CREDENTIAL"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "川普否認向習近平提議賣武器 稱大使「可能指台灣」 對台 140 億美元軍售仍凍結", "url": "https://hongkongfp.com/2026/09/29/trump-denies-offering-to-sell-arms-to-chinas-xi-but-says-maybe-its-a-good-idea/", "summary": "美國駐中國大使裴士鋒稱川普在習近平訪美期間曾問對方是否想買美國武器，川普 29 日否認，卻補一句「他們大概想買，或許是好主意」。美方重申法律禁止對中軍售並持續供應台灣，但傳 140 億美元對台軍售案仍遭擱置，外界關注對台承諾是否成為談判籌碼。", "source": "Hong Kong Free Press", "tags": ["TAIWAN", "ARMS-SALE", "US-CHINA", "SUMMIT"]},
+   {"severity": "info", "title": "國防部：9/28 至 9/29 偵獲共機 3 架次、共艦 6 艘、公務船 4 艘", "url": "https://news.cts.com.tw/cna/politics/202609/202609293083970.html", "summary": "國防部通報，9 月 28 日晨 6 時至 29 日晨 6 時偵獲共機 3 架次、共艦 6 艘、公務船 4 艘持續在台海周邊活動，其中 1 架次進入西南空域。國軍以任務機、艦及岸基飛彈系統嚴密監控並適切應處。", "source": "華視／中央社", "tags": ["TAIWAN", "PLA", "MND", "TAIWAN-STRAIT"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "high", "title": "後續｜美伊經卡達間接談判 伊朗外長稱期待美方就重開荷姆茲方案回覆", "url": "https://www.aljazeera.com/news/2026/9/29/us-iran-talks-in-new-york-whats-the-latest", "summary": "伊朗外長阿拉格齊離開紐約前表示，預期當天內收到美方對「七日內重開荷姆茲海峽」提案的正式回應，該案上週經卡達傳達。戰事已持續七個月，先前川普拒絕該方案，能否恢復間接會談將左右油價與區域局勢。", "source": "Al Jazeera", "tags": ["IRAN", "HORMUZ", "USA", "CEASEFIRE"]},
+   {"severity": "warning", "title": "澤倫斯基：北韓已有逾 8,000 名部隊在俄境內 另有 1 萬人部署準備中", "url": "https://www.fdd.org/overnight-brief/september-29-2026/", "summary": "烏克蘭總統澤倫斯基表示，俄羅斯境內北韓部隊已逾 8,000 人，且正準備再部署 1 萬人。另據南韓軍方，9 月 21 日 DMZ 造成兩名南韓士兵重傷的爆炸「極可能」由北韓地雷所致，半島與烏克蘭戰場風險同步升高。", "source": "FDD Overnight Brief", "tags": ["NORTH-KOREA", "RUSSIA", "UKRAINE", "MILITARY"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "warning", "title": "台股中秋節後補跌 392 點失守 4.8 萬點 新台幣貶至 31.876", "url": "https://udn.com/news/story/7251/9783745", "summary": "加權指數 9/29 收 47,631.96 點、跌 392.64 點（-0.81%），受油價與美債殖利率雙重壓力及外資提款影響。新台幣收 31.876 元、貶 9.6 分，央行進場調節（資料引自媒體，未取得 Yahoo 原始報價）。", "source": "聯合新聞網", "tags": ["TAIEX", "TWD", "TAIWAN", "USDTWD"]},
+   {"severity": "warning", "title": "美股三大指數收黑 10 年期美債殖利率升至 5.28% 30 年期創 2004 年以來高點", "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/09/29/us-indexes-edge-mostly-higher-in-early-trading-on-wall-street/", "summary": "道瓊 9/29 跌 347.10 點收 51,481.10，那斯達克跌 0.9% 收 26,820.38；10 年期殖利率由 5.24% 升至 5.28%，30 年期達 5.552%。高殖利率持續壓抑股市評價，數字為媒體報導近似值。", "source": "BNN Bloomberg", "tags": ["TREASURY-YIELD", "NASDAQ", "USA", "FED"]},
+   {"severity": "medium", "title": "Fed 10 月升息機率升至約 7 成 布蘭特原油在 104 美元附近震盪", "url": "https://newtalk.tw/news/view/2026-09-29/1062381", "summary": "CME FedWatch 顯示 Fed 10 月升息 25 個基點（至 4.00–4.25%）的機率約 70%。布蘭特原油約 104 美元，沙烏地恢復關鍵管線輸送使油價回落，但美伊衝突未見緩和；油價為媒體近似值。", "source": "Newtalk新聞", "tags": ["FED", "RATE-HIKE", "BRENT", "OIL"]}
+  ]}
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "date": "2026-10-02",
+ "focus": "Cisco Catalyst SD-WAN Manager 認證繞過零時差 CVE-2026-76504（CVSS 9.8）遭在野利用並列入 CISA KEV，所有部署受影響、無緩解措施，須盡速升級。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Cisco Catalyst SD-WAN Manager 認證繞過零時差 CVE-2026-76504 遭在野利用 CISA 列入 KEV",
+     "url": "https://www.securityweek.com/cisco-patches-exploited-catalyst-sd-wan-zero-day-vulnerability/",
+     "summary": "漏洞（CVSS 9.8）源於 API 工作階段驗證對 URI 編碼處理不當，未驗證攻擊者可取得 admin 身分存取 API，今年第五個遭利用的 Cisco SD-WAN 零時差。所有 Catalyst SD-WAN Manager 部署皆受影響且無緩解措施；請升級至 26.2.1、26.1.2.1、20.18.4.1、20.15.6.1、20.12.8.2 或 20.9.10.1。CISA 9/30 列入 KEV，聯邦機構須於 10/3 前修補。",
+     "source": "Cisco PSIRT（經 SecurityWeek 轉述）",
+     "tags": [
+      "CISCO",
+      "CVE-2026-76504",
+      "CISA-KEV",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Citrix NetScaler 零時差 CVE-2026-88771／88772：受害組織逾百家 疑為間諜行動",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway",
+     "summary": "CVE-2026-88772（CVSS v4 9.5）為啟用 DTLS 時的記憶體溢位，可致遠端程式碼執行或 DoS，VPN 虛擬伺服器預設啟用 DTLS；研究人員稱已知受害組織逾 100 家，疑為間諜活動。修補版本：14.1-73.37 以上、13.1-64.23 以上，13.1-FIPS／NDcPP 為 13.1-37.279 以上。CISA 9/27 列入 KEV，期限為 9/30。",
+     "source": "CISA（含 SecurityWeek 報導）",
+     "tags": [
+      "CITRIX",
+      "ZERO-DAY",
+      "CISA-KEV",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Zimbra 未驗證指令注入 CVE-2026-73570 遭利用 攻擊者植入 web shell 竊取憑證",
+     "url": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
+     "summary": "漏洞（CVSS 8.9）經特製 SMTP 請求觸發 SNMP 通知路徑的指令注入，以 zimbra 服務帳號執行命令；僅影響安裝 zimbra-snmp 並啟用 SNMP 通知者。ZCS 10.1.20（7/20）已修補；未更新者應升級並排查 Jetty 目錄中的 web shell 與外洩憑證。",
+     "source": "Microsoft、CERT Polska（經 The Hacker News 轉述）",
+     "tags": [
+      "ZIMBRA",
+      "CVE-2026-73570",
+      "WEBSHELL",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "俄羅斯 Star Blizzard 擴大釣魚 以 RedFlick 感染鏈散布 CosmicPulse 後門",
+     "url": "https://thehackernews.com/2026/09/russias-star-blizzard-targets-100.html",
+     "summary": "該組織與 FSB 有關，以假活動邀請釣魚信攻擊逾 100 個組織，多在美英，鎖定支持烏克蘭的非政府組織、智庫與政府。受害者開啟加密壓縮檔內偽裝成 PDF 的捷徑檔後，排程工作會安裝 Python 後門 CosmicPulse。建議封鎖 .lnk 於壓縮檔執行並監控異常排程工作。",
+     "source": "The Hacker News",
+     "tags": [
+      "APT",
+      "RUSSIA",
+      "PHISHING",
+      "STAR-BLIZZARD"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "中國 FamousSparrow 以新後門 SparroWocky 攻擊拉丁美洲八個國家／地區政府",
+     "url": "https://therecord.media/china-hackers-latin-america-espionage",
+     "summary": "ESET 指該組織自 2025 年 8 月起使用約 30 項指令的 SparroWocky 後門，受害含阿根廷、厄瓜多、瓜地馬拉、宏都拉斯、巴拿馬、秘魯、委內瑞拉及波多黎各政府機構。目前以 ESET 提供的 IoC 偵測為主，尚無單一產品漏洞可修補。",
+     "source": "ESET（經 The Record 轉述）",
+     "tags": [
+      "APT",
+      "CHINA",
+      "ESPIONAGE",
+      "BACKDOOR"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "國防部：9/30至10/1晨偵獲共機23架次（16架逾中線）、共艦7艘、公務船7艘",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5591564",
+     "summary": "國防部表示，自 9/30 晨 6 時至 10/1 晨 6 時，共機 23 架次、共艦 7 艘、公務船 7 艘在台海周邊活動，其中 16 架逾越中線進入北部、中部及西南空域，單日共 37 機艦，為中共國慶前夕。國軍以任務機、艦及岸基飛彈系統嚴密監控。",
+     "source": "自由時報（引述國防部）",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜140 億美元對台軍售仍擱置 美駐華大使稱川普曾問習近平是否買美國武器",
+     "url": "https://www.ibtimes.co.uk/trump-xi-us-weapons-taiwan-arms-package-1822206",
+     "summary": "美國駐華大使表示川普在近期會談中詢問習近平是否有意購買美國武器，而對台約 140 億美元軍售案仍未獲批准。觀察人士指與北京商討對台軍售將違背美方長年的「六項保證」。",
+     "source": "IBTimes（引述美國駐華大使）",
+     "tags": [
+      "TAIWAN",
+      "ARMS-SALE",
+      "US-CHINA",
+      "USA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "川普稱與伊朗「不可能有和平」 威脅期中選舉後恢復攻擊",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-negotiations-strait-of-hormuz-oil/",
+     "summary": "川普表示美方必須在「炸掉他們」與達成協議間決定，並稱事情「很快會以某種方式結束」，同時重申期中選舉後可能恢復攻擊。美伊正透過調解方進行間接會談，荷姆茲海峽通行問題仍未解。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "USA",
+      "CEASEFIRE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜德黑蘭等待美方對停火提案回應 荷姆茲重開方案陷僵局",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-talks-strait-of-hormuz/",
+     "summary": "伊朗稱期待美方回應其重開荷姆茲海峽的停火提案，但川普先前已表示該提案「不可接受」。川普預期本週恢復經調解方的會談，雙方立場落差仍大。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "MIDDLE-EAST",
+      "CEASEFIRE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股10月開門紅 大漲413點收48,353點創收盤新高 台積電漲30元",
+     "url": "https://www.storm.mg/article/11168945",
+     "summary": "加權指數 10/1 收 48,353.49 點，漲 413.36 點（0.86%），成交金額 8,374 億元；台積電收 2,510 元、漲 1.21%，貢獻主要漲點。",
+     "source": "風傳媒",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TAIWAN",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣10/1收31.842元升1分 央行稍加調節",
+     "url": "https://www.cna.com.tw/news/afe/202610010230.aspx",
+     "summary": "新台幣兌美元先貶後升，一度逼近 31.95 元，終場以 31.842 元作收、升值 1 分，成交 19.46 億美元；外資雙向進出，美元指數同日走強。",
+     "source": "中央社",
+     "tags": [
+      "TWD",
+      "USDTWD",
+      "FX",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美債殖利率10年期升至5.33%創2002年4月來新高 道瓊震盪",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-01-2026",
+     "summary": "10/1 美債 10 年期殖利率盤中升至約 5.33%、30 年期約 5.67%，均為 2002 年來高點，道瓊一度跌逾 350 點。前一日（9/30）S&P 500 收 7,651.54 點，布蘭特原油約 97 至 100 美元（各報價不一，數字為近似值），Fed 10 月升息預期仍高。",
+     "source": "TheStreet",
+     "tags": [
+      "TREASURY-YIELD",
+      "FED",
+      "SP500",
+      "BRENT"
+     ]
+    }
+   ]
+  }
+ ]
+}

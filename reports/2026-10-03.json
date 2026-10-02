@@ -1,0 +1,156 @@
+{
+ "date": "2026-10-03",
+ "focus": "Fortinet FortiMail 重大漏洞 CVE-2026-104286（CVSS 9.8）遭零時差在野利用並列入 CISA KEV；美國 9 月非農僅增 2.9 萬人，Fed 升息賭注大降、台股再創收盤新高。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Fortinet FortiMail 零時差 CVE-2026-104286（CVSS 9.8）遭在野利用 CISA 列入 KEV",
+     "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+     "summary": "FortiMail 管理介面存在路徑穿越與 NULL 位元組處理缺陷，未驗證攻擊者可經特製 HTTP/HTTPS 請求寫入任意檔案；CISA 於 10/1 列入 KEV，聯邦機構限 10/4 前處置。受影響為 8.0.0–8.0.1、7.6.0–7.6.6、7.4.0–7.4.8、7.2.0–7.2.9；報導指修補版為 8.0.2、7.6.7、7.4.9（初期揭露時另有來源稱尚無修補），在升級前應停用 IBE 或限制管理介面對外暴露，並檢查是否遭入侵。",
+     "source": "Fortinet PSIRT／CISA（經 BleepingComputer 轉述）",
+     "tags": [
+      "FORTINET",
+      "FORTIMAIL",
+      "CVE-2026-104286",
+      "CISA-KEV"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "歐洲警方逮捕 16 歲 KillSec 勒索軟體嫌犯 查扣洩露網站與伺服器",
+     "url": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
+     "summary": "西班牙警方在阿利坎特逮捕涉嫌為 KillSec 管理者的 16 歲青少年，行動由德國主導、10 國參與（KillSwitch 行動），查扣暗網洩露網站及至少 110 TB 竊取資料。美國波多黎各檢方同日公布對一名荷蘭籍共犯的指控；該集團自 2024 年起涉及近千起攻擊，受害者可留意資料是否被公開。",
+     "source": "Europol／Eurojust（經 The Hacker News 轉述）",
+     "tags": [
+      "RANSOMWARE",
+      "KILLSEC",
+      "LAW-ENFORCEMENT",
+      "EUROPOL"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "報告：2026 年勒索軟體資料竊取量年增 275% 達 896 TB 學校、醫院與政府機關為大宗",
+     "url": "https://securityboulevard.com/2026/10/ransomware-data-theft-surged-275-in-2026-schools-hospitals-and-government-agencies-had-some-of-the-largest-claims",
+     "summary": "報告統計主要勒索軟體集團外洩資料量年增約 275.8%，達 896.2 TB，教育、醫療與政府機關出現最大規模的宣稱受害案例。顯示雙重勒索中『竊資』已重於加密，防禦重點應含外傳流量偵測、資料分級與離線備份。",
+     "source": "Security Boulevard",
+     "tags": [
+      "RANSOMWARE",
+      "DATA-BREACH",
+      "GOVERNMENT",
+      "CRITICAL-INFRASTRUCTURE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/1 至 10/2 晨偵獲共機 6 架次（4 架逾中線）、共艦 7 艘、公務船 8 艘",
+     "url": "https://news.ebc.net.tw/news/politics/573854",
+     "summary": "國防部 10/2 發布，24 小時內（10/1 晨 6 時至 10/2 晨 6 時）偵獲共機 6 架次、共艦 7 艘、公務船 8 艘，其中 4 架次逾越海峽中線進入西南與東部空域。架次較前一日 23 架次明顯回落，但艦船持續在台海周邊活動，國軍以任務機艦與岸基飛彈系統監控應處。",
+     "source": "國防部（經 ETtoday／東森新聞轉載）",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "菲律賓海巡以最大艦艇質疑巴丹群島西北中國研究船 中國海警出面阻擋",
+     "url": "https://thediplomat.com/2026/10/philippines-rejects-chinese-claim-to-sovereign-rights-over-waters-around-batanes/",
+     "summary": "中國研究船『Jia Ha Ke 7』在巴丹群島（Batanes）西北約 37 海里處徘徊四天，菲律賓海巡派最大艦與飛機查證，中國海警船數度擋在研究船前方阻撓。巴丹群島緊鄰巴士海峽、距台灣不遠，被視為南海爭端向北延伸的新戰線；馬尼拉強調該處屬其專屬經濟區，未經同意不得進行海洋科研。",
+     "source": "The Diplomat",
+     "tags": [
+      "PHILIPPINES",
+      "CHINA",
+      "SOUTH-CHINA-SEA",
+      "BATANES"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜川普拒絕伊朗七日重開荷姆茲方案 經卡達斡旋談判陷僵局",
+     "url": "https://www.pbs.org/newshour/world/trump-rejects-irans-proposal-to-reopen-the-strait-of-hormuz-and-other-middle-east-news",
+     "summary": "伊朗提議：若美方解除對伊朗港口的海上封鎖、豁免石油制裁並含黎巴嫩的停火，七天內重開荷姆茲海峽並恢復核談判；川普公開拒絕，稱伊朗『敗得很慘才想立刻開放』，並稱美國對海峽有『完全控制』。美方已經卡達向伊朗外長提出反提案，雙方預期近日續談。",
+     "source": "PBS NewsHour",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "USA",
+      "CEASEFIRE"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "分析：巴基斯坦成為海灣安全提供者 8,000 兵力與中製 HQ-9 部署沙烏地",
+     "url": "https://moderndiplomacy.eu/2026/10/02/pakistan-gulf-security-provider-saudi-arabia-mecca-pact/",
+     "summary": "報導稱自 2025 年 9 月起，巴基斯坦已在沙烏地部署約 8,000 名士兵、一個中隊 JF-17 與中製 HQ-9 防空系統，費用由利雅德負擔。沙烏地、巴基斯坦、土耳其 8/7 簽署的『麥加聯合防衛協定』採集體防衛條款，顯示海灣國家安全依賴逐步由美國保護傘轉向多元化，中製裝備角色上升。",
+     "source": "Modern Diplomacy",
+     "tags": [
+      "PAKISTAN",
+      "SAUDI-ARABIA",
+      "CHINA",
+      "MIDDLE-EAST"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股 10/2 終場漲 122 點收 48,475.74 點再創收盤新高 成交 8,982 億元",
+     "url": "https://www.nownews.com/news/6880023",
+     "summary": "加權指數 10/2 上漲 0.25%、收 48,475.74 點，連續刷新收盤紀錄，成交金額約新台幣 8,981.74 億元。新台幣銀行間收盤 31.83 元、升值 1.2 分，央行尾盤調節，匯價並未隨股市創高明顯走強。",
+     "source": "NOWnews／中央銀行",
+     "tags": [
+      "TAIEX",
+      "TAIWAN",
+      "TWD",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美國 9 月非農僅增 2.9 萬人遜於預期 Fed 10 月升息機率降至約 16% 美股收高",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-2-dow-sp-500-nasdaq-september-jobs-report-080623878.html",
+     "summary": "9 月新增就業 2.9 萬人（預期約 9 萬），失業率升至 4.2%；交易員將 Fed 10 月升息機率由一週前約 64% 壓低至約 16%。道瓊漲 0.5%、S&P 500 漲 0.7%、那斯達克漲 1.2%，10 年期美債殖利率回落至約 5.2%（盤中數字為近似值，30 年期約 5.57%）。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "FED",
+      "RATE-HIKE",
+      "TREASURY-YIELD",
+      "SP500"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油 10/2 跌約 2.6% 至約 99.7 美元 失守百元 反映升息預期降溫與談判預期",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "summary": "布蘭特原油 10/2 收約 99.68 美元，單日下跌約 2.57%（資料取自 Trading Economics，為近似值，無法由 Yahoo 直接取得）。油價回落與美債殖利率下降同步，但荷姆茲海峽談判仍僵持，後市仍受美伊消息牽動。",
+     "source": "Trading Economics",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "FED"
+     ]
+    }
+   ]
+  }
+ ]
+}

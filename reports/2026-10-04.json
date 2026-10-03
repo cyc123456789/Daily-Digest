@@ -1,0 +1,143 @@
+{
+ "date": "2026-10-04",
+ "focus": "GitLab AI Gateway 爆 CVSS 9.9 指令執行漏洞（自架實例需升級至 19.2.4／19.3.2／19.4.1）；Warlock 持續以 SharePoint 漏洞攻擊關鍵基礎設施；9 月非農僅增 2.9 萬人使 Fed 10 月升息機率降至約 16%。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "GitLab 修補 AI Gateway CVSS 9.9 漏洞 CVE-2026-90970：自架伺服器可被執行任意指令",
+     "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+     "summary": "GitLab 10/2 揭露，具 Duo Agent Platform 權限的已登入使用者可透過特製 flow 設定逃出提示範本沙箱，在 AI Gateway 上執行指令，進而竊取服務憑證或橫向移動。僅自架 AI Gateway 受影響，GitLab 託管版不需處理；已於 19.2.4、19.3.2、19.4.1 修復，目前未見在野利用報告。",
+     "source": "GitLab（經 The Hacker News 轉述）",
+     "tags": [
+      "GITLAB",
+      "AI-AGENT",
+      "RCE",
+      "CVE-2026-90970"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Warlock 持續利用 SharePoint 漏洞攻擊水務、電信與政府機關，先關閉資安工具再部署勒索軟體",
+     "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+     "summary": "疑與中國有關的 Warlock 近兩個月至少入侵葡語、西語國家 4 個組織，含水務與電信業者；在一起事件中 2 小時內停用 40 台主機的防護軟體，並經 SYSVOL 對 33 台系統投放勒索軟體。入侵途徑為未修補的地端 SharePoint Server，已知被利用的包括 CVE-2026-32201、CVE-2026-45659 等，應優先套用微軟最新修補並檢查 SharePoint 日誌。",
+     "source": "Symantec（經 The Hacker News 轉述）",
+     "tags": [
+      "WARLOCK",
+      "SHAREPOINT",
+      "RANSOMWARE",
+      "CRITICAL-INFRASTRUCTURE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/1 共機 23 架次（16 架逾中線）後，10/2 降為 6 架次（4 架逾中線）、共艦 7 艘、公務船 8 艘",
+     "url": "https://news.ebc.net.tw/news/politics/573854",
+     "summary": "國防部最近可得通報顯示，10/1 配合共艦聯合戰備警巡的大規模出動後，10/2 回落至 6 架次，其中 4 架逾越中線進入西南及東部空域，另有共艦 7 艘、公務船 8 艘。今日（10/4）當日數字因國防部網站無法連線而未能取得，上述為近似的最近一次通報。",
+     "source": "東森新聞（國防部通報）",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜140 億美元對台軍售仍停擺 國防部長顧立雄：未接獲美方政策改變通知",
+     "url": "https://fortune.com/2026/09/29/china-trump-taiwan-weapons-sale/",
+     "summary": "報導指川普將此軍售視為與北京談判的籌碼，美方在 5 月川習會後暫緩該案，中方則要求停止對台軍售。顧立雄表示持續與美方討論，並獲保證美國對台政策不變，其他合作仍在進行。",
+     "source": "Fortune",
+     "tags": [
+      "ARMS-SALE",
+      "TAIWAN",
+      "US-CHINA",
+      "USA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "沙烏地據報規劃對葉門青年運動（胡塞）發動攻勢 恐威脅紅海航運",
+     "url": "https://www.cnbc.com/2026/10/02/oil-wti-brent-diesel-stock-release-europe.html",
+     "summary": "路透引述區域及西方官員報導，沙烏地阿拉伯正規劃對伊朗支持的胡塞武裝展開攻勢，可能衝擊紅海航運與能源流動，與荷姆茲海峽緊張局勢疊加。此消息同日對油價形成波動。",
+     "source": "CNBC（引述路透）",
+     "tags": [
+      "SAUDI-ARABIA",
+      "HOUTHIS",
+      "MIDDLE-EAST",
+      "OIL"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川普拒絕伊朗七日重開荷姆茲方案 稱期中選舉後恢復攻擊「有可能」",
+     "url": "https://eaworldview.com/2026/10/us-war-on-iran-trump-rejects-tehran-proposal-to-reopen-talks-and-strait-of-hormuz/",
+     "summary": "川普斥伊朗提案「不可接受」，並稱美國海上封鎖是「鋼牆」，但談判仍透過卡達居中傳遞，美方已向伊朗外長阿拉格齊轉交反提案。僵局下 11/3 期中選舉後是否恢復攻擊成為關鍵變數。",
+     "source": "EA WorldView",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "USA",
+      "CEASEFIRE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "美股 10/2 收高：非農僅增 2.9 萬人、失業率 4.2%，Fed 10 月升息機率降至約 16%",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-2-dow-sp-500-nasdaq-september-jobs-report-080623878.html",
+     "summary": "道瓊漲約 0.5%、標普 500 漲約 0.7%、那斯達克漲約 1.2%，科技股領漲；CME FedWatch 顯示 10 月維持利率機率約 84%。10 年期美債殖利率盤中一度跌至 5.18%，終場回升至約 5.28%。數字取自搜尋結果（近似值）。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "FED",
+      "SP500",
+      "NASDAQ",
+      "TREASURY-YIELD"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油 10/2 結算約 102.25 美元：G7 釋出 1 億桶儲備，抵銷中東供給疑慮",
+     "url": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
+     "summary": "G7 宣布未來四個月釋出約 1 億桶儲備，前 20 天先大量釋出柴油；布蘭特結算約 102.25 美元，小幅下跌 0.06 美元。各來源報價略有差異（昨日摘要引述約 99.7 美元），此為近似值。",
+     "source": "CNBC",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "G7",
+      "ENERGY"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "台股 10/2 收 48,475.74 點再創收盤新高 週線連三紅 今年來漲約 66%",
+     "url": "https://www.nownews.com/news/6880023",
+     "summary": "加權指數終場漲 122.25 點，成交 8,981.74 億元，本週累計上漲約 451 點；上市市值升至約 158.5 兆元。10/3 為週六休市，下一個交易日為 10/5。新台幣匯率因數據源受限未取得。",
+     "source": "NOWnews",
+     "tags": [
+      "TAIEX",
+      "TAIWAN",
+      "STOCK-MARKET",
+      "TSMC"
+     ]
+    }
+   ]
+  }
+ ]
+}

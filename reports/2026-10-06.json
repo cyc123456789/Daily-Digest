@@ -1,0 +1,178 @@
+{
+ "date": "2026-10-06",
+ "focus": "Citrix NetScaler 再爆 SAML 零時差 CVE-2026-88779 遭在野利用，CISA 列 KEV、限 10/7 修補；台股衝高至 49,712 點。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜Citrix NetScaler 第三個零時差 CVE-2026-88779：SAML 設定設備遭鎖定攻擊",
+     "url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+     "summary": "影響自管（customer-managed）NetScaler ADC 與 Gateway 且設為 SAML SP 或 IdP 者，記憶體溢位可未經驗證遠端觸發 DoS，疑似也可能達成 RCE（CVSS v4 8.7）。CISA 已列入 KEV、要求聯邦機關 10/7 前修補；Citrix 已釋出 14.1-73.41 與 13.1-64.28，請盡速升級。",
+     "source": "Citrix（經 BleepingComputer 轉述）",
+     "tags": [
+      "CITRIX",
+      "NETSCALER",
+      "CVE-2026-88779",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Cisco FMC 漏洞遭勒索與國家級駭客利用：CVE-2026-20079（CVSS 10.0）可繞過認證以 root 執行",
+     "url": "https://www.bleepingcomputer.com/news/security/cisco-fmc-flaws-exploited-by-ransomware-gang-state-sponsored-hackers/",
+     "summary": "三個攻擊群集利用 Secure Firewall Management Center 的 CVE-2026-20079 與靜態憑證漏洞 CVE-2026-20316，植入 web shell、竊取憑證，其中一群部署 Qilin 勒索軟體，另一群與 Sandworm 關聯的 Cyclops Blink 工具重疊。Cisco 已釋出修補，使用 FMC 者應立即升級並檢查是否遭入侵。",
+     "source": "Cisco Talos（經 BleepingComputer 轉述）",
+     "tags": [
+      "CISCO",
+      "RANSOMWARE",
+      "APT",
+      "CISA-KEV"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜WSO2 CVE-2026-5430（CVSS 10.0）JWT 認證繞過遭利用：修補自 5 月已釋出",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
+     "summary": "影響 WSO2 API Manager 4.1.0–4.6.0、API Control Plane 4.5/4.6、Traffic Manager 4.5/4.6，未經驗證者可偽造管理員 JWT 接管帳號；watchTowr 9/13 起觀測到攻擊，CISA 9/24 列入 KEV。WSO2 已於 5/3 提供各版本 update level 修補，尚未更新者應立即套用。",
+     "source": "WSO2（經 BleepingComputer 轉述）",
+     "tags": [
+      "WSO2",
+      "CISA-KEV",
+      "EXPLOITED",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Microsoft 重發 Exchange 9 月 V2 安全更新，補上 CVE-2026-96940 跨信箱存取漏洞",
+     "url": "https://techcommunity.microsoft.com/blog/exchange/released-september-2026-v2-exchange-server-security-updates/4561718",
+     "summary": "CVE-2026-96940（CVSS 8.8）為弱授權造成的權限提升，已驗證使用者可存取同組織他人信箱。影響 Exchange Server Subscription Edition RTM、2019 CU14/CU15、2016 CU23；微軟為內部發現、尚無在野利用，但評估被利用可能性較高，請安裝 V2 更新。",
+     "source": "Microsoft",
+     "tags": [
+      "MICROSOFT",
+      "EXCHANGE",
+      "PATCH"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/4 至 10/5 晨偵獲共艦 8 艘、公務船 9 艘，無共機擾台",
+     "url": "https://news.cts.com.tw/cna/politics/202610/202610053086196.html",
+     "summary": "國防部表示自 10/4 上午 6 時至 10/5 上午 6 時，偵獲中共軍艦 8 艘次、公務船 9 艘次在台海周邊活動，未偵獲共機。國軍以任務機、艦及岸置飛彈系統嚴密監控應處；海上兵力維持高位，與前幾日共機大起大落形成對比。",
+     "source": "國防部（經中央社轉述）",
+     "tags": [
+      "TAIWAN",
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美參議員杜克沃斯質疑北京施壓各國限制台灣總統專機飛越",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/04/2003865371",
+     "summary": "美國參議員杜克沃斯（Tammy Duckworth）在參院外委會人事聽證會上，要求美方反制中國孤立台灣的作法，並警告此類施壓恐危及國際旅客。顯示國會對台灣外交空間的關切持續。",
+     "source": "Taipei Times",
+     "tags": [
+      "TAIWAN",
+      "US-CHINA",
+      "CHINA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜胡塞攻擊沙烏地能源設施：東西向管線停擺 3–5 週，Aramco 稱無此管線油價恐達 200 美元",
+     "url": "https://www.thenationalnews.com/business/energy/2026/10/05/oil-prices-could-have-hit-200-a-barrel-if-not-for-east-west-pipeline-aramco-chief-says/",
+     "summary": "胡塞武裝襲擊沙烏地基礎設施與船舶，使東西向管線（連結波斯灣至紅海延布港）預估需 3–5 週修復。Aramco 執行長指出若無該管線，油價恐衝上 200 美元，紅海與荷姆茲供給風險持續。",
+     "source": "The National",
+     "tags": [
+      "HOUTHIS",
+      "SAUDI-ARABIA",
+      "OIL",
+      "MIDDLE-EAST"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "澤倫斯基：美方提議 10 月底前舉行美烏俄三方技術層級會談，可能討論互停能源設施攻擊",
+     "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
+     "summary": "澤倫斯基 10/4 表示烏方願意參加，地點可能在阿聯，議題可能包含互不攻擊能源設施的局部停火；俄方是否收到提案仍不明，且俄軍近期同步加大攻勢。",
+     "source": "CNBC",
+     "tags": [
+      "UKRAINE",
+      "RUSSIA",
+      "CEASEFIRE",
+      "US"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股 10/5 狂漲 1,236 點收 49,712 點創高 外資大買台積電",
+     "url": "https://udn.com/news/story/7239/9796225",
+     "summary": "加權指數單日大漲 1,236 點、收 49,712 點，逼近 5 萬點關卡；台指期夜盤一度突破 5 萬點。外資同日大買台積電、台達電，皆為近期最大筆。數字取自搜尋結果。",
+     "source": "聯合新聞網",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣 10/5 收 31.788 元升 4.2 分 匯價連 4 升",
+     "url": "https://www.cna.com.tw/news/afe/202610050179.aspx",
+     "summary": "台北外匯市場新台幣兌美元收 31.788 元，升值 4.2 分，成交金額 18.18 億美元。台股創高之際匯價相對淡定。",
+     "source": "中央社",
+     "tags": [
+      "TWD",
+      "FX",
+      "USDTWD"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美股 10/5 科技股領漲 10 年期美債殖利率升至 5.33% 近 2002 年來高點",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-5-135537124.html",
+     "summary": "盤中 S&P 500 約漲 0.6%、那斯達克約漲 0.9% 逼近紀錄，道瓊約漲 0.2%；10 年期殖利率上升 5 個基點至 5.33%。市場等待 Fed 會議紀要，非農疲弱使 10 月升息機率降至約兩成。數字為盤中近似值。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "FED",
+      "SP500",
+      "NASDAQ",
+      "TREASURY-YIELD"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油 10/5 約 101.55 美元 日本央行 9 月升息至 1.25% 為 31 年新高",
+     "url": "https://www.upi.com/Top_News/World-News/2026/09/18/japan-policy-rate-raised-central-bank-weak-yen/6681789772736/",
+     "summary": "布蘭特約跌 0.7% 至 101.55 美元（搜尋結果近似值），仍受胡塞襲擊沙烏地管線與美伊僵局牽動。日本央行 9/18 以 7 比 2 升息 0.25 個百分點至 1.25%，為 1995 年來最高，因油價與日圓疲弱推升通膨風險。",
+     "source": "UPI",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "JAPAN",
+      "RATE-HIKE"
+     ]
+    }
+   ]
+  }
+ ]
+}

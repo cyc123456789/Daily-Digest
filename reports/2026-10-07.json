@@ -1,0 +1,24 @@
+{
+ "date": "2026-10-07",
+ "focus": "美股 S&P 500、那斯達克再創收盤新高，10 年期美債殖利率仍在 5.27% 高位；台股 10/6 收 49,823 點，距 5 萬點僅一步之遙。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "high", "title": "丹麥科技大學 DTU 身分管理系統遭入侵 逾 20 萬名現任與離校人員個資可能外洩", "url": "https://dtu.dk/newsarchive/2026/10/hackerangreb-mod-dtu_underretning-om-brud-paa-persondatasikkerheden", "summary": "DTU 通報其身分與存取管理系統 DTUBasen 遭針對性攻擊，攻擊者下載大量資料，涉及約 4 萬名現任與 16 萬名離校使用者，資料最早可回溯至 2003 年，可能含丹麥 CPR 身分號碼與姓名，現任使用者另含住址與電話。校方已控制攻擊並委請外部專家調查，同時通報丹麥資料保護機關；受影響者應提高對冒名詐騙與釣魚信件的警覺。", "source": "DTU 官方公告", "tags": ["DATA-BREACH", "GOVERNMENT", "EUROPE"]},
+   {"severity": "high", "title": "中國關聯 TA419 假冒前美國官員與知名經濟學家 釣魚鎖定 AI 政策專家竊取 Microsoft 365 憑證", "url": "https://www.nextgov.com/cybersecurity/2026/10/china-linked-hackers-posed-former-us-officials-anthropic-employee-target-ai-experts/416356/", "summary": "研究人員指出 TA419 以智庫、大學與律師事務所的 AI 政策人員為目標，冒充知名人士發送邀約，將受害者導向仿冒登入頁，竊取 Microsoft 365 帳密與工作階段 cookie。此為社交工程而非軟體漏洞，無對應修補；建議對高風險人員強制使用防釣魚的 FIDO2 金鑰、縮短工作階段存活時間，並留意異常登入。", "source": "Nextgov/FCW", "tags": ["CHINA", "APT", "PHISHING", "MICROSOFT"]},
+   {"severity": "high", "title": "Fortra BoKS CVE-2026-9862（CVSS 9.8）：未驗證遠端攻擊者可提權執行作業系統指令", "url": "https://www.rescana.com/post/cve-2026-9862-critical-os-command-injection-vulnerability-in-fortra-boks-core-privileged-access-manager-threatens-system", "summary": "Fortra BoKS 特權存取管理核心元件存在 OS 指令注入，未經驗證即可遠端以高權限執行指令。目前未見列入 CISA KEV 或在野利用證據，因此列為 high；受影響的確切版本與修補版本請以 Fortra 官方公告為準，並盡速升級，同時限制 BoKS 伺服器的網路暴露面。（此則依第三方分析整理）", "source": "Rescana（經第三方分析整理）", "tags": ["RCE", "FORTRA", "PRIVILEGED-ACCESS", "PATCH"]},
+   {"severity": "high", "title": "後續｜Citrix NetScaler CVE-2026-88779 在野利用：Sophos 證實鎖定未修補設備，CISA 要求 10/7 前完成修補", "url": "https://www.sophos.com/en-us/blog/citrix-netscaler-vulnerability-cve-2026-88779-in-active-exploitation", "summary": "CVE-2026-88779（CVSS 8.7）為 NetScaler ADC 與 Gateway 的記憶體溢位漏洞，在特定部署條件下可導致服務中斷，攻擊者已針對未修補設備發動目標式攻擊。Citrix 已釋出更新，CISA 已列入 KEV 並要求聯邦機構於 10/7 前修補；使用 SAML 設定的設備應優先升級。", "source": "Sophos", "tags": ["CITRIX", "ZERO-DAY", "CISA-KEV", "EXPLOITED"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "後續｜美駐華大使：川普對台軍售比 1979 年以來歷任總統高 50% 美對台政策不變；駐美代表籲加快審批", "url": "https://www.chinatimes.com/realtimenews/20261006001664-260409", "summary": "美國駐中國大使龐德偉表示川普沒有改變一中政策，並全面支持《台灣關係法》、三公報與六項保證。台灣駐美代表俞大㵢同時接受彭博訪問，呼籲美方加快通過對台軍售案，目標是確保台灣不會成為「桌上的菜」；先前 140 億美元軍售案仍待美方決定。", "source": "中國時報", "tags": ["TAIWAN", "ARMS-SALE", "US-CHINA", "USA"]},
+   {"severity": "medium", "title": "國防部：10/5 至 10/6 晨偵獲共艦 8 艘、公務船 8 艘，無共機擾台", "url": "https://www.cna.com.tw/news/aipl/202610060030.aspx", "summary": "國防部統計自 10/5 上午 6 時至 10/6 上午 6 時，偵獲共艦 8 艘、公務船 8 艘在台海周邊活動，期間未偵獲共機（共機架次 0、無越中線）。共艦與公務船仍持續在周邊活動，國軍持續嚴密監控。", "source": "中央社", "tags": ["TAIWAN", "PLA", "MND", "TAIWAN-STRAIT"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "warning", "title": "後續｜美伊經調停者持續談判：伊朗稱荷姆茲海峽重開須滿足其七項條件，核問題仍無讓步", "url": "https://cnn.com/2026/10/06/business/iran-economy-blockade-strait-of-hormuz-oil", "summary": "伊朗外長稱其方案可能在七天內重開荷姆茲海峽，但須先滿足以《伊斯蘭堡備忘錄》為基礎的七項條件；伊朗副外長表示正研議美方對七天和平提案的回覆。美方仍聚焦要求伊朗放棄核計畫，雙方僵局未解，海峽通航與油價風險持續。", "source": "CNN", "tags": ["IRAN", "HORMUZ", "USA", "CEASEFIRE"]},
+   {"severity": "medium", "title": "習近平 9 月訪美成果：貿易休兵延長三個月至 2027 年 1 月，戰略分歧未解", "url": "https://ground.news/article/xi-jinping-visits-trump-political-chain", "summary": "川習 9/23 至 9/25 在華府會談，中方稱達成八項共識，涵蓋 AI 風險、伊朗與熊貓租借等；貝森特與何立峰談判後將貿易休兵延長至 2027 年 1 月。台灣、軍事溝通與駐印太美軍等議題雙方仍各說各話。（來源為新聞彙整頁，細節以原始報導為準）", "source": "Ground News（彙整）", "tags": ["US-CHINA", "CHINA", "USA", "TAIWAN"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "info", "title": "台股 10/6 收 49,823 點漲 111 點 成交 9,759 億元 台積電收 2,585 元", "url": "https://finance.ettoday.net/news/3249946", "summary": "加權指數 10/6 盤中高點 49,969、低點 49,480，終場收 49,823 點，漲幅 0.22%，成交 9,759.35 億元；台積電漲 10 元至 2,585 元。指數連日逼近 5 萬點，惟尚未站上。（以媒體報導收盤數字為準，非 Yahoo 即時行情）", "source": "ETtoday", "tags": ["TAIEX", "TSMC", "STOCK-MARKET", "TAIWAN"]},
+   {"severity": "info", "title": "美股 S&P 500、那斯達克創高 10 年期美債殖利率回落至 5.27% 布蘭特約 98 美元", "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-6-dow-sp-500-nasdaq-080526166.html", "summary": "10/6 S&P 500 約漲 0.7% 逼近收盤新高，那斯達克漲約 0.5%、道瓊漲約 0.6%；10 年期美債殖利率 5.27%，自 24 年來最高收盤水準回落，30 年期約 5.64%。布蘭特原油約 98 美元，供給疑慮緩和。（盤中報導，數字為近似值）", "source": "Yahoo Finance", "tags": ["SP500", "NASDAQ", "TREASURY-YIELD", "BRENT"]}
+  ]}
+ ]
+}

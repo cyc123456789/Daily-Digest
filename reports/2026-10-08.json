@@ -1,0 +1,26 @@
+{
+ "date": "2026-10-08",
+ "focus": "FBI 逮捕涉為中國監控賴清德之子的美籍女子，台北擬強化反滲透與跨國鎮壓立法；國防部10/7晨偵獲共機14架次、9架次越中線。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "high", "title": "Rejetto HFS CVE-2026-61500（CVSS 9.8）：可預測的 Math.random 簽章金鑰讓攻擊者偽造管理員 Session 並遠端執行程式", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61500", "summary": "Rejetto HFS 3.0.0 至 3.2.0 以非密碼學安全的 Math.random() 產生 Session Cookie 簽章金鑰，且登入回應會洩漏亂數輸出，未驗證攻擊者蒐集少量回應即可還原金鑰、偽造管理員 Cookie，再經 server_code 設定達成 RCE。3.2.1 已修補，請立即升級；本次檢索未見 CISA KEV 收錄或確認的在野利用證據，但曝露於網際網路的 HFS 應先限縮存取。", "source": "NVD", "tags": ["CVE-2026-61500", "REJETTO", "RCE", "PATCH"]},
+   {"severity": "medium", "title": "Advantest 確認勒索軟體攻擊導致個資外洩：含護照、駕照號碼與醫療、財務資訊", "url": "https://bleepingcomputer.com/news/security/advantest-confirms-personal-information-stolen-in-ransomware-attack", "summary": "半導體測試設備大廠 Advantest 於 10/6 發出通知，指 2 月 15 日遭入侵的勒索事件外洩了社會安全碼、護照與駕照號碼、出生日期、醫療與財務資料，尚不清楚受影響的是客戶、員工或夥伴，影響人數也未公布。公司稱目前沒有資料遭公開或濫用的跡象；受通知者應啟用信用監控並提防冒名釣魚。", "source": "BleepingComputer", "tags": ["RANSOMWARE", "ADVANTEST", "DATA-BREACH"]},
+   {"severity": "medium", "title": "ShinyHunters 經 Grav CMS 漏洞 CVE-2026-42608 入侵 Clop 洩密網站，Clop 已遷移至新 Tor 位址", "url": "https://www.scworld.com/brief/clop-ransomware-gang-moves-to-new-server-after-grav-cms-vulnerability-exploited", "summary": "ShinyHunters 利用未驗證的 Grav CMS 路徑穿越／檔案上傳漏洞 CVE-2026-42608 竄改 Clop 洩密站，並聲稱竊得原始碼、日誌與 Tor 私鑰（BleepingComputer 稱尚未獨立證實），Clop 則否認並稱伺服器上無敏感資料。此漏洞在 Grav 2.0 已修，1.7 分支另有回補版（各來源版本號不一，請以 Grav 官方公告為準）；仍使用 Grav 1.7 的站台應盡速升級。", "source": "SC Media", "tags": ["RANSOMWARE", "CLOP", "SHINYHUNTERS", "CVE-2026-42608"]},
+   {"severity": "info", "title": "週報回顧：NetScaler 與 FortiMail 零時差、AI 程式工具外洩、Spectre v2 與勒索軟體逮捕", "url": "https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html", "summary": "The Hacker News 本週回顧彙整 Citrix NetScaler 與 Fortinet FortiMail 零時差在野利用、AI 編碼工具洩漏事件、Spectre v2 新研究與勒索軟體嫌犯遭逮捕等重點。NetScaler 與 FortiMail 的受影響版本與修補請見本站前幾日條目；管理者應確認已升級並關閉對外管理介面。", "source": "The Hacker News", "tags": ["NETSCALER", "FORTIMAIL", "ZERO-DAY", "RANSOMWARE"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "high", "title": "FBI 逮捕涉為中國監控賴清德之子的美籍女子，台灣擬強化反滲透與跨國鎮壓立法", "url": "https://focustaiwan.tw/politics/202610070011", "summary": "報導指一名加州房仲於 10/4 在洛杉磯機場準備飛往上海時遭 FBI 逮捕，涉嫌代表中國官員監視賴清德之子賴廷瑜一家；總統府稱此為典型跨國鎮壓，外交部同聲譴責，政府並研議新增反滲透與公民保護措施。美國眾議院委員會主席莫蘭納 10/6 也發表聲明。中方回應本次檢索未見。", "source": "Focus Taiwan", "tags": ["TAIWAN", "CHINA", "FBI", "ESPIONAGE"]},
+   {"severity": "warning", "title": "國防部：10/6 至 10/7 晨偵獲共機 14 架次（9 架次逾中線）、共艦 7 艘、公務船 1 艘", "url": "https://news.ebc.net.tw/news/politics/574551", "summary": "據東森新聞轉述國防部公告，自 10/6 上午 6 時至 7 日上午 6 時偵獲共機 14 架次，其中 9 架次逾越海峽中線進入北部、中部及西南空域，另有共艦 7 艘、公務船 1 艘；國軍以任務機、艦及岸置飛彈系統監控。10/6 下午約 2 時 54 分起另有 9 架次越中線並配合共艦『聯合戰備警巡』，結束前一日無共機的情況。", "source": "國防部（經東森新聞轉述）", "tags": ["TAIWAN", "CHINA", "PLA", "TAIWAN-STRAIT"]},
+   {"severity": "medium", "title": "智庫兵推：中國較可能切斷海纜、癱瘓行動通訊與網路，而非直接入侵或封鎖", "url": "https://www.washingtontimes.com/news/2026/oct/6/war-game-highlights-taiwan-response-chinese-communications-attacks/", "summary": "華盛頓時報報導一場智庫兵推結果，認為北京更可能以切斷海底電纜、網路攻擊關閉行動通訊與網際網路等灰色地帶手段施壓台灣。賴清德政府正著重強化通訊網路韌性與民眾抗壓準備。", "source": "The Washington Times", "tags": ["TAIWAN", "CHINA", "UNDERSEA-CABLE", "CYBER"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "warning", "title": "後續｜美伊經調停者談判膠著：伊朗稱荷姆茲海峽在條件滿足前維持關閉", "url": "https://www.aljazeera.com/news/2026/10/4/iran-says-strait-of-hormuz-to-remain-closed-until-us-meets-conditions", "summary": "伊朗外交部稱海峽重開須待美方滿足條件，並否認與美國直接談判，改由阿曼、卡達、巴基斯坦居間斡旋；其七日方案要求美方解除港口封鎖、豁免石油制裁並含黎巴嫩的停火。川普一面稱談判有進展、一面拒絕該方案，另有商船遭不明飛彈擊中，升高擴大衝突疑慮。（本則為10/4報導，最新進展本次檢索未取得。）", "source": "Al Jazeera", "tags": ["IRAN", "HORMUZ", "USA", "SANCTIONS"]},
+   {"severity": "medium", "title": "澤倫斯基公布北韓戰俘移交南韓，首爾要求烏克蘭道歉並考慮追加措施", "url": "https://www.pravda.com.ua/eng/news/2026/09/28/8055307/", "summary": "澤倫斯基在聯合國大會揭露烏方已將兩名北韓戰俘移交南韓，李在明政府指烏方違反保密協議，召見烏克蘭大使並要求道歉，基輔否認有此協議。（本則為9/28事件，列為亞太外交背景，後續進展本次檢索未取得。）", "source": "Ukrainska Pravda", "tags": ["SOUTH-KOREA", "UKRAINE", "NORTH-KOREA", "DIPLOMACY"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "info", "title": "台股 10/7 收 49,806.37 點小跌 16 點：盤中差 34 點觸及 5 萬點，台積電等權值股回檔", "url": "https://www.nownews.com/news/6881364", "summary": "加權指數盤中一度攻至 49,966 點，終場下跌 16.18 點（0.03%）收 49,806.37 點，成交金額約 9,259.9 億元，高檔賣壓與台積電等權值股回檔拖累指數。（一手資料源受阻，數字取自媒體報導。）", "source": "NOWnews", "tags": ["TAIEX", "TAIWAN", "TSMC", "STOCKS"]},
+   {"severity": "info", "title": "美股 10/6 標普與那指雙創收盤新高，油價與美債殖利率回落", "url": "https://udn.com/news/story/6811/9799385", "summary": "道瓊收 51,521.22 點、標普 500 收 7,818.98 點、那斯達克收 27,599.79 點，AI 概念股領漲；10 年期美債殖利率約 5.27%，布蘭特原油收跌約 2% 至約 98.35 美元。（數字取自媒體報導，為近似值，未能由 Yahoo Finance 核對。）", "source": "聯合新聞網", "tags": ["STOCKS", "TREASURY", "OIL", "BRENT"]},
+   {"severity": "info", "title": "新台幣 10/7 午盤暫收 31.788 元，貶 0.7 分", "url": "https://money.udn.com/money/story/5612/9800095", "summary": "新台幣兌美元午盤貶 0.7 分暫收 31.788 元；收盤價本次檢索未取得，請以臺灣銀行或央行牌告為準。", "source": "聯合新聞網", "tags": ["TWD", "FOREX", "TAIWAN"]}
+  ]}
+ ]
+}

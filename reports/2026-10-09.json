@@ -1,0 +1,26 @@
+{
+ "date": "2026-10-09",
+ "focus": "FBI 與特勤局警告 FortiBleed 仍在進行：Fortinet 防火牆憑證遭濫用，管理員恐被鎖出並成為勒索軟體入口。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "high", "title": "後續｜FBI／特勤局：FortiBleed 憑證攻擊仍在進行 管理員恐被鎖出並淪為勒索軟體入口", "url": "https://www.ic3.gov/CSA/2026/261006.pdf", "summary": "FBI 與特勤局 10/6 警告，針對面向網際網路的 FortiGate 防火牆與 SSL VPN 閘道的憑證竊取行動仍在持續，SOCRadar 驗證受害設備逾 8.6 萬台、涵蓋 194 國。攻擊者會新增管理員帳號、改密碼鎖出原管理員，初始存取權並流向 INC/Lynx 等勒索軟體集團。建議終止所有管理與 VPN 連線階段、重設全部密碼、啟用抗釣魚 MFA，並移除或限制對外管理介面。", "source": "FBI／USSS（IC3 公告）", "tags": ["FORTINET", "RANSOMWARE", "VPN", "CREDENTIAL-THEFT"]},
+   {"severity": "high", "title": "Atlassian Data Center 八項產品 CVE-2026-21589 任意檔案讀取 呼籲立即升級", "url": "https://www.helpnetsecurity.com/?p=386932", "summary": "Atlassian 10/5 公布路徑遍歷漏洞 CVE-2026-21589（CVSS 4.0 評分 9.3），未驗證攻擊者可讀取網站根目錄下已知路徑的檔案，影響 Bitbucket、Confluence、Jira Software／Service Management、Bamboo、Crowd、Crucible、Fisheye 的自架 Data Center 版本，雲端版已修補。已釋出修補版（如 Confluence 9.2.26／10.2.19、Bitbucket 9.4.26／10.2.8／10.5.1），暫行措施為封鎖規則並將實例移出外網；各報導對是否已遭利用說法不一，尚未確認。", "source": "Atlassian（經 Help Net Security 轉述）", "tags": ["ATLASSIAN", "CVE-2026-21589", "PATCH", "CONFLUENCE"]},
+   {"severity": "high", "title": "英國零售商 ASOS 用戶收到「已遭入侵」推播 駭客聲稱攻陷 Snowflake 環境", "url": "https://www.infosecurity-magazine.com/news/asos-customers-message-suspected/", "summary": "10/6 ASOS App 用戶收到由新團體 Xuanye 署名的推播，宣稱已完全控制公司 Snowflake 實例並要求談判，ASOS 表示已知悉並調查，英國 NCSC 提供協助。目前尚未證實客資外洩範圍，Snowflake 本身亦未被指出有漏洞；歷來類似事件多源自憑證遭竊，使用 Snowflake 的組織應檢查帳號憑證與 MFA。", "source": "Infosecurity Magazine", "tags": ["DATA-BREACH", "ASOS", "SNOWFLAKE", "EUROPE"]},
+   {"severity": "medium", "title": "Cisco 10/7 批次安全公告：含 CVSS 9.8 級高風險漏洞 建議儘速升級", "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-notice-fBn58ELx.html", "summary": "Cisco 於 10/7 發布一批安全公告，據預告含 NX-OS／Nexus 交換器等嚴重等級漏洞，細節與評分以原廠公告為準（搜尋摘要提及 CVSS 9.8 級）。目前未見在野利用報告；Cisco 建議客戶升級至公告所列修補版本。", "source": "Cisco PSIRT", "tags": ["CISCO", "PATCH", "NX-OS"]},
+   {"severity": "medium", "title": "Android 10 月更新修補 25 項漏洞 含 7 項嚴重等級 最嚴重為免互動本機提權", "url": "https://www.securityweek.com/androids-october-2026-updates-patch-25-vulnerabilities/", "summary": "Android 2026 年 10 月安全更新共修補 25 項漏洞，Framework 7 項、System 18 項，其中 7 項為嚴重等級，最嚴重者為 System 元件中無需使用者互動的本機權限提升。請裝置用戶套用 10 月安全修補等級，企業行動裝置管理應推送更新。", "source": "SecurityWeek", "tags": ["ANDROID", "PATCH", "GOOGLE"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "info", "title": "國防部：共艦 6 艘、公務船 1 艘 共機 1 架侵擾西南空域", "url": "https://www.cna.com.tw/news/aipl/202610080051.aspx", "summary": "國防部 10/8 上午公布，前一日 6 時至當日 6 時偵獲共艦 6 艘、公務船 1 艘，共機 1 架侵擾西南空域（國防部完整統計共機為 3 架次），國軍以任務機艦及岸置飛彈系統監控。與 10/7 公布的 14 架次（9 架次逾中線）相比明顯降溫。", "source": "中央社（國防部通報）", "tags": ["PLA", "TAIWAN", "MND", "TAIWAN-STRAIT"]},
+   {"severity": "medium", "title": "後續｜美媒：川普將「短時間內」拍板對台 140 億美元軍售 駐美代表籲加速審批", "url": "https://www.chinatimes.com/realtimenews/20261005002329-260408", "summary": "美媒 10/4 引述美國高階官員稱，川普將在短時間內決定對台 140 億美元軍售案；駐美代表俞大㵢表示有信心華府最終批准，並促請加快。此案先前遭外界視為擱置，中國外交部則一貫表態堅決反對對台軍售。", "source": "中時新聞網（引美媒）", "tags": ["ARMS-SALE", "TAIWAN", "US-CHINA", "US"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "high", "title": "後續｜美伊談判僵持：伊朗稱荷姆茲重開須滿足七項條件 川普稱戰爭「必須收尾」", "url": "https://www.ctwant.com/article/500861/", "summary": "伊朗首席談判代表卡利巴夫表示，美方滿足伊朗依 6 月備忘錄提出的七項條件前，荷姆茲海峽不會重開，並以鈾濃縮權為紅線；美國副總統萬斯則要求伊朗實質削減濃縮能力。美伊戰事已逾 7 個月，雙方經調停者斡旋仍無突破，海峽航運與油價風險持續。", "source": "財訊（綜合報導）", "tags": ["IRAN", "HORMUZ", "US", "DIPLOMACY"]},
+   {"severity": "warning", "title": "後續｜傳川普考慮數週內恢復對伊朗大規模軍事行動 布蘭特盤中一度逾 105 美元", "url": "https://udn.com/news/story/6811/9803896", "summary": "10/8 市場傳出川普正評估在未來數週恢復對伊朗的大規模軍事行動，並表示不願達成終戰協議，油價與美債殖利率同步走高、美股開盤四大指數齊跌。先前川普也曾在社群平台稱期中選舉前不會攻擊伊朗，訊息反覆使市場波動加劇。", "source": "聯合新聞網", "tags": ["IRAN", "HORMUZ", "OIL", "US"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "warning", "title": "台股雙十連假前收跌 492.93 點 外資連三日賣超 758 億元", "url": "https://money.udn.com/money/story/5607/9802918", "summary": "加權指數 10/8 開低走低，收 49,313.44 點、跌 0.99%，成交約 8,697 億元，外資賣超約 758.52 億元；盤中受油價與美債殖利率走高、美股夜盤下挫拖累，未能站穩 5 萬點關卡。", "source": "經濟日報", "tags": ["TAIEX", "STOCKS", "TWD", "TSMC"]},
+   {"severity": "info", "title": "新台幣 10/8 收 31.875 元貶 8 分 週線連 2 跌", "url": "https://money.udn.com/money/story/5612/9803697", "summary": "新台幣兌美元 10/8 收 31.875 元，貶值 8 分，股匯雙挫、外資賣超與中東緊張使資金流出，出口商拋匯與央行調節讓盤中貶幅收斂。數字取自媒體報導，為近似值。", "source": "經濟日報", "tags": ["TWD", "FOREX", "USDTWD", "TAIEX"]},
+   {"severity": "warning", "title": "布蘭特原油 10/8 大漲近 4% 報約 104 美元 美股早盤四大指數齊跌", "url": "https://udn.com/news/story/6811/9803896", "summary": "受川普對伊朗強硬表態及可能恢復軍事行動消息影響，布蘭特原油盤中一度升破 105 美元，報價約 104.07 美元（日內約 +3.9%），美國原油約 91.4 美元；10 年期美債殖利率走高，費半早盤跌約 1.8%。油價為盤中近似值，非收盤價。", "source": "聯合新聞網", "tags": ["BRENT", "OIL", "IRAN", "TREASURY-YIELD"]}
+  ]}
+ ]
+}

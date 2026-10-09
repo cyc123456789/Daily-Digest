@@ -1,0 +1,129 @@
+{
+ "date": "2026-10-10",
+ "focus": "國防部：國慶前夕10/9共機19架次（13架次逾中線）配合共艦「聯合戰備警巡」，雙十節前台海態勢升溫。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜Atlassian Data Center CVE-2026-21589（CVSS 9.3）出現利用嘗試：八項產品需升級",
+     "url": "https://www.helpnetsecurity.com/?p=387226",
+     "summary": "未驗證攻擊者可利用路徑穿越讀取 Web 根目錄檔案；PoC 公開後約兩小時內蜂巢即偵測到利用嘗試，但 Atlassian 尚未證實自架環境遭入侵，也未列入 CISA KEV。已修補版本包括 Confluence DC 9.2.26／10.2.19、Jira Software DC 9.12.40／10.3.26／11.3.12、Bitbucket DC 9.4.26／10.2.8／10.5.1、Bamboo、Crowd 等；修補前應先限制外網存取。",
+     "source": "Help Net Security",
+     "tags": [
+      "ATLASSIAN",
+      "PATCH",
+      "CVE-2026-21589",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA 10/8 新增 KEV：CVE-2023-22894、CVE-2015-5477 確認遭利用，聯邦機構須 10/11 前處置",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "summary": "CISA 目錄顯示兩筆舊漏洞於 10/8 列入 KEV，修補期限 10/11；其中 CVE-2023-22894 標註依 BOD 26-04 須做鑑識分流。舊漏洞再度被利用，代表未更新的老舊資產仍是入侵管道；請依 CISA 目錄所列廠商公告升級或停用，並檢查是否已遭入侵。（資料經搜尋取得，細節請以目錄為準。）",
+     "source": "CISA",
+     "tags": [
+      "CISA-KEV",
+      "EXPLOITED",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "Pwn2Own Ireland 首日：32 個零時差、獎金 38.85 萬美元，Galaxy S26 被攻破",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+     "summary": "Cork 賽事首日研究人員攻破 Samsung Galaxy S26、Philips Hue Bridge Pro、Oracle Autonomous AI Database、Sonos Era 300、列印機與 OpenAI Codex 等目標；各媒體統計略有出入。依 ZDI 規則，廠商有 90 天修補期，目前尚無公開細節與修補，使用者宜留意後續更新。",
+     "source": "BleepingComputer",
+     "tags": [
+      "ZERO-DAY",
+      "PATCH",
+      "SAMSUNG",
+      "AI-AGENT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：國慶前夕共機19架次（13架次逾中線）配合共艦「聯合戰備警巡」",
+     "url": "https://www.cna.com.tw/news/aipl/202610090141.aspx",
+     "summary": "國防部指出，10/9 上午8時52分起偵獲中共19架次出海，其中13架次逾越中線，機型含殲-16、殲-11、蘇愷30、殲轟7、空警500與運8，國軍派遣任務機艦及岸置飛彈應處。當日上午6時例行通報為共機2架次、共艦5艘、公務船2艘，下午數字為另一統計時段，不可相加。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜川普稱期中選舉前不攻擊伊朗，胡塞攻擊沙烏地機場致3死",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/",
+     "summary": "CBS 直播報導，川普承諾美方在11月初期中選舉前不恢復對伊朗攻擊，並稱與伊朗有「具生產力的對話」但未提細節；此前 NBC 報導白宮曾考慮數週內重啟打擊。同時伊朗盟友胡塞對沙烏地機場發動攻擊造成3人死亡，外溢風險未解。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "HOUTHIS",
+      "SAUDI-ARABIA"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "荷姆茲海峽過去一週9艘油輪遇襲，Kpler：出海量較戰前低約30%",
+     "url": "https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html",
+     "summary": "CNBC 引述數據，截至週二的一週內荷姆茲日均出海約950萬桶，較戰前水準低約三成，近期油輪遭攻擊威脅了原油流量的復甦。航運與保險成本可能續升，並牽動能源價格。",
+     "source": "CNBC",
+     "tags": [
+      "HORMUZ",
+      "IRAN",
+      "OIL",
+      "MIDDLE-EAST"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜布蘭特10/8大漲4%收104.28美元，10/9 隨川普表態回落至約103美元",
+     "url": "https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html",
+     "summary": "布蘭特10/8收104.28美元、WTI收91.49美元；川普稱期中選舉前不攻擊伊朗後，油價自高點回落，CBS 報導週五約103美元。（價格取自媒體報導，非直接行情資料。）",
+     "source": "CNBC",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "IRAN"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股10/7自高點回落：道瓊51,196.54、標普7,798.84、那指27,489.08，30年期美債殖利率創24年高",
+     "url": "https://www.kitco.com/news/off-the-wire/2026-10-07/sp-500-nasdaq-ease-record-highs-treasury-yields-climb",
+     "summary": "長天期美債殖利率再升，市場對通膨與債務疑慮升溫；道瓊跌0.63%、標普跌0.26%、那指跌0.40%。CME FedWatch 顯示 Fed 10月連續第二次升息機率約19.4%。（路透數字經 Kitco 轉載，各版本略有差異。）",
+     "source": "Reuters（經 Kitco 轉載）",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "TREASURY-YIELD",
+      "FED"
+     ]
+    }
+   ]
+  }
+ ]
+}

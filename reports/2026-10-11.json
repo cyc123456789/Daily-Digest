@@ -1,0 +1,169 @@
+{
+ "date": "2026-10-11",
+ "focus": "日本 SoftBank 旗下 IDCF Cloud 遭勒索軟體攻擊，495 家企業與自治體受影響，四個區域資料恐無法復原；國慶日共機 21 架次、13 架逾中線。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "AhsayCBS 兩個漏洞遭在野利用：CVE-2026-105134（CVSS 10.0）命令注入，用於植入 Webshell 與挖礦程式",
+     "url": "https://www.huntress.com/blog/ahsaycbs-flaws-exploit",
+     "summary": "Huntress 指出攻擊自 10/7 起，截至 10/8 已確認 5 個組織受害，攻擊者部署 Webshell 並安裝偽裝成 Edge 的 XMRig。受影響為 AhsayCBS 10.3.2（含）以前版本，10.3.4 已修補；修補前應在邊界或 WAF 限制 Replication Receiver 的 UpdateReceivers.do 端點，並檢查伺服器日誌。",
+     "source": "Huntress",
+     "tags": [
+      "CVE-2026-105134",
+      "AHSAYCBS",
+      "WEBSHELL",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "日本 IDCF Cloud 遭勒索軟體攻擊：495 家企業與自治體受影響，四個區域資料恐無法復原",
+     "url": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
+     "summary": "SoftBank 旗下 IDC Frontier 表示攻擊自 10/7 凌晨 3:40 開始，東日本 Region 1 的 tesla、henry、pascal、joule 四個可用區虛擬主機停擺，茨城縣等政府網站一度無法瀏覽。該公司稱資料僅能從客戶自有備份還原，建議客戶檢查備份並在其他環境重建；其他區域尚未確認遭未授權存取。",
+     "source": "BleepingComputer",
+     "tags": [
+      "RANSOMWARE",
+      "JAPAN",
+      "CLOUD",
+      "CRITICAL-INFRASTRUCTURE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜ASOS 證實資料外洩源於社交工程與員工憑證遭竊",
+     "url": "https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/",
+     "summary": "ASOS 表示駭客以社交工程竊取員工登入憑證，可能外洩基本個資與聯絡資料，未涉及付款資訊；自稱「Xuanye Group」者宣稱犯案。用戶應提防冒名釣魚郵件與簡訊，並更換重複使用的密碼。",
+     "source": "BleepingComputer",
+     "tags": [
+      "ASOS",
+      "DATA-BREACH",
+      "SNOWFLAKE",
+      "PHISHING"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "ThreatsDay 週報：公開 GitHub 倉庫外洩逾 54 萬組有效憑證，Unsloth Studio 模型檢視可觸發 RCE",
+     "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
+     "summary": "週報彙整指出公開 GitHub 倉庫中有超過 543,699 組仍有效的憑證，並提到 Unsloth Studio 檢視模型時可執行 Python 程式碼的 RCE 問題。建議掃描並輪換外洩金鑰，使用 AI 工具載入不明模型前先隔離環境；細節以原文為準。",
+     "source": "The Hacker News",
+     "tags": [
+      "CREDENTIAL-THEFT",
+      "AI-AGENT",
+      "RCE",
+      "GITHUB"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：國慶前夕共機 21 架次、共艦 7 艘、公務船 2 艘，13 架次逾越中線",
+     "url": "https://news.tvbs.com.tw/politics/4034208",
+     "summary": "國防部統計 10/9 上午 6 時至 10/10 上午 6 時，偵獲共機 21 架次、共艦 7 艘、公務船 2 艘，其中 13 架次越過中線進入北部、中部及西南空域。解放軍在國慶前夕出動殲-16、蘇愷-30 與無人機，實施「聯合戰備警巡」，較前一日共機 2 架次明顯升高。",
+     "source": "TVBS（引述國防部）",
+     "tags": [
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "賴清德國慶演說提「山巔之城」：和平靠實力、願交流但不接受矮化",
+     "url": "https://www.ctee.com.tw/news/20261010700332-430101",
+     "summary": "賴清德 10/10 發表就任後第三次國慶演說，主張台灣應勇敢自信，並推動國防改革與國防自主產業，稱願意交流但不接受被矮化。同時宣布六大社福津貼提升，並提到上半年經濟成長率 14.15%。",
+     "source": "工商時報",
+     "tags": [
+      "TAIWAN",
+      "LAI",
+      "NATIONAL-DAY",
+      "CHINA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜川習會後賴清德談美中互動：府方稱演說為對美中對話的立場表述",
+     "url": "https://udn.com/news/story/7238/9806495",
+     "summary": "聯合報指出，賴清德國慶演說有三層意涵，其中一層是在川習會後說明台灣對美中互動的立場，並以「Taiwan Can Help」強調台灣願分擔責任。後續需觀察北京反應與 140 億美元對台軍售的審批進度。",
+     "source": "聯合報",
+     "tags": [
+      "US-CHINA",
+      "TAIWAN",
+      "CHINA",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川普稱期中選舉前不攻擊伊朗，荷姆茲海峽僵局未解",
+     "url": "https://www.newarab.com/news/trump-says-no-iran-attack-elections-deadlock-hormuz",
+     "summary": "川普表示 11/3 美國期中選舉前不會攻擊伊朗，並稱雙方團隊有「productive discussions」；伊朗堅持重開荷姆茲須滿足其條件。各報導對談判進度說法不一，局勢仍高度不確定。",
+     "source": "The New Arab",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股 10/8 收 49,313.44 點，國慶連假休市；外資連三日賣超，新台幣收 31.875 元",
+     "url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E6%9C%AC%E9%80%B1%E6%BC%B2837%E9%BB%9E%E7%AB%99%E4%B8%8A4%E8%90%AC9-%E4%B8%8A%E5%B8%82%E8%82%A1%E7%A5%A8%E7%B8%BD%E5%B8%82%E5%80%BC%E8%A1%9D161-36%E5%85%86%E5%85%83-110300055.html",
+     "summary": "加權指數 10/8 收 49,313.44 點，單日跌 492.93 點、週漲約 837.7 點；10/9 補假休市。外資當日賣超約 759 億元，新台幣收 31.875 元貶 8 分。數字由搜尋結果彙整，為近似值。",
+     "source": "Yahoo 股市",
+     "tags": [
+      "TAIEX",
+      "TWD",
+      "STOCK-MARKET",
+      "TSMC"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "後續｜美股 10/9 全面收高：道瓊 51,654.95、標普 7,811.54、那指 27,366.17，10 年期殖利率約 5.24%",
+     "url": "https://epochtimes.com/b5/26/10/9/n14867108.htm",
+     "summary": "科技股自前一日 OpenAI 營收不及預期引發的拋售中反彈，三大指數收高 0.6% 至 0.8%。10 年期美債殖利率上升約 2 個基點至 5.24%；數字取自媒體報導，為近似值。",
+     "source": "大紀元（引述新華社）",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "TREASURY-YIELD",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "後續｜布蘭特 10/8 收約 104.7 美元、10/9 回落至約 103.9 美元：荷姆茲油輪遇襲與墨西哥灣停產推升風險",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-2-as-Iran-Steps-Up-Attacks-on-Hormuz-Tankers.html",
+     "summary": "報導稱伊朗加強攻擊荷姆茲油輪，加上美國墨西哥灣約 63% 產量因風暴停產，10/8 布蘭特大漲約 4%；10/9 隨川普稱與伊朗有「建設性討論」回落。Kpler 估計荷姆茲出海量較戰前低約 40%；油價數字為近似值。",
+     "source": "OilPrice.com",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    }
+   ]
+  }
+ ]
+}

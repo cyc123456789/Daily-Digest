@@ -1,0 +1,18 @@
+{
+ "date": "2026-10-12",
+ "focus": "CISA 將 Flax Typhoon 利用的 5 個漏洞列入 KEV，澳加日英美等七國聯合警告中國關聯 Integrity Technology 的攻擊活動。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "critical", "title": "Flax Typhoon 利用五個舊漏洞：CISA 列入 KEV，七國聯合警告中國 Integrity Technology 相關攻擊", "url": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html", "summary": "CISA 將 ProFTPD CVE-2015-3306（CVSS 10.0）、ONLYOFFICE Docs CVE-2021-3199、Strapi CVE-2023-22894、Apache Struts CVE-2016-3081、ISC BIND CVE-2015-5477 列入已遭利用清單，聯邦機構須於 10/11 前處置。澳洲、加拿大、日本、紐西蘭、西班牙、英國與美國同步發布聯合警告，點名中國 Integrity Technology Group 相關行動。上述皆為舊漏洞，請盤點並升級至各廠商已修補版本，無法升級者隔離或停用受影響服務。", "source": "CISA（經 The Hacker News 轉述）", "tags": ["CHINA", "APT", "CISA-KEV", "PROFTPD"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "國防部：偵獲共艦 6 艘、公務船 3 艘，共機 5 架次侵擾西南空域", "url": "https://www.cna.com.tw/news/aipl/202610110025.aspx", "summary": "國防部 10/11 公布最新統計，共艦 6 艘、公務船 3 艘，並有共機 5 架次進入西南空域，國軍嚴密監控應處。數字取自中央社報導標題與搜尋摘要，國防部官網當日完整數字（含 10/12 更新）因雲端環境無法連線而未能核對，視為近似值。", "source": "中央社", "tags": ["MND", "PLA", "TAIWAN-STRAIT", "TAIWAN"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "medium", "title": "後續｜烏克蘭願互停能源設施攻擊，俄方尚未承諾；美提三方會談 10 月可能舉行", "url": "https://www.euronews.com/2026/09/16/ukraine-ready-for-energy-ceasefire-but-russia-has-yet-to-agree-zelenskyy-says", "summary": "澤倫斯基表示烏方願意停止攻擊俄方能源目標，但俄方尚未同意，且烏方對俄方是否遵守協議存疑。美方提議美烏俄三方會談，外界對實質進展預期不高。本則為 9/16 報導，搜尋未取得 10 月最新進展，僅作背景追蹤。", "source": "Euronews", "tags": ["UKRAINE", "RUSSIA", "ENERGY", "DIPLOMACY"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "info", "title": "後續｜布蘭特原油約 105 美元：荷姆茲海峽油輪遇襲頻繁，IEA 釋出儲備效果反轉", "url": "https://indexbox.io/blog/brent-crude-tops-105-as-iran-steps-up-tanker-attacks-in-hormuz-and-us-gulf-coast-shuts-in-ahead-of-storm", "summary": "據 Oilprice 轉載報導，布蘭特約 105.02 美元，較前週三收盤高約 4.8%，WTI 約 92.69 美元；9/28 至 10/2 荷姆茲海峽遭伊朗攻擊油輪達 12 起。因 Yahoo Finance 等來源無法連線，加權指數、美股與匯率今日未能取得可驗證數字，油價為單一二手來源的近似值。", "source": "Oilprice（經 IndexBox 轉述）", "tags": ["BRENT", "OIL", "HORMUZ", "IRAN"]}
+  ]}
+ ]
+}

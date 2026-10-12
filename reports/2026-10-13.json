@@ -1,0 +1,26 @@
+{
+ "date": "2026-10-13",
+ "focus": "國慶演說後，解放軍宣布 10/12–17 在東海、黃海、渤海、南海五海域實彈射擊；國防部偵獲共機 4 架次、共艦 6 艘，台方研判多為岸防砲訓練。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "high", "title": "法國連鎖超市冷藏設備遭駭：Danfoss 控制器被觸發持續除霜，數百家門市受影響", "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/", "summary": "10/11 夜間起，Coopérative U、Intermarché 等法國連鎖超市的冷藏櫃遭駭，駭客疑似劫持執行舊版 Danfoss 控制軟體的冷凍控制器，啟動自動除霜使櫃內升溫，法媒報導受影響門市約 250 至 350 家。入侵途徑尚未證實；Claroty Team82 先前曾揭露該系列控制器存在隱藏登入機制，Danfoss 已釋出韌體修補，建議持有者升級並避免將控制器暴露於網際網路。法國檢方與 ANSSI 已展開調查。", "source": "BleepingComputer", "tags": ["DANFOSS", "CRITICAL-INFRASTRUCTURE", "CYBER", "EUROPE"]},
+   {"severity": "high", "title": "後續｜FortiMail CVE-2026-104286（CVSS 9.8）零時差：已列 KEV，受影響版本與緩解方式", "url": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/", "summary": "未經驗證的攻擊者可利用路徑穿越寫入任意檔案，CISA 已於 10/1 列入 KEV。依 Fortinet 公告 FG-IR-26-175，受影響為 FortiMail 8.0.0–8.0.1、7.6.0–7.6.6、7.4.0–7.4.8、7.2.0–7.2.9；規劃修補版本為 8.0.2、7.6.7、7.4.9，7.2 建議升級至 7.4 以上。各方對修補版是否已釋出說法不一，請以原廠公告為準，期間先依建議停用 IBE 或移除管理介面的公開存取，並做入侵鑑識。", "source": "Fortinet PSIRT（經 Help Net Security 轉述）", "tags": ["FORTINET", "FORTIMAIL", "CISA-KEV", "ZERO-DAY"]},
+   {"severity": "medium", "title": "日本第一興商委外夥伴 Nippon Columbia 遭惡意程式感染：約 872 萬筆資料恐外洩", "url": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/", "summary": "Nippon Columbia 員工電腦於 10/1–10/2 間遭植入惡意程式，第一興商（Big Echo 等品牌）表示可能外洩約 863.1 萬筆客戶與 9.3 萬筆員工資料，含姓名、性別、生日、電子郵件與電話，不含密碼。目前尚未確認資料遭竊，Nippon Columbia 已重設相關憑證並調查範圍；用戶宜留意冒名釣魚郵件與簡訊。", "source": "BleepingComputer", "tags": ["JAPAN", "DATA-BREACH", "SUPPLY-CHAIN", "MALWARE"]},
+   {"severity": "medium", "title": "CISA 將 Zammad 兩個漏洞列入 KEV：CVE-2026-102489 與 CVE-2026-102490", "url": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog", "summary": "CISA 10/2 列入 Zammad 客服系統的 Session 固定（CVE-2026-102489）與權限管理不當（CVE-2026-102490），確認已遭利用。攻擊者可能藉此劫持工作階段或提升權限；受影響版本範圍請對照 Zammad 官方安全公告，並盡速升級至已修補版本。", "source": "CISA", "tags": ["CISA-KEV", "ZAMMAD", "EXPLOITED", "PATCH"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "國慶剛過 解放軍宣布 10/12–17 東海等五海域實彈射擊；國防部偵獲共機 4 架次、共艦 6 艘", "url": "https://www.ettoday.net/news/20261012/3252951.htm", "summary": "中國海事局公告，10/12 至 17 日在東海、黃海、渤海與南海沿海進行實彈射擊與演訓，航港局指部分海域距台灣 159 至 588 浬，暫評估不影響台灣周邊船舶。國防部統計 10/11 至 12 日晨偵獲共機 4 架次、共艦 6 艘、公務船 3 艘，較前一日的 12 架次減少；國防部長顧立雄初步研判為防砲部隊射擊訓練。", "source": "ETtoday", "tags": ["PLA", "TAIWAN-STRAIT", "MND", "CHINA"]},
+   {"severity": "warning", "title": "中國國防部批賴清德國慶演說「以武謀獨」，稱解放軍台島周邊演訓天經地義", "url": "https://udn.com/news/story/7331/9807441", "summary": "中國國防部發言人陳曦 10/11 回應賴清德國慶演說，稱將堅決打擊台獨分裂勢力，並說解放軍在台灣周邊的常態演訓「天經地義」。國台辦同樣批評演說顛倒是非，台灣外交部重申兩岸互不隸屬。賴清德演說強調增加國防投資是為嚇阻戰爭，並非放棄對話。", "source": "聯合報", "tags": ["TAIWAN", "CHINA", "LAI", "NATIONAL-DAY"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "high", "title": "後續｜胡塞攻擊沙烏地利雅德機場至少 20 死，川普稱考慮美軍加入對胡塞作戰", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-saudi-arabia-houthi/", "summary": "一週內胡塞對沙烏地主要機場的攻擊已造成至少 20 人死亡，含一名美國人，週末一次攻擊據沙方統計造成至少 12 死、逾 300 傷；利雅德哈立德國王機場週一仍暫停營運。川普表示「我們可能會」加入，正在評估，尚未做出決定。各方死亡數字仍有出入。", "source": "CBS News", "tags": ["HOUTHIS", "SAUDI-ARABIA", "IRAN", "MIDDLE-EAST"]},
+   {"severity": "warning", "title": "後續｜川普宣布俄烏「能源停火」：澤倫斯基稱未獲俄方同意，俄仍攻擊能源設施", "url": "https://www.aljazeera.com/news/2026/10/11/trump-says-ukraine-russia-agree-to-energy-ceasefire-2", "summary": "川普 10/11 稱俄烏同意即刻互停能源設施攻擊。澤倫斯基表示烏方是從媒體得知，若俄方照做願遵守，但未聽到俄方同意；他說停火宣布後俄軍仍打擊包含哈爾科夫發電廠在內的多處能源設施，烏方則未攻擊俄方能源目標。莫斯科尚未確認接受。", "source": "Al Jazeera", "tags": ["UKRAINE", "RUSSIA", "CEASEFIRE", "ENERGY"]},
+   {"severity": "warning", "title": "後續｜美伊談判僵持：伊朗稱美方回應「不足」，荷姆茲海峽重開仍須滿足七項條件", "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/", "summary": "CBS 報導伊朗認為美方回應不足，結束戰爭的談判陷入停滯；市場報導指德黑蘭重申七項條件未滿足前荷姆茲海峽不會重開，雙方仍透過中間人交換訊息。談判細節以媒體轉述為主，尚待後續確認。", "source": "CBS News", "tags": ["IRAN", "HORMUZ", "US", "DIPLOMACY"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "info", "title": "台股 10/12 收 49,302 點小跌 11 點，成交 8,439 億元；台積電收 2,540 元", "url": "https://finance.ettoday.net/news/3253201", "summary": "加權指數 10/12 盤中高點 49,413、低點 48,769，終場收 49,302 點，跌 0.02%；台積電跌 10 元收 2,540 元。外資同日續賣超，指數開盤後一度下跌約 150 點，其後跌幅收斂。", "source": "ETtoday", "tags": ["TAIEX", "TSMC", "STOCK-MARKET", "TAIWAN"]},
+   {"severity": "warning", "title": "新台幣 10/12 收 31.895 元貶 2 分連 3 貶：外資連 4 賣、累計提款近 1,500 億元", "url": "https://cna.com.tw/news/afe/202610120168.aspx", "summary": "新台幣兌美元 10/12 收 31.895 元，盤中一度貶至 31.982 元逼近 32 元關卡，尾盤央行進場調節使貶幅收斂。外資當日賣超台股約 522 億元，連 4 賣累計匯出近 1,500 億元；美債殖利率高檔與中東緊張支撐美元。", "source": "中央社", "tags": ["TWD", "FOREX", "TAIEX", "FED"]},
+   {"severity": "info", "title": "後續｜布蘭特原油 10/12 在 103–106 美元間震盪：胡塞攻擊沙國與荷姆茲油輪遇襲支撐油價", "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-2-as-Saudi-Attacks-and-Tanker-Strikes-Revive-Hormuz-Fears.html", "summary": "布蘭特盤中一度漲約 2% 至逾 106 美元（近兩週高點），其後報導顯示回落至約 103 美元、WTI 約 90 美元，各來源數字不一，以上為近似值。前一週布蘭特收在約 104.72 美元；美國戰略石油儲備 9 月底降至 2.83 億桶，為 1982 年以來最低。", "source": "OilPrice.com", "tags": ["BRENT", "OIL", "HORMUZ", "ENERGY"]}
+  ]}
+ ]
+}

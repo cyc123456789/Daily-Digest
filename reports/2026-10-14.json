@@ -1,0 +1,169 @@
+{
+ "date": "2026-10-14",
+ "focus": "Ivanti Connect Secure 三個零時差串成鏈遭在野利用，第三個提權漏洞尚未修補；台股同日重挫 960 點、外資賣超破 1,650 億",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Ivanti Connect Secure 零時差 CVE-2026-104935 遭 UTA0576 在野利用：串接三個漏洞取得 root，第三個仍無修補",
+     "url": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
+     "summary": "Volexity 在已完整修補（22.8R2.4）的設備上發現攻擊者自 10/3 起串接認證繞過與 RCE（CVSS 8.6），再以未修補的提權漏洞升至 root，並竊取憑證、查詢 AD、密碼噴灑。Ivanti 已釋出 22.8R2.5、25.1.1.2、25.1.3.0、25.1.3.1 修補前兩個漏洞，提權漏洞預計數週內修補；Ivanti 提醒 Integrity Checker 乾淨不代表未遭入侵，二手報導稱已列入 CISA KEV，影響版本範圍請以 Ivanti 公告為準。",
+     "source": "Volexity（經 The Hacker News 轉述）",
+     "tags": [
+      "IVANTI",
+      "ZERO-DAY",
+      "CISA-KEV",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "SonicWall SMA1000 CVE-2026-102255（CVSS 10.0）預先驗證 SSRF：修補釋出後數日即出現利用嘗試",
+     "url": "https://www.helpnetsecurity.com/2026/10/07/sonicwall-fixes-pre-auth-ssrf-flaw-in-sma-1000-appliances-cve-2026-102255/",
+     "summary": "漏洞位於 SMA 1000（6210、7210、8200v）的 WorkPlace 介面，12.4.3-03526 及更早、12.5.0-02952 及更早受影響；10/6 已釋出 12.4.3-03670 與 12.5.0-03082 以上修補。Previdian 蜜罐自 10/8、10/9 起觀察到針對內部 CouchDB 的利用嘗試，尚未證實成功入侵，SMA 100 系列與防火牆 SSL-VPN 不受影響，建議立即升級。",
+     "source": "SonicWall（經 Help Net Security 轉述）",
+     "tags": [
+      "SONICWALL",
+      "PATCH",
+      "EXPLOITED",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "醫療器材商 iRhythm 資料外洩：州政府通報至少 36 萬人個資遭竊，駭客以不公開資料勒索",
+     "url": "https://securityweek.com/irhythm-data-breach-impacts-over-360000-people",
+     "summary": "iRhythm 表示 6/8 發生第三方系統遭未授權存取，德州 298,647 人、南卡 69,526 人的資料被竊，公司稱臨床系統與醫療器材未受影響。SEC 文件顯示威脅者要求付款以換取不公開資料；另有來源稱規模達 820 萬筆，尚未證實。受影響民眾應留意通知信並提高對詐騙的警覺。",
+     "source": "州政府外洩通報（經 SecurityWeek 轉述）",
+     "tags": [
+      "IRHYTHM",
+      "DATA-BREACH",
+      "HEALTHCARE",
+      "RANSOMWARE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "SAP 10 月修補日：Cloud SDK 漏洞 CVSS 10.0，另有 Visual Composer、S/4HANA 等三個嚴重漏洞",
+     "url": "https://securityonline.info/sap-security-patch-day-october-2026/",
+     "summary": "SAP 10 月修補日共修補四個嚴重漏洞，包括 CVSS 10.0 的 Cloud SDK 漏洞，以及 CVSS 9.9 的 Visual Composer 與 S/4HANA 漏洞。目前未見在野利用報導，使用相關產品的企業應依 SAP 安全公告盡速套用更新；細部版本範圍以 SAP 原廠公告為準。",
+     "source": "SAP（經 SecurityOnline 轉述）",
+     "tags": [
+      "SAP",
+      "PATCH",
+      "CVSS-10",
+      "ERP"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜顧立雄：解放軍五海域實彈射擊初判為沿海防砲部隊訓練，應密切注意並予譴責",
+     "url": "https://news.ltn.com.tw/news/politics/breakingnews/5603070",
+     "summary": "解放軍宣布 10/12–17 在渤海、黃海、東海、南海等五處海域實彈射擊，時點緊接賴清德國慶演說。中國國防部發言人陳曦稱演訓為震懾「台獨」，我方國防部長顧立雄則初判為沿海防砲射擊訓練。國防部 10/14 當日共機共艦數字無法取得，最近一份報導為 10/12–13 晨偵獲共機 4 架次、共艦 6 艘（前日報導數字）。",
+     "source": "自由時報",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "CHINA",
+      "MND"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜東海射擊區距台灣約 159 浬、位於中線以西：航港局評估對台周邊船舶航行無影響",
+     "url": "https://news.ltn.com.tw/news/politics/breakingnews/5603330",
+     "summary": "溫州海事局公告 10/13–15 每日不同時段在甌飛灘以東水域軍訓，航港局指東海與南海射擊位置均在我搜救責任區外、中線以西，評估對周邊船舶尚無影響，並將適時提醒船舶注意繞行。各報導對演訓天數描述有「6 天」與「5 天」之別，以各海事局公告為準。",
+     "source": "自由時報",
+     "tags": [
+      "TAIWAN-STRAIT",
+      "PLA",
+      "CHINA",
+      "SHIPPING"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜胡塞持續攻擊沙烏地，川普稱美國「可能」加入沙國報復行動，胡塞威脅「迅速且痛苦」回應",
+     "url": "https://cnbc.com/2026/10/12/us-iran-war-trump-hormuz-saudi.html",
+     "summary": "沙烏地表示無人機與飛彈仍持續襲擊王國，包括利雅德機場在內的民用設施傷亡慘重。川普稱美國可能參與沙國對胡塞的反擊，伊朗外長則表示願協助促成沙國與葉門對話。衝突外溢將進一步威脅紅海與荷姆茲航運。",
+     "source": "CNBC",
+     "tags": [
+      "HOUTHIS",
+      "SAUDI-ARABIA",
+      "IRAN",
+      "MIDDLE-EAST"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜伊朗稱美方回應「不足」談判停滯，革命衛隊宣稱兩日內擊中三艘超級油輪",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/",
+     "summary": "伊朗最高國安會秘書稱美方對荷姆茲重開提案的最新回應「不足」，外交部則說仍在審視。革命衛隊宣稱兩日內擊中三艘超級油輪，ISW 認為伊朗似乎鎖定海峽附近的船對船轉運。重開海峽的談判仍無實質進展。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "OIL",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川普宣布俄烏「能源停火」：基輔稱須俄方先停手，莫斯科未表態，烏方仍攻擊俄境基礎設施",
+     "url": "https://www.aljazeera.com/amp/news/2026/10/11/trump-says-ukraine-russia-agree-to-energy-ceasefire-2",
+     "summary": "川普 10/11 稱雙方達成能源停火，澤倫斯基說對此「毫不知情」，並重申只有俄方停止攻擊烏克蘭電力設施，烏方才會停止攻擊俄煉油廠。俄方尚未回應，同時烏方無人機攻擊使 Yandex 一座資料中心停擺，停火目前仍只是美方單方說法。",
+     "source": "Al Jazeera",
+     "tags": [
+      "UKRAINE",
+      "RUSSIA",
+      "CEASEFIRE",
+      "ENERGY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股 10/13 收 48,341.31 點重挫 960.65 點（-1.95%）：外資賣超 1,653 億元、史上第三大，台積電收 2,490 元",
+     "url": "https://newtalk.tw/news/view/2026-10-13/1065255",
+     "summary": "加權指數成交約 1 兆 1,250 億元，三大法人合計賣超約 1,984 億元，台積電跌 1.97% 單檔拖累約 392 點。報導指原因為美股科技股回檔與產業競爭疑慮，10 月台指期收 48,400 點。台幣 10/13 收盤與 Yahoo 數據來源皆無法取得，指數數字取自媒體收盤報導。",
+     "source": "新頭殼",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TAIWAN",
+      "STOCKS"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股 10/12 小幅收平：標普約 7,805–7,807 點、那指跌 0.44% 至 27,245.90，布蘭特漲 1.84% 至約 106.65 美元",
+     "url": "https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html",
+     "summary": "科技股與記憶體股走弱，道瓊小漲，市場等待銀行財報與通膨數據；油價受俄烏能源停火不確定與中東緊張支撐。以上為搜尋摘要取得的近似值，各來源標普點位略有出入，10/13 美股收盤資料尚未取得。",
+     "source": "CNBC",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "BRENT",
+      "OIL"
+     ]
+    }
+   ]
+  }
+ ]
+}

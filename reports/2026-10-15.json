@@ -1,0 +1,165 @@
+{
+ "date": "2026-10-15",
+ "focus": "CISA 將 Windows Shell 零時差 CVE-2026-96951（MOTW 繞過）列入 KEV，已遭在野利用，聯邦機構 10/16 前須修補；Ivanti 三連鏈零時差同步入列。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Windows Shell 零時差 CVE-2026-96951 遭在野利用：CISA 列入 KEV，可繞過 Mark of the Web",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "微軟將此漏洞列為 Windows Shell 安全功能繞過（CVSS 8.8），標示已偵測到利用；攻擊者以惡意檔案經郵件或聊天傳送即可躲過 MOTW 警示。10 月累積更新（如 Windows 11 24H2 的 KB5127648）已修補，聯邦機構須於 10/16 前處置；未加入 ESU 的 Windows 10 不會獲得修補。",
+     "source": "CISA",
+     "tags": [
+      "CVE-2026-96951",
+      "CISA-KEV",
+      "MICROSOFT",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Ivanti Connect Secure 三連鏈零時差 CVE-2026-104935 列入 KEV，第三個漏洞仍無修補",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "Volexity 指出攻擊者串接三個零時差在 Connect Secure 取得 root，10/3 起已在完整修補的設備上得手；Ivanti 已釋出其中兩個漏洞的修補，第三個尚待修補。管理員應立即升級受影響版本並依廠商緩解指引處置，同時排查入侵跡象。",
+     "source": "CISA",
+     "tags": [
+      "IVANTI",
+      "CISA-KEV",
+      "ZERO-DAY",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "荷蘭 Ahold Delhaize 遭網路攻擊下線系統：Albert Heijn、Delhaize 網路訂購與 App 中斷",
+     "url": "https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/",
+     "summary": "集團證實發生資安事件並主動下線部分系統，荷蘭與比利時門市仍營業，但網站、App、線上配送受影響，部分貨架價格與折扣可能出錯。目前未公布成因，也不確定是否涉及客戶或員工個資外洩；公司已通報執法單位並委請外部專家調查。",
+     "source": "BleepingComputer",
+     "tags": [
+      "AHOLD-DELHAIZE",
+      "RANSOMWARE",
+      "DATA-BREACH"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "微軟 10 月 Patch Tuesday 修補 1,411 個漏洞：含 1 個遭利用、2 個已公開的零時差",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+     "summary": "本月更新創下數量紀錄，其中遭利用的是 Windows Shell 的 CVE-2026-96951，另有 2 個已公開細節的零時差，並含多個 Outlook 嚴重 RCE（各媒體統計數字略有差異）。建議優先部署 Windows 10/11 與 Server 的 10 月累積更新。",
+     "source": "BleepingComputer",
+     "tags": [
+      "MICROSOFT",
+      "PATCH-TUESDAY",
+      "ZERO-DAY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/13 至 14 晨偵獲共機 9 架次全數逾越中線、共艦 6 艘、公務船 6 艘",
+     "url": "https://news.cts.com.tw/cna/politics/202610/202610143089679.html",
+     "summary": "國防部統計 10/13 上午 6 時至 10/14 上午 6 時，共機 9 架次全數越過海峽中線；14 日上午 9 時 30 分起另偵獲共機 13 架次（11 架次逾中線）配合共艦進行「聯合戰備警巡」。國軍表示已嚴密掌握並依規定應處。",
+     "source": "中央社（經華視轉載）",
+     "tags": [
+      "PLA",
+      "MND",
+      "TAIWAN",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜遼寧艦航艦編隊赴西太平洋訓練，中國五海域實彈射擊 10/12–17 持續",
+     "url": "https://udn.com/news/story/7331/9813235",
+     "summary": "中國海軍 10/14 宣布遼寧艦編隊赴西太平洋訓練，稱屬例行、不針對特定對象；時間點在賴清德國慶演說之後。同時中國海事局公告東海等五海域 10/12 至 17 實彈射擊，最近一處距台約 150 浬，國防部長顧立雄初判為沿海砲兵訓練，航港局評估對台周邊航行尚無影響。",
+     "source": "聯合新聞網",
+     "tags": [
+      "PLA",
+      "LIAONING",
+      "CHINA",
+      "TAIWAN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜胡塞飛彈再射向利雅德遭攔截：先前機場遇襲 14 死，胡塞誓言持續攻擊沙國機場與油設施",
+     "url": "https://www.aljazeera.com/news/2026/10/14/saudi-led-coalition-intercepts-houthi-missile-launched-towards-riyadh",
+     "summary": "沙國領軍聯盟 10/14 表示攔截一枚射向利雅德的彈道飛彈；日前利雅德哈立德國王機場兩度遇襲，造成 14 人死亡、數百人受傷。聯盟已空襲葉門西部與沙那的油設施，埃及呼籲胡塞停止攻擊，川普仍在評估美國是否介入。",
+     "source": "Al Jazeera",
+     "tags": [
+      "HOUTHI",
+      "SAUDI-ARABIA",
+      "MIDDLE-EAST",
+      "IRAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜荷姆茲海峽再有兩船遇襲，伊朗稱採新戰術：美伊談判仍僵持",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-Above-106-as-Iran-Threatens-More-Tanker-Attacks.html",
+     "summary": "10/14 荷姆茲海峽又有兩艘船舶遭攻擊，伊朗官員稱將採取針對過往船隻的新戰術，並被指意在維持高油價、影響美國期中選舉。重開海峽的條件談判尚無突破，航運與能源市場風險持續。",
+     "source": "OilPrice.com",
+     "tags": [
+      "HORMUZ",
+      "IRAN",
+      "OIL",
+      "US-IRAN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "布蘭特原油 10/14 早盤約 106.32 美元：荷姆茲船舶遇襲推升油價，WTI 約 94.80 美元",
+     "url": "https://boereport.com/2026/10/14/oil-prices-climb-as-iran-deploys-new-tactics-to-target-ships-transiting-hormuz",
+     "summary": "路透報導布蘭特期貨 GMT 03:45 漲 0.63 美元至 106.32 美元，WTI 約 94.80 美元；因兩艘船舶在荷姆茲遇襲，加上伊朗宣示新戰術。數字為早盤報價，非收盤（一手資料源受限，採媒體轉載）。",
+     "source": "Reuters（經 BOE Report 轉載）",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "台股 10/14 收 48,625.83 點、漲 284.52 點，成交 9,286 億元；台積電收 2,490 元",
+     "url": "https://www.mirrormedia.mg/external/mnews_20261014nm001",
+     "summary": "加權指數盤中高點 49,059、低點 48,383，反彈前一日 960 點跌幅的一部分；台積電尾盤出現 7,999 張賣單，收平盤 2,490 元且與日低同價。匯率因缺乏可靠 10/14 收盤數據，此處不引用。",
+     "source": "鏡週刊",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股 10/13 大致持平：標普 7,805.45 點，9 月核心 CPI 偏熱、10 年期殖利率約 5.3%",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-13-2026",
+     "summary": "標普 500 收約 7,805（-0.02%），那斯達克約 27,204（-0.15%），晶片股走弱、銀行財報好壞互見。紐約聯銀總裁 Williams 稱今年仍適合再升息一次、2027 年不需要，盤中指數從低點反彈。數字為近似值（媒體彙整，非 Yahoo API）。",
+     "source": "TheStreet",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "FED",
+      "TREASURY-YIELD"
+     ]
+    }
+   ]
+  }
+ ]
+}

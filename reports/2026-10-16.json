@@ -1,0 +1,155 @@
+{
+ "date": "2026-10-16",
+ "focus": "Cisco Secure Email Gateway 零時差 CVE-2026-76519 遭在野利用並列入 KEV；台股 10/15 重挫 3.41%、外資賣超創高",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Cisco Secure Email Gateway 零時差 CVE-2026-76519 遭在野利用：CISA 列入 KEV",
+     "url": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
+     "summary": "Cisco 修補 Secure Email Gateway 的路徑穿越漏洞，成因在 Advanced Malware Protection 功能，惡意郵件附件即可觸發，已有在野攻擊。Cisco 稱已替雲端實例部署緩解措施，並聯繫發現可能遭入侵跡象的設備擁有者；地端用戶請依 PSIRT 公告盡速升級（本次未能取得完整受影響版本清單，請以原廠公告為準）。",
+     "source": "Cisco PSIRT（經 BleepingComputer 轉述）",
+     "tags": [
+      "CISCO",
+      "CVE-2026-76519",
+      "CISA-KEV",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜CISA 10/14 一次新增四項 KEV：PAN-OS、Cisco、AhsayCBS 兩個漏洞",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA 將 Palo Alto PAN-OS 程式碼注入（CVE-2026-0322）、Cisco Secure Email Gateway（CVE-2026-76519）及 Ahsay AhsayCBS 的 CVE-2026-105133、CVE-2026-105134 列入已知遭利用清單。AhsayCBS 先前已有 Webshell 與挖礦程式利用報告；PAN-OS 項目的受影響版本與修補細節請查 Palo Alto 公告（本次未能獨立查證），聯邦機構須依 BOD 26-04 期限處置。",
+     "source": "CISA",
+     "tags": [
+      "CISA-KEV",
+      "PALO-ALTO",
+      "AHSAYCBS",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "勒索軟體週報：全球洩露站公布量週增 33.5%，The Gentlemen 與 Storm 居首",
+     "url": "https://www.ransom-db.com/blog/ransomware-weekly-surge-october-2026-threat-intelligence",
+     "summary": "威脅情資彙整指出本週洩露站累計 271 筆公布，較前一週增 33.5%；The Gentlemen（41 件）、Storm（29 件）、NightSpire（22 件）、Qilin（21 件）占逾 41%。洩露站名單屬攻擊者宣稱、未必經受害者證實，建議優先檢查對外 VPN、郵件閘道與遠端管理介面的修補狀態並備援離線備份。",
+     "source": "Ransom-DB",
+     "tags": [
+      "RANSOMWARE",
+      "THE-GENTLEMEN",
+      "QILIN",
+      "DATA-BREACH"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "醫療機構遭勒索軟體攻擊：Bell Ambulance、Alabama Ophthalmology 逾 24.5 萬名病患資料受影響",
+     "url": "https://www.forthepeople.com/blog/data-breach-brief-week-october-7th-2026/",
+     "summary": "律所彙整的資料外洩週報列出 Bell Ambulance 與 Alabama Ophthalmology Associates 遭勒索軟體攻擊，合計逾 24.5 萬名病患個資遭波及。屬受害機構通報案例，非單一產品漏洞；受影響民眾應留意機構通知並監控信用與醫療保險帳戶。",
+     "source": "ForThePeople（律所週報）",
+     "tags": [
+      "HEALTHCARE",
+      "RANSOMWARE",
+      "DATA-BREACH"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/15 偵獲共機 15 架次（13 架次逾越中線）、共艦 10 艘、公務船 7 艘",
+     "url": "https://www.cna.com.tw/news/aipl/202610150041.aspx",
+     "summary": "國防部通報自 10/14 上午 6 時至 10/15 上午 6 時，共 32 機艦船在台海周邊活動，另有 3 架次輔戰機於西南空域活動、1 架無人機於北部空域被偵獲。解放軍同時持續 10/12–17 東海等五海域實彈射擊，兩岸軍事壓力維持高檔。",
+     "source": "中央社",
+     "tags": [
+      "PLA",
+      "TAIWAN-STRAIT",
+      "MND",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部證實遼寧號航艦編隊進入西太平洋，批中共擴大認知作戰破壞穩定",
+     "url": "https://ftnn.com.tw/news/587549",
+     "summary": "國防部於例行記者會證實遼寧號編隊已進入西太平洋活動，國軍將全程掌握，並指中共藉此擴大認知作戰。此事疊加東海實彈射擊與每日逾中線的共機活動，後續須關注是否擴大為對台聯合演訓。",
+     "source": "未來新聞網（FTNN）",
+     "tags": [
+      "LIAONING",
+      "PLA",
+      "CHINA",
+      "TAIWAN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜荷姆茲海峽船舶仍遭攻擊：川普稱期中選舉前暫緩對伊動武，美方考慮放寬影子船隊制裁",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-houthi-saudi-arabia-trump/",
+     "summary": "海事監測機構警告海峽船舶仍面臨無差別攻擊，一週內確認三起；一艘新加坡籍貨櫃輪遭投射物擊中沉沒。美國中央司令部稱美軍與夥伴「明確掌控」海峽，伊朗革命衛隊否認；路透報導華府正考慮放寬對伊朗影子船隊油輪的制裁以降低運費。川普 10/15 稱除掉伊朗領導人使和平更難，戰事結束時程仍無定論。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-IRAN",
+      "SHIPPING"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜沙烏地聯軍空襲葉門油設施，胡塞威脅若美國介入將「迅速且痛苦」回應",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-saudi-arabia-houthi/",
+     "summary": "沙烏地領導的聯軍襲擊包括沙那在內的葉門西部油設施，回應胡塞先前對利雅德機場與沙國能源設施的攻擊。川普表示美國可能加入沙國行動，胡塞則警告將攻擊美方；能源供應與航運風險同步升高。",
+     "source": "CBS News",
+     "tags": [
+      "HOUTHI",
+      "SAUDI-ARABIA",
+      "MIDDLE-EAST",
+      "ENERGY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股 10/15 收 46,969.87 點重挫 1,655.96 點（-3.41%）：外資賣超創紀錄、台積電收 2,440 元",
+     "url": "https://finance.ettoday.net/news/3255128",
+     "summary": "加權指數跌破 4 萬 7，成交約 1.32 兆元，為史上第六大單日跌點，主因美國 9 月 CPI 超預期與美股晶片股重挫；報導指外資單日賣超約 3,025 億元創高，台積電下跌 50 元。新台幣貶 1.92 角收 32.265 元，盤中一度貶破 32.4。以上數字取自盤後媒體報導（一手報價源連線失敗）。",
+     "source": "ETtoday",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TWD",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美股 10/14 科技股領跌：CPI 年增 3.7% 超預期，那指跌 2.03%、標普跌 1.1%",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026",
+     "summary": "美國 9 月 CPI 月增 0.6%、年增 3.7%，核心 CPI 年增 2.6%，均高於預期，TheStreet 歸因於伊朗戰爭推升物價。標普 500 約收 7,716–7,719 點（-1.1%），那斯達克跌 2.03%，道瓊小跌 0.16%；各媒體收盤數字略有出入，屬近似值，布蘭特油價 10/15 收盤價未能取得故不列。",
+     "source": "TheStreet",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "FED",
+      "STOCKS"
+     ]
+    }
+   ]
+  }
+ ]
+}

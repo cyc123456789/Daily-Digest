@@ -1,0 +1,169 @@
+{
+ "date": "2026-10-17",
+ "focus": "中國關聯駭客 Armory Castle 自 8 月起利用 BeyondTrust Remote Support 零時差 CVE-2026-102764，CISA 列入 KEV；同日荷姆茲攻擊升級、油價重回 100 美元上方。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "BeyondTrust Remote Support 零時差 CVE-2026-102764 遭中國關聯駭客利用，CISA 列入 KEV",
+     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+     "summary": "中國關聯組織 Armory Castle（UNC5221）自 8 月 29 日起利用此漏洞入侵遠端支援伺服器。受影響為 Remote Support 26.2.3 及更早版本；BeyondTrust 於 10 月 8 日釋出修補 BT26-05-RS（24.3.1–26.2.3 可直接套用，更舊版須先升級），SaaS 已由原廠處理。CISA 要求聯邦機構 10/19 前完成，已暴露網際網路的設備應視為可能遭入侵，修補後仍須排查並輪換憑證。",
+     "source": "BeyondTrust（經 The Hacker News 轉述）",
+     "tags": [
+      "CVE-2026-102764",
+      "BEYONDTRUST",
+      "CISA-KEV",
+      "CHINA"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜PAN-OS 管理介面零時差 CVE-2026-0322 遭利用：已列 KEV，各分支修補版本出爐",
+     "url": "https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/",
+     "summary": "此程式碼注入漏洞（CVSS 4.0 為 8.6）讓已取得網路存取的認證攻擊者以 root 執行程式碼，影響 PA-Series、VM-Series 與 Panorama，Cloud NGFW 與 Prisma Access 不受影響。修補包含 12.2.4、12.1.4-h12、11.1.x 與 10.2.x 的各 hotfix；11.2 分支各來源說法不一，請以原廠公告為準。無替代緩解，暫時應限縮管理介面存取；CISA 要求 10/17 前完成修補與鑑識。",
+     "source": "Palo Alto Networks（經 Help Net Security 轉述）",
+     "tags": [
+      "CVE-2026-0322",
+      "PALO-ALTO",
+      "CISA-KEV",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Citrix NetScaler 零時差 CVE-2026-88779 遭鎖定式攻擊利用，可使 SAML 部署離線",
+     "url": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
+     "summary": "此記憶體溢位漏洞（CVSS 8.7）已被用於鎖定式攻擊，並列入 CISA KEV，聯邦機構期限為 10/7。使用 NetScaler 作為 SAML 驗證的組織應確認原廠修補版本並盡速升級，同時檢視驗證服務是否出現異常中斷。",
+     "source": "Citrix（經 The Hacker News 轉述）",
+     "tags": [
+      "CVE-2026-88779",
+      "CITRIX",
+      "CISA-KEV",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Atlassian Data Center CVE-2026-21589（CVSS 9.3）列入 CISA KEV，確認遭在野利用",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "summary": "KEV 目錄顯示此漏洞 10/15 新增、聯邦期限 10/18，代表先前的利用嘗試已獲確認。受影響為 Atlassian Data Center 多項產品，請依原廠公告升級至修補版本，並檢查對外暴露的實例。",
+     "source": "CISA",
+     "tags": [
+      "CVE-2026-21589",
+      "ATLASSIAN",
+      "CISA-KEV",
+      "EXPLOITED"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜遼寧號進入西太平洋：國防部 10/15 偵獲共機 15 架次（13 架次逾中線）、共艦 10 艘、公務船 7 艘",
+     "url": "https://udn.com/news/story/10930/9816448",
+     "summary": "國防部證實遼寧號航艦編隊進入西太平洋，國軍全程掌握，並批評中共擴大認知作戰、破壞區域穩定；中國國防部稱為例行訓練。24 小時內共 32 架艘次機艦船在台海周邊活動，與 10/12–17 的東海實彈射擊同步進行。",
+     "source": "聯合新聞網（引述國防部）",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "LIAONING",
+      "MND"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：10/14 共機 13 架次出海、11 架次逾中線，假「聯合戰備警巡」配合共艦",
+     "url": "https://www.cna.com.tw/news/aipl/202610140148.aspx",
+     "summary": "國防部表示國軍以聯合情監偵掌握，並派出任務機、艦及岸置飛彈系統應處。此為國慶後連日共機逾越中線的延續，可與 10/15 的 13 架次逾線合併觀察活動升溫趨勢。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "TAIWAN-STRAIT",
+      "MND"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜伊朗升級荷姆茲油輪攻擊，美國 WTI 重回 100 美元上方；烏克蘭誓言持續打擊俄煉油廠",
+     "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+     "summary": "CNBC 引述 Kpler 資料，經荷姆茲的原油出口當週為每日 940 萬桶，約為戰前的七成。同時烏克蘭在約四天的能源停火後恢復攻擊俄方煉油廠，能源基礎設施衝突再度升高。",
+     "source": "CNBC",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "UKRAINE",
+      "OIL"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜沙烏地聯軍空襲葉門胡塞油設施，利雅德再遇飛彈攻擊，阿美公司辦公樓受損",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east",
+     "summary": "半島電視台報導，沙烏地聯軍打擊胡塞在薩那、荷台達與達馬爾的燃料設施，胡塞宣稱攻擊利雅德。伊朗否認鼓勵胡塞攻擊，並稱利雅德尚未回應葉門調停提議；紅海與中東能源設施風險持續。",
+     "source": "Al Jazeera",
+     "tags": [
+      "HOUTHIS",
+      "SAUDI-ARABIA",
+      "IRAN",
+      "MIDDLE-EAST"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股 10/16 收 47,111.26 點、反彈 141.39 點，週線仍重挫 2,202 點；新台幣收 32.338 元貶至近 2.5 個月低點",
+     "url": "https://www.capitalfutures.com.tw/zh-tw/financial/breakingnewsarticle?contentid=c26101600603",
+     "summary": "成交 9,359.59 億元；台積電法說上修今年美元營收成長目標至逾 44%，股價仍收 2,420 元、跌 20 元。外資賣超 461.47 億元，連 8 日站賣方，新台幣週貶 4.63 角。市場數字取自財經媒體彙整，非原始行情源。",
+     "source": "富邦期貨／自由財經",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TWD",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "油價：布蘭特約 105–110 美元、WTI 上看 101 美元，荷姆茲攻擊與供應緊張支撐",
+     "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+     "summary": "CNBC 報導 WTI 收約 101.41 美元、布蘭特約 109.87 美元，但其他來源盤中數字約 105–106 美元，因時點與合約不同而有落差，此處為近似值。美國汽油均價 6.33 美元/加侖，較去年同期高逾 70%。",
+     "source": "CNBC",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美股 10/15：道瓊 52,177.69 點漲 1.08%，科技股盤中重挫後收斂，10 年期殖利率降至約 5.09%",
+     "url": "https://www.cnbc.com/2026/10/15/stock-market-today-live-updates.html",
+     "summary": "標普 500 約 7,744 點、那斯達克約 26,713 點（各來源略有差異，屬近似值）；資金自 AI 概念股輪動至藍籌股，儘管 PPI 偏熱，殖利率仍回落。10/16 美股受科技股續弱影響漲跌互見。",
+     "source": "CNBC／HDFC Sky",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "TREASURY-YIELD",
+      "STOCK-MARKET"
+     ]
+    }
+   ]
+  }
+ ]
+}

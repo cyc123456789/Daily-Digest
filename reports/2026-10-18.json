@@ -1,0 +1,193 @@
+{
+ "date": "2026-10-18",
+ "focus": "川普豁免對俄新制裁與關稅、布蘭特收 109.86 美元，美股科技股重挫，油價與通膨壓力升高。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "high",
+     "title": "Burger King Japan 會員資料外洩：約 1,118 萬筆 App 會員紀錄遭第三方存取",
+     "url": "https://www.nippon.com/en/news/yjj2026100900441/",
+     "summary": "營運商表示 10/2 至 10/7 間官方 App 會員系統遭未授權存取，外洩含姓名、電話、電子郵件與居住地，不含信用卡與密碼。目前未確認二次濫用，建議用戶提防冒名釣魚簡訊與郵件；公司正與外部機構調查，尚無修補細節。",
+     "source": "nippon.com（共同社／時事通信）",
+     "tags": [
+      "DATA-BREACH",
+      "JAPAN",
+      "PHISHING"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "ShinyHunters 入侵 Clop 洩密網站：Grav CMS 路徑穿越漏洞 CVE-2026-42608",
+     "url": "https://bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw",
+     "summary": "報導稱 ShinyHunters 利用未驗證的路徑穿越漏洞入侵並竄改 Clop 洩密站，聲稱竊得原始碼與 onion 服務私鑰（未獨立證實）。漏洞已於 Grav 2.0 修補，但未回補 1.7 分支，仍用 1.7 的站台須升級或下線。",
+     "source": "BleepingComputer",
+     "tags": [
+      "RANSOMWARE",
+      "CLOP",
+      "SHINYHUNTERS",
+      "CVE-2026-42608"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜Operation KillSwitch：KillSec 勒索集團洩密站遭查封、3 人被捕",
+     "url": "https://therecord.media/killsec-ransomware-raas-arrests-europe",
+     "summary": "德國主導、Europol 與 Eurojust 協調，9/30 查封洩密站與伺服器，扣押至少 110TB 資料，調查指該組織與約 1,000 起攻擊有關，並指一名 16 歲者為疑似主要營運者。調查仍在進行，更多逮捕可能跟進；過往受害組織可留意執法機關通知。",
+     "source": "The Record",
+     "tags": [
+      "RANSOMWARE",
+      "KILLSEC",
+      "EUROPOL"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Veradigm 病患資料外洩：廠商憑證遭竊，Gentlemen 勒索集團宣稱取得逾 350 萬筆",
+     "url": "https://bleepingcomputer.com/news/security/veradigm-discloses-patient-data-breach-after-gentlemen-gang-claims-attack",
+     "summary": "Veradigm 表示攻擊者利用第三方廠商遭竊憑證存取客服 API，部分病患姓名與社會安全號碼外洩，臨床資料未受影響。Gentlemen 聲稱竊得逾 350 萬筆，公司未證實此數字；建議醫療客戶輪替第三方憑證並限縮 API 權限。",
+     "source": "BleepingComputer",
+     "tags": [
+      "DATA-BREACH",
+      "HEALTHCARE",
+      "RANSOMWARE",
+      "CREDENTIAL-THEFT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/16 至 17 晨偵獲共機 9 架次、共艦 6 艘、公務船 8 艘，5 架次逾越中線",
+     "url": "https://news.cts.com.tw/cna/politics/202610/202610173090801.html",
+     "summary": "統計期間為 10/16 上午 6 時至 10/17 上午 6 時，共機 5 架次逾越中線進入北部、中部與西南空域。國軍以任務機、艦及岸置飛彈系統監控；共機架次較前一日（15 架次）下降。",
+     "source": "中央社（華視新聞網轉載）",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部關注解放軍可能大規模演習：今年尚未出現環台軍演",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/16/2003866057",
+     "summary": "國防部 10/16 表示持續留意可能的大規模演習；2023 年起每年至少有一次環台式演習，今年尚未發生。國慶演說後的五海域實彈射擊被評估為在遠離台灣海域進行，仍須持續觀察後續動向。",
+     "source": "Taipei Times",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "CHINA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "後續｜遼寧艦編隊經西太平洋轉向南海：位置在台灣南端與巴士海峽以東",
+     "url": "https://news.usni.org/2026/10/14/chinese-carrier-strike-group-drills-in-the-philippine-sea",
+     "summary": "日本統合幕僚監部在菲律賓海發現遼寧艦編隊，隨後轉向南海。中方稱為年度例行訓練；國防部表示協調監控，未提供更多動態細節。",
+     "source": "USNI News",
+     "tags": [
+      "LIAONING",
+      "PLA",
+      "TAIWAN",
+      "CHINA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "川普豁免對俄新制裁與關稅：援引國家利益，既有 OFAC 制裁仍有效",
+     "url": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
+     "summary": "川普 10/16 依新法豁免對俄的懲罰性關稅與購買俄能源的懲處（含針對中國、印度等買家的最高 100% 關稅）。彭博報導此舉與壓低期中選舉前柴油價格有關；既有行政命令制裁未解除，民主黨批評、俄方讚賞。",
+     "source": "CNBC",
+     "tags": [
+      "RUSSIA",
+      "UKRAINE",
+      "SANCTIONS",
+      "US"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "沙烏地官員稱伊朗鼓勵胡塞升級攻擊；伊朗否認並提議調解",
+     "url": "https://www.pbs.org/newshour/world/saudi-diplomat-says-iran-is-encouraging-houthi-escalation-of-attacks-on-the-kingdom",
+     "summary": "沙國外交部官員指伊朗未準備讓步並鼓勵胡塞攻擊，利雅德稱透過阿曼與胡塞保持直接管道、不尋求伊朗調解。伊朗外長否認涉入，表示支持政治進程；美伊談判仍停滯，卡達轉交伊方七天重開荷姆茲計畫。",
+     "source": "PBS NewsHour",
+     "tags": [
+      "SAUDI-ARABIA",
+      "HOUTHIS",
+      "IRAN",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜荷姆茲海峽遇襲船舶創紀錄：10/11 起至少 9 艘船遭攻擊",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-2-as-Iran-Steps-Up-Attacks-on-Hormuz-Tankers.html",
+     "summary": "報導指 10/11 起至少 9 艘油輪與貨輪在海峽周邊遭攻擊，油價隨之上揚。美國稱期中選舉前暫緩動武，美伊談判僵持，航運風險持續累積。",
+     "source": "OilPrice.com",
+     "tags": [
+      "HORMUZ",
+      "IRAN",
+      "SHIPPING",
+      "OIL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "油價：布蘭特 10/16 收 109.86 美元、單日漲 3.7%，WTI 收 101.41 美元",
+     "url": "https://247wallst.com/investing/2026/10/17/oil-topped-110-as-tech-stocks-lost-1-trillion-in-a-day/",
+     "summary": "布蘭特盤中觸及 110 美元，為 5 月以來首見，單週漲約 4.9%。推升因素包括荷姆茲船舶遇襲、胡塞攻擊沙國及俄烏能源停火破局（價格為媒體報導，非一手行情源）。",
+     "source": "24/7 Wall St.",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美股 10/16 科技股重挫：那斯達克跌 2.1%、標普跌 1%、道瓊跌 0.4%",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-112939401.html",
+     "summary": "那指單週跌 4.5%，結束連漲一個月的走勢，科技股單日市值蒸發約 1 兆美元。市場同時面對油價逼近 110 美元與 9 月 CPI 年增 3.7% 的通膨壓力（漲跌幅為媒體報導之近似值）。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "NASDAQ",
+      "SP500",
+      "STOCK-MARKET",
+      "FED"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "台股 10/16 收 47,111.26 點反彈 141 點：外資連 8 日賣超，台積電收 2,420 元",
+     "url": "https://www.capitalfutures.com.tw/zh-tw/financial/breakingnewsarticle?contentid=c26101600603",
+     "summary": "成交量約 9,360 億元；外資賣超 461.47 億元，連 8 個交易日累計約 6,817 億元，投信買超 117.54 億元。新台幣約 32.3 元，為搜尋近似值。",
+     "source": "群益期貨",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TWD",
+      "TAIWAN"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "date": "2026-10-19",
+ "focus": "Cisco SD-WAN CVE-2026-76504 在野利用且無緩解；美日利劍軍演今登場、共軍四海域同步演訓",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Cisco Catalyst SD-WAN Manager CVE-2026-76504（CVSS 9.8）認證繞過遭在野利用：已列 KEV、無緩解措施",
+     "url": "https://rapid7.com/blog/post/etr-critical-cisco-catalyst-sd-wan-manager-api-authentication-bypass-exploited-in-the-wild-cve-2026-76504",
+     "summary": "未經驗證的遠端攻擊者可用特製 URL 編碼請求繞過 API 驗證並取得管理員權限，CISA 已於 9/30 列入 KEV。Cisco 表示所有部署皆受影響、沒有替代緩解，須升級至 20.9、20.12、20.15、20.18、26.1、26.2 各分支修補版；20.9 以前版本需先遷移。可在 nms service-proxy 與 server 日誌搜尋 /%6a_security_check 字串輔助排查。",
+     "source": "Cisco PSIRT（經 Rapid7 轉述）",
+     "tags": [
+      "CISCO",
+      "CISA-KEV",
+      "CVE-2026-76504",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜BeyondTrust Remote Support CVE-2026-102764：Google 稱 8/29 起遭 ARMORY CASTLE 當零時差利用，警告恐擴大",
+     "url": "https://www.csoonline.com/article/4236421/beyondtrust-zero-day-tied-to-chinese-spies-puts-remote-support-users-on-alert.html",
+     "summary": "受影響為 Remote Support 26.2.3（含）以前版本，CVSS 4.0 為 9.3，BeyondTrust 已於 10/8 釋出 BT26-05 修補、10/15 公開。自架環境須到 /appliance 介面確認已套用補丁，24.3.1 以前版本須先升級；SaaS 已自動修復。Mandiant 指攻擊者提權至 root、植入客製惡意程式並竊取憑證，公開後可能出現大規模利用。",
+     "source": "BeyondTrust／Google GTIG（經 CSO Online 轉述）",
+     "tags": [
+      "BEYONDTRUST",
+      "CVE-2026-102764",
+      "CHINA",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "日本 IDC Frontier 雲端遭勒索軟體攻擊：495 家企業與地方政府受影響，部分資料恐無法復原",
+     "url": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
+     "summary": "軟銀旗下 IDC Frontier 表示 10/7 凌晨起 IDCF Cloud 東日本區域 1 遭攻擊，已隔離關閉受影響系統，並停用全區域客戶管理主控台。四個區域的客戶資料可能難以復原，客戶被建議以自有備份還原；駭客聲稱加密 225 個資料庫，但數字未經證實，是否外洩仍在調查。",
+     "source": "BleepingComputer",
+     "tags": [
+      "RANSOMWARE",
+      "JAPAN",
+      "CLOUD",
+      "DATA-BREACH"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CenterPoint Energy 資料外洩：向德州通報逾 106 萬居民個資遭竊，含社安號碼與駕照號碼",
+     "url": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/",
+     "summary": "駭客 9/12 在論壇宣稱取得約 749 萬筆客戶紀錄，CenterPoint 向德州檢察長辦公室通報 1,062,060 人受影響，外洩資料含姓名、地址、社安號碼與駕照號碼；公司稱營運未受影響。尚未寄出通知信，印第安納、明尼蘇達與俄亥俄州客戶是否受影響不明，德州客戶宜留意通知並考慮凍結信用。",
+     "source": "SecurityWeek",
+     "tags": [
+      "DATA-BREACH",
+      "CENTERPOINT-ENERGY",
+      "CRITICAL-INFRASTRUCTURE",
+      "US"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "美日「利劍」大規模聯合軍演 19 日登場：共軍南部戰區四艘 071 登陸艦罕見齊射、四海域同步演訓",
+     "url": "https://cna.com.tw/news/acn/202610180150.aspx",
+     "summary": "中央社報導，美日聯合軍演前夕，解放軍在多個海域同時演訓，南部戰區四艘 071 型登陸艦進行實彈齊射。此前解放軍已宣布 10/12–17 在五海域實彈射擊，遼寧艦編隊也在西太平洋訓練，國防部則關注今年尚未出現環台大規模軍演。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "JAPAN",
+      "US"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "國防部：10/17 至 18 晨偵獲共艦 5 艘、公務船 9 艘，2 架次共機逾越中線",
+     "url": "https://www.cna.com.tw/news/aipl/202610180018.aspx",
+     "summary": "依中央社轉載國防部資料，統計 17 日上午 6 時至 18 日上午 6 時，偵獲共艦 5 艘、公務船 9 艘及共機 2 架次逾越海峽中線，進入北部與中部空域；Newtalk 指該 2 架次為直升機。各媒體數字略有出入，國軍以任務機艦及岸置飛彈系統監控。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜伊朗稱重開荷姆茲海峽的七日方案條件仍有效：美伊談判停滯，川普傳因期中選舉暫緩動武",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-yemen-houthis-saudi-arabia/",
+     "summary": "伊朗外長稱仍在審視美方對九月七日停火方案的意見，條件不變：第六天重開海峽、第七天恢復談判；美方堅持核問題須一開始就列入議程，伊朗官員稱美方回應「不足」。沙烏地指控伊朗鼓勵胡塞攻擊、伊朗否認並提議調解，埃及表態支持沙國。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-IRAN",
+      "HOUTHIS"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "中國國防部誓言「有效措施」遏阻南海「破壞行為」，點名菲律賓國防部長 Teodoro",
+     "url": "https://english.news.cn/20261016/d1806f7905354cd4b50d0e8092c03e9a/c.html",
+     "summary": "新華社報導，中國國防部 10/16 針對菲律賓在黃岩島與仁愛礁的行動表態，批評菲國防部長 Teodoro，並稱將採取果斷有效措施。此為中方官媒說法；先前菲方也曾抗議中國大使言論是「變相武力威脅」，雙方海上摩擦持續。",
+     "source": "新華社（中國官媒）",
+     "tags": [
+      "CHINA",
+      "PHILIPPINES",
+      "SOUTH-CHINA-SEA",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "後續｜荷姆茲原油過境量 7 日均約 1,162 萬桶、僅戰前 68%：原油週線走高、美國庫存大減",
+     "url": "https://hdfcsky.com/news/brent-holds-above-105-as-hormuz-attacks-cut-gulf-flows-68percent-wti-jumps-5-81percent-on-record-us-inventory-draw",
+     "summary": "Kpler 資料顯示 10/13 的 7 日均過境量降至每日 1,162 萬桶；布蘭特 12 月合約週五約 105.92 美元，CNBC 則報價近月 10/16 收 109.86 美元，兩者合約月份不同。以上為搜尋取得的近似數字，供應緊張與荷姆茲攻擊持續支撐油價。",
+     "source": "HDFC Sky（引述 Kpler）",
+     "tags": [
+      "OIL",
+      "BRENT",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美股上週五科技股重挫收 26,140：那指週跌 4.5%、標普週跌 1.95%，終結月來連漲",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-112939401.html",
+     "summary": "10/16 那斯達克跌 2.14% 收 26,140.03，標普跌 1.09%、道瓊跌 0.34%；油價攀升與通膨偏熱加重科技股賣壓。本日台股開盤將承接此壓力，上週台股週線已重挫 2,202 點。數字為搜尋取得的近似值。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "NASDAQ",
+      "SP500",
+      "STOCK-MARKET",
+      "TAIEX"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "本週展望：市場押注聯準會年底前升息，美元指數約 101.65、美日元約 158、金價 4,100–4,200 美元",
+     "url": "https://www.dailyforex.com/forex-technical-analysis/2026/10/weerkly-pairs-in-focus-19th-to-23rd-october-2026/250813",
+     "summary": "各來源報導略有出入：10 月升息機率降至約 24%，12 月仍約 86%；10 年期殖利率約 5.08–5.22%。聯準會處於會前緘默期，本週美國數據稀少，油價與殖利率將主導美元與金價。數字為多來源近似值，僅供參考。",
+     "source": "DailyForex",
+     "tags": [
+      "FED",
+      "TREASURY-YIELD",
+      "FOREX",
+      "GOLD"
+     ]
+    }
+   ]
+  }
+ ]
+}

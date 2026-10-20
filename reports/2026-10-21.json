@@ -1,0 +1,193 @@
+{
+ "date": "2026-10-21",
+ "focus": "Plex Media Server 四漏洞鏈在 PoC 公開隔日遭利用；國防部 10/20 偵獲共機 27 架次、21 架次逾中線；台股收跌 529 點。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Plex2Shell：Plex Media Server 四漏洞鏈在 PoC 公開隔日遭在野利用，植入挖礦程式與 Linux 代理後門",
+     "url": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+     "summary": "攻擊者將四個 Plex Media Server 漏洞串接成免認證遠端程式碼執行，並已觀察到挖礦程式與 Linux 反向代理後門。對外開放的 Plex 伺服器請立即更新至最新版並避免直接暴露於網際網路；實際受影響版本範圍請以 Plex 公告為準。",
+     "source": "The Hacker News",
+     "tags": [
+      "PLEX",
+      "RCE",
+      "EXPLOITED",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "ETS 資料外洩波及加州數百萬學生：憑證遭盜用導致學業與個資外洩",
+     "url": "https://thecyberwire.com/newsletters/daily-briefing/15/200",
+     "summary": "加州教育廳通報，測驗機構 ETS（承包商）因登入憑證遭盜用發生外洩，影響數百萬名學生的個人與學業資料。受影響者應留意釣魚詐騙；機構端應強制 MFA 並輪替憑證。確切人數待官方揭露。",
+     "source": "CyberWire Daily Briefing",
+     "tags": [
+      "DATA-BREACH",
+      "CREDENTIAL-THEFT",
+      "ETS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Siemens Software Center DLL 側載漏洞 CVE-2026-110936 遭 ClickFix 攻擊利用以投放遠端存取木馬",
+     "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+     "summary": "攻擊者結合 ClickFix 社交工程與 Siemens Software Center 的 DLL 側載漏洞散布遠端存取木馬。Siemens 已在 4.0.9.8 版修補，使用者應盡速升級並教育員工勿執行來路不明的貼上指令。",
+     "source": "Siemens（經 The Hacker News 轉述）",
+     "tags": [
+      "SIEMENS",
+      "CVE-2026-110936",
+      "CLICKFIX",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Bricksforge WordPress 外掛 CVE-2026-85097（CVSS 10.0）遭利用：免認證上傳並執行 PHP",
+     "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+     "summary": "未經認證的攻擊者可上傳並執行任意 PHP 程式碼，已有在野利用報告。外掛 3.1.8.10 版已修補，使用 Bricksforge 的網站請立即更新並檢查是否有異常 PHP 檔案。",
+     "source": "The Hacker News",
+     "tags": [
+      "WORDPRESS",
+      "CVE-2026-85097",
+      "CVSS-10",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Broadcom Wi-Fi WPS 未修補漏洞：範圍內攻擊者可在路由器取得 root 執行權限",
+     "url": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
+     "summary": "研究人員揭露 Broadcom Wi-Fi 晶片 WPS 處理缺陷，鄰近攻擊者可在路由器上以 root 執行程式碼。目前尚無 CVE 與修補，亦無在野利用證據；建議關閉路由器 WPS 功能作為緩解。",
+     "source": "The Hacker News",
+     "tags": [
+      "BROADCOM",
+      "WI-FI",
+      "ROUTER",
+      "RCE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/20 上午起偵獲共機 27 架次、21 架次逾越中線，配合共艦「聯合戰備警巡」",
+     "url": "https://news.tvbs.com.tw/politics/4038826",
+     "summary": "國防部指出共機含殲-10、殲-16、轟-6、空警-500 等，自上午 10 時 43 分起出海，21 架次逾越中線及延伸線。另據媒體引述，10/19 6 時至 10/20 6 時共偵獲共機 14 架次（8 架次逾中線）、共艦 7 艘、公務船 7 艘；各媒體統計時段略有差異。",
+     "source": "國防部（經 TVBS 轉述）",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜轟-6、空警-500 遠距飛行：近一個月第五次聯合戰備警巡，遼寧艦同在台灣以東演訓",
+     "url": "https://tw.news.yahoo.com/%E8%A7%A3%E6%94%BE%E8%BB%8D%E8%BD%9F-6-%E7%A9%BA%E8%AD%A6-500%E7%AD%8927%E6%9E%B6%E6%AC%A1%E5%87%BA%E6%B5%B7-21%E6%9E%B6%E9%80%BE%E4%B8%AD%E7%B7%9A-071940013.html",
+     "summary": "解放軍轟炸機與預警機參與長程飛行，與在台灣以東、宮古島以南西太平洋活動的遼寧號航艦編組呼應。國防部表示以聯合情監偵全程監控；警巡頻率升高，需持續觀察是否演變為大規模演習。",
+     "source": "Yahoo 新聞",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "LIAONING",
+      "MND"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜伊朗稱兩艘超級油輪觸雷、擊落美軍 MQ-9：荷姆茲海峽攻擊累計四艘",
+     "url": "https://www.hngn.com/articles/273540/20261020/iran-says-two-supertankers-hit-mines-hormuz.htm",
+     "summary": "革命衛隊稱美方認可的南向航道有兩艘油輪觸雷，並擊落一架 MQ-9，累計稱擊中四艘；船名未獲證實。美軍中央司令部稱多數攻擊失敗，伊朗七日重開海峽方案仍在桌上，均為單方說法。",
+     "source": "HNGN",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-IRAN",
+      "SHIPPING"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜胡塞宣稱攻擊利雅德、阿卜哈機場與阿美設施：沙國攔截飛彈，英國擬派 RAF 戰機協防",
+     "url": "https://www.cnbc.com/2026/10/18/oil-price-today-ukraine-russia-iran-strait-hormuz.html",
+     "summary": "CNBC 無法證實胡塞對機場與阿美設施的戰果宣稱，沙方未公開證實，僅稱攔截一枚射向利雅德的彈道飛彈。沙國指伊朗操控胡塞，伊朗否認；布蘭特油價因此站上 109 美元。",
+     "source": "CNBC",
+     "tags": [
+      "HOUTHI",
+      "SAUDI-ARABIA",
+      "IRAN",
+      "BRENT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜拉夫羅夫訪德黑蘭談避免重回大規模戰爭；烏軍無人機襲聖彼得堡油庫",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-yemen-houthis-saudi-arabia/",
+     "summary": "俄羅斯外長赴伊朗會談，目標是阻止美伊重啟全面戰事；川普先前警告俄伊可能聯手。同時烏克蘭無人機擊中聖彼得堡油料碼頭與油庫，俄方稱擊落數十架並造成機場航班中斷。",
+     "source": "CBS News",
+     "tags": [
+      "RUSSIA",
+      "IRAN",
+      "UKRAINE",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股 10/20 收 46,293 點、大跌 529 點（-1.13%）：成交 7,586.84 億元，台積電收 2,405 元",
+     "url": "https://finance.ettoday.net/news/3257846",
+     "summary": "加權指數開低走低，台積電下跌 15 元。外資連日賣超為主要壓力，央行前一日罕見盤中喊話；指數逼近季線。",
+     "source": "ETtoday 財經",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "STOCK-MARKET",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "新台幣 10/20 收 32.617 元、貶值 1.72 角：寫近一年半新低，市場預期測 32.8",
+     "url": "https://udn.com/news/story/7251/9826573",
+     "summary": "外資持續賣超台股是匯價主要壓力。數字取自新聞報導，非 Yahoo 即時報價；10/19 收盤為 32.445。",
+     "source": "聯合新聞網",
+     "tags": [
+      "TWD",
+      "FOREX",
+      "TAIEX"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股 10/19：標普 500 收 7,690.73 點（+0.41%）、道瓊 51,966.03 點；布蘭特約 109.55 美元",
+     "url": "https://tw.stock.yahoo.com/tw-market",
+     "summary": "道瓊小跌 36.38 點，標普漲 31.29 點。布蘭特 12 月期貨約 109.55 美元（日期未明確標示，為近似值）；油價受荷姆茲與沙國局勢支撐。",
+     "source": "Yahoo 股市",
+     "tags": [
+      "SP500",
+      "STOCKS",
+      "BRENT",
+      "OIL"
+     ]
+    }
+   ]
+  }
+ ]
+}

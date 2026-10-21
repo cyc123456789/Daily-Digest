@@ -1,0 +1,143 @@
+{
+ "date": "2026-10-22",
+ "focus": "後續｜PAN-OS GlobalProtect CVE-2026-0257 自 6 月起遭 Qilin、Inc 等勒索集團利用，已列 KEV；10/21 共機 29 架次、23 架次逾中線。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜PAN-OS GlobalProtect CVE-2026-0257 自 6 月起遭 Qilin、Inc 等勒索集團利用",
+     "url": "https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/",
+     "summary": "Unit 42 與 Arctic Wolf 指出，這個認證繞過漏洞（PAN-OS 10.2、11.1、11.2、12.1 與 Prisma Access 受影響，Panorama、Cloud NGFW 不受影響）被用來建立繞過 MFA 的 VPN 連線，再以 RDP、SMB 橫向移動並加密整個網域。原廠 5/13 已修補、CISA 5/29 列入 KEV；專家提醒，單純修補無法趕走已入侵者，應回溯檢查 5/13 起的 VPN 工作階段與帳號活動。",
+     "source": "Help Net Security（綜整 Unit 42、Arctic Wolf 研究）",
+     "tags": [
+      "CVE-2026-0257",
+      "PALO-ALTO",
+      "RANSOMWARE",
+      "CISA-KEV"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜CISA 10/20 新增六項 KEV：Plex2Shell 四漏洞鏈、Siemens Software Center、SiteGuard",
+     "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+     "summary": "Plex Media Server 的四個 CVE（CVE-2026-96652、96654、96655、96656）被串成 Plex2Shell，用於投放 XMRig 挖礦程式與代理後門，1.43.3.10861（8/3 釋出）已修補。Siemens Software Center 的 DLL 側載漏洞 CVE-2026-110936 遭 ClickFix 攻擊利用，SiteGuard Server Edition 的指令注入漏洞原廠已確認遭利用；聯邦機關部分項目期限為 10/23，其餘 11/3。",
+     "source": "CISA（經 The Hacker News 轉述）",
+     "tags": [
+      "CISA-KEV",
+      "EXPLOITED",
+      "SIEMENS",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA、FBI 聯合警告 SafePay 勒索軟體：至少 600 名受害者，鎖定邊緣設備與備份系統",
+     "url": "https://www.cisa.gov/news-events/news/cisa-fbi-and-partners-warn-organizations-safepay-ransomware-actors-targeting-multiple-critical",
+     "summary": "聯合通告 AA26-293A 指出，SafePay 以外洩或釣魚取得的憑證、暴力破解、VPN 存取，以及 CVE-2024-40711（Veeam）、CVE-2024-40766（SonicWall）入侵並雙重勒索。建議修補邊緣設備與備份系統、全面啟用 MFA、限制管理工具並隔離備份。",
+     "source": "CISA",
+     "tags": [
+      "RANSOMWARE",
+      "SAFEPAY",
+      "CISA",
+      "CVE-2024-40766"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/20 至 21 晨偵獲共機 29 架次、共艦 6 艘、公務船 9 艘，23 架次逾越中線",
+     "url": "https://www.cna.com.tw/news/aipl/202610210032.aspx",
+     "summary": "統計時段為 10/20 上午 6 時至 10/21 上午 6 時，共機分從北部、中部、西南與東部空域進入。國防部表示，國軍運用任務機艦及岸置飛彈系統嚴密監控應處；此前 10/20 才有 27 架次參與的「聯合戰備警巡」。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國安局：今年共軍聯合戰備警巡 32 次、逾 1,510 架次，海調船與海警灰色地帶行動增加",
+     "url": "https://www.chinatimes.com/realtimenews/20261021002816-260417",
+     "summary": "國安局書面報告稱，1 至 9 月共機侵擾逾 1,450 架次、聯巡 28 次，低於去年同期的逾 3,000 架次、31 次。但中共海調船持續在我鄰接區外進行水下探測，並以「海洋環境」、「漁業資源」名義包裝，國安局警告「海域管轄」灰色地帶行動升高。",
+     "source": "中時新聞網（引述國安局報告）",
+     "tags": [
+      "TAIWAN",
+      "CHINA",
+      "PLA",
+      "NSB"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜荷姆茲海峽再傳超級油輪爆炸：伊朗稱重開海峽七日方案條件仍有效",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-yemen-houthis-saudi-arabia/",
+     "summary": "伊朗 10/21 通報海峽附近一艘超級油輪爆炸；伊朗外長稱重開海峽的條件仍在，但有海軍軍官稱海峽已封閉，兩種說法並存。自 10/11 起至少 9 艘商船遭攻擊，卡達持續斡旋，局勢未見緩和。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-IRAN",
+      "SHIPPING"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜沙烏地聯軍再空襲葉門：胡塞攻擊利雅德機場與 Aramco 設施，英國擬增援防空",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-saudi-arabia-houthi/",
+     "summary": "胡塞對利雅德機場與達蘭 Aramco 大樓的攻擊持續，沙國攔截飛彈與無人機並延後未來投資倡議論壇；機場遇襲死亡人數各方說法為 12 至 20 人，尚未統一。胡塞威脅若美國介入將報復，英國宣布提供沙國額外防禦支援。",
+     "source": "CBS News",
+     "tags": [
+      "HOUTHI",
+      "SAUDI-ARABIA",
+      "MIDDLE-EAST",
+      "IRAN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股 10/21 收 46,887.77 點、漲 594.84 點（+1.28%）：台積電收 2,420 元",
+     "url": "https://news.cts.com.tw/cna/money/202610/202610213092219.html",
+     "summary": "加權指數開高走高，盤中最高 47,254.93 點，上漲 610 家、下跌 384 家；成交金額約 8,331.91 億元（另有報導寫 8,628.29 億元，口徑不同）。當日為期指結算日，台積電撐盤收漲 15 元。",
+     "source": "中央社（經華視新聞網）",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TAIWAN",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股 10/20：標普 500 收 7,712.57 點、那指 26,424.82 點；布蘭特 108.79 美元，10 年期殖利率約 5.12%",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-21-065700416.html",
+     "summary": "10/20 收盤標普漲 0.3%、那指微跌約 0.02%，WTI 收 101.79 美元。10/21 盤中標普約 7,759、那指約 26,722，10 年期殖利率約 5.12%、30 年期約 5.42%；10/21 為盤中數字，非最終收盤，數字為近似值。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "BRENT",
+      "TREASURY-YIELD"
+     ]
+    }
+   ]
+  }
+ ]
+}

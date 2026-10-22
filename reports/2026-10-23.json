@@ -1,0 +1,143 @@
+{
+ "date": "2026-10-23",
+ "focus": "FortiMail 零時差 CVE-2026-104286（CVSS 9.8）遭在野利用且修補版未出；台股 10/22 重挫 846 點。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Fortinet FortiMail 零時差 CVE-2026-104286（CVSS 9.8）遭在野利用：已列 KEV，修補版仍待釋出",
+     "url": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
+     "summary": "路徑穿越搭配 NULL 位元組處理不當，可讓未認證攻擊者寫入任意檔案（Fortinet FG-IR-26-175）。受影響為 FortiMail 8.0.0–8.0.1、7.6.0–7.6.6、7.4.0–7.4.8（7.2 範圍各來源不一）；修補版 8.0.2、7.6.7、7.4.9 預告中，在此之前請停用 IBE 或限制管理介面對外。",
+     "source": "Fortinet PSIRT（經 The Hacker News 轉述）",
+     "tags": [
+      "CVE-2026-104286",
+      "FORTINET",
+      "CISA-KEV",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "PHP 發布緊急修補：兩個重大 RCE 漏洞，有遭利用跡象",
+     "url": "https://www.forbes.com/sites/daveywinder/2026/10/21/critical-php-security-warning-issued-apply-emergency-patch-today/",
+     "summary": "報導指 PHP 有兩個可遠端執行程式碼的重大漏洞，已釋出緊急修補，攻擊者可能藉此部署勒索軟體。確切受影響版本與修補版號請對照 PHP 官方公告（本次僅取得二手報導）；建議盡速升級並檢查對外網站。",
+     "source": "Forbes",
+     "tags": [
+      "PHP",
+      "RCE",
+      "PATCH",
+      "VULNERABILITY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Oracle 2026 年 10 月 CPU：修補 1,295 項漏洞，含 E-Business Suite 重大漏洞",
+     "url": "https://www.tenable.com/blog/oracle-october-2026-critical-patch-update-addresses-1209-cves",
+     "summary": "Tenable 統計約 1,209 個獨立 CVE、其中 112 項重大修補；目前未見在野利用報告。使用 E-Business Suite 等產品者應依 Oracle CPU 公告對應版本盡快套用，另有 CVE-2026-91403 獨立安全警示。",
+     "source": "Tenable",
+     "tags": [
+      "ORACLE",
+      "PATCH",
+      "VULNERABILITY",
+      "CPU"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/21 至 22 晨未偵獲共機，共艦 6 艘、公務船 7 艘；強颱薔琵逼近",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5614468",
+     "summary": "國防部統計 10/21 上午 6 時至 10/22 上午 6 時，偵獲共艦 6 艘、公務船 7 艘，共機 0 架次，報導指與強颱逼近有關。海上灰色地帶騷擾持續。",
+     "source": "自由軍武頻道",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：10/20 至 21 晨偵獲共機 23 架次越中線、共艦 6 艘、公務船 9 艘",
+     "url": "https://www.cna.com.tw/news/aipl/202610210032.aspx",
+     "summary": "中央社轉述國防部統計，共機逾越中線侵擾北部、中部、西南及東部空域，並有共艦與公務船同步活動；國軍嚴密監控。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜美伊傳出妥協方案：荷姆茲僵局稍緩，市場收復跌幅",
+     "url": "https://vocus.cc/article/6ad8ed3cfd89780001edf194",
+     "summary": "據財經分析報導，10/21 美伊出現妥協方案消息，美股收復早盤跌幅；但伊朗在核計畫與海峽管理權上的立場尚無定論，10/22 油價仍走高，局勢仍不明朗（本則為二手分析，細節待官方證實）。",
+     "source": "御薪弈記（Vocus）",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-IRAN",
+      "OIL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "台股 10/22 收 46,041 點重挫 846 點（-1.81%）：外資賣超逾 800 億、台積電收 2,385 元",
+     "url": "https://udn.com/news/story/7239/9831805",
+     "summary": "盤中震盪 1,290 點，成交 8,792.3 億元；市場對 AI 疑慮未除，加上颱風與連假前賣壓。新台幣收 32.508 元、貶 2 分。數字取自新聞報導。",
+     "source": "聯合報",
+     "tags": [
+      "TAIEX",
+      "TAIWAN",
+      "TSMC",
+      "TWD"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股 10/21 全面收紅：道瓊 52,856.86、標普 7,757.24、那指 26,702.86，費半漲 1.97%",
+     "url": "https://www.fx168news.com/express/fastnews/1452897",
+     "summary": "道瓊漲 360.98 點（+0.69%）、標普漲 44.67 點（+0.58%）、那指漲 278.04 點（+1.05%）；SpaceX 財報與 AI 概念股帶動。10 年期殖利率當日數字未能確認。",
+     "source": "FX168",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "STOCK-MARKET",
+      "AI"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "油價 10/22 走高：布蘭特約 112 美元、WTI 逼近 100 美元",
+     "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908s0uc.html",
+     "summary": "新浪即時報導 10/22 傍晚布蘭特漲約 3.4%、約 112.49 美元（單一來源、為近似值）；荷姆茲供應疑慮持續支撐油價。",
+     "source": "新浪財經",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    }
+   ]
+  }
+ ]
+}

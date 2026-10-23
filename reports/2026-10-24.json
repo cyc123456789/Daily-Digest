@@ -1,0 +1,169 @@
+{
+ "date": "2026-10-24",
+ "focus": "Arista VeloCloud Orchestrator 零時差 CVE-2026-16812（CVSS 10.0）遭在野利用；荷姆茲再傳 7 艘油輪受損，布蘭特升至 113 美元、那指重挫 2.6%。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Arista VeloCloud Orchestrator 零時差 CVE-2026-16812（CVSS 10.0）遭在野利用",
+     "url": "https://www.bleepingcomputer.com/news/security/arista-patches-velocloud-orchestrator-zero-day-exploited-in-attacks/",
+     "summary": "地端部署的 VeloCloud Orchestrator 存在免認證 OS 指令注入，Arista 證實已遭利用。受影響版本為 5.2.x（早於 5.2.3.14）、6.1.x（早於 6.1.3.4）、6.4.x（早於 6.4.2.4）、7.0.x（早於 7.0.0.1），已釋出修補；Arista 另公布 3 個攻擊來源 IP 供日誌比對。雲端託管實例已由 Arista 先行修補。",
+     "source": "Arista（經 BleepingComputer 轉述）",
+     "tags": [
+      "CVE-2026-16812",
+      "ARISTA",
+      "ZERO-DAY",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜PHP2Shell：CVE-2026-109618／109619（CVSS 4.0 9.2）傳遭大規模利用，修補版出爐",
+     "url": "https://www.techtarget.com/cybersecurity/news/366652444/PHP2Shell-22M-exposed-servers-at-risk-as-emergency-patches-released",
+     "summary": "兩個免認證 RCE 漏洞已有利用嘗試，Palo Alto 估計逾 2,260 萬個暴露實例。修補版為 PHP 8.5.12、8.4.27、8.3.36、8.2.35；8.1 及更舊分支已終止支援、無官方修補，需升級或套用廠商回移修補。",
+     "source": "TechTarget",
+     "tags": [
+      "PHP",
+      "RCE",
+      "EXPLOITED",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "LiteLLM 1.107.0 遭供應鏈入侵：PyPI 套件與 Docker 映像內含憑證竊取器與後門",
+     "url": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+     "summary": "惡意版本經三名工程師的 GitHub 帳號發布，疑為 GitHub CLI OAuth 權杖遭竊；植入 .pth 持久化並每小時向 GitHub 取回指令。PyPI 套件已隔離、惡意映像已下架；裝過 1.107.0 者應移除並輪替所有雲端與 AI 憑證。",
+     "source": "The Hacker News",
+     "tags": [
+      "LITELLM",
+      "SUPPLY-CHAIN",
+      "CREDENTIAL-THEFT",
+      "PYPI"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Node.js Brotli 漏洞 CVE-2026-111497：研究員示範官方映像 RCE",
+     "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+     "summary": "Imperva 以特製 Brotli 資料在官方 Node.js 映像上達成程式碼執行，目前為 PoC、未見在野利用。Node.js 已於 10/21 釋出修補，使用者應更新至最新版本。",
+     "source": "Imperva（經 The Hacker News 轉述）",
+     "tags": [
+      "NODE.JS",
+      "RCE",
+      "POC",
+      "PATCH"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/22 至 23 晨未偵獲共機，共艦 3 艘、公務船 7 艘；強颱薔琵逼近",
+     "url": "https://www.cna.com.tw/news/aipl/202610230033.aspx",
+     "summary": "國防部指自 22 日上午 6 時至 23 日上午 6 時，台海周邊偵獲共艦 3 艘、公務船 7 艘，未偵獲共機。前一統計日（至 21 日晨）為共機 29 架次、23 架次逾越中線，颱風影響下空中活動暫歇，但海上公務船仍持續活動。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜荷姆茲再傳 7 艘油輪遭攻擊或觸雷：伊朗仍稱海峽關閉、七日停火方案待議",
+     "url": "https://www.pbs.org/newshour/amp/world/iran-says-7-oil-tankers-damaged-in-strait-of-hormuz-and-other-middle-east-news",
+     "summary": "伊朗官媒稱 10/22 夜間至 23 日有 7 艘油輪受損，為開戰以來單日最多；川普指控伊朗捏造攻擊以推高油價。伊朗外長稱重開海峽取決於七日停火方案，海事機構警告船舶即使關閉追蹤仍面臨無差別攻擊。",
+     "source": "PBS NewsHour",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "SHIPPING",
+      "US-IRAN"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜胡塞攻擊利雅德機場 10 月已達 20 次：美國命令非必要人員撤離沙烏地",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-houthi-saudi-arabia-trump/",
+     "summary": "沙烏地聯軍稱胡塞本月攻擊利雅德機場 20 次，美方下令非緊急政府人員及眷屬離境。Aramco 稱東西向輸油管輸送能力由 200 萬提升至 700 萬桶／日，以繞過荷姆茲。",
+     "source": "CBS News",
+     "tags": [
+      "HOUTHI",
+      "SAUDI-ARABIA",
+      "MIDDLE-EAST",
+      "OIL"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "菲律賓：中國軍艦與海警船 9 月在菲方海域增至 101 艘、近乎倍增",
+     "url": "https://www.manilatimes.net/2026/10/09/news/national/ph-flags-near-doubling-of-chinese-presence-in-disputed-waters/2442037",
+     "summary": "菲軍統計中國船隻在仁愛、仙賓、黃岩與中業島周邊由 56 艘增至 101 艘，發言人稱意在消磨菲方意志。10/19 菲外交部另因中國大使言論提出抗議；中方稱 10/20 派艦跟監美艦在仙賓礁附近的自由航行行動。",
+     "source": "Manila Times",
+     "tags": [
+      "PHILIPPINES",
+      "SOUTH-CHINA-SEA",
+      "CHINA",
+      "US"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美股 10/22 那指重挫 2.6% 收 26,008.86、標普跌 1.21% 收 7,663.43，為六月以來最差一日",
+     "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html",
+     "summary": "科技股拖累下全球股市同步下挫，道瓊收 52,867.98、持平（+0.02%）。10/23 盤中道瓊一度跌約 600 點，數字為盤中近似值。",
+     "source": "CNBC",
+     "tags": [
+      "NASDAQ",
+      "SP500",
+      "STOCK-MARKET",
+      "STOCKS"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "布蘭特 10/22 收 113.17 美元、單日漲 4% 創 5 月 4 日以來新高；10/23 盤中一度逾 116 美元",
+     "url": "https://fortune.com/2026/10/22/markets-sell-off-worldwide-further-conflict-looms-middle-east-elon-musk-cuts-capex-guidance/",
+     "summary": "WTI 收 99.47 美元（+2.4%），荷姆茲攻擊升級與中東衝突擴大推升油價。10/23 盤中價位取自報導，屬近似值，非收盤價。",
+     "source": "CNBC／Fortune",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "台股 10/22 收 46,041 點重挫 846 點；新台幣收 32.508；10/23 颱風假＋光復節連休四日",
+     "url": "https://udn.com/news/story/7239/9831805",
+     "summary": "加權指數單日震盪 1,290 點、成交 8,792.3 億元，外資賣超逾 800 億；新台幣小貶 2 分至 32.508。10/23 起股匯市休市，下個交易日需留意美股與油價隔夜衝擊。",
+     "source": "經濟日報",
+     "tags": [
+      "TAIEX",
+      "TWD",
+      "TSMC",
+      "FOREX"
+     ]
+    }
+   ]
+  }
+ ]
+}

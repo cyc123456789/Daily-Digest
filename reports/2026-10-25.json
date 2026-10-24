@@ -1,0 +1,116 @@
+{
+ "date": "2026-10-25",
+ "focus": "Ivanti Connect Secure 零時差 CVE-2026-104935 遭 UTA0576 鏈式利用，同一利用鏈中的提權漏洞仍未修補；荷姆茲再傳油輪遇襲，布蘭特一度飆逾 9%。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜Ivanti Connect Secure 零時差 CVE-2026-104935：UTA0576 鏈式利用取得 root，提權漏洞仍未修補",
+     "url": "https://www.rapid7.com/blog/post/etr-ivanti-connect-secure-zero-day-exploited-in-the-wild-cve-2026-104935/",
+     "summary": "Volexity 指出 UTA0576 自 10 月初起串接三個漏洞，在已修補設備上取得未驗證 root 執行權限，不落地惡意程式、逐次重新利用並竄改日誌，可規避 Ivanti 完整性檢查工具，並鎖定 AD 憑證、BitLocker 復原金鑰與 LAPS。受影響為 ICS 22.8R2.4 及更早、25.1.2.2 及更早與 25.1.1.1 及更早，修補版為 22.8R2.5、25.1.3.0、25.1.3.1、25.1.1.2；鏈中提權漏洞尚無修補，已列入 CISA KEV。",
+     "source": "Volexity、Ivanti（經 Rapid7 轉述）",
+     "tags": [
+      "IVANTI",
+      "ZERO-DAY",
+      "CISA-KEV",
+      "CVE-2026-104935"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Cisco Secure Email Gateway CVE-2026-76519 在野利用：惡意附件可寫檔並以 root 執行指令",
+     "url": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
+     "summary": "AMP 功能的相對路徑穿越漏洞，攻擊者只需寄送特製附件即可，僅在啟用 AMP File Reputation 並套用至郵件政策、且 Content Scanner Tools 低於 25.3.0.5525 時受影響。Cisco 已釋出修補並已列入 CISA KEV；取得 root 的攻擊者可能清除痕跡，除修補外須檢視外部日誌排查入侵。",
+     "source": "Cisco PSIRT（經 BleepingComputer 轉述）",
+     "tags": [
+      "CISCO",
+      "CISA-KEV",
+      "RCE",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜Microsoft 10 月 Patch Tuesday 修補 1,411 項漏洞，含 3 個零時差",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+     "summary": "本月更新數量創紀錄，其中 1 個零時差已遭在野利用、2 個已公開揭露。受影響為各受支援的 Windows 與 Microsoft 產品，已有修補，建議優先部署並對照 CISA KEV 排定順序。",
+     "tags": [
+      "MICROSOFT",
+      "PATCH",
+      "ZERO-DAY"
+     ],
+     "source": "Microsoft（經 BleepingComputer 轉述）"
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "info",
+     "title": "國防部：10/23 至 24 晨未偵獲共機、共艦 1 艘、公務船 5 艘，薔琵颱風期間連 3 天無共機",
+     "url": "https://newtalk.tw/news/view/2026-10-24/1067292",
+     "summary": "國防部統計 10/23 上午 6 時至 10/24 上午 6 時未偵獲共機，僅有共艦 1 艘與公務船 5 艘在台海周邊活動，媒體多歸因於中颱薔琵影響。國軍以任務機艦與岸置飛彈系統持續監控；前一日為共艦 3 艘、公務船 7 艘，同樣無共機。",
+     "source": "國防部（經 Newtalk 轉述）",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜荷姆茲再傳油輪遇襲：革命衛隊稱 7 艘船被擊中或觸雷，川普否認美伊談判",
+     "url": "https://www.outlookindia.com/international/no-talks-but-an-end-very-soon-trumps-iran-war-claims-face-tehrans-account",
+     "summary": "伊朗外長稱美方已接受伊方七日方案，川普則否認正在談判，並稱伊朗虛構攻擊以推高油價；油輪遇襲說法尚未獲獨立證實。另有追蹤指出海峽實質上對商船關閉，戰爭險保險商拒保。",
+     "source": "Outlook India",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-IRAN",
+      "SHIPPING"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜美國下令駐沙烏地非必要人員及眷屬離境：胡塞攻擊持續升級",
+     "url": "https://www.al-monitor.com/originals/2026/10/us-preparing-issue-ordered-departure-some-personnel-gulf-embassies-say-us",
+     "summary": "國務院證實下令沙烏地境內非必要政府人員及眷屬離境，路透稱其他波灣使館亦將安排眷屬撤離，發言人則稱該報導不精確。胡塞多次攻擊利雅德哈立德國王國際機場，該機場自 10/10 起關閉。",
+     "source": "Reuters（經 Al-Monitor 轉述）",
+     "tags": [
+      "HOUTHI",
+      "SAUDI-ARABIA",
+      "MIDDLE-EAST",
+      "US"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜油價 10/23 盤中飆逾 9% 創 2025 年 1 月來高，道瓊盤中重挫約 1,200 點後收跌 404 點",
+     "url": "https://financefeeds.com/brent-crude-oil-price-114-friday-seven-tankers-aramco-evacuates-dhahran-bull-117-bear-108/",
+     "summary": "革命衛隊稱 7 艘船遭擊中後，布蘭特早盤約 114 美元、WTI 約 100.4 美元，盤中一度漲逾 9% 後回吐。美股道瓊收跌 404 點、那斯達克跌逾 1%，VIX 盤中最多飆 31%。因雲端環境無法連線市場數據源，以上為搜尋所得近似值，各來源價格略有出入。",
+     "source": "FinanceFeeds",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "STOCK-MARKET"
+     ]
+    }
+   ]
+  }
+ ]
+}

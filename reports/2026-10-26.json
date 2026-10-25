@@ -1,0 +1,182 @@
+{
+ "date": "2026-10-26",
+ "focus": "荷姆茲僵局推升油價：布蘭特 10/23 收 116.72 美元、道瓊挫逾 650 點；CISA 新增 Collabora、Arista 在野利用漏洞。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA 將 Collabora Online CVE-2026-110447 與 Arista VeloCloud CVE-2026-114625 列入 KEV：確認遭在野利用",
+     "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+     "summary": "CVE-2026-110447（CVSS 9.2）為 Collabora Online 內建 CODE Server 的作業系統命令注入；CVE-2026-114625（CVSS 9.9）為地端 Arista VeloCloud Orchestrator 的 SQL 注入，後者已於 10 月釋出修補。聯邦機構修補期限為 10/26，建議自建 Collabora 與 VeloCloud 的組織立即升級至最新版並檢查是否有異常存取紀錄。",
+     "source": "CISA（經 The Hacker News 轉述）",
+     "tags": [
+      "CISA-KEV",
+      "ZERO-DAY",
+      "EXPLOITED",
+      "ARISTA"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "GitLab 修補 CVSS 10.0 重大漏洞 CVE-2026-97229：CI/CD 正則編譯器可導致程式碼執行",
+     "url": "https://www.techzine.eu/news/security/145247/gitlab-patches-critical-vulnerability-that-allows-code-execution/",
+     "summary": "漏洞位於 CI/CD 的 Regular Expression Compiler，可能讓攻擊者在伺服器上執行程式碼。GitLab 已釋出修補版本，自建 GitLab 的組織應盡速升級；目前未見在野利用報告。",
+     "source": "Techzine（引述 GitLab 公告）",
+     "tags": [
+      "GITLAB",
+      "RCE",
+      "PATCH",
+      "VULNERABILITY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Capcom 證實遭未授權存取：1,170 萬個帳號受影響",
+     "url": "https://privacyguides.org/news/2026/10/23/data-breach-roundup-oct-16-22-2026",
+     "summary": "Capcom 表示 10/19 確認可疑活動與未授權存取，波及約 1,170 萬個帳號。使用者應更換密碼並留意釣魚信件，實際外洩欄位請以公司後續公告為準。",
+     "source": "Privacy Guides 資料外洩週報",
+     "tags": [
+      "DATA-BREACH",
+      "CAPCOM",
+      "JAPAN",
+      "CREDENTIAL-THEFT"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "日本外洩潮：Burger King Japan 1,118 萬筆、日經新聞 183 萬筆個資外洩",
+     "url": "https://privacyguides.org/news/2026/10/23/data-breach-roundup-oct-16-22-2026",
+     "summary": "Burger King Japan 因伺服器遭存取，外洩約 1,118 萬筆客戶資料；日經為約一個月內第三次通報，涉及 183 萬筆個資。受影響用戶應提高對冒名詐騙訊息的警覺。",
+     "source": "Privacy Guides 資料外洩週報",
+     "tags": [
+      "DATA-BREACH",
+      "JAPAN",
+      "RANSOMWARE",
+      "CLOUD"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/24 至 25 晨未偵獲共機，共艦 5 艘、公務船 8 艘",
+     "url": "https://www.cna.com.tw/news/aipl/202610250021.aspx",
+     "summary": "國防部通報 10/24 上午 6 時至 10/25 上午 6 時未偵獲共機，無逾越中線；共艦 5 艘、公務船 8 艘在台海周邊活動。國軍以任務機艦與岸置飛彈系統嚴密監控。（數字為媒體轉載）",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美議員：已向盧比歐確認對台軍售不作為對中談判籌碼",
+     "url": "https://udn.com/news/story/6809/9836508",
+     "summary": "民主黨眾議員貝拉表示，國務卿盧比歐已確認美國不拿台灣或對台軍售當談判籌碼，政策未變。陸方學者則研判軍售將推遲至年底、分批進行，仍待官方證實。",
+     "source": "中央社（經聯合新聞網）",
+     "tags": [
+      "TAIWAN",
+      "US",
+      "CHINA",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "中共二十屆五中全會本週登場：解放軍高層人事受關注",
+     "url": "https://udn.com/news/story/124068/9836877",
+     "summary": "聯合報評論指出，川普務實交易使台灣陷入美中共管風險，且本週五中全會的軍方高層人事異動，可能影響共軍與美軍互動及台海應對。屬評論性質，非官方決定。",
+     "source": "聯合新聞網",
+     "tags": [
+      "TAIWAN",
+      "CHINA",
+      "PLA",
+      "US"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜美以傳擬於期中選舉後再度打擊伊朗：美國自沙烏地撤出外交人員",
+     "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
+     "summary": "據紐約時報，美以軍方已擬妥選後重啟對伊朗打擊的計畫，同時美伊仍就核問題與荷姆茲談判；美國因胡塞攻擊增加，已撤離駐沙烏地外交人員。",
+     "source": "CNBC",
+     "tags": [
+      "IRAN",
+      "US-IRAN",
+      "HORMUZ",
+      "SAUDI-ARABIA"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜伊朗稱美方回應「不足」、談判停滯；胡塞攻擊沙烏地造成人員受傷",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/",
+     "summary": "伊朗表示美方回應不足，和談停滯，且要求美方先解除制裁、停止威脅；Gulf News 報導伊朗願在美國解除海上封鎖後重開荷姆茲，雙方對整體協議條件仍有歧見。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "HOUTHI",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜油價 10/23 續漲：布蘭特收 116.72 美元（+3.14%）、WTI 103.27 美元，金價跌破 4,000",
+     "url": "https://m.21jingji.com/article/20261024/herald/d9918238b6a75df68428f89265f555cc.html",
+     "summary": "受中東局勢與供應中斷疑慮推動，12 月布蘭特期貨收 116.72 美元，WTI 收 103.27 美元；金價同日跌破每盎司 4,000 美元。各來源數字略有出入，此為搜尋所得近似值。",
+     "source": "21 財經",
+     "tags": [
+      "OIL",
+      "BRENT",
+      "HORMUZ",
+      "GOLD"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美股 10/23 收跌：道瓊 -1.23% 報 52,215、標普 7,623.68、那指 25,955.34",
+     "url": "https://www.fx168news.com/express/fastnews/1454507",
+     "summary": "三大指數收跌，道瓊跌逾 650 點，油價大漲壓抑風險偏好；費半逆勢上漲 0.44%。數字取自搜尋結果，非一手行情源。",
+     "source": "FX168",
+     "tags": [
+      "STOCK-MARKET",
+      "SP500",
+      "NASDAQ",
+      "OIL"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "台股 10/22 收 46,041 點（-1.81%）：10/23 因強颱休市，新台幣約 32.5～32.6",
+     "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+     "summary": "加權指數 10/22 收 46,041.43、跌 846.34 點，成交約 8,792 億元；10/23 颱風假休市、10/24 週六，故無新收盤。新台幣匯率為近似值（約 32.5～32.6）。",
+     "source": "Yahoo 股市",
+     "tags": [
+      "TAIEX",
+      "TAIWAN",
+      "TWD",
+      "TSMC"
+     ]
+    }
+   ]
+  }
+ ]
+}

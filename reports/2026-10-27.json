@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-27",
+ "focus": "後續｜PHP2Shell（CVE-2026-109618／109619）遭大規模利用，Cloudflare 自 10/21 起封鎖攻擊；伺服器須立即升級 PHP，布蘭特油價仍在約 117 美元高檔。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "critical", "title": "後續｜PHP2Shell 利用持續擴大：NSA、CERT-EU 示警，Cloudflare 自 10/21 起封鎖攻擊", "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html", "summary": "PHP 執行環境的 CVE-2026-109618、CVE-2026-109619 兩個 RCE 漏洞持續遭掃描與利用，Cloudflare 稱自 10/21 03:02 UTC 起已在 WAF 封鎖相關攻擊，PoC 亦已公開（GBHackers 報導針對 PHP 8.4.26 的示範）。根本解法是將伺服器上的 PHP 升級至官方修補版，WAF 規則僅是第二道防線；Free 方案自動套用，付費方案請確認 Managed Ruleset 設為封鎖。", "source": "The Hacker News", "tags": ["PHP", "RCE", "CVE-2026-109618", "EXPLOITED"]},
+   {"severity": "high", "title": "Wasmtime 兩個沙箱逃逸漏洞：CVE-2026-34971、CVE-2026-34987（CVSS 4.0 達 9.0）", "url": "https://security.julialang.org/advisories/JLSEC-2026-1360/", "summary": "CVE-2026-34971 為 aarch64 Cranelift 編譯錯誤，惡意 Wasm 模組可取得宿主記憶體任意讀寫；CVE-2026-34987 影響非預設的 Winch 後端，aarch64 已有 PoC、x86-64 僅理論可行。受影響為 32.0.0 起至修補前的版本，請升級至 36.0.7、42.0.2 或 43.0.1；目前未見在野利用報告。", "source": "Wasmtime 安全公告（經 Julia Security Advisories 轉載）", "tags": ["WASMTIME", "RCE", "PATCH", "VULNERABILITY"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "info", "title": "國防部：10/25 至 26 晨偵獲共機 3 架次（1 架次逾越中線）、共艦 6 艘、公務船 9 艘", "url": "https://newtalk.tw/news/view/2026-10-26/1067473", "summary": "國防部 10/26 公布，統計時段內偵獲共機 3 架次，其中 1 架次逾越中線並進入西南及東部空域，另有共艦 6 艘、公務船 9 艘於台海周邊活動。強颱期間的低檔後，共機活動仍處低點，國軍以任務機艦與岸置飛彈系統監控。", "source": "新頭殼（引述國防部）", "tags": ["TAIWAN", "PLA", "MND", "TAIWAN-STRAIT"]},
+   {"severity": "medium", "title": "二十屆五中全會 10/26 登場：中央軍委僅剩 2 人，軍方補人成焦點", "url": "https://www.ntdtv.com/b5/2026/08/06/a104121736.html", "summary": "報導稱二十大選出的七名軍委成員僅剩習近平與張升民，張又俠、何衛東、苗華等人已落馬；分析人士關注是否增補軍委或政治局成員，但學者看法分歧，尚無正式公報。本則來源立場偏向批判，且為會前預測，結果須待新華社公報確認。", "source": "新唐人電視台", "tags": ["CHINA", "PLA", "TAIWAN", "POLITBURO"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "warning", "title": "後續｜荷姆茲僵局：川普稱在談判與「徹底擊潰」伊朗間權衡，油輪攻擊升溫", "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/", "summary": "CBS 即時報導指川普表示正在評估與伊朗達成協議，或採取行動「finish them off」，期中選舉前壓力升高。海峽通行仍受阻，伊朗否認提出重開方案，美方官員則稱主要航道無水雷；各方說法互相矛盾，須持續關注。", "source": "CBS News", "tags": ["IRAN", "HORMUZ", "US-IRAN", "MIDDLE-EAST"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "warning", "title": "後續｜布蘭特油價約 117 美元創 3 月以來高點：10 月初尚低於 97 美元", "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-2-as-Iran-Steps-Up-Attacks-on-Hormuz-Tankers.html", "summary": "伊朗加強攻擊荷姆茲油輪，布蘭特較 10 月初不到 97 美元大漲，最近結算約 116.72 美元（10/23），為 3 月以來高位。標普 500 成分股約四分之三下跌，能源成本推升通膨與升息預期。本日 10/26 收盤數字未能取得，以上為近似值。", "source": "OilPrice.com", "tags": ["BRENT", "OIL", "HORMUZ", "ENERGY"]},
+   {"severity": "info", "title": "台股 10/19–22 單週重挫 2.27%：加權指數收 46,041 點為週內最低", "url": "https://vocus.cc/article/6adb0841fd8978000152258e", "summary": "加權指數 10/22 收 46,041.43 點（-846.34 點、-1.81%），以上週五 47,111.26 點計，單週跌約 1,070 點、2.27%，並以全週最低收盤。10/23 因颱風休市；10/26 收盤與新台幣匯率未能取得，此處為最近可確認數字。", "source": "白菜滷（Vocus 投資週報）", "tags": ["TAIEX", "STOCKS", "TSMC", "TWD"]}
+  ]}
+ ]
+}

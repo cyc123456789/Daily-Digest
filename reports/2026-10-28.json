@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-28",
+ "focus": "BeyondTrust Remote Support 零時差 CVE-2026-102764 遭中國關聯組織 ARMORY CASTLE 利用並列入 CISA KEV；自架版本請立即套用 BT26-05 修補。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "critical", "title": "BeyondTrust Remote Support 零時差 CVE-2026-102764 遭中國關聯組織利用：已列入 CISA KEV", "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html", "summary": "Google GTIG 與 Mandiant 指出，疑似中國背景的 ARMORY CASTLE（原 UNC5221）自 8 月 29 日起利用此漏洞（CVSS 4.0 為 9.3）取得 root、竊取憑證並橫向移動。受影響為 Remote Support 26.2.3 以前（含）版本，SaaS 已自動修補，自架環境請套用 BT26-05-RS 修補，舊版須先升級。", "source": "Google GTIG／Mandiant（經 The Hacker News 轉述）", "tags": ["BEYONDTRUST", "CVE-2026-102764", "CISA-KEV", "CHINA"]},
+   {"severity": "high", "title": "Bitget 證實遭第三方資安產品零時差入侵：3.875 億美元遭盜，疑北韓所為", "url": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html", "summary": "SlowMist 與 Mandiant 調查指出，攻擊者利用兩款資安設備的零時差取得高權限內部憑證，再發出偽造提領指令。冷錢包與私鑰未受影響，被凍結資金僅約一百萬美元以內；使用同類設備的組織應檢查管理平台的異常登入並輪替憑證。", "source": "Bitget／Mandiant／SlowMist（經 The Hacker News 轉述）", "tags": ["BITGET", "ZERO-DAY", "NORTH-KOREA", "DATA-BREACH"]},
+   {"severity": "high", "title": "Apple CoreGraphics 零時差 CVE-2026-86950：公開 PoC 出現，曾用於高度針對性攻擊", "url": "https://securityaffairs.com/200175/hacking/public-poc-released-for-apple-coregraphics-zero-day-cve-2026-86950.html", "summary": "此為越界寫入漏洞，處理惡意檔案即可執行任意程式碼；Apple 稱可能已用於「極為精密」的針對性攻擊。修補已於 9 月 28 日隨 iOS／iPadOS 26.7.1、macOS Tahoe 26.7.1 與 Sequoia 15.8.1 釋出，請盡快更新。", "source": "Security Affairs", "tags": ["APPLE", "CVE-2026-86950", "ZERO-DAY", "POC"]},
+   {"severity": "high", "title": "駭客入侵企業防火牆與 VPN：逾 7 萬筆憑證外洩，Group-IB 連結 Qilin 與 The Gentlemen", "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html", "summary": "Group-IB 與 NyxLab 發現針對 FortiGate、GlobalProtect 等邊緣設備的行動，疑為勒索集團的初始存取來源。管理者應確認設備韌體為最新、關閉不必要的對外管理介面，並對 VPN 帳號強制輪替密碼與啟用 MFA。", "source": "Group-IB／NyxLab（經 The Hacker News 轉述）", "tags": ["RANSOMWARE", "QILIN", "FORTINET", "PALO-ALTO"]},
+   {"severity": "medium", "title": "SOCRadar：INC 與 The Gentlemen 勒索集團成員以 AI 代理自動化入侵，估計波及 62 個組織", "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html", "summary": "外洩的攻擊基礎設施顯示，聯盟成員以 AI 代理串接偵察、橫向移動與資料外傳流程，縮短入侵時程。防禦方應強化邊緣設備修補與異常行為偵測，並演練快速隔離程序。", "source": "SOCRadar（經 The Hacker News 轉述）", "tags": ["RANSOMWARE", "AI", "INC", "THE-GENTLEMEN"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "國防部：10/26 至 27 晨偵獲共機 3 架次、共艦 8 艘、公務船 4 艘", "url": "https://www.cna.com.tw/news/aipl/202610270025.aspx", "summary": "國防部 10/27 公布，統計自前一日上午 6 時至當日上午 6 時，偵獲共機 3 架次侵擾北部及西南空域、共艦 8 艘、公務船 4 艘，國軍以任務機艦及岸置飛彈嚴密監控。前一日數字為共機 3 架次（1 架次逾越中線）、共艦 6 艘、公務船 9 艘。", "source": "中央社", "tags": ["PLA", "TAIWAN", "MND", "TAIWAN-STRAIT"]},
+   {"severity": "warning", "title": "國防部長顧立雄：中共以光復節衛星影像與宣傳海報進行認知作戰", "url": "https://taipeitimes.com/News/taiwan/archives/2026/10/28/2003866747", "summary": "北京在台灣光復紀念日公布台北車站、故宮等地高解析衛星影像並發布軍事宣傳海報，顧立雄 10/27 稱此為認知戰，台灣拒絕中國對二戰後「光復」的詮釋。", "source": "Reuters（經 Taipei Times 轉載）", "tags": ["CHINA", "TAIWAN", "COGNITIVE-WARFARE", "MND"]},
+   {"severity": "medium", "title": "美國考慮將對台軍售公布延至 APEC 深圳峰會之後，140 億美元軍售案仍未簽署", "url": "https://www.scmp.com/news/china/diplomacy/article/3368060/us-weighs-delaying-taiwan-arms-sales-until-after-apec-and-g20-summits", "summary": "據南華早報獨家報導，華府考慮把重大對台軍售延至 11 月 APEC 之後，甚至可能到年底；川普與習近平今年預計共四度會面。此報導消息來源未獲白宮證實。", "source": "南華早報", "tags": ["US", "TAIWAN", "CHINA", "ARMS-SALES"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "high", "title": "後續｜沙烏地、土耳其、巴基斯坦代表赴德黑蘭會談：伊朗稱若美國解除封鎖即重開荷姆茲", "url": "https://www.foxnews.com/live-news/us-iran-war-peace-talks-donald-trump-strait-hormuz-october-27", "summary": "區域代表 10/26 在德黑蘭與伊朗領導層會談並同意持續對話，議題含美國封鎖伊朗港口與荷姆茲海峽。另有報導稱美軍可在總統下令後 96 小時內展開大規模行動，伊朗仍堅持美方先滿足七項條件。", "source": "Fox News", "tags": ["IRAN", "HORMUZ", "US-IRAN", "SAUDI-ARABIA"]},
+   {"severity": "warning", "title": "後續｜胡塞飛彈與無人機再襲沙烏地：沙國攔截 3 枚彈道飛彈、4 架無人機，埃及國會授權軍援", "url": "https://gulfnews.com/world/mena/middle-east-war-saudi-arabia-intercepts-houthi-missiles-drones-as-iran-talks-continue-1.500724842", "summary": "胡塞宣稱攻擊拉斯坦努拉煉油廠，沙國表示已攔截來襲飛彈；埃及國會投票授權對沙烏地提供軍事支援，川普稱胡塞行為「很糟」，但未說明美國是否加入空襲。", "source": "Gulf News", "tags": ["HOUTHI", "SAUDI-ARABIA", "MIDDLE-EAST", "IRAN"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "info", "title": "台股 10/27 收 46,096.23 點、漲 54.8 點：成交 9,765 億元，台積電收 2,400 元", "url": "https://news.cts.com.tw/cna/money/202610/202610273094316.html", "summary": "加權指數盤中一度翻黑，尾盤守住 4.6 萬點；外資賣超 81.04 億元，已連 13 個交易日減碼台積電，但今日賣超僅 1,618 張。投信買超 236 億元為唯一買方。", "source": "中央社", "tags": ["TAIEX", "TSMC", "STOCK-MARKET", "TAIWAN"]},
+   {"severity": "warning", "title": "Fed 10/28 決策在即：市場預期按兵不動，12 月升息機率升高", "url": "https://www.cnbc.com/2026/10/26/fed-decision-expectations-october-meeting.html", "summary": "聯邦基金利率目標區間預估維持 3.75%–4.00%，Reuters 調查 94 位經濟學者預期不變，且全數預期 12 月再升息。CPI 年增 3.7%、9 月非農僅增 2.9 萬人；10 年期美債殖利率各來源約 5.0%–5.1%，數字不一。", "source": "CNBC", "tags": ["FED", "TREASURY-YIELD", "INFLATION", "OIL"]},
+   {"severity": "warning", "title": "美股 10/26 收高、布蘭特續處高檔：道瓊 52,361.58、標普 7,676.77、那指 26,169.38", "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html", "summary": "科技股受 Anthropic 提交 IPO 申請的消息帶動，三大指數收漲；布蘭特期貨跌 0.8% 至 115.81 美元，WTI 為 101.57 美元。市場權衡沙烏地能源設施再遭攻擊的風險與高油價對需求的侵蝕（本區油價與匯率因 Yahoo 資料源無法連線，為搜尋所得近似值）。", "source": "CNBC", "tags": ["SP500", "NASDAQ", "BRENT", "OIL"]}
+  ]}
+ ]
+}

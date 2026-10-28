@@ -1,0 +1,169 @@
+{
+ "date": "2026-10-29",
+ "focus": "後續｜CISA 將 Node.js Brotli 漏洞 Node2Shell（CVE-2026-111497）列入 KEV：已有在野利用跡象，請升級 Node.js 22.23.4／24.22.1／26.12.1。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜CISA 將 Node.js Brotli 漏洞 Node2Shell（CVE-2026-111497）列入 KEV",
+     "url": "https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/",
+     "summary": "CISA 於 10/27 將 Brotli 解碼器越界寫入漏洞 CVE-2026-111497 列入 KEV，聯邦機構須於 11/10 前處理；蜜罐已記錄攻擊嘗試，但 CISA 未說明攻擊者與目標。影響 Brotli 1.0.3 至 1.2.0，Node.js 已於 22.23.4、24.22.1、26.12.1 修補，已終止支援的舊版本無上游修補。",
+     "source": "CISA（經 SecurityWeek 轉述）",
+     "tags": [
+      "NODE.JS",
+      "CVE-2026-111497",
+      "CISA-KEV",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜PHP2Shell 兩個 RCE 漏洞確認遭利用：CISA 要求 10/29 前修補",
+     "url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+     "summary": "CVE-2026-109618、CVE-2026-109619（CVSS 9.2）已列入 KEV，可未經驗證遠端執行程式碼。PHP 於 10/21 釋出 8.5.12、8.4.27、8.3.36、8.2.35 修補版；Censys 估計仍有約 3,250 萬個 PHP 服務在跑易受攻擊版本，Cloudflare WAF 規則僅能作為暫時緩解。",
+     "source": "CISA（經 The Hacker News 轉述）",
+     "tags": [
+      "PHP",
+      "CVE-2026-109618",
+      "CISA-KEV",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Adobe Commerce「PolyShell」攻擊波及數百家商店",
+     "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+     "summary": "據報導，PolyShell（Magento／Adobe Commerce 檔案上傳漏洞，可造成未驗證 RCE）遭大規模利用，數百家商店被入侵。修補版為 2.4.9（Adobe 公告 APSB26-05），各研究機構對受影響版本範圍說法不一；未升級者應停用或封鎖自訂商品選項上傳的 REST API。",
+     "source": "The Hacker News",
+     "tags": [
+      "ADOBE",
+      "MAGENTO",
+      "POLYSHELL",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "日本 GMO Internet 遭勒索：索討 80 億日圓、資料已外流",
+     "url": "https://bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat",
+     "summary": "攻擊者經虛擬桌面基礎設施入侵，可能波及 26,739 台伺服器，並公布部分公司與客戶資料；GMO 表示不付贖金，支付資訊未外洩，但 MetaTrader 登入憑證可能受影響。建議受影響客戶重設密碼並依公司指示關機。",
+     "source": "BleepingComputer",
+     "tags": [
+      "GMO",
+      "RANSOMWARE",
+      "JAPAN",
+      "DATA-BREACH"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/27 至 28 晨偵獲共機 6 架次、共艦 7 艘、公務船 1 艘",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5621001",
+     "summary": "共機 6 架次於海峽中線以西活動，報導未顯示逾越中線；共艦、公務船合計共 14 機艦艇擾台。中共二十屆五中全會自 10/26 起召開，期間軍事活動維持常態監控。",
+     "source": "自由時報",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜美國考慮將 140 億美元對台軍售延至 APEC 之後",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3368060/us-weighs-delaying-taiwan-arms-sales-until-after-apec-and-g20-summits",
+     "summary": "SCMP 報導，華府考慮把大型對台軍售公布延到 11 月深圳 APEC 與 12 月 G20 之後，不排除延至年底；也可能在 APEC 前先批較小案。習近平先前警告大型軍售將影響中美關係。",
+     "source": "SCMP",
+     "tags": [
+      "TAIWAN",
+      "ARMS-SALES",
+      "US",
+      "CHINA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜伊朗稱「歡迎談判」：卡達斡旋草案設七日時程",
+     "url": "https://www.thenationalnews.com/news/mena/2026/10/28/iran-welcomes-negotiations-after-reported-qatari-mediated-draft-deal/",
+     "summary": "卡達向伊朗提出草案、時程七天，伊朗考慮中並預計本週內回應；另有報導稱美方若解除封鎖，伊朗可在 4 至 5 天內恢復荷姆茲通行。美軍仍提醒無必要船隻避開海峽，各方說法尚未獲證實。",
+     "source": "The National",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-IRAN",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜胡塞宣稱以彈道飛彈攻擊沙烏地 Ras Tanura 煉油廠",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-Houthi-Attacks-Reignite-Saudi-Supply-Fears.html",
+     "summary": "胡塞稱攻擊沙國最大煉油廠，沙國未證實直接命中，有報導稱 Aramco 設施附近起火已被控制。攻擊持續推升市場對沙國供給的擔憂。",
+     "source": "OilPrice.com",
+     "tags": [
+      "HOUTHI",
+      "SAUDI-ARABIA",
+      "OIL",
+      "MIDDLE-EAST"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股 10/28 收 47,035.58 點、大漲 939.35 點（+2.04%）：台積電收 2,425 元",
+     "url": "https://www.cna.com.tw/news/afe/202610280155.aspx",
+     "summary": "費半前一日大漲帶動，加權指數收復 47,000 點與季線；外資轉買超約 159 億元，電子指數漲 2.48%。成交值各來源約 7,200 億元上下。",
+     "source": "中央社",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "STOCK-MARKET",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Fed 10/28 按兵不動、利率維持 3.75%–4.00%：兩名官員主張升息",
+     "url": "https://www.cnn.com/2026/10/28/business/live-news/federal-reserve-interest-rate-october",
+     "summary": "投票 10 比 2，Cook 與 Hammack 主張升息一碼；主席 Warsh 稱政治因素未影響決策。市場預期 12 月升息機率偏高。盤中美股小幅震盪，收盤數字未能取得。",
+     "source": "CNN",
+     "tags": [
+      "FED",
+      "INTEREST-RATE",
+      "US",
+      "TREASURY-YIELD"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油約 115.6 美元：胡塞攻擊沙國與荷姆茲談判牽動油價",
+     "url": "https://financefeeds.com/brent-crude-oil-price-115-59-wednesday-fed-decision-day-ras-tanura-claim-bull-120-bear-108/",
+     "summary": "10/28 亞洲盤布蘭特漲 1.50 美元至 115.59 美元、WTI 約 101.37 美元；各來源報價在 113.7 至 115.9 美元間，此為近似值（Yahoo 行情源無法連線）。UBS 估計 10 月前三週荷姆茲與旁路管線原油流量約 1,880 萬桶／日，仍低於戰前 1,990 萬。",
+     "source": "FinanceFeeds",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    }
+   ]
+  }
+ ]
+}

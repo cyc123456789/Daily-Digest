@@ -1,0 +1,182 @@
+{
+ "date": "2026-10-30",
+ "focus": "Oracle PeopleSoft 零時差實為三個連鎖漏洞，ShinyHunters 已攻陷逾百機構；中東僵局下布蘭特仍在 110 美元上下",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Oracle PeopleSoft 零時差實為三個連鎖漏洞：ShinyHunters 濫用 CVE-2026-35273（CVSS 9.8），已列入 KEV",
+     "url": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
+     "summary": "Mandiant 與 Google 威脅情報團隊指出，ShinyHunters（UNC6240）於 5/27–6/9 間串接三個漏洞，主要針對 PeopleSoft Environment Management 元件（PSEMHUB 端點），受害者多為大學。受影響為 PeopleTools 8.61、8.62（更早的不支援版本亦可能受影響）；Oracle 已於 6/10 發布公告，但修補文件需登入支援網站，建議套用 Oracle 更新並限制 PSEMHUB 端點存取。",
+     "source": "The Hacker News",
+     "tags": [
+      "CVE-2026-35273",
+      "ORACLE",
+      "SHINYHUNTERS",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "VMware ESX CVE-2026-41709 遭中國關聯組織 Warp Panda 利用以降低稽核軌跡可見度",
+     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+     "summary": "該漏洞為日誌記錄不足，具管理員權限者可執行動作而不留紀錄，Broadcom 評為低風險（CVSS 約 2.7），但已被用於隱匿行蹤，CISA 要求聯邦機構 11/11 前修補。此漏洞屬 VMSA-2026-0006（7/29 發布）修補範圍，請依 Broadcom 公告確認 ESX 修補版本；摘要中的修補細節未能從公告原文核實。",
+     "source": "Broadcom VMSA（經 The Hacker News 轉述）",
+     "tags": [
+      "CVE-2026-41709",
+      "VMWARE",
+      "CHINA",
+      "CISA-KEV"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "UNM Health 遭勒索攻擊影響手術與病患照護：新組織 Byod 稱入侵 3.6 萬套系統",
+     "url": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
+     "summary": "新墨西哥大學醫療體系未公開攻擊類型，但 Byod 在洩漏網站宣稱入侵約 3.6 萬套系統，並持有學生、員工個資、薪資與病患資料。目前未揭露初始入侵管道與受影響產品，無對應修補可套用；醫療機構宜檢查遠端存取與備份隔離。",
+     "source": "BleepingComputer",
+     "tags": [
+      "RANSOMWARE",
+      "HEALTHCARE",
+      "DATA-BREACH",
+      "BYOD"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜日本 GMO 要求客戶關機斷網：Onamae Desktop Cloud 入侵與勒索威脅",
+     "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+     "summary": "GMO 於 10/20 偵測到 Onamae Desktop Cloud 遭入侵，駭客威脅發動勒索，公司呼籲客戶將主機斷線並關機。GMO 稱支付資料未外洩，但 MetaTrader 登入憑證可能遭竊，使用者應立即重設密碼；此事件尚無公開的 CVE 或修補版本。",
+     "source": "BleepingComputer",
+     "tags": [
+      "RANSOMWARE",
+      "JAPAN",
+      "GMO",
+      "CREDENTIAL-THEFT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：共機 6 架次、共艦 7 艘、公務船 1 艘，4 架次逾越海峽中線",
+     "url": "https://www.businessinsider.tw/article/8947",
+     "summary": "據 Business Insider Taiwan 引述國防部，最近一次可查證的通報（約 10/27–28 晨）偵獲共機 6 架次、共艦 7 艘、公務船 1 艘，其中 4 架次逾越中線，國軍以任務機艦與岸置飛彈監控。10/29 當日公告未能取得（國防部網站在本次環境無法連線），此數字為近似值。",
+     "source": "國防部（經 Business Insider Taiwan 轉述）",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "後續｜140 億美元對台軍售仍擱置：華府考慮延至 APEC 深圳峰會與 G20 之後",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3368060/us-weighs-delaying-taiwan-arms-sales-until-after-apec-and-g20-summits",
+     "summary": "SCMP 引述消息人士稱，華府考慮把對台重大軍售公布延至 11 月 APEC 深圳峰會之後，甚至可能拖到年底。此案自 5 月起擱置，目前沒有核准或簽署跡象。",
+     "source": "South China Morning Post",
+     "tags": [
+      "TAIWAN",
+      "ARMS-SALE",
+      "US-CHINA",
+      "APEC"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜卡達遞交伊朗新草案，華府仍要盟友準備期中選舉後重啟對伊行動",
+     "url": "https://www.thenationalnews.com/business/energy/2026/10/28/oil-prices-up-due-to-houthi-strikes-and-us-threat-to-renew-iran-war/",
+     "summary": "卡達斡旋方提出新的終戰草案，但美方傳告知海灣國家，11/3 期中選舉後可能再度對伊朗動武。胡塞對沙烏地能源設施的攻擊與荷姆茲航運受阻，仍是油價主要風險。",
+     "source": "The National",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "HOUTHI",
+      "US-IRAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "中國僅派駐馬尼拉武官出席東協國防會議，指菲律賓設置障礙",
+     "url": "https://malaymail.com/news/world/2026/10/29/china-says-philippines-erected-obstacles-to-asean-attendance/241168",
+     "summary": "中國國防部稱因菲律賓近期作為，只派駐馬尼拉使館武官與會；菲國防部長 Teodoro 在宿霧會議閉幕時表示，東協成員並不認同中方說法（5 比 4）。南海行為準則談判仍停滯。",
+     "source": "Malay Mail",
+     "tags": [
+      "PHILIPPINES",
+      "CHINA",
+      "SOUTH-CHINA-SEA",
+      "ASEAN"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "克里姆林宮證實與美國談判，要求解除俄羅斯主權基金制裁",
+     "url": "https://www.newsmax.com/world/globaltalk/russia-ukraine-trump/2026/10/28/id/1274391/",
+     "summary": "克里姆林宮顧問 Ushakov 10/28 表示，莫斯科正向華府爭取解除旗艦主權投資基金的制裁，結果未明。此前川普已簽署行政命令，暫停一項針對俄羅斯經濟的大型制裁方案。",
+     "source": "Newsmax",
+     "tags": [
+      "RUSSIA",
+      "UKRAINE",
+      "SANCTIONS",
+      "US"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股 10/29 重挫 667 點收 46,368.33：台積電收 2,415 元、聯發科跌約 4%",
+     "url": "https://news.cnyes.com/news/id/6640479",
+     "summary": "加權指數下跌 1.42%，成交約 7,891.5 億元；盤中一度跌破 46,000 點，權值股普遍走弱，金融股第一金逆勢漲 3.86%。新台幣收盤價未能查得確切數字，故不引用。",
+     "source": "鉅亨網",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TAIWAN",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美股 10/29 因 Alphabet 財報賣壓走弱：道瓊盤中約 52,179、跌 0.56%",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-081708101.html",
+     "summary": "盤中資料（下午 2:26 EDT）顯示道瓊 52,178.95、標普約 7,695、那指約 26,098，科技股受 Alphabet 賣壓拖累；收盤數字未能取得，皆為近似值。前一日（10/28）標普收 7,743.98、那指 26,549.85，Fed 以 10 比 2 票數維持利率不變。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "FED",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "油價 10/29 盤中回落：布蘭特約 109.56 美元、WTI 約 100.47 美元",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-104943461.html",
+     "summary": "布蘭特盤中下跌約 1.9%，WTI 跌約 2.2%，前一日布蘭特收 114.10 美元。外交消息讓油價短線回吐，但荷姆茲航運受阻與胡塞攻擊仍在；數字為盤中近似值，收盤價未能確認。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,195 @@
+{
+ "date": "2026-10-31",
+ "focus": "幣安遭駭失竊約 63 億美元創史上最大，疑北韓 TraderTraitor 所為；台股同日重挫 2.49%",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Binance 遭駭失竊約 63 億美元創加密史上最大：疑為北韓 TraderTraitor，約 30 億美元已被凍結",
+     "url": "https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/",
+     "summary": "Binance 表示初步調查顯示攻擊者先入侵一名工程師的筆電，再進入服務容器送出未授權提款，且未發現私鑰外洩；TRM Labs 以高信心歸因 TraderTraitor，並指其在以太坊上利用 EIP-7702 委派取走資金。Tether、Circle 等已凍結約 30 億美元，Binance 稱用戶資產安全並承諾全額賠付；金額與歸因仍可能修正，企業應檢視開發者終端與提款簽署流程的隔離。",
+     "source": "TechCrunch",
+     "tags": [
+      "BINANCE",
+      "NORTH-KOREA",
+      "CRYPTO",
+      "DATA-BREACH"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜PHP2Shell 搭配 Linux 核心漏洞 Fragnesia 取得 Palo Alto 防火牆 root：原廠證實管理介面遭在野利用",
+     "url": "https://www.helpnetsecurity.com/2026/10/29/php2shell-fragnesia-vmware-esx-zero-day/",
+     "summary": "Palo Alto Networks 更新公告，確認對外暴露管理介面的 PAN-OS 設備遭 PHP2Shell（CVE-2026-109618／109619）攻擊，攻擊者再以 Fragnesia（CVE-2026-46300）提權；研究報告稱 240 台受測防火牆中約 24 至 25 台被取得 root，疑與中國有關，另有勒索組織利用。原廠提供各維護版本的 hotfix，未修補者應先將管理介面移出公網（改走資料平面介面）、啟用 Threat Prevention，並檢查是否已遭入侵。",
+     "source": "Palo Alto Networks（經 Help Net Security 轉述）",
+     "tags": [
+      "PHP",
+      "PALO-ALTO",
+      "EXPLOITED",
+      "CHINA"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜CISA 將 GitLab CVE-2026-97229 列入 KEV：重大漏洞確認遭在野利用",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA 10/29 依在野利用證據，將 GitLab Community／Enterprise Edition 的 CVE-2026-97229（CISA 描述為整數溢位）加入 KEV；該漏洞 GitLab 已於先前釋出修補。自管 GitLab 的單位應立即升級至原廠公告的修補版本，並檢查 CI/CD 執行環境與異常 pipeline。",
+     "source": "CISA",
+     "tags": [
+      "GITLAB",
+      "CISA-KEV",
+      "EXPLOITED",
+      "VULNERABILITY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Cisco ASA／FTD SSL VPN 漏洞 CVE-2026-76418 遭當零時差利用，列入 KEV：可使設備無預警重啟",
+     "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+     "summary": "Cisco 證實該 DoS 漏洞（CVSS 3.1 為 8.6）已被利用，條件是啟用 SSL VPN 且通道群組使用次要驗證；攻擊者、IOC 尚未公開，CISA 聯邦修補期限為 11/1。影響 ASA 9.16–9.24、FTD 7.0–10.1 等版本，請依 Cisco 公告 cisco-sa-asaftd-tunnel-dos-s6mgkb75 升級（二手來源所列修補版本需對照原廠）；未啟用 SSL VPN 的設備不受影響。",
+     "source": "Cisco PSIRT／CISA（經 The Hacker News 轉述）",
+     "tags": [
+      "CISCO",
+      "CISA-KEV",
+      "EXPLOITED",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Ivanti Connect Secure 零時差連鎖利用：攻擊者可未驗證取得 root，Ivanti 10/29 追加修補",
+     "url": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited",
+     "summary": "Ivanti 確認少數客戶遭攻擊，入口為公開登入腳本 welcome.cgi 的驗證繞過，再串接其他漏洞取得 root，並於 10/29 釋出額外修補。使用 Connect Secure 的單位應立即套用最新版本、依原廠指引執行完整性檢查，並假設已暴露者需重設憑證。",
+     "source": "Ivanti（經 Cybersecurity News 轉述）",
+     "tags": [
+      "IVANTI",
+      "ZERO-DAY",
+      "EXPLOITED",
+      "VPN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "國防部：10/29 至 30 晨偵獲共機 6 架次、共艦 7 艘、公務船 1 艘，3 架次逾越中線",
+     "url": "https://def.ltn.com.tw/article/breakingnews/5623470",
+     "summary": "國防部統計共機 6 架次，其中 3 架次越過海峽中線並進入北部、東部及西南空域，另有 1 架直升機在東部空域活動；共艦 7 艘、公務船 1 艘。國軍派任務機、艦及岸置飛彈系統監控應處。（國防部官網無法直連，數字依媒體轉載。）",
+     "source": "國防部（經自由時報轉述）",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜140 億美元對台軍售仍擱置：華府考慮延至 APEC 深圳峰會與 G20 之後",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3368060/us-weighs-delaying-taiwan-arms-sales-until-after-apec-and-g20-summits",
+     "summary": "川習已在 5 月北京、9 月華府會面，11 月將於 APEC 深圳再見、12 月 G20 邁阿密續談；該軍售案自 5 月起未核准，分析認為是為穩住美中關係。台灣駐美代表對川普最終核准表示有信心，時程仍不確定。",
+     "source": "南華早報",
+     "tags": [
+      "ARMS-SALE",
+      "APEC",
+      "US-CHINA",
+      "TAIWAN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜荷姆茲再傳油輪起火：革命衛隊稱 3 至 4 艘船觸雷，疑為戰爭開打以來首次吸附水雷得手",
+     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "summary": "革命衛隊稱有油輪在其視為未經授權的航道被擊中，伊朗海軍另稱 4 艘觸雷起火，英國海事機構 UKMTO 也通報一艘油輪遭投射物擊中；船數說法不一，伊方說法未獨立證實。卡達調停團同日赴德黑蘭傳達草案修訂版，談判與海上攻擊並行。",
+     "source": "Euronews",
+     "tags": [
+      "HORMUZ",
+      "IRAN",
+      "SHIPPING",
+      "OIL"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川普稱對伊戰爭「很快結束」，同時白宮備妥期中選舉前後的軍事選項",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-diplomacy-threat-resume-attacks/",
+     "summary": "卡達斡旋新草案，伊朗媒體稱已收到副總統范斯來信但尚未回應；川普強調需有核武保證。另有官員稱總統已獲提供對伊軍事選項，美方並傳增派第三個航艦戰鬥群，談判與重啟打擊兩條線並行。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "US-IRAN",
+      "DIPLOMACY",
+      "MIDDLE-EAST"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股 10/30 重挫 1,156 點收 45,211.83：外資賣超 1,124.67 億創史上第七大，新台幣收 32.478",
+     "url": "https://ec.ltn.com.tw/article/breakingnews/5624298",
+     "summary": "加權指數跌 2.49% 並失守半年線，主因美科技巨頭財報引發 AI 投資疑慮；外資期貨同時加空 1,780 口，三大法人合計賣超約 1,398 億元，投信買超。新台幣升值 1.4 分，但 10 月全月貶值約 1.92%。（Yahoo 行情無法直連，數字依媒體盤後報導。）",
+     "source": "自由時報",
+     "tags": [
+      "TAIEX",
+      "TWD",
+      "STOCK-MARKET",
+      "AI"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美股 10/30 科技股重挫：Intel 因財測失望暴跌，那指盤中跌逾 3%，市場擔憂 AI 資本支出",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html",
+     "summary": "Intel 預估第四季營收約 155 億美元、遠低於市場預期的約 170 億，股價一度跌近 29%；Amazon、Alphabet 財報後賣壓延續，Nvidia 跌約 3.8%。以下為盤中近似值：那指跌約 3%、標普約 2%、道瓊約 1%，收盤確切數字待確認；那指 10 月估計月跌近 5%。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "NASDAQ",
+      "SP500",
+      "STOCKS",
+      "AI"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油 10/30 盤中約 113 至 118 美元：10 月累計漲約 12% 創六個月高點",
+     "url": "https://www.firstonline.info/en/borse-oggi-sotto-pressione-dopo-le-trimestrali-di-alphabet-amazon-intel-si-cerca-rifugio-su-settori-diversi-da-ai-come-titoli-di-stato-e-franco-svizzero-il-brent-sale/",
+     "summary": "荷姆茲油輪遇襲與美方可能重啟對伊打擊推升油價，WTI 約 103 至 104 美元；各來源布蘭特數字不一（近似值，結算價待確認）。避險資金轉向公債與瑞士法郎。",
+     "source": "FirstOnline",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "ENERGY",
+      "HORMUZ"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "幣安遭駭拖累加密市場：比特幣一度跌約 5% 至 76,400 美元，BNB 跌近 10%",
+     "url": "https://www.abc.net.au/news/2026-10-30/asx-markets-business-live-news-oct-30/107326558",
+     "summary": "受幣安失竊案衝擊，以太幣跌近 6%，穩定幣相對抗跌；部分交易員擔心重演 FTX、Mt. Gox 後的信心危機，幣安已暫停充提。",
+     "source": "ABC News（澳洲）",
+     "tags": [
+      "CRYPTO",
+      "BITCOIN",
+      "BINANCE",
+      "STOCKS"
+     ]
+    }
+   ]
+  }
+ ]
+}

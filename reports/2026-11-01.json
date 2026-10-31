@@ -1,0 +1,167 @@
+{
+ "date": "2026-11-01",
+ "focus": "共機10/31下午聯合戰備警巡22架次、18架次越中線；Cisco SD-WAN漏洞遭新APT在野利用",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Cisco Catalyst SD-WAN 驗證繞過 CVE-2026-20127 遭新 APT UAT-11473 利用，植入 KeyDrift 惡意程式",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
+     "summary": "新命名的 APT 組織 UAT-11473 利用 Cisco Catalyst SD-WAN Controller 的驗證繞過漏洞 CVE-2026-20127，部署自製惡意程式框架 KeyDrift。Cisco 已釋出更新，管理員應盡速套用並檢查控制器是否有異常登入與未知設定變更；具體版本範圍請對照 Cisco 公告。",
+     "source": "Cisco（經 BleepingComputer 轉述）",
+     "tags": [
+      "CISCO",
+      "SD-WAN",
+      "APT",
+      "ZERO-DAY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Linux 核心 MPTCP 重大漏洞 CVE-2026-98432：可遠端取得 root，Anthropic 研究人員已寫出利用程式",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+     "summary": "啟用 MPTCP 的 Linux 伺服器可能遭遠端 root 攻擊，研究人員已建構可用的 exploit。目前並非所有發行版都已推出修補，未修補前建議停用 MPTCP 或限制其暴露面。",
+     "source": "BleepingComputer",
+     "tags": [
+      "LINUX",
+      "RCE",
+      "PATCH",
+      "VULNERABILITY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Del Monte Foods 向多州檢察長通報資料外洩：疑含社會安全號碼，Payouts King 曾宣稱竊得 1.2TB",
+     "url": "https://www.prnewswire.com/news-releases/del-monte-foods-data-breach-investigation-edelson-lechtzin-llp-probes-class-action-claims-after-a-ransomware-attack-exposes-social-security-numbers-302925352.html",
+     "summary": "Del Monte 於 10/29 向加州、麻州、佛蒙特州檢察長通報，並於 10 月底開始通知受影響消費者，外洩資料可能含姓名與社會安全號碼。勒索組織 Payouts King 3 月即宣稱得手；本則來源為律所集體訴訟徵求稿，細節請以公司通知為準。",
+     "source": "PR Newswire（律所新聞稿）",
+     "tags": [
+      "RANSOMWARE",
+      "DATA-BREACH",
+      "US"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Sony 旗下 So-net 遭入侵：約 210 萬筆客戶資料可能外洩，未含信用卡資訊",
+     "url": "https://cybernews.com/security/sony-so-net-data-breach-millions-records",
+     "summary": "So-net 證實攻擊者可能存取約 210 萬筆客戶紀錄，含姓名、聯絡方式、生日與帳號 ID，未涉信用卡。用戶應留意釣魚簡訊與郵件，並更換重複使用的密碼。",
+     "source": "Cybernews",
+     "tags": [
+      "JAPAN",
+      "DATA-BREACH",
+      "SONY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：10/31 下午共機 22 架次出海、18 架次越中線，配合共艦「聯合戰備警巡」",
+     "url": "https://www.cna.com.tw/news/aipl/202610310154.aspx",
+     "summary": "國防部表示，自 10/31 下午 1 時 15 分起偵獲殲10、殲16、空警500、運油20 等共機 22 架次，其中 18 架次逾越海峽中線及延伸線。早間統計（前日 6 時至當日 6 時）為共機 13 架次（6 架次越中線）、共艦 7 艘、公務船 2 艘；數字取自媒體轉載，非國防部官網。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "後續｜140 億美元對台軍售仍擱置：美方考慮延至 APEC 深圳峰會與 G20 之後",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3368060/us-weighs-delaying-taiwan-arms-sales-until-after-apec-and-g20-summits",
+     "summary": "據 SCMP 引述多名消息人士，華府考慮將重大對台軍售公布延至 11 月 APEC 深圳峰會之後；川普與習近平預計 11 月在深圳、12 月在邁阿密 G20 再度會面。軍售案自 5 月起擱置。",
+     "source": "南華早報",
+     "tags": [
+      "TAIWAN",
+      "ARMS-SALES",
+      "APEC",
+      "US-CHINA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜荷姆茲再傳油輪觸雷：革命衛隊稱 10/30 共 4 艘油輪起火，伊朗海軍 10/31 再稱一艘觸雷",
+     "url": "https://english.alarabiya.net/News/middle-east/2026/10/31/iranian-navy-says-tanker-caught-fire-after-striking-mines-near-strait-of-hormuz",
+     "summary": "伊朗海軍 10/31 表示一艘油輪在海峽東側禁航區觸雷起火；革命衛隊先前稱 10/30 共 4 艘。相關說法尚未獲獨立證實，英國海事機構另通報一艘油輪遭不明投射物擊中。",
+     "source": "Al Arabiya",
+     "tags": [
+      "HORMUZ",
+      "IRAN",
+      "SHIPPING",
+      "OIL"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜川普稱伊朗想談、戰事「很快結束」，同時要求核武保證；卡達重啟斡旋",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-diplomacy-threat-resume-attacks/",
+     "summary": "德黑蘭證實收到美方有關結束戰爭的信函，卡達提出新方案斡旋；川普同時要求伊朗永不發展核武，並保留恢復攻擊的選項。沙烏地同日仍攔截無人機。",
+     "source": "CBS News",
+     "tags": [
+      "IRAN",
+      "US-IRAN",
+      "DIPLOMACY",
+      "HORMUZ"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美股 10/30 重挫：標普 -1.82% 報 7,580.07、那指 -2.86% 報 25,437.00，英特爾暴跌",
+     "url": "https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-friday-10-30-2026",
+     "summary": "亞馬遜擴大 AI 支出與英特爾燒錢警告引爆 AI 概念股賣壓，道瓊 -1.09% 收 51,770.31。標普為 6/5 以來最大單日跌幅，10 月那指累計 -5.3%。（數字取自媒體轉載，非即時報價 API）",
+     "source": "美聯社（經 WTOP 轉載）",
+     "tags": [
+      "STOCK-MARKET",
+      "NASDAQ",
+      "SP500",
+      "AI"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "台股 10/30 重挫 1,156 點收 45,211.83，連三週收跌；櫃買指數 -4.42%",
+     "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+     "summary": "加權指數單日跌 2.49%，台達電 -9.8%、國巨 -7.55%，台積電 -1.86%。美國科技財報的 AI 投資疑慮與油價走高拖累，成交金額 Yahoo 為約 8,793 億元、鉅亨為約 9,396 億元，兩者不一。",
+     "source": "Yahoo股市",
+     "tags": [
+      "TAIEX",
+      "STOCK-MARKET",
+      "TSMC",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特 12 月合約到期前收近 118 美元，10 月連四個月上漲",
+     "url": "https://www.thenationalnews.com/business/markets/2026/10/30/oil-prices-set-for-sharp-monthly-rise-on-hormuz-strikes-and-us-threat-to-hit-iran/",
+     "summary": "荷姆茲油輪遇襲與美方可能重啟打擊伊朗推升油價；The National 盤中報布蘭特 117.56 美元、WTI 104.17 美元，Kpler 估計海峽航運量週降至 730 萬桶／日，較戰前低逾 40%。油價為近似值，各來源收盤價略有出入。",
+     "source": "The National",
+     "tags": [
+      "OIL",
+      "BRENT",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    }
+   ]
+  }
+ ]
+}

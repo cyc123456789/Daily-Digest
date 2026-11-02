@@ -1,0 +1,182 @@
+{
+ "date": "2026-11-03",
+ "focus": "GitLab CVE-2026-97229 滿分漏洞仍遭在野利用、逾千台伺服器未修補；伊朗和談希望升溫，布蘭特單日重挫逾 6% 至約 106 美元。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜GitLab CVE-2026-97229 仍遭在野利用：逾 1,000 台伺服器未修補，CISA 另標記 CVE-2026-85706",
+     "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+     "summary": "GitLab 最高嚴重度（CVSS 10.0）漏洞 CVE-2026-97229 已列入 CISA KEV，仍有逾千台對外 GitLab 伺服器未修補，可被遠端執行程式碼。CISA 同時指出 CVE-2026-85706 亦遭在野濫用。受影響為未升級至官方修補版的自管 GitLab，請立即升級並檢視異常 CI 活動。",
+     "source": "CISA／GitLab（經 BleepingComputer 轉述）",
+     "tags": [
+      "GITLAB",
+      "CVE-2026-97229",
+      "CISA-KEV",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜Ivanti 再修補兩個 Connect Secure 零時差：與先前驗證繞過漏洞串連攻擊",
+     "url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+     "summary": "Ivanti 發布更新修補另外兩個 Connect Secure 零時差，攻擊者自 10 月 1 日起將其與先前的驗證繞過漏洞串連利用。使用 Connect Secure 的單位應立即套用最新版本並依官方指引檢查完整性。",
+     "source": "Ivanti（經 BleepingComputer 轉述）",
+     "tags": [
+      "IVANTI",
+      "ZERO-DAY",
+      "EXPLOITED",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Synology 示警 C3RB3R 勒索軟體攻擊 NAS：公網暴露裝置逾 38 萬台",
+     "url": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+     "summary": "Synology 呼籲用戶立即將 DSM 更新至最新版並啟用自動更新；Shadowserver 追蹤到逾 380,000 台暴露於網際網路的 Synology NAS。各方對入侵途徑說法不一（360 指向 9 月已修補的兩個 DSM 重大漏洞），請以 Synology 官方公告確認受影響版本。",
+     "source": "Synology（經 BleepingComputer 轉述）",
+     "tags": [
+      "SYNOLOGY",
+      "RANSOMWARE",
+      "NAS",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "歐洲超市冷凍冷藏系統遭駭：BleepingComputer 稱波及六國逾 115 家門市",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+     "summary": "攻擊者竄改門市冷凍櫃與冷卻系統溫度設定，影響比利時、荷蘭、瑞典、盧森堡、愛爾蘭與愛沙尼亞。10 月法國同類事件中，Danfoss 表示受影響多為已停止更新的舊款遠端控制模組（法國資安機關另提及 Copeland），建議汰換或隔離此類 OT 設備。門市數為搜尋摘要所得，細節請見原文。",
+     "source": "BleepingComputer",
+     "tags": [
+      "OT",
+      "DANFOSS",
+      "COPELAND",
+      "EUROPE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "BTCPay Server 示警舊版實例熱錢包遭盜：請升級至 2.4.7",
+     "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+     "summary": "攻擊者鎖定未更新的 BTCPay Server 實例清空熱錢包。維護者呼籲所有使用者升級至 2.4.7 版，並檢視錢包存取與金鑰管理。",
+     "source": "BTCPay Server（經 BleepingComputer 轉述）",
+     "tags": [
+      "BTCPAY",
+      "CRYPTO",
+      "PATCH",
+      "THEFT"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Google 聯手瓦解逾 130 萬台 Android 電視盒 XCPE 殭屍網路，並封鎖電視盒廠商",
+     "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+     "summary": "惡意程式在出廠時即內建於韌體，Google 與夥伴已瓦解其基礎設施並封鎖該廠商。受影響為該廠牌 Android 電視盒，用戶宜停用不明來源的低價電視盒或改用通過認證的裝置。",
+     "source": "Google（經 BleepingComputer 轉述）",
+     "tags": [
+      "GOOGLE",
+      "ANDROID",
+      "BOTNET",
+      "SUPPLY-CHAIN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：11/1 上午至 11/2 上午偵獲共艦 7 艘、公務船 6 艘、共機 19 架次，其中 4 架次進入西南及東部空域",
+     "url": "https://news.cts.com.tw/cna/politics/202611/202611023096275.html",
+     "summary": "國防部 2 日公布，國軍運用任務機艦及岸置飛彈系統嚴密監控。不同媒體對共機架次口徑略有差異（總架次與進入空域架次），數字以國防部原始公告為準。",
+     "source": "中央社（華視轉載）",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "共軍 10 月底第五度啟動「聯合戰備警巡」後仍高強度活動：11/1 偵獲共機 19 架次、船艦 13 艘",
+     "url": "https://ctinews.com/news/items/ogxwXYG5nG",
+     "summary": "報導指出聯合戰備警巡結束後，台灣西半部周邊仍有約 32 架機艦活動。11/1 當日國防部統計共艦 7 艘、公務船 2 艘，另有共機越中線，各媒體數字略有出入。",
+     "source": "中天新聞",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "TAIWAN-STRAIT",
+      "MND"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜美伊和談希望升溫：盧比歐稱川普傾向和平結束戰爭，卡達斡旋含重開荷姆茲計畫",
+     "url": "https://invezz.com/ca/news/2026/11/02/oil-price-today-wti-crude-falls-below-dollar100-as-iran-peace-talk-hopes-build/",
+     "summary": "據報導，國務卿盧比歐表示川普寧願以和平方式結束對伊戰爭，卡達斡旋方案包含兩天內重開海峽的計畫。但荷姆茲仍傳出新的油輪事件，談判能否落實尚待觀察。",
+     "source": "Invezz",
+     "tags": [
+      "IRAN",
+      "US-IRAN",
+      "HORMUZ",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜荷姆茲戰事第 248 天：外交盼望壓低油價，海峽航運仍受阻",
+     "url": "https://www.theamericanconservative.com/iran-war-day-248-oil-prices-fall-on-diplomatic-hopes/",
+     "summary": "戰事進入第 248 天，市場因外交進展預期而回吐油價漲幅，但海峽通行仍未恢復，另有伊朗方面稱油輪觸雷的未證實說法。",
+     "source": "The American Conservative",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "SHIPPING",
+      "OIL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "油價 11/2 重挫：布蘭特跌逾 6% 至約 106 美元、WTI 跌破 100 美元",
+     "url": "https://invezz.com/ca/news/2026/11/02/oil-price-today-wti-crude-falls-below-dollar100-as-iran-peace-talk-hopes-build/",
+     "summary": "因美伊和談希望升溫，布蘭特較前日近 118 美元大幅回落。各來源報價因時間點不同有 106–111 美元落差，此為搜尋所得近似值，非 Yahoo 報價。",
+     "source": "Invezz",
+     "tags": [
+      "OIL",
+      "BRENT",
+      "HORMUZ",
+      "IRAN"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "油價受外交消息牽動：能源市場在和談預期與海峽航運風險間拉鋸",
+     "url": "https://www.theamericanconservative.com/iran-war-day-248-oil-prices-fall-on-diplomatic-hopes/",
+     "summary": "近期布蘭特在約 106–118 美元間劇烈震盪，10 月累計上漲。今日未能取得加權指數、美股與匯率的可靠收盤數字（資料源連線受限），故不引用。",
+     "source": "The American Conservative",
+     "tags": [
+      "OIL",
+      "ENERGY",
+      "HORMUZ",
+      "BRENT"
+     ]
+    }
+   ]
+  }
+ ]
+}

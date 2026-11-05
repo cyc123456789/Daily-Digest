@@ -1,0 +1,180 @@
+{
+ "date": "2026-11-06",
+ "focus": "Nasdaq 盤中重挫約 5%、台股 11/5 崩跌 1,374 點失守 42,000；CISA 將 Apple CVE-2024-27834 列入 KEV。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "CISA 將 Apple CVE-2024-27834 列入 KEV：疑俄羅斯 APT29 以水坑攻擊利用 iPhone 漏洞",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+     "summary": "CISA 11/4 將 Apple 指標驗證（PAC）繞過漏洞 CVE-2024-27834 列入已知遭利用清單，聯邦機關須於 11/18 前處理。Sekoia 以中高信心度將「Poisoned Source」水坑攻擊連結至 APT29，攻擊植入美、烏、捷克、保加利亞的網站。該漏洞已於 iOS 17.5／16.7.8（2024 年 5 月）修補，仍在舊版本的裝置請立即更新。",
+     "source": "CISA（經 The Hacker News 轉述）",
+     "tags": [
+      "CISA-KEV",
+      "APPLE",
+      "APT29",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Zyxel GS1900 交換器零時差 CVE-2026-107441 遭利用：約 996 台被入侵，6 月修補檔無效",
+     "url": "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/",
+     "summary": "GreyNoise 統計攻擊已波及 48 國約 996 台交換器，攻擊者竊取設定檔與憑證。漏洞為網頁管理介面的越界寫入，可未驗證遠端執行系統指令，Zyxel 評 8.8、Binarly 評 9.8。影響 10 款 GS1900 型號韌體 .2C0 及更早版本（含已套用 6 月修補者），須升級至 .3C0 版本；截至 11/5 尚未列入 KEV。",
+     "source": "Zyxel／Binarly（經 SecurityWeek 轉述）",
+     "tags": [
+      "ZYXEL",
+      "ZERO-DAY",
+      "EXPLOITED",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA KEV 新增 WordPress 核心競態漏洞 CVE-2026-119977",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+     "summary": "CISA 11/3 公告新增一項已知遭利用漏洞；據報導為 WordPress 核心在完整套件升級期間的競態條件（CVSS 8.1），未驗證攻擊者可執行程式碼。影響 WordPress 7.1.4 之前版本，請升級至 7.1.4 或以上；聯邦機關處理期限為 11/6。細節以 CISA 公告為準，本則為搜尋摘要。",
+     "source": "CISA",
+     "tags": [
+      "CISA-KEV",
+      "WORDPRESS",
+      "EXPLOITED",
+      "RCE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "韓國金融業連環資安事件：一個月內 37 家機構外洩約 47.3 萬筆資料",
+     "url": "https://www.cna.com.tw/news/aopl/202611050098.aspx",
+     "summary": "中央社報導，韓國過去一個月共有 37 家金融機構發生資訊外洩，資料約 47.3 萬筆，金融當局要求各機構立即改善資安漏洞。報導未點名單一攻擊手法或修補項目；跨國企業可檢視與韓國金融夥伴的連線與憑證管理。",
+     "source": "中央社",
+     "tags": [
+      "DATA-BREACH",
+      "SOUTH-KOREA",
+      "FINANCE"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "91APP 資料庫遭駭：1,329 個品牌受波及，資安院籲檢視對外服務與供應鏈",
+     "url": "https://businesstoday.com.tw/article/category/183030/post/202610300008",
+     "summary": "今周刊報導，台灣電商平台 91APP 資料庫遭駭，涉及寶雅、adidas、無印良品、全家等 1,329 個品牌，並整理補償方式。相關品牌用戶應更換密碼並留意信用卡異常；企業端應盤點委外與供應鏈系統的存取權限。",
+     "source": "今周刊",
+     "tags": [
+      "DATA-BREACH",
+      "TAIWAN",
+      "SUPPLY-CHAIN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "共機 11/4 配合共艦「聯合戰備警巡」：12 架次逾越中線",
+     "url": "https://www.cna.com.tw/news/aipl/202611040264.aspx",
+     "summary": "國防部指出，11/4 上午 11 時 8 分起，12 架次共機逾越海峽中線侵擾北部、中部與西南空域，配合共艦進行所謂「聯合戰備警巡」。國軍以聯合情監偵掌握動態，並派遣任務機艦與岸置飛彈系統應處。",
+     "source": "中央社",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部 11/5 晨報：共艦 8 艘、公務船 8 艘、共機 19 架次越中線",
+     "url": "https://udn.com/news/story/10930/9858566",
+     "summary": "國防部統計 11/4 上午 6 時至 11/5 上午 6 時，偵獲共艦 8 艘、公務船 8 艘，共機 19 架次越過中線，進入北部、中部、西南及東部空域。共軍高強度活動持續，國軍嚴密監控。",
+     "source": "聯合新聞網",
+     "tags": [
+      "TAIWAN",
+      "PLA",
+      "MND",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜伊朗稱美方回應「無說服力」、川普證實打擊 Qeshm 島：荷姆茲談判僵持",
+     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
+     "summary": "伊朗表示在美方滿足七項條件（含解除石油制裁、終止海上封鎖、釋放凍結資產）前，荷姆茲海峽維持關閉；川普證實美軍打擊海峽附近的 Qeshm 島。卡達持續斡旋，華爾街日報稱川普傾向在期中選舉後發動大規模攻擊但尚未決定。",
+     "source": "Al Jazeera",
+     "tags": [
+      "IRAN",
+      "US-IRAN",
+      "HORMUZ",
+      "MIDDLE-EAST"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "中國警告菲律賓「謹言慎行」：王毅與菲外長通話，雙方同意保持對話",
+     "url": "https://www.washingtontimes.com/news/2026/nov/4/china-warns-philippines-cautious-south-china-sea/",
+     "summary": "王毅與菲律賓外長拉扎羅 11/3 通話，北京稱兩國關係遭菲國部分政客「惡意干擾」，要求菲方在南海問題上謹言慎行；雙方同意持續對話。東協峰會 11/15–18 將在馬尼拉舉行，後續互動值得關注。",
+     "source": "Washington Times",
+     "tags": [
+      "CHINA",
+      "PHILIPPINES",
+      "SOUTH-CHINA-SEA",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美股 11/5 盤中重挫：Nasdaq 一度跌約 5%、費半跌逾 10%，吐回選後漲幅",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html",
+     "summary": "報導稱晶片股遭拋售，Nasdaq 盤中跌約 5%、標普與道瓊也回吐選後反彈。以上為盤中數字，本次未取得 11/5 最終收盤價，數字為近似值。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "NASDAQ",
+      "SP500",
+      "AI",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "台股 11/5 重挫 1,374.19 點收 41,574.72：連六黑，三大法人賣超 1,276.9 億",
+     "url": "https://www.mnews.tw/story/20261105nm001",
+     "summary": "加權指數跌幅 3.2%，創 7/31 以來收盤低點，上漲 502 檔、下跌 1,745 檔；台積電收 2,240 元、跌 20 元。證交所表示台股今年表現仍優於亞股與費半。",
+     "source": "鉅亨／mnews",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "TAIWAN",
+      "STOCK-MARKET"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股 11/4 收盤：道瓊 +3.03% 至 53,356.12，標普 7,688.62、Nasdaq 25,736.51；布蘭特跌 8.7% 至約 94.6 美元",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026",
+     "summary": "民主黨在期中選舉勝出、市場押注華府僵局有助緩和中東情勢，推升道瓊創 2025 年 4 月以來最佳單日表現。布蘭特結算約 94.6 美元，各來源略有出入；11/5 盤中一度反彈至約 97 美元。以上數字取自媒體報導，為近似值。",
+     "source": "TheStreet",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "SP500",
+      "NASDAQ"
+     ]
+    }
+   ]
+  }
+ ]
+}

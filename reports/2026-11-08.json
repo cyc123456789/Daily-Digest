@@ -1,0 +1,20 @@
+{
+ "date": "2026-11-08",
+ "focus": "後續｜WordPress 核心升級競態漏洞 CVE-2026-119977 已確認遭利用，連「安裝修補」的瞬間都可能被攻擊；SonicWall SSL VPN 漏洞同列 KEV。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "critical", "title": "後續｜WordPress 核心升級競態漏洞確認遭利用：安裝修補的瞬間也可能被入侵", "url": "https://www.esecurityplanet.com/threats/news-cisa-wordpress-core-upgrade-flaw/", "summary": "CISA 已於 11/3 將 CVE-2026-119977 列入 KEV：WordPress 核心升級流程存在競態條件，攻擊者無須帳號即可在解壓暫存目錄的數秒內執行程式碼。受影響為 WordPress 4.7 至 7.1.3，7.1.4 與舊分支對應版本已釋出；管理員應立即更新，並檢查站台是否已遭入侵。", "source": "eSecurityPlanet（轉述 CISA）", "tags": ["WORDPRESS", "CISA-KEV", "RCE", "PATCH"]},
+   {"severity": "high", "title": "SonicWall 修補遭利用的 SonicOS SSL VPN 漏洞 CVE-2026-19868，CISA 同步列入 KEV", "url": "https://securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins", "summary": "漏洞位於 SonicOS 的 SSL VPN 元件，會削弱 VPN 登入防護，CISA 已列入 KEV，聯邦機構須依 BOD 26-04 於 11/20 前處理。SonicWall 已釋出修補，使用 SSL VPN 的組織應盡速升級韌體並檢視登入紀錄；是否曾以零時差形式被利用尚未明確。", "source": "SecurityWeek", "tags": ["SONICWALL", "VPN", "CISA-KEV", "PATCH"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "國防部：11/6 至 11/7 晨偵獲共機 11 架次、共艦 10 艘、公務船 3 艘，9 架次逾越中線", "url": "https://www.cna.com.tw/news/aipl/202611070034.aspx", "summary": "國防部統計 11/6 上午 6 時至 11/7 上午 6 時，中共機艦船合計 24 艘架次在台海周邊活動，其中 9 架次共機越過海峽中線，進入北部及西南空域。國軍以任務機、艦及岸置飛彈系統嚴密監控；本週共機活動明顯偏高，11/3 曾創今年單日新高。", "source": "中央社（引述國防部）", "tags": ["TAIWAN", "PLA", "MND", "TAIWAN-STRAIT"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "warning", "title": "後續｜卡達調停方案：美方解除港口封鎖換伊朗重開荷姆茲，雙方仍互不直接談判", "url": "https://www.outlookindia.com/international/us-iran-war-latest-us-strikes-qatar-nuclear-talks-strait-of-hormuz", "summary": "報導稱卡達草案第一階段由美國解除伊朗港口封鎖並釋放部分凍結資產，伊朗讓 IAEA 視察遭攻擊地點，並經與阿曼協議於第二天重開荷姆茲。伊朗外長稱無直接會談，川普稱談判有進展並形容近期打擊為「小規模」，卡達否認談判破裂。", "source": "Outlook India", "tags": ["IRAN", "US-IRAN", "HORMUZ", "DIPLOMACY"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "warning", "title": "台股 11/6 盤中一度狂瀉逾 3,700 點、韓股暴跌逾 8% 觸發熔斷", "url": "https://newtalk.tw/news/view/2026-11-06/1069612", "summary": "加權指數 11/6 收 39,701.64 點、跌 4.51%，盤中最低 37,837.05，台積電一度逼近跌停；韓股同日崩跌逾 8% 熔斷。11/7 為週六休市，下一個交易日為 11/9；市場報價（布蘭特約 98 美元、美元兌台幣約 33.1）取自單一儀表板，為近似值。", "source": "新頭殼", "tags": ["TAIEX", "TSMC", "STOCK-MARKET", "TWD"]},
+   {"severity": "medium", "title": "美股 11/6 反彈：那指 +1.09% 收 24,579.43，費半 +4.21%、台積電 ADR +6.33%", "url": "https://news.cnyes.com/news/id/6651785", "summary": "前一日 Nasdaq 重挫 5.5% 後，晶片股 11/6 強勢反彈，費半漲逾 4%，台積電 ADR 漲逾 6%；道瓊仍小跌約 237 點，那指與標普週線連四黑。市場對 AI 資本支出與油價走勢仍高度敏感。", "source": "鉅亨網", "tags": ["NASDAQ", "TSMC", "STOCKS", "AI"]}
+  ]}
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "date": "2026-11-09",
+ "focus": "OpenSSH「SSHole」漏洞揭露數小時內即遭利用並在誘捕系統取得 root；同時台股單週重挫逾 12%，荷姆茲調停與油價持續拉鋸。",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "critical", "title": "後續｜OpenSSH「SSHole」漏洞遭利用：揭露數小時內即在 Alpine 誘捕系統取得 root", "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html", "summary": "CVE-2026-123158 影響使用 musl C 函式庫且停用 PAM 的 Linux 系統，Alpine Linux 預設設定即在範圍內，攻擊者可用超長密碼登入已停用密碼的帳號。研究人員報告漏洞揭露後數小時內即有攻擊並取得 root。修補版本請以發行版公告為準，建議先升級相關套件，並限制 SSH 對外暴露。", "source": "OpenSSH 漏洞研究（經 The Hacker News 轉述）", "tags": ["OPENSSH", "MUSL", "LINUX", "VULNERABILITY"]},
+   {"severity": "high", "title": "Barracuda Email Security Gateway 兩個漏洞可串連取得 root，原廠已釋出修補", "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/", "summary": "CVE-2026-116606 與 CVE-2026-111560 可串連取得設備 root 權限，Mandiant 稱其中一環無需驗證，但原廠 advisory 對所需權限的描述不一，尚未見在野利用報告。受影響為 Email Security Gateway：9.4.017 以上版本套用 BNSF-40425，以下版本套用 BNSF-40430，並建議限制管理介面對外暴露。", "source": "SecurityWeek", "tags": ["BARRACUDA", "RCE", "PATCH", "VULNERABILITY"]},
+   {"severity": "high", "title": "CryptoPayment Gateway WordPress 外掛 CVSS 10.0 漏洞遭攻擊嘗試，外掛已下架", "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html", "summary": "CVE-2026-81648 為滿分漏洞，可能暴露錢包憑證，已有針對性的攻擊嘗試。該外掛已從 WordPress 外掛目錄關閉、無法下載，目前未見修補版本，建議立即停用並移除外掛，輪替相關錢包與 API 憑證。", "source": "The Hacker News", "tags": ["WORDPRESS", "VULNERABILITY", "CRYPTO", "EXPLOITED"]},
+   {"severity": "high", "title": "日本 Iris Ohyama 透過第三方雲端服務外洩約 770 萬名客戶資料", "url": "https://bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers", "summary": "日本製造商 Iris Ohyama 表示，所用第三方雲端服務遭未授權存取，約 770 萬人個資可能外洩。截至 11 月 5 日 Iris Plaza 尚未接獲濫用或財務損失通報。受影響客戶應提防釣魚郵件與簡訊，企業則應檢視第三方雲端服務的存取權限。", "source": "BleepingComputer", "tags": ["DATA-BREACH", "JAPAN", "SUPPLY-CHAIN"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "國防部：11/7 至 11/8 晨偵獲共艦 6 艘、公務船 2 艘、共機 4 架次，2 架次進入西南空域", "url": "https://www.cna.com.tw/news/aipl/202611080017.aspx", "summary": "國防部統計 7 日上午 6 時至 8 日上午 6 時，偵獲共機 4 架次，其中 2 架次進入西南空域，另有共艦 6 艘、公務船 2 艘。國軍以任務機艦及岸置飛彈系統嚴密監控。與前一日 21 架次、19 架次越中線相比，空中活動明顯回落。", "source": "中央社", "tags": ["PLA", "MND", "TAIWAN", "TAIWAN-STRAIT"]},
+   {"severity": "warning", "title": "美智庫示警：共軍恐以不宣布演習壓縮台灣預警時間", "url": "https://news.cts.com.tw/cts/international/202611/202611083098775.html", "summary": "美國智庫報告稱，共軍海軍與海警在西太平洋部署逾百艘艦船，研判可能是未公布的演習，壓縮台灣預警時間；目前尚無官方證實。同一時間 3 架 F-16V 抵台，台灣空防戰力持續補強。", "source": "華視新聞", "tags": ["PLA", "TAIWAN", "CHINA", "TAIWAN-STRAIT"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "warning", "title": "後續｜卡達調停方案：美方解除封鎖、伊朗兩天內重開荷姆茲，但伊朗堅持七項條件", "url": "https://nationalsecurityjournal.org/the-strait-of-hormuz-could-open-in-2-days-if-donald-trump-and-iran-would-support-a-new-deal-to-end-the-war-by-qatar/", "summary": "卡達提出方案：美方解除封鎖並釋放部分凍結資產，伊朗讓核查人員返回並於兩天內重開荷姆茲。伊朗官員稱未落實其七項條件前，不會重開海峽也不談判，卡達則否認談判破局，目前尚未簽署協議。", "source": "National Security Journal", "tags": ["IRAN", "HORMUZ", "US-IRAN", "DIPLOMACY"]},
+   {"severity": "warning", "title": "後續｜荷姆茲再傳油輪遇襲：伊朗稱週四三艘油輪遭攻擊，川普稱和平有進展", "url": "https://ca.investing.com/news/economy-news/trump-signals-iran-peace-progress-as-hormuz-attacks-threaten-talks-4940772", "summary": "伊朗通報週四又有三艘油輪在荷姆茲遭攻擊，UKMTO 數據顯示航運遇襲頻率接近紀錄。川普同時稱美軍近期摧毀伊朗一處防空設施，並釋出和平有進展的訊號，使談判前景更加不明。", "source": "Investing.com", "tags": ["IRAN", "HORMUZ", "SHIPPING", "US-IRAN"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "warning", "title": "台股單週重挫 5,510 點、跌幅 12.19%：11/6 收 39,701.64，上市市值蒸發近 18 兆", "url": "https://news.nextapple.com/finance/20261107/6B77BBCCFCBAA61C71EFBFA339E31609", "summary": "加權指數 11/6 收 39,701.64 點，單日跌 1,873.08 點、跌幅 4.51%，盤中一度殺到 37,837 點，為史上最大盤中跌點。本週累計重挫 5,510 點，上市總市值降至約 130 兆元。11/7 收盤數字未能取得，以 11/6 為最新確認值。", "source": "壹蘋新聞網", "tags": ["TAIEX", "STOCK-MARKET", "TWD"]},
+   {"severity": "medium", "title": "布蘭特原油 11/6 回升至約 99.90 美元：週中曾重挫逾 9%，荷姆茲遇襲推升", "url": "https://financefeeds.com/brent-crude-oil-price-99.90-friday-after-wall-street-ai-rout-jobs-report-iran-deal-bets-bull-103-60-bear-93-50/", "summary": "布蘭特週三因美伊和談預期重挫 9.73% 至 93.52 美元，週五因伊朗通報油輪再遭攻擊而連兩日走高，漲 1.7% 至 99.90 美元。分析師對短期內達成協議仍抱持懷疑，油價在和談預期與海峽風險間拉鋸。價格取自搜尋報導，為近似值。", "source": "FinanceFeeds", "tags": ["BRENT", "OIL", "HORMUZ", "ENERGY"]}
+  ]}
+ ]
+}

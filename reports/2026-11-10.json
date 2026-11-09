@@ -1,0 +1,193 @@
+{
+ "date": "2026-11-10",
+ "focus": "後續｜OpenSSH「SSHole」CVE-2026-123158 傳出列入 CISA KEV（確認在野利用）；同時川普預告赴深圳 APEC 會習近平、普丁，卡達首相攜伊朗荷姆茲提案訪白宮，油價續挫。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "後續｜OpenSSH「SSHole」CVE-2026-123158 傳出於 11/9 列入 CISA KEV，聯邦機關限期 11/12 修補",
+     "url": "https://hol.org/blog/cve-2026-123158-openssh-sshole-alpine-password-bypass",
+     "summary": "受影響為使用 musl libc 的系統（如 Alpine Linux）上的 OpenSSH，超長密碼可繞過已停用密碼的帳號驗證。HOL 部落格稱 CISA 已於 11/9 將其列入 KEV、期限 11/12；本次無法連上 CISA 官網核對，請以 KEV 目錄為準。請升級至各發行版的修補套件，暫時可限制 SSH 來源 IP 並檢視異常登入。",
+     "source": "HOL 部落格（CISA KEV 資訊未能與官網核對）",
+     "tags": [
+      "OPENSSH",
+      "CISA-KEV",
+      "EXPLOITED",
+      "MUSL"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Cisco ASA／FTD SSL VPN 零時差 CVE-2026-76418 遭利用使防火牆重啟，已修補並列入 KEV",
+     "url": "https://securityweek.com/cisco-patches-firewall-zero-day-exploited-for-dos-attacks/",
+     "summary": "未經驗證的遠端攻擊者可強制裝置重啟、中斷遠端存取；需啟用 SSL 遠端存取 VPN 且對通道群組設定二次驗證才受影響。Cisco 已釋出修補（CVSS 約 8.6），聯邦機關期限為 11/1；未見資料竊取或程式碼執行報告。各版本請對照 Cisco 公告 cisco-sa-asaftd-tunnel-dos-s6mgkb75。",
+     "source": "SecurityWeek",
+     "tags": [
+      "CISCO",
+      "VPN",
+      "CISA-KEV",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Dell 發布 OpenManage Enterprise、PowerProtect Data Domain 安全公告",
+     "url": "https://cyber.gc.ca/en/alerts-advisories/dell-security-advisory-av26-1110",
+     "summary": "加拿大網路安全中心 11/2 公告指出，OpenManage Enterprise 4.8.0 之前版本與 PowerProtect Data Domain 受多項漏洞影響。Dell 已提供更新版本，管理介面請升級並避免暴露於公網。",
+     "source": "加拿大網路安全中心（轉載 Dell 公告）",
+     "tags": [
+      "DELL",
+      "VULNERABILITY",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "法國家具商 Ligne Roset 遭 Akira 勒索軟體宣稱竊取 150GB 資料",
+     "url": "https://www.interiordaily.com/article/9890609/150gb-of-data-at-risk-as-luxury-furniture-brand-ligne-roset-hit-by-ransomware-attack/",
+     "summary": "Akira 宣稱取得員工身分文件與合約等資料並威脅公開。公司尚未公開證實，資料未獨立查證。受影響產品與漏洞入口未揭露，相關企業可檢查 VPN 與遠端存取帳號的 MFA 設定。",
+     "source": "InteriorDaily（轉述勒索組織洩漏站聲明）",
+     "tags": [
+      "RANSOMWARE",
+      "AKIRA",
+      "DATA-BREACH"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：11/8 至 11/9 晨偵獲共艦 7 艘、公務船 1 艘、共機 1 架次，進入北部空域",
+     "url": "https://www.cna.com.tw/news/aipl/202611090019.aspx",
+     "summary": "國軍派任務機艦與岸置飛彈系統監控應處。共艦數量較前日 6 艘增加，共機則降至單架。本次國防部官網無法連線，數字取自中央社轉載。",
+     "source": "中央社",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN",
+      "TAIWAN-STRAIT"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "共機架次連三日下滑：11/7 為 11 架次、11/8 為 4 架次、11/9 僅 1 架次",
+     "url": "https://www.cna.com.tw/news/aipl/202611080017.aspx",
+     "summary": "11/7 晨報有 9 架次逾越中線，之後快速降溫，同期共艦維持 6 至 10 艘。時點接近川習深圳 APEC 會面，是否為會前克制仍待觀察。",
+     "source": "中央社",
+     "tags": [
+      "PLA",
+      "MND",
+      "TAIWAN",
+      "APEC"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "後續｜川普預告赴深圳 APEC 會習近平、普丁，議題含結束伊朗戰爭",
+     "url": "https://www.cna.com.tw/news/aopl/202611090024.aspx",
+     "summary": "APEC 訂 11/18 至 19 日在深圳舉行，川普預計先赴馬尼拉出席東協峰會。中國外交部稱「目前沒有可提供的信息」，未證實三方會談。",
+     "source": "中央社",
+     "tags": [
+      "APEC",
+      "US-CHINA",
+      "IRAN",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜卡達首相攜伊朗方案訪白宮：解除封鎖、解凍 80 億美元換荷姆茲重開",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Sinks-to-94-as-Iran-s-8-Billion-Hormuz-Deal-Heads-to-Trump.html",
+     "summary": "據匿名外交消息，方案含美方解除海上封鎖、伊朗停止攻擊海灣船隻、解凍存放卡達的 80 億美元。盧比歐稱雙方尚未接近突破，荷姆茲週末仍有船隻遇襲。",
+     "source": "OilPrice.com",
+     "tags": [
+      "HORMUZ",
+      "IRAN",
+      "US-IRAN",
+      "DIPLOMACY"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美中延長貿易休戰：美方 301 關稅豁免延至 1/9，中方暫停對 27 家美國實體措施",
+     "url": "https://udn.com/news/story/6809/9867842",
+     "summary": "中方延續暫停 24% 加徵關稅兩個月、保留 10%，並自 11/10 起暫停 16 家美國實體出口管制與 11 家不可靠實體清單措施，為川習會鋪路。",
+     "source": "聯合新聞網",
+     "tags": [
+      "US-CHINA",
+      "APEC",
+      "SANCTIONS",
+      "CHINA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "日本據報向中方要求保證：深圳 APEC 不冷落首相高市早苗",
+     "url": "https://tw.news.yahoo.com/%E6%B7%B1%E5%9C%B3apec%E5%80%92%E6%95%B89%E5%A4%A9-%E6%97%A5%E6%9C%AC%E5%B0%8B%E6%B1%82%E4%B8%AD%E5%9C%8B%E4%BF%9D%E8%AD%89%E7%BF%92%E8%BF%91%E5%B9%B3%E4%B8%8D%E6%9C%83%E5%86%B7%E8%90%BD%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97-045000795.html",
+     "summary": "中日關係自高市 2025 年「台灣有事」言論後惡化，中方曾祭出稀土限制與海鮮禁令。傳高市可能 11/16 在馬尼拉與川普會面，均為未證實消息。",
+     "source": "Yahoo 新聞（轉載）",
+     "tags": [
+      "JAPAN",
+      "CHINA",
+      "APEC",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "台股 11/9 反彈 1,960 點收 41,661.70，史上第二大漲點",
+     "url": "https://finance.ettoday.net/news/3268934",
+     "summary": "國安基金護盤加上金管會限空措施，漲幅 4.94%、成交 8,379 億元，台積電漲 100 元至 2,235 元；外資連 8 日賣超約 900.56 億元。",
+     "source": "ETtoday",
+     "tags": [
+      "TAIEX",
+      "TSMC",
+      "STOCK-MARKET",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油 11/9 盤中跌近 5% 至約 93.4 美元，週跌幅逾 16%",
+     "url": "https://journalarta.com/en/2026/11/09/oil-price-today-brent-falls-4-96-to-93-44-on-iran-peace-hopes-as-gold-climbs/",
+     "summary": "因卡達調停的荷姆茲協議預期，布蘭特自前收 98.32 美元下挫，WTI 約 86.65 美元。此為盤中近似值，非收盤價。",
+     "source": "JournalArta",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "美股 11/9 盤中反彈、輝達重挫：道瓊約 +1.3%、那指約 +1.9%，輝達跌 5% 至 7%",
+     "url": "https://finance.ettoday.net/news/3269231",
+     "summary": "輝達因執行長黃仁勳相關調查遭拖累，10 年期美債殖利率盤中約 4.84%。以上為台北時間晚間盤中近似值，非收盤數據。",
+     "source": "ETtoday",
+     "tags": [
+      "NASDAQ",
+      "STOCK-MARKET",
+      "AI",
+      "TREASURY-YIELD"
+     ]
+    }
+   ]
+  }
+ ]
+}

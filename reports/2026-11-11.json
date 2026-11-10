@@ -1,0 +1,114 @@
+{
+ "date": "2026-11-11",
+ "focus": "Google 緊急修補 Chrome 年內第8個在野利用零時差漏洞 CVE-2026-125350；台股11/10大漲1050點收復42711點，美股同步反彈、布蘭特原油挫至兩個月低點。",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Google 緊急修補 Chrome 年內第8個遭在野利用零時差漏洞 CVE-2026-125350",
+     "url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+     "summary": "CVE-2026-125350 為 Chrome XML 元件的高風險釋放後使用（use-after-free）漏洞，由匿名研究人員於11/6通報，Google 已於11/9釋出的 Chrome 157.0.8103.50/.51（Windows/Mac）、157.0.8103.50（Linux）穩定版中修補，官方證實該漏洞已遭在野利用。使用者需手動重啟瀏覽器才能套用更新生效，目前 CISA KEV 尚未列入此案。",
+     "source": "BleepingComputer",
+     "tags": ["GOOGLE", "CHROME", "ZERO-DAY", "EXPLOITED"]
+    },
+    {
+     "severity": "high",
+     "title": "FBI 正式歸咎北韓 TraderTraitor：幣安63億美元失竊案列管600多個錢包地址",
+     "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers",
+     "summary": "FBI 正式將10/29幣安遭竊約63億美元虛擬資產事件歸咎北韓 Lazarus 旗下 TraderTraitor 組織，並公布600多個涉案錢包位址，指出贓款主要被轉換為以太幣並透過 DeFi 與即時兌換服務洗錢。北韓官方否認涉入，稱美方說法為「拙劣挑釁」。幣安先前說法指入侵可能源自一名 DevOps 工程師遭入侵的筆電。",
+     "source": "FBI（經 BleepingComputer 轉述）",
+     "tags": ["FBI", "CRYPTO", "NORTH-KOREA", "APT"]
+    },
+    {
+     "severity": "high",
+     "title": "日本軟體廠商 SourceNext 遭不當存取：逾2251萬筆個資外洩，為日本史上第二大規模",
+     "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/17/news010.html",
+     "summary": "日本軟體公司 SourceNext（年賀狀軟體等產品）10/15公布，會員資訊管理系統自10/9起遭透過會員資料擷取 API 的不當存取，10/13封鎖後清查確認最多2,251萬9,960筆個資可能外洩，含姓名、地址、電話、生日、職場資訊及密碼，NHK報導指出密碼疑似以未加密狀態外洩；信用卡資料未受影響。公司已強制重設所有密碼並籲用戶同步更改其他服務的相同密碼組合。",
+     "source": "NHK、ITmedia（經 ITmedia 彙整轉述）",
+     "tags": ["JAPAN", "DATA-BREACH", "CREDENTIAL-THEFT"]
+    },
+    {
+     "severity": "medium",
+     "title": "法國數百間超市冷凍系統遭駭調高溫度：ANSSI 鎖定 Danfoss 控制器漏洞，部分停產機型無法修補",
+     "url": "https://www.aljazeera.com/news/2026/10/13/unprecedented-cyberattack-hits-french-supermarkets-causing-food-losses",
+     "summary": "法國數百家超市的 Danfoss AK-SM／AK-SC 系列冷凍管理系統遭駭客入侵並調高溫度，導致大量食品損壞、部分案場起火。法國國家資通安全局（ANSSI）已鎖定 Danfoss 軟體中的漏洞並已聯繫廠商，但 Danfoss 坦承遭劫持的部分控制器已達停產（end-of-life）狀態、不再提供修補。調查人員尚未公開證實攻擊者身分，部分消息來源推測可能與伊朗有關，但未獲證實。",
+     "source": "Al Jazeera、ANSSI／CERT-FR",
+     "tags": ["FRANCE", "OT", "SUPPLY-CHAIN", "IRAN"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：11/9至11/10晨偵獲共艦8艘、公務船1艘、共機4架次，4架主戰機於中線以西活動",
+     "url": "https://www.cna.com.tw/news/aipl/202611100030.aspx",
+     "summary": "國防部統計，自11/9上午6時至11/10上午6時，偵獲中國共艦8艘、公務船1艘、共機4架次在台灣周邊海空域活動；其中4架次主戰機於上午10時20分至下午2時15分間在台灣海峽中線以西活動，未逾越中線。國軍以任務機艦及岸置飛彈系統嚴密監控應處。",
+     "source": "中央社",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "TAIWAN"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜美智庫示警：共軍疑似進行大規模「不宣布軍演」，模擬合圍孤立台灣",
+     "url": "https://news.ltn.com.tw/news/politics/paper/1777608",
+     "summary": "美國企業研究所（AEI）與戰爭研究所（ISW）聯合報告指出，中國可能正進行一場未對外公布的大規模軍演，模擬包圍並孤立台灣，規模據稱超越去年「正義使命－2025」環台軍演，同時動員東部、北部、南部三個戰區兵力，試圖整合為單一遠海作戰任務。報告認為中國刻意不依慣例公布演習名稱與規模，意圖使此類軍事活動常態化、壓縮台灣對實際封鎖或進犯的預警時間。",
+     "source": "AEI／ISW（經自由時報轉述）",
+     "tags": ["PLA", "TAIWAN", "CHINA", "TAIWAN-STRAIT"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "後續｜中國官方正式公告：對美24%關稅暫停措施延長兩個月至2027年1月10日",
+     "url": "https://money.udn.com/money/story/5603/9866481",
+     "summary": "中國國務院關稅稅則委員會11/9公告，自11/10下午1時01分起，繼續暫停對美加徵24%關稅措施兩個月，至2027年1月10日止，另保留10%加徵稅率不變；交通運輸部同步將對美船舶特別港口費暫停措施延至同一期限。此為落實9月中美經貿磋商共識及兩國元首先前會晤成果的正式落地，美方USTR同步將178項中國301關稅豁免延至明年1月9日。",
+     "source": "中國國務院關稅稅則委員會（經經濟日報轉述）",
+     "tags": ["US-CHINA", "CHINA", "US"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜高市早苗執政滿一年：中日關係因「台灣有事」言論持續惡化，北京擴大限縮軍民兩用品對日出口",
+     "url": "https://global.hk01.com/即时国际/60380503/高市上任10月访11国-日媒-巩固外交关系应对中国",
+     "summary": "日本首相高市早苗執政屆滿一年之際，中日關係因其國會「台灣有事可構成存立危機事態」發言持續緊繃，北京除要求撤回發言外，已禁止部分軍民兩用品項對日出口，並籲中國公民避免赴日旅遊。學者分析，若日方不調整立場，習近平可能避免與高市進行面對面會晤，本月深圳 APEC 峰會能否安排中日領袖會談備受關注。",
+     "source": "日媒（經香港01轉述）",
+     "tags": ["JAPAN", "CHINA", "DIPLOMACY", "TAIWAN"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "medium",
+     "title": "美股11/9強勁反彈：道瓊收漲逾1100點、那指+2.74%，油價重挫緩解通膨疑慮",
+     "url": "https://uanalyze.com.tw/articles/7820358782",
+     "summary": "美股11/9（週一）全面反彈，道瓊工業指數收在52,390點、上漲2.15%（約1,104點），標普500收7,550點，那斯達克收25,253點、上漲2.74%，費城半導體指數勁揚6.9%；市場解讀油價重挫緩解通膨疑慮為反彈主因，但輝達逆勢重挫4.2%。",
+     "source": "鉅亨網",
+     "tags": ["US", "STOCK-MARKET", "NASDAQ", "SP500"]
+    },
+    {
+     "severity": "medium",
+     "title": "布蘭特原油11/9單日重挫5.85%至92.57美元，創8月底以來新低",
+     "url": "https://www.ntdtv.com/b5/2026/11/10/a104149424.html",
+     "summary": "布蘭特原油期貨11/9（週一）暴跌5.85%，收每桶92.57美元，創下8月底以來最低水準；11/10晚間盤中一度跌破90美元整數關卡，市場氣氛反映對美伊荷姆茲海峽談判出現進展的樂觀預期，帶動油價短線走弱。",
+     "source": "新唐人",
+     "tags": ["BRENT", "OIL", "HORMUZ", "US-IRAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "台股11/10大漲1050點收復42711點，漲幅2.52%，外資連9日賣超",
+     "url": "https://money.udn.com/money/story/5607/9869279",
+     "summary": "台股加權指數11/10終場上漲1,050.22點，收在42,711.92點，漲幅2.52%，站回5日線，成交金額達新台幣1兆33.39億元；台積電尾盤收最高2,285元，台達電、南亞連兩日漲停。外資當日賣超新台幣341.16億元，已連續9個交易日站在賣方，籌碼面仍偏弱。",
+     "source": "經濟日報",
+     "tags": ["TAIEX", "TAIWAN", "STOCK-MARKET", "TSMC"]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "date": "2026-11-12",
+ "focus": "FreeSWITCH SIP零時差遭在野利用並列入CISA KEV：CVSS 9.8，全球VoIP伺服器曝險，籲速升級1.11.3",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "開源VoIP平台FreeSWITCH遭利用的SIP零時差：CVSS 9.8，CISA已列入KEV",
+     "url": "https://dailysecurityreview.com/?p=45117",
+     "summary": "FreeSWITCH 1.11.2及更早版本的SIP MESSAGE處理存在命令注入漏洞（CVE-2026-116779），攻擊者可將訊息收件者欄位偽裝成聊天協定名稱，使輸入直接送入FreeSWITCH API並以伺服器權限執行指令。SignalWire證實已遭在野利用，CISA已列入KEV，官方籲立即升級至1.11.3。",
+     "source": "SignalWire（經 Daily Security Review 轉述）",
+     "tags": ["CVE-2026-116779", "FREESWITCH", "RCE", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "AI推論平台GPUStack認證繞過遭利用：CVSS 9.8，已列入CISA KEV",
+     "url": "https://dailysecurityreview.com/?p=45400",
+     "summary": "GPUStack 2.2.0以前版本因來源檢查與IP標頭驗證缺陷（CVE-2026-102895），且預設未強制本機驗證，攻擊者可取得管理員權限；廠商證實已有攻擊者針對2.1.1版部署植入後門並開啟反向殼層。CISA已列入KEV，官方建議升級至2.2.2或以上版本。",
+     "source": "GPUStack 安全公告（經 Daily Security Review 轉述）",
+     "tags": ["CVE-2026-102895", "GPUSTACK", "AI", "CISA-KEV"]
+    },
+    {
+     "severity": "high",
+     "title": "IBM Aspera Faspex權限繞過漏洞列入CISA KEV",
+     "url": "https://www.ibm.com/support/pages/node/7295921",
+     "summary": "IBM Aspera Faspex 5.0.0至5.0.19版本存在授權繞過漏洞（CVE-2026-123218，CVSS 9.8），已登入使用者可偽造特定訊息繞過授權進行權限提升。CISA已列入KEV，IBM無提供暫時緩解方案，強烈建議立即升級至5.0.19 PL1。Aspera Faspex過去曾是Cl0p等勒索集團大規模竊資的熱門目標。",
+     "source": "IBM Security Bulletin",
+     "tags": ["CVE-2026-123218", "IBM", "CISA-KEV", "VULNERABILITY"]
+    },
+    {
+     "severity": "medium",
+     "title": "Debian、Ubuntu修補APT套件管理員可被中間人攻擊取得root權限漏洞",
+     "url": "https://www.csoonline.com/article/4245109/debian-ubuntu-patch-apt-flaw-that-could-hand-attackers-root.html",
+     "summary": "研究員Max Justicz發現APT套件管理員存在競爭條件缺陷（CVE-2026-109518，CVSS 7.7），在開啟重試下載且遭中間人攻擊時，可被置換成未驗證的惡意套件並以root權限執行。Debian與Ubuntu已釋出修補（APT 2.6.2/3.0.4/3.3.6及對應Ubuntu版本），目前未發現在野利用證據。",
+     "source": "CSO Online",
+     "tags": ["CVE-2026-109518", "LINUX", "SUPPLY-CHAIN", "PATCH"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "info",
+     "title": "國防部：11/10至11/11晨偵獲共機4架次、共艦7艘、公務船3艘，2架次逾越中線",
+     "url": "https://cna.com.tw/news/aipl/202611110035.aspx",
+     "summary": "國防部統計自前一日上午6時至當日上午6時，偵獲中共共機4架次、共艦7艘及公務船3艘在台海周邊活動，其中2架次共機逾越海峽中線侵擾西南空域。國軍運用任務機艦與岸置飛彈系統嚴密監控應處。",
+     "source": "中央社",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "TAIWAN"]
+    },
+    {
+     "severity": "warning",
+     "title": "共機11月初活動升溫：11/1單日32架次創新高，26架次逾越中線",
+     "url": "https://cna.com.tw/news/aipl/202611010016.aspx",
+     "summary": "國防部統計11月1日前一日6時至當日6時，偵獲中共共艦7艘、公務船2艘及共機32架次，其中26架次逾越海峽中線，進入北部、中部、西南及東部空域，為近期單日架次新高。國軍持續嚴密監控應處。",
+     "source": "中央社",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "TAIWAN"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "北韓試射新型防空飛彈系統，川金會期望降溫",
+     "url": "https://www.stripes.com/theaters/asia_pacific/2026-11-05/north-korea-missile-technology-diplomacy-23369224.html",
+     "summary": "北韓官媒朝中社證實11月4日試射一款採用新材料與導引技術的先進防空飛彈系統。分析指出，此舉與北韓近期強硬表態，使外界對川普原本期望在深圳APEC峰會期間與金正恩會面的可能性降低，美國期中選舉民主黨勝選也讓平壤對美轉趨觀望。",
+     "source": "Stars and Stripes",
+     "tags": ["NORTH-KOREA", "APEC", "DIPLOMACY", "US"]
+    },
+    {
+     "severity": "info",
+     "title": "後續｜深圳APEC峰會時程確定11/18-19：川習普會談聚焦結束伊朗戰事，會前稀土關稅仍有分歧",
+     "url": "https://cna.com.tw/news/aopl/202611090024.aspx",
+     "summary": "川普證實將於下週赴中國出席深圳APEC峰會，預期與習近平、普丁三方會面，討論結束伊朗戰事及北韓無核化等議題。會前中國副總理何立峰與美財長貝森特、貿易代表葛里爾視訊磋商，美方持續敦促北京履行稀土出口與農產品採購承諾，雙方分歧尚未化解。",
+     "source": "中央社",
+     "tags": ["APEC", "US-CHINA", "CHINA", "IRAN"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股11/11大漲1,545點收44,257.15點，史上第6大漲點",
+     "url": "https://www.mnews.tw/story/20261111nm001",
+     "summary": "台股加權指數11日終場上漲1,545.23點、漲幅3.62%，收在44,257.15點，為史上第6大單日漲點，成交量放大至8,491.65億元。台積電上漲110元收2,395元領漲，三大法人合計買超202.56億元，上市櫃合計逾1,400檔上漲。",
+     "source": "mnews（經中央社報導）",
+     "tags": ["TAIEX", "STOCK-MARKET", "TSMC", "TAIWAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "美股11/10受高於預期CPI影響收黑，那指重挫近1%",
+     "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html",
+     "summary": "美國10日公布的CPI數據核心物價再度上升，推升市場對聯準會可能升息的預期，道瓊收52,231.89點下跌0.30%，標普500收7,520.93點跌0.38%，那斯達克收25,065.87點跌0.74%，輝達同步走弱，終止連三日上漲。",
+     "source": "CNBC",
+     "tags": ["SP500", "NASDAQ", "STOCK-MARKET", "US"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油11/11回升至93美元左右，前一日曾跌破90美元關卡",
+     "url": "https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html",
+     "summary": "布蘭特原油11日交投於每桶93美元上下（各報價源約92.5~93.5美元，為近似值），較10日盤中因伊朗和談樂觀情緒一度跌破90美元、創8月以來低點小幅回升。市場持續關注美伊外交進展對荷姆茲海峽航運與油價的影響。",
+     "source": "CNBC",
+     "tags": ["BRENT", "OIL", "HORMUZ", "ENERGY"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣11/11收32.251元，貶值1.36角",
+     "url": "https://tw.stock.yahoo.com/news/11-11%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A532-251%E5%85%83%E4%BD%9C%E6%94%B6-%E8%B2%B6%E5%80%BC1-36%E8%A7%92-080400023.html",
+     "summary": "新台幣兌美元11日終場收在32.251元，較前一交易日貶值1.36角，雖然台股同日大漲逾千點，匯市仍呈現貶值走勢。",
+     "source": "Yahoo奇摩股市",
+     "tags": ["TWD", "TAIWAN", "FINANCE"]
+    }
+   ]
+  }
+ ]
+}

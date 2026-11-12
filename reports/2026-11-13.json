@@ -1,0 +1,114 @@
+{
+ "date": "2026-11-13",
+ "focus": "Ivanti Connect Secure 雙漏洞串連遭利用取得VPN設備root權限，CISA列入KEV、聯邦機關修補期限即為今日",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Ivanti Connect Secure雙漏洞串連遭利用：攻擊者可取得VPN閘道完整root權限",
+     "url": "https://www.helpnetsecurity.com/2026/11/02/cisa-to-federal-agencies-remediate-exploited-ivanti-connect-secure-vulnerabilities-cve-2026-111357-cve-2026-118527/",
+     "summary": "CVE-2026-118527（已認證任意檔案上傳）與CVE-2026-111357（權限提升）可串連取得root權限，CISA已列入KEV、聯邦機關修補期限為今日11/13。受影響為Connect Secure、Policy Secure、ZTA Gateways 25.1.1.2及之前版本，Ivanti已釋出25.1.1.3修補版本。",
+     "source": "CISA（經 Help Net Security 轉述）",
+     "tags": ["IVANTI", "CISA-KEV", "VPN", "EXPLOITED"]
+    },
+    {
+     "severity": "high",
+     "title": "Palo Alto PAN-OS管理介面零時差CVE-2026-0322遭利用：已認證攻擊者可取得防火牆root權限",
+     "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+     "summary": "漏洞影響PA系列、VM系列防火牆及Panorama管理平台的PAN-OS管理介面，原廠稱在野利用程度「非常有限」，已列入CISA KEV並釋出修補版本。建議將管理介面限制於信任內部網路存取並比對已知攻擊IP。",
+     "source": "Palo Alto Networks PSIRT（經 BleepingComputer 轉述）",
+     "tags": ["PALOALTO", "CISA-KEV", "FIREWALL", "EXPLOITED"]
+    },
+    {
+     "severity": "high",
+     "title": "日本愛麗思歐雅瑪（Iris Ohyama）雲端服務遭入侵：約770萬筆會員與非會員個資外洩",
+     "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+     "summary": "子公司Iris Plaza雲端平台10/28遭發現異常存取，約580萬名現有及前會員、190萬名非會員之姓名、地址、購買紀錄等外洩，公司11/5對外公告，目前尚無資料遭濫用或金錢損失通報。",
+     "source": "Iris Ohyama（經 BleepingComputer 轉述）",
+     "tags": ["JAPAN", "DATA-BREACH", "SUPPLY-CHAIN"]
+    },
+    {
+     "severity": "medium",
+     "title": "美國助聽器大廠Amplifon子公司資料外洩：逾133萬人受影響",
+     "url": "https://techjournal.org/amplifon-hearing-data-breach",
+     "summary": "德州檢察總長揭露文件顯示，未經授權存取期間為今年1/18至2/8，全美逾133萬人個資可能外洩，公司於11/6正式申報備查。",
+     "source": "Amplifon（經州檢察總長申報文件揭露）",
+     "tags": ["DATA-BREACH", "US", "HEALTHCARE"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜OpenSSH「SSHole」漏洞在野利用規模持續擴大",
+     "url": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+     "summary": "據The Hacker News週報彙整，截至11/9已在誘捕系統記錄20次來自13個不同IP位址的攻擊嘗試，確認攻擊者鎖定使用musl函式庫的Linux發行版（如Alpine），聯邦機關原修補期限為11/12。",
+     "source": "The Hacker News",
+     "tags": ["OPENSSH", "MUSL", "EXPLOITED", "LINUX"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "分析：高市早苗與習近平深圳APEC正式會晤機率「幾乎為零」，中日關係因「台灣有事」言論持續惡化",
+     "url": "https://udn.com/news/story/6809/9792554",
+     "summary": "新加坡《聯合早報》分析指出，日相高市早苗去年11月在國會答詢中提及「台灣有事」引發北京強烈不滿，中日官方接觸今年幾乎陷入停滯，高市迄未收回相關說法，兩人在深圳APEC場邊點頭微笑的機會都很小。",
+     "source": "聯合早報（經 UDN 轉述）",
+     "tags": ["JAPAN", "CHINA", "TAIWAN", "APEC"]
+    },
+    {
+     "severity": "info",
+     "title": "國防部共機共艦即時動態頁面本次連線受限，改引用月報統計：9月單月偵獲共機255架次創全年次高",
+     "url": "https://tsm.schar.gmu.edu/category/strait-snapshot/",
+     "summary": "因國防部官網本次無法存取，改引用台灣安全監測（Taiwan Security Monitor）月報：9月共機偵獲255架次，較8月173架次增加82架次，其中145架次（占57%）逾越海峽中線，顯示周邊軍事活動已趨於常態化，惟非當日即時數據，僅供趨勢參考。",
+     "source": "Taiwan Security Monitor",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "TAIWAN"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "high",
+     "title": "深圳APEC峰會確定11/18-19登場，川普、習近平、普丁預期三方會晤聚焦結束伊朗戰事",
+     "url": "https://udn.com/news/story/6809/9748326",
+     "summary": "第33屆APEC領袖非正式會議將於11/18至19日在深圳舉行，外界預期這將是川普與習近平繼5月北京、9月會晤後第三次會面，俄羅斯克宮證實普丁將與會，不排除三方會晤機會；會前稀土與關稅議題仍有分歧未解。",
+     "source": "聯合報（UDN）",
+     "tags": ["APEC", "US-CHINA", "CHINA", "IRAN"]
+    },
+    {
+     "severity": "medium",
+     "title": "俄烏和談陷入僵局：梅蘭妮亞人道任務推進，雙方對停火前提仍有分歧",
+     "url": "https://www.news4jax.com/news/world/2026/10/24/ukraine-and-russia-eye-new-peace-talks-and-melania-trumps-mission-but-steep-obstacles-remain/",
+     "summary": "俄烏雙方雖均表態願意重啟美方斡旋的談判，並支持由梅蘭妮亞川普領導的人道任務，但在停火條件上仍存在重大分歧：烏克蘭堅持先凍結戰線再談判，俄方則拒絕無條件全面停火，雙方軍隊持續互相發動遠程打擊。",
+     "source": "AP（經 news4jax 轉述）",
+     "tags": ["RUSSIA", "UKRAINE", "DIPLOMACY", "US"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "美股11/10受10月CPI數據超預期影響收黑：輝達市值跌破4兆美元",
+     "url": "https://udn.com/news/story/6811/9870769",
+     "summary": "道瓊收52,231.89點，跌0.30%；標普500收7,520.93點，跌0.38%；那斯達克收25,065.88點，跌0.74%；費半跌破萬點收9,998.33點。10月CPI月增0.4%、核心CPI月增0.3%均高於預期，輝達單日再跌約5.5%，市值一度跌破4兆美元。",
+     "source": "聯合報（UDN）",
+     "tags": ["NASDAQ", "SP500", "US", "STOCK-MARKET"]
+    },
+    {
+     "severity": "medium",
+     "title": "強勁就業數據疊加CPI：市場將聯準會12月升息機率推升至84%",
+     "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/502004",
+     "summary": "美國10年期公債殖利率報約4.88%，接近兩個月低點；受上週非農就業新增16.5萬人（遠高於預期的6.5萬人）、失業率降至4.1%等數據帶動，CME FedWatch顯示市場對聯準會12月升息至少1碼的定價機率已升至84%，一週前約為74%。",
+     "source": "Trading Economics",
+     "tags": ["US", "FED", "TREASURY-YIELD", "CPI"]
+    }
+   ]
+  }
+ ]
+}

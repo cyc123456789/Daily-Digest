@@ -1,0 +1,114 @@
+{
+ "date": "2026-11-14",
+ "focus": "共機共艦單日飆升至30架次創近期新高、23架次逾越中線，深圳APEC倒數兩岸軍事氣氛趨緊",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "微軟11月修補星期二：Outlook遭在野利用的零時差漏洞已列入CISA KEV",
+     "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/11/10/microsoft-patch-tuesday-november-2026-security-update-review",
+     "summary": "CVE-2026-124194為Outlook中一個CVSS 6.5的身分偽冒（spoofing）漏洞，微軟證實已遭在野利用，可能導致驗證資訊外洩並被用於冒充使用者身分；CISA已於11/10將其列入KEV，聯邦機關限期11/24完成修補。目前尚無官方公開的完整緩解步驟外的資訊，建議所有Outlook用戶盡速套用本月更新。",
+     "source": "Qualys ThreatPROTECT",
+     "tags": ["MICROSOFT", "OUTLOOK", "CISA-KEV", "EXPLOITED", "ZERO-DAY", "PATCH"]
+    },
+    {
+     "severity": "high",
+     "title": "微軟11月修補星期二：三個CVSS 9.8高危Windows遠端代碼執行漏洞同批釋出修補",
+     "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/",
+     "summary": "同一批11月更新另修補三個CVSS 9.8分的高危遠端代碼執行漏洞，分別影響Windows Xbox Live網路元件（CVE-2026-112967）、Windows搜尋（CVE-2026-116928）與Windows LDAP（CVE-2026-119958），多數可在無需登入情況下遭利用；微軟與資安廠商均表示目前尚無在野利用證據，已有修補可套用。",
+     "source": "CrowdStrike（經多方資安媒體轉述）",
+     "tags": ["MICROSOFT", "WINDOWS", "RCE", "PATCH", "VULNERABILITY"]
+    },
+    {
+     "severity": "medium",
+     "title": "研究人員揭露「Sparrow」惡意程式生態系：三個中國APT叢集共享工具鏈",
+     "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+     "summary": "資安研究人員發現FamousSparrow、Earth Estries與Tropic Trooper三個原先被視為獨立的中國關聯APT叢集，實際共享名為Sparrow的惡意程式框架與基礎設施，研判背後存在代號CopperDragon的共同開發者；攻擊目標涵蓋電信業者、政府機關、軍方與研究機構，近期並鎖定印尼組織發動釣魚攻擊。",
+     "source": "The Hacker News",
+     "tags": ["APT", "CHINA", "MALWARE", "CYBER-ATTACK"]
+    },
+    {
+     "severity": "medium",
+     "title": "南亞APT組織Bitter改用Rust重寫PapRAT後門，以外交文書為誘餌發動間諜攻擊",
+     "url": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+     "summary": "FortiGuard Labs以高信心度將攻擊歸因於南亞網路間諜組織Bitter（TA397），其將舊有PapRAT後門自C++改寫為Rust版本，指令數由8個擴增至11個，新增PowerShell執行與自我清除等能力；誘餌檔案偽裝成雙邊會談邀請函、大使信件與晚宴邀請，受害範圍除南亞外亦擴及東南亞與南韓。",
+     "source": "FortiGuard Labs（經The Hacker News轉述）",
+     "tags": ["APT", "MALWARE", "BACKDOOR", "CYBER-ATTACK"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "共機「全面環台」單日飆至30架次創近期新高，23架次逾越中線",
+     "url": "https://www.ettoday.net/news/20261113/3271488.htm",
+     "summary": "國防部統計，前一日上午6時至當日上午6時期間，偵獲中共30架次軍機、8艘共艦及3艘公務船在台灣周邊活動，其中23架次逾越海峽中線及其延伸線，進入北部、中部、西南及東部空域；此規模遠高於近期單日1至11架次的平均水準，媒體形容呈現「全面環台」態勢，國軍已運用任務機、艦與岸置飛彈系統監控應處。",
+     "source": "ETtoday（經東森新聞轉述）",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "CHINA"]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜解放軍11/12發動「聯合戰備警巡」：22架次逾越中線",
+     "url": "https://www.cna.com.tw/news/aipl/202611120187.aspx",
+     "summary": "國防部通報，中共自11/12上午9時38分起，共機與無人機合計29架次出海配合「聯合戰備警巡」，其中22架次逾越海峽中線及其延伸線，進入我國北部、中部、西南及東部空域；國軍嚴密監控並派遣機、艦應處。此次警巡與隔日晨報的30架次活動相互疊加，顯示解放軍在深圳APEC登場前於台海周邊持續維持高頻次軍事活動。",
+     "source": "中央社",
+     "tags": ["MND", "PLA", "TAIWAN-STRAIT", "APEC"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜川普暗示對伊朗保持克制，但荷姆茲油輪攻擊未歇，分析師示警局勢恐再度升溫",
+     "url": "https://www.khaleejtimes.com/oil-falls-almost-5-as-trump-signals-restraint-on-iran",
+     "summary": "川普向CNN表示，若伊朗簽署「非常強硬的協議」，美方對伊朗展開大規模軍事打擊「極不可能」發生，釋出降溫訊號；惟路透社報導荷姆茲海峽周邊油輪遇襲事件仍持續發生，顯示當地緊張情勢並未真正解除。Eurasia Group分析師Gregory Brew指出，若無更堅實的降溫跡象與正式美伊協議，衝突風險仍可能再度升高。",
+     "source": "Reuters（經Khaleej Times轉述）",
+     "tags": ["IRAN", "HORMUZ", "US-IRAN", "MIDDLE-EAST", "DIPLOMACY"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜深圳APEC倒數：中美財金視訊對話後確認稀土與關稅暫停措施均延長兩個月",
+     "url": "https://www.thenationalnews.com/news/us/2026/11/09/china-extends-pause-on-rare-earth-export-curbs-for-two-months/",
+     "summary": "中國大陸國務院副總理何立峰與美國財政部長貝森特、貿易代表葛里爾視訊通話後，雙方確認中方暫停稀土出口管制、美方暫停對中國產品301條款關稅加徵，均再延長兩個月；川普與習近平預計於11/18-19深圳APEC峰會場邊舉行年內第三次會面，學界普遍認為此次難有重大突破，稀土與關稅履行細節仍待後續磋商。",
+     "source": "The National（經多家媒體轉述）",
+     "tags": ["APEC", "US-CHINA", "SANCTIONS", "DIPLOMACY"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "輝達董事會對黃仁勳展開獨立調查：因疑遭外國情報鎖定，國會同步要求閉門簡報",
+     "url": "https://investor.nvidia.com/news/press-release-details/2026/Statement-from-NVIDIA-Board-of-Directors/",
+     "summary": "輝達董事會11/8發布聲明，因近期有報導稱執行長黃仁勳曾成為「外國情報活動」目標，決定由獨立董事組成委員會並聘請外部法律顧問展開調查；董事會強調目前沒有理由認為美國國家安全或公司機密已受損，黃仁勳表示全力配合調查並將續任執行長。此前美國眾議院三位共和黨籍委員會主席已去信要求於11/18進行閉門簡報，外媒另報導一名輝達相關高管與中國情報機構的傳聞連結，惟尚未獲證實。",
+     "source": "NVIDIA Investor Relations（官方聲明，經多家科技媒體轉述）",
+     "tags": ["AI", "STOCK-MARKET", "CHINA", "US-CHINA"]
+    },
+    {
+     "severity": "warning",
+     "title": "布蘭特原油近日連續重挫：川普釋出對伊朗克制訊號，一週最深跌幅近兩成",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-Below-92-as-Trump-Signals-Restraint-on-Iran.html",
+     "summary": "路透社報導，川普暗示若伊朗簽署強硬協議將不會大規模空襲，此說法帶動布蘭特原油11/9至11/10連兩日下跌（11/9跌約4.7%至93.75美元、11/10續跌至92.57美元，創8月以來新低），前一週跌幅一度近兩成；分析師認為若無更堅實的降溫訊號與正式協議，油價短期內難以跌破90美元關卡。（註：因主要資料源暫時無法存取，11/12之後最新收盤價未能取得，以上為近期可確認的最新數據，與目前實際報價可能有落差）",
+     "source": "Reuters（經多方財經媒體轉述）",
+     "tags": ["OIL", "BRENT", "IRAN", "HORMUZ"]
+    },
+    {
+     "severity": "info",
+     "title": "台積電10月法說上修全年展望：全年美元營收估成長44%，2奈米產能明年將倍增",
+     "url": "https://uanalyze.com.tw/articles/3164557160",
+     "summary": "台積電在10月法人說明會中上調全年展望，預估2026年全年美元營收成長約44%（優於年初「近3成」的預估），第四季營收預估落在523億至543億美元區間、毛利率中位數約66%；公司並預告2奈米製程產能將於2027年較今年成長逾一倍，惟對2027年消費性電子終端需求維持審慎態度。",
+     "source": "台積電法人說明會（經財經媒體轉述）",
+     "tags": ["TSMC", "AI", "STOCK-MARKET", "TAIEX"]
+    }
+   ]
+  }
+ ]
+}

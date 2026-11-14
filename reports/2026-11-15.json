@@ -1,0 +1,122 @@
+{
+ "date": "2026-11-15",
+ "focus": "中國駭客組織「ARMORY CASTLE」入侵BeyondTrust特權存取工具竊取憑證庫，CISA列入KEV；國防部偵獲共機共艦態勢明顯降溫",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "中國APT「ARMORY CASTLE」入侵BeyondTrust特權存取工具竊取憑證庫，CISA已列入KEV",
+     "url": "https://bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august",
+     "summary": "CVE-2026-102764為BeyondTrust Remote Support（RS 26.2.3以前版本）的未經授權來源驗證缺陷，CVSS 4.0達9.3分。Google Mandiant證實中國國家級駭客組織ARMORY CASTLE（即UNC5221）自8月起已利用此漏洞入侵遠端支援設備並竊取憑證庫，原廠已於10月釋出修補（BT26-05），CISA同步列入KEV。",
+     "source": "Mandiant（經BleepingComputer轉述）",
+     "tags": ["CVE-2026-102764", "BEYONDTRUST", "CHINA", "APT", "CISA-KEV", "CREDENTIAL-THEFT"]
+    },
+    {
+     "severity": "high",
+     "title": "Mandiant揭露Cisco SD-WAN Manager零時差攻擊手法：中國相關駭客藉指令注入取得Root權限",
+     "url": "https://bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access",
+     "summary": "CVE-2026-20245為Cisco Catalyst SD-WAN Manager的高危指令注入漏洞，Mandiant於一家電信業者環境中發現，疑與中國駭客叢集UAT-8616（與Volt Typhoon活動重疊）有關的攻擊者，利用該漏洞建立具root權限的偽造帳號「troot」並下發設定變更至邊緣裝置。Cisco已釋出修補，建議SD-WAN Manager用戶立即檢查是否存在異常對等連線與帳號。",
+     "source": "Mandiant（經BleepingComputer轉述）",
+     "tags": ["CVE-2026-20245", "CISCO", "CHINA", "APT", "RCE"]
+    },
+    {
+     "severity": "high",
+     "title": "Arista四個月內第三個遭利用的VeloCloud Orchestrator零時差漏洞，SQL注入可取得操作員權限",
+     "url": "https://bleepingcomputer.com/news/security/arista-patches-velocloud-orchestrator-zero-day-exploited-in-attacks",
+     "summary": "CVE-2026-114625為Arista地端部署VeloCloud Orchestrator（VCO）的SQL注入漏洞，遭利用後可取得特權內部功能存取權，是Arista近四個月內第三個遭在野利用的VCO零時差。雲端代管與Arista代管版本已預先修補，僅地端自管部署仍暴露，VeloCloud Edge／Gateway產品則不受影響。",
+     "source": "Arista（經BleepingComputer轉述）",
+     "tags": ["CVE-2026-114625", "ARISTA", "EXPLOITED", "VULNERABILITY"]
+    },
+    {
+     "severity": "high",
+     "title": "快桅（Maersk）證實資料外洩，WhiteArmor勒索集團勒索500萬美元",
+     "url": "https://bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million",
+     "summary": "快桅證實入侵源頭為旗下2022年併購之供應鏈業者LF Logistics的舊IT系統，已遭隔離；初步研判無敏感資料外流，但勒索集團WhiteArmor聲稱竊得約100GB資料，內容包含司機帳號密碼、收件人個資等，並限30天內支付500萬美元比特幣贖金，快桅尚未與對方談判。",
+     "source": "BleepingComputer",
+     "tags": ["MAERSK", "RANSOMWARE", "DATA-BREACH", "SUPPLY-CHAIN"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "info",
+     "title": "國防部：11/13至11/14晨偵獲共機10架次（4架次逾越中線）、共艦8艘，較前一日「全面圍台」態勢明顯降溫",
+     "url": "https://newtalk.tw/news/view/2026-11-14/1071122",
+     "summary": "國防部統計，11月13日上午6時至14日上午6時共偵獲共機10架次、其中4架次逾越海峽中線，另有共艦8艘在周邊海域活動，國軍嚴密監控應處。數字較前一日（11/12至13）30架次共機、23架次逾越中線的「全面圍台」態勢大幅回落。",
+     "source": "Newtalk新聞",
+     "tags": ["TAIWAN", "PLA", "MND", "TAIWAN-STRAIT"]
+    },
+    {
+     "severity": "warning",
+     "title": "後續｜日中APEC峰會前景不明：北京要求高市早苗撤回「台灣有事」言論作為雙邊會晤前提",
+     "url": "https://www.nationthailand.com/news/world/40073263",
+     "summary": "深圳APEC領袖峰會確定於11月18至19日登場，日方原盼促成高市早苗與習近平的雙邊會晤，但北京持續要求高市正式撤回「台灣有事」相關發言作為前提，使峰會期間是否成局仍不確定，中日關係自去年11月爭議爆發後持續低迷。",
+     "source": "Nation Thailand",
+     "tags": ["JAPAN", "CHINA", "TAIWAN", "APEC", "DIPLOMACY"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "俄烏和談於日內瓦重啟：法國強調須同步納入歐洲安全保障，頓巴斯主權仍是僵局核心",
+     "url": "https://cyprus-mail.com/2026/11/10/russia-and-ukraine-resume-us-brokered-peace-talks",
+     "summary": "俄烏雙方代表在美方斡旋下於日內瓦恢復會談，法國重申任何烏克蘭和平協議都必須同步處理歐洲整體安全保障安排，不能繞過歐洲國家。俄方消息人士則表示談判重心將放在戰後歐洲安全新框架，但普丁要求烏克蘭交出整個頓巴斯地區的立場公開未見鬆動，仍是談判最大障礙。",
+     "source": "Cyprus Mail",
+     "tags": ["RUSSIA", "UKRAINE", "DIPLOMACY"]
+    },
+    {
+     "severity": "info",
+     "title": "後續｜川習普深圳三方會談未拍板：白宮未證實川普是否與會，北京態度保守",
+     "url": "https://www.aljazeera.com/amp/news/2026/11/6/what-a-trump-xi-putin-summit-would-mean-and-what-it-wouldnt",
+     "summary": "克里姆林宮稍早表示正籌備普丁、川普、習近平在深圳APEC期間的首次三方會談，俄方證實普丁將出席並尋求與雙方會晤；但白宮尚未證實川普是否與會，北京方面回應也相對保守，會談是否成局與議程仍存變數，川普先前曾表態希望聚焦核武管控議題。",
+     "source": "Al Jazeera",
+     "tags": ["US", "CHINA", "RUSSIA", "APEC", "DIPLOMACY"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "台股11/13收漲583.25點至43,675.12點，外資結束連11賣單日回補288億元",
+     "url": "https://www.cna.com.tw/news/afe/202611130136.aspx",
+     "summary": "台股週五（11/13）加權指數收43,675.12點，上漲583.25點、漲幅1.35%，成交金額約9,162.55億元；外資睽違11個交易日後再度買超，單日買超288.3億元，三大法人合計買超452.6億元，ASIC、機器人與PCB概念股領漲。台股本週累計大漲3,973.48點、週漲幅逾10%。",
+     "source": "中央社",
+     "tags": ["TAIEX", "STOCK-MARKET", "TAIWAN"]
+    },
+    {
+     "severity": "info",
+     "title": "美股11/13收盤互見：那指跌0.91%、道瓊小漲、S&P500當週仍漲約2.5%",
+     "url": "https://krmg.com/2026/11/13/how-major-us-stock-indexes-fared-friday-11-13-2026/",
+     "summary": "美股週五收盤表現分歧：S&P 500收7,561.67點、跌0.4%；那斯達克指數受輝達相關疑慮壓抑科技股拖累，收25,136.27點、跌0.91%；道瓊工業指數逆勢收漲約50點（+0.1%）至52,347.55點，為四大指數中唯一上漲者。S&P 500當週仍上漲約2.5%，終結連四週下跌。",
+     "source": "Associated Press（經KRMG轉載）",
+     "tags": ["SP500", "NASDAQ", "STOCKS", "US"]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油11/13收每桶95.84美元，連兩週走低",
+     "url": "https://m.stnn.cc/detail/6af78ba88f9d2b19dd7b0230.html",
+     "summary": "1月交貨的倫敦布蘭特原油期貨11/13收每桶95.84美元，小漲0.02%，國際油價連續第二週走低，仍守在95美元上方；同日美國西德州中級原油（WTI）收每桶88.56美元，跌0.2%。",
+     "source": "新華社",
+     "tags": ["BRENT", "OIL", "ENERGY"]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣兌美元11/13升值5.1分收32.838元，惟本週仍貶值0.21%",
+     "url": "https://www.cna.com.tw/news/afe/202611130191.aspx",
+     "summary": "台北外匯市場新台幣兌美元週五收盤收32.838元，升值5.1分，成交金額22.14億美元；中央銀行公布的銀行間收盤匯率同為32.838元，較前一交易日（32.889元）升值。儘管當日升值，新台幣本週累計仍貶值0.21%。",
+     "source": "中央社",
+     "tags": ["TWD", "FINANCE"]
+    }
+   ]
+  }
+ ]
+}

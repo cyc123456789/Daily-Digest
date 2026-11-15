@@ -1,0 +1,106 @@
+{
+ "date": "2026-11-16",
+ "focus": "Cisco Secure Email Gateway CVSS 9.8零時差遭在野利用，免驗證即可觸發RCE；國防部曝共軍西太平洋「區域拒止」演習，台海情勢未歇",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Cisco Secure Email Gateway AMP功能零時差遭在野利用，CVSS 9.8免驗證可觸發RCE",
+     "url": "https://www.action1.com/patch-tuesday/patch-tuesday-november-2026/",
+     "summary": "11月修補星期二披露，Cisco Secure Email Gateway的進階惡意軟體防護（AMP）功能存在CVE-2026-76519，攻擊者僅需寄送惡意郵件、無須驗證或使用者互動即可觸發遠端程式碼執行，已遭在野利用。受影響為未更新至最新版本的SEG設備，Cisco已釋出修補，建議立即套用。",
+     "source": "Cisco（經 Action1 Patch Tuesday 彙整轉述）",
+     "tags": ["CISCO", "CVE-2026-76519", "ZERO-DAY", "EXPLOITED"]
+    },
+    {
+     "severity": "high",
+     "title": "Zyxel GS1900交換器遭利用零時差CVE-2026-107441，近千台設備遭入侵、繞過先前修補",
+     "url": "https://bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches",
+     "summary": "資安業者Binarly與GreyNoise發現，疑似中國語系駭客組織（Kapibala）自8月起利用CVE-2026-107441繞過Zyxel 6月已修補的CVE-2026-7273（CVE-2026-7273已列入CISA KEV），入侵全球48國近1,000台GS1900系列交換器。Zyxel已於11月3日發布Patch 3韌體修補此零時差，企業應確認已套用最新版本。",
+     "source": "Binarly／GreyNoise（經 BleepingComputer 轉述）",
+     "tags": ["ZYXEL", "CVE-2026-107441", "ZERO-DAY", "CISA-KEV", "CHINA"]
+    },
+    {
+     "severity": "high",
+     "title": "駭客組織Storm-1175利用N-central平台漏洞部署新型StormEncryptor勒索軟體",
+     "url": "https://scworld.com/brief/storm-1175-actor-deploys-new-stormencryptor-ransomware-after-n-central-vulnerability-exploitation",
+     "summary": "資安媒體揭露，勒索軟體操作者Storm-1175近期利用N-able N-central遠端監控管理平台的漏洞取得初始入侵權限，進而部署新開發的StormEncryptor勒索軟體。N-central先前已有漏洞遭CISA列入KEV，使用該平台的受管理服務供應商（MSP）與企業應確認已套用最新修補並檢查入侵跡象。",
+     "source": "SC World",
+     "tags": ["RANSOMWARE", "EXPLOITED", "SUPPLY-CHAIN"]
+    },
+    {
+     "severity": "high",
+     "title": "日本家具零售商Nitori證實遭駭，逾3,700萬筆顧客個資恐外洩",
+     "url": "https://bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records",
+     "summary": "日本大型家具零售商Nitori（似鳥）發布聲明證實資料外洩事件，最多約3,762萬筆顧客個資可能外洩。公司11月6日偵測到異常存取並隨即封鎖，但調查顯示攻擊者實際上自10月中旬即已入侵系統，為近期日本企業資安事件規模最大者之一，詳細外洩欄位尚待公司進一步說明。",
+     "source": "Nitori（經 BleepingComputer 轉述）",
+     "tags": ["DATA-BREACH", "JAPAN"]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：11/7至11/8晨偵獲共機4架次（2架次逾中線進西南空域）、共艦6艘、公務船2艘",
+     "url": "https://www.newkerala.com/news/a/taiwan-detects-pla-aircraft-plan-vessels-operating-near-841.htm",
+     "summary": "國防部統計，11月7日6時至8日6時期間，偵獲中共軍機4架次、軍艦6艘、公務船2艘，其中2架次逾越台灣海峽中線並進入西南空域，國軍運用任務機艦及岸置飛彈系統嚴密監控應處。因本次連線受限，無法取得國防部即時動態頁面11/14至11/16最新統計，以上為目前可查得之最近期官方公告，僅供參考。",
+     "source": "Reuters／國防部",
+     "tags": ["TAIWAN", "TAIWAN-STRAIT", "PLA", "MND", "CHINA"]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜分析：解放軍「安靜演習」策略持續，11月以來多次逾越中線但不宣布演習",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/04/2003867122",
+     "summary": "台北時報報導，國防部曾於11月4日單日統計偵獲49架次共機、6艘共艦，分析人士稱這類不對外宣布、卻維持高強度的「灰色地帶」活動為「安靜演習」，意在規避引發國際關注的同時持續施壓，此一模式呼應先前美智庫示警「共軍恐以不宣布演習壓縮台灣預警時間」的論點。",
+     "source": "Taipei Times",
+     "tags": ["TAIWAN", "TAIWAN-STRAIT", "PLA", "CHINA"]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部長顧立雄：中國大陸於西太平洋展開「區域拒止」演習，出動航艦等多艘艦艇",
+     "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/10/taiwan-says-china-is-conducting-area-denial-drills-in-western-pacific",
+     "summary": "台灣國防部長顧立雄11月10日表示，中國大陸正於西太平洋展開「區域拒止」演習，出動包含航空母艦在內的多艘艦艇，意在削弱印太區域穩定、測試美軍及盟邦應處能力；此前共軍在西太平洋的活動頻率與規模已呈上升趨勢，深圳APEC（11/18-19）登場前區域軍事氣氛持續緊繃。",
+     "source": "Reuters（經 Internazionale 轉述）",
+     "tags": ["CHINA", "TAIWAN-STRAIT", "US", "PLA"]
+    },
+    {
+     "severity": "info",
+     "title": "AUKUS三方完成「Big Play Pacific」海上演習，展示自主水下系統互通能力",
+     "url": "https://www.defence.gov.au/news-events/releases/2026-11-09/aukus-partners-demonstrate-autonomous-systems-scale-through-maritime-big-play-pacific",
+     "summary": "澳洲國防部11月9日發布新聞稿，宣布美、英、澳三國在太平洋完成代號「Big Play Pacific」的海上演習，測試自主無人水下載具與跨國系統互通性，為AUKUS第二支柱（量子、水下、高超音速、AI、網路科技合作）具體成果之一，凸顯三國持續深化印太軍事合作以因應中國軍力擴張。",
+     "source": "Australian Department of Defence",
+     "tags": ["US", "CHINA", "DIPLOMACY"]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "info",
+     "title": "美股11/11全面收紅反彈：標普大漲1.3%收7,619.38點，那指漲1.6%",
+     "url": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-wednesday-11112026-nid11112026/",
+     "summary": "美股三大指數11月11日（週三）同步收紅，標普500指數上漲98.45點（+1.3%）收7,619.38點，道瓊工業指數上漲254.60點（+0.5%）收52,486.49點，那斯達克綜合指數上漲400.31點（+1.6%）收25,466.19點，稍早因10月CPI數據超預期而重挫的科技股出現回補。",
+     "source": "La Nación（引用美聯社市場數據）",
+     "tags": ["STOCK-MARKET", "SP500", "NASDAQ", "US", "CPI"]
+    },
+    {
+     "severity": "warning",
+     "title": "OPEC+連三個月維持12月產出目標不變，荷姆茲海峽運輸中斷仍未解除",
+     "url": "https://investinglive.com/commodities/opec-holds-december-targets-steady-for-third-month-as-hormuz-disruption-persists/",
+     "summary": "OPEC+核心成員國11月1日決議維持12月原油產出目標不變，為連續第三個月按兵不動；受美伊戰事影響，核心成員國產量仍較戰前水準低約500萬桶/日，原訂討論的2027年產能分配架構則延後至11月29日部長會議再議，市場持續關注荷姆茲海峽運輸中斷對供給面的衝擊。",
+     "source": "Investing.com Live",
+     "tags": ["OIL", "HORMUZ", "IRAN", "ENERGY"]
+    }
+   ]
+  }
+ ]
+}

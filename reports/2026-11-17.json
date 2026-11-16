@@ -1,0 +1,208 @@
+{
+ "date": "2026-11-17",
+ "focus": "黃仁勳辭職風波延燒，台股11/16崩跌2,635點收41,040點、史上第二大跌點；Xen Orchestra認證繞過漏洞遭在野利用",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Xen Orchestra 認證繞過漏洞 VSA-2026-062 遭在野利用，攻擊者可接管虛擬化主機",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+     "summary": "Vates 證實 Xen Orchestra 與 XOA 的認證繞過漏洞已遭利用：能連到管理介面的遠端攻擊者可用特製 cookie 取得管理員權限，進而在受管資源池執行程式碼、取得 XCP-ng 節點 root，且成功入侵不會留下 XO 日誌。攻擊者並串連第二個漏洞 VSA-2026-063（VM 匯入權限）。修補版本各報導略有出入，最新公告建議升級至 6.9.2（stable）／6.10.1（latest）以上；勿將管理介面暴露於網際網路，疑遭入侵者應輪替所有密碼與金鑰。",
+     "source": "Vates（經 BleepingComputer 轉述）",
+     "tags": [
+      "XEN-ORCHESTRA",
+      "EXPLOITED",
+      "ZERO-DAY",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA KEV 新增 UnrealIRCd 指令注入 CVE-2026-114713 與 Check Point Gaia 提權 CVE-2026-123039",
+     "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+     "summary": "CISA 於 11/13 將兩漏洞列入 KEV。UnrealIRCd CVE-2026-114713（CVSS 8.6）影響 6.0.0 至 6.2.7.1 之前版本，可用伺服器／IRCOp 權限執行任意指令，11/7 釋出修補後隔日即出現利用，請升級至 6.2.7.1。Check Point Gaia CVE-2026-123039（CVSS 約 7.8）為本機提權，據報被用於針對 Security Gateway 的攻擊鏈並植入後門，請依原廠公告套用修補並檢查入侵跡象。（本則因 CISA 官網連線受限，資料取自媒體轉述）",
+     "source": "CISA（經 The Hacker News 轉述）",
+     "tags": [
+      "CISA-KEV",
+      "CVE-2026-114713",
+      "CHECKPOINT",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Windows「SignDrop」零時差提權 PoC 公開：濫用 CLFS 取得 SYSTEM 權限，微軟尚無修補",
+     "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
+     "summary": "研究員 Nightmare Eclipse 公開 SignDrop 概念驗證程式，本機使用者可濫用 Windows CLFS 的邏輯缺陷提權至 SYSTEM，測試環境含 Windows 11 26H2 與 Windows Server 2025 預覽版。微軟表示調查中、尚未觀察到在野利用，目前無 CVE 與修補，11 月安全更新亦未涵蓋；微軟稱 Defender 可偵測並阻擋利用嘗試，建議確保 Defender 特徵碼為最新並限制本機低權限帳號執行不明程式。",
+     "source": "SecurityWeek",
+     "tags": [
+      "WINDOWS",
+      "MICROSOFT",
+      "ZERO-DAY",
+      "VULNERABILITY"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜N-able N-central 漏洞「4EverAble2Shell」再遭利用：21 台伺服器被植入挖礦程式，19 台已裝 Hotfix 2",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+     "summary": "繼 Storm-1175 利用 N-central 部署勒索軟體後，攻擊者再以 4EverAble2Shell 漏洞在 21 台 N-central 伺服器植入 XMRig 挖礦程式，其中 19 台已安裝 Hotfix 2，顯示現有修補不足以阻擋。N-able 表示正準備釋出 2026.4 HF3；在此之前應限制 N-central 管理介面的對外存取並清查主機是否有異常程序。",
+     "source": "N-able（經 The Hacker News 轉述）",
+     "tags": [
+      "EXPLOITED",
+      "SUPPLY-CHAIN",
+      "MALWARE",
+      "PATCH"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "台積電證實部分員工資料外流：源自第三方雲端服務商，賣家稱握有 4.6 萬筆、6.9GB",
+     "url": "https://cybernews.com/security/tsmc-chip-giant-employee-data-breach/",
+     "summary": "賣家在 DarkForums 與 BreachForums 兜售自稱 6.9GB、4.6 萬筆的台積電員工資料，起標價 3 BTC，樣本含 499 名員工的地址、銀行帳號與緊急聯絡人。台積電表示資料與某雲端服務商持有的紀錄相符，自身系統未遭入侵，營運與客戶資料不受影響，已會同廠商、檢調與外部資安公司調查；4.6 萬筆為賣家單方說法，尚未獲證實。相關員工應留意釣魚與金融詐騙。",
+     "source": "Cybernews",
+     "tags": [
+      "TSMC",
+      "DATA-BREACH",
+      "SUPPLY-CHAIN",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "Google：駭客已用自主多代理 AI 框架，從軟體修補檔自動產生並執行漏洞利用程式",
+     "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+     "summary": "Google 11/16 揭露，攻擊者對 AI 的濫用已超越手動下提示，開始使用自主多代理框架分析修補內容並建構、執行利用程式，壓縮修補釋出到遭利用之間的時間差。此屬趨勢性警示、無單一受影響產品；防守方應縮短對外服務與邊界設備的修補週期，並優先處理 KEV 清單項目。",
+     "source": "Google（經 The Hacker News 轉述）",
+     "tags": [
+      "AI",
+      "GOOGLE",
+      "EXPLOITED",
+      "VULNERABILITY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "國防部：11/15 至 11/16 晨偵獲共機 4 架次逾越中線、共艦 7 艘、公務船 3 艘",
+     "url": "https://www.cna.com.tw/news/aipl/202611160028.aspx",
+     "summary": "國防部 11/16 公布，自前一日上午 6 時至當日上午 6 時，偵獲共機 4 架次逾越海峽中線，進入中部、西南及東部空域，另有共艦 7 艘、公務船 3 艘，合計 14 機艦船在台海周邊活動；示意圖顯示含 1 架無人機越中線及直升機於南部、東部活動。此為截稿時最新一期數字（11/17 當日公告尚未發布，且國防部官網連線受限，數字取自中央社轉載）。",
+     "source": "國防部（經中央社轉述）",
+     "tags": [
+      "MND",
+      "PLA",
+      "TAIWAN-STRAIT",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "深圳 APEC 11/18-19 登場：施振榮任台灣領袖代表，台海議題被視為川習會變數",
+     "url": "https://news.tvbs.com.tw/world/4051210",
+     "summary": "APEC 領袖會議 11/18 至 19 日在深圳舉行，台灣由宏碁創辦人施振榮擔任領袖代表出席；與日相高市早苗尚未安排正式會晤。觀察人士認為北京可能再度要求美方明確表態反對台獨，亦有中國學者稱峰會焦點在核武與伊朗，對台灣較大的間接風險是美中在經貿、科技上的妥協。",
+     "source": "TVBS新聞網",
+     "tags": [
+      "APEC",
+      "TAIWAN",
+      "US-CHINA",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜伊朗革命衛隊稱又有 2 艘油輪在荷姆茲海峽觸雷，美軍否認主航道有水雷",
+     "url": "https://www.ibtimes.com/oil-prices-fall-hormuz-shipping-stability-iea-3809797",
+     "summary": "伊朗革命衛隊 11/16 宣稱再有 2 艘油輪在海峽南側航道觸雷爆炸，延續 11/14 稱 3 艘遭擊的說法；美軍反駁，稱主要航道並無水雷，相關說法未獲獨立證實。海峽商船通行量仍遠低於危機前每日約 85 艘的水準。",
+     "source": "International Business Times",
+     "tags": [
+      "HORMUZ",
+      "IRAN",
+      "US-IRAN",
+      "OIL"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "後續｜美中俄三方峰會定 11/19 於深圳舉行，習近平會前將分別會晤川普、普丁",
+     "url": "https://www.chinatimes.com/realtimenews/20261116004565-260408",
+     "summary": "北京確認習近平、川普、普丁將於 11/19 在深圳 APEC 場邊舉行三方會談，習近平會前將先分別與兩人雙邊會晤。據報議題聚焦核武與中東局勢，烏克蘭據稱不在三方議程內；川普與普丁是否另行雙邊會晤尚未列入白宮行程。",
+     "source": "中時新聞網",
+     "tags": [
+      "APEC",
+      "US-CHINA",
+      "RUSSIA",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "台股 11/16 崩跌 2,635 點收 41,040.08 點，史上第二大跌點；外資賣超 683 億元",
+     "url": "https://www.cna.com.tw/news/afe/202611160233.aspx",
+     "summary": "輝達執行長黃仁勳辭職風波延燒、市場對 AI 前景疑慮加深，加上前一交易日費半指數重挫 3.43%，加權指數 11/16 下跌 2,635.04 點、跌幅 6.03%，收 41,040.08 點，創史上第二大收盤跌點；櫃買指數跌 6.8%，外資賣超約 682.77 億元。（Yahoo Finance API 連線受限，數字取自中央社收盤報導）",
+     "source": "中央社",
+     "tags": [
+      "TAIEX",
+      "STOCK-MARKET",
+      "NVIDIA",
+      "AI"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美股 11/16 盤中走低：那指一度跌約 2.2%、標普跌約 1.6%，輝達財報前賣壓沉重",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html",
+     "summary": "輝達將於 11/17 公布黃仁勳離任後首份財報，科技股領跌。美東時間 11/16 下午 1:49 那斯達克跌約 2.2%、標普 500 跌約 1.6%、道瓊跌約 1%；午盤時標普約 7,487 點、那指約 24,799 點。以上為盤中近似值（截稿時未取得收盤數字）；前一交易日 11/13 標普收 7,561.67 點、那指收 25,136.27 點。",
+     "source": "Yahoo Finance",
+     "tags": [
+      "STOCK-MARKET",
+      "NASDAQ",
+      "SP500",
+      "NVIDIA"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "布蘭特原油 11/16 盤中跌約 1.7% 至 94.17 美元：IEA 預期第四季供過於求，抵銷荷姆茲風險",
+     "url": "https://www.oilandgasmiddleeast.com/news/brent-crude-tanker-attack-uae",
+     "summary": "布蘭特原油 11/13 收每桶 95.84 美元，11/16 盤中（GMT 14:10）下跌 1.67 美元至約 94.17 美元。IEA 預估第四季全球供給每日超出需求 170 萬桶，壓抑了伊朗水雷說法帶來的風險溢價。11/16 價格為盤中近似值，非結算價。",
+     "source": "Oil & Gas Middle East",
+     "tags": [
+      "BRENT",
+      "OIL",
+      "HORMUZ",
+      "ENERGY"
+     ]
+    },
+    {
+     "severity": "info",
+     "title": "新台幣 11/16 收 32.886 元、貶 4.8 分，盤中一度貶至 32.969 元",
+     "url": "https://tw.stock.yahoo.com/news/11-16%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A532-886%E5%85%83%E4%BD%9C%E6%94%B6-%E8%B2%B6%E5%80%BC4-8%E5%88%86-080300155.html",
+     "summary": "台股重挫、外資賣超下，新台幣兌美元 11/16 盤中最低觸及 32.969 元，午後外資匯出趨緩、跌幅收斂，終場收 32.886 元，貶值 4.8 分。",
+     "source": "Yahoo奇摩股市",
+     "tags": [
+      "TWD",
+      "TAIEX",
+      "STOCK-MARKET",
+      "FINANCE"
+     ]
+    }
+   ]
+  }
+ ]
+}

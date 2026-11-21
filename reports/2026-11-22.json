@@ -1,0 +1,169 @@
+{
+ "date": "2026-11-22",
+ "focus": "AI 賣壓重創美股：11/20 標普 500 暴跌 3.7%、那指挫 5.28% 雙雙落入修正；台股本週累跌 17.5%，金管會 11/23 起全面禁止平盤以下放空",
+ "sections": [
+  {
+   "id": "cyber",
+   "items": [
+    {
+     "severity": "critical",
+     "title": "Check Point 閘道器遭串接 PHP2Shell 與 Gaia 提權漏洞入侵：植入 TSGA 後門並以 destroy_v6 抹除 ESXi 主機",
+     "url": "https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/",
+     "summary": "Check Point Research 揭露兩波入侵（10/30 起、11/2 擴大，首波鎖定以色列組織）：攻擊者先以 PHP2Shell 漏洞取得初始存取，再利用已列入 CISA KEV 的 Gaia OS 提權漏洞 CVE-2026-123039（CVSS 7.8）取得 root，植入偽裝成 slot_CPconfigdaemon 的 TSGA 被動後門並竄改防火牆日誌，之後經 vpxuser SSH 橫移到 VMware ESXi 執行 destroy_v6 抹除器。請立即套用 Check Point 公告 sk1000362 的修補，清查閘道器上的 PHP webshell 與 TSGA 痕跡，並檢查閘道器連往 ESXi 的 SSH 紀錄；受影響設備的防火牆日誌不可信。",
+     "source": "Check Point Research",
+     "tags": [
+      "CHECKPOINT",
+      "CVE-2026-123039",
+      "VMWARE",
+      "BACKDOOR"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "Amazon：中國相關駭客以 Cairn 自主 AI 代理找出 MONAI Label 零時差 CVE-2026-133968，11 分鐘取得大學伺服器 root",
+     "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+     "summary": "Amazon 威脅情報 9 月發現一台未設認證的 Cairn 滲透測試框架伺服器，從中看到操作者只下達「取得 shell」目標，AI 代理便自行找出醫療影像標註伺服器 MONAI Label 上傳端點的路徑穿越漏洞並攻陷東亞教育機構主機；Amazon 對中國關聯的歸因為中等信心。受影響版本為 0.8.5 及更早，各報導對修補狀態說法不一，有報導指維護者已於 11/18 釋出修正（GHSA-qc22-rmgc-vg94），使用者應立即升級，並將 MONAI Label 移出公網或加上認證。",
+     "source": "Amazon Threat Intelligence（經 SecurityWeek 轉述）",
+     "tags": [
+      "CVE-2026-133968",
+      "AI",
+      "ZERO-DAY",
+      "APT"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "CISA KEV 新增 SAP NetWeaver Enterprise Portal JNDI 注入漏洞 CVE-2025-42884，聯邦機關 11/23 前須修補",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+     "summary": "CISA 11/20 將 SAP NetWeaver Enterprise Portal 的 CVE-2025-42884（CVSS 6.5）列入 KEV，未經認證的攻擊者可透過注入 JNDI 環境屬性或查詢 URL 讀取或竄改伺服器資訊；同批另含已報導過的 VMware vCenter、Cisco Expressway 與 Apache Roller 漏洞。SAP 已於 2025 年 11 月以 Security Note 3660969 修補 EP-BASIS／EP-RUNTIME 7.50，尚未套用的企業應優先處理。",
+     "source": "CISA",
+     "tags": [
+      "CISA-KEV",
+      "SAP",
+      "CVE-2025-42884",
+      "EXPLOITED"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "後續｜n0n 勒索集團外洩約 1.6 萬筆摩根大通 Reserve 卡高資產客戶資料，摩根大通證實第三方供應商遭駭",
+     "url": "https://cybernews.com/security/jpmorgan-chase-data-leak-non-ransomware-gang/",
+     "summary": "Cybernews 分析 n0n 公開的 502KB 資料，內含約 1.6 萬個與邀請制 Reserve 卡相關的電子郵件，部分附電話與帳戶 ID，另有逾百個員工信箱。摩根大通證實第三方服務商的行銷資料遭存取，自家系統未受影響，但未證實 1.6 萬筆數字；Visa、Mastercard 亦表示支付網路未受波及。高資產客戶應提防針對性釣魚。",
+     "source": "Cybernews",
+     "tags": [
+      "DATA-BREACH",
+      "RANSOMWARE",
+      "JPMORGAN",
+      "SUPPLY-CHAIN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "taiwan",
+   "items": [
+    {
+     "severity": "high",
+     "title": "APEC 後共軍再發動「聯合戰備警巡」：11/21 上午 21 架次共機出海、15 架次逾越中線",
+     "url": "https://www.cna.com.tw/news/aipl/202611210092.aspx",
+     "summary": "國防部表示，11/21 上午 8 時 46 分起陸續偵獲殲-10、殲-16、蘇愷-30、轟-6K、空警-500、運油-20 及無人機等 21 架次出海，其中 15 架次逾越中線及其延伸線進入中部與西南空域，配合共艦實施聯合戰備警巡。這是深圳 APEC 川習會後首度戰備警巡，國軍以聯合情監偵掌握並派遣機艦與岸置飛彈應處。",
+     "source": "中央社",
+     "tags": [
+      "PLA",
+      "TAIWAN-STRAIT",
+      "MND",
+      "TAIWAN"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "國防部：11/20 至 11/21 晨偵獲共機 2 架次、共艦 6 艘、公務船 1 艘，另有 4 顆空飄氣球越中線",
+     "url": "https://news.ebc.net.tw/news/politics/581740",
+     "summary": "國防部 11/21 例行通報，11/20 上午 6 時至 11/21 上午 6 時偵獲共機 2 架次，全數逾越中線進入西南及東部空域，另有共艦 6 艘、公務船 1 艘；同時偵獲 4 顆中共空飄氣球逾越海峽中線，氣球已連續兩日出現。（官網遭封鎖，數字取自媒體轉載國防部新聞稿。）",
+     "source": "國防部（經東森新聞轉述）",
+     "tags": [
+      "MND",
+      "PLA",
+      "BALLOON",
+      "TAIWAN-STRAIT"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geo",
+   "items": [
+    {
+     "severity": "warning",
+     "title": "後續｜美伊在荷姆茲格什姆島再交火：伊朗朝美軍 F-16 發射飛彈，美方飛彈反擊；胡塞飛彈射向沙烏地",
+     "url": "https://gulfnews.com/world/mena/us-israel-war-on-iran-saudi-faces-houthi-missiles-trump-delays-iran-decision-1.500754425",
+     "summary": "Gulf News 報導，伊朗對格什姆島上空的美軍 F-16 發射地對空飛彈、並以反艦飛彈攻擊美艦護航船隊後，美軍於 11/20 傍晚對格什姆市附近發動飛彈打擊；沙烏地同時遭胡塞飛彈攻擊。川普仍延後對伊朗下一步的決定，荷姆茲海峽航運持續受阻。",
+     "source": "Gulf News",
+     "tags": [
+      "IRAN",
+      "HORMUZ",
+      "US-IRAN",
+      "MIDDLE-EAST"
+     ]
+    },
+    {
+     "severity": "warning",
+     "title": "美日南海立場分歧：川普淡化菲中爭端，高市早苗批北京以武力改變現狀；中國羚羊礁興建近 3 公里跑道",
+     "url": "https://tribune.net.ph/2026/11/18/us-japan-split-over-sea-rift",
+     "summary": "菲律賓《每日論壇報》指出，川普淡化西菲律賓海爭端，高市早苗則指控北京以武力與脅迫單方面改變現狀，日本大使館也表示高度關切南海脅迫行為升溫。衛星影像顯示中國在西沙羚羊礁興建近 3 公里跑道，引發軍事化疑慮。",
+     "source": "Daily Tribune",
+     "tags": [
+      "SOUTH-CHINA-SEA",
+      "PHILIPPINES",
+      "JAPAN",
+      "CHINA"
+     ]
+    },
+    {
+     "severity": "medium",
+     "title": "美、烏、歐討論誘使俄羅斯直接談判，澤倫斯基：北韓每月供俄數十枚彈道飛彈",
+     "url": "https://www.koreaherald.com/article/10939918",
+     "summary": "法新社報導，歐洲官員加入美烏談判團，研議促成俄烏直接接觸的方式，庫許納表示重點在讓雙方坐下來談。但普丁至今未鬆口放棄要求烏克蘭交出整個頓巴斯；澤倫斯基則指俄國每月自北韓取得數十枚彈道飛彈，呼籲歐洲加碼軍援。",
+     "source": "AFP（經 The Korea Herald 轉述）",
+     "tags": [
+      "UKRAINE",
+      "RUSSIA",
+      "NORTH-KOREA",
+      "DIPLOMACY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eco",
+   "items": [
+    {
+     "severity": "high",
+     "title": "AI 賣壓擴大：美股 11/20 標普 500 暴跌 3.7% 落入修正，那指挫 5.28% 翻黑；布蘭特原油收 92.57 美元",
+     "url": "https://abcnews.com/Business/wireStory/asia-shares-drop-ai-worries-echoing-wall-streets-138309523",
+     "summary": "標普 500 下跌 265.44 點收 6,910.39 點，較 10/6 歷史高點跌逾 10% 正式進入修正，創 18 個月來最差單週；那斯達克綜合指數重挫 5.28% 收 22,617.73 點，年初至今轉為下跌約 2.7%，道瓊跌 1.93% 收 48,147.33 點。布蘭特原油逆勢漲 0.6% 收每桶 92.57 美元，WTI 收 83.98 美元。（Yahoo Finance API 遭封鎖，數字取自媒體報導。）",
+     "source": "AP（經 ABC News 轉述）",
+     "tags": [
+      "SP500",
+      "NASDAQ",
+      "AI",
+      "BRENT"
+     ]
+    },
+    {
+     "severity": "high",
+     "title": "台股本週累跌 7,641 點、跌幅 17.5% 收 36,033.29 點；金管會 11/23 起全面禁止平盤以下放空",
+     "url": "https://www.ftvnews.com.tw/news/detail/2026B21W0137",
+     "summary": "證交所統計，加權指數 11/20 收 36,033.29 點，較前週 43,675.12 點重挫 7,641.83 點，週跌幅約 17.5%；受費城半導體與國際科技股重挫拖累，11/20 單日跌 6.23%。金管會宣布 11/23 起全面禁止平盤以下放空；新台幣 11/20 收 32.936 元，本週累貶 0.30%。",
+     "source": "民視新聞",
+     "tags": [
+      "TAIEX",
+      "STOCK-MARKET",
+      "TWD",
+      "AI"
+     ]
+    }
+   ]
+  }
+ ]
+}

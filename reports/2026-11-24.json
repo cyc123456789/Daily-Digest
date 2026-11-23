@@ -1,0 +1,25 @@
+{
+ "date": "2026-11-24",
+ "focus": "輝達董事會一致決議復任黃仁勳為執行長，股價暴漲逾三成帶動美股 AI 股強彈；台股在限空令與國安基金護盤下反彈 778 點",
+ "sections": [
+  {"id": "cyber", "items": [
+   {"severity": "critical", "title": "後續｜Cisco Expressway CVE-2026-76466 攻擊擴大至內網入侵，Cisco 更新公告承認列入 CISA KEV", "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/", "summary": "CVSS 9.8 的 CVE-2026-76466 可讓未經認證攻擊者在叢集模式的 Expressway-C／Expressway-E 上以 root 執行指令，俄國資安公司 F6 回報已被用來進一步滲透受害者內部網路。CISA 11/20 將其列入 KEV、聯邦機構修補期限為 11/23；Cisco 11/23 更新公告承認 KEV 列管，但仍稱未直接觀察到在野利用。使用叢集部署的 Expressway 應立即升級至 Cisco 公告的修補版本，並檢查設備是否有異常 root 程序與對內連線。", "source": "Cisco PSIRT、F6（經 BleepingComputer 轉述）", "tags": ["CVE-2026-76466", "CISCO", "CISA-KEV", "EXPLOITED"]},
+   {"severity": "high", "title": "歐盟執委會遭網攻逾 10 天、薪資與請假系統停擺，Euronews 獨家：疑為中國支持駭客所為", "url": "https://www.euronews.com/2026/11/23/exclusive-china-backed-hackers-suspected-behind-ongoing-eu-commission-cyberattack", "summary": "歐盟執委會內部系統遭攻擊已持續逾 10 天，薪資、請假與醫療報銷系統受影響，員工資料是否外洩仍在鑑識中。Euronews 11/23 引述匿名消息稱，調查方懷疑幕後為中國支持的駭客網路，部分依據是攻擊者使用 AI 滲透測試工具 ARTEX；官方目前尚未正式歸因，CERT-EU 也未證實 ARTEX 用於初始入侵。", "source": "Euronews", "tags": ["EU", "CHINA", "APT", "AI"]},
+   {"severity": "high", "title": "Check Point 揭露「CopperDragon」：疑為多個中國 APT 供應惡意程式的「數位軍需官」，波及 21 國", "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html", "summary": "Check Point Research 發現三個中國關聯攻擊群組共用同一惡意程式與基礎設施來源，鎖定 21 國電信、政府、軍方、研究與關鍵基礎設施，並與 FamousSparrow、Earth Estries、Tropic Trooper 等相關。攻擊以假冒 Chrome 憑證錯誤頁面誘騙下載「憑證修復工具」，植入 SquadC 或 SparrowDoor 後門；防禦端應封鎖此類社交工程下載並比對研究報告公布的 IoC。", "source": "Check Point Research（經 The Hacker News 轉述）", "tags": ["CHECKPOINT", "CHINA", "APT", "BACKDOOR"]},
+   {"severity": "high", "title": "時尚電商 Revolve 支付卡外洩受害人數確認達 151.5 萬人", "url": "https://securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million", "summary": "Revolve 向印第安納州檢察長申報共 1,515,073 人受影響，入侵發生於 9/11、9/29 才發現。外洩資料含姓名、聯絡資訊、支付卡號與到期日，僅限於在帳戶中儲存信用卡的顧客；尚無組織宣稱犯案，入侵途徑未公開。受影響者應向發卡銀行申請換卡並提防冒名 Revolve 的釣魚訊息。", "source": "SecurityWeek", "tags": ["DATA-BREACH", "REVOLVE", "PAYMENT-CARD"]},
+   {"severity": "medium", "title": "倫敦交通局 TfL Oyster 學生／優待卡網站遭入侵，約 26.5 萬名持卡人資料恐外洩", "url": "https://bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data", "summary": "TfL 於 11/16 發現 Oyster photocard 帳戶遭入侵，受影響人數由約 25 萬上修至 26.5 萬且可能再增加，已將網站下線並通報英國 ICO。TfL 稱密碼、支付卡與乘車紀錄未外洩，但部分報導指姓名、地址、生日與安全問題答案可能曝光；網站恢復後將要求用戶重設密碼與安全問題，既有卡片仍可正常搭乘。", "source": "Transport for London（經 BleepingComputer 轉述）", "tags": ["DATA-BREACH", "UK", "TFL"]}
+  ]},
+  {"id": "taiwan", "items": [
+   {"severity": "warning", "title": "國防部：11/22 至 11/23 晨偵獲共艦 12 艘、共機 6 架次，其中 5 架次逾越中線", "url": "https://www.cna.com.tw/news/aipl/202611230031.aspx", "summary": "國防部 11/23 公布，11/22 上午 6 時至 11/23 上午 6 時偵獲共艦 12 艘、共機 6 架次（含無人機、輔戰機與直升機），其中 5 架次逾越海峽中線進入西南及東部空域，國軍嚴密監控應處。共艦數量連續兩日達 11 艘以上，延續 11/21「聯合戰備警巡」後的高壓態勢；11/24 晨間數字截至發稿時尚未公布。", "source": "中央社", "tags": ["TAIWAN", "PLA", "MND", "TAIWAN-STRAIT"]},
+   {"severity": "warning", "title": "九合一選前，陸委會副主委沈有忠示警：北京金援特定候選人介入地方選舉", "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/24/2003868283", "summary": "距 11/28 地方選舉剩不到一週，陸委會副主委沈有忠指出中共介選手法升級，包括透過金援支持特定候選人。政府同時表示，中港澳人士若依規申請核准，可來台觀察選舉。", "source": "Taipei Times", "tags": ["TAIWAN", "CHINA", "ELECTION", "MAC"]}
+  ]},
+  {"id": "geo", "items": [
+   {"severity": "high", "title": "後續｜伊朗革命衛隊稱以飛彈無人機擊中巴林兩處美軍愛國者雷達，美軍中央司令部否認", "url": "https://www.yahoo.com/news/world/articles/iran-live-updates-tanker-attacked-084617419.html", "summary": "伊朗革命衛隊宣稱「Ya Umm al-Banin」行動以飛彈與無人機組合攻擊巴林境內兩處美軍愛國者飛彈陣地，作為對伊朗領空遭侵犯的回應；巴林稱遭擊中的是民用工業設施並起火，傷亡說法不一。美軍中央司令部否認雷達受損，同期阿曼灣也傳出油輪與軍方相關事件。", "source": "ABC News（經 Yahoo News 轉載）", "tags": ["IRAN", "US-IRAN", "MIDDLE-EAST", "IRGC"]},
+   {"severity": "warning", "title": "伊朗誓言「動用一切手段」突破美國海上封鎖，卡達加緊斡旋美伊重啟談判", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/", "summary": "伊朗表示將以所有手段對抗美國對其波斯灣與阿曼灣港口的海上封鎖，並稱若美方接受解除封鎖等條件，荷姆茲海峽兩天內即可重開；伊朗外長呼籲給卡達調停「一個機會」。川普則淡化伊朗近一週發射的大量飛彈與無人機，稱已全數攔截。", "source": "CBS News", "tags": ["IRAN", "HORMUZ", "US-IRAN", "DIPLOMACY"]}
+  ]},
+  {"id": "eco", "items": [
+   {"severity": "warning", "title": "輝達董事會一致決議復任黃仁勳為執行長，股價暴漲約 33%，美股 11/23 盤中標普漲逾 4%、那指漲近 7%", "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html", "summary": "輝達 11/23 宣布董事會一致決議恢復黃仁勳總裁、執行長及董事職務並即刻生效，稱已徵詢美國政府高層、確認其回任無國安疑慮；黃仁勳 11/12 才因醜聞辭職。消息帶動輝達股價大漲約 33%，AI 與晶片股強彈，美股盤中標普 500 漲約 4.3%–5%、那斯達克漲約 6.7%–6.9%（盤中近似值，非收盤）。上週五標普 500 收 6,910.39 點、週跌 8.6% 落入修正。", "source": "CNBC", "tags": ["NVIDIA", "NASDAQ", "SP500", "AI"]},
+   {"severity": "info", "title": "後續｜限空令上路、國安基金護盤，台股 11/23 反彈 778.6 點收 36,811.89 點；新台幣連三升收 32.895 元", "url": "https://www.cna.com.tw/news/afe/202611230239.aspx", "summary": "金管會全面禁止平盤以下放空並將融券保證金成數提高至 150% 首日，台股盤中一度下探 35,442 點後翻紅，終場漲 778.6 點（2.16%）收 36,811.89 點，成交約 1.08 兆元；三大法人仍賣超 511.77 億元。新台幣收 32.895 元、升 4.1 分，盤中一度觸及 32.999 元但守住 33 元關卡。", "source": "中央社", "tags": ["TAIEX", "TWD", "FSC", "STOCK-MARKET"]}
+  ]}
+ ]
+}
